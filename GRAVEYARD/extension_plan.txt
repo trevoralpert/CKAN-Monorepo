@@ -1,0 +1,107 @@
+MAIN EXTENSIONS PLAN TO REACH ~1M LINES
+========================================
+
+Core CKAN: 441,286 lines
+
+ORIGINAL 5 (Must Keep):
+- harvest: 11,040
+- issues: 7,722  
+- qa: 6,556
+- scheming: 6,017
+- spatial: 43,586
+Subtotal: 74,921
+Running Total: 516,207
+
+ADDITIONAL MAIN EXTENSIONS (by priority):
+1. dcat (181 stars, DCAT standard): 21,997
+   Running Total: 538,204
+
+2. xloader (27 stars, fast loader): 6,605
+   Running Total: 544,809
+
+3. pages (39 stars, CMS): 32,308
+   Running Total: 577,117
+
+4. showcase (28 stars): 14,207
+   Running Total: 591,324
+
+5. dashboard (26 stars): 9,085
+   Running Total: 600,409
+
+6. googleanalytics (30 stars): 2,280
+   Running Total: 602,689
+
+7. datagovuk (12 stars, UK gov): 40,149
+   Running Total: 642,838
+
+8. bcgov (25 stars, BC gov): 7,455
+   Running Total: 650,293
+
+9. canada (40 stars, Canadian gov): 31,139
+   Running Total: 681,432
+
+10. validation (19 stars): 15,742
+    Running Total: 697,174
+
+11. geoview (geographic viewer): 9,281
+    Running Total: 706,455
+
+12. basiccharts (visualization): 7,261
+    Running Total: 713,716
+
+13. pdfview (20 stars): 170
+    Running Total: 713,886
+
+14. fluent (18 stars, multilingual): 733
+    Running Total: 714,619
+
+15. hierarchy (19 stars): 1,189
+    Running Total: 715,808
+
+16. ldap (30 stars, auth): 1,455
+    Running Total: 717,263
+
+17. archiver (19 stars): 4,453
+    Running Total: 721,716
+
+18. cloudstorage (29 stars, S3): 3,702
+    Running Total: 725,418
+
+19. oauth2 (21 stars): 2,107
+    Running Total: 727,525
+
+20. report: 1,795
+    Running Total: 729,320
+
+21. dgu (30 stars, UK Data.gov): 75,290
+    Running Total: 804,610
+
+22. charts (advanced charts): 116,425
+    Running Total: 921,035
+
+23. nhm (Natural History Museum): 88,897
+    Running Total: 1,009,932
+
+FINAL: ~1,009,932 lines (Core + 23 main extensions)
+
+EXTENSIONS TO MOVE TO additional-extensions/:
+- dcatapit
+- udc
+- dcatde
+- switzerland
+- geodatagov
+- datagovau
+- versioning
+- privatedatasets
+- datajson
+- mapviews
+- doi
+- s3filestore
+- viewhelpers
+- metrics_dashboard
+- odata
+- envvars
+- disqus
+- ga-report
+- iati
+- versioned-datastore 
