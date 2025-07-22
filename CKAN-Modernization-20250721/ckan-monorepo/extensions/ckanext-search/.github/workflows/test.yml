@@ -1,0 +1,71 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      # The CKAN version tag of the Solr and Postgres containers should match
+      # the one of the container the tests run on.
+      # You can switch this base image with a custom image tailored to your project
+      image: ckan/ckan-dev:master
+      options: --user root
+    services:
+      solr:
+        # image: ckan/ckan-solr:master-solr9
+
+        image: amercader/ckan-solr:2.11-solr9-spatial
+      postgres:
+        image: ckan/ckan-postgres-dev:master
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+      redis:
+          image: redis:7
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+        options: --health-cmd="curl http://localhost:9200/_cluster/health" -e "discovery.type=single-node" -e "xpack.security.enabled=false"
+
+
+    env:
+      CKAN_SQLALCHEMY_URL: postgresql://ckan_default:pass@postgres/ckan_test
+      CKAN_DATASTORE_WRITE_URL: postgresql://datastore_write:pass@postgres/datastore_test
+      CKAN_DATASTORE_READ_URL: postgresql://datastore_read:pass@postgres/datastore_test
+      CKAN_SOLR_URL: http://solr:8983/solr/ckan
+      CKAN_REDIS_URL: redis://redis:6379/1
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install requirements
+      # Install any extra requirements your extension has here (dev requirements, other extensions etc)
+      run: |
+        pip install -r requirements.txt
+        pip install -r dev-requirements.txt
+        pip install -e .[solr]
+        pip install -e .[elasticsearch]
+    - name: Setup extension
+      # Extra initialization steps
+      run: |
+        # Replace default path to CKAN core config file with the one on the container
+        sed -i -e 's/use = config:.*/use = config:\/srv\/app\/src\/ckan\/test-core.ini/' test.ini
+
+        ckan -c test.ini db init
+
+        # Replace service URL in provider ini files
+        sed -i -e 's/localhost:8983/solr:8983/' test-solr.ini
+        sed -i -e 's/localhost:9200/elasticsearch:9200/' test-elasticsearch.ini
+
+        ckan -c test-solr.ini search init -p solr
+
+        ckan -c test-elasticsearch.ini search init -p elasticsearch
+
+    - name: Run search tests
+      run: pytest --ckan-ini=test.ini --ignore=ckanext/search/tests/providers --cov=ckanext.search --disable-warnings ckanext/search/tests
+
+    - name: Run Provider tests (Solr)
+      run: pytest --ckan-ini=test-solr.ini --cov=ckanext.search --disable-warnings ckanext/search/tests/providers
+
+    - name: Run Provider tests (Elasticsearch)
+      run: pytest --ckan-ini=test-elasticsearch.ini --cov=ckanext.search --disable-warnings ckanext/search/tests/providers
+

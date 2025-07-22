@@ -1,0 +1,54 @@
+#!/usr/bin/env python
+
+import argparse
+import json
+import subprocess
+import sys
+
+if __name__ == "__main__":
+    description = """Builds CKAN deb packages.
+This script essentially sets up the necessary vars and calls `docker buildx build`."""
+    parser = argparse.ArgumentParser(description=description)
+    parser.add_argument(
+        "ref",
+        help="The CKAN branch or tag to build (e.g. master, dev-v2.11, ckan-2.10.6...)",
+    )
+    parser.add_argument(
+        "target", help="The Ubuntu distribution to target (e.g. 20.04, 22.04, 24.04...)"
+    )
+    parser.add_argument(
+        "-i",
+        "--iteration",
+        default="1",
+        help="The iteration number to add to the package name.",
+    )
+
+    args = parser.parse_args()
+
+    ref = args.ref
+    target = args.target
+    iteration = args.iteration
+
+    with open("VERSIONS.json") as f:
+        supported_versions = json.load(f)
+
+    if target not in [v["ubuntu_version"] for v in supported_versions]:
+        print(f"Wrong target: {target}")
+        sys.exit(1)
+
+    command = [
+        "docker",
+        "buildx",
+        "build",
+        "--output",
+        "type=local,dest=.",
+        "--build-arg",
+        f"CKAN_REF={ref}",
+        "--build-arg",
+        f"ITERATION={iteration}",
+        "--build-arg",
+        f"UBUNTU_VERSION={target}",
+        ".",
+    ]
+
+    subprocess.call(command)

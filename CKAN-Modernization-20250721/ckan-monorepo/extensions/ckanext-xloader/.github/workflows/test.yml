@@ -1,0 +1,97 @@
+---
+name: Tests
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+  workflow_call:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install requirements
+        run: pip install flake8 pycodestyle
+      - name: Check syntax
+        run: flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics --extend-exclude ckan
+
+  test:
+    needs: lint
+    strategy:
+      matrix:
+        include: #ckan-image see https://github.com/ckan/ckan-docker-base, ckan-version controls other image tags
+          - ckan-version: "2.11"
+            ckan-image: "2.11-py3.10"
+            experimental: false
+          - ckan-version: "2.10"
+            ckan-image: "2.10-py3.10"
+            experimental: false
+          - ckan-version: "master"
+            ckan-image: "master"
+            experimental: true  # master is unstable, good to know if we are compatible or not
+      fail-fast: false
+
+    name: ${{ matrix.experimental && '**Fail_Ignored** ' || '' }} CKAN ${{ matrix.ckan-version }}
+    runs-on: ubuntu-latest
+    container:
+      image: ckan/ckan-dev:${{ matrix.ckan-image }}
+      options: --user root
+    services:
+      solr:
+        image: ckan/ckan-solr:${{ matrix.ckan-version }}-solr9
+      postgres:
+        image: ckan/ckan-postgres-dev:${{ matrix.ckan-version }}
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+      redis:
+          image: redis:7
+    env:
+      CKAN_SQLALCHEMY_URL: postgresql://ckan_default:pass@postgres/ckan_test
+      CKAN_DATASTORE_WRITE_URL: postgresql://datastore_write:pass@postgres/datastore_test
+      CKAN_DATASTORE_READ_URL: postgresql://datastore_read:pass@postgres/datastore_test
+      CKAN_SOLR_URL: http://solr:8983/solr/ckan
+      CKAN_REDIS_URL: redis://redis:6379/1
+
+    steps:
+    - uses: actions/checkout@v4
+      continue-on-error: ${{ matrix.experimental }}
+
+    - name: ${{ matrix.experimental && '**Fail_Ignored** ' || '' }} Install requirements
+      continue-on-error: ${{ matrix.experimental }}
+      run: |
+        pip install -r requirements.txt
+        pip install -r dev-requirements.txt
+        pip install -e .
+        pip install -U requests[security]
+        # Replace default path to CKAN core config file with the one on the container
+        sed -i -e 's/use = config:.*/use = config:\/srv\/app\/src\/ckan\/test-core.ini/' test.ini
+
+    - name: ${{ matrix.experimental && '**Fail_Ignored** ' || '' }} Setup extension
+      continue-on-error: ${{ matrix.experimental }}
+      run: |
+        ckan -c test.ini db init
+        ckan -c test.ini user add ckan_admin email=ckan_admin@localhost password="AbCdEf12345!@#%"
+        ckan -c test.ini sysadmin add ckan_admin
+        ckan config-tool test.ini "ckanext.xloader.api_token=$(ckan -c test.ini user token add ckan_admin xloader | tail -n 1 | tr -d '\t')"
+        ckan -c test.ini user list
+
+    - name: ${{ matrix.experimental && '**Fail_Ignored** ' || '' }} Run tests
+      continue-on-error: ${{ matrix.experimental }}
+      run: pytest --ckan-ini=test.ini --cov=ckanext.xloader --disable-warnings ckanext/xloader/tests --junit-xml=/tmp/artifacts/junit/results.xml
+
+    - name: ${{ matrix.experimental && '**Fail_Ignored** ' || '' }} Test Summary
+      uses: test-summary/action@v2
+      continue-on-error: ${{ matrix.experimental }}
+      with:
+        paths: "/tmp/artifacts/junit/*.xml"
+      if: always()
