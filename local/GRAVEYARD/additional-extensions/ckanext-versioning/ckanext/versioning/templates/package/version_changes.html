@@ -1,0 +1,55 @@
+{% extends "package/base.html" %}
+
+{% block subtitle %}{{ pkg_dict.name }} {{ g.template_title_delimiter }} Changes {{ g.template_title_delimiter }} {{ super() }}{% endblock %}
+
+{% block breadcrumb_content_selected %}{% endblock %}
+
+{% block breadcrumb_content %}
+  {{ super() }}
+  <li>{% link_for _('Changes'), named_route='versions.changes', id=pkg_dict.name %}</li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block package_changes_header %}
+        <h1 class="page-heading">{{ _('Changes') }}</h1>
+      {% endblock %}
+
+      <div class="release-list__loading"><i class="fa fa-spinner fa-pulse"></i></div>
+      <form id="range_form" action="" style="display: none;" data-module="select-switch" data-module-target="" class="form-inline">
+      View changes from
+        <select class="form-control select-time" form="range_form" name="revision_ref_1" data-module="releases-selector" data-module-dataset-id="{{ pkg.id }}" data-module-selected-id="{{ h.tojson(revision_ref_1) }}">
+        </select> to
+        <select class="form-control select-time" form="range_form" name="revision_ref_2" data-module="releases-selector" data-module-dataset-id="{{ pkg.id }}" data-module-selected-id="{{ h.tojson(revision_ref_2) }}" data-module-include-current="true">
+        </select>
+      </form>
+
+      <div class="release-list__no-releases" style="display: none" aria-hidden="true">
+        <p>{{ _('This dataset does not have any releases') }}</p>
+      </div>
+
+      <hr/>
+
+      {% if diff %}
+        {% snippet "package/snippets/change_item.html", diff=diff %}
+
+        <input type="button" data-module="metadata-button" data-module-target="" class="btn" value="Show metadata diff" id="metadata_button"></input>
+        <div id="metadata_diff" style="display:none;">
+          <pre>
+            {{ diff.diff|safe }}
+          </pre>
+        </div>
+      {% endif %}
+
+    </div>
+  </article>
+
+{% resource 'versioning/metadata-button.js' %}
+{% resource 'versioning/versioning.css' %}
+{% resource 'versioning/versioning.js' %}
+{% resource 'versioning/releases-selector.js' %}
+
+{% endblock %}
+
+{% block secondary %}{% endblock %}

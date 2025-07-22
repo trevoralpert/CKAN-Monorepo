@@ -1,0 +1,36 @@
+name: Tests
+
+on: [push]
+env:
+  CODE_COVERAGE_THRESHOLD_REQUIRED: 33
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Install requirements
+        run: pip install flake8 pycodestyle pytest pytest-ckan pytest-cov
+      - name: Run flake8
+        run: flake8 . --count --max-line-length=127 --statistics --exclude ckan
+
+  test:
+    needs: lint
+    strategy:
+      matrix:
+        ckan-version: ['2.11']
+      fail-fast: false
+
+    name: CKAN ${{ matrix.ckan-version }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run everything
+      run: source .env && CKAN_VERSION=${{ matrix.ckan-version }} make clean build ci test
+    # - name: Setup tmate session on fail
+    #   if: ${{ failure() }}
+    #   uses: mxschmitt/action-tmate@v3

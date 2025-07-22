@@ -1,0 +1,34 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+  {{ super() }}
+
+  {% set dataset_extent = pkg['spatial'] or h.get_pkg_dict_extra(pkg, 'spatial', '') %}
+  {% if dataset_extent and 'spatial_query' in g.plugins %}
+    {% snippet "spatial/snippets/dataset_map_sidebar.html", extent=dataset_extent %}
+  {% endif %}
+
+  {% block ga_stats %}
+    {% set stats = h.dga_get_package_stats(pkg.id) %}
+
+    {% if stats %}
+      <section class="module module-narrow dataset-map">
+        <h2 class="module-heading">
+          <i class="fa fa-bar-chart"></i>
+          {{ _('GA stats') }}
+        </h2>
+        <div class="stats">
+          <div class="stats-category">
+            {% for category_data in stats %}
+              {% snippet "dga/snippets/chartjs.html", type="line", data=category_data %}
+              <h4 class="text-center">
+                {{ _('Total {}'.format(category_data.category)) }}: {{ category_data.total }}
+              </h4>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+  {% endblock %}
+
+{% endblock %}

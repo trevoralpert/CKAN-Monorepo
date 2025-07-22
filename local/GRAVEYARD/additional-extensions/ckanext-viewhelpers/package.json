@@ -1,0 +1,23 @@
+{
+  "name": "ckanext-viewhelpers",
+  "version": "0.1.0",
+  "description": "Helpers for creating views for CKAN",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckan/ckanext-viewhelpers"
+  },
+  "scripts": {
+    "test": "mocha ckanext/viewhelpers/tests/javascript/*.js"
+  },
+  "author": "Vitor Baptista",
+  "license": "AGPLv3+",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "requirejs": "*",
+    "chai": "*",
+    "sinon": "~1.9.0",
+    "jquery": "~1.8.0",
+    "jsdom": "~0.10.4"
+  }
+}

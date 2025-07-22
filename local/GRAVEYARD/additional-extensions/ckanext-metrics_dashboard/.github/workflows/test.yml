@@ -1,0 +1,12 @@
+---
+name: Tests
+on: [push]
+
+jobs:
+  lint-test:
+    name: Lint + Test
+    uses: gsa/data.gov/.github/workflows/ckan-test.yml@main
+    with:
+      ext_name: metrics_dashboard
+      plugins: metrics_dashboard report ckan_harvester datajson_harvest datagovtheme harvest
+    secrets: inherit

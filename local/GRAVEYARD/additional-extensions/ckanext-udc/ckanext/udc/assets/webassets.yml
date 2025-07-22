@@ -1,0 +1,32 @@
+package-js:
+  filter: rjsmin
+  output: ckanext-udc/%(version)s-package.js
+  contents:
+    - js/package.js
+  extra:
+    preload:
+      - base/main
+
+package-filter:
+  filter: rjsmin
+  output: ckanext-udc/%(version)s-package-filter.js
+  contents:
+    - js/package-filter.js
+  extra:
+    preload:
+      - base/main
+
+package-view:
+  filter: rjsmin
+  output: ckanext-udc/%(version)s-package-view.js
+  contents:
+    - js/package-view.js
+  extra:
+    preload:
+      - base/main
+
+udc-css:
+  filter: cssrewrite
+  output: ckanext-udc/%(version)s-udc.css
+  contents:
+    - css/udc.css
