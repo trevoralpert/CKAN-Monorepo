@@ -1,1 +1,0 @@
-export const REACT_PATH = 'udrc';
