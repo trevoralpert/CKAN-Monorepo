@@ -1,0 +1,58 @@
+networks:
+  default:
+volumes:
+  postgres-db-volume:
+
+services:
+  ckan-postgres:
+    networks:
+      - default
+    image: "postgres:12"
+    environment:
+      POSTGRES_USER: ckan
+      POSTGRES_PASSWORD: ckan
+
+  ckan-redis:
+    networks:
+      - default
+    image: "redis:7-alpine"  # Alpine version supports ARM64
+
+  ckan-solr:
+    networks:
+      - default
+    image: "solr:8-slim"  # Use standard Solr instead of CKAN-specific
+    ports:
+      - "8983:8983"
+    command:
+      - solr-precreate
+      - ckan
+
+  ckan:
+    image: "python:3.10-slim-bookworm"  # Use slim version
+    networks:
+      - default
+    environment:
+      HOME: /usr/src
+      CKAN_DATASTORE_POSTGRES_DB: datastore_test
+      CKAN_DATASTORE_POSTGRES_READ_USER: datastore_read
+      CKAN_DATASTORE_POSTGRES_READ_PWD: pass
+      CKAN_DATASTORE_POSTGRES_WRITE_USER: datastore_write
+      CKAN_DATASTORE_POSTGRES_WRITE_PWD: pass
+      CKAN_POSTGRES_DB: ckan_test
+      CKAN_POSTGRES_USER: ckan_default
+      CKAN_POSTGRES_PWD: pass
+      PGPASSWORD: ckan
+      PYTEST_COMMON_OPTIONS: -v --ckan-ini=test-core-ci.ini --cov=ckan --cov=ckanext --junitxml=~/junit/junit.xml
+      # report usage of deprecated features
+      SQLALCHEMY_WARN_20: 1
+    working_dir: "/usr/src"
+    volumes:
+      - "../:/usr/src"
+    command:
+      ['tail', '-f', '/dev/null']  # Keep container running
+    ports:
+      - "5001:5000"  # Use port 5001 to avoid macOS conflicts
+    depends_on:
+      - ckan-postgres
+      - ckan-redis
+      - ckan-solr
