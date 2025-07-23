@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~multilingual&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~multilingual&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/3001</link>
+        <guid isPermaLink="false">http://localhost/ticket/3001</guid>
+        <title>#3001: Multilingual plugin crashes CKAN on add dataset when some languages are default</title>
+        <pubDate>Thu, 18 Oct 2012 16:50:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Enable the multilingual plugins:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.plugins = stats synchronous_search multilingual_dataset multilingual_group multilingual_tag
+&lt;/p&gt;
+&lt;p&gt;
+and set your default language to one not supported by the multilingual plugin, e.g.
+&lt;/p&gt;
+&lt;p&gt;
+ckan.locale_default = cs_CZ
+&lt;/p&gt;
+&lt;p&gt;
+now run CKAN and try to add a dataset:
+&lt;/p&gt;
+&lt;p&gt;
+File '/home/seanh/Projects/ckan171/ckan/ckanext/multilingual/plugin.py', line 141 in before_index
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+text_field_items&lt;a class="missing wiki"&gt;+ default_lang?&lt;/a&gt;.extend(all_terms)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;KeyError?&lt;/a&gt;: 'text_cs_CZ'
+&lt;/p&gt;
+&lt;p&gt;
+It doesn't matter what language you are viewing the site in in your browser, the default language setting in the ini file determines whether it crashed or not.
+&lt;/p&gt;
+&lt;p&gt;
+A number of supported languages are defined at the top of ckanext/multilingual/plugin.py. I think if the default language is not one of these it crashes.
+&lt;/p&gt;
+&lt;p&gt;
+I think this affects all versions of CKAN since the multilingual plugin was added so at least 1.7, 1.8 and 2.0
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3001#changelog</comments>
+    </item>
+ </channel>
+</rss>

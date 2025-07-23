@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;priority=critical&amp;desc=1&amp;order=milestone</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;priority=critical&amp;desc=1&amp;order=milestone</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1136</link>
+        <guid isPermaLink="false">http://localhost/ticket/1136</guid>
+        <title>#1136: Move to SessionExtension in vdm</title>
+        <pubDate>Thu, 12 May 2011 14:34:15 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When vdm was created there was no SessionExtension so we use MapperExtension for doing revisioning. Now that &lt;a class="missing wiki"&gt;SessionExtension?&lt;/a&gt; exists we should use it. We can also follow the existing SQLAlchemy recipe: &amp;lt;&lt;a class="ext-link" href="http://www.sqlalchemy.org/docs/orm/examples.html?highlight=versioning#versioned-objects"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.sqlalchemy.org/docs/orm/examples.html?highlight=versioning#versioned-objects&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1136#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2751</link>
+        <guid isPermaLink="false">http://localhost/ticket/2751</guid>
+        <title>#2751: check translations for full demo site</title>
+        <pubDate>Wed, 25 Jul 2012 11:40:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to check everything gets translated - sean did this before so will have info
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2751#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1198</link>
+        <guid isPermaLink="false">http://localhost/ticket/1198</guid>
+        <title>#1198: Publisher hierarchy</title>
+        <pubDate>Thu, 23 Jun 2011 09:16:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+'Publisher' entities in the model. They are hierarchical.
+&lt;/p&gt;
+&lt;p&gt;
+'User-Publisher' connections with one or more roles (e.g. drafter, moderator).
+&lt;/p&gt;
+&lt;p&gt;
+Authorization settings can control who can set what values in a 'published by' type field.
+&lt;/p&gt;
+&lt;p&gt;
+Publishers and User-Publishers available to read in the API.
+&lt;/p&gt;
+&lt;p&gt;
+Future tickets will provide:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;API to write Publishers and User-Publishers
+&lt;/li&gt;&lt;li&gt;UI to edit Publishers and User-Publishers
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(This feature deprecates authorization groups)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1198#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1466</link>
+        <guid isPermaLink="false">http://localhost/ticket/1466</guid>
+        <title>#1466: Need to support https login for multiple instances as part of the CKAN package install</title>
+        <pubDate>Tue, 15 Nov 2011 16:52:58 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1466#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1832</link>
+        <guid isPermaLink="false">http://localhost/ticket/1832</guid>
+        <title>#1832: dataset purge API</title>
+        <pubDate>Fri, 24 Feb 2012 10:02:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Purging datasets (deleting them fully, not just changing the state to 'deleted') is important for users testing dataset creation over the API on a test CKAN instance.
+&lt;/p&gt;
+&lt;p&gt;
+Without this, they need to resort to more difficult methods such as:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cleaning and reloading the database
+&lt;/li&gt;&lt;li&gt;setting the test datasets to state 'deleted' and also appending a suffix '_00' and incrementing the number until there is no clash of names.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Requested for NHSIC.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;This could slot into the Action API.
+&lt;/li&gt;&lt;li&gt;Of course we would need to ensure the user's had been given the specific right to purge.
+&lt;/li&gt;&lt;li&gt;I suggest we log the full details of the dataset being purged.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1832#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2686</link>
+        <guid isPermaLink="false">http://localhost/ticket/2686</guid>
+        <title>#2686: enabling datastore &amp; data API breaks recline</title>
+        <pubDate>Tue, 17 Jul 2012 09:06:51 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+First I noticed that the gold prices dataset preview was not displaying &amp;amp; has data API enabled
+Secondly I tried enabling datastore for &lt;a class="ext-link" href="http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f&lt;/a&gt; and after I saved the preview no longer worked. Unticking the datastore &amp;amp; data api checkbox brought it back
+&lt;/p&gt;
+&lt;p&gt;
+Is this a known issue?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2686#changelog</comments>
+    </item>
+ </channel>
+</rss>

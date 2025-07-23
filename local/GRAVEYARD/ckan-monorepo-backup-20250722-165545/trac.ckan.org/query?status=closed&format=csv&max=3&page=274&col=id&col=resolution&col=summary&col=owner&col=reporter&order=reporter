@@ -1,0 +1,4 @@
+id,resolution,summary,owner,reporter
+472,,API user sends API key in incorrectly named header,,johnbywater
+473,,API user discovers correct header for sending API key,,johnbywater
+475,fixed,Unit test to check API key in incorrectly named HTTP header is not accepted by server,,johnbywater

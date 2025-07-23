@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2011-11-07&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2011-11-07&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1443</link>
+        <guid isPermaLink="false">http://localhost/ticket/1443</guid>
+        <title>#1443: language detection</title>
+        <pubDate>Fri, 04 Nov 2011 16:53:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If language detected doesn't match any of the offered CKAN languages, you get the default language, but see an error flash up for every page, saying:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Could not change language to 'None': IOError: [Errno 2] No translation file found for domain: 'ckan'
+&lt;/pre&gt;&lt;p&gt;
+Affects 1.5b only.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1443#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1373</link>
+        <guid isPermaLink="false">http://localhost/ticket/1373</guid>
+        <title>#1373: home page view does not react to logging in / out</title>
+        <pubDate>Wed, 05 Oct 2011 15:44:39 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Either: thedatahub.org does not display 'add a dataset' top navigation link or the 'create dataset' main central link to logged in user - instead showing 'sign up' link in the central box. It does however display the 'my account' and 'logout' link in the top right correctly.
+&lt;/p&gt;
+&lt;p&gt;
+Navigating to another part of the site (e.g. search or about or my account) does bring the 'add a dataset' navigation link back and the functionality works.
+&lt;/p&gt;
+&lt;p&gt;
+Works fine on test.ckan.net so only on thedatahub.
+&lt;/p&gt;
+&lt;p&gt;
+Not obviously a caching problem, since I did try clearing cache.
+&lt;/p&gt;
+&lt;p&gt;
+OR: it displays as if you're logged in even when you log out. The links doesn't work and prompt you to log in though.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1373#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1428</link>
+        <guid isPermaLink="false">http://localhost/ticket/1428</guid>
+        <title>#1428: config options not used or documented</title>
+        <pubDate>Fri, 28 Oct 2011 12:06:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Need to ensure config options in the deployment.ini_tmpl match up with doc/configuration.rst. Remove any unused ones too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1428#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1442</link>
+        <guid isPermaLink="false">http://localhost/ticket/1442</guid>
+        <title>#1442: You can't GET then POST a dataset as new</title>
+        <pubDate>Wed, 02 Nov 2011 19:48:38 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If you try to GET a dataset, purge it then POST it again, it fails checking authz for the group:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.api:278 in create
+&amp;lt;&amp;lt;                  (register, subregister))
+               try:
+                   response_data = action(context, data_dict)
+                   location = None
+                   if "id" in data_dict:
+&amp;gt;&amp;gt;  response_data = action(context, data_dict)
+Module ckan.logic.action.create:240 in package_create_rest
+&amp;lt;&amp;lt;      api = context.get('api_version') or '1'
+           check_access('package_create_rest', context, data_dict)
+           dictized_package = package_api_to_dict(data_dict, context)
+&amp;gt;&amp;gt;  check_access('package_create_rest', context, data_dict)
+Module ckan.logic:129 in check_access
+&amp;lt;&amp;lt;          #    log.debug('Valid API key needed to make changes')
+               #    raise NotAuthorized
+               logic_authorization = new_authz.is_authorized(action, context, data_dict)
+               if not logic_authorization['success']:
+                   msg = logic_authorization.get('msg','')
+&amp;gt;&amp;gt;  logic_authorization = new_authz.is_authorized(action, context, data_dict)
+Module ckan.new_authz:16 in is_authorized
+&amp;lt;&amp;lt;      auth_function = _get_auth_function(action)
+           if auth_function:
+               return auth_function(context, data_dict)
+           else:
+               raise ValueError(_('Authorization function not found: %s' % action))
+&amp;gt;&amp;gt;  return auth_function(context, data_dict)
+Module ckan.logic.auth.create:115 in package_create_rest
+&amp;lt;&amp;lt;          return {'success': False, 'msg': _('Valid API key needed to create a package')}
+           return package_create(context, data_dict)
+       def group_create_rest(context, data_dict):
+&amp;gt;&amp;gt;  return package_create(context, data_dict)
+Module ckan.logic.auth.create:15 in package_create
+&amp;lt;&amp;lt;      else:
+               check2 = check_group_auth(context,data_dict)
+               if not check2:
+                   return {'success': False, 'msg': _('User %s not authorized to edit these groups') % str(user)}
+&amp;gt;&amp;gt;  check2 = check_group_auth(context,data_dict)
+Module ckan.logic.auth.create:90 in check_group_auth
+&amp;lt;&amp;lt;      groups = set()
+           for group_dict in group_dicts:
+               id = group_dict.get('id')
+               if not id:
+                   continue
+&amp;gt;&amp;gt;  id = group_dict.get('id')
+AttributeError: 'unicode' object has no attribute 'get'
+&lt;/pre&gt;&lt;p&gt;
+(using RESTful Model API)
+&lt;/p&gt;
+&lt;p&gt;
+The reason is the POST is expecting the group to be expressed as a dict, not the list of names that GET returns.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1442#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1405</link>
+        <guid isPermaLink="false">http://localhost/ticket/1405</guid>
+        <title>#1405: You can add a package twice to a group</title>
+        <pubDate>Mon, 17 Oct 2011 12:59:14 GMT</pubDate>
+        
+        <dc:creator>jonathan.gray@…</dc:creator>
+
+        <description>&lt;p&gt;
+To reproduce (from Jonathan Gray):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;I go to add an item to the group
+&lt;/li&gt;&lt;li&gt;As I type, I get autocomplete options (cool!)
+&lt;/li&gt;&lt;li&gt;When I click on one, it adds this, and copies the same autocomplete option in the box
+&lt;/li&gt;&lt;li&gt;When I click submit, it seems to add the item twice
+&lt;/li&gt;&lt;li&gt;On the main group page I think it just shows up once, but when I click edit it shows two identical boxes, both ticked - and the count includes two copies of the same item
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Basically the problem is allowing the same package associated multiple times with a group.
+&lt;/p&gt;
+&lt;p&gt;
+This is an issue on CKAN 1.5b and probably earlier.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1405#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1236</link>
+        <guid isPermaLink="false">http://localhost/ticket/1236</guid>
+        <title>#1236: View a package at a given revision</title>
+        <pubDate>Thu, 21 Jul 2011 17:28:53 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to view a package at a given revision:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When I visit /package/osm@yyyy-mm-dd or /package/osm@rrrrrrr I should be shown package at date yyyy-mm-dd or revision rrrrrrr.
+&lt;/li&gt;&lt;li&gt;viewing this page, it should say it is the old revision, just like wikipedia
+&lt;/li&gt;&lt;li&gt;package history page should provide links to these pages
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1236#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1365</link>
+        <guid isPermaLink="false">http://localhost/ticket/1365</guid>
+        <title>#1365: Support old search formats</title>
+        <pubDate>Wed, 28 Sep 2011 18:08:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Lots of things rely on the old (i.e. pre-SOLR) search param formats, including ckanclient / DGU. Need a translation layer to convert these params (in api v1&amp;amp;2) to SOLR syntax.
+&lt;/p&gt;
+&lt;p&gt;
+This functionality was broken by the changes in &lt;a class="closed ticket" href="http://localhost/ticket/1277" title="enhancement: Use solr query parser for search instead of ckan query parser (closed: fixed)"&gt;#1277&lt;/a&gt; which went into 1.5a
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1365#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/891</link>
+        <guid isPermaLink="false">http://localhost/ticket/891</guid>
+        <title>#891: Resource download worker daemon</title>
+        <pubDate>Mon, 03 Jan 2011 11:09:39 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Superticket: &lt;a class="closed ticket" href="http://localhost/ticket/1397" title="enhancement: [super] Resource archiving (closed: fixed)"&gt;#1397&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Write a worker daemon to download all resources from a CKAN instance to a local repository.
+&lt;/p&gt;
+&lt;h2 id="Questions"&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Do we only want to download openly licensed information? ANS: no, we do everything (though do need to think about this re. IP issues)
+&lt;/li&gt;&lt;li&gt;Should we have clever ways to dump APIs? ANS: no.
+&lt;/li&gt;&lt;li&gt;Do we respect robots.txt even for openly licensed information? ANS: No (we're not crawling we're archiving)
+&lt;/li&gt;&lt;li&gt;Use HTTP/1.1 Caching headers? ANS: if not changed since we last updated don't bother to recache.
+&lt;ul&gt;&lt;li&gt;Complete support for ETags
+&lt;/li&gt;&lt;li&gt;Expires, Max-Age etc.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Check
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Functionality"&gt;Functionality&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Download files via HTTP, HTTPS (will not do FTP)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Process:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;[Archiver.Update checks queue (automated as part of celery)]
+&lt;/li&gt;&lt;li&gt;Open url and get any info from resource on cache / content-length etc
+&lt;ol&gt;&lt;li&gt;If FAILURE status: update task_status table (could retry if not more than 3 failures so far). Report task failure in celery
+&lt;/li&gt;&lt;li&gt;Check headers for content-length and content-type ...
+&lt;ul&gt;&lt;li&gt;IF: content-length &amp;gt; max_content_length: EXIT (store outcomes on task_status, and update resource with size and content-type and any other info we get?)
+&lt;/li&gt;&lt;li&gt;ELSE: check content-type.
+&lt;ul&gt;&lt;li&gt;IF: NOT data stuff (e.g. text/html) then EXIT. (store outcomes and info on resource)
+&lt;/li&gt;&lt;li&gt;ELSE: archive it (compute md5 hash etc)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;IF: get content-length and content-length unchanged GOTO step 4
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Archive it: connect to storage system and store it. Bucket: from config, Key: /archive/{timestamp}/{resourceid}/filename.ext
+&lt;ul&gt;&lt;li&gt;Add cache url to resource and updated date
+&lt;/li&gt;&lt;li&gt;Add other relevant info to resource such as md5, content-type etc
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Update task_status
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Optionalfunctionality"&gt;Optional functionality&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;If result object is HTML, search for references to "proper data" (CSV download pages etc.)
+&lt;/li&gt;&lt;li&gt;Download from POST forms (accepting licenses or weird proprietary systems)
+&lt;/li&gt;&lt;li&gt;Support running on Google Apps Engine to save traffic costs.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Existingwork"&gt;Existing work&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckanext-qa/overview"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckanext-qa/overview&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;out of date: &lt;a class="ext-link" href="https://bitbucket.org/pudo/ckanextarchive"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/pudo/ckanextarchive&lt;/a&gt; - Old archiver extension, largely experimental.
+&lt;/li&gt;&lt;li&gt;out of date: &lt;a class="ext-link" href="https://bitbucket.org/ollyc/ckan/changeset/1b16fbe9aa65"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/ollyc/ckan/changeset/1b16fbe9aa65&lt;/a&gt; - Openness scores by ollyc
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/891#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1416</link>
+        <guid isPermaLink="false">http://localhost/ticket/1416</guid>
+        <title>#1416: Registering with blank email can cause exception</title>
+        <pubDate>Tue, 25 Oct 2011 09:13:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This might well be a bot, but not POSTing the email field should not cause an exception - it should be 400 and then the sysadmin doesn't get these nags.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://www.publicdata.eu/user/register
+...
+Module ckan.controllers.user:79 in register
+&amp;lt;&amp;lt;              c.login = request.params.getone('login')
+                   c.fullname = request.params.getone('fullname')
+                   c.email = request.params.getone('email')
+                   if not model.User.check_name_available(c.login):
+                       h.flash_error(_("That username is not available."))
+&amp;gt;&amp;gt;  c.email = request.params.getone('email')
+Module webob.multidict:335 in getone
+&amp;lt;&amp;lt;          values were found.
+               """
+               return self._decode_value(self.multi.getone(self._encode_key(key)))
+           def mixed(self):
+&amp;gt;&amp;gt;  return self._decode_value(self.multi.getone(self._encode_key(key)))
+Module webob.multidict:99 in getone
+&amp;lt;&amp;lt;          v = self.getall(key)
+               if not v:
+                   raise KeyError('Key not found: %r' % key)
+               if len(v) &amp;gt; 1:
+                   raise KeyError('Multiple values match %r: %r' % (key, v))
+&amp;gt;&amp;gt;  raise KeyError('Key not found: %r' % key)
+KeyError: "Key not found: 'email'"
+&lt;/pre&gt;&lt;pre class="wiki"&gt;HTTP_USER_AGENT	'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MRA 4.3 (build 01218); .NET CLR 1.1.4322)'
+webob._parsed_post_vars	(MultiDict([('login', 'ahusernames9'), ('fullname', 'ahusernames9'), ('password1', '******'), ('password2', '******'), ('s', 'Sign up')]), &amp;lt;FakeCGIBody at 0xb9d7c5ec viewing MultiDict([('lo...p')])&amp;gt;)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1416#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1436</link>
+        <guid isPermaLink="false">http://localhost/ticket/1436</guid>
+        <title>#1436: Packages with a 'pending' state not listed on groups page</title>
+        <pubDate>Tue, 01 Nov 2011 13:47:07 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1436#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1379</link>
+        <guid isPermaLink="false">http://localhost/ticket/1379</guid>
+        <title>#1379: Markdown conversion of linked references broken</title>
+        <pubDate>Mon, 10 Oct 2011 11:55:19 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+eg. &lt;a class="ext-link" href="http://thedatahub.org/dataset/us-gov-tarp"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/us-gov-tarp&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+[This Paper][my-paper] is very interesting.
+&lt;/p&gt;
+&lt;p&gt;
+[my-paper]: &lt;a class="ext-link" href="http://somelink.com/paper"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://somelink.com/paper&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Write a test to check this markdown feature works - if not, use external markdown lib rather than webhelpers.markdown. Probably need to add markdown lib to list of requirements.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1379#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1380</link>
+        <guid isPermaLink="false">http://localhost/ticket/1380</guid>
+        <title>#1380: Making customizing CSS easier</title>
+        <pubDate>Mon, 10 Oct 2011 16:25:56 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+While integrating the new theme and making a large number of UX tweaks, I've allowed the CSS file to bloat out of control with some very specific rules and subtle hacks, as well as a couple of clearfix &amp;lt;div&amp;gt; objects in the markup which isn't really good practice.
+&lt;/p&gt;
+&lt;p&gt;
+In general we want a logical CSS structure which is as easy to modify as possible. You should not find yourself being overwritten by highly specific rules all the time!
+&lt;/p&gt;
+&lt;h2 id="Actions"&gt;Actions&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;Clean up css
+&lt;/li&gt;&lt;li&gt;Add a config option ckan.template_head_end - arbitrary string inserted at end of &amp;lt;head&amp;gt; tag so you can add custom css etc (may also want to update theming docs to reflect possibility of using this)
+&lt;/li&gt;&lt;li&gt;(While we're at it): Add ckan.template_footer_end config option to deployment.ini_template. (This already exists, we just haven't told anybody)
+&lt;/li&gt;&lt;li&gt;The /users index page isn't linked anywhere. Clean it up and link it in the footer next to Groups etc.
+&lt;/li&gt;&lt;li&gt;package/new, package/edit, group/new and group/edit all include their forms differently. Use h.literal in all cases.
+&lt;/li&gt;&lt;li&gt;Fix the padding on minornavigation.
+&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="Background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;
+David Read sent me the following as background:
+&lt;/p&gt;
+&lt;ol class="upperalpha" start="22"&gt;&lt;li&gt;basic theming is described here: &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/theming.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/theming.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Deep customisation of the templates is done by creating an extension, with this as a template: &lt;a class="ext-link" href="https://bitbucket.org/okfn/ckanext-exampletheme/overview"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckanext-exampletheme/overview&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+That's what Augusto and the Brazilians have done &lt;a class="ext-link" href="http://alpha.dados.gov.br/dados/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://alpha.dados.gov.br/dados/&lt;/a&gt; and their code is here:
+hg clone &lt;a class="ext-link" href="http://dev.dados.gov.br/codigo/dev/tema-ckan"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://dev.dados.gov.br/codigo/dev/tema-ckan&lt;/a&gt;
+&amp;lt;snip&amp;gt;
+Another thing of interest was us becoming compatible with Wordpress themes last December. Richard Pope worked with Rufus on this. I believe the base theme is 'twentyten' and I'm guessing that one would swap that css file with another to change theme, but I don't know. I don't know if this feature has been dropped since then.
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2010-December/000073.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2010-December/000073.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Dave
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1380#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1248</link>
+        <guid isPermaLink="false">http://localhost/ticket/1248</guid>
+        <title>#1248: License exception</title>
+        <pubDate>Fri, 29 Jul 2011 15:42:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Exception received on test.ckan.net at 10.12 on 29/7/11
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://test.ckan.net/package?__cache=2759373&amp;amp;page=4
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckan.controllers.package:153 in search
+&amp;lt;&amp;lt;                          }
+                   query = get.package_search(context,data_dict)
+                   c.page = h.Page(
+&amp;gt;&amp;gt;  query = get.package_search(context,data_dict)
+Module ckan.logic.action.get:514 in package_search
+&amp;lt;&amp;lt;      for package in query.results:
+               result_dict = table_dictize(package, context)
+               result_dict = _extend_package_dict(result_dict,context)
+               results.append(result_dict)
+&amp;gt;&amp;gt;  result_dict = _extend_package_dict(result_dict,context)
+Module ckan.logic.action.get:537 in _extend_package_dict
+&amp;lt;&amp;lt;      license_id = package_dict['license_id']
+           if license_id:
+               isopen = model.Package.get_license_register()[license_id].isopen()
+               package_dict['isopen'] = isopen
+           else:
+&amp;gt;&amp;gt;  isopen = model.Package.get_license_register()[license_id].isopen()
+Module ckan.model.license:59 in __getitem__
+&amp;lt;&amp;lt;              return default
+               else:
+                   raise KeyError, "License not found: %s" % key
+           def get(self, key, default=None):
+&amp;gt;&amp;gt;  raise KeyError, "License not found: %s" % key
+KeyError: u'License not found: None'
+&lt;/pre&gt;&lt;p&gt;
+and a similar one:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt; http://test.ckan.net/tag/barbecue
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           def load_test_env(self, environ):
+&amp;gt;&amp;gt;  return controller(environ, start_response)
+Module ckan.lib.base:118 in __call__
+&amp;lt;&amp;lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&amp;gt;&amp;gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&amp;gt;&amp;gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ['pylons.action_method'] = func
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&amp;gt;&amp;gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&amp;gt;&amp;gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckan.controllers.tag:2 in read
+Module ckan.lib.cache:167 in wrapper
+&amp;lt;&amp;lt;      log = __import__("logging").getLogger("proxy_cache")
+           def wrapper(func, *args, **kwargs):
+               result = func(*args, **kwargs)
+               pylons = get_pylons(args)
+&amp;gt;&amp;gt;  result = func(*args, **kwargs)
+Module ckan.controllers.tag:64 in read
+&amp;lt;&amp;lt;          data_dict = {'id':id}
+               try:
+                   c.tag = get.tag_show(context,data_dict)
+               except NotFound:
+                   abort(404, _('Tag not found'))
+&amp;gt;&amp;gt;  c.tag = get.tag_show(context,data_dict)
+Module ckan.logic.action.get:341 in tag_show
+&amp;lt;&amp;lt;      extended_packages = []
+           for package in tag_dict['packages']:
+               extended_packages.append(_extend_package_dict(package,context))
+           tag_dict['packages'] = extended_packages
+&amp;gt;&amp;gt;  extended_packages.append(_extend_package_dict(package,context))
+Module ckan.logic.action.get:537 in _extend_package_dict
+&amp;lt;&amp;lt;      license_id = package_dict['license_id']
+           if license_id:
+               isopen = model.Package.get_license_register()[license_id].isopen()
+               package_dict['isopen'] = isopen
+           else:
+&amp;gt;&amp;gt;  isopen = model.Package.get_license_register()[license_id].isopen()
+Module ckan.model.license:59 in __getitem__
+&amp;lt;&amp;lt;              return default
+               else:
+                   raise KeyError, "License not found: %s" % key
+           def get(self, key, default=None):
+&amp;gt;&amp;gt;  raise KeyError, "License not found: %s" % key
+KeyError: u'License not found: CreativeCommonsAttributionCCBY25'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1248#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1437</link>
+        <guid isPermaLink="false">http://localhost/ticket/1437</guid>
+        <title>#1437: JSONP parameter in Action API</title>
+        <pubDate>Tue, 01 Nov 2011 15:24:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Action API needs JSONP support - be able to return responses encapsulated in a function of a supplied name. This is important for remote sites running javascript to interact with a CKAN site.
+&lt;/p&gt;
+&lt;p&gt;
+Specifying the callback parameter is the way we've achieved JSONP with the RESTful and Search APIs. It should work like this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;curl http://test.ckan.net/api/action/package_show?callback=jsoncallback -d '{"id": "fd788e57-dce4-481c-832d-497235bf9f78"}'
+&lt;/pre&gt;&lt;p&gt;
+Or maybe the callback should be specified in the payload in the context or data_dict?
+&lt;/p&gt;
+&lt;p&gt;
+(My understanding is that CORS is similar - when more browsers support it, can we drop JSONP?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1437#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1292</link>
+        <guid isPermaLink="false">http://localhost/ticket/1292</guid>
+        <title>#1292: Internationalization improvements</title>
+        <pubDate>Thu, 25 Aug 2011 20:15:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Review process of releases and updating strings (pot) and translations (po) files
+&lt;ul&gt;&lt;li&gt;c.f. &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2011-May/000718.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2011-May/000718.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Get language changing thing to get home page to mostly work - push to key strings translated (or don't advertise the translation?)
+&lt;/li&gt;&lt;li&gt;Review long list of strings for improvement
+&lt;ul&gt;&lt;li&gt;Consolidate any?
+&lt;/li&gt;&lt;li&gt;Get rid of i18n for strings in api
+&lt;/li&gt;&lt;li&gt;Try and remove javascript
+&lt;/li&gt;&lt;li&gt;Add in extensions
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1374" title="defect: Can't switch to English if default is non-English (closed: fixed)"&gt;#1374&lt;/a&gt; Fix switching to en from other default language
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1417" title="defect: Browser language detection doesn't work (closed: fixed)"&gt;#1417&lt;/a&gt; Fix browser language detection
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1292#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1430</link>
+        <guid isPermaLink="false">http://localhost/ticket/1430</guid>
+        <title>#1430: Documents get mixed between SOLR cores</title>
+        <pubDate>Mon, 31 Oct 2011 13:34:36 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On some occasions (apparently random), the documents indexed in a specific SOLR core get mixed with different site_ids.
+&lt;/p&gt;
+&lt;p&gt;
+E.g: We look for all documents in the testing.iatiregistry.org core, faceted by site_id. We would expect all documents to have site_id = iati_testing, but some of them have site_id = iatiregistry.org
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://okfn-solr.fry-it.com:8080/solr/testing.iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=*:*&amp;amp;fq=+state:active&amp;amp;facet=true&amp;amp;facet.field=site_id"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://okfn-solr.fry-it.com:8080/solr/testing.iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=*:*&amp;amp;fq=+state:active&amp;amp;facet=true&amp;amp;facet.field=site_id&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;lst name="facet_fields"&amp;gt;
+&amp;lt;lst name="site_id"&amp;gt;
+&amp;lt;int name="iati_testing"&amp;gt;265&amp;lt;/int&amp;gt;
+&amp;lt;int name="iatiregistry.org"&amp;gt;255&amp;lt;/int&amp;gt;
+&amp;lt;/lst&amp;gt;
+&amp;lt;/lst&amp;gt;
+&lt;/pre&gt;&lt;p&gt;
+If we compare one of the records which disappeared from the "iati_testing" site_id in both the production and testing SOLR cores
+of the server, the records are exactly the same, including the indexed_ts property:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://okfn-solr.fry-it.com:8080/solr/iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=id:97d1ab0d-b203-4757-8f4e-a0c84d2f759f&amp;amp;facet=true&amp;amp;facet.field=site_id"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://okfn-solr.fry-it.com:8080/solr/iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=id:97d1ab0d-b203-4757-8f4e-a0c84d2f759f&amp;amp;facet=true&amp;amp;facet.field=site_id&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://okfn-solr.fry-it.com:8080/solr/testing.iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=id:97d1ab0d-b203-4757-8f4e-a0c84d2f759f&amp;amp;facet=true&amp;amp;facet.field=site_id"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://okfn-solr.fry-it.com:8080/solr/testing.iatiregistry.org/select?indent=on&amp;amp;version=2.2&amp;amp;q=id:97d1ab0d-b203-4757-8f4e-a0c84d2f759f&amp;amp;facet=true&amp;amp;facet.field=site_id&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Note that the response from the URLs shown may vary, as the testing site could have been reindexed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1430#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1315</link>
+        <guid isPermaLink="false">http://localhost/ticket/1315</guid>
+        <title>#1315: Document /api/action</title>
+        <pubDate>Wed, 07 Sep 2011 11:58:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We need some documentation for the /api/action. Even though it's beta and subject to change it would be good to have a guide.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1315#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1217</link>
+        <guid isPermaLink="false">http://localhost/ticket/1217</guid>
+        <title>#1217: Diff exception</title>
+        <pubDate>Mon, 11 Jul 2011 09:11:38 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Exception raised doing this particular diff.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.net/revision/diff/sudocfr?diff_entity=package&amp;amp;oldid=a18b2520-09e0-44be-80dd-4fea94ffe7d1&amp;amp;diff=3934ff16-a3a7-4481-b390-72944903b945"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/revision/diff/sudocfr?diff_entity=package&amp;amp;oldid=a18b2520-09e0-44be-80dd-4fea94ffe7d1&amp;amp;diff=3934ff16-a3a7-4481-b390-72944903b945&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;...
+Module ckan.controllers.revision:142 in diff
+&amp;lt;&amp;lt;          if c.diff_entity == 'package':
+                   c.pkg = model.Package.by_name(id)
+                   diff = c.pkg.diff(c.revision_to, c.revision_from)
+               elif c.diff_entity == 'group':
+                   c.group = model.Group.by_name(id)
+&amp;gt;&amp;gt;  diff = c.pkg.diff(c.revision_to, c.revision_from)
+Module ckan.model.package:449 in diff
+&amp;lt;&amp;lt;                              display_id = to_obj_rev.tag.name
+                               elif obj_class.__name__ == 'PackageExtra':
+                                   display_id = to_obj_rev.key
+                               else:
+                                   display_id = related_obj_id[:4]
+&amp;gt;&amp;gt;  display_id = to_obj_rev.key
+AttributeError: 'NoneType' object has no attribute 'key'
+&lt;/pre&gt;&lt;p&gt;
+Seems to be to do with this particular extra key:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;[&amp;lt;PackageExtraRevision id=ba1f3b3e-f61f-4924-bae0-ec3dd2163ae4 package_id=febe4da9-5874-4411-a7da-b497fdebf739 key=namespace value=http://www.sudoc.fr/ state=active revision_id=5ec8e730-c73d-4f1c-989b-2e015eb3d315 continuity_id=ba1f3b3e-f61f-4924-bae0-ec3dd2163ae4 expired_id=None revision_timestamp=2011-07-08 13:48:11.027260 expired_timestamp=9999-12-31 00:00:00 current=True&amp;gt;]
+&lt;/pre&gt;&lt;p&gt;
+Is it because it was created between the from_revision and to_revision?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1217#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1300</link>
+        <guid isPermaLink="false">http://localhost/ticket/1300</guid>
+        <title>#1300: Core changes to base theme</title>
+        <pubDate>Thu, 01 Sep 2011 07:30:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Core changes to theme in order to make it easier to re-theme:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;page_heading
+&lt;/li&gt;&lt;li&gt;side bar menu must be switchable (left to right) (through config or css)
+&lt;/li&gt;&lt;li&gt;Add optional_footer to complement optional_head
+&lt;ul&gt;&lt;li&gt;And adopt rule for template writers that all extra js must go in optional footer
+&lt;/li&gt;&lt;li&gt;That way we could move optional js to the bottom of the page to improve page load times.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Re-add support for body-class ... (seems to be removed by &lt;a class="closed ticket" href="http://localhost/ticket/1108" title="enhancement: Create a more modern theme for CKAN (closed: fixed)"&gt;#1108&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;more divs.
+&lt;/li&gt;&lt;li&gt;better labelling for css (and javascript)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1300#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1419</link>
+        <guid isPermaLink="false">http://localhost/ticket/1419</guid>
+        <title>#1419: Can't log in via OpenID</title>
+        <pubDate>Tue, 25 Oct 2011 11:43:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I couldn't log into theDataHub with OpenID today. I tried both Google ID and MyOpenID. Both times the login on the remote auth server went fine, but when it returns you to theDataHub you get error "Login failed. Bad username or password."
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1419#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1409</link>
+        <guid isPermaLink="false">http://localhost/ticket/1409</guid>
+        <title>#1409: Add Gravatars to user profiles</title>
+        <pubDate>Fri, 21 Oct 2011 12:39:33 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Since we now require email addresses, it's sensible to request users' gravatars to add a little flavour to their user profile (and, potentially, other places eg. comments threads?)
+&lt;/p&gt;
+&lt;p&gt;
+[Reopened: Additional]
+Use gravatars in the HTML generated by helpers.py to create lists of users. Eg. on user/list and dataset/history.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1409#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1440</link>
+        <guid isPermaLink="false">http://localhost/ticket/1440</guid>
+        <title>#1440: 'paster db load' doesn't update search index</title>
+        <pubDate>Wed, 02 Nov 2011 11:13:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;tt&gt;paster db load ckan.pgdump&lt;/tt&gt; will load in the database but not update the search index, no we're using SOLR.
+&lt;/p&gt;
+&lt;h1 id="implementation"&gt;implementation&lt;/h1&gt;
+&lt;p&gt;
+We can't tack on 'rebuild' to this command, because it needs a 'db upgrade' first. I'm tempted to make 'db load' do the upgrade and rebuild all in one command.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1440#changelog</comments>
+    </item>
+ </channel>
+</rss>

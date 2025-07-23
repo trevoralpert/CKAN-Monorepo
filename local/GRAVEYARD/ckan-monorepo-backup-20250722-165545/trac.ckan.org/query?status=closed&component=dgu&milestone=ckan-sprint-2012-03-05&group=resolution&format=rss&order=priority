@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1526</link>
+        <guid isPermaLink="false">http://localhost/ticket/1526</guid>
+        <title>#1526: [super] Update and test existing DGU package form</title>
+        <pubDate>Tue, 06 Dec 2011 12:08:33 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Re-create behaviour of old form without using form-alchemy.  And unit test.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[X] write high-level functional tests for the form.  Creation / edition / validation.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 6 days (3 days x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] write the html
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days (1 day x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 1.3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] modify the existing validation schema
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days (1 day x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 1.3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] split resources into types: individual, time-series, and additional.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 2.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] contact information is derived from Publisher, but can be altered for each dataset. &lt;a class="closed ticket" href="http://localhost/ticket/1526#1617" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1617&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 4 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 4 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] foi contact information is derived from user, but can be altered for each dataset. &lt;a class="closed ticket" href="http://localhost/ticket/1526#1617" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1617&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 1 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] provide stubs for the theme and sub-themes &lt;a class="closed ticket" href="http://localhost/ticket/1526#1618" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1618&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 1 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] provide stubs for the publisher hierarchy &lt;a class="closed ticket" href="http://localhost/ticket/1526#1619" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1619&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Note - the groups refactor is essentially ready to be used. And this would be a good test case for it.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] don't allow package-type selection when editing a package
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Can't change a dataset from containing time-series resources to one containing individual resources or visa-versa. (&lt;a class="closed ticket" href="http://localhost/ticket/1620" title="enhancement: Update and test existing DGU package form : don't allow package-type ... (closed: fixed)"&gt;#1620&lt;/a&gt;)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 0.5 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1526#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1757</link>
+        <guid isPermaLink="false">http://localhost/ticket/1757</guid>
+        <title>#1757: DGU Hide administrators from public view</title>
+        <pubDate>Mon, 06 Feb 2012 12:19:35 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+On publisher view page - hide administrators from public view - only logged in admins of group should see them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1757#changelog</comments>
+    </item>
+ </channel>
+</rss>

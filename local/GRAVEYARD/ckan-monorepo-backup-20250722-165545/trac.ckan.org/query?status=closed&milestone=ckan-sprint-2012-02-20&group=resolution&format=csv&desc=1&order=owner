@@ -1,0 +1,38 @@
+id,summary,owner,type,priority,component,time
+1705,Implement Vocabularies domain model and API,seanh,enhancement,awaiting triage,ecportal,01/24/12 17:47:34
+1722,Update the package model for vocabularies,seanh,enhancement,awaiting triage,ecportal,01/30/12 19:06:13
+1724,Update logic action functions for vocabularies,seanh,enhancement,awaiting triage,ecportal,01/30/12 19:12:41
+1765,Enhance Tag and Package models with vocabularies,seanh,enhancement,awaiting triage,ecportal,02/06/12 14:04:21
+1776,Granular editing of vocabulary tags,seanh,enhancement,awaiting triage,ecportal,02/06/12 15:13:33
+1675,Publisher admin authz,ross,enhancement,awaiting triage,ckan,01/17/12 12:22:03
+1755,DGU Alpha paged view of publishers,ross,enhancement,awaiting triage,dgu,02/06/12 12:17:14
+1756,DGU Treeview of hierarchical publishers,ross,enhancement,awaiting triage,dgu,02/06/12 12:18:09
+1758,DGU Check user management auth,ross,enhancement,awaiting triage,dgu,02/06/12 12:21:55
+1759,DGU Create publisher form access,ross,enhancement,awaiting triage,dgu,02/06/12 12:22:36
+1760,DGU Extract current publisher hierarchy,ross,enhancement,awaiting triage,dgu,02/06/12 12:23:21
+1761,DGU History visibility,ross,enhancement,awaiting triage,dgu,02/06/12 12:54:49
+1762,DGU Join publisher form,ross,enhancement,awaiting triage,dgu,02/06/12 12:56:32
+1359,Radically simplify standard list of licenses,rgrp,enhancement,awaiting triage,ckan,09/26/11 22:57:35
+1715,Search index multilingual,kindly,enhancement,awaiting triage,ecportal,01/26/12 17:28:04
+1741,Add extention point to dataset view.,kindly,enhancement,awaiting triage,ecportal,02/01/12 14:15:09
+1777,Write about multilingual features for ec.,kindly,enhancement,awaiting triage,ecportal,02/06/12 15:40:35
+1779,Add multilingual translation table.,kindly,enhancement,awaiting triage,ecportal,02/06/12 17:17:11
+1781,Api to add translations.,kindly,enhancement,awaiting triage,ecportal,02/06/12 17:23:51
+1720,Add converter functions to convert tags (with a given taxonomy) to/from tags field,johnglover,enhancement,major,ecportal,01/30/12 17:11:11
+1721,Tag taxonomies table migration,johnglover,enhancement,major,ecportal,01/30/12 17:23:57
+1730,Form field for vocabularies,johnglover,enhancement,minor,ecportal,01/31/12 11:04:57
+1766,Update and deploy EC Portal theme,johnglover,enhancement,major,ecportal,02/06/12 14:10:46
+1767,Write end-to-end functional tests for tag vocabularies,johnglover,enhancement,major,ecportal,02/06/12 14:13:06
+1751,DGU dataset form: collection of updates from feedback,icmurray,enhancement,major,dgu,02/06/12 11:10:12
+1752,DGU: collection of updates from feedback,icmurray,enhancement,major,dgu,02/06/12 11:12:30
+1771,32. Browse by Tags PHASE 1 MUST,icmurray,enhancement,awaiting triage,dgu,02/06/12 14:51:02
+1773,17. Filter “UK Location Records” MUST PHASE 1 [UKLP #21 SHOULD],icmurray,enhancement,awaiting triage,dgu,02/06/12 14:55:30
+1774,22. Mixed Licenses MUST PHASE 2,icmurray,enhancement,awaiting triage,dgu,02/06/12 14:55:53
+1783,Locale change exception when unicode in URL,dread,defect,major,ckan,02/07/12 10:44:45
+1786,Relationships lost when editing package,dread,enhancement,major,ckan,02/07/12 17:20:26
+1791,Changing locale on /dataset/new causes exception,dread,defect,minor,ckan,02/13/12 12:02:36
+1728,Update UKLP harvesters,amercader,enhancement,major,ckan,01/31/12 11:00:10
+1733,Delete (inactivate) harvest sources,amercader,enhancement,major,ckan,01/31/12 11:11:27
+1735,"""Unsaved changes"" warning briefly when you click ""Save""",zephod,enhancement,minor,ckan,01/31/12 11:30:20
+1723,Update tests for taxonomies,seanh,enhancement,awaiting triage,ecportal,01/30/12 19:08:14
+1729,Helper function for extensions to add vocabularies to a ckan instance,johnglover,enhancement,major,ecportal,01/31/12 11:02:03

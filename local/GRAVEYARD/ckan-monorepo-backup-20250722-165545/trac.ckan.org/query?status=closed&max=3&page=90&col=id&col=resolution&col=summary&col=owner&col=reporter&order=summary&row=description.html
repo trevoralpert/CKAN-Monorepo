@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      Custom Query – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="query%3Fstatus=closed&amp;format=rss&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="query%3Fstatus=closed&amp;format=csv&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="query%3Fstatus=closed&amp;format=tab&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" />
+        <link rel="next" href="query%3Fstatus=closed&amp;max=3&amp;page=91&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Next Page" />
+        <link rel="start" href="wiki.1.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/report.css" type="text/css" />
+        <link rel="prev" href="query%3Fstatus=closed&amp;max=3&amp;page=89&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Previous Page" />
+        <link rel="shortcut icon" href="chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search CKAN" />
+    <script type="text/javascript">
+      var properties={"cc":{"label":"Cc","type":"text"},"changetime":{"label":"Modified","type":"time"},"component":{"label":"Component","options":["ckan","ckan hosted","contrib","datacatalogs","dgu","dpm","ecportal","iati","lod2","pdeu","uklii","vdm"],"type":"select"},"description":{"label":"Description","type":"textarea"},"id":{"label":"Ticket","type":"id"},"keywords":{"label":"Keywords","type":"text"},"milestone":{"label":"Milestone","options":["milestone15","milestone1","milestone16","milestone17","milestone18","v0.3","v0.4","v0.5","v0.6","v0.7","v0.8","v0.9","v0.10","v0.11","vdm-0.6","vdm-0.7","v1.0","v1.1","iati-1","iati-2","ckan-v1.2","datapkg-0.7","iati-3","ckan-v1.3-sprint-2","ckan-v1.3-sprint-1","ckan-v1.3-sprint-3","ckan-v1.3","datapkg-0.8","ckan-v1.4-sprint-1","ckan-sprint-2011-12-19","ckan-v1.4-sprint-2","ckan-v1.4-sprint-3","ckan-v1.4-sprint-4","ckan-v1.4-sprint-5","ckan-v1.4-sprint-6","ckan-v1.4","ckan-v1.4-sprint-7","ckan-v1.5-sprint-1","ckan-v1.5-sprint-2","pdeu-1","vdm-0.8","ckan-v1.5-sprint-3","ckan-v1.5-sprint-4","ckan-sprint-2011-09-12","iati-4","ckan-sprint-2011-09-26","ckan-sprint-2011-10-10","ckan-sprint-2011-10-24","ckan-sprint-2011-10-28","ckan-v1.5","ckan-sprint-2011-11-07","ckan-sprint-2011-11-21","ckan-sprint-2011-12-05","ckan-sprint-2012-01-09","ckan-sprint-2012-01-23","ckan-sprint-2012-02-06","ckan-sprint-2012-02-20","ckan-v1.6","ckan-sprint-2012-03-05","ckan-sprint-2012-03-19","ckan-sprint-2012-04-02","ckan-sprint-2012-04-16","ckan-sprint-2012-04-30","ckan-sprint-2012-05-15","ckan-sprint-2012-05-29","ckan-v1.7","demo phase 1","demo phase 2","demo phase 3","ckan-v1.8","ckan-sprint-2012-06-25","opendatasuite 1","ckanbuild","datahub-july","datahub-oct","opendatasuite 2","ckan-v1.9","ckan 2.0","ckan-backlog","ckan-ecportal","ckan-future","ckan-v1.8.1","demo phase 4","demo phase 5"],"type":"select"},"owner":{"label":"Owner","type":"text"},"priority":{"label":"Priority","options":["blocker","critical","major","minor","trivial","awaiting triage","awaiting merge"],"type":"select"},"repo":{"label":"Repository","options":["ckan","ckanclient","ckanext","ckanext-admin","ckanext-community","ckanext-csw","ckanext-dataapi","ckanext-no","ckanext-datapreview","ckanext-deliverance","ckanext-dgu","ckanext-geo","ckanext-harvest","ckanext-iati","ckanext-importlib","ckanext-qa","ckanext-queue","ckanext-solr","ckanext-stats","ckanext-storage","ckanext-upload","ckanext-webhooks","datapkg","vdm"],"type":"select"},"reporter":{"label":"Reporter","type":"text"},"resolution":{"label":"Resolution","options":["fixed","invalid","wontfix","duplicate","worksforme"],"type":"radio"},"status":{"label":"Status","options":["accepted","assigned","closed","new","reopened"],"type":"radio"},"summary":{"label":"Summary","type":"text"},"theme":{"label":"Theme","options":["deployment","notifications","migrations","harvesting","dictization","qa","entities","none"],"type":"select"},"time":{"label":"Created","type":"time"},"type":{"label":"Type","options":["defect","enhancement","refactor","task","requirement","CREP"],"type":"select"}};
+      var modes={"id":[{"name":"is","value":""},{"name":"is not","value":"!"}],"select":[{"name":"is","value":""},{"name":"is not","value":"!"}],"text":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"},{"name":"begins with","value":"^"},{"name":"ends with","value":"$"},{"name":"is","value":""},{"name":"is not","value":"!"}],"textarea":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"}]};
+    </script>
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/query.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="chrome/common/js/folding.js"></script>
+    <script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        initializeFilters();
+        $("#group").change(function() {
+          $("#groupdesc").enable(this.selectedIndex != 0)
+        }).change();
+        $("fieldset legend.foldable").enableFolding(false);
+        /* Hide the filters for saved queries. */
+        if (window.location.href.search(/[?&]report=[0-9]+/) != -1)
+          $("#filters").toggleClass("collapsed");
+        /* Hide the columns by default. */
+        $("#columns").toggleClass("collapsed");
+      });
+    /*]]>*/</script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="prefs.html">Preferences</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li class="active"><a href="report.html">View Tickets</a></li><li><a href="search.html">Search</a></li><li class="last"><a href="wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="report.html">Available Reports</a></li><li class="last">Custom Query</li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="query">
+      <h1>Custom Query <span class="numrows">(2152 matches)</span></h1>
+      <form id="query" method="post" action="query.html"><div><input type="hidden" name="__FORM_TOKEN" value="93d81ccf9a7bb1c456462f62" /></div>
+        <fieldset id="filters">
+          <legend class="foldable">Filters</legend>
+          <table summary="Query filters">
+            <tbody>
+              <tr style="display: none">
+                <td>
+		  <div class="trac-clause-lsep"> <hr /></div>
+		  <div class="trac-clause-msep">Or</div>
+		  <div class="trac-clause-rsep"> <hr /></div>
+		</td>
+              </tr>
+              <tr><td class="trac-clause">
+                <table class="trac-clause">
+                  <tbody>
+                    <tr class="status">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_status_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_status">Status</label></th>
+                      <td class="filter" colspan="2">
+                            <input type="checkbox" id="_0_status_accepted" name="0_status" value="accepted" />
+                            <label for="_0_status_accepted" class="control">accepted</label>
+                            <input type="checkbox" id="_0_status_assigned" name="0_status" value="assigned" />
+                            <label for="_0_status_assigned" class="control">assigned</label>
+                            <input type="checkbox" id="_0_status_closed" name="0_status" value="closed" checked="checked" />
+                            <label for="_0_status_closed" class="control">closed</label>
+                            <input type="checkbox" id="_0_status_new" name="0_status" value="new" />
+                            <label for="_0_status_new" class="control">new</label>
+                            <input type="checkbox" id="_0_status_reopened" name="0_status" value="reopened" />
+                            <label for="_0_status_reopened" class="control">reopened</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="actions">
+                      <td class="and" colspan="2">
+                         <label for="add_filter_0">And</label> 
+                        <select name="add_filter_0" id="add_filter_0">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status" disabled="disabled">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_0" value="+" />
+                        </div>
+                      </td>
+                      <td class="or" colspan="2">
+                        <label for="add_clause">Or</label> 
+                        <select name="add_clause_1" id="add_clause">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_1" value="+" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset id="columns">
+          <legend class="foldable">Columns</legend>
+          <div>
+              <label>
+                <input type="checkbox" name="col" value="summary" checked="checked" />
+                Summary
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="status" />
+                Status
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="owner" checked="checked" />
+                Owner
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="type" />
+                Type
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="priority" />
+                Priority
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="milestone" />
+                Milestone
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="component" />
+                Component
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="resolution" checked="checked" />
+                Resolution
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="time" />
+                Created
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="changetime" />
+                Modified
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="repo" />
+                Repository
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="theme" />
+                Theme
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="reporter" checked="checked" />
+                Reporter
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="keywords" />
+                Keywords
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="cc" />
+                Cc
+              </label>
+          </div>
+        </fieldset>
+        <p class="option">
+          <label for="group">Group results by</label>
+          <select name="group" id="group">
+            <option></option>
+              <option value="component">Component</option>
+              <option value="milestone">Milestone</option>
+              <option value="owner">Owner</option>
+              <option value="priority">Priority</option>
+              <option value="reporter">Reporter</option>
+              <option value="repo">Repository</option>
+              <option value="resolution">Resolution</option>
+              <option value="status">Status</option>
+              <option value="theme">Theme</option>
+              <option value="type">Type</option>
+          </select>
+          <input type="checkbox" name="groupdesc" id="groupdesc" />
+          <label for="groupdesc">descending</label>
+        </p>
+        <p class="option">
+          Show under each result:
+            <label><input type="checkbox" name="row" value="description" checked="checked" />
+            Description</label>
+        </p>
+        <p class="option">
+          <label for="max">Max items per page</label>
+          <input type="text" name="max" id="max" size="10" value="3" />
+        </p>
+        <div class="buttons">
+          <input type="hidden" name="order" value="summary" />
+          <input type="submit" name="update" value="Update" />
+        </div>
+        <hr />
+      </form>
+      <div>
+  <h2 class="report-result">
+    Results <span class="numresults">(268 - 270 of 2152)</span>
+  </h2>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=89&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=80&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 80">80</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=81&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 81">81</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=82&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 82">82</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=83&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 83">83</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=84&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 84">84</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=85&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 85">85</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=86&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 86">86</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=87&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 87">87</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=88&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 88">88</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=89&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 89">89</a>
+      </span>
+      <span>
+        <span class="current">90</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=91&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 91">91</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=92&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 92">92</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=93&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 93">93</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=94&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 94">94</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=95&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 95">95</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=96&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 96">96</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=97&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 97">97</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=98&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 98">98</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=99&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 99">99</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=100&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 100">100</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=91&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Next Page">→</a>
+    </span>
+</div>
+  <table class="listing tickets">
+    <thead>
+    <tr class="trac-columns">
+      <th class="id">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=id&amp;row=description.html">Ticket</a>
+      </th><th class="resolution">
+        <a title="Sort by Resolution (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=resolution&amp;row=description.html">Resolution</a>
+      </th><th class="summary asc">
+        <a title="Sort by Summary (descending)" href="query%3Fstatus=closed&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=summary&amp;row=description.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=owner&amp;row=description.html">Owner</a>
+      </th><th class="reporter">
+        <a title="Sort by Reporter (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=reporter&amp;row=description.html">Reporter</a>
+      </th>
+    </tr>
+    </thead>
+      <tbody>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2253.html" title="View ticket" class="closed">#2253</a></td>
+                    <td class="resolution">
+                      wontfix
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/2253.html" title="View ticket">CMAP [super]</a>
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="reporter">
+                      toby
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>toby</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2012-03-21T14:45:33Z&amp;precision=second.html" title="2012-03-21T14:45:33Z in Timeline">2 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+Somewhere for CMAP stuff not in other tickets
+</p>
+<p>
+need to create some general tickets
+</p>
+<ul><li>template changes
+</li><li>general demo server setup
+</li></ul>
+                    </td>
+                  </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1271.html" title="View ticket" class="closed">#1271</a></td>
+                    <td class="resolution">
+                      fixed
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/1271.html" title="View ticket">CORS support</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="reporter">
+                      rgrp
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>rgrp</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2011-08-13T13:23:59Z&amp;precision=second.html" title="2011-08-13T13:23:59Z in Timeline">3 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+CORS - <a class="ext-link" href="http://www.w3.org/TR/cors/"><span class="icon">​</span>http://www.w3.org/TR/cors/</a> - support.
+</p>
+<p>
+This is what you do in Apache. Should do this in lib/base.py or similar.
+</p>
+<pre class="wiki">    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "POST, PUT, GET, OPTIONS"
+    Header always set Access-Control-Allow-Headers "X-CKAN-API-KEY, Content-Type"
+
+    # Respond to all OPTIONS requests with 200 OK
+    # This could be done in the webapp
+    # This is need for pre-flighted requests (POSTs/PUTs)
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+</pre>
+                    </td>
+                  </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1127.html" title="View ticket" class="closed">#1127</a></td>
+                    <td class="resolution">
+                      fixed
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/1127.html" title="View ticket">CREP0001: Formalise new feature discussion and definition using CREPs</a>
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="reporter">
+                      sebbacon
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>sebbacon</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2011-05-05T13:15:13Z&amp;precision=second.html" title="2011-05-05T13:15:13Z in Timeline">3 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+<strong>Proposer:</strong> Seb Bacon<br />
+<strong>Seconder:</strong> Rufus Pollock<br />
+<br />
+</p>
+<h2 id="Abstract">Abstract</h2>
+<p>
+When adding major new features to CKAN, a longer, more formal discussion 
+will improve software design quality and documentation, better engage
+the wider community, and ensure the core team are up to date with
+latest developments.  
+</p>
+<p>
+I propose a formal process (CREP -- CKAN Revision and Enhancement Proposal) for making this happen.
+</p>
+<h2 id="TheProblem">The Problem</h2>
+<p>
+The current workflow for introducing major new features into CKAN is
+very informal, typically based around one person's great idea, which
+they've discussed with one or two other people in the team.  The
+originator of the idea is typically the only person with access to 
+all the input they've had through such discussions.  Often, the only 
+location of this information is  in that person's head.
+</p>
+<p>
+However, there is a lot of experience embodied in the CKAN community
+which should be drawn on before making large design decisions.  This
+will lead to better software.  Additionally, building consensus in the
+community around a proposal before implementation ensures positive
+community engagement and buy-in to new features, making them more
+likely to be a success.
+</p>
+<p>
+We aren't great at documenting new features.  Documentation after
+coding is complete is an unrewarding experience for most programmers.
+Requiring skeleton documentation before code is written is a good
+discipline that can form the basis of better documentation in the
+future (e.g. by a writer rather than a programmer).
+</p>
+<h2 id="Specification">Specification</h2>
+<p>
+Minor features don't require a CREP, and can just be entered in the
+issue tracking system as a bug or feature.  As a rule of thumb, a
+feature is major if it will take more than a day to implement, or is
+likely to involve matters of opinion in its design.
+</p>
+<p>
+A developer may decide that a CREP is too formal and long-winded. The 
+decision to write a CREP is at at their discretion; however, new 
+features MUST always be proposed via email, even if this is just a 
+couple of sentences.
+</p>
+<p>
+If a feature requires a CREP, the proposer should find a seconder
+for their idea.  This sanity check step happens before a CREP is
+written to ensure at least the possibility of consensus on the CREP.
+</p>
+<p>
+Next the proposer should write a CREP, starting by copying and pasting
+the <a class="ext-link" href="http://wiki.ckan.net/CKAN_Revision_and_Enhancement_Proposals"><span class="icon">​</span>template on the wiki</a> into a new Trac ticket.  This will be with a status of "new" and Type of "CREP".  The proposer should notify
+the <a class="ext-link" href="http://lists.okfn.org/mailman/listinfo/ckan-dev"><span class="icon">​</span>ckan-dev</a> mailing
+list, and possibly the
+<a class="ext-link" href="http://lists.okfn.org/mailman/listinfo/ckan-discuss"><span class="icon">​</span>ckan-discuss</a>
+list for less technical CREPs.
+</p>
+<p>
+The draft can be discussed via email, verbally, or via the trac
+ticket.  In any case, it is the proposer's responsibility to keep the
+CREP updated to reflect the current consensus.
+</p>
+<p>
+Once consensus has been reached, the ticket should be marked with the
+"accepted" status and assigned to a CKAN release milestone.
+</p>
+<p>
+When an accepted CREP has been implemented, it should be resolved as
+"fixed".
+</p>
+<p>
+If no consensus can be reached on a draft CREP, or for some reason an
+accepted CREP doesn't get completed, it should be marked as or "wontfix".
+</p>
+<p>
+If a completed CREP becomes obsolete, it should be marked as "invalid", 
+with a note pointing to the obsoleting ticket(s)
+</p>
+<h2 id="Whydoitthisway">Why do it this way</h2>
+<p>
+Given the distributed nature of the core team plus other volunteers,
+some kind of written procedure is necessary to ensure a fully
+documented and discussed proposal.
+</p>
+<p>
+The idea of "Enhancement Proposals" which can be semi-formally
+proposed and discussed prior to implementation is common in the Open
+Source world (<a class="ext-link" href="http://www.python.org/dev/peps/pep-0001/"><span class="icon">​</span>PEPs</a>,
+<a class="ext-link" href="http://dep.debian.net/"><span class="icon">​</span>DEPs</a>,
+<a class="ext-link" href="http://plone.org/documentation/glossary/plip"><span class="icon">​</span>PLIPs</a>, to name three).
+</p>
+<p>
+Existing historic proposals exist, called CEPs.  The proposed system
+is called CREP (CKAN revision or enhancement proposal) to disambiguate
+it from the legacy proposals, and from the delicious fungus <em>Boletus
+Edulis</em>.
+</p>
+<p>
+Giving a formal structure to the proposal is useful as it gives the
+community a means to identify a CREP that's not had sufficient thought
+or discussion.  An informal email thread can easily be lost and
+important questions (such as backwards compatibility) overlooked.  The
+use of the proposed template empowers any community member to ask the
+proposer to expand on rationale, deliverables, etc.
+</p>
+<p>
+The structure chosen is somewhere between Debian's and Plone's.  It
+aims to give a structure to the debate, a clear start at
+documentation, and also prompt some thinking about implementation and
+timescales.
+</p>
+<p>
+All this policy about structure should not be construed as mandatory.  
+In particular, the later fields in the CREP template regarding 
+Implementation Plan may be omitted if the author doesn't find them 
+helpful.
+</p>
+<p>
+Some projects (e.g. Debian) keep their enhancement proposals in a
+versioning repository; others (e.g. Plone) keep them in an issue
+tracking system.  Trac is proposed for CKAN because we already use it
+for small feature proposals and for team planning.  It seems unlikely
+that change tracking on an individual CREP will be useful; a CREP that
+changes sufficiently from its original form should probably be marked
+"obselete" and a new CREP started.  Using an issue tracking system also
+means we can easily track CREPs by state.
+</p>
+<h2 id="BackwardsCompatibility">Backwards Compatibility</h2>
+<p>
+Some [<a class="ext-link" href="https://bitbucket.org/okfn/ceps/src/76b274888bcf/cep/"><span class="icon">​</span>https://bitbucket.org/okfn/ceps/src/76b274888bcf/cep/</a> legacy 
+enhancement proposals], called CEPs, have previously been started.
+</p>
+<p>
+They are currently all marked as "active".  Any which require
+discussion should be altered by the proposer to match the new CREP
+specification and submitted to trac.  The original CEP should be
+updated with a banner at the top pointing a reader to the new CREP.
+</p>
+<p>
+Any that are now obselete should be clearly marked as such in a banner
+at the top, pointing a reader to the trac for new CREPs.
+</p>
+<h2 id="Implementationplan">Implementation plan</h2>
+<h3 id="Deliverables">Deliverables</h3>
+<ul><li>This CREP, agreed
+</li><li>Support for proposed statuses in Trac
+</li><li>Canned reports for listing CREPs in Trac
+</li></ul><h3 id="Risksandmitigations">Risks and mitigations</h3>
+<ul><li>That this CREP is agreed, but rarely acted on.  This risk can be
+mitigated by nominating a CREP champion in the community or core
+team, whose job it is to say "where's the CREP for that?" and
+generally own the quality of CREPS
+</li></ul><h3 id="Participants">Participants</h3>
+<p>
+Seb Bacon: as current Documentation Czar (May 2011), responsible for 
+ensuring CREPs are up to date.
+</p>
+<h3 id="Progress">Progress</h3>
+<p>
+This document is the entire proposal.
+</p>
+
+                    </td>
+                  </tr>
+      </tbody>
+  </table>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=89&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=80&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 80">80</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=81&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 81">81</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=82&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 82">82</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=83&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 83">83</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=84&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 84">84</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=85&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 85">85</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=86&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 86">86</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=87&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 87">87</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=88&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 88">88</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=89&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 89">89</a>
+      </span>
+      <span>
+        <span class="current">90</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=91&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 91">91</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=92&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 92">92</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=93&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 93">93</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=94&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 94">94</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=95&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 95">95</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=96&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 96">96</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=97&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 97">97</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=98&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 98">98</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=99&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 99">99</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=100&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Page 100">100</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=91&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html" title="Next Page">→</a>
+    </span>
+</div>
+</div>
+      <div class="buttons">
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="wiki/TracQuery.html">TracQuery</a>
+        for help on using queries.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=rss&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" class="rss">RSS Feed</a>
+        </li><li>
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=csv&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" class="csv">Comma-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=tab&amp;max=3&amp;page=90&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description" class="tab">Tab-delimited Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

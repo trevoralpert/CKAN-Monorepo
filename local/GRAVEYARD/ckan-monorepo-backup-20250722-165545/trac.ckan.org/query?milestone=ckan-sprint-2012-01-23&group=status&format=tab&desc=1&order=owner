@@ -1,0 +1,33 @@
+id	summary	owner	type	priority	component	resolution
+1597	Tag search - filter by group		enhancement	minor	ckan	fixed
+1521	[super] Groups UI and UX improvements in v1.6 from Cygri	zephod	enhancement	critical	ckan	fixed
+1646	Resource navigator options display spuriously	zephod	defect	critical	ckan	worksforme
+1299	Activity streams table migration	seanh	enhancement	awaiting triage	ckan	fixed
+1625	Add activity stream events for new/changed users	seanh	enhancement	awaiting triage	ckan	fixed
+1631	Add activity stream events for new/changed groups	seanh	enhancement	awaiting triage	ckan	fixed
+1638	Don't use JsonType in activity streams	seanh	enhancement	awaiting triage	ckan	wontfix
+1608	Merge storage into Core	ross	enhancement	awaiting triage	ckan	fixed
+1609	Celery task for ckanext-archiver to write to webstore.	ross	enhancement	awaiting triage	ckan	fixed
+1401	Some links don't take account when CKAN is mounted at a non-root URL	rgrp	defect	minor	ckan	fixed
+1691	paster user create command takes password on command line	rgrp	enhancement	critical	ckan	invalid
+1475	Create documentation showing how to make an extension that use celery.	kindly	enhancement	awaiting triage	ckan	fixed
+1495	API call for getting a user's public activity stream	kindly	enhancement	awaiting triage	ckan	fixed
+1511	Logic function for getting a user's public activity stream	kindly	enhancement	awaiting triage	ckan	fixed
+1622	Deploy QA on DGU UAT test server - 0.5d	johnglover	enhancement	major	ckan	fixed
+1527	Break DGU package edit form into sections	icmurray	enhancement	major	dgu	fixed
+1541	Setup server for the DGU form-refactor.	icmurray	task	minor	ckan	fixed
+1591	Upgrade CKAN 1.5 instances	icmurray	enhancement	awaiting triage	ckan	fixed
+1645	Update and test existing DGU package form : Apply a simple theme	icmurray	enhancement	major	dgu	fixed
+1575	tag punctuation lost in ca.ckan.net import	dread	enhancement	minor	ckan	fixed
+1613	Post-dataset-edit URL has #section	dread	defect	trivial	ckan	wontfix
+1623	Dump to exclude deleted objects	dread	enhancement	trivial	ckan	fixed
+1624	Typo in dataset edit mode	dread	defect	minor	ckan	fixed
+1626	'About CKAN' page update	dread	enhancement	major	ckan	fixed
+1627	favicon broken	dread	defect	minor	ckan	fixed
+1629	permissions changed during upgrade to 1.5.1	dread	defect	critical	ckan	fixed
+1659	Cannot logout if CKAN mounted at non-root url	dread	defect	minor	ckan	fixed
+1683	Dataset search results - last item out of order	dread	defect	minor	ckan	fixed
+1709	Simple_search fails with all packages	dread	defect	major	ckan	fixed
+1547	Add search methods (before and after) to the IPackageController interface	amercader	enhancement	major	ckan	fixed
+1641	ckanext-archiver: Content-length header not reliable to check if resource has been modified	amercader	enhancement	minor	ckan	fixed
+1655	Setup issues on s025 (Publicdata.eu)	amercader	task	major	pdeu	fixed

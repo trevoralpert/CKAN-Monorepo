@@ -1,0 +1,57 @@
+id,summary,owner,type,priority,component,time
+21,Undelete a package,somebody,enhancement,major,ckan,07/10/06 17:02:16
+77,Rate packages,dread,enhancement,critical,ckan,07/17/09 11:13:13
+88,Download (link) metadata,rgrp,enhancement,awaiting triage,ckan,07/27/09 11:16:25
+90,Link to RDF versions of CKAN data,nickstenning,enhancement,blocker,ckan,07/30/09 08:49:02
+113,Simple script to test data migration on a production db,dread,enhancement,major,ckan,09/07/09 09:42:03
+128,Add ckan_url attribute to REST JSON representation of a Package,dread,enhancement,blocker,ckan,09/25/09 08:18:33
+134,admin interface is only available to sysadmins,rgrp,defect,major,ckan,10/05/09 09:35:14
+135,sysadmins defined in the db,rgrp,enhancement,blocker,ckan,10/05/09 09:36:08
+136,User has publicly viewable page,rgrp,enhancement,critical,ckan,10/05/09 11:20:50
+141,Search api docs,dread,task,critical,ckan,10/07/09 08:10:08
+145,Group shows its administrators,rgrp,enhancement,major,ckan,10/08/09 14:00:03
+148,Parser and loader for esw.org data,dread,enhancement,major,ckan,10/13/09 13:31:36
+149,Loader for esw data recognises existing packages,dread,enhancement,major,ckan,10/13/09 13:32:31
+150,Loader for esw data uses REST API,dread,enhancement,major,ckan,10/13/09 13:33:48
+152,Package has editable 'Extra' fields,dread,enhancement,major,ckan,10/15/09 14:01:56
+157,Log message not persisted through preview,dread,enhancement,major,ckan,10/16/09 11:59:56
+158,Add 'extras' to REST API,dread,enhancement,major,ckan,10/16/09 14:27:39
+159,Searching for tags:... resulting in lots of tags being found,dread,defect,critical,ckan,10/20/09 09:14:57
+160,Implement internal links in CKAN notes markup,dread,enhancement,critical,ckan,10/20/09 09:25:51
+161,Tag listing is incorrect,dread,defect,blocker,ckan,10/20/09 09:28:45
+162,Tags should be automatially lowere-cased if not already,dread,enhancement,major,ckan,10/20/09 14:17:49
+163,Regularly put CKAN RDF on Talis CC,rgrp,enhancement,major,ckan,10/20/09 15:29:47
+166,Add extras editing to ckanclient,dread,enhancement,major,ckan,10/22/09 09:26:21
+167,REST interface you can't update multiple tags,dread,defect,major,ckan,10/22/09 11:13:13
+170,Paginate search results,rgrp,enhancement,major,ckan,10/23/09 15:59:44
+172,Build ckan documentation using sphinx and upload,rgrp,enhancement,critical,ckan,10/25/09 16:43:39
+173,Diffing WUI,rgrp,enhancement,blocker,ckan,10/26/09 13:56:52
+174,Packages search broken for 'only openly licensed',rgrp,defect,major,ckan,10/27/09 13:41:07
+175,Creation date,rgrp,enhancement,blocker,ckan,10/28/09 18:21:10
+178,Excel package importer,rgrp,enhancement,critical,ckan,11/03/09 10:27:14
+187,Full-text search,rgrp,enhancement,critical,ckan,11/10/09 16:19:10
+189,Multiple download urls,dread,enhancement,critical,ckan,11/16/09 15:42:00
+194,Check star ratings aren't influenced by search engine crawlers,rgrp,defect,awaiting triage,ckan,11/17/09 15:25:12
+195,Association listings should be alphabetically sorted (e.g. a group's packages),rgrp,enhancement,critical,ckan,11/17/09 16:30:48
+197,Simple dumper,dread,enhancement,blocker,ckan,11/23/09 10:34:55
+202,Internationalization (i18n) try-out,tonfa,enhancement,critical,ckan,12/07/09 09:46:32
+203,show package counts for groups in WUI,dread,enhancement,major,ckan,12/07/09 12:08:10
+204,Custom package input form,dread,enhancement,blocker,ckan,12/07/09 12:29:25
+208,Obfuscate author email and maintainer email field,dread,enhancement,major,ckan,12/07/09 16:38:58
+212,"Switch to using m.okfn.org ""kforge"" media (css and behaviour)",rgrp,enhancement,critical,ckan,12/13/09 11:28:48
+213,Automate CKAN deployment,dread,enhancement,major,ckan,12/14/09 17:28:27
+214,UI Review - General template,nickstenning,enhancement,critical,ckan,12/15/09 12:19:41
+217,UI Review - Search results,nickstenning,enhancement,critical,ckan,12/15/09 12:24:30
+218,UI Review - Package listing,nickstenning,enhancement,critical,ckan,12/15/09 12:25:03
+220,UI Review - Package read,nickstenning,enhancement,critical,ckan,12/15/09 12:28:56
+224,UI Review - Groups,nickstenning,enhancement,critical,ckan,12/15/09 12:32:40
+229,Resource hashes,dread,enhancement,major,ckan,01/05/10 10:11:27
+112,Test db schema created via migration scripts,rgrp,enhancement,major,ckan,09/07/09 09:41:35
+154,Package form guidance,rgrp,enhancement,minor,ckan,10/15/09 15:46:12
+144,Most popular packages listed on homepage,rgrp,enhancement,awaiting triage,ckan,10/08/09 13:59:51
+147,Parser and loader for esw.org data,dread,enhancement,major,ckan,10/13/09 13:31:35
+151,User object should have a created attribute,dread,enhancement,critical,ckan,10/15/09 06:54:54
+153,Group's packages listed alphabetically,dread,enhancement,blocker,ckan,10/15/09 15:45:15
+180,Tag cloud as way to view CKAN tags,rgrp,enhancement,awaiting triage,ckan,11/06/09 19:04:14
+188,Improve package listing views,rgrp,enhancement,critical,ckan,11/10/09 16:20:31
+139,Ensure you cannot add same tag twice to a package,rgrp,defect,major,ckan,10/05/09 18:49:12

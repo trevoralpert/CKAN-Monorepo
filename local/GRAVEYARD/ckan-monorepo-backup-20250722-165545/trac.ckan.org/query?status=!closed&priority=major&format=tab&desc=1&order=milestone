@@ -1,0 +1,59 @@
+id	summary	status	owner	type	milestone	component
+1135	Changeset model for vdm	assigned	kindly	enhancement		vdm
+1137	Remove need for statefulness in vdm	assigned	kindly	enhancement		vdm
+1244	Notes field carriage-returns converted to CRLF	assigned		enhancement		ckan
+1322	Action API improvements	assigned		enhancement		ckan
+1460	Improve extensions documentation	assigned		enhancement		ckan
+1689	List deleted datasets in API	assigned	kindly	enhancement		ckan
+2635	Non-destructive SOLR reindex	new		enhancement		ckan
+2949	Reenable Data API button on the new theme	new	amercader	defect		ckan
+2357	Create build script for front-end resources	accepted	aron.carroll	enhancement	demo phase 5	ckan
+2641	Adapt spatial widgets to new theme	assigned	johnmartin	enhancement	demo phase 5	ckan
+2790	logic.action.user_show is slow	new	kindly	enhancement	demo phase 4	ckan
+2818	Improve related item schema	assigned	seanh	defect	demo phase 4	ckan
+2887	"""Welcome to CKAN!"" on front page is untranslatable"	new		defect	ckan-v1.8.1	ckan
+989	Extending the model from plugins	new	kindly	enhancement	ckan-future	ckan
+1235	[super] Search Improvements	new		enhancement	ckan-future	ckan
+1366	Search inside extra fields	assigned		defect	ckan-future	ckan
+1438	Action API - parameter discovery/checking	new		enhancement	ckan-future	ckan
+1818	Spatial metadata editor	new	amercader	enhancement	ckan-future	ckan
+256	Package relationships - 3. Edit in WUI	assigned		requirement	ckan-backlog	ckan
+728	CSW Harvesting shall be optimised in respect of reharvesting only records that have changed	assigned	amercader	requirement	ckan-backlog	uklii
+794	Investigate reconciling UKLP Publisher and Provider with DGU	assigned	amercader	requirement	ckan-backlog	uklii
+1041	Start Using the CKAN Wiki for Tutorial-style documentation	assigned	thejimmyg	enhancement	ckan-backlog	ckan
+1134	CREP0003: Description and Configuration of Harvesters	new		CREP	ckan-backlog	ckan
+1152	True support for generic CSW servers	new	amercader	enhancement	ckan-backlog	uklii
+1163	Improvements to Storage Extension	new	rgrp	enhancement	ckan-backlog	ckan
+1168	Test system for deb packaging	assigned	thejimmyg	enhancement	ckan-backlog	ckan
+1257	Anti-Spam tools	new		enhancement	ckan-backlog	ckan
+1262	"Enforce ""create-user"" permission"	new		enhancement	ckan-backlog	ckan
+1286	Remove remaining formalchemy stuff	new		enhancement	ckan-backlog	ckan
+1311	Modal user register and login form	new	rgrp	enhancement	ckan-backlog	ckan
+1343	[super] User related improvements (login, user pages etc)	new	rgrp	enhancement	ckan-backlog	ckan
+1352	Use logic functions instead of as_dict when indexing entities	new		enhancement	ckan-backlog	ckan
+1439	Action API discoverablility	new		enhancement	ckan-backlog	ckan
+1447	disk space leakage	assigned	kindly	defect	ckan-backlog	ckan
+1489	Updating example theme/extension	assigned		enhancement	ckan-backlog	ckan
+1534	Change revisions to record userid rather than username	new		enhancement	ckan-backlog	ckan
+1542	Buttons to purge spam datasets and groups	new		enhancement	ckan-backlog	ckan
+1577	Can't upload file with foreign chars in filename	new	rgrp	defect	ckan-backlog	ckan
+1584	QA report improvements - 2.5d	new	johnglover	enhancement	ckan-backlog	ckan
+1588	QA - Give SPARQL endpoints a 4 star rating	new	johnglover	enhancement	ckan-backlog	ckan
+1589	QA - Give 5 star rating to datasets with link metadata	new	johnglover	enhancement	ckan-backlog	ckan
+1661	Wrong Routes version installed by CKAN package	assigned		defect	ckan-backlog	ckan
+1827	'Register' link should be hidden if you not allowed to register	new		enhancement	ckan-backlog	ckan
+2268	UKLP Use same schema as form for harvested records	new	thejimmyg	enhancement	ckan-backlog	uklii
+3011	Recline fixes and updates for CKAN 2.0	new	johnglover	enhancement	ckan 2.0	ckan
+3017	New stable branch for the demo server	new	johnglover	enhancement	ckan 2.0	ckan
+3019	Cannot delete dataset extras	new		defect	ckan 2.0	ckan
+2405	Improvements to data viewer embed	assigned	icmurray	defect	ckan-v1.9	ckan
+2430	Look into marking tickets as dependent on other tickets in trac	accepted	seanh	enhancement	ckan-v1.9	ckan
+2431	Trac git integration	accepted	seanh	enhancement	ckan-v1.9	ckan
+2466	Fix spam handling on trac	accepted	seanh	task	ckan-v1.9	ckan
+2733	Datastore logic functions	new	johnglover	enhancement	ckan-v1.9	ckan
+2745	Password reset returns an exception if the key parameter is missing	new		defect	ckan-v1.9	ckan
+2412	More than one resource invalidatiing breaks dataset edit form	assigned	zephod	defect	ckan-sprint-2012-06-25	ckan
+2279	Write tutorial for our DataStore API / Data Explorer	new	rgrp	enhancement	ckan-v1.8	ckan
+2363	Documentation of best caching practice.	new	toby	enhancement	ckan-v1.8	ckan
+2963	Timeout on tag pages with lots of datasets	new		defect	ckan-v1.8	ckan
+2331	Search should AND terms not OR terms	reopened	kindly	defect	ckan-sprint-2012-05-29	ckan

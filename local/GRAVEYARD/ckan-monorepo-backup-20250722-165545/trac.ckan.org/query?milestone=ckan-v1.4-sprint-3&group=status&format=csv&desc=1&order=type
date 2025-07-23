@@ -1,0 +1,22 @@
+id,summary,owner,type,priority,component,resolution
+427,Match licenses from GEMINI document,thejimmyg,task,major,uklii,fixed
+904,Review CKAN documentation,rgrp,task,critical,ckan,fixed
+1018,Remove gov form,dread,task,major,ckan,fixed
+801,Get/Set last harvested time for a given harvest source,wwaites,enhancement,major,uklii,duplicate
+927,[super] Improvements to CKAN documentation,rgrp,enhancement,critical,ckan,fixed
+999,Factor out ckan.net theme changes to a separate theme repo and apply,rgrp,enhancement,minor,ckan,fixed
+1000,Remove call timings code,kindly,enhancement,critical,ckan,fixed
+1003,CKAN Javascript library and demonstration web interface,rgrp,enhancement,critical,ckan,fixed
+1011,Make pluggable AuthzGroups implementation,sebbacon,enhancement,awaiting triage,ckan,fixed
+1019,Webhooks notification service,pudo,enhancement,major,ckan,fixed
+1021,Config option to disable OpenID,pudo,enhancement,critical,ckan,fixed
+1022,Error reporting in CKAN worker API,pudo,enhancement,major,ckan,fixed
+1024,Lock down all controller actions in CKAN,pudo,enhancement,critical,ckan,duplicate
+1025,Default authz can be set in config,dread,enhancement,blocker,ckan,fixed
+1026,cli for creating users,dread,enhancement,minor,ckan,fixed
+1027,Authorization checks on all controller actions,pudo,enhancement,critical,ckan,fixed
+994,document a new migration methodology,kindly,defect,major,ckan,fixed
+1014,"Decouple oAuth repoze extension from DataNO, write tests",sebbacon,defect,awaiting triage,DGU,fixed
+1015,Editing group gives exception,kindly,defect,critical,ckan,fixed
+1028,Open redirect in locale setting,dread,defect,blocker,ckan,fixed
+1029,synchronous search erroring when harvesting is run.,,defect,major,ckan,fixed

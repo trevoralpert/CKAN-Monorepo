@@ -1,0 +1,50 @@
+id	summary	owner	type	priority	component	resolution
+1418	If default language is not 'en' then you can't switch language to 'en'	dread	defect	major	ckan	duplicate
+1238	Viewing a package @date misses non-PackageRevisions	kindly	defect	major	ckan	invalid
+1312	Particular characters in JSON cause exception creating package on API	dread	enhancement	minor	ckan	invalid
+1426	Validation errors cause 409 not 400 response	dread	defect	minor	ckan	invalid
+78	Extend login cookie lifetime	rgrp	enhancement	trivial	ckan	fixed
+318	Insufficient validation of resource URIs	johnglover	defect	major	ckan	fixed
+816	Autocomplete for the resource format field	johnglover	enhancement	minor	ckan	fixed
+888	Improvements to the dataproxy and the data API	johnglover	enhancement	major	ckan	fixed
+1128	Upload Scotland gov data	dread	task	major	ckan	fixed
+1150	Non-ASCII chars prevent data preview	johnglover	defect	awaiting triage	ckan	fixed
+1154	Make ckan robust against solr failure	johnglover	enhancement	major	ckan	fixed
+1172	Remove all try: except: blocks that don't re-raise the original exception	dread	defect	major	ckan	fixed
+1176	unicode_body exception	thejimmyg	defect	trivial	ckan	fixed
+1183	"Downloads ""Preview"" button doesn't preview."	johnglover	defect	awaiting triage	ckan	fixed
+1192	Convert CKAN Sphinx docs into admin/reference manual	annapowellsmith	task	major	ckan	fixed
+1195	Storage extension to handle incorrect routes better	rgrp	defect	minor	ckan	fixed
+1208	Webstore: a datastore with web API	rgrp	enhancement	major	ckan	fixed
+1218	Colour the History tab icon	dread	enhancement	minor	ckan	fixed
+1221	Password reset tidy up	dread	defect	minor	ckan	fixed
+1222	Mailer has no tests	dread	defect	major	ckan	fixed
+1225	Tool for mass tag changes	dread	enhancement	minor	ckan	fixed
+1228	Display OpenID login errors	dread	enhancement	minor	ckan	fixed
+1230	Make sure plugins tables work in tests.		enhancement	awaiting triage	ckan	fixed
+1234	Setting locale error conditions handled badly	dread	enhancement	minor	ckan	fixed
+1239	Remove and re-add tag on package not working	rgrp	defect	critical	ckan	fixed
+1246	Search results on ckan.net are mistakenly all 'open'	pudo	defect	critical	ckan	fixed
+1247	Put docs on ReadTheDocs	rgrp	task	minor	ckan	fixed
+1253	Authz refactor	amercader	enhancement	major	ckan	fixed
+1254	Feature sheet	dread	task	major	ckan	fixed
+1256	fix modification extension for moderation	kindly	defect	awaiting triage	ckan	fixed
+1258	Bring purge revision into ckan repo from vdm	kindly	enhancement	awaiting triage	ckan	fixed
+1265	user/edit error conditions cause exceptions	dread	defect	minor	ckan	fixed
+1266	Timestamps without microseconds causing exception	dread	defect	critical	ckan	fixed
+1270	Default site www.ckan.net is a redirect and loses POSTs	dread	defect	minor	ckan	fixed
+1271	CORS support	rgrp	enhancement	major	ckan	fixed
+1274	Testing solr search	johnglover	enhancement	major	ckan	fixed
+1281	Locale change flash message in wrong language	pudo	defect	minor	ckan	fixed
+1318	'Register user' doesn't log you in	dread	defect	blocker	ckan	fixed
+1323	GET /authorizationgroup causes Exception when logged in	dread	enhancement	critical	ckan	fixed
+1329	i18n poor in some templates - missing i18n tags	dread	defect	major	ckan	fixed
+1333	Move form converters to ckan core	amercader	enhancement	minor	ckan	fixed
+1334	"""AttributeError: 'NoneType' object has no attribute 'name'"" exception when logging in"	amercader	defect	major	ckan	fixed
+1337	Group extras are JSON endoded in the REST API responses	amercader	defect	minor	ckan	fixed
+1338	Exception when trying to use a custom form schema from an extension	amercader	defect	major	ckan	fixed
+1340	Editing non-existent group causes Exception	dread	defect	minor	ckan	fixed
+1346	'get_authorization_group_dict not found' exception	dread	defect	minor	ckan	fixed
+1347	Exception caused by New Group form POST with bad formed parameter	dread	defect	minor	ckan	fixed
+1421	Tag cloud recipe broken	dread	defect	minor	ckan	fixed
+1427	Tags validation needs to limit length to 100 characters	dread	enhancement	trivial	ckan	fixed

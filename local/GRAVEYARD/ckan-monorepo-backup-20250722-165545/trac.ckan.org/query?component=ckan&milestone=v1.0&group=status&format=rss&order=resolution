@@ -1,0 +1,1258 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=v1.0&amp;group=status&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=v1.0&amp;group=status&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/59</link>
+        <guid isPermaLink="false">http://localhost/ticket/59</guid>
+        <title>#59: Provide a basic guide to CKAN on the site</title>
+        <pubDate>Mon, 06 Apr 2009 11:49:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Use contents from ckan package notes section (rgrp)
+&lt;/li&gt;&lt;li&gt;Update that section to be more guide-like (jwyg)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/59#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/124</link>
+        <guid isPermaLink="false">http://localhost/ticket/124</guid>
+        <title>#124: Display Generic Package Attributes in WUI</title>
+        <pubDate>Wed, 23 Sep 2009 12:41:42 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Split out from &lt;a class="closed ticket" href="http://localhost/ticket/43" title="enhancement: Generic Attributes for Packages (closed: fixed)"&gt;ticket:43&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/124#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/138</link>
+        <guid isPermaLink="false">http://localhost/ticket/138</guid>
+        <title>#138: User has editable home page</title>
+        <pubDate>Mon, 05 Oct 2009 11:23:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Generic text box for markdown about the user 'About'
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Model's user table reflects these:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'about' attribute
+&lt;/li&gt;&lt;li&gt;'created' attribute is a default=datetime.now() - so when user was created
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Need edit page for this.
+&lt;/p&gt;
+&lt;p&gt;
+Only user should be able to edit it.
+&lt;/p&gt;
+&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/136" title="enhancement: User has publicly viewable page (closed: fixed)"&gt;ticket:136&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/142" title="defect: Update User object with additional fields such as 'nickname' (closed: fixed)"&gt;ticket:142&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/138#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/156</link>
+        <guid isPermaLink="false">http://localhost/ticket/156</guid>
+        <title>#156: Whitelist for html in mark-down field</title>
+        <pubDate>Thu, 15 Oct 2009 16:26:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Not just links that need to be displayed. Other html should be displayed too, such as tables which can't be represented in markdown. Do a search of the existing fields to see what is needed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/156#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/164</link>
+        <guid isPermaLink="false">http://localhost/ticket/164</guid>
+        <title>#164: Creating RDF data from CKAN</title>
+        <pubDate>Tue, 20 Oct 2009 15:30:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Related to:
+&lt;a class="closed ticket" href="http://localhost/ticket/90" title="enhancement: Link to RDF versions of CKAN data (closed: fixed)"&gt;ticket:90&lt;/a&gt; Link to RDF version of CKAN data and
+&lt;a class="closed ticket" href="http://localhost/ticket/163" title="enhancement: Regularly put CKAN RDF on Talis CC (closed: fixed)"&gt;ticket:163&lt;/a&gt; (regularly convert CKAN data to RDF).
+&lt;/p&gt;
+&lt;p&gt;
+Convert ckan data to RDF with suitable ontology and put on semantic.ckan.net.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/164#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/179</link>
+        <guid isPermaLink="false">http://localhost/ticket/179</guid>
+        <title>#179: Restore 404 and 500 messages in WUI</title>
+        <pubDate>Thu, 05 Nov 2009 09:17:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Cost: 0.5h (?)
+&lt;/p&gt;
+&lt;p&gt;
+Conjecture this went missing in cset:a35db862a841
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/179#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/182</link>
+        <guid isPermaLink="false">http://localhost/ticket/182</guid>
+        <title>#182: Improve openness icons</title>
+        <pubDate>Fri, 06 Nov 2009 19:09:50 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Tick and cross aren't clear enough. Propose:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Icon for downloadability (nothing if absent ...(?))
+&lt;/li&gt;&lt;li&gt;Icon for open license? (Need something if closed ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 2h (?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/182#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/196</link>
+        <guid isPermaLink="false">http://localhost/ticket/196</guid>
+        <title>#196: RDF URI to resolve on CKAN</title>
+        <pubDate>Fri, 20 Nov 2009 14:39:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Provide RDF version of a package at the RDF URI:
+&lt;a class="ext-link" href="http://ckan.net/package/rdf/32000-naples-florida-businesses-kml"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/rdf/32000-naples-florida-businesses-kml&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+See email on OKFN help:
+&lt;/p&gt;
+&lt;p&gt;
+For the information to be Linked Data, the following URI (from the
+api.talis.com SPARQL call) should be resolvable to RDF, or an RDFa
+enhanced HTML page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/196#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/201</link>
+        <guid isPermaLink="false">http://localhost/ticket/201</guid>
+        <title>#201: Stress test ckan</title>
+        <pubDate>Thu, 03 Dec 2009 12:53:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Check:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;high numbers of simultaneous users
+&lt;/li&gt;&lt;li&gt;incomplete transactions
+&lt;/li&gt;&lt;li&gt;etc.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/201#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/206</link>
+        <guid isPermaLink="false">http://localhost/ticket/206</guid>
+        <title>#206: UI review</title>
+        <pubDate>Mon, 07 Dec 2009 15:32:21 GMT</pubDate>
+        
+        <dc:creator>nickstenning</dc:creator>
+
+        <description>&lt;p&gt;
+Investigate and list (on the wiki at &lt;a class="wiki" href="http://localhost/wiki/UiReviewNotes"&gt;wiki:UiReviewNotes&lt;/a&gt;) CKAN's UI issues, in particular:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Form usability
+&lt;ul&gt;&lt;li&gt;best example: &lt;a class="ext-link" href="http://ckan.net/package/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/new&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;"Extras" fields
+&lt;/li&gt;&lt;li&gt;Adding to groups (from group page or from package page?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Overview pages: reduction in visual noise and unnecessary elements.
+&lt;ul&gt;&lt;li&gt;best example: package overview page
+&lt;/li&gt;&lt;li&gt;consider openness/downloadability icons
+&lt;/li&gt;&lt;li&gt;display common metadata fields in a more structured fashion?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est cost: 2 hrs.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/206#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/207</link>
+        <guid isPermaLink="false">http://localhost/ticket/207</guid>
+        <title>#207: Reimplement tag selection in jQuery</title>
+        <pubDate>Mon, 07 Dec 2009 15:39:00 GMT</pubDate>
+        
+        <dc:creator>nickstenning</dc:creator>
+
+        <description>&lt;p&gt;
+Remove the current dependency on Yahoo YUI toolkit for doing tag autocompletion on package edit forms.
+&lt;/p&gt;
+&lt;p&gt;
+The (KForge-derived) behaviour files for CKAN can easily be switched to the new jQuery-based ones: see &lt;a class="closed ticket" href="http://localhost/ticket/212" title="enhancement: Switch to using m.okfn.org &amp;#34;kforge&amp;#34; media (css and behaviour) (closed: fixed)"&gt;ticket:212&lt;/a&gt;. Once this is done, it would make sense to implement the tag-selection code with jQuery.
+&lt;/p&gt;
+&lt;p&gt;
+Relevant pages include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;e.g. &lt;a class="ext-link" href="http://ckan.net/package/edit/acawiki"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/edit/acawiki&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/207#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/215</link>
+        <guid isPermaLink="false">http://localhost/ticket/215</guid>
+        <title>#215: UI Review - Home page</title>
+        <pubDate>Tue, 15 Dec 2009 12:22:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;'Login via OpenID' -&amp;gt; 'Login with OpenID'?
+&lt;/li&gt;&lt;li&gt;Elements:
+&lt;ul&gt;&lt;li&gt;Search
+&lt;/li&gt;&lt;li&gt;about CKAN
+&lt;/li&gt;&lt;li&gt;3 column Packages view (see &lt;a class="closed ticket" href="http://localhost/ticket/219" title="enhancement: UI Review - Package (closed: wontfix)"&gt;ticket:219&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Small tag cloud (RHS)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also, what about &lt;a class="assigned ticket" href="http://localhost/ticket/143" title="enhancement: Most active users listed on homepage (assigned)"&gt;ticket:143&lt;/a&gt; ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/215#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/216</link>
+        <guid isPermaLink="false">http://localhost/ticket/216</guid>
+        <title>#216: UI Review - Search</title>
+        <pubDate>Tue, 15 Dec 2009 12:23:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;allow clicking on 'only openly licensed'/'only downloadable' to select/deselect checkboxes: make them &amp;lt;label&amp;gt;s.
+&lt;/li&gt;&lt;li&gt;cut 'only's -- use word 'filter' instead
+&lt;/li&gt;&lt;li&gt;doesn't appear to match substrings!? A search for 'anna' doesn't return match the 'annakarenina' package.
+&lt;/li&gt;&lt;li&gt;autocomplete package names &amp;amp; tags
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/216#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/221</link>
+        <guid isPermaLink="false">http://localhost/ticket/221</guid>
+        <title>#221: UI Review - Package edit</title>
+        <pubDate>Tue, 15 Dec 2009 12:29:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Package edit page &lt;a href="http://localhost/package/edit/mypackagename"&gt;package/edit/mypackagename&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Ability to add the package to groups on this page.
+&lt;/li&gt;&lt;li&gt;Fields could be grouped.
+&lt;/li&gt;&lt;li&gt;Inconsistent capitalisation (Url -&amp;gt; URL).
+&lt;/li&gt;&lt;li&gt;Tag editor YUI script appears to break occasionally.
+&lt;/li&gt;&lt;li&gt;Perhaps move to two column forms to save vertical space?
+&lt;/li&gt;&lt;li&gt;Notes field to monospace?
+&lt;/li&gt;&lt;li&gt;Extras fields need some jQuery love -- shouldn't have a fixed number available.
+&lt;/li&gt;&lt;li&gt;Typography is a bit of a mess.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/221#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/223</link>
+        <guid isPermaLink="false">http://localhost/ticket/223</guid>
+        <title>#223: UI Review - Tag</title>
+        <pubDate>Tue, 15 Dec 2009 12:31:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Tags landing page &lt;a href="http://localhost/tag"&gt;tag&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Both search for tags *and* browse the list of tags right here
+&lt;/li&gt;&lt;li&gt;Big cloud of tags (sorted by popularity/usage?) filterable with a search box.
+&lt;/li&gt;&lt;li&gt;Tags search page &lt;a href="http://localhost/tag/search"&gt;tag/search&lt;/a&gt; and list &lt;a href="http://localhost/tag/list"&gt;tag/list&lt;/a&gt; are both redundant and should be merged straight into &lt;a href="http://localhost/tag"&gt;tag&lt;/a&gt;.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/223#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/230</link>
+        <guid isPermaLink="false">http://localhost/ticket/230</guid>
+        <title>#230: Refactor 'package preview' to use 'package read'</title>
+        <pubDate>Wed, 06 Jan 2010 14:28:04 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Requires Package Read to not use the side-bar
+&lt;/li&gt;&lt;li&gt;Need to sync params to a package object that is taken out of the session so that it doesn't go into the database.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/230#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/239</link>
+        <guid isPermaLink="false">http://localhost/ticket/239</guid>
+        <title>#239: Test migrate scripts</title>
+        <pubDate>Mon, 25 Jan 2010 17:18:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Integrate new test upgrade into testmigrate stuff.
+&lt;/p&gt;
+&lt;p&gt;
+New "migrate.ini" config file programmed with the db to be used for migrate tests and a param saying where the db dump is.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/239#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/240</link>
+        <guid isPermaLink="false">http://localhost/ticket/240</guid>
+        <title>#240: Do not allow creation of PackageResource object without a url</title>
+        <pubDate>Fri, 05 Feb 2010 19:55:47 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently it is possible (v0.11) to have a &lt;a class="missing wiki"&gt;PackageResource?&lt;/a&gt; object without a url. This should be impossible to do (either at creation time or via modification).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/240#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/241</link>
+        <guid isPermaLink="false">http://localhost/ticket/241</guid>
+        <title>#241: License doesn't preview correctly</title>
+        <pubDate>Mon, 08 Feb 2010 10:39:06 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+4 failing tests, including 2 in misc/package_saver and 2 in functional/test_package.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/241#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/247</link>
+        <guid isPermaLink="false">http://localhost/ticket/247</guid>
+        <title>#247: Alternative formats links on package page</title>
+        <pubDate>Thu, 11 Feb 2010 12:12:06 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+"Alternative formats". Has logo for RDF (link to RDF) and JSON (link via CKAN REST i/f).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;How do we know if RDF available? Ans: see details in &lt;a class="closed ticket" href="http://localhost/ticket/90" title="enhancement: Link to RDF versions of CKAN data (closed: fixed)"&gt;ticket:90&lt;/a&gt;.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/247#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/248</link>
+        <guid isPermaLink="false">http://localhost/ticket/248</guid>
+        <title>#248: i18n of forms</title>
+        <pubDate>Thu, 11 Feb 2010 12:45:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Need to do i18n of forms (not in templates but in code). Should consult with tonfa about this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/248#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/251</link>
+        <guid isPermaLink="false">http://localhost/ticket/251</guid>
+        <title>#251: Present in the API a list of revision IDs, and present individual revisions when referenced by ID</title>
+        <pubDate>Thu, 18 Feb 2010 19:02:23 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Want to have:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;/api/search/revision/
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Support querying by "since time" and "since revision". Each individual revision should be available in the REST API (read-only):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;/api/rest/revision/{revision ID}
+&lt;ul&gt;&lt;li&gt;should include revision attributes plus revision.packages e.g. like { "id": "...", ... "packages": [ list of packages names from e.g. revision.packages ] }
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/251#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/254</link>
+        <guid isPermaLink="false">http://localhost/ticket/254</guid>
+        <title>#254: Package relationships - 1. model</title>
+        <pubDate>Tue, 23 Feb 2010 12:34:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+New domain object: &lt;a class="missing wiki"&gt;PackageRelationship?&lt;/a&gt; (revisioned)
+&lt;/p&gt;
+&lt;p&gt;
+Attributes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;subject (Package reference)
+&lt;/li&gt;&lt;li&gt;object (Package reference)
+&lt;/li&gt;&lt;li&gt;type (string)
+&lt;/li&gt;&lt;li&gt;comment
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Relationship type values:
+depends_on (dependency_of)
+derives_from (has_derivation)
+child_of (parent_of)
+&lt;/p&gt;
+&lt;p&gt;
+Relationship type is stored as a string, as given in the first column. The reverse relationship (bracketed) is given just for display purposes only.
+&lt;/p&gt;
+&lt;p&gt;
+Subject / Object - as in a sentence: "Dracos is derived from OSM" is &amp;lt;subject&amp;gt; &amp;lt;predicate&amp;gt; &amp;lt;object&amp;gt;. We'll use 'type' instead of 'predicate' as that is a more familiar word.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/254#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/255</link>
+        <guid isPermaLink="false">http://localhost/ticket/255</guid>
+        <title>#255: Package relationships - 2. Read in WUI</title>
+        <pubDate>Tue, 23 Feb 2010 12:35:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+WUI:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;View: show both sides of the relationship (but think carefully -- e.g. a given package may have *many* dependents ...)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/255#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/257</link>
+        <guid isPermaLink="false">http://localhost/ticket/257</guid>
+        <title>#257: Package relationships - 4. Read in API</title>
+        <pubDate>Tue, 23 Feb 2010 12:37:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+API:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Appear in package listing Example: 'relationships': [{'is_dependency_of':'osm', comments:'Since version 0.2'}, {'is_parent_of':'bobs_maps'}]
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/257#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/258</link>
+        <guid isPermaLink="false">http://localhost/ticket/258</guid>
+        <title>#258: Add uuids into package in REST</title>
+        <pubDate>Tue, 23 Feb 2010 19:52:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Add uuids into package in REST interface.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/258#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/259</link>
+        <guid isPermaLink="false">http://localhost/ticket/259</guid>
+        <title>#259: isitopen enquiry broken</title>
+        <pubDate>Wed, 24 Feb 2010 11:57:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Pressing the 'make an enquiry' link on the package read page gives 404. (Also links should also be changed from isitopen.ckan.net to isitopendata.org)
+&lt;/p&gt;
+&lt;p&gt;
+Example link is:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://isitopen.ckan.net/enquiry/create/?ckan_package=zeno"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://isitopen.ckan.net/enquiry/create/?ckan_package=zeno&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+which gets forwarded to:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.isitopendata.org/enquiry/create/?ckan_package=zeno"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.isitopendata.org/enquiry/create/?ckan_package=zeno&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+which gives 404
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/259#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/260</link>
+        <guid isPermaLink="false">http://localhost/ticket/260</guid>
+        <title>#260: Display group package list in standard (richer) way</title>
+        <pubDate>Thu, 25 Feb 2010 12:24:20 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently use old "bullet-point" style. Should change to now standard style used on e.g. package search results page.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 0.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/260#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/261</link>
+        <guid isPermaLink="false">http://localhost/ticket/261</guid>
+        <title>#261: License does not work through REST API</title>
+        <pubDate>Thu, 25 Feb 2010 21:52:58 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Presence of license_id field in JSON input show below breaks REST API (with weird error about int not being subscriptable as if license_id field is being subscripted).
+&lt;/p&gt;
+&lt;p&gt;
+Using normal license field does not cause breakage but has no effect.
+&lt;/p&gt;
+&lt;p&gt;
+(Also think we should remove license_id from the API since there is no guarantee this cross system compatible since locally generated on install).
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    ourjson = '''{
+   "maintainer" : "Applications Division",
+   "version" : "1999-01-01",
+   "license_id" : 9,
+   "name" : "geogratiswaterfraction1km_v100",
+   "author_email" : "...",
+   "author" : "Dissemination Branch",
+   "tags" : [
+      "GeoGratis",
+      "Canada",
+      "GCMD",
+      "Hydrosphere",
+      "Ground Water",
+      "Surface Water",
+      "Hydropattern",
+      "Earth Science",
+      "Land Surface",
+      "Land Cover",
+      "Landscape"
+   ],
+   "extras" : {
+      "License" : "http://geogratis.ca/geogratis/en/licence.jsp",
+      "Ministry" : "Natural Resources Canada",
+      "Level of Government" : "Federal"
+   },
+   "maintainer_email" : "richard.fernandes@nrcan.gc.ca",
+   "notes" : "This product is a raster coverage",
+   "url" : "http://geogratis.cgdi.gc.ca/geogratis/en/collection/metadata.do?id=67",
+   "title" : "Geogratis - 1-km Water Fraction From National Topographic Data Base Maps, Canada"
+}
+'''
+    def test_15_random(self):
+        offset = '/api/rest/package'
+        import urllib
+        tmpjson = simplejson.dumps(simplejson.loads(self.ourjson))
+        postparams = urllib.urlencode({tmpjson: 1})
+        res = self.app.post(offset, params=postparams, status=[200],
+                extra_environ=self.extra_environ)
+        model.Session.remove()
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/261#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/264</link>
+        <guid isPermaLink="false">http://localhost/ticket/264</guid>
+        <title>#264: Investigate why there are revisions with no associated packages</title>
+        <pubDate>Wed, 03 Mar 2010 08:37:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Revision.packages should not include all changes so why are we getting revisions with no associated changes? See e.g. &lt;a class="ext-link" href="http://ckan.net/revision/read/814e39e1-2540-4449-90d1-ac9a92ab40fb"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/revision/read/814e39e1-2540-4449-90d1-ac9a92ab40fb&lt;/a&gt;?
+&lt;/p&gt;
+&lt;p&gt;
+Investigate and fix.
+&lt;/p&gt;
+&lt;p&gt;
+NB: if this is bugfix this should go against stable or metastable branch if at all possible and then be merged into default.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1.5h (?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/264#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/265</link>
+        <guid isPermaLink="false">http://localhost/ticket/265</guid>
+        <title>#265: More detail shown in Atom feed</title>
+        <pubDate>Thu, 04 Mar 2010 13:12:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Usecase"&gt;Use case&lt;/h2&gt;
+&lt;p&gt;
+As a user I want to stay abreast of package changes, such as a new package being created, newer data is available for a package or a new download is available for a package.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+Add into the Atom feed:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;a package is a new one
+&lt;/li&gt;&lt;li&gt;the resources have been changed
+&lt;/li&gt;&lt;li&gt;the last_updated field has been changed
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/265#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/266</link>
+        <guid isPermaLink="false">http://localhost/ticket/266</guid>
+        <title>#266: Package feed</title>
+        <pubDate>Thu, 04 Mar 2010 15:26:57 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to track changes to a particular package.
+&lt;/p&gt;
+&lt;p&gt;
+Provide an Atom feed, linked from the package read page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/266#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/271</link>
+        <guid isPermaLink="false">http://localhost/ticket/271</guid>
+        <title>#271: The system shall support distributing changes.</title>
+        <pubDate>Mon, 15 Mar 2010 16:55:37 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="wiki" href="http://localhost/wiki/DistributingChanges"&gt;DistributingChanges&lt;/a&gt; for analysis and functional requirements.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/271#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/276</link>
+        <guid isPermaLink="false">http://localhost/ticket/276</guid>
+        <title>#276: Resources in Package form seen multiple times upon preview</title>
+        <pubDate>Mon, 22 Mar 2010 10:56:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Create a new package with a name 'blah' and resource format 'blah'. Hit preview. There is an error because of the lack of resource url, but in the resource input boxes, there are now four resources with format 'blah'.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/276#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/278</link>
+        <guid isPermaLink="false">http://localhost/ticket/278</guid>
+        <title>#278: Spaces in extra field keys</title>
+        <pubDate>Thu, 25 Mar 2010 12:40:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If the key to an extra field has a space in it then various form code doesn't work. Either need to disallow spaces or cope with them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/278#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/279</link>
+        <guid isPermaLink="false">http://localhost/ticket/279</guid>
+        <title>#279: Ensure package's license is an option when it's edited</title>
+        <pubDate>Fri, 02 Apr 2010 10:58:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+With forms configurable to show a subset of licenses and ckan instances moving packages from server to server, there is a chance that a user will edit a package and the existing package's license is not displayed in the form. If the user submits this form without touching the license dropdown, then the value is lost.
+&lt;/p&gt;
+&lt;p&gt;
+So for this case we should add the package's license to the list displayed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/279#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/280</link>
+        <guid isPermaLink="false">http://localhost/ticket/280</guid>
+        <title>#280: Disappearing extra fields</title>
+        <pubDate>Fri, 02 Apr 2010 12:01:24 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When I edit a package on no.ckan.net with lots of extra fields, lots of them completely disappear.
+&lt;/p&gt;
+&lt;p&gt;
+Metastable branch.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/280#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/281</link>
+        <guid isPermaLink="false">http://localhost/ticket/281</guid>
+        <title>#281: Refactor forms to be plugin-able</title>
+        <pubDate>Tue, 06 Apr 2010 08:24:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/281#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/284</link>
+        <guid isPermaLink="false">http://localhost/ticket/284</guid>
+        <title>#284: Move tag/read/xxx to simple tag/xxx like package and group</title>
+        <pubDate>Wed, 07 Apr 2010 18:22:32 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Also put in redirect from old locations (see examples with plurals in routing.py)
+&lt;/p&gt;
+&lt;p&gt;
+Estimated cost: 20m
+&lt;/p&gt;
+&lt;p&gt;
+Actual cost: 40m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/284#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/286</link>
+        <guid isPermaLink="false">http://localhost/ticket/286</guid>
+        <title>#286: Refactor forms templates</title>
+        <pubDate>Thu, 08 Apr 2010 10:45:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Use Nick's examples as a basis to revamp the formalchemy usage, principally in the package edit form.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://static.whiteink.com/css/examples/forms.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://static.whiteink.com/css/examples/forms.html&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://whiteink.com/temp/ckan-forms/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://whiteink.com/temp/ckan-forms/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/286#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/287</link>
+        <guid isPermaLink="false">http://localhost/ticket/287</guid>
+        <title>#287: Customise Canadian package edit form</title>
+        <pubDate>Fri, 09 Apr 2010 08:18:06 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Spec - see attached, which is a copy of the Pirate Pad from Lauren:
+&lt;a class="ext-link" href="http://piratepad.net/2C2iwiLDhd"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://piratepad.net/2C2iwiLDhd&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/287#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/288</link>
+        <guid isPermaLink="false">http://localhost/ticket/288</guid>
+        <title>#288: Foreign and escaped characters in extras fields</title>
+        <pubDate>Tue, 13 Apr 2010 15:18:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+These don't work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/288#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/289</link>
+        <guid isPermaLink="false">http://localhost/ticket/289</guid>
+        <title>#289: Document config options</title>
+        <pubDate>Wed, 14 Apr 2010 12:38:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/289#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/290</link>
+        <guid isPermaLink="false">http://localhost/ticket/290</guid>
+        <title>#290: Revision API - docs</title>
+        <pubDate>Wed, 14 Apr 2010 18:12:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+doc/api.rst needs to cover the new Revision REST interface.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/290#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/292</link>
+        <guid isPermaLink="false">http://localhost/ticket/292</guid>
+        <title>#292: PackageResources are created new on every package edit</title>
+        <pubDate>Tue, 20 Apr 2010 09:32:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you edit a package, all of its resources are deleted and a fresh set created. This causes all history of them to be lost.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/292#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/293</link>
+        <guid isPermaLink="false">http://localhost/ticket/293</guid>
+        <title>#293: REST PackageResource update causes exception</title>
+        <pubDate>Tue, 20 Apr 2010 09:35:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This is caused by editing a package with resources over the REST interface.
+&lt;/p&gt;
+&lt;p&gt;
+Exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://de.ckan.net/api/rest/package/destatis
+Module weberror.errormiddleware:162 in __call__
+&amp;lt;&amp;lt;              __traceback_supplement__ = Supplement, self, environ
+                   sr_checker = ResponseStartChecker(start_response)
+                   app_iter = self.application(environ, sr_checker)
+                   return self.make_catching_iter(app_iter, environ, sr_checker)
+               except:
+&amp;gt;&amp;gt;  app_iter = self.application(environ, sr_checker)
+Module repoze.who.middleware:107 in __call__
+&amp;lt;&amp;lt;          wrapper = StartResponseWrapper(start_response)
+               app_iter = app(environ, wrapper.wrap_start_response)
+               # The challenge decider almost(?) always needs information from the
+&amp;gt;&amp;gt;  app_iter = app(environ, wrapper.wrap_start_response)
+Module beaker.middleware:73 in __call__
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+               environ[self.environ_key] = self.cache_manager
+               return self.app(environ, start_response)
+&amp;gt;&amp;gt;  return self.app(environ, start_response)
+Module beaker.middleware:152 in __call__
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+                   return start_response(status, headers, exc_info)
+               return self.wrap_app(environ, session_start_response)
+           def _get_session(self):
+&amp;gt;&amp;gt;  return self.wrap_app(environ, session_start_response)
+Module routes.middleware:130 in __call__
+&amp;lt;&amp;lt;                  environ['SCRIPT_NAME'] = environ['SCRIPT_NAME'][:-1]
+               response = self.app(environ, start_response)
+               # Wrapped in try as in rare cases the attribute will be gone already
+&amp;gt;&amp;gt;  response = self.app(environ, start_response)
+Module pylons.wsgiapp:125 in __call__
+&amp;lt;&amp;lt;
+               controller = self.resolve(environ, start_response)
+               response = self.dispatch(controller, environ, start_response)
+               if 'paste.testing_variables' in environ and hasattr(response,
+&amp;gt;&amp;gt;  response = self.dispatch(controller, environ, start_response)
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           def load_test_env(self, environ):
+&amp;gt;&amp;gt;  return controller(environ, start_response)
+Module ckan.lib.base:51 in __call__
+&amp;lt;&amp;lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&amp;gt;&amp;gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&amp;gt;&amp;gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ['pylons.action_method'] = func
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&amp;gt;&amp;gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&amp;gt;&amp;gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckan.controllers.rest:145 in update
+&amp;lt;&amp;lt;                  fs = ckan.forms.group_fs_combined
+                   fs = fs.bind(entity, data=request_fa_dict)
+                   validation = fs.validate_on_edit(entity.name, entity.id)
+                   if not validation:
+                       response.status_int = 409
+&amp;gt;&amp;gt;  validation = fs.validate_on_edit(entity.name, entity.id)
+Module ckan.forms.package:385 in validate_on_edit
+&amp;lt;&amp;lt;              temp_name = orig_pkg_name
+                   self.data['Package-%s-name' % record_id] = u'something_unique'
+               validation = self.validate()
+               if temp_name:
+                   # restore it
+&amp;gt;&amp;gt;  validation = self.validate()
+Module formalchemy.forms:175 in validate
+&amp;lt;&amp;lt;          if self.readonly:
+                   raise Exception('Cannot validate a read-only FieldSet')
+               return AbstractFieldSet.validate(self)
+           def sync(self):
+&amp;gt;&amp;gt;  return AbstractFieldSet.validate(self)
+Module formalchemy.forms:104 in validate
+&amp;lt;&amp;lt;          success = True
+               for field in self.render_fields.itervalues():
+                   success = field._validate() and success
+               # run this _after_ the field validators, since each field validator
+               # resets its error list. we want to allow the global validator to add
+&amp;gt;&amp;gt;  success = field._validate() and success
+Module formalchemy.fields:763 in _validate
+&amp;lt;&amp;lt;          try:
+                   value = self._deserialize()
+               except validators.ValidationError, e:
+                   self.errors.append(e)
+&amp;gt;&amp;gt;  value = self._deserialize()
+Module formalchemy.fields:1354 in _deserialize
+&amp;lt;&amp;lt;          if self.is_composite_foreign_key:
+                   return self.query(self.relation_type()).get(python_pk(self.renderer.deserialize()))
+               return self.renderer.deserialize()
+&amp;gt;&amp;gt;  return self.renderer.deserialize()
+Module formalchemy.fields:183 in deserialize
+&amp;lt;&amp;lt;          if self.field.is_collection:
+                   return [self._deserialize(subdata) for subdata in self._serialized_value()]
+               return self._deserialize(self._serialized_value())
+           def _deserialize(self, data):
+&amp;gt;&amp;gt;  return self._deserialize(self._serialized_value())
+Module formalchemy.fields:167 in _serialized_value
+&amp;lt;&amp;lt;          if self.field.is_collection:
+                   return self._params.getall(self.name)
+               return self._params.getone(self.name)
+           def deserialize(self):
+&amp;gt;&amp;gt;  return self._params.getone(self.name)
+Module formalchemy.base:63 in getone
+&amp;lt;&amp;lt;          if v is None or isinstance(v, basestring) or isinstance(v, cgi.FieldStorage):
+                   return v
+               return v[0]
+           def getall(self, key):
+               v = dict.get(self, key)
+&amp;gt;&amp;gt;  return v[0]
+TypeError: 'int' object is unsubscriptable
+&lt;/pre&gt;&lt;p&gt;
+Thanks to Friedrich for spotting this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/293#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/295</link>
+        <guid isPermaLink="false">http://localhost/ticket/295</guid>
+        <title>#295: Add multiple packages when editing a group</title>
+        <pubDate>Tue, 20 Apr 2010 09:45:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In Group edit page, you can only add one package at a time. It would be better to use some scripting to allow adding more than one at once, to make it easier and quicker when you have a long list to add.
+&lt;/p&gt;
+&lt;p&gt;
+Ticket is split off from &lt;a class="closed ticket" href="http://localhost/ticket/221" title="enhancement: UI Review - Package edit (closed: fixed)"&gt;ticket:221&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+See also &lt;a class="closed ticket" href="http://localhost/ticket/155" title="enhancement: Adding multiple packages to a group (closed: duplicate)"&gt;ticket:155&lt;/a&gt; (duplicate).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/295#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/300</link>
+        <guid isPermaLink="false">http://localhost/ticket/300</guid>
+        <title>#300: Resource ordering issue</title>
+        <pubDate>Mon, 26 Apr 2010 12:46:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Failing test: ckan.tests.models.test_resource.&lt;a class="missing wiki"&gt;TestResourceLifecycle?&lt;/a&gt;.test_03_reorder_resources
+&lt;/p&gt;
+&lt;p&gt;
+Not clear how visible this is to the user.
+&lt;/p&gt;
+&lt;p&gt;
+Related to &lt;a class="closed ticket" href="http://localhost/ticket/292" title="defect: PackageResources are created new on every package edit (closed: fixed)"&gt;ticket:292&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/300#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/302</link>
+        <guid isPermaLink="false">http://localhost/ticket/302</guid>
+        <title>#302: Advertise a package's feed visually</title>
+        <pubDate>Tue, 27 Apr 2010 12:13:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Visual display of a package's feed in the Package Read (/package/xyz) and Package History (/package/history/xyz) pages.
+&lt;/p&gt;
+&lt;p&gt;
+Motivation: each package's Atom feed is mentioned in the &amp;lt;link rel="alternate" type="application/atom+xml" ...&amp;gt; tag, which Firefox displays with a feed icon, but the other 3/4 of users may not discover it.
+&lt;/p&gt;
+&lt;p&gt;
+The Repo History (/revision) page has a visual link the feed.
+&lt;/p&gt;
+&lt;p&gt;
+PS It would be nice to display the feed icon in both these places too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/302#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/303</link>
+        <guid isPermaLink="false">http://localhost/ticket/303</guid>
+        <title>#303: Package history &amp; diff &amp; feed to show changes to tags, extras and resources</title>
+        <pubDate>Tue, 27 Apr 2010 12:17:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Currently a package's history page (/package/history/xyz) and related feed only shows changes to the core package i.e. ones which create a &lt;a class="missing wiki"&gt;PackageResource?&lt;/a&gt;. This doesn't include changes to tags, extras and resources. These need to be added.
+&lt;/p&gt;
+&lt;p&gt;
+There is the complication that the 'diff' function doesn't currently work beyond &lt;a class="missing wiki"&gt;PackageResource?&lt;/a&gt;. Unless this is quick and simple to fix, I suggest we let the diff remain slightly broken for now.
+&lt;/p&gt;
+&lt;p&gt;
+Rufus suggests alongside the existing methods:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;pkg.all_revisions()
+pkg.diff()
+&lt;/pre&gt;&lt;p&gt;
+we have ones which also include the related objects (tags, extras, resources):
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;pkg.all_revisions_full()
+pkg.diff_full()
+&lt;/pre&gt;&lt;p&gt;
+You could have a function which returned these related objects. Ideas:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;revobjlist = [ self, resources, extras ]
+list of tuples: (revobj, changed_revobjs)
+list of tuples: (revobj, {objtype: [changed_revobjs]})
+tuple: (rev1, {Package: [ object_id, object_id], PackageTag: [object_id, object_id2] ...}
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/303#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/304</link>
+        <guid isPermaLink="false">http://localhost/ticket/304</guid>
+        <title>#304: Previewing package with resource with missing url is broken</title>
+        <pubDate>Tue, 27 Apr 2010 14:45:50 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Intended outcome:
+&lt;/p&gt;
+&lt;p&gt;
+See resource url validation error when previewing package with a resources that has no url.
+&lt;/p&gt;
+&lt;p&gt;
+Recurring Error:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://127.0.0.1:5000/package/new
+File 'pyenv-ckan/lib/python2.5/site-packages/weberror/evalexception.py', line 431 in respond
+  app_iter = self.application(environ, detect_start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/repoze/who/middleware.py', line 107 in __call__
+  app_iter = app(environ, wrapper.wrap_start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/Routes-1.10.3-py2.5.egg/routes/middleware.py', line 130 in __call__
+  response = self.app(environ, start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/wsgiapp.py', line 125 in __call__
+  response = self.dispatch(controller, environ, start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/wsgiapp.py', line 324 in dispatch
+  return controller(environ, start_response)
+File 'pyenv-ckan/src/ckan/ckan/lib/base.py', line 50 in __call__
+  return WSGIController.__call__(self, environ, start_response)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/controllers/core.py', line 221 in __call__
+  response = self._dispatch_call()
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/controllers/core.py', line 172 in _dispatch_call
+  response = self._inspect_call(func)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/controllers/core.py', line 107 in _inspect_call
+  result = self._perform_call(func, args)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/controllers/core.py', line 60 in _perform_call
+  return func(**args)
+File 'pyenv-ckan/src/ckan/ckan/controllers/package.py', line 216 in new
+  clear_session=True)
+File 'pyenv-ckan/src/ckan/ckan/controllers/package.py', line 357 in _render_edit_form
+  edit_form_html = fs.render()
+File 'pyenv-ckan/src/ckan/ckan/forms/builder.py', line 13 in render
+  return render(self.form_template)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/templating.py', line 663 in render
+  format=format, namespace=kargs, **cache_args)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/templating.py', line 546 in render
+  **options)
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/plugin.py', line 110 in render
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/core.py', line 179 in render
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 60 in encode
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 425 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 592 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 698 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 532 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/core.py', line 283 in _ensure
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 569 in _include
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/markup.py', line 245 in _match
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 543 in _exec
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 533 in _eval
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 520 in _eval
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 286 in _eval_expr
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/eval.py', line 180 in evaluate
+File 'pyenv-ckan/src/ckan/ckan/templates/package/form_fields.html', line 52 in &amp;lt;Expression u'h.literal(field.render())'&amp;gt;
+  ${h.literal(field.render())}
+File 'pyenv-ckan/lib/python2.5/site-packages/FormAlchemy-1.3.4-py2.5.egg/formalchemy/fields.py', line 1217 in render
+  return self.renderer.render(**opts)
+File 'pyenv-ckan/src/ckan/ckan/forms/common.py', line 311 in render
+  return render('package/form_resources')
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/templating.py', line 663 in render
+  format=format, namespace=kargs, **cache_args)
+File 'pyenv-ckan/lib/python2.5/site-packages/Pylons-0.9.7-py2.5.egg/pylons/templating.py', line 546 in render
+  **options)
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/plugin.py', line 110 in render
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/core.py', line 179 in render
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 60 in encode
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 425 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 592 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 698 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/output.py', line 532 in __call__
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/core.py', line 283 in _ensure
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 569 in _include
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/markup.py', line 245 in _match
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 543 in _exec
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 510 in _eval
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 520 in _eval
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/base.py', line 286 in _eval_expr
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/eval.py', line 180 in evaluate
+File 'pyenv-ckan/src/ckan/ckan/templates/package/form_resources.html', line 14 in &amp;lt;Expression u"res['id'] if res else ''"&amp;gt;
+  &amp;lt;td&amp;gt;&amp;lt;input name="${c.id}-${i}-id" type="hidden" value="${res['id'] if res else ''}" /&amp;gt;&amp;lt;/td&amp;gt;
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/eval.py', line 335 in lookup_item
+File 'pyenv-ckan/lib/python2.5/site-packages/Genshi-0.5.1-py2.5-linux-i686.egg/genshi/template/eval.py', line 405 in undefined
+UndefinedError: {'url': u'a', 'hash': u'a', 'description': u'a', 'format': u'a'} has no member named "id"
+&lt;/pre&gt;&lt;p&gt;
+How to reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to package edit form, enter a package resource &lt;strong&gt;but without a URL&lt;/strong&gt;.
+&lt;/li&gt;&lt;li&gt;Click preview.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/304#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/305</link>
+        <guid isPermaLink="false">http://localhost/ticket/305</guid>
+        <title>#305: Search result pagination is broken</title>
+        <pubDate>Wed, 28 Apr 2010 15:23:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Expect to page through results.
+&lt;/p&gt;
+&lt;p&gt;
+Only page 1 is shown, all other pages fail to display.
+&lt;/p&gt;
+&lt;p&gt;
+Reproduce by searching for something common and browsing to the second page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/305#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/125</link>
+        <guid isPermaLink="false">http://localhost/ticket/125</guid>
+        <title>#125: Edit Generic Package Attributes in WUI</title>
+        <pubDate>Wed, 23 Sep 2009 12:41:52 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Split out from &lt;a class="closed ticket" href="http://localhost/ticket/43" title="enhancement: Generic Attributes for Packages (closed: fixed)"&gt;ticket:43&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/125#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/155</link>
+        <guid isPermaLink="false">http://localhost/ticket/155</guid>
+        <title>#155: Adding multiple packages to a group</title>
+        <pubDate>Thu, 15 Oct 2009 15:49:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Ability to add multiple packages to a group in one go (e.g. with
+'add' link which makes drop down menu appear - so can add one after
+another - then submit simultaneously)
+&lt;/p&gt;
+&lt;p&gt;
+Use a bit of javascript to add more dropdowns.
+&lt;/p&gt;
+&lt;p&gt;
+Suggested by Jonathan Gray
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/155#changelog</comments>
+    </item>
+ </channel>
+</rss>

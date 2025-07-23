@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.4&amp;group=resolution&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.4&amp;group=resolution&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/366</link>
+        <guid isPermaLink="false">http://localhost/ticket/366</guid>
+        <title>#366: A flash message says why you are redirected to the 'user login' page</title>
+        <pubDate>Wed, 14 Jul 2010 17:20:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+You get redirected for a number of different reasons - often confuses me let alone the average user!
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/366#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/371</link>
+        <guid isPermaLink="false">http://localhost/ticket/371</guid>
+        <title>#371: The system shall monitor QoS against SLA</title>
+        <pubDate>Fri, 23 Jul 2010 11:47:02 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Requested by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/371#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/480</link>
+        <guid isPermaLink="false">http://localhost/ticket/480</guid>
+        <title>#480: Catalogue service shall conform to specification</title>
+        <pubDate>Sat, 21 Aug 2010 20:30:12 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Common requirements for running CKAN behind a (e.g Wordpress or Drupal) front-end:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Unrestricted total read-only access to catalogue API for general public (e.g. voluntary organisation).
+&lt;ul&gt;&lt;li&gt;monitored by API key
+&lt;/li&gt;&lt;li&gt;not monitored by API key
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Restricted total read-write access to catalogue API for authorized clients (e.g. front-end system, bulk upload clients).
+&lt;ul&gt;&lt;li&gt;restricted by CKAN access controller
+&lt;/li&gt;&lt;li&gt;restricted by HTTP Auth
+&lt;/li&gt;&lt;li&gt;restricted by IP address
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Restricted total read-write access to catalogue Web UI for authorized users (e.g. site admins).
+&lt;ul&gt;&lt;li&gt;restricted by CKAN access controller
+&lt;/li&gt;&lt;li&gt;restricted by HTTP Auth
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Restricted partial read-write access to catalogue Web UI for authorized users (e.g. group admins).
+&lt;ul&gt;&lt;li&gt;restricted by CKAN access controller
+&lt;/li&gt;&lt;li&gt;restricted by HTTP Auth
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://localhost/attachment/ticket/480/fig128130.png"&gt;&lt;img src="http://localhost/raw-attachment/ticket/480/fig128130.png" alt="CKAN as a catalogue service" title="CKAN as a catalogue service" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/480#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/560</link>
+        <guid isPermaLink="false">http://localhost/ticket/560</guid>
+        <title>#560: Deleted packages showing up in tag lists</title>
+        <pubDate>Sun, 05 Sep 2010 15:20:01 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+E.g. &lt;a class="ext-link" href="http://ckan.net/tag/lod"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/tag/lod&lt;/a&gt; contains musicbrainz_ (Musicbrainz) item (if you click you will get 403/login as deleted packages can only be seen by admins).
+&lt;/p&gt;
+&lt;p&gt;
+Also suggested that these are showing up in the API (courtesy of Anja)
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/560#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/662</link>
+        <guid isPermaLink="false">http://localhost/ticket/662</guid>
+        <title>#662: Can't put entity that is returned by posting to package register</title>
+        <pubDate>Sat, 25 Sep 2010 10:29:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+It's because Package carries several out-of-band values, which are snagged on the way back out. Entity get response also can't be posted.
+&lt;/p&gt;
+&lt;p&gt;
+However, post response can be re-posted (because it isn't the same as the register-post/entity-get responses.
+&lt;/p&gt;
+&lt;p&gt;
+An issue for CKAN too.
+&lt;/p&gt;
+&lt;p&gt;
+Sub-ticket of &lt;a class="closed ticket" href="http://localhost/ticket/961" title="enhancement: [super] Refactoring of forms, validation and model synchronization (closed: fixed)"&gt;#961&lt;/a&gt; (form, validation, model sync meta-ticket) and depends on that work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/662#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/663</link>
+        <guid isPermaLink="false">http://localhost/ticket/663</guid>
+        <title>#663: Duplicate sibling relationships displayed</title>
+        <pubDate>Mon, 27 Sep 2010 08:32:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Looking at:
+&lt;a class="ext-link" href="http://ckan.net/package/rkb-explorer-acm"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/rkb-explorer-acm&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+'rkb-explorer-resex' gets display multiple times and shouldn't
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/663#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/664</link>
+        <guid isPermaLink="false">http://localhost/ticket/664</guid>
+        <title>#664: Sibling relationships shown for deleted packages</title>
+        <pubDate>Mon, 27 Sep 2010 08:36:40 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/664#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/929</link>
+        <guid isPermaLink="false">http://localhost/ticket/929</guid>
+        <title>#929: Handle the case when the licenses service is down better</title>
+        <pubDate>Tue, 25 Jan 2011 22:43:29 GMT</pubDate>
+        
+        <dc:creator>rene.kapusta</dc:creator>
+
+        <description>&lt;p&gt;
+I'm using v 1.3.1a and get a lot of "&lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;type 'exceptions.Exception'&amp;gt;: Couldn't connect to licenses service: &amp;lt;urlopen error (104, 'Connection reset by peer')&amp;gt;" error messages.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.forms.package:87 in build_package_form
+&amp;lt;&amp;lt;      # Options/settings
+           builder.set_field_option('name', 'validate', package_name_validator)
+           builder.set_field_option('license_id', 'dropdown', {'options':[('', None)] + model.Package.get_license_options()})
+           builder.set_field_option('state', 'dropdown', {'options':model.State.all})
+           builder.set_field_option('notes', 'textarea', {'size':'60x15'})
+&amp;gt;&amp;gt;  builder.set_field_option('license_id', 'dropdown', {'options':[('', None)] + model.Package.get_license_options()})
+Module ckan.model.package:283 in get_license_options
+&amp;lt;&amp;lt;      @classmethod
+           def get_license_options(self):
+               register = self.get_license_register()
+               return [(l.title, l.id) for l in register.values()]
+&amp;gt;&amp;gt;  register = self.get_license_register()
+Module ckan.model.package:278 in get_license_register
+&amp;lt;&amp;lt;      def get_license_register(self):
+               if not hasattr(self, '_license_register'):
+                   self._license_register = LicenseRegister()
+               return self._license_register
+&amp;gt;&amp;gt;  self._license_register = LicenseRegister()
+Module ckan.model.license:46 in __init__
+&amp;lt;&amp;lt;              from licenses.service import LicensesService2
+                   self.service = LicensesService2(group_url)
+                   entity_list = self.service.get_licenses()
+               else:
+                   from licenses import Licenses
+&amp;gt;&amp;gt;  entity_list = self.service.get_licenses()
+Module licenses.service:44 in get_licenses
+&amp;lt;&amp;lt;          except Exception, inst:
+                   msg = "Couldn't connect to licenses service: %s" % inst
+                   raise Exception, msg
+               try:
+                   licenses = loads(response_body)
+&amp;gt;&amp;gt;  raise Exception, msg
+Exception: Couldn't connect to licenses service: &amp;lt;urlopen error (104, 'Connection reset by peer')&amp;gt;
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/929#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/933</link>
+        <guid isPermaLink="false">http://localhost/ticket/933</guid>
+        <title>#933: get rid of self when it should be cls in classmethods</title>
+        <pubDate>Fri, 28 Jan 2011 00:28:46 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+use pylint
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/933#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/965</link>
+        <guid isPermaLink="false">http://localhost/ticket/965</guid>
+        <title>#965: make migration testing plugin to nose</title>
+        <pubDate>Wed, 09 Feb 2011 01:04:52 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+In order to test migrations properly, we need to test the upgraded database against *all* the tests.
+&lt;/p&gt;
+&lt;p&gt;
+To do this a special flag to nosetests should be added. nosetests --migrations
+&lt;/p&gt;
+&lt;p&gt;
+This flag will make sure that the database is recreated from scratch each time using the migrate repository, bypassing init_db.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/965#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/996</link>
+        <guid isPermaLink="false">http://localhost/ticket/996</guid>
+        <title>#996: Run some basic load testing.</title>
+        <pubDate>Mon, 21 Feb 2011 10:26:34 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This will involve running a sample of real requests synchronously against real data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/996#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1012</link>
+        <guid isPermaLink="false">http://localhost/ticket/1012</guid>
+        <title>#1012: Add package revision history to api</title>
+        <pubDate>Mon, 28 Feb 2011 10:02:31 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Revision history information is not accessible, dgu want this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1012#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1038</link>
+        <guid isPermaLink="false">http://localhost/ticket/1038</guid>
+        <title>#1038: Authz tool - operate on all packages at once</title>
+        <pubDate>Tue, 15 Mar 2011 18:13:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Add 'package:all' to authz tool to allow mass changes of authz.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1038#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1039</link>
+        <guid isPermaLink="false">http://localhost/ticket/1039</guid>
+        <title>#1039: Default user roles read from config</title>
+        <pubDate>Tue, 15 Mar 2011 18:13:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(instead of being hard coded)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1039#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1040</link>
+        <guid isPermaLink="false">http://localhost/ticket/1040</guid>
+        <title>#1040: File system mounted</title>
+        <pubDate>Tue, 15 Mar 2011 18:30:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Public file path code adds a trailing , and thus adds / as a static file app in the Pylons middleware cascade.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1040#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1076</link>
+        <guid isPermaLink="false">http://localhost/ticket/1076</guid>
+        <title>#1076: Improve revision and package purge system</title>
+        <pubDate>Fri, 08 Apr 2011 17:24:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="PurgingRevisions"&gt;Purging Revisions&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Delete button displayed on:
+&lt;ul&gt;&lt;li&gt;/revision/list
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(/package/history)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;/package/history is problematic because html does not allow nested forms and we already have form for doing diff/comparison.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;/revision/{id}
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Delete button submits to delete action on revision and changes revision state to 'deleted'.
+&lt;ul&gt;&lt;li&gt;undelete button now displayed and revisions are marked as deleted in some way (e.g. greyed out?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Sysadmins then visit /ckan-admin/trash which lists all revisions with deleted state. There is a large button: "Empty trash" (irreversible). Click button purges all revisions with deleted state.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="PurgingPackages"&gt;Purging Packages&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Put into deleted state.
+&lt;/li&gt;&lt;li&gt;Listed on /ckan-admin/trash
+&lt;/li&gt;&lt;li&gt;Separate Empty trash button which deletes all associated revisions.
+&lt;ul&gt;&lt;li&gt;Should be separate from Empty trash for revisions
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Currentsystem"&gt;Current system&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Single purge link on revision listing if a sysadmin which permanently purges the revision and all associated changes (without confirmation atm!)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1076#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1088</link>
+        <guid isPermaLink="false">http://localhost/ticket/1088</guid>
+        <title>#1088: content-type autonegotiation is wonky</title>
+        <pubDate>Tue, 12 Apr 2011 17:44:21 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+in ckan/controllers/package.py around line 130 it does some strange things...
+&lt;/p&gt;
+&lt;p&gt;
+perhaps replace with &lt;a class="ext-link" href="https://github.com/wwaites/autoneg"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/wwaites/autoneg&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+and handle redirection of these content types:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;application/rdf+xml
+application/turtle
+text/plain
+text/x-graphviz
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1088#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/539</link>
+        <guid isPermaLink="false">http://localhost/ticket/539</guid>
+        <title>#539: The system shall improve performance</title>
+        <pubDate>Tue, 31 Aug 2010 08:14:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/539#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/894</link>
+        <guid isPermaLink="false">http://localhost/ticket/894</guid>
+        <title>#894: harvest from http://locationmetadataeditor.data.gov.uk/geonetwork/srv/csw</title>
+        <pubDate>Wed, 05 Jan 2011 18:57:56 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/894#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/435</link>
+        <guid isPermaLink="false">http://localhost/ticket/435</guid>
+        <title>#435: Switching between ckan instances causes orphaned postgres processes</title>
+        <pubDate>Wed, 18 Aug 2010 16:08:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Analysis using pg_top reveals orphaed processes:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/460#comment:6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/460#comment:6&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This followed switching ckan instances on the dgu machine. Do these hang around forever clogging up a db server? Can switching between instances be smoothed to avoid this?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/435#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/893</link>
+        <guid isPermaLink="false">http://localhost/ticket/893</guid>
+        <title>#893: ExtrasField should not overwrite more specific extras</title>
+        <pubDate>Tue, 04 Jan 2011 10:09:43 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment, &lt;a class="missing wiki"&gt;ExtrasField?&lt;/a&gt; cannot be used in conjunction with more specific extra fields, such as &lt;a class="missing wiki"&gt;TextExtraField?&lt;/a&gt; or &lt;a class="missing wiki"&gt;SuggestTextExtraField?&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/893#changelog</comments>
+    </item>
+ </channel>
+</rss>

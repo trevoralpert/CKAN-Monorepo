@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=kindly&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=kindly&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2888</link>
+        <guid isPermaLink="false">http://localhost/ticket/2888</guid>
+        <title>#2888: Datapreview in Iframe</title>
+        <pubDate>Thu, 23 Aug 2012 18:11:01 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Try and put datapreview in Iframe.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2888#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1341</link>
+        <guid isPermaLink="false">http://localhost/ticket/1341</guid>
+        <title>#1341: Delete spam users from ckan</title>
+        <pubDate>Wed, 14 Sep 2011 10:10:34 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Spam users where added to thedatahub and we need to clean them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1341#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2363</link>
+        <guid isPermaLink="false">http://localhost/ticket/2363</guid>
+        <title>#2363: Documentation of best caching practice.</title>
+        <pubDate>Tue, 01 May 2012 16:16:57 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need better documentation on best practices in making page loads faster for non logged in users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2363#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1255</link>
+        <guid isPermaLink="false">http://localhost/ticket/1255</guid>
+        <title>#1255: Drupal consistancy checks.</title>
+        <pubDate>Mon, 01 Aug 2011 17:32:48 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make a robust way to make sure the drupal database is consistent with the ckan data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1255#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2524</link>
+        <guid isPermaLink="false">http://localhost/ticket/2524</guid>
+        <title>#2524: If there are no translation files for selected language fall back to default lang.</title>
+        <pubDate>Wed, 13 Jun 2012 17:37:28 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+If a user selects a language there are no mo files for then an error is raised.  Revert to default language instead.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2524#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2362</link>
+        <guid isPermaLink="false">http://localhost/ticket/2362</guid>
+        <title>#2362: Improve plugin documentaion, including examples.</title>
+        <pubDate>Tue, 01 May 2012 16:13:11 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Improve documentation for plugins and add examples. Could use ckanext-example as a base.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2362#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2911</link>
+        <guid isPermaLink="false">http://localhost/ticket/2911</guid>
+        <title>#2911: Internal documentation of Organization Groups</title>
+        <pubDate>Thu, 06 Sep 2012 14:23:04 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+A summary/user story doc of how organizations and groups are expected to work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2911#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2473</link>
+        <guid isPermaLink="false">http://localhost/ticket/2473</guid>
+        <title>#2473: Make datstorer store field ordering in _meta field</title>
+        <pubDate>Tue, 29 May 2012 12:11:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Recline views should have a default table order, being the same as the csv that was imported.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2473#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2810</link>
+        <guid isPermaLink="false">http://localhost/ticket/2810</guid>
+        <title>#2810: heroku ckan support</title>
+        <pubDate>Tue, 07 Aug 2012 18:40:58 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Get ckan working on heroku
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2810#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1201</link>
+        <guid isPermaLink="false">http://localhost/ticket/1201</guid>
+        <title>#1201: seperate out logic in atom feeds to logic layer.</title>
+        <pubDate>Fri, 24 Jun 2011 15:21:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Simplify the logic in the atom feed an make all feeds use logic layer to return lists.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1201#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3027</link>
+        <guid isPermaLink="false">http://localhost/ticket/3027</guid>
+        <title>#3027: solr for 2.0</title>
+        <pubDate>Tue, 04 Dec 2012 02:22:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+change mm
+support solr 3 and 4
+add *_date field
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3027#changelog</comments>
+    </item>
+ </channel>
+</rss>

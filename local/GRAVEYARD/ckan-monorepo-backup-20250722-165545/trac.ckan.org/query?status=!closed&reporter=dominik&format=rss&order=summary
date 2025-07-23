@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=dominik&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=dominik&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2943</link>
+        <guid isPermaLink="false">http://localhost/ticket/2943</guid>
+        <title>#2943: Chrome does not resize preview</title>
+        <pubDate>Mon, 01 Oct 2012 11:08:06 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Chrome does not resize iframe after a full refresh/ on first load
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2943#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2938</link>
+        <guid isPermaLink="false">http://localhost/ticket/2938</guid>
+        <title>#2938: Explain bundling in doc/resources.rst</title>
+        <pubDate>Mon, 24 Sep 2012 12:13:55 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since it makes sense to bundle resources into one js file that are commonly used together, there should be some explanations on how separate js scripts are merged into one file for production.
+&lt;/p&gt;
+&lt;p&gt;
+Explanations could include how groups are handled or different resource files.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2938#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2948</link>
+        <guid isPermaLink="false">http://localhost/ticket/2948</guid>
+        <title>#2948: Negative range breaks datastore backend</title>
+        <pubDate>Mon, 01 Oct 2012 14:30:54 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Recline allows negative ranges. The backend returns an error 500 for that which breaks the recline preview.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2948#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2957</link>
+        <guid isPermaLink="false">http://localhost/ticket/2957</guid>
+        <title>#2957: New datastore on postgres prior to 9.0</title>
+        <pubDate>Wed, 03 Oct 2012 19:23:34 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;tt&gt;&lt;/tt&gt;GRANT SELECT ON ALL&lt;tt&gt;&lt;/tt&gt; and &lt;tt&gt;&lt;/tt&gt;ALTER DEFAULT PRIVILEGES&lt;tt&gt;&lt;/tt&gt; are not available in Postgres prior to version 9.0.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2957#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2945</link>
+        <guid isPermaLink="false">http://localhost/ticket/2945</guid>
+        <title>#2945: Pdf preview does not load in IE</title>
+        <pubDate>Mon, 01 Oct 2012 11:27:49 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The pdf preview does not load in IE 9.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2945#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2961</link>
+        <guid isPermaLink="false">http://localhost/ticket/2961</guid>
+        <title>#2961: Preview plugin endpoint</title>
+        <pubDate>Mon, 08 Oct 2012 11:39:27 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Users could write ckan extensions that offer previews for a certain datatype.
+&lt;/p&gt;
+&lt;p&gt;
+Advantages:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We can say that you can add your own previews
+&lt;/li&gt;&lt;li&gt;Every preview would have to define it's own dependencies
+&lt;/li&gt;&lt;li&gt;External development (community creates new extensions?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Questions to answer:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Specification of the interface
+&lt;/li&gt;&lt;li&gt;Precedence of previews for the same data types
+&lt;/li&gt;&lt;li&gt;Plugins only define the datatype that they are responsible for or do we call a function that returns whether the extension is responsible.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+As far as I can see, this should be fairly easy to implement by following these instructions: &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2961#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2960</link>
+        <guid isPermaLink="false">http://localhost/ticket/2960</guid>
+        <title>#2960: Private datasets are not private</title>
+        <pubDate>Mon, 08 Oct 2012 11:04:15 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment everyone can read all resources. There is no support for hiding resources that are in private datasets.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2960#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2944</link>
+        <guid isPermaLink="false">http://localhost/ticket/2944</guid>
+        <title>#2944: Recline preview does not work in Opera</title>
+        <pubDate>Mon, 01 Oct 2012 11:26:42 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Opera cannot show a recline preview. I shows 0 records.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2944#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2947</link>
+        <guid isPermaLink="false">http://localhost/ticket/2947</guid>
+        <title>#2947: Redirect to the resource page from /resource/{res-id}</title>
+        <pubDate>Mon, 01 Oct 2012 13:15:25 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Use story:
+As a user of the datasore I want to be able to put the resource id without the dataset name in a url and see the resource page.
+&lt;/p&gt;
+&lt;p&gt;
+Proposed redirect:
+&lt;/p&gt;
+&lt;p&gt;
+/resource/{res-id} -&amp;gt; dataset/foo-bar/resource/{res-id}
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2947#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2962</link>
+        <guid isPermaLink="false">http://localhost/ticket/2962</guid>
+        <title>#2962: Search across multiple ckan instances</title>
+        <pubDate>Mon, 08 Oct 2012 22:50:22 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Could be done by:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;using the solr distributed search
+&lt;ul&gt;&lt;li&gt;difficult set up
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;merging result sets from apis
+&lt;ul&gt;&lt;li&gt;make sure that results can be merged properly (score, facets, ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2962#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2906</link>
+        <guid isPermaLink="false">http://localhost/ticket/2906</guid>
+        <title>#2906: Wrong flags in language dropdown</title>
+        <pubDate>Wed, 05 Sep 2012 16:05:44 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The flags in the dropdown on details pages are not right.
+&lt;/p&gt;
+&lt;p&gt;
+You can see the error on &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/malawi-aid-projects/resource/b717c20e-2006-4ad4-82d2-59b57ebc1ab0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/malawi-aid-projects/resource/b717c20e-2006-4ad4-82d2-59b57ebc1ab0&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2906#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3013</link>
+        <guid isPermaLink="false">http://localhost/ticket/3013</guid>
+        <title>#3013: common-error-messages is unreadable</title>
+        <pubDate>Sat, 10 Nov 2012 13:18:25 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since the update of the doc theme, the page became unreadable.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/common-error-messages.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/common-error-messages.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3013#changelog</comments>
+    </item>
+ </channel>
+</rss>

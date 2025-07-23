@@ -1,0 +1,33 @@
+id,summary,owner,type,priority,component,resolution
+1731,Publisher support for harvesting,amercader,enhancement,critical,ckan,fixed
+1703,Make custom fields for ecportal form based on prototype metamodel,johnglover,enhancement,major,ecportal,fixed
+2206,Change site header to match latest ODP template,johnglover,enhancement,major,ecportal,fixed
+2212,Import latest data into demo site,johnglover,enhancement,major,ecportal,fixed
+2223,Switch to bootstrap from blueprint,zephod,enhancement,major,ckan,fixed
+2226,[super] Refactor and improve documentation (v1.7),rgrp,enhancement,major,ckan,fixed
+2236,Updates to Recline and integrate them,rgrp,enhancement,major,ckan,fixed
+1711,Resource validation page,icmurray,enhancement,minor,dgu,fixed
+2205,Document Tag Vocab schema/form setup,johnglover,enhancement,minor,ecportal,fixed
+1742,Naming of a new package/group can clash with a route,ross,enhancement,trivial,ckan,fixed
+1649,Verify RDF Extension (ckanext-rdf) works,ross,enhancement,awaiting triage,ckan,fixed
+1803,clean up routes,toby,enhancement,awaiting triage,ckan,fixed
+1808,Translation of content on dataset view pages,seanh,enhancement,awaiting triage,ckan,fixed
+1814,Check publicadata.eu harvesters,amercader,enhancement,awaiting triage,pdeu,fixed
+1816,Update ckanext-apps to work with CKAN 1.5.1 - 1.6,amercader,enhancement,awaiting triage,ckan,fixed
+1820,Index multilingual data when mulilingual extension is added.,kindly,enhancement,awaiting triage,ecportal,fixed
+2199,Translation of content on dataset search pages,seanh,enhancement,awaiting triage,ckan,fixed
+2207,Fix recently changed datasets activity stream on exportal site,seanh,defect,awaiting triage,ckan,invalid
+2209,Object->RDF mapping,ross,enhancement,awaiting triage,ckan,fixed
+2210,Add method to group for adding members,ross,enhancement,awaiting triage,ckan,fixed
+2211,Logic layer access to publisher functionality,ross,enhancement,awaiting triage,ckan,fixed
+2214,Translation of content on group view pages,seanh,enhancement,awaiting triage,ckan,fixed
+2215,Translation of content on group list page,seanh,enhancement,awaiting triage,ckan,fixed
+2217,Translation of content on tag list page,seanh,enhancement,awaiting triage,ckan,fixed
+2218,Translation of content on tag pages,seanh,enhancement,awaiting triage,ckan,fixed
+2219,Translation of datasets and tags on user pages,seanh,enhancement,awaiting triage,ckan,fixed
+2220,make ckan cacheable,toby,enhancement,awaiting triage,ckan,fixed
+2227,Tests are slow and broken,toby,enhancement,awaiting triage,ckan,wontfix
+2228,IGroupForm should allow overriding of non-edit templates,ross,enhancement,awaiting triage,ckan,fixed
+2229,Cleanup plugin system after some test failed to run.,kindly,enhancement,awaiting triage,ckan,fixed
+2233,"Make package show, use custom json schema",kindly,enhancement,awaiting triage,ckan,fixed
+2237,Make way to split up tests and run tests with different db.,kindly,enhancement,awaiting triage,ckan,fixed

@@ -1,0 +1,28 @@
+id,summary,owner,type,priority,component,resolution
+1493,'search-index rebuild/clear' doesn't work if no ckan.site_id,dread,defect,minor,ckan,fixed
+1517,Accessing resource view sometimes auto-downloads the resource,zephod,defect,awaiting triage,ckan,fixed
+1504,Action API given blank data causes exception,dread,defect,minor,ckan,fixed
+1479,Can't edit a user with a unicode email address,dread,defect,minor,ckan,fixed
+1415,Comments on current status of ckan deb packages,thejimmyg,enhancement,minor,ckan,fixed
+1484,Creating package with duplicate tags causes exception,dread,defect,minor,ckan,fixed
+1487,Fix group ordering on homepage,,enhancement,awaiting triage,ckan,fixed
+1453,Flexible tag names,icmurray,enhancement,major,ckan,fixed
+1502,Group package list is ordered by revision timestamp instead of alphabetically,johnglover,defect,minor,ckan,fixed
+1481,License not shown if no resources,johnglover,defect,minor,ckan,fixed
+1482,Minor JS bugs,johnglover,defect,minor,ckan,fixed
+1503,Move from Bitbucket to Github,dread,task,major,ckan,fixed
+1480,Munge functions in util,dread,enhancement,minor,ckan,fixed
+1501,Pagination links broken,johnglover,defect,major,ckan,fixed
+1002,Remove changeset model code,dread,enhancement,trivial,ckan,fixed
+1445,Resource View page in WUI,zephod,enhancement,major,ckan,fixed
+1455,Search results when 'all_fields' don't include 'extra' fields,johnglover,defect,major,ckan,fixed
+1505,SearchError and SearchQueryError cause exception in Action API,dread,defect,minor,ckan,fixed
+1450,Simplify dataset view page,zephod,enhancement,major,ckan,fixed
+1500,Slug API calls tidy up,dread,defect,minor,ckan,fixed
+1490,Standardize output from package listings coming from the logic layer,amercader,enhancement,minor,ckan,fixed
+1498,Support multiple SOLR schema versions,amercader,enhancement,major,ckan,fixed
+1497,Suppress benign warnings,dread,enhancement,minor,ckan,fixed
+1468,Update the search index for individual packages,johnglover,defect,minor,ckan,fixed
+1478,change package_group to members table,kindly,enhancement,awaiting triage,ckan,fixed
+1499,list/read/delete packages on the command-line,dread,enhancement,minor,ckan,fixed
+1124,push apt package python-ckanext-solr into our debian repository,thejimmyg,enhancement,minor,ckan,fixed

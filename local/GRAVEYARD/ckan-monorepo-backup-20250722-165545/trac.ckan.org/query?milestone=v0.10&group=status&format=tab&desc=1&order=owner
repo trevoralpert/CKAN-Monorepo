@@ -1,0 +1,34 @@
+id	summary	owner	type	priority	component	resolution
+43	Generic Attributes for Packages	rgrp	enhancement	critical	ckan	fixed
+61	When dumping data to json do not dump private information like API keys	rgrp	enhancement	minor	ckan	fixed
+64	Switch to repoze.who for authentication	rgrp	enhancement	critical	ckan	fixed
+66	Improve user account UI	rgrp	enhancement	major	ckan	fixed
+67	List all of a user's recent edits on their home page	rgrp	enhancement	minor	ckan	fixed
+71	Upgrade to Pylons 0.9.7	rgrp	enhancement	minor	ckan	fixed
+72	Integrate new logo	rgrp	enhancement	major	ckan	fixed
+93	Access control for packages	rgrp	enhancement	critical	ckan	fixed
+111	Create user object	rgrp	enhancement	blocker	ckan	fixed
+62	Change tags to contain any character (other than space)	dread	enhancement	minor	ckan	fixed
+74	Add Is It Open links to package pages	dread	enhancement	minor	ckan	fixed
+76	Convert to use formalchemy for all forms	dread	enhancement	critical	ckan	fixed
+79	Improvements to package search	dread	enhancement	minor	ckan	fixed
+80	Refactor or remove modes code	dread	enhancement	minor	ckan	fixed
+91	Add author and maintainer attributes to package	dread	enhancement	critical	ckan	fixed
+94	Use sqlalchemy-migrate to handle db/model upgrades	dread	enhancement	critical	ckan	fixed
+105	Package groups (view)	dread	enhancement	critical	ckan	fixed
+108	Package search in the REST API	dread	enhancement	critical	ckan	fixed
+110	Integrate groups into packages	dread	enhancement	critical	ckan	fixed
+114	Access Control - model	dread	enhancement	major	ckan	fixed
+115	Access Control - wui constrained by model	dread	enhancement	major	ckan	fixed
+116	Access Control - edited in wui	dread	enhancement	critical	ckan	fixed
+117	Access Control - group core functionality	dread	enhancement	major	ckan	fixed
+118	Use paginate in webhelpers	dread	enhancement	major	ckan	fixed
+119	Ensure non-active packages don't show up	dread	enhancement	major	ckan	fixed
+120	Security audit	dread	enhancement	major	ckan	fixed
+121	Add 'Group' to main menu	dread	enhancement	major	ckan	fixed
+122	Add Group authz page	dread	enhancement	major	ckan	fixed
+123	Ability to edit Group in WUI	dread	enhancement	major	ckan	fixed
+126	Change package state in the WUI (delete and undelete)	dread	enhancement	critical	ckan	fixed
+127	Minor form and UI improvements	dread	enhancement	minor	ckan	fixed
+130	Create a New Group via the WUI	dread	enhancement	critical	ckan	fixed
+131	Groups REST interface	dread	enhancement	major	ckan	fixed

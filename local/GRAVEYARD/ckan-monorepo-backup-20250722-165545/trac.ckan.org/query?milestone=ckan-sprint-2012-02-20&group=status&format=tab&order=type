@@ -1,0 +1,38 @@
+id	summary	owner	type	priority	component	resolution
+1783	Locale change exception when unicode in URL	dread	defect	major	ckan	fixed
+1791	Changing locale on /dataset/new causes exception	dread	defect	minor	ckan	fixed
+1359	Radically simplify standard list of licenses	rgrp	enhancement	awaiting triage	ckan	fixed
+1675	Publisher admin authz	ross	enhancement	awaiting triage	ckan	fixed
+1705	Implement Vocabularies domain model and API	seanh	enhancement	awaiting triage	ecportal	fixed
+1715	Search index multilingual	kindly	enhancement	awaiting triage	ecportal	fixed
+1720	Add converter functions to convert tags (with a given taxonomy) to/from tags field	johnglover	enhancement	major	ecportal	fixed
+1721	Tag taxonomies table migration	johnglover	enhancement	major	ecportal	fixed
+1722	Update the package model for vocabularies	seanh	enhancement	awaiting triage	ecportal	fixed
+1723	Update tests for taxonomies	seanh	enhancement	awaiting triage	ecportal	wontfix
+1724	Update logic action functions for vocabularies	seanh	enhancement	awaiting triage	ecportal	fixed
+1728	Update UKLP harvesters	amercader	enhancement	major	ckan	fixed
+1729	Helper function for extensions to add vocabularies to a ckan instance	johnglover	enhancement	major	ecportal	duplicate
+1730	Form field for vocabularies	johnglover	enhancement	minor	ecportal	fixed
+1733	Delete (inactivate) harvest sources	amercader	enhancement	major	ckan	fixed
+1735	"""Unsaved changes"" warning briefly when you click ""Save"""	zephod	enhancement	minor	ckan	wontfix
+1741	Add extention point to dataset view.	kindly	enhancement	awaiting triage	ecportal	fixed
+1751	DGU dataset form: collection of updates from feedback	icmurray	enhancement	major	dgu	fixed
+1752	DGU: collection of updates from feedback	icmurray	enhancement	major	dgu	fixed
+1755	DGU Alpha paged view of publishers	ross	enhancement	awaiting triage	dgu	fixed
+1756	DGU Treeview of hierarchical publishers	ross	enhancement	awaiting triage	dgu	fixed
+1758	DGU Check user management auth	ross	enhancement	awaiting triage	dgu	fixed
+1759	DGU Create publisher form access	ross	enhancement	awaiting triage	dgu	fixed
+1760	DGU Extract current publisher hierarchy	ross	enhancement	awaiting triage	dgu	fixed
+1761	DGU History visibility	ross	enhancement	awaiting triage	dgu	fixed
+1762	DGU Join publisher form	ross	enhancement	awaiting triage	dgu	fixed
+1765	Enhance Tag and Package models with vocabularies	seanh	enhancement	awaiting triage	ecportal	fixed
+1766	Update and deploy EC Portal theme	johnglover	enhancement	major	ecportal	fixed
+1767	Write end-to-end functional tests for tag vocabularies	johnglover	enhancement	major	ecportal	fixed
+1771	32. Browse by Tags PHASE 1 MUST	icmurray	enhancement	awaiting triage	dgu	fixed
+1773	17. Filter “UK Location Records” MUST PHASE 1 [UKLP #21 SHOULD]	icmurray	enhancement	awaiting triage	dgu	fixed
+1774	22. Mixed Licenses MUST PHASE 2	icmurray	enhancement	awaiting triage	dgu	fixed
+1776	Granular editing of vocabulary tags	seanh	enhancement	awaiting triage	ecportal	fixed
+1777	Write about multilingual features for ec.	kindly	enhancement	awaiting triage	ecportal	fixed
+1779	Add multilingual translation table.	kindly	enhancement	awaiting triage	ecportal	fixed
+1781	Api to add translations.	kindly	enhancement	awaiting triage	ecportal	fixed
+1786	Relationships lost when editing package	dread	enhancement	major	ckan	fixed

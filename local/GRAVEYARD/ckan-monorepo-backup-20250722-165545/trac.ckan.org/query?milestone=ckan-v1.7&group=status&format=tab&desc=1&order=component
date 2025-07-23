@@ -1,0 +1,44 @@
+id	summary	owner	type	priority	component	resolution
+1654	[super] Update Publicdata.eu to the latest CKAN stable version	amercader	task	major	pdeu	fixed
+1698	[super] Tag Taxonomies	seanh	enhancement	awaiting triage	ecportal	fixed
+1736	[Super] Multilingual Metadata	kindly	enhancement	awaiting triage	ecportal	fixed
+1525	[super] DGU package form refactor	icmurray	enhancement	major	dgu	fixed
+1537	Package create form wizard	icmurray	enhancement	major	dgu	fixed
+1538	Store partially-filled in package form data as a draft.	icmurray	enhancement	major	dgu	wontfix
+1539	Package forms auto-save	icmurray	enhancement	major	dgu	wontfix
+1617	Update and test existing DGU package form : publisher / foi information	icmurray	enhancement	major	dgu	fixed
+1618	Update and test existing DGU package form : provide stubs for the theme and sub-themes	icmurray	enhancement	major	dgu	fixed
+1619	Update and test existing DGU package form : provide stubs for the publisher hierarchy	icmurray	enhancement	major	dgu	fixed
+1768	DGU: 7a. Public Publisher Dashboard (including QA Work and notifications) MUST PHASE 1	icmurray	enhancement	awaiting triage	dgu	fixed
+1397	[super] Resource archiving	kindly	enhancement	major	ckan	fixed
+1404	Search Page UI improvements	zephod	enhancement	awaiting triage	ckan	wontfix
+1465	Upgrade the harvester to support publishers properly		enhancement	awaiting triage	ckan	fixed
+1496	Render a user's activity stream on her user page	seanh	enhancement	awaiting triage	ckan	fixed
+1510	Migrate existing data into activity streams database tables	seanh	enhancement	awaiting triage	ckan	wontfix
+1515	[super] Activity Streams	seanh	enhancement	awaiting triage	ckan	fixed
+1530	URL field help text in wrong place	zephod	defect	critical	ckan	fixed
+1566	[super] Finalize Google analytics extension	David Raznik	enhancement	minor	ckan	fixed
+1574	[super] Storage changes including automated save to Webstore	ross	enhancement	awaiting triage	ckan	fixed
+1586	'Sort by' field for package search	toby	enhancement	major	ckan	duplicate
+1594	[super] QA Improvements	johnglover	enhancement	major	ckan	wontfix
+1595	Editing of a Group leads to recording a change against all associated datasets	kindly	defect	awaiting triage	ckan	wontfix
+1600	[super] User guide with integrated help in the WUI	rgrp	enhancement	awaiting triage	ckan	wontfix
+1601	[super] Well integrated Geo-spatial support including search	amercader	enhancement	awaiting triage	ckan	fixed
+1603	Search query builder	zephod	enhancement	awaiting triage	ckan	duplicate
+1605	[super] Multilingual support in CKAN	kindly	enhancement	critical	ckan	fixed
+1607	[super] Data.gov.uk Maintenance Refactor and UKLP Development Support	icmurray	enhancement	major	ckan	fixed
+1632	Render a group's activity stream on its' page	seanh	enhancement	awaiting triage	ckan	wontfix
+1633	Render a dataset's activity stream on its' page	seanh	enhancement	awaiting triage	ckan	wontfix
+1634	Allow users to follow/unfollow activity streams of other users, datasets and groups	seanh	enhancement	awaiting triage	ckan	duplicate
+1636	Purge items from activity streams when object (package etc.) purged from CKAN	seanh	enhancement	awaiting triage	ckan	wontfix
+1669	[super] Publisher profile	ross	enhancement	awaiting triage	ckan	fixed
+1692	Add image attribute to Dataset and Group		enhancement	awaiting triage	ckan	wontfix
+1734	[super] Updates on harvesting for UKLP	amercader	enhancement	critical	ckan	fixed
+1763	Add some simple model-level tests for activity streams	seanh	enhancement	awaiting triage	ckan	wontfix
+1764	Move activity streams API tests into tests/logic	seanh	enhancement	awaiting triage	ckan	wontfix
+1784	Links to renamed objects break	seanh	enhancement	awaiting triage	ckan	wontfix
+2201	Add citation info to Dataset and Resource page		enhancement	major	ckan	duplicate
+2230	Tidy up of search facets code duplication		refactor	awaiting triage	ckan	fixed
+2288	Fix i18n of strings on auth group add/edit pages		defect	awaiting triage	ckan	wontfix
+2317	Corrections to dataset creation form for v1.7		enhancement	critical	ckan	wontfix
+2332	Fixes for v1.7 release	amercader	enhancement	critical	ckan	fixed

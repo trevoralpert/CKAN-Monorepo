@@ -1,0 +1,59 @@
+id	summary	status	owner	type	priority	milestone
+2202	Display page view count on dataset and resource pages	reopened		enhancement	awaiting triage	ckan-future
+2331	Search should AND terms not OR terms	reopened	kindly	defect	major	ckan-sprint-2012-05-29
+140	News section on front page	new		enhancement	awaiting triage	ckan-backlog
+331	Timezone of CKAN timestamps should be configurable	new		enhancement	awaiting triage	ckan-backlog
+837	CKAN integration with freebase gridworks / google refine	new		enhancement	awaiting triage	ckan-backlog
+1009	Improvements to user accounts sytem	new	pudo	enhancement	awaiting triage	ckan-backlog
+1077	Move to simpler vdm system	new	kindly	enhancement	awaiting triage	ckan-backlog
+1163	Improvements to Storage Extension	new	rgrp	enhancement	major	ckan-backlog
+1286	Remove remaining formalchemy stuff	new		enhancement	major	ckan-backlog
+1311	Modal user register and login form	new	rgrp	enhancement	major	ckan-backlog
+1343	[super] User related improvements (login, user pages etc)	new	rgrp	enhancement	major	ckan-backlog
+1411	Force resource format to be lower case (also mimetype)	new	zephod	enhancement	awaiting triage	ckan-backlog
+1429	Provide DOIs for datasets in a CKAN instance	new	rgrp	enhancement	awaiting triage	ckan-backlog
+1432	[super] Data processing system for CKAN and Webstore	new		enhancement	awaiting triage	ckan-backlog
+1459	Featured Dataset feature	new	rgrp	enhancement	awaiting triage	ckan-backlog
+1534	Change revisions to record userid rather than username	new		enhancement	major	ckan-backlog
+1578	[super] Re-enable and refactor ratings	new		enhancement	awaiting triage	ckan-backlog
+1598	Reinstate Ratings	new		enhancement	awaiting triage	ckan-backlog
+1697	A Configurable list of states for a Dataset	new		enhancement	awaiting triage	ckan-backlog
+1745	Dataset search UX improvements as of Jan 2012	new		enhancement	awaiting triage	ckan-v1.9
+1782	Improvements to datasets page UX (Feb 2012)	new	zephod	enhancement	awaiting triage	ckan-future
+1823	Spring clean bin directory	new		enhancement	trivial	ckan-backlog
+2235	Group drop down on dataset edit should use chosen and sort groups by name	new		enhancement	awaiting triage	ckan-future
+2258	Customizable contributor agreement	new		enhancement	awaiting triage	ckan-future
+2279	Write tutorial for our DataStore API / Data Explorer	new	rgrp	enhancement	major	ckan-v1.8
+2291	DataStorer incorrectly attempts to store JSON in DataStore	new	kindly	enhancement	awaiting triage	ckan-v1.9
+2320	Introduce new state: archived	new		enhancement	awaiting triage	ckan-v1.9
+2321	Use resource names/titles in URLs	new		enhancement	awaiting triage	ckan-v1.9
+2328	Link to Catalog API for each Dataset, Group and Tag	new		enhancement	awaiting triage	ckan-v1.9
+2333	Introduce new resource type datastore	new		enhancement	awaiting triage	ckan-v1.9
+2529	DataHub (or CKAN) widgets	new		enhancement	awaiting triage	ckan-v1.9
+2530	DataHub purge fails on some revisions	new	kindly	enhancement	minor	ckan-v1.9
+2531	New state option: archived / deprecated	new		enhancement	awaiting triage	ckan-backlog
+2582	Do not hide notes / readme on dataset pages	new		enhancement	blocker	ckan-v1.9
+2673	simplify set of options for resources	new		enhancement	minor	
+2844	SQL-only (no solr) version of CKAN	new		enhancement	awaiting triage	
+2895	QA pages (e.g. broken resource links) are not paginated	new		enhancement	awaiting triage	
+84	Revert support on versioned objects	assigned	kindly	enhancement	minor	ckan-future
+285	Paginate list of packages on tag read page	assigned		enhancement	awaiting triage	
+301	Package discussion pages	assigned		enhancement	awaiting triage	
+1069	Stub datasets (request for datasets)	assigned	tobes	enhancement	awaiting triage	
+1135	Changeset model for vdm	assigned	kindly	enhancement	major	
+1136	Move to SessionExtension in vdm	assigned	kindly	enhancement	critical	
+1137	Remove need for statefulness in vdm	assigned	kindly	enhancement	major	
+1240	[super] API v4	assigned	kindly	enhancement	awaiting triage	ckan-backlog
+1358	Generate configuration documentation automatically from the deployment_ini_tmpl file	assigned	zephod	enhancement	awaiting triage	ckan-backlog
+1458	Support previewing kml files in data viewer	assigned	rgrp	enhancement	awaiting triage	ckan-future
+1460	Improve extensions documentation	assigned		enhancement	major	
+1507	Minor fixes to dataset add on Group edit form - 0.5d	assigned	zephod	enhancement	awaiting triage	ckan-backlog
+2203	Data Viewer support for PDF	assigned	kindly	enhancement	minor	ckan-v1.9
+2294	Unauthorized action on Data API gets 302 rather than 401 or similar	assigned	kindly	defect	minor	ckan-v1.9
+2329	Add back in RSS/Atom links on relevant pages	assigned		enhancement	awaiting triage	ckan 2.0
+2334	Improved data import	assigned	kindly	enhancement	awaiting triage	ckan-v1.9
+2404	Auto-screenshot for related items	assigned		enhancement	awaiting triage	ckan-future
+2405	Improvements to data viewer embed	assigned	icmurray	defect	major	ckan-v1.9
+2535	SSL certificate for DataHub + https by default	assigned		enhancement	awaiting triage	
+2874	Clean up bin directory	assigned	rgrp	enhancement	awaiting triage	
+2877	Bugs with datastore v2	assigned	kindly	enhancement	awaiting triage	

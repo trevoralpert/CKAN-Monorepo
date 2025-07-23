@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=milestone15&amp;group=status&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=milestone15&amp;group=status&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/10</link>
+        <guid isPermaLink="false">http://localhost/ticket/10</guid>
+        <title>#10: Update package</title>
+        <pubDate>Mon, 10 Jul 2006 16:50:43 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Authenticated user
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Update the attributes of a package and add/remove releases
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+The package attributes are changed. Package attributes are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;A title
+&lt;/li&gt;&lt;li&gt;A description (short or long)
+&lt;/li&gt;&lt;li&gt;Date added
+&lt;/li&gt;&lt;li&gt;Project url
+&lt;/li&gt;&lt;li&gt;package license(s)
+&lt;/li&gt;&lt;li&gt;download url
+&lt;/li&gt;&lt;li&gt;A list of releases with their dates and a summary line
+&lt;/li&gt;&lt;li&gt;a list of owners (referencing authenticated users)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I would also like to be able to add comments
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Only an authenticated user is one of owners of a package may update it
+&lt;/li&gt;&lt;li&gt;Any authenticated user may add comments (but visitors may not)
+&lt;/li&gt;&lt;li&gt;can break down into:
+&lt;ul&gt;&lt;li&gt;Update a package by changing simple package attributes (value: 8)
+&lt;/li&gt;&lt;li&gt;Update a package by adding or removing an owner (value: 5)
+&lt;/li&gt;&lt;li&gt;Update a package by adding or removing comments (value: 7)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/10#changelog</comments>
+    </item>
+ </channel>
+</rss>

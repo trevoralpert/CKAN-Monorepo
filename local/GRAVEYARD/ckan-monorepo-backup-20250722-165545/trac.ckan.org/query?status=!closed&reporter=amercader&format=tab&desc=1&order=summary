@@ -1,0 +1,23 @@
+id	summary	status	owner	type	priority	milestone
+1352	Use logic functions instead of as_dict when indexing entities	new		enhancement	major	ckan-backlog
+2268	UKLP Use same schema as form for harvested records	new	thejimmyg	enhancement	major	ckan-backlog
+1152	True support for generic CSW servers	new	amercader	enhancement	major	ckan-backlog
+2963	Timeout on tag pages with lots of datasets	new		defect	major	ckan-v1.8
+3026	Support icons on  nav_named_link	new	amercader	enhancement	minor	
+2965	Stats extension broken on 1.8	new		defect	awaiting triage	ckan-v1.8
+2788	Speed improvements on creating/updating and indexing	new	amercader	enhancement	awaiting triage	ckan-v1.9
+1818	Spatial metadata editor	new	amercader	enhancement	major	ckan-future
+1278	Refactor authorized_query calls	new		enhancement	awaiting triage	ckan-backlog
+1815	Reenable Sparql endpoint on publicdata.eu	new	amercader	task	awaiting triage	ckan-future
+2949	Reenable Data API button on the new theme	new	amercader	defect	major	
+2745	Password reset returns an exception if the key parameter is missing	new		defect	major	ckan-v1.9
+1355	Package extras property does not include the newly created ones	new		defect	awaiting triage	ckan-backlog
+3003	New pg databases should be created with UTF8 encoding rather than system default	new		enhancement	awaiting triage	ckan-v1.8
+3023	New methods on IPackageController to provide access to the data_dict	new	amercader	enhancement	awaiting triage	
+2324	Link API docs to relevant version not just latest	new		enhancement	awaiting triage	ckan-v1.9
+2382	Investigate options for basic geocoding	new	amercader	task	awaiting triage	ckan-future
+1273	Create docs for API v3	new		requirement	awaiting triage	ckan-backlog
+1134	CREP0003: Description and Configuration of Harvesters	new		CREP	major	ckan-backlog
+3025	Add requests to core requirements	new	amercader	enhancement	awaiting triage	
+2641	Adapt spatial widgets to new theme	assigned	johnmartin	enhancement	major	demo phase 5
+3002	API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string	new		defect	minor	ckan-v1.8

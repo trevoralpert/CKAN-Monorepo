@@ -1,0 +1,28 @@
+id,summary,owner,type,priority,component,time
+1503,Move from Bitbucket to Github,dread,task,major,ckan,12/01/11 13:11:24
+1002,Remove changeset model code,dread,enhancement,trivial,ckan,02/23/11 19:36:13
+1124,push apt package python-ckanext-solr into our debian repository,thejimmyg,enhancement,minor,ckan,05/04/11 19:36:33
+1415,Comments on current status of ckan deb packages,thejimmyg,enhancement,minor,ckan,10/24/11 11:51:09
+1445,Resource View page in WUI,zephod,enhancement,major,ckan,11/07/11 11:24:09
+1450,Simplify dataset view page,zephod,enhancement,major,ckan,11/07/11 14:56:28
+1453,Flexible tag names,icmurray,enhancement,major,ckan,11/08/11 17:04:10
+1478,change package_group to members table,kindly,enhancement,awaiting triage,ckan,11/22/11 11:06:13
+1480,Munge functions in util,dread,enhancement,minor,ckan,11/22/11 12:43:57
+1487,Fix group ordering on homepage,,enhancement,awaiting triage,ckan,11/24/11 00:24:40
+1490,Standardize output from package listings coming from the logic layer,amercader,enhancement,minor,ckan,11/25/11 12:47:19
+1497,Suppress benign warnings,dread,enhancement,minor,ckan,11/29/11 12:27:20
+1498,Support multiple SOLR schema versions,amercader,enhancement,major,ckan,11/29/11 16:47:44
+1499,list/read/delete packages on the command-line,dread,enhancement,minor,ckan,11/29/11 18:34:16
+1455,Search results when 'all_fields' don't include 'extra' fields,johnglover,defect,major,ckan,11/09/11 17:04:25
+1468,Update the search index for individual packages,johnglover,defect,minor,ckan,11/15/11 16:56:35
+1479,Can't edit a user with a unicode email address,dread,defect,minor,ckan,11/22/11 11:14:46
+1481,License not shown if no resources,johnglover,defect,minor,ckan,11/22/11 17:34:26
+1482,Minor JS bugs,johnglover,defect,minor,ckan,11/22/11 19:44:51
+1484,Creating package with duplicate tags causes exception,dread,defect,minor,ckan,11/23/11 12:40:46
+1493,'search-index rebuild/clear' doesn't work if no ckan.site_id,dread,defect,minor,ckan,11/28/11 12:47:02
+1500,Slug API calls tidy up,dread,defect,minor,ckan,11/29/11 20:58:05
+1501,Pagination links broken,johnglover,defect,major,ckan,11/30/11 09:46:37
+1502,Group package list is ordered by revision timestamp instead of alphabetically,johnglover,defect,minor,ckan,11/30/11 19:11:52
+1504,Action API given blank data causes exception,dread,defect,minor,ckan,12/01/11 16:25:48
+1505,SearchError and SearchQueryError cause exception in Action API,dread,defect,minor,ckan,12/01/11 17:02:48
+1517,Accessing resource view sometimes auto-downloads the resource,zephod,defect,awaiting triage,ckan,12/05/11 18:27:27

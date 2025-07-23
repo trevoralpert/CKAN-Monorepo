@@ -1,0 +1,40 @@
+id	summary	status	type	priority	milestone	component
+1635	Email notifications (e.g. for activity streams)	new	enhancement	awaiting triage	ckan-backlog	ckan
+1667	Add an extension point for rendering activity streams	new	enhancement	awaiting triage	ckan-future	ckan
+1748	Make activity streams conform to http://activitystrea.ms/ standard	new	enhancement	awaiting triage	ckan-future	ckan
+1778	Replace classmethod's with module-level functions	assigned	enhancement	awaiting triage	ckan-future	ckan
+1785	Replace 'Revisions' page with site-wide activity stream	accepted	enhancement	awaiting triage	ckan-v1.9	ckan
+2200	Add vocabulary_id option to tag_show() logic action function	new	enhancement	awaiting triage	ckan-future	ckan
+2335	Unicode characters don't work in CKAN ini files	assigned	defect	awaiting triage	ckan-v1.9	ckan
+2337	Sort out ini file confusion in docs	assigned	enhancement	awaiting triage	ckan-v1.9	ckan
+2370	Add examples of all config settings in default config file	assigned	enhancement	awaiting triage	ckan-v1.9	ckan
+2475	Upgrade trac.ckan.org to trac 0.12.3	accepted	enhancement	awaiting triage	ckan-v1.9	ckan
+2477	Add extensions section to readthedocs	accepted	enhancement	awaiting triage	ckan-v1.9	ckan
+2478	Get NeverNotifyUpdaterPlugin installed on trac.ckan.org	accepted	enhancement	awaiting triage	ckan-v1.9	ckan
+2516	Make 'Assign to:' field on trac.ckan.org into a dropdown list	accepted	enhancement	awaiting triage	ckan-v1.9	ckan
+2520	Document undocumented config options	assigned	defect	awaiting triage	ckan-v1.9	ckan
+2537	Test and document ckanbuild	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2538	Add multiple-instance support to ckanbuild	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2539	Investigate the existing ckan debian package for ckanbuild	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2540	Implement a way of upgrading ckan sites using ckanbuild	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2541	Add non-core extensions to ckanbuild	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2542	Create jenkins job to run ckanbuild, and run tests	accepted	enhancement	awaiting triage	ckanbuild	ckan
+2619	Omit private datasets from public activity streams	assigned	enhancement	awaiting triage	ckan-v1.9	ckan
+2771	Documentation and examples for IDatasetForm and IGroupForm	new	enhancement	awaiting triage	ckan-v1.8	ckan
+2815	db_to_form_package_schema() strips tracking summary, isopen	new	defect	awaiting triage	ckan-v1.8.1	ckan
+2870	1.8 tag_list not defined	new	enhancement	awaiting triage		ckan
+3005	Add following/unfollowing of groups: model, API, frontend, tests	new	enhancement	awaiting triage	ckan 2.0	ckan
+3028	Feature: dashboard activity stream filtering	new	enhancement	awaiting triage	ckan 2.0	ckan
+3029	JSONP parameter scuppers Search in API	assigned	defect	awaiting triage		ckan
+2656	Feed with few results has bad paging link, causing exception	new	defect	trivial		ckan
+2243	Fix ckanext-example	reopened	enhancement	minor	ckan-v1.9	ckan
+2301	Replace old-style string formatting with format() method (at least in strings marked for translation)	new	enhancement	minor	ckan-future	ckan
+2336	Move Jenkins' install script into ckan core so it can be versioned	accepted	enhancement	minor	ckanbuild	ckan
+2341	Fix Jenkins issue when testing branches that contain model changes	accepted	enhancement	minor	ckan-v1.9	ckan
+2342	Fix Jenkins issue when testing branches with different solr schema versions	accepted	enhancement	minor	ckan-v1.9	ckan
+2952	incorporate javascriopt translations into translations workflow	new	enhancement	minor	ckan 2.0	ckan
+2430	Look into marking tickets as dependent on other tickets in trac	accepted	enhancement	major	ckan-v1.9	ckan
+2431	Trac git integration	accepted	enhancement	major	ckan-v1.9	ckan
+2466	Fix spam handling on trac	accepted	task	major	ckan-v1.9	ckan
+2818	Improve related item schema	assigned	defect	major	demo phase 4	ckan
+2766	prevent draft datasets making it to activity stream	assigned	enhancement	blocker	demo phase 4	ckan

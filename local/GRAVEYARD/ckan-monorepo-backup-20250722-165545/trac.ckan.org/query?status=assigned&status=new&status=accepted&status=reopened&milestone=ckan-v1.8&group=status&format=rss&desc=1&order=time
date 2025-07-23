@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-v1.8&amp;group=status&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-v1.8&amp;group=status&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/3003</link>
+        <guid isPermaLink="false">http://localhost/ticket/3003</guid>
+        <title>#3003: New pg databases should be created with UTF8 encoding rather than system default</title>
+        <pubDate>Fri, 19 Oct 2012 09:33:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Just to track @tauberer patch on Github.
+Probably going to 1.8.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3003#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3002</link>
+        <guid isPermaLink="false">http://localhost/ticket/3002</guid>
+        <title>#3002: API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string</title>
+        <pubDate>Fri, 19 Oct 2012 09:32:22 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Just to track @tauberer patch on Github.
+Would be nice to write a test for it. Probably going to 1.8.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3002#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2965</link>
+        <guid isPermaLink="false">http://localhost/ticket/2965</guid>
+        <title>#2965: Stats extension broken on 1.8</title>
+        <pubDate>Mon, 15 Oct 2012 10:15:41 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Graphs not showing (looks like a flot related file is missing)
+&lt;/li&gt;&lt;li&gt;Wrong groups counts (e.g. Data Explorer Examples show 1800 datasets when it onlu has 8)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2965#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2963</link>
+        <guid isPermaLink="false">http://localhost/ticket/2963</guid>
+        <title>#2963: Timeout on tag pages with lots of datasets</title>
+        <pubDate>Mon, 15 Oct 2012 10:13:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://thedatahub.org/tag/lod"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/tag/lod&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tags with less datasets work fine (e.g. &lt;a class="ext-link" href="http://thedatahub.org/tag/railways"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/tag/railways&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2963#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2958</link>
+        <guid isPermaLink="false">http://localhost/ticket/2958</guid>
+        <title>#2958: Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8</title>
+        <pubDate>Thu, 04 Oct 2012 09:29:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. 2012_08(주요국가).xls
+&lt;/p&gt;
+&lt;p&gt;
+I tested in CKAN 2.0 and it seemed to work fine there.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2958#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2936</link>
+        <guid isPermaLink="false">http://localhost/ticket/2936</guid>
+        <title>#2936: Updating a group via the API clears its packages</title>
+        <pubDate>Wed, 19 Sep 2012 09:47:46 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If the group dict that you post to the API does not have any 'packages' key then all the group's packages get removed. I think it would be better if you could just update e.g. the group's description without having to also post the list of packages, and apparently this is how other update API actions work.
+&lt;/p&gt;
+&lt;p&gt;
+Might be worth checking all the update API actions for this behaviour, and making sure they're all consistent
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2936#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2919</link>
+        <guid isPermaLink="false">http://localhost/ticket/2919</guid>
+        <title>#2919: Remove IController from docs</title>
+        <pubDate>Wed, 12 Sep 2012 14:47:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Still in docs but seems gone from code
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2919#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2859</link>
+        <guid isPermaLink="false">http://localhost/ticket/2859</guid>
+        <title>#2859: Fix the build</title>
+        <pubDate>Thu, 16 Aug 2012 09:26:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The requires files have been removed.  These were required by buildkit.
+&lt;/p&gt;
+&lt;p&gt;
+We've lost the information regarding which packages were already in ubuntu repos, which conflicted and which were missing.  But perhaps we can just package everything up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2859#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2771</link>
+        <guid isPermaLink="false">http://localhost/ticket/2771</guid>
+        <title>#2771: Documentation and examples for IDatasetForm and IGroupForm</title>
+        <pubDate>Fri, 27 Jul 2012 12:30:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add minimal, working IDatasetForm and IGroupForm example extensions to core, with tests.
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm example should use tag vocabularies (two birds with one stone)
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm and IGroupForm docs are not very good (and are somewhat spread around different doc chapters), fix them up, and reference the new working examples.
+&lt;/p&gt;
+&lt;p&gt;
+Tab Vocabularies docs should reference IDatasetForm example.
+&lt;/p&gt;
+&lt;p&gt;
+When using convert_to/from_extras() you have to remove any free extras from the form or it won't work, this needs to be documented (in the docstring maybe)
+&lt;/p&gt;
+&lt;p&gt;
+There have been recent changes to the schemas that IDatasetForm and IGroupForm use, make sure the docs are up to date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2771#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2762</link>
+        <guid isPermaLink="false">http://localhost/ticket/2762</guid>
+        <title>#2762: test_related.py crashes</title>
+        <pubDate>Thu, 26 Jul 2012 11:55:53 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+/home/seanh/Projects/ckan/ckan/ckan/tests/functional/test_related.py
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;ImportError?&lt;/a&gt; (cannot import name assert_regexp_matches)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2762#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2761</link>
+        <guid isPermaLink="false">http://localhost/ticket/2761</guid>
+        <title>#2761: Document all the errors you can get when setting up filestore, and how to fix them</title>
+        <pubDate>Thu, 26 Jul 2012 11:36:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add it to a 'Troubleshooting' section on the filestore page: &lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.7.1/filestore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.7.1/filestore.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+For the error messages and their solutions, see various threads on ckan-dev
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2761#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2499</link>
+        <guid isPermaLink="false">http://localhost/ticket/2499</guid>
+        <title>#2499: Documentation for the internal analytics</title>
+        <pubDate>Thu, 07 Jun 2012 11:58:17 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+There's no docs for setting up the internal analytics, nor what it provides.
+&lt;/p&gt;
+&lt;h2 id="Setup"&gt;Setup&lt;/h2&gt;
+&lt;p&gt;
+Add:  &lt;tt&gt;ckan.tracking_enabled = true&lt;/tt&gt; to .ini file
+&lt;/p&gt;
+&lt;p&gt;
+Run: &lt;tt&gt;paster tracking -c dev.ini&lt;/tt&gt;
+&lt;/p&gt;
+&lt;h2 id="Relatedlinks"&gt;Related links&lt;/h2&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://trac.ckan.org/ticket/2251"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2251&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2499#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2433</link>
+        <guid isPermaLink="false">http://localhost/ticket/2433</guid>
+        <title>#2433: API uses name not id for some version 3 calls</title>
+        <pubDate>Fri, 25 May 2012 14:54:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+see &lt;a class="ext-link" href="https://github.com/okfn/ckan/pull/5"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/pull/5&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2433#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2363</link>
+        <guid isPermaLink="false">http://localhost/ticket/2363</guid>
+        <title>#2363: Documentation of best caching practice.</title>
+        <pubDate>Tue, 01 May 2012 16:16:57 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need better documentation on best practices in making page loads faster for non logged in users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2363#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2279</link>
+        <guid isPermaLink="false">http://localhost/ticket/2279</guid>
+        <title>#2279: Write tutorial for our DataStore API / Data Explorer</title>
+        <pubDate>Tue, 03 Apr 2012 19:44:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Unfortunately ES is a little bit complex / opaque to newcomers. Need to write a simple tutorial walking through this.
+&lt;/p&gt;
+&lt;p&gt;
+This is documentation / example only (no code!)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2279#changelog</comments>
+    </item>
+ </channel>
+</rss>

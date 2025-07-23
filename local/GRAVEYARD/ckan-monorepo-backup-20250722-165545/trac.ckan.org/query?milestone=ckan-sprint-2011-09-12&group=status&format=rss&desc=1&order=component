@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2011-09-12&amp;group=status&amp;desc=1&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2011-09-12&amp;group=status&amp;desc=1&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/787</link>
+        <guid isPermaLink="false">http://localhost/ticket/787</guid>
+        <title>#787: Auth API</title>
+        <pubDate>Mon, 08 Nov 2010 10:10:35 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Auth Proposal
+&lt;/p&gt;
+&lt;p&gt;
+Use case: We'd like an authenticated and authorized Drupal user to be able to
+edit/delete packages using the API
+&lt;/p&gt;
+&lt;p&gt;
+To do this a user would need a CKAN API key so we need some way of Drupal
+telling CKAN who a user is so that they can get their API key.
+&lt;/p&gt;
+&lt;p&gt;
+Proposed Implementation
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+A user visits the CKAN API key page to get their key. Because CKAN is at
+catalogue.data.gov.uk (a subdomain of the Drupal site) it can read Drupal
+cookies.
+&lt;/p&gt;
+&lt;p&gt;
+If there is no &lt;tt&gt;&lt;/tt&gt;DRXtrArgs&lt;tt&gt;&lt;/tt&gt; or &lt;tt&gt;&lt;/tt&gt;DRXtrArgs2&lt;tt&gt;&lt;/tt&gt; cookie, we know the user isn't
+signed in so we redirect them to Drupal to sign in.
+&lt;/p&gt;
+&lt;p&gt;
+WISHLIST: It would be really nice if we could pass the URL to redirect back to
+Drupal so tha Druapl can send them back to the CKAN API key page
+&lt;/p&gt;
+&lt;p&gt;
+Either way, they get back to CKAN and now the cookies exist. When the first
+HTTP request header is sent, CKAN will read the Drupal session ID and then call
+a Drupal API, server to server.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: Implement an API on the drupal server which accepts a Drupal session ID
+as an argument and returns the username and credentials, but only if the
+request if from the CKAN server (perhaps we specify an API key in the request)
+&lt;/p&gt;
+&lt;p&gt;
+If the session is valid CKAN will set its own auth cookie and show them the
+page with the API key. CKAN only considers a user signed in if both the CKAN
+cookie *and* Drupal session ID are present. If at any time they sign out of
+Drupal the Drupal session disappears so they will be signed out of CKAN too.
+&lt;/p&gt;
+&lt;p&gt;
+Now the user has an API key they can use the standard CKAN command line API
+tools.
+&lt;/p&gt;
+&lt;p&gt;
+The API key is the only thing the user will need to use the CKAN API. This
+poses a problem. What if a user is removed from Drupal but still has a CKAN API
+key?
+&lt;/p&gt;
+&lt;p&gt;
+Two solutions:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;API keys will be set to only be valid for the length of a Drupal session so
+that a user will only be able to use the write API for a little time after
+credentials are revoked
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;CKAN provides an API to allow Drupal to revoke keys
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Option 1. seems easier to me. If we choose this we will write a &lt;tt&gt;&lt;/tt&gt;get_api_key&lt;tt&gt;&lt;/tt&gt;
+command line tool so that Drupal user can write things like this:
+&lt;/p&gt;
+&lt;p&gt;
+::
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+datapkg list_packages --api_key &lt;tt&gt;get_api_key&lt;/tt&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The &lt;tt&gt;&lt;/tt&gt;get_api_key&lt;tt&gt;&lt;/tt&gt; function will prompt for username and password and then
+perform the steps necessary to get an API key.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/787#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/878</link>
+        <guid isPermaLink="false">http://localhost/ticket/878</guid>
+        <title>#878: Integrate file upload with workflow around package resources</title>
+        <pubDate>Mon, 20 Dec 2010 18:04:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Create/edit a package -&amp;gt; add a resource -&amp;gt; Oh, i haven't uploaded yet, 'upload here' -&amp;gt; /upload -&amp;gt; standard upload form
+&lt;/p&gt;
+&lt;p&gt;
+Do we need to create a resource out of the file after upload? Do we sync file metadata with local Resource metadata?
+&lt;/p&gt;
+&lt;p&gt;
+If yes suggests (need to ticket):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'&lt;a class="missing wiki"&gt;ResourceExtras?&lt;/a&gt;' for extra metadata on resources
+&lt;/li&gt;&lt;li&gt;Makes 'Resource' into first class object (and make available in WUI)?
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Depends"&gt;Depends&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/877" title="enhancement: File upload in WUI (extension) (closed: fixed)"&gt;#877&lt;/a&gt; (Upload in WUI) - should be part of that extension
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/878#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1108</link>
+        <guid isPermaLink="false">http://localhost/ticket/1108</guid>
+        <title>#1108: Create a more modern theme for CKAN</title>
+        <pubDate>Tue, 26 Apr 2011 15:13:10 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN looks a bit aged, it should be styled more modernly and some elements could be re-arranged:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Collect user info in top bar
+&lt;/li&gt;&lt;li&gt;re-add the logo to ckan.net
+&lt;/li&gt;&lt;li&gt;Remove tags from main menu, replace with /sitemap.xml
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Inpiration:
+&lt;/p&gt;
+&lt;p&gt;
+quora.com, github.com, Google Projects, Google Refine, etc.
+&lt;/p&gt;
+&lt;h2 id="CKAN.netorCKANgeneraltheme"&gt;CKAN.net or CKAN general theme?&lt;/h2&gt;
+&lt;p&gt;
+To be decided. Suggest we start with ckan.net specific and then backwards integrate (?). Existing ckan.net theme repo:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan-ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan-ckan.net&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1108#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1276</link>
+        <guid isPermaLink="false">http://localhost/ticket/1276</guid>
+        <title>#1276: Apply weighting to search fields in solr</title>
+        <pubDate>Mon, 15 Aug 2011 13:19:13 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+For example:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;name and title should have a higher weight than the notes field
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1276#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1277</link>
+        <guid isPermaLink="false">http://localhost/ticket/1277</guid>
+        <title>#1277: Use solr query parser for search instead of ckan query parser</title>
+        <pubDate>Mon, 15 Aug 2011 13:20:46 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="ext-link" href="http://ckan.okfnpad.org/search"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/search&lt;/a&gt; for details/discussion
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1291</link>
+        <guid isPermaLink="false">http://localhost/ticket/1291</guid>
+        <title>#1291: Add activity and activity detail tables.</title>
+        <pubDate>Thu, 25 Aug 2011 10:19:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Add tables described in &lt;a class="ext-link" href="http://ckan.okfnpad.org/notifications"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/notifications&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1291#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1293</link>
+        <guid isPermaLink="false">http://localhost/ticket/1293</guid>
+        <title>#1293: Rename Package to Dataset throughout WUI, API</title>
+        <pubDate>Sat, 27 Aug 2011 00:41:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Changes"&gt;Changes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;All templates
+&lt;/li&gt;&lt;li&gt;[DONE] Routing: /package/ -&amp;gt; /dataset/ (including API)
+&lt;/li&gt;&lt;li&gt;[DONE] Tests: self.app.get('/dataset/...') rather than package ...
+&lt;ul&gt;&lt;li&gt;One test to check redirect works?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Docs
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Leave"&gt;Leave&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Stay with Package in code e.g. stay with '&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt;'
+&lt;ul&gt;&lt;li&gt;also leave stuff like pkg = .... (gradual migration)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Leave extensions
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Package -&amp;gt; Dataset
+&lt;/li&gt;&lt;li&gt;Data Package -&amp;gt; Dataset
+&lt;/li&gt;&lt;li&gt;respect capitalization
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1293#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1295</link>
+        <guid isPermaLink="false">http://localhost/ticket/1295</guid>
+        <title>#1295: Simplify package create form</title>
+        <pubDate>Sat, 27 Aug 2011 00:46:54 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Sub ticket of &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Initial screen just title, name, description (notes), license (and tags?).
+&lt;/li&gt;&lt;li&gt;State that you can add data and more information on next screen. This takes you to Package 'view' where you can then do more stuff.
+&lt;ul&gt;&lt;li&gt;Flash some instructions? e.g. that resources are missing?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Name slug should by default look uneditable (cf wordpress way to do the slug)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1295#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1296</link>
+        <guid isPermaLink="false">http://localhost/ticket/1296</guid>
+        <title>#1296: Improved resource adding/editing on dataset/page page</title>
+        <pubDate>Sat, 27 Aug 2011 00:48:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Subticket of &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Nice way to edit all resource attributes
+&lt;/li&gt;&lt;li&gt;Nice way to add new resources
+&lt;ul&gt;&lt;li&gt;Including file upload (cf &lt;a class="closed ticket" href="http://localhost/ticket/878" title="enhancement: Integrate file upload with workflow around package resources (closed: fixed)"&gt;#878&lt;/a&gt;).
+&lt;ul&gt;&lt;li&gt;Cf work in ckanjs (this can be a straight integration).
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1296#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1297</link>
+        <guid isPermaLink="false">http://localhost/ticket/1297</guid>
+        <title>#1297: In-place preview of edited description markdown on edit dataset form</title>
+        <pubDate>Sat, 27 Aug 2011 00:49:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Subticket of &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Can integrate from working system on ckanjs.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1297#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1301</link>
+        <guid isPermaLink="false">http://localhost/ticket/1301</guid>
+        <title>#1301: Give access to extensions from the old formalchemy controllers</title>
+        <pubDate>Thu, 01 Sep 2011 13:14:48 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+This was removed during the auth refactoring, but it's needed in the old controllers
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1301#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1303</link>
+        <guid isPermaLink="false">http://localhost/ticket/1303</guid>
+        <title>#1303: User can not login again if he has edited his profile</title>
+        <pubDate>Thu, 01 Sep 2011 15:04:32 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Only happens if the user does not update the password.
+Most probably introduced during &lt;a class="closed ticket" href="http://localhost/ticket/1229" title="enhancement: Refactor all database code out of the controllers and into the logic layer (closed: fixed)"&gt;#1229&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1303#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1304</link>
+        <guid isPermaLink="false">http://localhost/ticket/1304</guid>
+        <title>#1304: Show more descriptive error messages when sending emails</title>
+        <pubDate>Thu, 01 Sep 2011 16:06:46 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Sending emails is failing in some cases, and the error message just says 'Could not send reset link'.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1304#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1307</link>
+        <guid isPermaLink="false">http://localhost/ticket/1307</guid>
+        <title>#1307: Implement captcha for signup</title>
+        <pubDate>Sun, 04 Sep 2011 16:31:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Major issue with spam signup on thedatahub.org
+&lt;/li&gt;&lt;li&gt;Suggest using recaptcha
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est cost: 1d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1307#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1309</link>
+        <guid isPermaLink="false">http://localhost/ticket/1309</guid>
+        <title>#1309: Registering new user requires immediate login</title>
+        <pubDate>Mon, 05 Sep 2011 12:25:10 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Registering a new user directs you to that user's profile page but does not log you in. There is an empty set of "Recent changes" and no ability to modify the page. Users must follow the login link in the top-right corner to continue.
+&lt;/p&gt;
+&lt;p&gt;
+Registering a new user should immediately log you in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1309#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1310</link>
+        <guid isPermaLink="false">http://localhost/ticket/1310</guid>
+        <title>#1310: API GET of a revision that has been approved causes exception</title>
+        <pubDate>Mon, 05 Sep 2011 15:01:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. this particular revision on ckan.net: &lt;a class="ext-link" href="http://ckan.net/api/rest/revision/9601fbcb-03a7-4ebc-981d-5aa16df4852c"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/rest/revision/9601fbcb-03a7-4ebc-981d-5aa16df4852c&lt;/a&gt;
+(most others have not been approved)
+Causes 500 error.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1310#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1324</link>
+        <guid isPermaLink="false">http://localhost/ticket/1324</guid>
+        <title>#1324: Add extra fields to resource table</title>
+        <pubDate>Fri, 09 Sep 2011 14:36:16 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+add extra fields to resource as outlined in
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://wiki.ckan.net/Domain_Model/Resource"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Domain_Model/Resource&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Specifically (all unicode strings except for those noted):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;em&gt;name&lt;/em&gt;: a name for this resource (could be used in a ckan url)
+&lt;/li&gt;&lt;li&gt;&lt;em&gt;type&lt;/em&gt;: the type of the resource. One of: file | api | service | listing
+&lt;/li&gt;&lt;li&gt;&lt;em&gt;mimetype&lt;/em&gt;: standard mimetype (e.g. for zipped csv would be application/zip)
+&lt;/li&gt;&lt;li&gt;&lt;em&gt;mimetype_inner&lt;/em&gt;: mimetype of innermost object (so for example would be text/csv)
+&lt;/li&gt;&lt;li&gt;&lt;em&gt;size&lt;/em&gt;: [integer] size of the resource (content length) in bytes. Usually only relevant for resources of type file.
+&lt;/li&gt;&lt;li&gt;&lt;em&gt;last_modified&lt;/em&gt;: [datetime] the date when this resource's data was last modified (NB: &lt;em&gt;not&lt;/em&gt; the date when the metadata was modified).
+&lt;/li&gt;&lt;li&gt;cache_url: url for cache of object in ckan storage
+&lt;/li&gt;&lt;li&gt;cache_last_updated: [datetime] timestamp when cached version was created
+&lt;/li&gt;&lt;li&gt;webstore_url:
+&lt;/li&gt;&lt;li&gt;webstore_last_updated: [datetime] timestamp when webstore was last updated
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1324#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1325</link>
+        <guid isPermaLink="false">http://localhost/ticket/1325</guid>
+        <title>#1325: python 2.5 incompatibilities</title>
+        <pubDate>Fri, 09 Sep 2011 15:00:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We claim to support Python 2.5 (useful for Lenny), yet a few problems have crept in:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'with' statement requires &lt;tt&gt;from __future__ import with_statement&lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;import json from ckan.lib.helpers, rather than directly, since it copes with reverting to simplejson, used in python 2.5.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1325#changelog</comments>
+    </item>
+ </channel>
+</rss>

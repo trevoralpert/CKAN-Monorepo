@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.4-sprint-3&amp;group=resolution&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.4-sprint-3&amp;group=resolution&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1014</link>
+        <guid isPermaLink="false">http://localhost/ticket/1014</guid>
+        <title>#1014: Decouple oAuth repoze extension from DataNO, write tests</title>
+        <pubDate>Mon, 28 Feb 2011 10:04:53 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+The current oAuth extension tightly couples repoze.who, ckan, and data.no.  These components should be decoupled; they also need more tests
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1014#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/904</link>
+        <guid isPermaLink="false">http://localhost/ticket/904</guid>
+        <title>#904: Review CKAN documentation</title>
+        <pubDate>Wed, 12 Jan 2011 11:43:30 GMT</pubDate>
+        
+        <dc:creator>Stiivi</dc:creator>
+
+        <description>&lt;p&gt;
+What's bad at the moment?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;lack of documentation e.g. config (very poorly documented)
+&lt;/li&gt;&lt;li&gt;too many sources of documentation
+&lt;/li&gt;&lt;li&gt;no common theming
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Sources:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://ckan.org/"&gt;http://ckan.org/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://packages.python.org/ckan"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://packages.python.org/ckan&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.okfn.org/ckan/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/ckan/&lt;/a&gt; - user
+&lt;/li&gt;&lt;li&gt;Deprecate: &lt;a class="ext-link" href="http://knowledgeforge.net/ckan/doc/ckan/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://knowledgeforge.net/ckan/doc/ckan/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Resulting meta-ticket with things to do: &lt;a class="closed ticket" href="http://localhost/ticket/927" title="enhancement: [super] Improvements to CKAN documentation (closed: fixed)"&gt;ticket:927&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/904#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/927</link>
+        <guid isPermaLink="false">http://localhost/ticket/927</guid>
+        <title>#927: [super] Improvements to CKAN documentation</title>
+        <pubDate>Mon, 24 Jan 2011 11:44:52 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+List of improvements to CKAN documentation (result of &lt;a class="closed ticket" href="http://localhost/ticket/904" title="task: Review CKAN documentation (closed: fixed)"&gt;ticket:904&lt;/a&gt;). Should convert most items into sub-tickets as we go along.
+&lt;/p&gt;
+&lt;h2 id="Major"&gt;Major&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Make blog.ckan.org into ckan.org and move ckan.org to trac.ckan.org/)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Document caching system - &lt;a class="closed ticket" href="http://localhost/ticket/841" title="enhancement: Caching docs (as a whole) (closed: duplicate)"&gt;ticket:841&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Howto guide for writing an extension - &lt;em&gt;started on this at &lt;a class="ext-link" href="http://wiki.ckan.net/Extending_CKAN"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Extending_CKAN&lt;/a&gt;&lt;/em&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Miscellaneous"&gt;Miscellaneous&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Contributors / credits page: &lt;a class="closed ticket" href="http://localhost/ticket/928" title="enhancement: Documentation - CKAN credits / contributors page (closed: fixed)"&gt;ticket:928&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(Data proxy documentation: move it to packages.python.org/dataproxy)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(List dataapi extensions on &lt;a href="http://ckan.org/wiki/Extensions"&gt;http://ckan.org/wiki/Extensions&lt;/a&gt; (Name, summary string + point to pypi page ...))&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Document license configuration and license system - &lt;a class="closed ticket" href="http://localhost/ticket/973" title="enhancement: Document license configuration and license system. (closed: fixed)"&gt;ticket:973&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Refactor trac frontpage moving general feature overview to ckan.org
+&lt;/li&gt;&lt;li&gt;Create proper roadmap information on &lt;a class="ext-link" href="http://trac.ckan.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Add link to wiki.ckan.net to ckan.org
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/927#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/994</link>
+        <guid isPermaLink="false">http://localhost/ticket/994</guid>
+        <title>#994: document a new migration methodology</title>
+        <pubDate>Mon, 21 Feb 2011 09:39:52 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+It is too easy to make a mistake with the migrations at the moment.  A more systematic way of doing them is needed and this needs to be documented.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/994#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/999</link>
+        <guid isPermaLink="false">http://localhost/ticket/999</guid>
+        <title>#999: Factor out ckan.net theme changes to a separate theme repo and apply</title>
+        <pubDate>Tue, 22 Feb 2011 14:58:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Rather than polluting the ckan core code base on ckan.net install with ckan.net specific changes these adaptations should be moved out into a dedicated ckan.net theme.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/999#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1000</link>
+        <guid isPermaLink="false">http://localhost/ticket/1000</guid>
+        <title>#1000: Remove call timings code</title>
+        <pubDate>Wed, 23 Feb 2011 19:34:03 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Not used and extra overhead. Very useful to strip this out and low cost.
+&lt;/p&gt;
+&lt;p&gt;
+Places where it seems to be:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;lib/base.py: c.time_call_started
+&lt;/li&gt;&lt;li&gt;....
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1000#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1003</link>
+        <guid isPermaLink="false">http://localhost/ticket/1003</guid>
+        <title>#1003: CKAN Javascript library and demonstration web interface</title>
+        <pubDate>Wed, 23 Feb 2011 19:41:26 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A plain javascript library for interfacing with CKAN would be very useful (why? see below!). It would also be nice to have a pure html + javascript web interface to CKAN both for its own sake and to act as a demonstrator for the library.
+&lt;/p&gt;
+&lt;p&gt;
+Why?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Development of bespoke interfaces -- much easier to edit html + javascript than to change ckan core
+&lt;ul&gt;&lt;li&gt;E.g. for specific communities e.g. geodata, science
+&lt;/li&gt;&lt;li&gt;Specialized tasks - multi-package editing
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Very easy deployment and integration (e.g. can drop in to getthedata or other sites)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1003#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1011</link>
+        <guid isPermaLink="false">http://localhost/ticket/1011</guid>
+        <title>#1011: Make pluggable AuthzGroups implementation</title>
+        <pubDate>Sun, 27 Feb 2011 15:14:17 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+I have a requirement to allow an external source to define the groups of which a user is a member.
+&lt;/p&gt;
+&lt;p&gt;
+I propose to create an IAuthzUserGroups plugin interface that allows an extension to arbitrarily extend the list of &lt;a class="missing wiki"&gt;AuthzGroups?&lt;/a&gt; that a user is in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1011#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1015</link>
+        <guid isPermaLink="false">http://localhost/ticket/1015</guid>
+        <title>#1015: Editing group gives exception</title>
+        <pubDate>Mon, 28 Feb 2011 13:09:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Editing a group properties on ckan.net gives an exception when you submit the form. (Is this related to db migration issues?)
+&lt;/p&gt;
+&lt;p&gt;
+Example page: &lt;a class="ext-link" href="http://ckan.net/group/edit/civil-society"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/group/edit/civil-society&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;WebApp Error: &amp;lt;class 'sqlalchemy.exc.IntegrityError'&amp;gt;: (IntegrityError) duplicate key value violates unique constraint "group_revision_pkey" 'INSERT INTO group_revision (id, name, title, description, created, state, revision_id, continuity_id) VALUES (%(id)s, %(name)s, %(title)s, %(description)s, %(created)s, %(state)s, %(revision_id)s, %(continuity_id)s)' {'description': u"A group for open data related to civil society supported by members of the interest group at: http://okfn.org/groups/civil-society\r\n\r\nCivil society is composed of the totality of voluntary civic and social organizations and institutions that form the basis of a functioning society, as distinct from the force-backed structures of a state (regardless of that state's political system) and commercial institutions of the market. \r\n\r\nhttp://en.wikipedia.org/wiki/Civil_society", 'created': datetime.datetime(2011, 2, 24, 14, 30, 53, 334842), 'title': u'Civil Society', 'state': u'active', 'continuity_id': u'f4f9f09
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1015#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1018</link>
+        <guid isPermaLink="false">http://localhost/ticket/1018</guid>
+        <title>#1018: Remove gov form</title>
+        <pubDate>Wed, 02 Mar 2011 13:28:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(It has been moved into ckanext-dgu)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1019</link>
+        <guid isPermaLink="false">http://localhost/ticket/1019</guid>
+        <title>#1019: Webhooks notification service</title>
+        <pubDate>Thu, 03 Mar 2011 15:39:44 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We propose the following push approach using individual packages:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;New, updated and deleted packages are pushed to a url endpoint on Wordpress (WPURL). This endpoint will be a configuration option on the CKAN side. A POST or PUT http method will get used. The payload will be a json document of the following form:
+&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;
+&lt;p&gt;
+{
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+payload: The entity data as available from the REST API
+entity-type: 'Package',
+operation-type: 'create'|'update'|'delete' # one of these options
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+It will be sent as the body of the request with content-type set to application/json.
+&lt;/p&gt;
+&lt;ol start="2"&gt;&lt;li&gt;The wordpress side will provide a 200 on success. Any other response will be taken as a failure. On failure, submission will be archived and failure logged and notified to system administrator. Submission can be resent later automatically by sysadmin after review.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Pushes will happen continuously and approximately simultaneously with updates (a webhooks type model)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;[optional] CKAN side will support configuring authorization for basic authentication if applied on WP side.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;[optional] List queue status (including failures) on ckan adminstrative dashboard.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1019#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1021</link>
+        <guid isPermaLink="false">http://localhost/ticket/1021</guid>
+        <title>#1021: Config option to disable OpenID</title>
+        <pubDate>Mon, 07 Mar 2011 10:15:20 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+HRI don't like federation, want to login normal way only. Make this a config option and perhaps even mess with runtime repoze config
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1021#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1022</link>
+        <guid isPermaLink="false">http://localhost/ticket/1022</guid>
+        <title>#1022: Error reporting in CKAN worker API</title>
+        <pubDate>Mon, 07 Mar 2011 10:17:27 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Report on errors by any worker daemons, send them out via E-Mail
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1022#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1025</link>
+        <guid isPermaLink="false">http://localhost/ticket/1025</guid>
+        <title>#1025: Default authz can be set in config</title>
+        <pubDate>Tue, 08 Mar 2011 14:55:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the default authz for a package is hard-coded to:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt; &amp;lt;PackageRole user="visitor" role="editor" context="Package"&amp;gt;,
+ &amp;lt;PackageRole user="logged_in" role="editor" context="Package"&amp;gt;,
+&lt;/pre&gt;&lt;p&gt;
+This should be configurable in the config, so that you can have a more locked down instance etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1025#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1026</link>
+        <guid isPermaLink="false">http://localhost/ticket/1026</guid>
+        <title>#1026: cli for creating users</title>
+        <pubDate>Tue, 08 Mar 2011 17:17:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+It's handy to be able to create users using the cli (e.g. dgu migration)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1026#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1027</link>
+        <guid isPermaLink="false">http://localhost/ticket/1027</guid>
+        <title>#1027: Authorization checks on all controller actions</title>
+        <pubDate>Wed, 09 Mar 2011 10:24:16 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We want to have authz checks on all controller actions so that we can lock down CKAN to a login-only mode.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1027#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1028</link>
+        <guid isPermaLink="false">http://localhost/ticket/1028</guid>
+        <title>#1028: Open redirect in locale setting</title>
+        <pubDate>Thu, 10 Mar 2011 12:24:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1028#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1029</link>
+        <guid isPermaLink="false">http://localhost/ticket/1029</guid>
+        <title>#1029: synchronous search erroring when harvesting is run.</title>
+        <pubDate>Thu, 10 Mar 2011 14:45:37 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Errors are caused when harvesting documents. This also makes the count not show up correctly on the ckan search page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1029#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/427</link>
+        <guid isPermaLink="false">http://localhost/ticket/427</guid>
+        <title>#427: Match licenses from GEMINI document</title>
+        <pubDate>Tue, 10 Aug 2010 10:36:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;examples of posting a new package
+&lt;/li&gt;&lt;li&gt;example license_id - explain
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/427#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1024</link>
+        <guid isPermaLink="false">http://localhost/ticket/1024</guid>
+        <title>#1024: Lock down all controller actions in CKAN</title>
+        <pubDate>Mon, 07 Mar 2011 10:23:48 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+When a user visits the site, he/she may only see a login box.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1024#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/801</link>
+        <guid isPermaLink="false">http://localhost/ticket/801</guid>
+        <title>#801: Get/Set last harvested time for a given harvest source</title>
+        <pubDate>Thu, 11 Nov 2010 13:52:26 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Implies that last harvested time must be stored on source by harvesting job (see &lt;a class="closed ticket" href="http://localhost/ticket/802" title="story: Save last harvested time on source (closed: duplicate)"&gt;#802&lt;/a&gt;).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/801#changelog</comments>
+    </item>
+ </channel>
+</rss>

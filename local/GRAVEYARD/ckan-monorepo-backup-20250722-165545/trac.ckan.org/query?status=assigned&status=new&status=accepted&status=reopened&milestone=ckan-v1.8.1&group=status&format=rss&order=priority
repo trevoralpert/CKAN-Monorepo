@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-v1.8.1&amp;group=status&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-v1.8.1&amp;group=status&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2887</link>
+        <guid isPermaLink="false">http://localhost/ticket/2887</guid>
+        <title>#2887: "Welcome to CKAN!" on front page is untranslatable</title>
+        <pubDate>Wed, 22 Aug 2012 09:17:59 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+ckan/templates/home/index.html contains:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;h1 class="page_heading"&amp;gt;Welcome to ${g.site_title}!&amp;lt;/h1&amp;gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+which means that just "Welcome to" ends up in the ckan.po files for
+translation. This makes the phrase untranslatable in languages that have a different word ordering than English where the site title needs to be somewhere other than at the end of the sentence.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2887#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2763</link>
+        <guid isPermaLink="false">http://localhost/ticket/2763</guid>
+        <title>#2763: Multilingual tests failing</title>
+        <pubDate>Thu, 26 Jul 2012 11:56:59 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+test_multilingual_plugin.&lt;a class="missing wiki"&gt;TestDatasetTermTranslation?&lt;/a&gt;.test_dataset_index_translation, test_multilingual_plugin.&lt;a class="missing wiki"&gt;TestDatasetTermTranslation?&lt;/a&gt;.test_group_read_translation both failing for me on master
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2763#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2815</link>
+        <guid isPermaLink="false">http://localhost/ticket/2815</guid>
+        <title>#2815: db_to_form_package_schema() strips tracking summary, isopen</title>
+        <pubDate>Wed, 08 Aug 2012 16:47:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If an IDatasetForm plugin with a db_to_form_schema() based on db_to_form_package_schema() (which is in turn based on default_package_schema()) is in use then the 'tracking_summary' dict and the 'isopen' bool get stripped from package dicts during validation, e.g. during package_show(), and these values are then not available to templates.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2846</link>
+        <guid isPermaLink="false">http://localhost/ticket/2846</guid>
+        <title>#2846: Organizations allows you to set an organization as the parent organization of itself</title>
+        <pubDate>Mon, 13 Aug 2012 12:22:16 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+that doesn't make any sense
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2846#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2881</link>
+        <guid isPermaLink="false">http://localhost/ticket/2881</guid>
+        <title>#2881: Remove or improve 'Domain Model' docs page</title>
+        <pubDate>Tue, 21 Aug 2012 09:05:17 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.8/domain-model.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.8/domain-model.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Currently not very useful. Also these pages:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-dataset.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-dataset.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-resource.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-resource.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-task-status.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-task-status.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This just seems very incomplete to me (surely there is more to the domain model the dataset, resource and task status?) and very likely to not get updated as changes are mode to the code. Would anyone seriously refer to this rather than just looking at the source code?
+&lt;/p&gt;
+&lt;p&gt;
+If we want to have something along these lines in the docs, I suggest adding docstrings to packages, modules, classes and methods and then using autodoc to pull them into sphinx.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2881#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2882</link>
+        <guid isPermaLink="false">http://localhost/ticket/2882</guid>
+        <title>#2882: Remove User Stories Overview from docs?</title>
+        <pubDate>Tue, 21 Aug 2012 09:18:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Why is this here? Is it up to date? Is anyone keeping it up to date? Does this belong in some sort of CKAN planning or roadmap document rather than in the documentation?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/user-stories.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/user-stories.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2882#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2883</link>
+        <guid isPermaLink="false">http://localhost/ticket/2883</guid>
+        <title>#2883: Add high level dev overview to 'For CKAN Developers' section of docs</title>
+        <pubDate>Tue, 21 Aug 2012 10:52:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Here's a draft: &lt;a class="ext-link" href="https://gist.github.com/3414107"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/3414107&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2883#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2884</link>
+        <guid isPermaLink="false">http://localhost/ticket/2884</guid>
+        <title>#2884: Lock icon shown next to unknown licenses</title>
+        <pubDate>Tue, 21 Aug 2012 16:01:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Set the license of a dataset to blank (the first option) or to 'License Not Specified' or 'Other (Non-Commercial)' and a lock icon appears next to the license on the dataset read page. Shouldn't this be a question mark or something?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2884#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2890</link>
+        <guid isPermaLink="false">http://localhost/ticket/2890</guid>
+        <title>#2890: Collect data previews and data store docs in one chapter</title>
+        <pubDate>Tue, 28 Aug 2012 10:20:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently there is this page:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/data-viewer.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/data-viewer.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+which covers Recline Data Explorer and other kinds of data preview in CKAN. It is under the Publishing Datasets section in the documentation. I had to to a search for 'recline' to find it.
+&lt;/p&gt;
+&lt;p&gt;
+Separately there is this page: &lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.7.1/datastore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.7.1/datastore.html&lt;/a&gt; which covers datastore, datastorer, and the data api.
+&lt;/p&gt;
+&lt;p&gt;
+I suggest collecting this together in one chapter called 'Data Previews'. If I understand it right the general gist would be:
+&lt;/p&gt;
+&lt;p&gt;
+CKAN has builtin previews of data resources on resource pages, enabled by default.
+&lt;/p&gt;
+&lt;p&gt;
+Images, Google Documents, and web page resources will be loaded into embedded iframes for preview.
+&lt;/p&gt;
+&lt;p&gt;
+Text-like files will be displayed raw.
+&lt;/p&gt;
+&lt;p&gt;
+CSV or Excel files uploaded to CKAN will be previewed using Recline Data Explorer.
+&lt;/p&gt;
+&lt;p&gt;
+Additionally, you can enable CKAN's &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt;, requires you to install &lt;a class="missing wiki"&gt;ElasticSearch?&lt;/a&gt; and nginx and put datastore.enabled=1 in your ini file. Lets you use the Data API to query data.
+&lt;/p&gt;
+&lt;p&gt;
+Does having &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; enabled mean you get preview of more types of resources? Any resource that's available via the Data API will be previewed using Recline,
+&lt;/p&gt;
+&lt;p&gt;
+You can install ckanext-datastorer, and then CSV and Excel files _linked to_ as CKAN resources will be previewed using Recline also. Requires celeryd.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2890#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2891</link>
+        <guid isPermaLink="false">http://localhost/ticket/2891</guid>
+        <title>#2891: Update or remove DataStore google presentation</title>
+        <pubDate>Tue, 28 Aug 2012 10:23:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently this page:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.8/datastore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.8/datastore.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+has an embedded Google docs presentation about data store which contains some outdated information, e.g. links to datastoreclient which was merged into ckanclient.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest moving the google presentation into the documentation proper, so it works with grep etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2891#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2892</link>
+        <guid isPermaLink="false">http://localhost/ticket/2892</guid>
+        <title>#2892: IDatasetForm's form_to_db_schema() breaks API?</title>
+        <pubDate>Tue, 28 Aug 2012 11:42:05 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It looks like when an IDatasetForm plugin with a form_to_db_schema() method is active, then the posted data dict is validated against the schema even if the user is posting to an API endpoint like /api/action/package_update etc. This breaks the API, for example 'name' and 'title' are optional keys for package_update (you can supply only the 'id'), but the schema validation will fail if either are not present in the posted dict.
+&lt;/p&gt;
+&lt;p&gt;
+It may be we need different schema for package create and package update, currently IDatasetForm has just the one form_to_db_schema() method.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2892#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2893</link>
+        <guid isPermaLink="false">http://localhost/ticket/2893</guid>
+        <title>#2893: Tags missing from form_to_db_package_schema()</title>
+        <pubDate>Tue, 28 Aug 2012 12:11:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+With an IDatasetForm plugin active with a form_to_db_package_schema() method that returns a schema based on ckan/logic/schema.py:form_to_db_package_schema() I'm getting validation errors like this:
+&lt;/p&gt;
+&lt;p&gt;
+[ckan.controllers.api] Validation error: "{'&lt;span class="underline"&gt;type': 'Validation Error', '&lt;/span&gt;junk': [u'The input field &lt;span class="underline"&gt;junk was not expected.']}"
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+They seem to be caused when a data dict with key 'tags' is passed to e.g. the package_update API, for example in ckan/tests/functional/api/model/test_vocabulary.py there are various tests that get this error when they call package_update (if you run the tests with a suitable IDatasetForm plugin active).
+&lt;/p&gt;
+&lt;p&gt;
+In ckan/logic/schema.py:form_to_db_package_schema() 'tags' is for some reason deliberately removed from the schema.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2893#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2894</link>
+        <guid isPermaLink="false">http://localhost/ticket/2894</guid>
+        <title>#2894: Empty lists get stripped from package dicst in package_show()</title>
+        <pubDate>Tue, 28 Aug 2012 12:40:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If there's an IDatasetForm plugin active with a form_to_db_schema(), then packages with e.g. no extras get the 'extras' key entirely stripped by the validation in package_show, which causes some tests to crash, e.g. in ckan/tests/functional/api/test_activity.py (if the tests are run with a suitable IDatasetForm plugin active).
+&lt;/p&gt;
+&lt;p&gt;
+If a package has no extras the dict returned by package_show should still have an 'extras' key with an empty list as the value.
+&lt;/p&gt;
+&lt;p&gt;
+Suspect this also effects packages with no tags, no groups, etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2894#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2896</link>
+        <guid isPermaLink="false">http://localhost/ticket/2896</guid>
+        <title>#2896: resource_create crashes on ValidationErrors with KeyError: 'resources'</title>
+        <pubDate>Wed, 29 Aug 2012 16:29:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+ckan/logic/action/create.py:resource_create():
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+pkg_dict = _get_action('package_update')(context, pkg_dict)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except &lt;a class="missing wiki"&gt;ValidationError?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+errors = e.error_dict&lt;a class="missing wiki"&gt;resources?&lt;/a&gt;[-1]
+raise &lt;a class="missing wiki"&gt;ValidationError?&lt;/a&gt;(errors)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This assumes that package_update always returns an error dict with 'resources' in it. This assumption doesn't hold.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2896#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2897</link>
+        <guid isPermaLink="false">http://localhost/ticket/2897</guid>
+        <title>#2897: db_to_form_package_schema() crashes historical dataset page</title>
+        <pubDate>Thu, 30 Aug 2012 12:41:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If there's an IDatasetForm plugin active with a db_to_form_schema() method based on db_to_form_package_schema(), then viewing historical versions of datasets (e.g. &lt;a class="ext-link" href="http://127.0.0.1:5000/dataset/dasd%402012-08-30T12%3A26%3A18.524191"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://127.0.0.1:5000/dataset/dasd%402012-08-30T12%3A26%3A18.524191&lt;/a&gt;) crashes.
+&lt;/p&gt;
+&lt;p&gt;
+Reason is that revison_id and revision_timestamp need to be added to db_to_form_package_schema(), something like:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+schema.update({'revision_id': [validators.ignore_missing, unicode]})
+schema.update({'revision_timestamp':
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[validators.ignore_missing, unicode]})
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2897#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2900</link>
+        <guid isPermaLink="false">http://localhost/ticket/2900</guid>
+        <title>#2900: snippets/package_list.html template crashes on dataset that has no 'notes'</title>
+        <pubDate>Thu, 30 Aug 2012 14:00:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Sometimes a dataset dict comes through package_show() with 'notes': None and then the 'notes' key gets stripped from the dict when validation happens (validation only happens if there's an IDatasetForm plugin with a db_to_form_schema() method) and then package_list.html template crashes, e.g. on user profile pages.
+&lt;/p&gt;
+&lt;p&gt;
+Fix in the template? Or in the schema?
+&lt;/p&gt;
+&lt;p&gt;
+The template also crashes on packages with no tags (empty list gets stripped from dict) and probably other empty fields as well
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2900#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2912</link>
+        <guid isPermaLink="false">http://localhost/ticket/2912</guid>
+        <title>#2912: ckanext/organizations: Neither public or private initially selected when adding dataset</title>
+        <pubDate>Mon, 10 Sep 2012 09:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When adding a dataset with the organizations extension on, neither the Public or the Private radio button is initially selected. Public should be selected.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2912#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2914</link>
+        <guid isPermaLink="false">http://localhost/ticket/2914</guid>
+        <title>#2914: Add form_to_db_schema_options() to IDatasetForm and IGroupForm</title>
+        <pubDate>Wed, 12 Sep 2012 10:29:55 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This optional method is supported when creating or updating groups and packages and is used in &lt;a class="missing wiki"&gt;DefaultGroupForm?&lt;/a&gt; and &lt;a class="missing wiki"&gt;DefaultPackageForm?&lt;/a&gt;, but seems to be missing from the interfaces. Should be added with docstring.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2914#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3006</link>
+        <guid isPermaLink="false">http://localhost/ticket/3006</guid>
+        <title>#3006: Update translations from Transifex</title>
+        <pubDate>Mon, 29 Oct 2012 10:22:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are some new translations already on the CKAN 1.8 resource on Transifex already (e.g. 100% Norwegian translation I think). We should at least pull these from Transifex for 1.8.1, and may as well do a call for translations too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3006#changelog</comments>
+    </item>
+ </channel>
+</rss>

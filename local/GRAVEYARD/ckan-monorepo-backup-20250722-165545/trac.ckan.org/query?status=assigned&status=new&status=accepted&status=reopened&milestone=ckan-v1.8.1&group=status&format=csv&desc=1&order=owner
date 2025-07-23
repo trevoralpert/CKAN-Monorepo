@@ -1,0 +1,20 @@
+id,summary,owner,type,priority,component,time
+2763,Multilingual tests failing,,defect,awaiting triage,ckan,07/26/12 11:56:59
+2846,Organizations allows you to set an organization as the parent organization of itself,,defect,awaiting triage,ckan,08/13/12 12:22:16
+2881,Remove or improve 'Domain Model' docs page,,defect,awaiting triage,ckan,08/21/12 09:05:17
+2882,Remove User Stories Overview from docs?,,defect,awaiting triage,ckan,08/21/12 09:18:43
+2883,Add high level dev overview to 'For CKAN Developers' section of docs,,enhancement,awaiting triage,ckan,08/21/12 10:52:35
+2884,Lock icon shown next to unknown licenses,,defect,awaiting triage,ckan,08/21/12 16:01:13
+2887,"""Welcome to CKAN!"" on front page is untranslatable",,defect,major,ckan,08/22/12 09:17:59
+2890,Collect data previews and data store docs in one chapter,,enhancement,awaiting triage,ckan,08/28/12 10:20:36
+2891,Update or remove DataStore google presentation,,defect,awaiting triage,ckan,08/28/12 10:23:43
+2892,IDatasetForm's form_to_db_schema() breaks API?,,defect,awaiting triage,ckan,08/28/12 11:42:05
+2893,Tags missing from form_to_db_package_schema(),,defect,awaiting triage,ckan,08/28/12 12:11:04
+2894,Empty lists get stripped from package dicst in package_show(),,defect,awaiting triage,ckan,08/28/12 12:40:34
+2896,resource_create crashes on ValidationErrors with KeyError: 'resources',,defect,awaiting triage,ckan,08/29/12 16:29:14
+2897,db_to_form_package_schema() crashes historical dataset page,,defect,awaiting triage,ckan,08/30/12 12:41:35
+2900,snippets/package_list.html template crashes on dataset that has no 'notes',,defect,awaiting triage,ckan,08/30/12 14:00:07
+2912,ckanext/organizations: Neither public or private initially selected when adding dataset,,defect,awaiting triage,ckan,09/10/12 09:57:56
+2914,Add form_to_db_schema_options() to IDatasetForm and IGroupForm,,defect,awaiting triage,ckan,09/12/12 10:29:55
+3006,Update translations from Transifex,,enhancement,awaiting triage,ckan,10/29/12 10:22:24
+2815,"db_to_form_package_schema() strips tracking summary, isopen",seanh,defect,awaiting triage,ckan,08/08/12 16:47:07

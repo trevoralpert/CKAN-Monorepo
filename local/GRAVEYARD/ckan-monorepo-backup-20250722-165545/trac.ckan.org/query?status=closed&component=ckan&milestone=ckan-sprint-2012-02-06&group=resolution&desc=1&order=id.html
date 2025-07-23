@@ -1,0 +1,1079 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      Custom Query – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=rss&amp;desc=1&amp;order=id" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=csv&amp;desc=1&amp;order=id" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=tab&amp;desc=1&amp;order=id" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" />
+        <link rel="start" href="wiki.1.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/report.css" type="text/css" />
+        <link rel="shortcut icon" href="chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search CKAN" />
+    <script type="text/javascript">
+      var properties={"cc":{"label":"Cc","type":"text"},"changetime":{"label":"Modified","type":"time"},"component":{"label":"Component","options":["ckan","ckan hosted","contrib","datacatalogs","dgu","dpm","ecportal","iati","lod2","pdeu","uklii","vdm"],"type":"select"},"description":{"label":"Description","type":"textarea"},"id":{"label":"Ticket","type":"id"},"keywords":{"label":"Keywords","type":"text"},"milestone":{"label":"Milestone","options":["milestone15","milestone1","milestone16","milestone17","milestone18","v0.3","v0.4","v0.5","v0.6","v0.7","v0.8","v0.9","v0.10","v0.11","vdm-0.6","vdm-0.7","v1.0","v1.1","iati-1","iati-2","ckan-v1.2","datapkg-0.7","iati-3","ckan-v1.3-sprint-2","ckan-v1.3-sprint-1","ckan-v1.3-sprint-3","ckan-v1.3","datapkg-0.8","ckan-v1.4-sprint-1","ckan-sprint-2011-12-19","ckan-v1.4-sprint-2","ckan-v1.4-sprint-3","ckan-v1.4-sprint-4","ckan-v1.4-sprint-5","ckan-v1.4-sprint-6","ckan-v1.4","ckan-v1.4-sprint-7","ckan-v1.5-sprint-1","ckan-v1.5-sprint-2","pdeu-1","vdm-0.8","ckan-v1.5-sprint-3","ckan-v1.5-sprint-4","ckan-sprint-2011-09-12","iati-4","ckan-sprint-2011-09-26","ckan-sprint-2011-10-10","ckan-sprint-2011-10-24","ckan-sprint-2011-10-28","ckan-v1.5","ckan-sprint-2011-11-07","ckan-sprint-2011-11-21","ckan-sprint-2011-12-05","ckan-sprint-2012-01-09","ckan-sprint-2012-01-23","ckan-sprint-2012-02-06","ckan-sprint-2012-02-20","ckan-v1.6","ckan-sprint-2012-03-05","ckan-sprint-2012-03-19","ckan-sprint-2012-04-02","ckan-sprint-2012-04-16","ckan-sprint-2012-04-30","ckan-sprint-2012-05-15","ckan-sprint-2012-05-29","ckan-v1.7","demo phase 1","demo phase 2","demo phase 3","ckan-v1.8","ckan-sprint-2012-06-25","opendatasuite 1","ckanbuild","datahub-july","datahub-oct","opendatasuite 2","ckan-v1.9","ckan 2.0","ckan-backlog","ckan-ecportal","ckan-future","ckan-v1.8.1","demo phase 4","demo phase 5"],"type":"select"},"owner":{"label":"Owner","type":"text"},"priority":{"label":"Priority","options":["blocker","critical","major","minor","trivial","awaiting triage","awaiting merge"],"type":"select"},"repo":{"label":"Repository","options":["ckan","ckanclient","ckanext","ckanext-admin","ckanext-community","ckanext-csw","ckanext-dataapi","ckanext-no","ckanext-datapreview","ckanext-deliverance","ckanext-dgu","ckanext-geo","ckanext-harvest","ckanext-iati","ckanext-importlib","ckanext-qa","ckanext-queue","ckanext-solr","ckanext-stats","ckanext-storage","ckanext-upload","ckanext-webhooks","datapkg","vdm"],"type":"select"},"reporter":{"label":"Reporter","type":"text"},"resolution":{"label":"Resolution","options":["fixed","invalid","wontfix","duplicate","worksforme"],"type":"radio"},"status":{"label":"Status","options":["accepted","assigned","closed","new","reopened"],"type":"radio"},"summary":{"label":"Summary","type":"text"},"theme":{"label":"Theme","options":["deployment","notifications","migrations","harvesting","dictization","qa","entities","none"],"type":"select"},"time":{"label":"Created","type":"time"},"type":{"label":"Type","options":["defect","enhancement","refactor","task","requirement","CREP"],"type":"select"}};
+      var modes={"id":[{"name":"is","value":""},{"name":"is not","value":"!"}],"select":[{"name":"is","value":""},{"name":"is not","value":"!"}],"text":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"},{"name":"begins with","value":"^"},{"name":"ends with","value":"$"},{"name":"is","value":""},{"name":"is not","value":"!"}],"textarea":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"}]};
+    </script>
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/query.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="chrome/common/js/folding.js"></script>
+    <script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        initializeFilters();
+        $("#group").change(function() {
+          $("#groupdesc").enable(this.selectedIndex != 0)
+        }).change();
+        $("fieldset legend.foldable").enableFolding(false);
+        /* Hide the filters for saved queries. */
+        if (window.location.href.search(/[?&]report=[0-9]+/) != -1)
+          $("#filters").toggleClass("collapsed");
+        /* Hide the columns by default. */
+        $("#columns").toggleClass("collapsed");
+      });
+    /*]]>*/</script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="prefs.html">Preferences</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li class="active"><a href="report.html">View Tickets</a></li><li><a href="search.html">Search</a></li><li class="last"><a href="wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="report.html">Available Reports</a></li><li class="last">Custom Query</li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="query">
+      <h1>Custom Query <span class="numrows">(31 matches)</span></h1>
+      <form id="query" method="post" action="query.html"><div><input type="hidden" name="__FORM_TOKEN" value="93d81ccf9a7bb1c456462f62" /></div>
+        <fieldset id="filters">
+          <legend class="foldable">Filters</legend>
+          <table summary="Query filters">
+            <tbody>
+              <tr style="display: none">
+                <td>
+		  <div class="trac-clause-lsep"> <hr /></div>
+		  <div class="trac-clause-msep">Or</div>
+		  <div class="trac-clause-rsep"> <hr /></div>
+		</td>
+              </tr>
+              <tr><td class="trac-clause">
+                <table class="trac-clause">
+                  <tbody>
+                    <tr class="component">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_component_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_component">Component</label></th>
+                          <td class="mode">
+                            <select name="0_component_mode">
+                              <option value="" selected="selected">is</option><option value="!">is not</option>
+                            </select>
+                          </td>
+                      <td class="filter">
+                          <select name="0_component">
+                            <option></option>
+                            <option selected="selected" value="ckan">ckan</option><option value="ckan hosted">ckan hosted</option><option value="contrib">contrib</option><option value="datacatalogs">datacatalogs</option><option value="dgu">dgu</option><option value="dpm">dpm</option><option value="ecportal">ecportal</option><option value="iati">iati</option><option value="lod2">lod2</option><option value="pdeu">pdeu</option><option value="uklii">uklii</option><option value="vdm">vdm</option>
+                          </select>
+                      </td>
+                    </tr>
+                  </tbody><tbody>
+                    <tr class="milestone">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_milestone_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_milestone">Milestone</label></th>
+                          <td class="mode">
+                            <select name="0_milestone_mode">
+                              <option value="" selected="selected">is</option><option value="!">is not</option>
+                            </select>
+                          </td>
+                      <td class="filter">
+                          <select name="0_milestone">
+                            <option></option>
+                            <option value="milestone15">milestone15</option><option value="milestone1">milestone1</option><option value="milestone16">milestone16</option><option value="milestone17">milestone17</option><option value="milestone18">milestone18</option><option value="v0.3">v0.3</option><option value="v0.4">v0.4</option><option value="v0.5">v0.5</option><option value="v0.6">v0.6</option><option value="v0.7">v0.7</option><option value="v0.8">v0.8</option><option value="v0.9">v0.9</option><option value="v0.10">v0.10</option><option value="v0.11">v0.11</option><option value="vdm-0.6">vdm-0.6</option><option value="vdm-0.7">vdm-0.7</option><option value="v1.0">v1.0</option><option value="v1.1">v1.1</option><option value="iati-1">iati-1</option><option value="iati-2">iati-2</option><option value="ckan-v1.2">ckan-v1.2</option><option value="datapkg-0.7">datapkg-0.7</option><option value="iati-3">iati-3</option><option value="ckan-v1.3-sprint-2">ckan-v1.3-sprint-2</option><option value="ckan-v1.3-sprint-1">ckan-v1.3-sprint-1</option><option value="ckan-v1.3-sprint-3">ckan-v1.3-sprint-3</option><option value="ckan-v1.3">ckan-v1.3</option><option value="datapkg-0.8">datapkg-0.8</option><option value="ckan-v1.4-sprint-1">ckan-v1.4-sprint-1</option><option value="ckan-sprint-2011-12-19">ckan-sprint-2011-12-19</option><option value="ckan-v1.4-sprint-2">ckan-v1.4-sprint-2</option><option value="ckan-v1.4-sprint-3">ckan-v1.4-sprint-3</option><option value="ckan-v1.4-sprint-4">ckan-v1.4-sprint-4</option><option value="ckan-v1.4-sprint-5">ckan-v1.4-sprint-5</option><option value="ckan-v1.4-sprint-6">ckan-v1.4-sprint-6</option><option value="ckan-v1.4">ckan-v1.4</option><option value="ckan-v1.4-sprint-7">ckan-v1.4-sprint-7</option><option value="ckan-v1.5-sprint-1">ckan-v1.5-sprint-1</option><option value="ckan-v1.5-sprint-2">ckan-v1.5-sprint-2</option><option value="pdeu-1">pdeu-1</option><option value="vdm-0.8">vdm-0.8</option><option value="ckan-v1.5-sprint-3">ckan-v1.5-sprint-3</option><option value="ckan-v1.5-sprint-4">ckan-v1.5-sprint-4</option><option value="ckan-sprint-2011-09-12">ckan-sprint-2011-09-12</option><option value="iati-4">iati-4</option><option value="ckan-sprint-2011-09-26">ckan-sprint-2011-09-26</option><option value="ckan-sprint-2011-10-10">ckan-sprint-2011-10-10</option><option value="ckan-sprint-2011-10-24">ckan-sprint-2011-10-24</option><option value="ckan-sprint-2011-10-28">ckan-sprint-2011-10-28</option><option value="ckan-v1.5">ckan-v1.5</option><option value="ckan-sprint-2011-11-07">ckan-sprint-2011-11-07</option><option value="ckan-sprint-2011-11-21">ckan-sprint-2011-11-21</option><option value="ckan-sprint-2011-12-05">ckan-sprint-2011-12-05</option><option value="ckan-sprint-2012-01-09">ckan-sprint-2012-01-09</option><option value="ckan-sprint-2012-01-23">ckan-sprint-2012-01-23</option><option selected="selected" value="ckan-sprint-2012-02-06">ckan-sprint-2012-02-06</option><option value="ckan-sprint-2012-02-20">ckan-sprint-2012-02-20</option><option value="ckan-v1.6">ckan-v1.6</option><option value="ckan-sprint-2012-03-05">ckan-sprint-2012-03-05</option><option value="ckan-sprint-2012-03-19">ckan-sprint-2012-03-19</option><option value="ckan-sprint-2012-04-02">ckan-sprint-2012-04-02</option><option value="ckan-sprint-2012-04-16">ckan-sprint-2012-04-16</option><option value="ckan-sprint-2012-04-30">ckan-sprint-2012-04-30</option><option value="ckan-sprint-2012-05-15">ckan-sprint-2012-05-15</option><option value="ckan-sprint-2012-05-29">ckan-sprint-2012-05-29</option><option value="ckan-v1.7">ckan-v1.7</option><option value="demo phase 1">demo phase 1</option><option value="demo phase 2">demo phase 2</option><option value="demo phase 3">demo phase 3</option><option value="ckan-v1.8">ckan-v1.8</option><option value="ckan-sprint-2012-06-25">ckan-sprint-2012-06-25</option><option value="opendatasuite 1">opendatasuite 1</option><option value="ckanbuild">ckanbuild</option><option value="datahub-july">datahub-july</option><option value="datahub-oct">datahub-oct</option><option value="opendatasuite 2">opendatasuite 2</option><option value="ckan-v1.9">ckan-v1.9</option><option value="ckan 2.0">ckan 2.0</option><option value="ckan-backlog">ckan-backlog</option><option value="ckan-ecportal">ckan-ecportal</option><option value="ckan-future">ckan-future</option><option value="ckan-v1.8.1">ckan-v1.8.1</option><option value="demo phase 4">demo phase 4</option><option value="demo phase 5">demo phase 5</option>
+                          </select>
+                      </td>
+                    </tr>
+                  </tbody><tbody>
+                    <tr class="status">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_status_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_status">Status</label></th>
+                      <td class="filter" colspan="2">
+                            <input type="checkbox" id="_0_status_accepted" name="0_status" value="accepted" />
+                            <label for="_0_status_accepted" class="control">accepted</label>
+                            <input type="checkbox" id="_0_status_assigned" name="0_status" value="assigned" />
+                            <label for="_0_status_assigned" class="control">assigned</label>
+                            <input type="checkbox" id="_0_status_closed" name="0_status" value="closed" checked="checked" />
+                            <label for="_0_status_closed" class="control">closed</label>
+                            <input type="checkbox" id="_0_status_new" name="0_status" value="new" />
+                            <label for="_0_status_new" class="control">new</label>
+                            <input type="checkbox" id="_0_status_reopened" name="0_status" value="reopened" />
+                            <label for="_0_status_reopened" class="control">reopened</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="actions">
+                      <td class="and" colspan="2">
+                         <label for="add_filter_0">And</label> 
+                        <select name="add_filter_0" id="add_filter_0">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status" disabled="disabled">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_0" value="+" />
+                        </div>
+                      </td>
+                      <td class="or" colspan="2">
+                        <label for="add_clause">Or</label> 
+                        <select name="add_clause_1" id="add_clause">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_1" value="+" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset id="columns">
+          <legend class="foldable">Columns</legend>
+          <div>
+              <label>
+                <input type="checkbox" name="col" value="summary" checked="checked" />
+                Summary
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="component" />
+                Component
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="milestone" />
+                Milestone
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="status" />
+                Status
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="owner" checked="checked" />
+                Owner
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="type" checked="checked" />
+                Type
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="priority" checked="checked" />
+                Priority
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="resolution" />
+                Resolution
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="time" checked="checked" />
+                Created
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="changetime" checked="checked" />
+                Modified
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="repo" />
+                Repository
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="theme" />
+                Theme
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="reporter" />
+                Reporter
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="keywords" />
+                Keywords
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="cc" />
+                Cc
+              </label>
+          </div>
+        </fieldset>
+        <p class="option">
+          <label for="group">Group results by</label>
+          <select name="group" id="group">
+            <option></option>
+              <option value="component">Component</option>
+              <option value="milestone">Milestone</option>
+              <option value="owner">Owner</option>
+              <option value="priority">Priority</option>
+              <option value="reporter">Reporter</option>
+              <option value="repo">Repository</option>
+              <option selected="selected" value="resolution">Resolution</option>
+              <option value="status">Status</option>
+              <option value="theme">Theme</option>
+              <option value="type">Type</option>
+          </select>
+          <input type="checkbox" name="groupdesc" id="groupdesc" />
+          <label for="groupdesc">descending</label>
+        </p>
+        <p class="option">
+          Show under each result:
+            <label><input type="checkbox" name="row" value="description" />
+            Description</label>
+        </p>
+        <p class="option">
+          <label for="max">Max items per page</label>
+          <input type="text" name="max" id="max" size="10" value="100" />
+        </p>
+        <div class="buttons">
+          <input type="hidden" name="order" value="id" />
+          <input type="hidden" name="desc" value="1" />
+          <input type="submit" name="update" value="Update" />
+        </div>
+        <hr />
+      </form>
+      <div>
+  
+    <h2 class="report-result">
+      Resolution:
+      fixed
+      <span class="numrows">(25 matches)</span>
+    </h2>
+  <table class="listing tickets">
+    <thead>
+    <tr class="trac-columns">
+      <th class="id desc">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=id.html">Ticket</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=summary.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=owner.html">Owner</a>
+      </th><th class="type">
+        <a title="Sort by Type (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=type.html">Type</a>
+      </th><th class="priority">
+        <a title="Sort by Priority (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=priority.html">Priority</a>
+      </th><th class="time">
+        <a title="Sort by Created (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=time.html">Created</a>
+      </th><th class="changetime">
+        <a title="Sort by Modified (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=changetime.html">Modified</a>
+      </th>
+    </tr>
+    </thead>
+      <tbody>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1754.html" title="View ticket" class="closed">#1754</a></td>
+                    <td class="summary">
+                      <a href="ticket/1754.html" title="View ticket">Add activities for extras</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:38:38Z&amp;precision=second.html" title="2012-02-06T11:38:38Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:38:50Z&amp;precision=second.html" title="2012-02-06T11:38:50Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1739.html" title="View ticket" class="closed">#1739</a></td>
+                    <td class="summary">
+                      <a href="ticket/1739.html" title="View ticket">Fix issues where tests where not run.</a>
+                    </td>
+                    <td class="owner">
+                      kindly
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T21:58:49Z&amp;precision=second.html" title="2012-01-31T21:58:49Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T02:37:06Z&amp;precision=second.html" title="2012-02-06T02:37:06Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/1727.html" title="View ticket" class="closed">#1727</a></td>
+                    <td class="summary">
+                      <a href="ticket/1727.html" title="View ticket">Add "current" property to harvest objects</a>
+                    </td>
+                    <td class="owner">
+                      amercader
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T10:54:14Z&amp;precision=second.html" title="2012-01-31T10:54:14Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T10:20:41Z&amp;precision=second.html" title="2012-02-06T10:20:41Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1726.html" title="View ticket" class="closed">#1726</a></td>
+                    <td class="summary">
+                      <a href="ticket/1726.html" title="View ticket">Update harvesting model</a>
+                    </td>
+                    <td class="owner">
+                      amercader
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T10:52:07Z&amp;precision=second.html" title="2012-01-31T10:52:07Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T10:14:13Z&amp;precision=second.html" title="2012-02-06T10:14:13Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/1725.html" title="View ticket" class="closed">#1725</a></td>
+                    <td class="summary">
+                      <a href="ticket/1725.html" title="View ticket">Tag autocompletion and commas don't mix</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T10:45:09Z&amp;precision=second.html" title="2012-01-31T10:45:09Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-02T17:41:29Z&amp;precision=second.html" title="2012-02-02T17:41:29Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1719.html" title="View ticket" class="closed">#1719</a></td>
+                    <td class="summary">
+                      <a href="ticket/1719.html" title="View ticket">Broken links for non-Gravatar use icons - 0.25d</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-30T15:53:08Z&amp;precision=second.html" title="2012-01-30T15:53:08Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T15:20:30Z&amp;precision=second.html" title="2012-02-06T15:20:30Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/1716.html" title="View ticket" class="closed">#1716</a></td>
+                    <td class="summary">
+                      <a href="ticket/1716.html" title="View ticket">move or change save warning on edit dataset page [a:0.1d]</a>
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-26T17:44:53Z&amp;precision=second.html" title="2012-01-26T17:44:53Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T12:12:50Z&amp;precision=second.html" title="2012-02-06T12:12:50Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1710.html" title="View ticket" class="closed">#1710</a></td>
+                    <td class="summary">
+                      <a href="ticket/1710.html" title="View ticket">'Announce' email list for thedatahub</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-26T12:00:59Z&amp;precision=second.html" title="2012-01-26T12:00:59Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-26T13:18:42Z&amp;precision=second.html" title="2012-01-26T13:18:42Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio1">
+                    <td class="id"><a href="ticket/1708.html" title="View ticket" class="closed">#1708</a></td>
+                    <td class="summary">
+                      <a href="ticket/1708.html" title="View ticket">SOLR configuration lost</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      blocker
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-25T12:10:28Z&amp;precision=second.html" title="2012-01-25T12:10:28Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-26T12:29:55Z&amp;precision=second.html" title="2012-01-26T12:29:55Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1696.html" title="View ticket" class="closed">#1696</a></td>
+                    <td class="summary">
+                      <a href="ticket/1696.html" title="View ticket">Maintain backwards compatibility with older way of creating custom forms</a>
+                    </td>
+                    <td class="owner">
+                      johnglover
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-23T13:44:03Z&amp;precision=second.html" title="2012-01-23T13:44:03Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-23T13:47:01Z&amp;precision=second.html" title="2012-01-23T13:47:01Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1694.html" title="View ticket" class="closed">#1694</a></td>
+                    <td class="summary">
+                      <a href="ticket/1694.html" title="View ticket">Add quick functional test(s) for activity streams HTML rendering</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-23T12:37:28Z&amp;precision=second.html" title="2012-01-23T12:37:28Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-05T18:07:34Z&amp;precision=second.html" title="2012-02-05T18:07:34Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio2">
+                    <td class="id"><a href="ticket/1688.html" title="View ticket" class="closed">#1688</a></td>
+                    <td class="summary">
+                      <a href="ticket/1688.html" title="View ticket">API for changing the permissions on an object</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      critical
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-20T12:16:49Z&amp;precision=second.html" title="2012-01-20T12:16:49Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-03T17:11:41Z&amp;precision=second.html" title="2012-02-03T17:11:41Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1686.html" title="View ticket" class="closed">#1686</a></td>
+                    <td class="summary">
+                      <a href="ticket/1686.html" title="View ticket">Add activity events for when a dataset is added to or removed from a group</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-19T17:21:32Z&amp;precision=second.html" title="2012-01-19T17:21:32Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:22:50Z&amp;precision=second.html" title="2012-02-06T11:22:50Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1676.html" title="View ticket" class="closed">#1676</a></td>
+                    <td class="summary">
+                      <a href="ticket/1676.html" title="View ticket">Publisher editor authz</a>
+                    </td>
+                    <td class="owner">
+                      ross
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T12:22:51Z&amp;precision=second.html" title="2012-01-17T12:22:51Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:11:10Z&amp;precision=second.html" title="2012-02-06T11:11:10Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1674.html" title="View ticket" class="closed">#1674</a></td>
+                    <td class="summary">
+                      <a href="ticket/1674.html" title="View ticket">Test auth logic hooks for publisher profile</a>
+                    </td>
+                    <td class="owner">
+                      ross
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T12:20:41Z&amp;precision=second.html" title="2012-01-17T12:20:41Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:11:17Z&amp;precision=second.html" title="2012-02-06T11:11:17Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1673.html" title="View ticket" class="closed">#1673</a></td>
+                    <td class="summary">
+                      <a href="ticket/1673.html" title="View ticket">Add approval status field to groups</a>
+                    </td>
+                    <td class="owner">
+                      ross
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T12:19:13Z&amp;precision=second.html" title="2012-01-17T12:19:13Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:10:44Z&amp;precision=second.html" title="2012-02-06T11:10:44Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1672.html" title="View ticket" class="closed">#1672</a></td>
+                    <td class="summary">
+                      <a href="ticket/1672.html" title="View ticket">Publisher profile user authz</a>
+                    </td>
+                    <td class="owner">
+                      ross
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T12:18:00Z&amp;precision=second.html" title="2012-01-17T12:18:00Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:10:25Z&amp;precision=second.html" title="2012-02-06T11:10:25Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1671.html" title="View ticket" class="closed">#1671</a></td>
+                    <td class="summary">
+                      <a href="ticket/1671.html" title="View ticket">Publisher profile sysadmin authz</a>
+                    </td>
+                    <td class="owner">
+                      ross
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T12:16:47Z&amp;precision=second.html" title="2012-01-17T12:16:47Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:10:14Z&amp;precision=second.html" title="2012-02-06T11:10:14Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1666.html" title="View ticket" class="closed">#1666</a></td>
+                    <td class="summary">
+                      <a href="ticket/1666.html" title="View ticket">Add activity stream events for tags</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T10:26:25Z&amp;precision=second.html" title="2012-01-17T10:26:25Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:18:33Z&amp;precision=second.html" title="2012-02-06T11:18:33Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1663.html" title="View ticket" class="closed">#1663</a></td>
+                    <td class="summary">
+                      <a href="ticket/1663.html" title="View ticket">API call for creating an activity streams event</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-17T10:07:24Z&amp;precision=second.html" title="2012-01-17T10:07:24Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T12:32:33Z&amp;precision=second.html" title="2012-01-31T12:32:33Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1639.html" title="View ticket" class="closed">#1639</a></td>
+                    <td class="summary">
+                      <a href="ticket/1639.html" title="View ticket">Move activity streams CSS into external file</a>
+                    </td>
+                    <td class="owner">
+                      seanh
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-11T18:03:39Z&amp;precision=second.html" title="2012-01-11T18:03:39Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:12:59Z&amp;precision=second.html" title="2012-02-06T11:12:59Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1630.html" title="View ticket" class="closed">#1630</a></td>
+                    <td class="summary">
+                      <a href="ticket/1630.html" title="View ticket">Integrate Data Explorer v2 into Data Viewer</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-11T10:51:38Z&amp;precision=second.html" title="2012-01-11T10:51:38Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-24T12:13:20Z&amp;precision=second.html" title="2012-02-24T12:13:20Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/1583.html" title="View ticket" class="closed">#1583</a></td>
+                    <td class="summary">
+                      <a href="ticket/1583.html" title="View ticket">Integrate QA into frontend - 1d</a>
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2011-12-21T09:22:07Z&amp;precision=second.html" title="2011-12-21T09:22:07Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-26T12:58:22Z&amp;precision=second.html" title="2012-01-26T12:58:22Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1513.html" title="View ticket" class="closed">#1513</a></td>
+                    <td class="summary">
+                      <a href="ticket/1513.html" title="View ticket">Logged in/out problems</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2011-12-05T15:52:33Z&amp;precision=second.html" title="2011-12-05T15:52:33Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-02T17:51:39Z&amp;precision=second.html" title="2012-02-02T17:51:39Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="even prio2">
+                    <td class="id"><a href="ticket/1396.html" title="View ticket" class="closed">#1396</a></td>
+                    <td class="summary">
+                      <a href="ticket/1396.html" title="View ticket">Improvements to user page UX - 1d</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      critical
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2011-10-13T17:46:07Z&amp;precision=second.html" title="2011-10-13T17:46:07Z in Timeline">3 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-24T12:23:57Z&amp;precision=second.html" title="2012-02-24T12:23:57Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+      </tbody>
+      <tbody>
+        <tr class="trac-group">
+          <th colspan="7">
+    <h2 class="report-result">
+      Resolution:
+      wontfix
+      <span class="numrows">(2 matches)</span>
+    </h2>
+          </th>
+        </tr>
+    <tr class="trac-columns">
+      <th class="id desc">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=id.html">Ticket</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=summary.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=owner.html">Owner</a>
+      </th><th class="type">
+        <a title="Sort by Type (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=type.html">Type</a>
+      </th><th class="priority">
+        <a title="Sort by Priority (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=priority.html">Priority</a>
+      </th><th class="time">
+        <a title="Sort by Created (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=time.html">Created</a>
+      </th><th class="changetime">
+        <a title="Sort by Modified (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=changetime.html">Modified</a>
+      </th>
+    </tr>
+      </tbody>
+      <tbody>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/1660.html" title="View ticket" class="closed">#1660</a></td>
+                    <td class="summary">
+                      <a href="ticket/1660.html" title="View ticket">CSV preview broken - OpenSpending</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-16T12:44:06Z&amp;precision=second.html" title="2012-01-16T12:44:06Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T12:40:27Z&amp;precision=second.html" title="2012-01-31T12:40:27Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/1628.html" title="View ticket" class="closed">#1628</a></td>
+                    <td class="summary">
+                      <a href="ticket/1628.html" title="View ticket">get ckanext-dgu working with ckan 1.5.1</a>
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-10T16:59:22Z&amp;precision=second.html" title="2012-01-10T16:59:22Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-06T11:16:07Z&amp;precision=second.html" title="2012-02-06T11:16:07Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+      </tbody>
+      <tbody>
+        <tr class="trac-group">
+          <th colspan="7">
+    <h2 class="report-result">
+      Resolution:
+      duplicate
+      <span class="numrows">(2 matches)</span>
+    </h2>
+          </th>
+        </tr>
+    <tr class="trac-columns">
+      <th class="id desc">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=id.html">Ticket</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=summary.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=owner.html">Owner</a>
+      </th><th class="type">
+        <a title="Sort by Type (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=type.html">Type</a>
+      </th><th class="priority">
+        <a title="Sort by Priority (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=priority.html">Priority</a>
+      </th><th class="time">
+        <a title="Sort by Created (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=time.html">Created</a>
+      </th><th class="changetime">
+        <a title="Sort by Modified (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=changetime.html">Modified</a>
+      </th>
+    </tr>
+      </tbody>
+      <tbody>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/1707.html" title="View ticket" class="closed">#1707</a></td>
+                    <td class="summary">
+                      <a href="ticket/1707.html" title="View ticket">Over-long URLs in QA ext broken links list</a>
+                    </td>
+                    <td class="owner">
+                      johnglover
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-25T10:53:13Z&amp;precision=second.html" title="2012-01-25T10:53:13Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-31T15:37:33Z&amp;precision=second.html" title="2012-01-31T15:37:33Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1702.html" title="View ticket" class="closed">#1702</a></td>
+                    <td class="summary">
+                      <a href="ticket/1702.html" title="View ticket">Normalize character encoding for ckan search.</a>
+                    </td>
+                    <td class="owner">
+                      amercader
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-24T15:36:09Z&amp;precision=second.html" title="2012-01-24T15:36:09Z in Timeline">2 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-01-24T15:45:22Z&amp;precision=second.html" title="2012-01-24T15:45:22Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+      </tbody>
+      <tbody>
+        <tr class="trac-group">
+          <th colspan="7">
+    <h2 class="report-result">
+      Resolution:
+      worksforme
+      <span class="numrows">(2 matches)</span>
+    </h2>
+          </th>
+        </tr>
+    <tr class="trac-columns">
+      <th class="id desc">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=id.html">Ticket</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=summary.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=owner.html">Owner</a>
+      </th><th class="type">
+        <a title="Sort by Type (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=type.html">Type</a>
+      </th><th class="priority">
+        <a title="Sort by Priority (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=priority.html">Priority</a>
+      </th><th class="time">
+        <a title="Sort by Created (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=time.html">Created</a>
+      </th><th class="changetime">
+        <a title="Sort by Modified (ascending)" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;order=changetime.html">Modified</a>
+      </th>
+    </tr>
+      </tbody>
+      <tbody>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/1412.html" title="View ticket" class="closed">#1412</a></td>
+                    <td class="summary">
+                      <a href="ticket/1412.html" title="View ticket">application.js crashes when viewing a dataset with no resources</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2011-10-24T10:03:45Z&amp;precision=second.html" title="2011-10-24T10:03:45Z in Timeline">3 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-02T23:46:25Z&amp;precision=second.html" title="2012-02-02T23:46:25Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/905.html" title="View ticket" class="closed">#905</a></td>
+                    <td class="summary">
+                      <a href="ticket/905.html" title="View ticket">Unable to search with accented characters in package names</a>
+                    </td>
+                    <td class="owner">
+                      thejimmyg
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="time">
+                      <a class="timeline" href="timeline%3Ffrom=2011-01-13T17:18:40Z&amp;precision=second.html" title="2011-01-13T17:18:40Z in Timeline">3 years</a>
+                    </td>
+                    <td class="changetime">
+                      <a class="timeline" href="timeline%3Ffrom=2012-02-07T18:15:36Z&amp;precision=second.html" title="2012-02-07T18:15:36Z in Timeline">2 years</a>
+                    </td>
+              </tr>
+      </tbody>
+  </table>
+  
+</div>
+      <div class="buttons">
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="wiki/TracQuery.html">TracQuery</a>
+        for help on using queries.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=rss&amp;desc=1&amp;order=id" class="rss">RSS Feed</a>
+        </li><li>
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=csv&amp;desc=1&amp;order=id" class="csv">Comma-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-02-06&amp;group=resolution&amp;format=tab&amp;desc=1&amp;order=id" class="tab">Tab-delimited Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+id,summary,owner,type,priority,resolution,time
+1709,Simple_search fails with all packages,dread,defect,major,fixed,01/25/12 13:32:46
+1691,paster user create command takes password on command line,rgrp,enhancement,critical,invalid,01/20/12 16:35:14
+1683,Dataset search results - last item out of order,dread,defect,minor,fixed,01/19/12 11:17:44
+1659,Cannot logout if CKAN mounted at non-root url,dread,defect,minor,fixed,01/16/12 12:18:22
+1646,Resource navigator options display spuriously,zephod,defect,critical,worksforme,01/13/12 11:05:00
+1641,ckanext-archiver: Content-length header not reliable to check if resource has been modified,amercader,enhancement,minor,fixed,01/12/12 13:53:40
+1638,Don't use JsonType in activity streams,seanh,enhancement,awaiting triage,wontfix,01/11/12 18:02:15
+1631,Add activity stream events for new/changed groups,seanh,enhancement,awaiting triage,fixed,01/11/12 17:47:00
+1629,permissions changed during upgrade to 1.5.1,dread,defect,critical,fixed,01/10/12 17:06:02
+1627,favicon broken,dread,defect,minor,fixed,01/10/12 14:51:42
+1626,'About CKAN' page update,dread,enhancement,major,fixed,01/10/12 14:20:36
+1625,Add activity stream events for new/changed users,seanh,enhancement,awaiting triage,fixed,01/10/12 09:29:54
+1624,Typo in dataset edit mode,dread,defect,minor,fixed,01/09/12 14:59:57
+1623,Dump to exclude deleted objects,dread,enhancement,trivial,fixed,01/09/12 14:23:07
+1622,Deploy QA on DGU UAT test server - 0.5d,johnglover,enhancement,major,fixed,01/09/12 13:39:40
+1613,Post-dataset-edit URL has #section,dread,defect,trivial,wontfix,01/04/12 13:59:15
+1609,Celery task for ckanext-archiver to write to webstore.,ross,enhancement,awaiting triage,fixed,01/03/12 09:17:33
+1608,Merge storage into Core,ross,enhancement,awaiting triage,fixed,01/03/12 09:14:04
+1597,Tag search - filter by group,,enhancement,minor,fixed,12/22/11 10:41:32
+1591,Upgrade CKAN 1.5 instances,icmurray,enhancement,awaiting triage,fixed,12/21/11 17:14:18
+1575,tag punctuation lost in ca.ckan.net import,dread,enhancement,minor,fixed,12/19/11 17:47:40
+1547,Add search methods (before and after) to the IPackageController interface,amercader,enhancement,major,fixed,12/13/11 12:23:16
+1541,Setup server for the DGU form-refactor.,icmurray,task,minor,fixed,12/08/11 15:51:24
+1521,[super] Groups UI and UX improvements in v1.6 from Cygri,zephod,enhancement,critical,fixed,12/06/11 11:12:41
+1511,Logic function for getting a user's public activity stream,kindly,enhancement,awaiting triage,fixed,12/05/11 14:10:07
+1495,API call for getting a user's public activity stream,kindly,enhancement,awaiting triage,fixed,11/28/11 15:52:29
+1475,Create documentation showing how to make an extension that use celery.,kindly,enhancement,awaiting triage,fixed,11/20/11 22:04:41
+1401,Some links don't take account when CKAN is mounted at a non-root URL,rgrp,defect,minor,fixed,10/14/11 19:46:26
+1299,Activity streams table migration,seanh,enhancement,awaiting triage,fixed,08/30/11 09:30:35

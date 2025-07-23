@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~refactoring&amp;desc=1&amp;order=keywords</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~refactoring&amp;desc=1&amp;order=keywords</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1740</link>
+        <guid isPermaLink="false">http://localhost/ticket/1740</guid>
+        <title>#1740: Get rid of `from module import ...`</title>
+        <pubDate>Wed, 01 Feb 2012 11:06:09 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It's really bad to do &lt;tt&gt;from module import *&lt;/tt&gt; and CKAN has a lot of them. I suggest a three-pronged approach:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Don't add any more of them.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;When you're programming if you see an easy opportunity to remove one then do so.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;At some point we should task someone to go through the code and remove them all (which is what this ticket is for), but this will be a big job and may break things.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+We should also get rid of most or all of the &lt;tt&gt;from module import foo&lt;/tt&gt; and &lt;tt&gt;from module import foo, bar&lt;/tt&gt; statements.
+&lt;/p&gt;
+&lt;p&gt;
+I think the right thing to do is just &lt;tt&gt;import module&lt;/tt&gt; and then use &lt;tt&gt;module.foo&lt;/tt&gt; in your code. But if you find yourself doing &lt;tt&gt;module.foo.bar&lt;/tt&gt; then you may have a code smell.
+&lt;/p&gt;
+&lt;p&gt;
+See: &lt;a class="ext-link" href="http://docs.python.org/dev/howto/doanddont.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/dev/howto/doanddont.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1740#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1778</link>
+        <guid isPermaLink="false">http://localhost/ticket/1778</guid>
+        <title>#1778: Replace classmethod's with module-level functions</title>
+        <pubDate>Mon, 06 Feb 2012 15:53:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+In many places we have @classmethods where simple module-level functions would do (and would be more idiomatic in Python), e.g. the &lt;tt&gt;get()&lt;/tt&gt; classmethods in the model/ classes.
+&lt;/p&gt;
+&lt;p&gt;
+Doing it with module functions lets us type module.function() instead of module.Class.method().
+&lt;/p&gt;
+&lt;p&gt;
+In many cases we're importing classes directly with &lt;tt&gt;from module import Class&lt;/tt&gt; and then doing &lt;tt&gt;Class.method()&lt;/tt&gt;, but &lt;tt&gt;from module import foo&lt;/tt&gt; is bad style: &lt;a class="ext-link" href="http://docs.python.org/dev/howto/doanddont.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/dev/howto/doanddont.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1778#changelog</comments>
+    </item>
+ </channel>
+</rss>

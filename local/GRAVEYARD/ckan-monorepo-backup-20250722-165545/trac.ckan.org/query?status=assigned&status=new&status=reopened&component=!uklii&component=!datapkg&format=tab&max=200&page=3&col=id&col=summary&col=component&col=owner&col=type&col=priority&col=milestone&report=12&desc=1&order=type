@@ -1,0 +1,69 @@
+id	summary	component	owner	type	priority	milestone
+2415	Confusing message on attempting to register new account with upper case	ckan	kindly	defect	awaiting triage	ckan-v1.9
+2433	API uses name not id for some version 3 calls	ckan	toby	defect	minor	ckan-v1.8
+2485	Encourage leak containment by limiting the number of requests a CKAN process serves	ckan	icmurray	defect	awaiting triage	ckan-v1.9
+2486	Should be able to use . in dataset names	ckan		defect	awaiting triage	ckan-backlog
+2520	Document undocumented config options	ckan	seanh	defect	awaiting triage	ckan-v1.9
+2607	'Upload a file' appears on resource form when storage not enabled	ckan		defect	awaiting triage	ckan-backlog
+2622	Login fails in Opera 12	ckan		defect	awaiting triage	
+2656	Feed with few results has bad paging link, causing exception	ckan	seanh	defect	trivial	
+2674	Data preview not loading on s031	ckan	kindly	defect	minor	demo phase 5
+2686	enabling datastore & data API breaks recline	ckan		defect	critical	ckan-backlog
+2719	Feeds controller does not catch NotAuthorized exception	ckan		defect	minor	
+2721	deleted groups should not show on 'Add to Groups' dropdown	ckan	toby	defect	awaiting triage	demo phase 4
+2728	deleted group shows on search index - for admins	ckan	toby	defect	awaiting triage	demo phase 4
+2745	Password reset returns an exception if the key parameter is missing	ckan		defect	major	ckan-v1.9
+2762	test_related.py crashes	ckan		defect	awaiting triage	ckan-v1.8
+2763	Multilingual tests failing	ckan		defect	awaiting triage	ckan-v1.8.1
+2784	model dictize sensitive data	ckan	icmurray	defect	awaiting triage	
+2815	db_to_form_package_schema() strips tracking summary, isopen	ckan	seanh	defect	awaiting triage	ckan-v1.8.1
+2818	Improve related item schema	ckan	seanh	defect	major	demo phase 4
+2820	English Language: Visualization -> Visualisation	ckan		defect	awaiting triage	demo phase 5
+2846	Organizations allows you to set an organization as the parent organization of itself	ckan		defect	awaiting triage	ckan-v1.8.1
+2857	no UI to follow another user although option on dashboard	ckan	toby	defect	awaiting triage	demo phase 4
+2859	Fix the build	ckan	icmurray	defect	blocker	ckan-v1.8
+2863	non-admin users can edit other's draft datasets	ckan	toby	defect	awaiting triage	demo phase 4
+2869	user profile not linked on disqus until page refresh	ckan		defect	awaiting triage	demo phase 4
+2873	ckanext-qa: dataset summary incorrect	ckan	toby	defect	awaiting triage	demo phase 4
+2881	Remove or improve 'Domain Model' docs page	ckan		defect	awaiting triage	ckan-v1.8.1
+2882	Remove User Stories Overview from docs?	ckan		defect	awaiting triage	ckan-v1.8.1
+2884	Lock icon shown next to unknown licenses	ckan		defect	awaiting triage	ckan-v1.8.1
+2887	"""Welcome to CKAN!"" on front page is untranslatable"	ckan		defect	major	ckan-v1.8.1
+2891	Update or remove DataStore google presentation	ckan		defect	awaiting triage	ckan-v1.8.1
+2892	IDatasetForm's form_to_db_schema() breaks API?	ckan		defect	awaiting triage	ckan-v1.8.1
+2893	Tags missing from form_to_db_package_schema()	ckan		defect	awaiting triage	ckan-v1.8.1
+2894	Empty lists get stripped from package dicst in package_show()	ckan		defect	awaiting triage	ckan-v1.8.1
+2896	resource_create crashes on ValidationErrors with KeyError: 'resources'	ckan		defect	awaiting triage	ckan-v1.8.1
+2897	db_to_form_package_schema() crashes historical dataset page	ckan		defect	awaiting triage	ckan-v1.8.1
+2898	Looses data entered on step 1 of create dataset after login	ckan		defect	awaiting triage	demo phase 5
+2900	snippets/package_list.html template crashes on dataset that has no 'notes'	ckan		defect	awaiting triage	ckan-v1.8.1
+2906	Wrong flags in language dropdown	ckan		defect	minor	demo phase 5
+2912	ckanext/organizations: Neither public or private initially selected when adding dataset	ckan		defect	awaiting triage	ckan-v1.8.1
+2913	IGroupForm has package_form() method	ckan		defect	awaiting triage	ckan 2.0
+2914	Add form_to_db_schema_options() to IDatasetForm and IGroupForm	ckan		defect	awaiting triage	ckan-v1.8.1
+2919	Remove IController from docs	ckan		defect	awaiting triage	ckan-v1.8
+2920	Genshi text template message extractor no longer needed?	ckan		defect	awaiting triage	ckan 2.0
+2921	Add docstring to top of lib/extract.py file	ckan		defect	awaiting triage	ckan 2.0
+2922	Better docstring for CKANInternationalizationExtension	ckan		defect	awaiting triage	ckan 2.0
+2923	Change regularise -> regularize	ckan		defect	awaiting triage	ckan 2.0
+2924	Better docs for trans js command, and add to release process	ckan		defect	awaiting triage	ckan 2.0
+2925	Remove trans mangle paster command?	ckan		defect	awaiting triage	ckan 2.0
+2936	Updating a group via the API clears its packages	ckan		defect	awaiting triage	ckan-v1.8
+2949	Reenable Data API button on the new theme	ckan	amercader	defect	major	
+2958	Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8	ckan		defect	awaiting triage	ckan-v1.8
+2959	Changing a Group's name through the action api disassociates it from its datasets in the index	ckan	icmurray	defect	minor	ckan 2.0
+2963	Timeout on tag pages with lots of datasets	ckan		defect	major	ckan-v1.8
+2964	Last organization admin can remove herself	ckan		defect	awaiting triage	ckan 2.0
+2965	Stats extension broken on 1.8	ckan		defect	awaiting triage	ckan-v1.8
+2967	Organization members edit page reloads after demoting self	ckan		defect	awaiting triage	ckan 2.0
+2968	Anyone can access organization members page	ckan		defect	awaiting triage	ckan 2.0
+2969	Group members page 500s	ckan		defect	awaiting triage	ckan 2.0
+2970	Organization and group member links use id not name	ckan		defect	awaiting triage	ckan 2.0
+2993	"""logged_in"" and ""visitor"" show in user list at /users"	ckan		defect	awaiting triage	ckan 2.0
+3001	Multilingual plugin crashes CKAN on add dataset when some languages are default	ckan		defect	awaiting triage	ckan 2.0
+3002	API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string	ckan		defect	minor	ckan-v1.8
+3013	common-error-messages is unreadable	ckan	dominik	defect	awaiting triage	
+3014	Crash when deleting a non-empty vocabulary	ckan		defect	awaiting triage	ckan 2.0
+3019	Cannot delete dataset extras	ckan		defect	major	ckan 2.0
+3029	JSONP parameter scuppers Search in API	ckan	seanh	defect	awaiting triage	
+1134	CREP0003: Description and Configuration of Harvesters	ckan		CREP	major	ckan-backlog

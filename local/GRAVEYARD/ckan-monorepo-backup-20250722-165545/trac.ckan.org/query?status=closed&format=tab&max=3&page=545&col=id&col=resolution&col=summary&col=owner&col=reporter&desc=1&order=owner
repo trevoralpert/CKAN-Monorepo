@@ -1,0 +1,4 @@
+id	resolution	summary	owner	reporter
+2439	fixed	tag_search and tag_autocomplete not fully available via GET request	icmurray	icmurray
+2651	fixed	Check support for TSV which doesn't appear to work well.	icmurray	ross
+2672	fixed	Session.is_modified should use passive=True	icmurray	icmurray

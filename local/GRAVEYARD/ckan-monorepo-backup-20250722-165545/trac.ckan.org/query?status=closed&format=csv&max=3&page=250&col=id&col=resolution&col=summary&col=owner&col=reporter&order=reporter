@@ -1,0 +1,4 @@
+id,resolution,summary,owner,reporter
+238,invalid,"The system shall accept submissions from unauthenticated users of the data openness enquiry form by creating an anonymous pending enquiry action, and by redirecting the user to login form, passing a reference to the pending action",johnbywater,johnbywater
+251,fixed,"Present in the API a list of revision IDs, and present individual revisions when referenced by ID",johnbywater,johnbywater
+252,invalid,Change revision object so that it has parent(s) attribute,dread,johnbywater

@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~organizations&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~organizations&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2990</link>
+        <guid isPermaLink="false">http://localhost/ticket/2990</guid>
+        <title>#2990: Fix descriptions of groups and organizations on /groups and /organizations pages</title>
+        <pubDate>Mon, 15 Oct 2012 11:04:51 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2990#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2989</link>
+        <guid isPermaLink="false">http://localhost/ticket/2989</guid>
+        <title>#2989: "Add dataset to organization" should auto-select the organization</title>
+        <pubDate>Mon, 15 Oct 2012 11:04:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+'Add dataset to organization' button, when you get through to the third stage of the new dataset form the organization you came from is not selected.
+&lt;/p&gt;
+&lt;p&gt;
+I don't see any option to choose the group when adding or updating a dataset, but if I add a dataset via the "Add dataset to group" button on a group's page, then the dataset seems to get added to that group. (And I can also add/remove existing datasets by editing the group.) I wonder if organizations should work the same way, instead of having an Organization drop-down when creating or updating a dataset. The add dataset page needs to somehow indicate that you're adding a dataset to a certain group or organization though, doesn't currently.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2989#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2979</link>
+        <guid isPermaLink="false">http://localhost/ticket/2979</guid>
+        <title>#2979: Requesting membership to groups and organizations</title>
+        <pubDate>Mon, 15 Oct 2012 10:44:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: The requesting membership user stories and implementation remain needed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2979#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2978</link>
+        <guid isPermaLink="false">http://localhost/ticket/2978</guid>
+        <title>#2978: Tests for permissions for organizations and groups</title>
+        <pubDate>Mon, 15 Oct 2012 10:43:26 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: checking the logic around the who can do what from the user stories -
+via some tests may be a good approach
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2978#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2977</link>
+        <guid isPermaLink="false">http://localhost/ticket/2977</guid>
+        <title>#2977: Fix user autocomplete on group and organization member pages</title>
+        <pubDate>Mon, 15 Oct 2012 10:42:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: @johnmartin the user autocomplete on
+member add needs fixing it gets data but does not understand what to do
+with it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2977#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2976</link>
+        <guid isPermaLink="false">http://localhost/ticket/2976</guid>
+        <title>#2976: Polish group and organization member pages</title>
+        <pubDate>Mon, 15 Oct 2012 10:41:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: A little polish to the member pages and probably a little hardening of
+the controller and logic actions
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2976#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2975</link>
+        <guid isPermaLink="false">http://localhost/ticket/2975</guid>
+        <title>#2975: Tests for auth functions and new actions</title>
+        <pubDate>Mon, 15 Oct 2012 10:41:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: tests around the auth functions and new actions - probably needs an improved testing mechanism and things like test data creation on via actions
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2975#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2974</link>
+        <guid isPermaLink="false">http://localhost/ticket/2974</guid>
+        <title>#2974: General of all auth functions</title>
+        <pubDate>Mon, 15 Oct 2012 10:40:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby:
+&lt;/p&gt;
+&lt;p&gt;
+A general cleanup of all auth functions (in logic/auth) to check their fitness, error messages, etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2974#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2973</link>
+        <guid isPermaLink="false">http://localhost/ticket/2973</guid>
+        <title>#2973: Move new_authz.py into logic/auth/__init__.py</title>
+        <pubDate>Mon, 15 Oct 2012 10:39:05 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Makes sense to keep all auth stuff under logic/auth.
+&lt;/p&gt;
+&lt;p&gt;
+Also decide which functions from new_authz.pu should be marked private with _.
+&lt;/p&gt;
+&lt;p&gt;
+Also decide which functions from new_authz.py are really helpers for the auth functions in get.py, update.py and delete.py, and should maybe moved to another file, e.g. logic/auth/helpers.py
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2973#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2972</link>
+        <guid isPermaLink="false">http://localhost/ticket/2972</guid>
+        <title>#2972: Remove any imports of authz.py and delete file</title>
+        <pubDate>Mon, 15 Oct 2012 10:37:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+it is no longer used
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2972#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2971</link>
+        <guid isPermaLink="false">http://localhost/ticket/2971</guid>
+        <title>#2971: "Are ytou sure you want to delete this member?" should say which member</title>
+        <pubDate>Mon, 15 Oct 2012 10:27:20 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+when deleting members from groups and orgs
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2971#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2970</link>
+        <guid isPermaLink="false">http://localhost/ticket/2970</guid>
+        <title>#2970: Organization and group member links use id not name</title>
+        <pubDate>Mon, 15 Oct 2012 10:22:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. it the 'Members' button links to /organization/members/0a44... instead of /organization/members/foobar
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2970#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2969</link>
+        <guid isPermaLink="false">http://localhost/ticket/2969</guid>
+        <title>#2969: Group members page 500s</title>
+        <pubDate>Mon, 15 Oct 2012 10:20:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The group members page (e.g. /group/members/roger) seems broken, IDs instead of user names are shown for the members, and clicking on a member 500s
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2969#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2968</link>
+        <guid isPermaLink="false">http://localhost/ticket/2968</guid>
+        <title>#2968: Anyone can access organization members page</title>
+        <pubDate>Mon, 15 Oct 2012 10:19:15 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The button will not show if you are not authorized but browse to /organization/members/foo and you can edit the members, it does stop you when you try to save your changes, but you shouldn't be able to get to the page at all
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2968#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2967</link>
+        <guid isPermaLink="false">http://localhost/ticket/2967</guid>
+        <title>#2967: Organization members edit page reloads after demoting self</title>
+        <pubDate>Mon, 15 Oct 2012 10:17:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Edit an organizations members page and demote yourself from organization admin, after saving the members edit page reloads even though you are no longer an admin and should no longer be able to access this page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2967#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2966</link>
+        <guid isPermaLink="false">http://localhost/ticket/2966</guid>
+        <title>#2966: 'Add' button text is wrong when editing organization members</title>
+        <pubDate>Mon, 15 Oct 2012 10:15:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. if I just changed a member's capacity I am not adding anything 'save' is better maybe
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2966#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2964</link>
+        <guid isPermaLink="false">http://localhost/ticket/2964</guid>
+        <title>#2964: Last organization admin can remove herself</title>
+        <pubDate>Mon, 15 Oct 2012 10:14:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If you are the only admin of an organization you can edit the organization's members and demote yourself, then the org has no admins and no one (except sysadmins maybe) can edit it.
+&lt;/p&gt;
+&lt;p&gt;
+Last admin should not be able to remove or demote herself.
+&lt;/p&gt;
+&lt;p&gt;
+Also applies to groups.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2964#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2917</link>
+        <guid isPermaLink="false">http://localhost/ticket/2917</guid>
+        <title>#2917: Organization admins can delete themselves</title>
+        <pubDate>Wed, 12 Sep 2012 12:10:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Organization administrators can delete themselves from the user management pages.  We should disable this on the front-end as well as the back-end.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2917#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2912</link>
+        <guid isPermaLink="false">http://localhost/ticket/2912</guid>
+        <title>#2912: ckanext/organizations: Neither public or private initially selected when adding dataset</title>
+        <pubDate>Mon, 10 Sep 2012 09:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When adding a dataset with the organizations extension on, neither the Public or the Private radio button is initially selected. Public should be selected.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2912#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2846</link>
+        <guid isPermaLink="false">http://localhost/ticket/2846</guid>
+        <title>#2846: Organizations allows you to set an organization as the parent organization of itself</title>
+        <pubDate>Mon, 13 Aug 2012 12:22:16 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+that doesn't make any sense
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2846#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2619</link>
+        <guid isPermaLink="false">http://localhost/ticket/2619</guid>
+        <title>#2619: Omit private datasets from public activity streams</title>
+        <pubDate>Thu, 28 Jun 2012 11:49:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Activities about private datasets should not appear in public activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to actually purge the activities from the db, because you might still want them to appear in private activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I do think that when a dataset goes private all its past activity should go private, because I imagine that users are going to want to hide everything about the dataset and not have any past activities 'leaking out'
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to consider whether the dataset was private when the activity happened, rather if a dataset is private now then all its past activities are private (and the simplest thing would be to say that if a dataset is public now then all its past activities become public as well, but is that a privacy concern?)
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way to implement this is going to be by modifying the *_activity_list() action functions in get.py, after they pull their activity lists out of the db they should pass them through a function that filters out stuff about private datasets.
+&lt;/p&gt;
+&lt;p&gt;
+An activity about a private dataset is one whose object_type is 'dataset' and whose object_id matches the id of a private dataset. You should also check the object_type and object_id of all of the activity object's activity detail objects, if any of those match a private dataset then mark the whole activity as private.
+&lt;/p&gt;
+&lt;p&gt;
+Currently all activity streams are public so should have all private datasets filtered out from them, except for the dashboard activity stream which is private to the individual user. In this case private datasets that the user has permission to see should not be filtered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2619#changelog</comments>
+    </item>
+ </channel>
+</rss>

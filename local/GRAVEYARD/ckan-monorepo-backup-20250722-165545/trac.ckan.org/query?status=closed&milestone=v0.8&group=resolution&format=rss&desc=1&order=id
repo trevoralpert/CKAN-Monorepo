@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=v0.8&amp;group=resolution&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=v0.8&amp;group=resolution&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/57</link>
+        <guid isPermaLink="false">http://localhost/ticket/57</guid>
+        <title>#57: Basic datapkg integration with CKAN</title>
+        <pubDate>Fri, 03 Apr 2009 09:27:06 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Using datapkg a user can:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;list packages on CKAN
+&lt;/li&gt;&lt;li&gt;get info about package on CKAN
+&lt;/li&gt;&lt;li&gt;register and update a package on CKAN
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/57#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/56</link>
+        <guid isPermaLink="false">http://localhost/ticket/56</guid>
+        <title>#56: Show icons indicating package openness</title>
+        <pubDate>Thu, 25 Dec 2008 13:18:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+User or Visitor
+&lt;/p&gt;
+&lt;h2 id="IWantTo"&gt;I Want To&lt;/h2&gt;
+&lt;p&gt;
+See simple icons (e.g. tick/cross) next to packages (in lists or on main page) indicating openness status of package.
+&lt;/p&gt;
+&lt;h2 id="SoThat"&gt;So That&lt;/h2&gt;
+&lt;p&gt;
+It is easy to see the openness status of a package.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Suggested by Liz Turner
+&lt;/li&gt;&lt;li&gt;Openness = open license at present (no easy way to determine whether accessible)
+&lt;/li&gt;&lt;li&gt;Have separate tick for downloadability (i.e. existence of download url)
+&lt;/li&gt;&lt;li&gt;Could do more stuff in future (e.g. money where tag price- exists, etc etc)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/56#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/53</link>
+        <guid isPermaLink="false">http://localhost/ticket/53</guid>
+        <title>#53: View Information about Package history (i.e. package revisions)</title>
+        <pubDate>Thu, 09 Oct 2008 11:35:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;Visitor/User?&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="Iwantto"&gt;I want to&lt;/h1&gt;
+&lt;p&gt;
+View information about a package history, i.e. what revisions it has.
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;History info should be available at package/history/pkg-name
+&lt;/li&gt;&lt;li&gt;Most basic info is just info from revision (when it occurred, author etc)
+&lt;/li&gt;&lt;li&gt;More sophisticated would be to have diff support to see differences between revisions
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/53#changelog</comments>
+    </item>
+ </channel>
+</rss>

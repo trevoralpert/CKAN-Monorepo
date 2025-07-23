@@ -1,0 +1,17 @@
+-- ## 23: Trac comments ## --
+
+-- https://github.com/roskakori/tratihubis/blob/master/query_comments.sql
+
+-- All Trac ticket comments to convert.
+select
+    ticket,
+    time as PosixTime,
+    author,
+    newvalue
+from
+    ticket_change
+where
+    field = 'comment'
+    and newvalue <> ''
+order
+    by ticket, time

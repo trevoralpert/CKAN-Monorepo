@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.9&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.9&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2371</link>
+        <guid isPermaLink="false">http://localhost/ticket/2371</guid>
+        <title>#2371: fanstatic integration</title>
+        <pubDate>Thu, 03 May 2012 12:00:11 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+aims
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;allow templates to specify needed css/js
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;allow split js files to be bundled (including plugin supplied if possible - stage 2)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;serve minified in production/ non-minified in dev
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;possibly look at doing the minification via paster - maybe as different ticket
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2371#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2519</link>
+        <guid isPermaLink="false">http://localhost/ticket/2519</guid>
+        <title>#2519: Dataproxy (converters) enhancement</title>
+        <pubDate>Wed, 13 Jun 2012 10:55:55 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Whilst the error messages returned from the dataproxy are informative, they aren't particularly human readable.  It isn't clear to the user whether they should retry, or whether the format of their data is causing the problem etc...
+&lt;/p&gt;
+&lt;p&gt;
+Would be lovely if the error messages returned contained a human readable version of the error.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2519#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2536</link>
+        <guid isPermaLink="false">http://localhost/ticket/2536</guid>
+        <title>#2536: cleanup activity streams</title>
+        <pubDate>Fri, 15 Jun 2012 13:02:03 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2536#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2575</link>
+        <guid isPermaLink="false">http://localhost/ticket/2575</guid>
+        <title>#2575: Licenses have i18n issues (was Inconsistent language on license dropdown)</title>
+        <pubDate>Tue, 19 Jun 2012 17:10:45 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+License titles at least for some of them need translating.  This wants to be done in a more efficient and simple manner than currently exists.
+&lt;/p&gt;
+&lt;p&gt;
+the original problem was:
+&lt;/p&gt;
+&lt;p&gt;
+The license dropdown on the dataset form shows titles in Swedish by default. Changing the language seems to default to English, but after refreshing the page a couple of times it shows a wrong language again.
+&lt;/p&gt;
+&lt;p&gt;
+Thanks to pudo for reporting.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2575#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2577</link>
+        <guid isPermaLink="false">http://localhost/ticket/2577</guid>
+        <title>#2577: Dataproxy raises 500 when it can't get CSV</title>
+        <pubDate>Wed, 20 Jun 2012 15:45:24 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+When given a url parameter for a file it cannot fetch, the app raises a 500 instead of something useful.
+&lt;/p&gt;
+&lt;p&gt;
+Better error reporting in the JSON would be useful
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2577#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2632</link>
+        <guid isPermaLink="false">http://localhost/ticket/2632</guid>
+        <title>#2632: check allowed helpers exist</title>
+        <pubDate>Mon, 09 Jul 2012 09:56:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+in lib helpers make sure the allowed function lists functions exist or throw an error.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2632#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2671</link>
+        <guid isPermaLink="false">http://localhost/ticket/2671</guid>
+        <title>#2671: fix allow_partial_update</title>
+        <pubDate>Fri, 13 Jul 2012 12:46:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to be able to delete stuff explicitly
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2671#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2668</link>
+        <guid isPermaLink="false">http://localhost/ticket/2668</guid>
+        <title>#2668: Permission for sysadmin to read a deleted publisher</title>
+        <pubDate>Fri, 13 Jul 2012 09:24:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+As a sysadmin I should be able to view deleted groups/publishers (publisher profile) but I can't.
+&lt;/p&gt;
+&lt;p&gt;
+In addition, there don't seem to be tests for permissions of deleted publishers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2668#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2736</link>
+        <guid isPermaLink="false">http://localhost/ticket/2736</guid>
+        <title>#2736: Archiver fixes</title>
+        <pubDate>Tue, 24 Jul 2012 09:13:57 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+We need to check the archiver to make sure it works as we would expect after the changes in &lt;a class="assigned ticket" href="http://localhost/ticket/2732" title="enhancement: New file upload functionality (assigned)"&gt;#2732&lt;/a&gt;:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Receive notification of a file that needs processing
+&lt;/li&gt;&lt;li&gt;Check the file's DB entry and upload the file to the configured remote service
+&lt;/li&gt;&lt;li&gt;Update the URL of the file (both in the file's DB entry and the resource)
+&lt;/li&gt;&lt;li&gt;Once we're sure the file is safely archived, we should mark the file as being archived
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+so that we know it can safely be deleted at some point.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Maybe this could/should be implemented as a service rather than a celery task?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2736#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2629</link>
+        <guid isPermaLink="false">http://localhost/ticket/2629</guid>
+        <title>#2629: Move ckanext-examplevocabs into master and document</title>
+        <pubDate>Fri, 06 Jul 2012 14:55:55 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2629#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,85 @@
+id	summary	owner	type	priority	resolution	time
+1279	Refactor or deprecate Authorization Groups	ross	enhancement	awaiting triage	duplicate	08/15/11 13:36:07
+1387	Not specifying a protocol in dataset url causes broken link to be served on dataset view page	toby	defect	awaiting merge	fixed	10/12/11 14:14:53
+1434	Add i18n strings from extensions	seanh	enhancement	awaiting merge	fixed	11/01/11 11:07:28
+1471	Be compatible with new ubuntu release in April	seanh	enhancement	awaiting triage	fixed	11/17/11 17:52:25
+1512	Modifying user name makes you semi-log-out	ross	defect	minor	fixed	12/05/11 15:50:14
+1678	Make synchronous search the default behaviour	amercader	enhancement	awaiting merge	fixed	01/17/12 13:40:04
+1732	Update CKAN's search for taxonomies	johnglover	enhancement	awaiting triage	fixed	01/31/12 11:09:29
+1737	Expose solr-based search API	icmurray	enhancement	major	fixed	01/31/12 12:57:06
+2273	Review publisher organisations code with Ross	seanh	enhancement	minor	duplicate	04/02/12 14:08:43
+2283	[super] Data Previewer / Viewer v3		enhancement	awaiting triage	wontfix	04/11/12 09:59:01
+2289	Flash messages are not being translated?	toby	defect	awaiting merge	fixed	04/12/12 18:37:16
+2290	Mark facet titles in search pages for translation	seanh	defect	awaiting triage	fixed	04/13/12 14:17:31
+2305	User dashboard with private consolidated activity stream	seanh	enhancement	minor	fixed	04/16/12 14:42:09
+2309	Organizations review with SH		enhancement	awaiting triage	wontfix	04/16/12 15:54:39
+2313	Deprecate old facet data structures and related functions.	icmurray	enhancement	awaiting merge	fixed	04/17/12 15:51:56
+2319	Better auto-complete for groups on dataset edit page		enhancement	awaiting triage	wontfix	04/23/12 20:02:33
+2340	Get Jenkins to automatically run core extensions tests	seanh	enhancement	minor	fixed	05/01/12 12:44:49
+2344	Get jenkins install script into CKAN core	seanh	enhancement	minor	duplicate	05/01/12 12:51:13
+2347	Related stuff dashboard and changes	icmurray	enhancement	awaiting merge	fixed	05/01/12 13:38:59
+2374	tag search paging	ross	enhancement	major	worksforme	05/04/12 17:53:45
+2381	Related item count on ALL dataset pages	ross	enhancement	awaiting triage	fixed	05/14/12 15:25:33
+2388	"Update ""out of the box"" settings for CKAN"	amercader	enhancement	awaiting merge	fixed	05/15/12 15:21:09
+2389	More robust handling of DataExplorer errors	amercader	defect	major	fixed	05/15/12 15:24:07
+2399	Model cleanup in CKAN core has broken ckanext-spatial	amercader	defect	awaiting triage	fixed	05/16/12 13:04:30
+2428	Reduce/sort out CKAN's dependencies	seanh	enhancement	awaiting merge	fixed	05/25/12 11:54:56
+2434	Fix autodoc on readthedocs again	seanh	defect	major	fixed	05/25/12 16:12:33
+2435	ckanext-qa doesn't work with CKAN 1.7+	seanh	defect	awaiting triage	worksforme	05/25/12 16:27:08
+2437	Add coding standards to CKAN docs	icmurray	task	awaiting merge	fixed	05/28/12 09:21:35
+2438	resource_search action not accessible via GET request	icmurray	enhancement	awaiting merge	fixed	05/28/12 09:28:25
+2439	tag_search and tag_autocomplete not fully available via GET request	icmurray	defect	awaiting merge	fixed	05/28/12 09:32:29
+2467	Fix stats extension frontend	amercader	defect	minor	fixed	05/28/12 13:53:50
+2472	clean up datastore controller to get rid of datastore_url enables checks	amercader	enhancement	minor	fixed	05/29/12 12:10:07
+2484	move follower functionality into helper functions	toby	enhancement	awaiting merge	fixed	06/01/12 10:49:30
+2495	Stats page has lost styling ...		enhancement	awaiting triage	duplicate	06/07/12 08:15:32
+2500	get_action should raise an exception if the action requested doesn't exist	ross	defect	awaiting merge	fixed	06/07/12 12:36:20
+2533	ckanext-harvest is broken with ckan 1.8b	seanh	defect	awaiting triage	fixed	06/15/12 10:05:07
+2534	ckanext-spatial is broken with CKAN 1.8b	amercader	defect	awaiting triage	duplicate	06/15/12 10:06:02
+2591	postgres unicode problems postgres v9.1.4	toby	enhancement	critical	fixed	06/25/12 12:36:16
+2592	Update and simplify source install instructions	seanh	enhancement	awaiting triage	fixed	06/25/12 14:14:57
+2600	"Replace broken ""Login to Add an Organization"" button"	seanh	defect	awaiting triage	fixed	06/26/12 14:41:58
+2604	Add Requests as requirement for tests	amercader	enhancement	minor	fixed	06/27/12 09:43:49
+2605	Problem with user.get_groups	ross	enhancement	awaiting triage	fixed	06/27/12 10:30:06
+2608	Uploading a file to a resource hangs		refactor	awaiting triage	wontfix	06/27/12 14:19:48
+2615	Add activity stream activity when a user starts to follow something	seanh	enhancement	awaiting triage	fixed	06/28/12 09:04:09
+2624	Organizations breaks dataset tag editing	ross	enhancement	major	fixed	07/02/12 10:53:31
+2627	IDatasetForm.form_to_db_schema() is not called	seanh	defect	awaiting triage	fixed	07/06/12 12:08:28
+2630	UPdate docs after IDatasetForm schema change	seanh	enhancement	awaiting triage	duplicate	07/06/12 14:57:05
+2634	change log - helper function limited in 1.8	toby	enhancement	awaiting merge	fixed	07/09/12 10:04:08
+2638	add a get from request param helper function	toby	enhancement	awaiting merge	fixed	07/09/12 14:36:37
+2639	Update recline version for 1.8 release	amercader	enhancement	awaiting merge	fixed	07/09/12 14:56:49
+2649	Description on resources not rendered as markdown	ross	enhancement	awaiting triage	fixed	07/10/12 12:25:35
+2650	Description on resources not rendered as markdown	ross	enhancement	awaiting triage	fixed	07/10/12 12:25:37
+2651	Check support for TSV which doesn't appear to work well.	icmurray	enhancement	awaiting triage	fixed	07/10/12 12:28:38
+2670	model.Group.get_children_groups returns deleted groups	ross	defect	awaiting merge	fixed	07/13/12 10:25:17
+2672	Session.is_modified should use passive=True	icmurray	enhancement	awaiting triage	fixed	07/13/12 13:18:43
+2682	CKAN's internal tracking counts each view twice, needs unit tests	seanh	defect	awaiting merge	fixed	07/16/12 13:46:42
+2693	License is out of date	seanh	enhancement	awaiting triage	fixed	07/18/12 09:57:27
+2756	Fix handling of extras in group read	seanh	enhancement	awaiting merge	fixed	07/25/12 15:51:54
+2757	Write documentation for upgrading a CKAN install from an older to a newer version of CKAN	Adria	enhancement	awaiting merge	fixed	07/25/12 16:54:02
+2770	Some strings potentially not marked for translation	seanh	defect	blocker	fixed	07/27/12 11:00:40
+2772	Update transifex for 1.8 translations	seanh	enhancement	major	fixed	07/27/12 12:48:19
+2811	Author doesn't show on dataset read page		defect	awaiting triage	fixed	08/08/12 08:51:01
+2816	DomainObjectOperation not in model	toby	enhancement	awaiting merge	fixed	08/09/12 07:17:01
+2839	Specifying sort order breaks search results on group page		enhancement	awaiting triage	fixed	08/12/12 16:09:59
+2842	Allow sort ordering of dataset listings on group pages		enhancement	awaiting triage	fixed	08/13/12 11:01:35
+2843	Adding existing datasets to organizations is broken	seanh	defect	awaiting merge	fixed	08/13/12 11:58:57
+2845	Editing an organization removes all datasets from the organization	seanh	defect	awaiting merge	fixed	08/13/12 12:01:26
+2872	Non-open licenses are marked as open		defect	major	fixed	08/16/12 13:35:35
+2937	GroupController.history() missing extras_as_string		defect	awaiting triage	fixed	09/20/12 15:42:10
+2279	Write tutorial for our DataStore API / Data Explorer	rgrp	enhancement	major		04/03/12 19:44:23
+2363	Documentation of best caching practice.	toby	enhancement	major		05/01/12 16:16:57
+2433	API uses name not id for some version 3 calls	toby	defect	minor		05/25/12 14:54:08
+2499	Documentation for the internal analytics	toby	enhancement	awaiting triage		06/07/12 11:58:17
+2761	Document all the errors you can get when setting up filestore, and how to fix them		enhancement	awaiting triage		07/26/12 11:36:06
+2762	test_related.py crashes		defect	awaiting triage		07/26/12 11:55:53
+2771	Documentation and examples for IDatasetForm and IGroupForm	seanh	enhancement	awaiting triage		07/27/12 12:30:38
+2859	Fix the build	icmurray	defect	blocker		08/16/12 09:26:57
+2919	Remove IController from docs		defect	awaiting triage		09/12/12 14:47:33
+2936	Updating a group via the API clears its packages		defect	awaiting triage		09/19/12 09:47:46
+2958	Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8		defect	awaiting triage		10/04/12 09:29:36
+2963	Timeout on tag pages with lots of datasets		defect	major		10/15/12 10:13:19
+2965	Stats extension broken on 1.8		defect	awaiting triage		10/15/12 10:15:41
+3002	API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string		defect	minor		10/19/12 09:32:22
+3003	New pg databases should be created with UTF8 encoding rather than system default		enhancement	awaiting triage		10/19/12 09:33:19

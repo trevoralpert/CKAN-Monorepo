@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=rgrp&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=rgrp&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1384</link>
+        <guid isPermaLink="false">http://localhost/ticket/1384</guid>
+        <title>#1384: CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages</title>
+        <pubDate>Wed, 12 Oct 2011 10:07:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Most articles still refer and link to ckan.net, wiki.ckan.net and to packages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1577</link>
+        <guid isPermaLink="false">http://localhost/ticket/1577</guid>
+        <title>#1577: Can't upload file with foreign chars in filename</title>
+        <pubDate>Mon, 19 Dec 2011 18:00:59 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Looks like uploading a file with foreign characters fails due to encoding reasons.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://thedatahub.org/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ%C3%AD-%C4%8Cesk%C3%A9-republiky-_-P%C5%99%C3%ADprava-rozpo%C4%8Dtu.pdf
+Module weberror.errormiddleware:162 in __call__
+&amp;lt;&amp;lt;              __traceback_supplement__ = Supplement, self, environ
+                   sr_checker = ResponseStartChecker(start_response)
+                   app_iter = self.application(environ, sr_checker)
+                   return self.make_catching_iter(app_iter, environ, sr_checker)
+               except:
+&amp;gt;&amp;gt;  app_iter = self.application(environ, sr_checker)
+Module beaker.middleware:73 in __call__
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+               environ[self.environ_key] = self.cache_manager
+               return self.app(environ, start_response)
+&amp;gt;&amp;gt;  return self.app(environ, start_response)
+Module beaker.middleware:152 in __call__
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+                   return start_response(status, headers, exc_info)
+               return self.wrap_app(environ, session_start_response)
+           def _get_session(self):
+&amp;gt;&amp;gt;  return self.wrap_app(environ, session_start_response)
+Module routes.middleware:130 in __call__
+&amp;lt;&amp;lt;                  environ['SCRIPT_NAME'] = environ['SCRIPT_NAME'][:-1]
+               response = self.app(environ, start_response)
+               # Wrapped in try as in rare cases the attribute will be gone already
+&amp;gt;&amp;gt;  response = self.app(environ, start_response)
+Module pylons.wsgiapp:125 in __call__
+&amp;lt;&amp;lt;
+               controller = self.resolve(environ, start_response)
+               response = self.dispatch(controller, environ, start_response)
+               if 'paste.testing_variables' in environ and hasattr(response,
+&amp;gt;&amp;gt;  response = self.dispatch(controller, environ, start_response)
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           def load_test_env(self, environ):
+&amp;gt;&amp;gt;  return controller(environ, start_response)
+Module ckan.lib.base:123 in __call__
+&amp;lt;&amp;lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&amp;gt;&amp;gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&amp;gt;&amp;gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ['pylons.action_method'] = func
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&amp;gt;&amp;gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&amp;gt;&amp;gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckanext.storage.controller:2 in auth_form
+Module ckan.lib.jsonp:26 in jsonpify
+&amp;lt;&amp;lt;      Very much modelled after pylons.decorators.jsonify .
+           """
+           data = func(*args, **kwargs)
+           return to_jsonp(data)
+&amp;gt;&amp;gt;  data = func(*args, **kwargs)
+Module ckanext.storage.controller:301 in auth_form
+&amp;lt;&amp;lt;          method = 'POST'
+               authorize(method, bucket, label, c.userobj, self.ofs)
+               data = self._get_form_data(label)
+               return data
+&amp;gt;&amp;gt;  authorize(method, bucket, label, c.userobj, self.ofs)
+Module ckanext.storage.controller:79 in authorize
+&amp;lt;&amp;lt;      if method != 'GET':
+               # do not allow overwriting
+               if ofs.exists(bucket, key):
+                   abort(409)
+               # now check user stuff
+&amp;gt;&amp;gt;  if ofs.exists(bucket, key):
+Module ofs.remote.botostore:53 in exists
+&amp;lt;&amp;lt;          if bucket is None:
+                   return False
+               return (label is None) or (label in bucket)
+           def claim_bucket(self, bucket):
+&amp;gt;&amp;gt;  return (label is None) or (label in bucket)
+Module boto.s3.bucket:87 in __contains__
+&amp;lt;&amp;lt;      def __contains__(self, key_name):
+              return not (self.get_key(key_name) is None)
+           def startElement(self, name, attrs, connection):
+&amp;gt;&amp;gt;  return not (self.get_key(key_name) is None)
+Module boto.s3.bucket:144 in get_key
+&amp;lt;&amp;lt;          response = self.connection.make_request('HEAD', self.name, key_name,
+                                                       headers=headers,
+                                                       query_args=query_args)
+               # Allow any success status (2xx) - for example this lets us
+               # support Range gets, which return status 206:
+&amp;gt;&amp;gt;  query_args=query_args)
+Module boto.s3.connection:388 in make_request
+&amp;lt;&amp;lt;          if isinstance(key, Key):
+                   key = key.name
+               path = self.calling_format.build_path_base(bucket, key)
+               boto.log.debug('path=%s' % path)
+               auth_path = self.calling_format.build_auth_path(bucket, key)
+&amp;gt;&amp;gt;  path = self.calling_format.build_path_base(bucket, key)
+Module boto.s3.connection:88 in build_path_base
+&amp;lt;&amp;lt;      def build_path_base(self, bucket, key=''):
+               return '/%s' % urllib.quote(key)
+       class SubdomainCallingFormat(_CallingFormat):
+&amp;gt;&amp;gt;  return '/%s' % urllib.quote(key)
+Module urllib:1222 in quote
+&amp;lt;&amp;lt;              safe_map[c] = (c in safe) and c or ('%%%02X' % i)
+               _safemaps[cachekey] = safe_map
+           res = map(safe_map.__getitem__, s)
+           return ''.join(res)
+&amp;gt;&amp;gt;  res = map(safe_map.__getitem__, s)
+KeyError: u'\xed'
+CGI Variables
+AUTH_TYPE	'cookie'
+CONTENT_TYPE	'; charset=utf-8'
+DOCUMENT_ROOT	'/htdocs'
+GATEWAY_INTERFACE	'CGI/1.1'
+HTTP_ACCEPT	'*/*'
+HTTP_ACCEPT_CHARSET	'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
+HTTP_ACCEPT_ENCODING	'gzip,deflate,sdch'
+HTTP_ACCEPT_LANGUAGE	'en-US,en;q=0.8'
+HTTP_CACHE_CONTROL	'max-age=259200'
+HTTP_CONNECTION	'keep-alive'
+HTTP_COOKIE	'thedatahub_net=27a7f095fcca1ea6b36df996d595e3278b16f4538862bf7f88d49e2000b9246547c8fd0e; auth_tkt="f9c6ab2b0d9fcd71c4c2408bc12fab544eef1c45elenaibp!userid_type:unicode"; auth_tkt="f9c6ab2b0d9fcd71c4c2408bc12fab544eef1c45elenaibp!userid_type:unicode"; ckan_user=elenaibp; ckan_display_name="Elena Mondo"; ckan_apikey=decd48b1-49ee-4250-bff4-98ccca9c02a5; hide_welcome_message=1; __utma=119670349.1809834699.1323782464.1324293066.1324298316.4; __utmb=119670349.3.10.1324298316; __utmc=119670349; __utmz=119670349.1323782464.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+HTTP_HOST	'thedatahub.org'
+HTTP_REFERER	'http://thedatahub.org/dataset/edit/budget-library-czeck-republic'
+HTTP_USER_AGENT	'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.63 Safari/535.7'
+HTTP_VIA	'1.1 localhost (squid/3.0.STABLE19)'
+HTTP_X_FORWARDED_FOR	'87.114.74.190'
+HTTP_X_REQUESTED_WITH	'XMLHttpRequest'
+PATH	'/usr/local/bin:/usr/bin:/bin'
+PATH_INFO	'/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ\xc3\xad-\xc4\x8cesk\xc3\xa9-republiky-_-P\xc5\x99\xc3\xadprava-rozpo\xc4\x8dtu.pdf'
+PATH_TRANSLATED	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ\xc3\xad-\xc4\x8cesk\xc3\xa9-republiky-_-P\xc5\x99\xc3\xadprava-rozpo\xc4\x8dtu.pdf'
+REMOTE_ADDR	'193.34.146.142'
+REMOTE_PORT	'55419'
+REMOTE_USER	u'elenaibp'
+REMOTE_USER_DATA	'userid_type:unicode'
+REMOTE_USER_TOKENS	['']
+REQUEST_METHOD	'GET'
+REQUEST_URI	'/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ%C3%AD-%C4%8Cesk%C3%A9-republiky-_-P%C5%99%C3%ADprava-rozpo%C4%8Dtu.pdf'
+SCRIPT_FILENAME	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py'
+SCRIPT_URI	'http://thedatahub.org/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ\xc3\xad-\xc4\x8cesk\xc3\xa9-republiky-_-P\xc5\x99\xc3\xadprava-rozpo\xc4\x8dtu.pdf'
+SCRIPT_URL	'/api/storage/auth/form/2011-12-19T124447/Ministerstvo-financ\xc3\xad-\xc4\x8cesk\xc3\xa9-republiky-_-P\xc5\x99\xc3\xadprava-rozpo\xc4\x8dtu.pdf'
+SERVER_ADDR	'193.34.146.146'
+SERVER_ADMIN	'[no address given]'
+SERVER_NAME	'thedatahub.org'
+SERVER_PORT	'80'
+SERVER_PROTOCOL	'HTTP/1.0'
+SERVER_SIGNATURE	'&amp;lt;address&amp;gt;Apache/2.2.14 (Ubuntu) Server at thedatahub.org Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE	'Apache/2.2.14 (Ubuntu)'
+WSGI Variables
+application	&amp;lt;beaker.middleware.CacheMiddleware object at 0x7f22601c7dd0&amp;gt;
+beaker.cache	&amp;lt;beaker.cache.CacheManager object at 0x7f22601c7b50&amp;gt;
+beaker.get_session	&amp;lt;bound method SessionMiddleware._get_session of &amp;lt;beaker.middleware.SessionMiddleware object at 0x7f22601c7a90&amp;gt;&amp;gt;
+beaker.session	{'_accessed_time': 1324298703.071357, '_creation_time': 1324293077.4139669}
+mod_wsgi.application_group	'ckan.net|'
+mod_wsgi.callable_object	'application'
+mod_wsgi.listener_host	''
+mod_wsgi.listener_port	'80'
+mod_wsgi.process_group	'ckan.net'
+mod_wsgi.reload_mechanism	'1'
+mod_wsgi.script_reloading	'1'
+mod_wsgi.version	(2, 8)
+paste.cookies	(&amp;lt;SimpleCookie: __utma='119670349.1809834699.1323782464.1324293066.1324298316.4' __utmb='119670349.3.10.1324298316' __utmc='119670349' __utmz='119670349.1323782464.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)' auth_tkt='f9c6ab2b0d9fcd71c4c2408bc12fab544eef1c45elenaibp!userid_type:unicode' ckan_apikey='decd48b1-49ee-4250-bff4-98ccca9c02a5' ckan_display_name='Elena Mondo' ckan_user='elenaibp' hide_welcome_message='1' thedatahub_net='27a7f095fcca1ea6b36df996d595e3278b16f4538862bf7f88d49e2000b9246547c8fd0e'&amp;gt;, 'thedatahub_net=27a7f095fcca1ea6b36df996d595e3278b16f4538862bf7f88d49e2000b9246547c8fd0e; auth_tkt="f9c6ab2b0d9fcd71c4c2408bc12fab544eef1c45elenaibp!userid_type:unicode"; auth_tkt="f9c6ab2b0d9fcd71c4c2408bc12fab544eef1c45elenaibp!userid_type:unicode"; ckan_user=elenaibp; ckan_display_name="Elena Mondo"; ckan_apikey=decd48b1-49ee-4250-bff4-98ccca9c02a5; hide_welcome_message=1; _ _utma=119670349.1809834699.1323782464.1324293066.1324298316.4; __utmb=119670349.3.10...)|utmcmd=(none)')
+paste.registry	&amp;lt;paste.registry.Registry object at 0x7f226194df50&amp;gt;
+paste.throw_errors	True
+pylons.action_method	&amp;lt;bound method StorageAPIController.auth_form of &amp;lt;ckanext.storage.controller.StorageAPIController object at 0x7f2261dad990&amp;gt;&amp;gt;
+pylons.controller	&amp;lt;ckanext.storage.controller.StorageAPIController object at 0x7f2261dad990&amp;gt;
+pylons.environ_config	{'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons	&amp;lt;pylons.util.PylonsContext object at 0x7f2261daddd0&amp;gt;
+pylons.routes_dict	{'action': u'auth_form', 'controller': u'ckanext.storage.controller:StorageAPIController', 'label': u'2011-12-19T124447/Ministerstvo-financ\xed-\u010cesk\xe9-republiky-_-P\u0159\xedprava-rozpo\u010dtu.pdf'}
+repoze.who.identity	&amp;lt;repoze.who identity (hidden, dict-like) at 139785645747120&amp;gt;
+repoze.who.logger	&amp;lt;logging.Logger instance at 0x7f225e23c098&amp;gt;
+repoze.who.plugins	{'openid': &amp;lt;OpenIdIdentificationPlugin 139785625065680&amp;gt;, 'friendlyform': &amp;lt;FriendlyFormPlugin 139785618095248&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.UsernamePasswordAuthenticator object at 0x7f2260874c10&amp;gt;, 'auth_tkt': &amp;lt;AuthTktCookiePlugin 139785625065808&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f2260874c90&amp;gt;}
+routes.route	&amp;lt;routes.route.Route object at 0x7f22601a1090&amp;gt;
+routes.url	&amp;lt;routes.util.URLGenerator object at 0x7f2261dadf50&amp;gt;
+webob._parsed_query_vars	(GET([]), '')
+webob.adhoc_attrs	{'language': 'en-us'}
+wsgi process	'Multiprocess'
+wsgi.file_wrapper	&amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f2261da9af8&amp;gt;
+wsgiorg.routing_args	(&amp;lt;routes.util.URLGenerator object at 0x7f2261dadf50&amp;gt;, {'action': u'auth_form', 'controller': u'ckanext.storage.controller:StorageAPIController', 'label': u'2011-12-19T124447/Ministerstvo-financ\xed-\u010cesk\xe9-republiky-_-P\u0159\xedprava-rozpo\u010dtu.pdf'})
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1577#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2874</link>
+        <guid isPermaLink="false">http://localhost/ticket/2874</guid>
+        <title>#2874: Clean up bin directory</title>
+        <pubDate>Fri, 17 Aug 2012 08:01:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Full of obsolete material
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2874#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1459</link>
+        <guid isPermaLink="false">http://localhost/ticket/1459</guid>
+        <title>#1459: Featured Dataset feature</title>
+        <pubDate>Sat, 12 Nov 2011 15:50:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Provide way to mark a dataset as featured. Featured database show up on the front page.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: detail this more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1459#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1163</link>
+        <guid isPermaLink="false">http://localhost/ticket/1163</guid>
+        <title>#1163: Improvements to Storage Extension</title>
+        <pubDate>Thu, 26 May 2011 11:19:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Storage is now working but there are
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integrate with Resources (e.g. create a resource for each file upload and give option to associate with a package)
+&lt;ul&gt;&lt;li&gt;Should we introduce rule that files *not* associated with a Resource are periodically deleted?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Allow setting of a file name/path before upload
+&lt;/li&gt;&lt;li&gt;Allow for file overwriting/deleting etc (how should this work -- do we want to allow this sort of thing)
+&lt;/li&gt;&lt;li&gt;Integrate local file upload stuff in api/auth/*
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DifferentBackendIssues"&gt;Different Backend Issues&lt;/h2&gt;
+&lt;p&gt;
+Local file store is rather different from 'remote' storage in various ways:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;For remote you don't want to use many buckets as there are bucket limits while for local you want to. Should we there have a single path that users provide which we then partition differently for different backends.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1163#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1311</link>
+        <guid isPermaLink="false">http://localhost/ticket/1311</guid>
+        <title>#1311: Modal user register and login form</title>
+        <pubDate>Tue, 06 Sep 2011 08:20:27 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Subticket of: &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Rather than having to visit a dedicated page it would be good if registration and login could be done from a modal form (separate or combined ...).
+&lt;/p&gt;
+&lt;h2 id="Why"&gt;Why&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;It could be used from dataset creation page in situations where user needs to be registered / logged in to create a dataset (so we could allow someone to start creating a dataset and only get them to login at the end ...)
+&lt;/li&gt;&lt;li&gt;It allows for quicker and easier logging in
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;See Friedrich's work on the datahub
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1311#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1429</link>
+        <guid isPermaLink="false">http://localhost/ticket/1429</guid>
+        <title>#1429: Provide DOIs for datasets in a CKAN instance</title>
+        <pubDate>Sun, 30 Oct 2011 12:21:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+DOI = digital object identifier = &lt;a class="ext-link" href="http://www.doi.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.doi.org/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+As a Publisher I want a DOI for my dataset so that it can be cited by and linked to by others in a standard and easy way.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Probably implement as extension rather than core
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1458</link>
+        <guid isPermaLink="false">http://localhost/ticket/1458</guid>
+        <title>#1458: Support previewing kml files in data viewer</title>
+        <pubDate>Thu, 10 Nov 2011 14:48:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1151" title="enhancement: Preview for geographic data should be a map (closed: wontfix)"&gt;#1151&lt;/a&gt; (viewing geo data)
+&lt;/p&gt;
+&lt;p&gt;
+E.g. preview of &lt;a class="ext-link" href="http://thedatahub.org/dataset/louisvillecrime"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/louisvillecrime&lt;/a&gt; should bring up a map
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1458#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2279</link>
+        <guid isPermaLink="false">http://localhost/ticket/2279</guid>
+        <title>#2279: Write tutorial for our DataStore API / Data Explorer</title>
+        <pubDate>Tue, 03 Apr 2012 19:44:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Unfortunately ES is a little bit complex / opaque to newcomers. Need to write a simple tutorial walking through this.
+&lt;/p&gt;
+&lt;p&gt;
+This is documentation / example only (no code!)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2279#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1571</link>
+        <guid isPermaLink="false">http://localhost/ticket/1571</guid>
+        <title>#1571: [super] Issues Extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:30:25 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+"Proper" issues extension.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/issues&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Code: &lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Overview
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This would be an extension and improvement of existing todo extension - &lt;a class="closed ticket" href="http://localhost/ticket/842" title="enhancement: Todo list CKAN extension (closed: fixed)"&gt;#842&lt;/a&gt; (&lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Current extension does work but lacks polish
+&lt;/li&gt;&lt;li&gt;Should we polish or do significant improvements?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Functionality - see etherpad
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Rename todo(s) -&amp;gt; issue(s) in existing extension)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1571#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1343</link>
+        <guid isPermaLink="false">http://localhost/ticket/1343</guid>
+        <title>#1343: [super] User related improvements (login, user pages etc)</title>
+        <pubDate>Wed, 14 Sep 2011 16:18:18 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Disallow account creation via openid - &lt;a class="closed ticket" href="http://localhost/ticket/1386" title="enhancement: Disallow account creation via openid (closed: fixed)"&gt;#1386&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Require email field - &lt;a class="closed ticket" href="http://localhost/ticket/1319" title="enhancement: Require an email address on User registration (closed: fixed)"&gt;#1319&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Require email confirmation to be activated (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Improvements to user page (e.g. show activity and more info about user) - &lt;a class="closed ticket" href="http://localhost/ticket/1396" title="enhancement: Improvements to user page UX - 1d (closed: fixed)"&gt;#1396&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Modal user login - &lt;a class="new ticket" href="http://localhost/ticket/1311" title="enhancement: Modal user register and login form (new)"&gt;#1311&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1343#changelog</comments>
+    </item>
+ </channel>
+</rss>

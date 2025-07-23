@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=shevski&amp;desc=1&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=shevski&amp;desc=1&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2547</link>
+        <guid isPermaLink="false">http://localhost/ticket/2547</guid>
+        <title>#2547: ODS Initial data sets</title>
+        <pubDate>Mon, 18 Jun 2012 10:55:06 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+The ODS demo site will need data adding, initially as fixtures but it would also be useful if we started evaluating datasets that we can ship with ODS installations (at least in the UK) from places such as DGU and ONS.
+&lt;/p&gt;
+&lt;p&gt;
+May wish to create a ticket for making sure the datasets within the system are reset every X hours. Perhaps.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a new system administrator for an ODS instance, I don't want to have a site devoid of any data. Geographically relevant datasets would be welcomed.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a bizdev person I would like to be able to demonstrate how ODS works with real datasets.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Identify relevant sources for datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Pick datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Set them up for import
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2547#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2590</link>
+        <guid isPermaLink="false">http://localhost/ticket/2590</guid>
+        <title>#2590: Publisher dashboard</title>
+        <pubDate>Mon, 25 Jun 2012 10:03:37 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Need proper user stories but ...
+&lt;/p&gt;
+&lt;p&gt;
+Publisher admins/editors may need a more useful group read page showing things like:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The current search
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Recent activity
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;People within the group
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Followers
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Others?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2590#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2699</link>
+        <guid isPermaLink="false">http://localhost/ticket/2699</guid>
+        <title>#2699: workflow for associating datasets with groups</title>
+        <pubDate>Wed, 18 Jul 2012 14:02:56 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+needs review &amp;amp; speccing out
+e.g. datasets created by a user who belongs to a certain publisher (group) get auto added to this group
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2699#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2702</link>
+        <guid isPermaLink="false">http://localhost/ticket/2702</guid>
+        <title>#2702: Future Javascript wishlist for demo</title>
+        <pubDate>Wed, 18 Jul 2012 14:07:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tooltip on popular datasets with number of views
+facets to update automatically
+creating a dataset without reloading page between steps
+hover on licences information
+autocomplete on search terms
+group filtering
+social share buttons in lightboxes
+dataset counts on homepage
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2814</link>
+        <guid isPermaLink="false">http://localhost/ticket/2814</guid>
+        <title>#2814: Demo: upload file behaves oddly</title>
+        <pubDate>Wed, 08 Aug 2012 10:06:00 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;ol start="3"&gt;&lt;li&gt;Uploading a file behaves counter-intuitively (I would suggest wrongly).
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+When adding a new resource by uploading a file, I select a file called
+say create-group.png. I expect the following to happen:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the pathname of that file is filled in the box;
+&lt;/li&gt;&lt;li&gt;nothing is actually uploaded till I hit 'add' (confirming that I've got the right file etc).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Instead of this,
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the file is immediately and, seemingly, irrevocably uploaded;
+&lt;/li&gt;&lt;li&gt;the box is filled with a mysterious URL (&lt;a class="ext-link" href="https://commondatastorage.googleapis.com/ckan-demo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://commondatastorage.googleapis.com/ckan-demo&lt;/a&gt; ...)
+&lt;/li&gt;&lt;li&gt;the mysterious URL is so long I can't even see the final element, which is my file name.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2814#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2956</link>
+        <guid isPermaLink="false">http://localhost/ticket/2956</guid>
+        <title>#2956: Allow for resource editing in CKAN 2.0</title>
+        <pubDate>Wed, 03 Oct 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the edit dataset page... there needs to be a way for users to be able to see all the resources associated to the dataset and edit them individually.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2956#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2644</link>
+        <guid isPermaLink="false">http://localhost/ticket/2644</guid>
+        <title>#2644: user dashboard for demo theme</title>
+        <pubDate>Tue, 10 Jul 2012 09:00:21 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we now have a user dashboard that needs theming not sure if we need sam to look at it
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/user/dashboard"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/user/dashboard&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2644#changelog</comments>
+    </item>
+ </channel>
+</rss>

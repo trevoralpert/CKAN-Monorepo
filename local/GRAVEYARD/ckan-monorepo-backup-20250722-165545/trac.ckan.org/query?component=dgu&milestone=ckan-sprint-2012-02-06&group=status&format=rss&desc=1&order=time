@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=dgu&amp;milestone=ckan-sprint-2012-02-06&amp;group=status&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=dgu&amp;milestone=ckan-sprint-2012-02-06&amp;group=status&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1772</link>
+        <guid isPermaLink="false">http://localhost/ticket/1772</guid>
+        <title>#1772: 13. Provider labelling MUST PHASE 1 [UKLP #14 MUST]</title>
+        <pubDate>Mon, 06 Feb 2012 14:51:42 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1772#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1770</link>
+        <guid isPermaLink="false">http://localhost/ticket/1770</guid>
+        <title>#1770: 3. Themes/Taxonomy as well as tags WONT PHASE 2</title>
+        <pubDate>Mon, 06 Feb 2012 14:50:34 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1770#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1769</link>
+        <guid isPermaLink="false">http://localhost/ticket/1769</guid>
+        <title>#1769: 6. Publisher Registration Improvements MUST PHASE 1</title>
+        <pubDate>Mon, 06 Feb 2012 14:49:49 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1769#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1714</link>
+        <guid isPermaLink="false">http://localhost/ticket/1714</guid>
+        <title>#1714: DGU dataset view page</title>
+        <pubDate>Thu, 26 Jan 2012 15:18:10 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Dataset read page for DGU
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[X] Fix missing title
+&lt;/li&gt;&lt;li&gt;[X] Links to the social media stuff
+&lt;ul&gt;&lt;li&gt;"Share your app"
+&lt;/li&gt;&lt;li&gt;"Share your idea"
+&lt;/li&gt;&lt;li&gt;"Request new data"
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Presentation of additional information should be broken into sections&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Content is there.  Don't do anything until theming/design work is undertaken.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[ ] &lt;del&gt;"More like this": links to similar datasets.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Dropping
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[N] &lt;del&gt;Stars&lt;/del&gt; (I think these are being removed)
+&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Comments&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Possible integration point with Drupal.  Needs it own ticket.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] Give feedback to department
+&lt;/li&gt;&lt;li&gt;[X] Tidy up the QA stars
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1714#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1713</link>
+        <guid isPermaLink="false">http://localhost/ticket/1713</guid>
+        <title>#1713: DGU dataset search page</title>
+        <pubDate>Thu, 26 Jan 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Search results page of DGU.
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[X] ensure faceting by group (publisher) works
+[X] allow faceting by UKLP dataset type
+[X] allow faceting by INSPIRE
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1713#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1712</link>
+        <guid isPermaLink="false">http://localhost/ticket/1712</guid>
+        <title>#1712: DGU /data page</title>
+        <pubDate>Thu, 26 Jan 2012 15:08:47 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN provides the /data page page of data.gov.uk
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown of tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[x] Analysis / refinement of spec.
+&lt;/li&gt;&lt;li&gt;[x] Log-in / register as publisher
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher form)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[x] Population of "browse by publisher"
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+list groups ordered by most datasets
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[ ] &lt;del&gt;Browse by nation&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Featured datasets&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Now a possible integration point with drupal
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] Tag cloud
+&lt;/li&gt;&lt;li&gt;[X] Developers section
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1712#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1620</link>
+        <guid isPermaLink="false">http://localhost/ticket/1620</guid>
+        <title>#1620: Update and test existing DGU package form : don't allow package-type selection when editing a package</title>
+        <pubDate>Mon, 09 Jan 2012 10:10:37 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Can't change a dataset from containing time-series resources to one containing individual resources or visa-versa.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1620#changelog</comments>
+    </item>
+ </channel>
+</rss>

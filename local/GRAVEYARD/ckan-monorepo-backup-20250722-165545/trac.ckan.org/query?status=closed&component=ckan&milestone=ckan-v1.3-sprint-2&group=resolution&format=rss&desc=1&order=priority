@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.3-sprint-2&amp;group=resolution&amp;desc=1&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.3-sprint-2&amp;group=resolution&amp;desc=1&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/874</link>
+        <guid isPermaLink="false">http://localhost/ticket/874</guid>
+        <title>#874: Extract solr search backend into an extension</title>
+        <pubDate>Mon, 20 Dec 2010 11:27:02 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Move the solr &lt;a class="missing wiki"&gt;SearchBackend?&lt;/a&gt; to a seperate code base, remove any mentions of the CKAN model.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/874#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/889</link>
+        <guid isPermaLink="false">http://localhost/ticket/889</guid>
+        <title>#889: Support extra footer material in config option (e.g. for google analytics)</title>
+        <pubDate>Thu, 30 Dec 2010 12:46:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add a config option 'template_footer_end' which is inserted in layout_template just before &amp;lt;/body&amp;gt;.
+&lt;/p&gt;
+&lt;p&gt;
+This allows sysadmins to add extra items, especially, scripts directly into site without having to do any theming and is especially useful for things like google analytics.
+&lt;/p&gt;
+&lt;p&gt;
+Aside: going forward may want to turn this into a extension.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/889#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/847</link>
+        <guid isPermaLink="false">http://localhost/ticket/847</guid>
+        <title>#847: CKAN search using SOLR backend</title>
+        <pubDate>Mon, 06 Dec 2010 12:41:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This is a meta-ticket to pull together all the work on SOLR as a backend for CKAN search. (Work on SOLR search has been going on since March of 2010).
+&lt;/p&gt;
+&lt;p&gt;
+3 key aspects of this:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Index package information in SOLR - &lt;a class="closed ticket" href="http://localhost/ticket/353" title="defect: SOLR search indexing (closed: fixed)"&gt;ticket:353&lt;/a&gt; - SOLR search indexing (index CKAN)
+&lt;ul&gt;&lt;li&gt;Synchronously (generify Search Index update method to support SOLR or postgres?) - &lt;a class="closed ticket" href="http://localhost/ticket/317" title="enhancement: Make search pluggable (closed: fixed)"&gt;#317&lt;/a&gt;: Make search pluggable
+&lt;/li&gt;&lt;li&gt;Asynchroously: via worker with queue
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/324" title="enhancement: Search indexing using notifications (closed: fixed)"&gt;#324&lt;/a&gt; Search indexing using notifications
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/669" title="task: Refactor Solr to become a generic worker (closed: fixed)"&gt;#669&lt;/a&gt;: Refactor Solr (indexer) to become a generic worker
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/874" title="enhancement: Extract solr search backend into an extension (closed: fixed)"&gt;#874&lt;/a&gt;: Extract Solr search backend into an extension
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;In core support using SOLR backend as well as postgres for queries
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/317" title="enhancement: Make search pluggable (closed: fixed)"&gt;#317&lt;/a&gt;: Make search pluggable (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Integrate into WUI (if changes needed)
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/672" title="enhancement: Facets in CKAN search results (closed: fixed)"&gt;#672&lt;/a&gt; - Facets in CKAN search results
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Extras:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Solr index testing tool &lt;a class="closed ticket" href="http://localhost/ticket/431" title="task: Solr index testing tool (closed: wontfix)"&gt;#431&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/847#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/876</link>
+        <guid isPermaLink="false">http://localhost/ticket/876</guid>
+        <title>#876: Support sqlite as a database backend for CKAN</title>
+        <pubDate>Mon, 20 Dec 2010 15:25:11 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Among other things this will allow the tests to run much quicker.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/876#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/880</link>
+        <guid isPermaLink="false">http://localhost/ticket/880</guid>
+        <title>#880: ONS loader tripping up on deleted packages</title>
+        <pubDate>Tue, 21 Dec 2010 13:49:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Deleted packages with the same title and extra fields as an active package trip up the loader. It finds them in the search, but due to ckanclient not using the apikey when you 'get' the package to examine it further, it causes an exception.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/880#changelog</comments>
+    </item>
+ </channel>
+</rss>

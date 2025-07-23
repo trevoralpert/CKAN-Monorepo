@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-future&amp;group=resolution&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-future&amp;group=resolution&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1664</link>
+        <guid isPermaLink="false">http://localhost/ticket/1664</guid>
+        <title>#1664: Smarter group activity streams</title>
+        <pubDate>Tue, 17 Jan 2012 10:20:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We already have simple activity streams for groups that have new group or group updated events (see &lt;a class="closed ticket" href="http://localhost/ticket/1631" title="enhancement: Add activity stream events for new/changed groups (closed: fixed)"&gt;#1631&lt;/a&gt;). Smarter/more useful group activity streams would also contain the events for things related to the group: users, datasets, other groups, etc.
+&lt;/p&gt;
+&lt;p&gt;
+This should just mean using a more complex SQL query in the group_activity_list() logic function.
+&lt;/p&gt;
+&lt;p&gt;
+Things might get tricky when a user or dataset joins a group, this may show up as two events (the user or dataset was modified, and the group was modified). We may want to have two separate events for this (one to go in the user or dataset activity stream and one for the group), or maybe we just want one 'user/dataset joined group' event.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1664#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1796</link>
+        <guid isPermaLink="false">http://localhost/ticket/1796</guid>
+        <title>#1796: Get rid of lxml dependency</title>
+        <pubDate>Tue, 14 Feb 2012 18:34:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+lxml is used in CKAN core in two places:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ckan/lib/helpers.py:239 Parsing Markdown and ensuring it is valid XML (i.e. tags close nicely so the HTML of the rest of the CKAN page is not disruptable).
+&lt;/li&gt;&lt;li&gt;reading the SOLR config XML to determine what version it is.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Both of these could be done with xml.dom built into Python and would save us a sizeable and slightly problematic dependency.
+&lt;/p&gt;
+&lt;p&gt;
+lxml is needed by these extensions: ckanext-inspire, ckanext-harvest, ckanext-csw &amp;amp; ckanext-wordpresser, so we'd have to add this to their requirements.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1796#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1563</link>
+        <guid isPermaLink="false">http://localhost/ticket/1563</guid>
+        <title>#1563: Finish Data Storage</title>
+        <pubDate>Mon, 19 Dec 2011 10:59:06 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Unsure what needs to happen here. Need to list outstanding tasks and implement.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1563#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1570</link>
+        <guid isPermaLink="false">http://localhost/ticket/1570</guid>
+        <title>#1570: Integrated file Storage</title>
+        <pubDate>Mon, 19 Dec 2011 11:29:02 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Is this ready for release? What needs to be done?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1570#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/377</link>
+        <guid isPermaLink="false">http://localhost/ticket/377</guid>
+        <title>#377: API Should return JSON in all cases</title>
+        <pubDate>Tue, 27 Jul 2010 22:02:38 GMT</pubDate>
+        
+        <dc:creator>glen@…</dc:creator>
+
+        <description>&lt;p&gt;
+When the API returns any response it should always retunr JSON. For example a 404 response should return something like
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': 404, 'message': 'package somename not found'}
+&lt;/pre&gt;&lt;p&gt;
+When errors are encountered when creating a package:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': nnn, 'message': 'Validation Errors', 'errors':['description':'name cannot be
+blank', 'description':'license code must be an integer']}
+&lt;/pre&gt;&lt;p&gt;
+Not authorised:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': 503, 'message': 'You are not authorised to create this package.'}
+&lt;/pre&gt;&lt;p&gt;
+The reason being that screeds of html coming back in the response just makes it harder to debug and understand. Having the proper error codes/messages means that you can see why your package was not created.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/377#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1444</link>
+        <guid isPermaLink="false">http://localhost/ticket/1444</guid>
+        <title>#1444: Language detection defaults to en_us?</title>
+        <pubDate>Fri, 04 Nov 2011 18:50:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Using curl you always get English, even if ckan.locale_default=de. Find out why. (1.5b)
+&lt;/p&gt;
+&lt;p&gt;
+Maybe we should disable locale detection for this release if lots of people's browsers don't have it set correctly (e.g. chinese with us internet explorer)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1444#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1568</link>
+        <guid isPermaLink="false">http://localhost/ticket/1568</guid>
+        <title>#1568: Moderated Edits</title>
+        <pubDate>Mon, 19 Dec 2011 11:22:56 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Can this be released as a standard CKAN feature?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1568#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2238</link>
+        <guid isPermaLink="false">http://localhost/ticket/2238</guid>
+        <title>#2238: Deploy some test vocabs and publishers on test.ckan.net, check tutorial-style instructions for these</title>
+        <pubDate>Mon, 19 Mar 2012 13:55:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2238#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2312</link>
+        <guid isPermaLink="false">http://localhost/ticket/2312</guid>
+        <title>#2312: Analysis of how datasets could belong to users instead of Groups</title>
+        <pubDate>Tue, 17 Apr 2012 11:56:10 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt; DUPLICATE OF &lt;a class="assigned ticket" href="http://localhost/ticket/2548" title="enhancement: Object ownership for groups/package (assigned)"&gt;#2548&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+Currently datasets can only be part of a group but that is quite heavyweight when a single user wants to upload a single dataset.  To resolve this it would be great if a dataset could be attached to a user directly - find out how.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2312#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2544</link>
+        <guid isPermaLink="false">http://localhost/ticket/2544</guid>
+        <title>#2544: facet.sort is not available in the package_search action</title>
+        <pubDate>Mon, 18 Jun 2012 09:57:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Not all solr facet parameters are available through the pcakage_search action.  In particular, &lt;tt&gt;facet.sort&lt;/tt&gt; has been asked for; but this ticket should check to see if there are other parameters that would be easy to add too.
+&lt;/p&gt;
+&lt;p&gt;
+See: &lt;a class="ext-link" href="http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2544#changelog</comments>
+    </item>
+ </channel>
+</rss>

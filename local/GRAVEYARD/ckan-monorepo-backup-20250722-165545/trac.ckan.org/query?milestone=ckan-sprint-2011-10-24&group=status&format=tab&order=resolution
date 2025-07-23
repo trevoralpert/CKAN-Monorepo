@@ -1,0 +1,17 @@
+id	summary	owner	type	priority	component	resolution
+1229	Refactor all database code out of the controllers and into the logic layer	dread	enhancement	major	ckan	fixed
+1319	Require an email address on User registration	rgrp	enhancement	major	ckan	fixed
+1321	Flash message deferred	dread	defect	major	ckan	fixed
+1368	UX polishing and bugfixes	zephod	enhancement	awaiting triage	ckan	fixed
+1372	Refactor archiver to work as a celery task	johnglover	refactor	major	ckan	fixed
+1374	Can't switch to English if default is non-English	dread	defect	minor	ckan	fixed
+1378	New to TheDataHub? - StackOverflow style banner	zephod	enhancement	awaiting triage	ckan	fixed
+1381	Managing groups via package entity API	amercader	enhancement	major	ckan	fixed
+1383	Add IResourceChange IResourceUrlChange Interfaces.	kindly	enhancement	awaiting triage	ckan	fixed
+1386	Disallow account creation via openid	rgrp	enhancement	major	vdm	fixed
+1389	Update ckanext-datacatalogs for ckan 1.5	johnglover	defect	minor	datacatalogs	fixed
+1390	Update ckanext-moderatededits for ckan 1.5 on datacatalogs.org	johnglover	enhancement	minor	datacatalogs	fixed
+1391	Update datacatalogs.org to ckan 1.5	johnglover	enhancement	minor	datacatalogs	fixed
+1399	Generate archiving request on resource url change	johnglover	enhancement	major	ckan	fixed
+1408	Make site user, so tasks can post information back to ckan.	kindly	enhancement	awaiting triage	ckan	fixed
+1417	Browser language detection doesn't work	dread	defect	minor	ckan	fixed

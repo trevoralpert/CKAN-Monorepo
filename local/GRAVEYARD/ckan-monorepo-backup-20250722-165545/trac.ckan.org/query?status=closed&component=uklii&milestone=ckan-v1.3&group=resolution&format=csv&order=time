@@ -1,0 +1,16 @@
+id,summary,owner,type,priority,time,changetime
+711,Packages shall support both UK government and location information with a common set of attributes,thejimmyg,requirement,minor,10/20/10 13:21:06,02/01/11 20:36:29
+739,The system shall support retrieving a copy of the harvested metadata for a given package,thejimmyg,requirement,major,10/22/10 20:35:10,02/01/11 20:40:42
+804,Rework analysis for publisher/provider in UKLP,johnbywater,task,awaiting triage,11/15/10 10:14:14,01/05/11 13:12:36
+884,harvest job delete operation,thejimmyg,enhancement,major,12/25/10 11:50:00,02/01/11 20:29:00
+885,reimplement csw module to use owslib,wwaites,defect,awaiting triage,12/25/10 11:54:59,01/05/11 18:51:48
+565,The system shall support UKLP code lists,thejimmyg,requirement,awaiting triage,09/09/10 12:04:24,01/07/11 16:29:12
+566,The system shall support harvesting remote metadata,johnbywater,requirement,awaiting triage,09/09/10 13:40:19,01/05/11 12:58:04
+564,The system shall support location based search,,requirement,awaiting triage,09/09/10 12:03:49,01/07/11 15:05:14
+770,Improve the paster harvester help command,thejimmyg,defect,trivial,10/27/10 14:37:00,02/01/11 20:58:45
+665,The system shall support withdrawing a harvested dataset or service from publication,johnbywater,requirement,awaiting triage,09/27/10 11:50:50,02/09/11 16:14:57
+757,Create migration script to add harvest source filter attribute to existing tables,thejimmyg,task,awaiting triage,10/25/10 21:03:04,02/01/11 20:50:48
+766,The system shall support harvesting metadata from ArcGIS,wwaites,requirement,minor,10/27/10 11:12:13,02/01/11 20:51:59
+786,The system shall support deleting a registered harvest source,wwaites,requirement,major,11/08/10 10:09:42,01/07/11 14:20:04
+789,The harvest source form shall validate location field by positive identification of source type,wwaites,requirement,major,11/08/10 10:28:26,02/01/11 20:47:37
+795,"""Match up"" GEMINI2 ""metadata point of contact"" with registered entities",thejimmyg,story,awaiting triage,11/08/10 14:53:45,02/01/11 20:49:21

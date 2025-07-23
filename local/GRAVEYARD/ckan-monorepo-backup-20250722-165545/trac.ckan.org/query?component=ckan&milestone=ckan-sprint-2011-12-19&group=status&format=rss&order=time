@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2011-12-19&amp;group=status&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2011-12-19&amp;group=status&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/191</link>
+        <guid isPermaLink="false">http://localhost/ticket/191</guid>
+        <title>#191: Searching by modification date</title>
+        <pubDate>Mon, 16 Nov 2009 16:09:38 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Cost - 2 days
+&lt;/p&gt;
+&lt;p&gt;
+Search interface has new options to filter and sort the results by the date the package has been last modified in ckan. Search options are included in both Web UI and Search API.
+&lt;/p&gt;
+&lt;p&gt;
+The filter specifies a range of dates. The results can be sorted by ascending or descending dates. The last modification date is surfaced in the package.
+&lt;/p&gt;
+&lt;p&gt;
+Example search parameters:
+&lt;/p&gt;
+&lt;table class="wiki"&gt;
+&lt;tr&gt;&lt;td&gt; modification-range=5/4/09- &lt;/td&gt;&lt;td&gt; Exclude packages last modified earlier than 5/4/09
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; modification-range=5/4/09-5/12/09 &lt;/td&gt;&lt;td&gt; Exclude packages last modified outside of 5/4/09-5/12/09
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; order_by=mod &lt;/td&gt;&lt;td style="text-align: left"&gt;Sort by metadata modification. Defaults to newest first.
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; order_by=mod-newest &lt;/td&gt;&lt;td&gt; Sort by metadata modification, newest first.
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; order_by=mod-oldest &lt;/td&gt;&lt;td&gt; Sort by metadata modification, oldest first.
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/191#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1407</link>
+        <guid isPermaLink="false">http://localhost/ticket/1407</guid>
+        <title>#1407: Stats extension not working</title>
+        <pubDate>Wed, 19 Oct 2011 08:56:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Graphs don't show any more at &lt;a class="ext-link" href="http://thedatahub.org/stats"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/stats&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1407#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1462</link>
+        <guid isPermaLink="false">http://localhost/ticket/1462</guid>
+        <title>#1462: Multi-Instance CKAN Solr Search Issues</title>
+        <pubDate>Tue, 15 Nov 2011 16:44:30 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+With the 1.5 package release, CKAN instances over-write each other's indexes. Adria has a fix.
+&lt;/p&gt;
+&lt;p&gt;
+I'd like to see a new CKAN 1.5.1 release with the Solr changes merged and the Solr site ID set up as part of the install ckan.site_id = dgu-os.okfn.org. I'd also like the ability to search on ID and to have the ID directly visible on the package page.
+&lt;/p&gt;
+&lt;p&gt;
+We need to decide how to do this upgrade without affecting existing CKAN solr indexes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1462#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1483</link>
+        <guid isPermaLink="false">http://localhost/ticket/1483</guid>
+        <title>#1483: Tasks sometimes fail to update task_status table when trying to report a failure</title>
+        <pubDate>Wed, 23 Nov 2011 12:16:45 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+The error reports do not have a "value".  The original task in the task status table is not made and it tries to make a new task, but can't.
+&lt;/p&gt;
+&lt;p&gt;
+Issue: why is the original task_status entry not made?
+&lt;/p&gt;
+&lt;p&gt;
+kindly: there is a chance of course that the task is quicker than the plugin to get to the point where it needs to update the table.
+&lt;/p&gt;
+&lt;p&gt;
+kindly: so we may have to find a way to update the task status before we run the task.
+&lt;/p&gt;
+&lt;p&gt;
+kindly: I think you can supply a task_id to celery. i.e we make our own guid as the task id. So we can use that one to populate the task status.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1483#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1516</link>
+        <guid isPermaLink="false">http://localhost/ticket/1516</guid>
+        <title>#1516: Update SOLR schema after 1.5.1 release and set up multicore SOLR instances if needed</title>
+        <pubDate>Mon, 05 Dec 2011 18:07:11 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN 1.5.1 will introduce changes in the SOLR schema and functions to support multiple schema versions. Unfortunately the changes in the schema will be backwards incompatible so either both CKAN and SOLR are upgraded, or SOLR is configured as multicore, with one core for each schema. The solr cores would look like:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;http://&amp;lt;solr-server&amp;gt;/solr/schema-&amp;lt;version&amp;gt;&lt;/tt&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Different scenarios:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Single SOLR instance used by only one CKAN site (e.g. SOLR running on the same machine):
+&lt;ul&gt;&lt;li&gt;Update CKAN
+&lt;/li&gt;&lt;li&gt;Update SOLR schema (symlink to suitable version in CKAN source)
+&lt;/li&gt;&lt;li&gt;Rebuild search index
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Single SOLR instance used by multiple CKAN sites.
+&lt;ul&gt;&lt;li&gt;Update CKAN source
+&lt;/li&gt;&lt;li&gt;Configure SOLR as multicore, one core for version 1.2 and another for 1.3 of the schema (symlink to appropriate version in CKAN source)
+&lt;/li&gt;&lt;li&gt;Update solr_url on each of the CKAN sites with the suitable core
+&lt;/li&gt;&lt;li&gt;Rebuild search index
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+These are the SOLR and CKAN instances that need to be updated (Please add any missing ones):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Same machine as the CKAN site:
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;test.ckan.net&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;iati.test.ckan.net&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;data.gov.uk/ catalogue.data.gov.uk (confirm)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;s046.okserver.org&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;iatiregistry.org&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;s052.okserver.org&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;datacatalogs.org&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;s004.okserver.org / eu4.okfn.org / solr.okfn.org&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;thedatahub.org (=www.ckan.net)
+&lt;/li&gt;&lt;li&gt;datagm.org.uk
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;publicdata.eu&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;hri.fi (dev.fvh.fi?)
+&lt;/li&gt;&lt;li&gt;it.ckan.net
+&lt;/li&gt;&lt;li&gt;ie.ckan.net
+&lt;/li&gt;&lt;li&gt;cz.ckan.net
+&lt;/li&gt;&lt;li&gt;register.data.overheid.nl (nl.ckan.net?)
+&lt;/li&gt;&lt;li&gt;no.ckan.net / datakilder.no
+&lt;/li&gt;&lt;li&gt;br.ckan.net
+&lt;/li&gt;&lt;li&gt;colorado.ckan.net
+&lt;/li&gt;&lt;li&gt;at.ckan.net
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+TODO: which SOLR server are using these instances?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;data.norge.no
+&lt;/li&gt;&lt;li&gt;nederland.ckan.net
+&lt;/li&gt;&lt;li&gt;lt.ckan.net
+&lt;/li&gt;&lt;li&gt;pl.ckan.net
+&lt;/li&gt;&lt;li&gt;datadotmontreal.ca/
+&lt;/li&gt;&lt;li&gt;ca.ckan.net / datadotgc.com
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1516#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1518</link>
+        <guid isPermaLink="false">http://localhost/ticket/1518</guid>
+        <title>#1518: CKAN Upload fails if filename has spaces in it</title>
+        <pubDate>Mon, 05 Dec 2011 19:43:56 GMT</pubDate>
+        
+        <dc:creator>markbrough</dc:creator>
+
+        <description>&lt;p&gt;
+E.g. uploading a file with spaces in it:
+OECD Monthly Exchange Rates.zip
+&lt;/p&gt;
+&lt;p&gt;
+Gives a 404 Not Found response to the following file:
+&lt;a class="ext-link" href="http://test.ckan.org/api/storage/metadata/2011-12-05T193046/OECD%20Monthly%20Exchange%20Rates.zip"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.org/api/storage/metadata/2011-12-05T193046/OECD%20Monthly%20Exchange%20Rates.zip&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The upload wheel keeps spinning and the user is not informed that the upload has failed.
+&lt;/p&gt;
+&lt;p&gt;
+Analysis: turns out that google storage (possibly s3 but not checked) replaces with ' ' in keys with '+' on upload. This breaks things because we try and look up metadata about upload using the filename/key we put in but of course that does not exist because google has changed name.
+&lt;/p&gt;
+&lt;p&gt;
+Fix is trivial: replace ' ' in keys / filenames with '-'.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1518#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1520</link>
+        <guid isPermaLink="false">http://localhost/ticket/1520</guid>
+        <title>#1520: Disable name changing</title>
+        <pubDate>Tue, 06 Dec 2011 11:07:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Because of &lt;a class="closed ticket" href="http://localhost/ticket/1514" title="defect: Modifying user name loses connection with revisions (closed: duplicate)"&gt;#1514&lt;/a&gt; we should just disable name changing, until &lt;a class="closed ticket" href="http://localhost/ticket/1514" title="defect: Modifying user name loses connection with revisions (closed: duplicate)"&gt;#1514&lt;/a&gt; is done.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1520#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1522</link>
+        <guid isPermaLink="false">http://localhost/ticket/1522</guid>
+        <title>#1522: Add capacity to member table.</title>
+        <pubDate>Tue, 06 Dec 2011 11:56:50 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to add capacities to member tables.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1522#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1524</link>
+        <guid isPermaLink="false">http://localhost/ticket/1524</guid>
+        <title>#1524: New Release of Latest MI Reports</title>
+        <pubDate>Tue, 06 Dec 2011 11:58:08 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1524#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1529</link>
+        <guid isPermaLink="false">http://localhost/ticket/1529</guid>
+        <title>#1529: Display user name when logged in</title>
+        <pubDate>Wed, 07 Dec 2011 10:01:26 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Currently when you log in it says "logged-in". Most sites show your user-name and this is helpful when you have more than one account or human using the computer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1529#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1532</link>
+        <guid isPermaLink="false">http://localhost/ticket/1532</guid>
+        <title>#1532: Registration with OpenID has misleading error message</title>
+        <pubDate>Wed, 07 Dec 2011 16:46:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The log-in page says "Login using Open ID" and gives instructions for signing up. YET this is only available to users who've already added openid to their account. If you have not done this and then sign-in via OpenID (which is successful from the OpenID end) then you are told "Login failed. Bad username or password." in a flash message.
+&lt;/p&gt;
+&lt;p&gt;
+Proposed solution (i don't know if this is possible):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When you log-in for the first time via OpenID, it doesn't actually log you in in CKAN. It just sends you to the 'Create User' page with the OpenID field pre-filled, and puts up a flash message "This OpenID account is not yet registered on thedatahub. Please complete your details.". This allows you to complete the registration and logs you in, and allows you to log-in directly with OpenID in the future.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Alternatives:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Just change the error message to be 'You need to register in CKAN first. Quote your OpenID in the registration form to use it in future.'
+&lt;/li&gt;&lt;li&gt;Remove OpenID altogether
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1532#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1536</link>
+        <guid isPermaLink="false">http://localhost/ticket/1536</guid>
+        <title>#1536: Group deletion doesn't work</title>
+        <pubDate>Thu, 08 Dec 2011 12:19:26 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In the Web interface and API, an administrator can set the 'state' field of a group to 'deleted' but this change is ignored in the save/submit and it doesn't get deleted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1536#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1546</link>
+        <guid isPermaLink="false">http://localhost/ticket/1546</guid>
+        <title>#1546: Package metadata_created returns the wrong date</title>
+        <pubDate>Mon, 12 Dec 2011 16:28:47 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+metadata_created seems to be returning the date of the earliest revision (for all packages), rather than the earliest revision for a specific package.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1546#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1548</link>
+        <guid isPermaLink="false">http://localhost/ticket/1548</guid>
+        <title>#1548: Simplfy inheritance in functional tests</title>
+        <pubDate>Wed, 14 Dec 2011 10:48:07 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+It's hard to understand what's going on with the functional tests because there is so much going on in inherited classes. Would be better to be explicit in constructors, even if it involves cut &amp;amp; paste.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1548#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1552</link>
+        <guid isPermaLink="false">http://localhost/ticket/1552</guid>
+        <title>#1552: Be able to set password on the command line when creating users</title>
+        <pubDate>Fri, 16 Dec 2011 17:22:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(instead of using the prompt) - needed for deployment
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1552#changelog</comments>
+    </item>
+ </channel>
+</rss>

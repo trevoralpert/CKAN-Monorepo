@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.3-sprint-1&amp;group=status&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.3-sprint-1&amp;group=status&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/698</link>
+        <guid isPermaLink="false">http://localhost/ticket/698</guid>
+        <title>#698: CKAN Data API v1</title>
+        <pubDate>Thu, 14 Oct 2010 16:23:53 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+This proposal is to discuss adding a new API for proxying certain spreadsheet data via JSON-P to make it possible to build simple browser apps directly off the API.
+&lt;/p&gt;
+&lt;p&gt;
+See the attached proposal for information.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/698#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/672</link>
+        <guid isPermaLink="false">http://localhost/ticket/672</guid>
+        <title>#672: Facets in CKAN search results</title>
+        <pubDate>Mon, 04 Oct 2010 11:12:16 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+This has been done in IATI ckan but should be ported over to CKAN main and put into the UI in a nice fashion.
+&lt;/p&gt;
+&lt;p&gt;
+IATI: &lt;a class="ext-link" href="http://bitbucket.org/okfn/iati/changeset/378431974c76"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/okfn/iati/changeset/378431974c76&lt;/a&gt; (related to &lt;a class="closed ticket" href="http://localhost/ticket/520" title="requirement: Browseable web interface onto the data (closed: fixed)"&gt;#520&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Requires SOLR search backend (for postgres should fall back gracefully -- just do not show them).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/672#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/836</link>
+        <guid isPermaLink="false">http://localhost/ticket/836</guid>
+        <title>#836: Use site_url config option in templates</title>
+        <pubDate>Tue, 30 Nov 2010 15:53:54 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A user reported wanting to install ckan at a suburl. Apparently this does not work well because some urls are hard-coded: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2010-November/000726.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2010-November/000726.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Instead we should use the site_url config option where necessary.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/836#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/838</link>
+        <guid isPermaLink="false">http://localhost/ticket/838</guid>
+        <title>#838: UI improvements December 2010</title>
+        <pubDate>Thu, 02 Dec 2010 13:33:31 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+This is a meta ticket for a bunch of UI changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/839" title="enhancement: Package page redesign (closed: fixed)"&gt;#839&lt;/a&gt; Package page redesign
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/846" title="enhancement: merge style.css and ckan.css (closed: fixed)"&gt;#846&lt;/a&gt; Merge css files
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/850" title="enhancement: Show welcome message on first visit to package page (closed: fixed)"&gt;#850&lt;/a&gt; Show welcome message
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/863" title="enhancement: prompt users for missing package information (closed: wontfix)"&gt;#863&lt;/a&gt; Prompt users to enter missing info
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/864" title="enhancement: Search results UI changes (closed: fixed)"&gt;#864&lt;/a&gt; Search results changes
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/866" title="enhancement: Include download formats in search results (closed: fixed)"&gt;#866&lt;/a&gt; Add download formats to search results
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/838#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/839</link>
+        <guid isPermaLink="false">http://localhost/ticket/839</guid>
+        <title>#839: Package page redesign</title>
+        <pubDate>Thu, 02 Dec 2010 14:19:39 GMT</pubDate>
+        
+        <dc:creator>anonymous</dc:creator>
+
+        <description>&lt;p&gt;
+as per &lt;a href="http://ckan.org/wiki/UIRedesignPackage"&gt;http://ckan.org/wiki/UIRedesignPackage&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/839#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/845</link>
+        <guid isPermaLink="false">http://localhost/ticket/845</guid>
+        <title>#845: Required fields</title>
+        <pubDate>Mon, 06 Dec 2010 11:29:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Allow a form to specify fields that are required. Currently name and resource url are required.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Show required fields with asterisks by the input box.
+&lt;/li&gt;&lt;li&gt;Resource fields to be included in this.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/845#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/846</link>
+        <guid isPermaLink="false">http://localhost/ticket/846</guid>
+        <title>#846: merge style.css and ckan.css</title>
+        <pubDate>Mon, 06 Dec 2010 11:37:58 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+no need for separate files
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/846#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/848</link>
+        <guid isPermaLink="false">http://localhost/ticket/848</guid>
+        <title>#848: Ability to hide extras fields on package read</title>
+        <pubDate>Tue, 07 Dec 2010 09:31:56 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+for helsinki regional infoshare.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/848#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/850</link>
+        <guid isPermaLink="false">http://localhost/ticket/850</guid>
+        <title>#850: Show welcome message on first visit to package page</title>
+        <pubDate>Tue, 07 Dec 2010 11:38:43 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+Control using cookies.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/850#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/864</link>
+        <guid isPermaLink="false">http://localhost/ticket/864</guid>
+        <title>#864: Search results UI changes</title>
+        <pubDate>Tue, 07 Dec 2010 15:40:41 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+as per &lt;a href="http://ckan.org/wiki/UIRedesignSearch"&gt;http://ckan.org/wiki/UIRedesignSearch&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/864#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/866</link>
+        <guid isPermaLink="false">http://localhost/ticket/866</guid>
+        <title>#866: Include download formats in search results</title>
+        <pubDate>Wed, 08 Dec 2010 12:43:33 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+as above
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/866#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/869</link>
+        <guid isPermaLink="false">http://localhost/ticket/869</guid>
+        <title>#869: Add plugin interface to allow editing and extending of config by extensions</title>
+        <pubDate>Fri, 10 Dec 2010 13:56:35 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Use case: extensions need to add to template and public search paths if they wish to have templates or extra static files (such as js etc).
+&lt;/p&gt;
+&lt;p&gt;
+Allowing plugins to edit the config dictionary on load would allow this (and more!).
+&lt;/p&gt;
+&lt;p&gt;
+Are there any security considerations here? (Is is bad to allow extensions to make arbitrary changes to the config information?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/869#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/865</link>
+        <guid isPermaLink="false">http://localhost/ticket/865</guid>
+        <title>#865: Support external strings in JS</title>
+        <pubDate>Wed, 08 Dec 2010 09:52:18 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Provide and include a "language.js" file.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/865#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/870</link>
+        <guid isPermaLink="false">http://localhost/ticket/870</guid>
+        <title>#870: Menu items not selecting correctly</title>
+        <pubDate>Mon, 13 Dec 2010 12:33:03 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+Since the main menu items have changed (part of the UI redesign) the selected items are not functioning correctly.
+&lt;/p&gt;
+&lt;p&gt;
+Specifically if Home / About or Add Package / Search are selected both menu items are highlighted.
+&lt;/p&gt;
+&lt;p&gt;
+This is because the code assumes only one top-level menu item per controller.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/870#changelog</comments>
+    </item>
+ </channel>
+</rss>

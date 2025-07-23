@@ -1,0 +1,18 @@
+id,summary,status,owner,type,priority,milestone
+2277,Use the new atom feeds in IATI,new,icmurray,refactor,minor,ckan-backlog
+2298,Add sort-by controls to the search results page,new,icmurray,enhancement,minor,ckan-v1.9
+2310,Refactor the search-query construction in feeds.py,new,icmurray,enhancement,minor,ckan-backlog
+2350,Hooks  in package controller for validating form data,new,icmurray,enhancement,minor,ckan-v1.9
+2412,More than one resource invalidatiing breaks dataset edit form,assigned,zephod,defect,major,ckan-sprint-2012-06-25
+2499,Documentation for the internal analytics,new,toby,enhancement,awaiting triage,ckan-v1.8
+2543,facet.sort is not available in the package_search action,new,,enhancement,awaiting triage,ckan-v1.9
+2573,package_search does not allow solr's per-field facet parameters,new,,enhancement,awaiting triage,ckan-future
+2603,Remove deprecated 'fields' parameter from resource_search,new,icmurray,refactor,minor,ckan-v1.9
+2621,Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete,new,icmurray,refactor,minor,ckan-v1.9
+2679,Change default behaviour of TemplateController.view to 404.,new,icmurray,enhancement,minor,ckan-v1.9
+2777,bug: user attributes,new,,enhancement,awaiting triage,
+2784,model dictize sensitive data,new,icmurray,defect,awaiting triage,
+2859,Fix the build,new,icmurray,defect,blocker,ckan-v1.8
+2951,Paster command for building css from less,new,,enhancement,minor,ckan 2.0
+2952,incorporate javascriopt translations into translations workflow,new,seanh,enhancement,minor,ckan 2.0
+2959,Changing a Group's name through the action api disassociates it from its datasets in the index,new,icmurray,defect,minor,ckan 2.0

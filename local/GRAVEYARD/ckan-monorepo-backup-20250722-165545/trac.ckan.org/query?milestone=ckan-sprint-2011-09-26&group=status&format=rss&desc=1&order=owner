@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2011-09-26&amp;group=status&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2011-09-26&amp;group=status&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1348</link>
+        <guid isPermaLink="false">http://localhost/ticket/1348</guid>
+        <title>#1348: UX polishing (dataset create/view/edit experience)</title>
+        <pubDate>Fri, 16 Sep 2011 10:53:30 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Tweaking UIs and polishing the work done in &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+## Edit Page ##
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[Done; cset:49e0b059b6f5] Hide upload if  storage not enabled
+&lt;/li&gt;&lt;li&gt;[Done; cset:81ff13b42dad] Make 'Add resource' links on edit page clearer and more button-like.
+&lt;/li&gt;&lt;li&gt;[Done; cset:03904fc50cbf] Move edit form tabs to the left
+&lt;/li&gt;&lt;li&gt;[Done; cset:fde26b87d6ce] API placeholder text should not link to a CSV file
+&lt;/li&gt;&lt;li&gt;[Done] We used to autocomplete the format field - restore this functionality
+&lt;ul&gt;&lt;li&gt;Works on live. My local db has an empty 'resource_revision' table; maybe 'paster create-test-data' should insert something here?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[Done; cset:1aab499d73db] Summary should contain 'name' (or, if unavailable, use description. Long term: description is to be deprecated)
+&lt;/li&gt;&lt;li&gt;[Done] Remove/move instructions where possible (a lot could just be placeholder text on the elements) (other stuff could only show on hover)
+&lt;ul&gt;&lt;li&gt;NB: reveal_instructions.js already disabled on edit page
+&lt;/li&gt;&lt;li&gt;[RP] have now done this on create -- think we can leave on edit
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[Done; cset:755b1a622199] We have broken 'error' reporting for resource issues. Either need to move that into error summary or somehow not destroy it when we rewrite table on page load ...
+&lt;/li&gt;&lt;li&gt;[Done; cset:7ad090cb7855] Add slideDown to Resource expanded view
+&lt;/li&gt;&lt;li&gt;[Done; cset:d3595143e506] Need ability to delete resources
+&lt;ul&gt;&lt;li&gt;No thought yet given to uploaded resources. Long term re-think probable.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[Done; cset:2430a68a59fc] Empty resource table to resemble view page ("no resources" text)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+## General ##
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[Done; cset:cc0ad47293e5] Highlight the package tab I'm on (view/edit/history)
+&lt;ul&gt;&lt;li&gt;More generally, the presence of the #minornavigation bar is very inconsistent throughout the site.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[Done; cset:d5babc3629cf] Remove 'license' filtered search from backend
+&lt;/li&gt;&lt;li&gt;[Done] Move script stuff to footer of page
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1348#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1349</link>
+        <guid isPermaLink="false">http://localhost/ticket/1349</guid>
+        <title>#1349: Template tidying</title>
+        <pubDate>Fri, 16 Sep 2011 11:03:45 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Various things in templates can be tidied up after work has finished on &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;remove styling in page in group/index.html (put in css main)
+&lt;ul&gt;&lt;li&gt;ditto for package/search.html
+&lt;/li&gt;&lt;li&gt;ditto for home/index.html
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Forms.css - to merge into style.css; remove explicit imports elsewhere
+&lt;ul&gt;&lt;li&gt;@import at the top of style.css @import url(forms.css)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Make a note: Success/failure controllers clash CSS with success/failure flash banners
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1349#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1350</link>
+        <guid isPermaLink="false">http://localhost/ticket/1350</guid>
+        <title>#1350: i18n of new javascript</title>
+        <pubDate>Fri, 16 Sep 2011 11:29:36 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+New js code running produced in the work following &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt; contains various string literals, and needs proper internationalisation.
+&lt;/p&gt;
+&lt;p&gt;
+See files:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;application.js
+&lt;/li&gt;&lt;li&gt;templates.js
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Furthermore, efforts can be made to tidy up strings as described in &lt;a class="closed ticket" href="http://localhost/ticket/1329" title="defect: i18n poor in some templates - missing i18n tags (closed: fixed)"&gt;#1329&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1350#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1351</link>
+        <guid isPermaLink="false">http://localhost/ticket/1351</guid>
+        <title>#1351: Tidy edit-user form; strip preview functionality</title>
+        <pubDate>Tue, 20 Sep 2011 16:05:53 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+The template for editing a user's profile seems to output the same form twice in one page.
+Furthermore, the page is made needlessly complex by the preview functionality. The neat inline preview used in package will make this page a lot neater.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Fix the duplicate form
+&lt;/li&gt;&lt;li&gt;Strip the preview functionality from the front-end, replacing it with js editor
+&lt;/li&gt;&lt;li&gt;Strip the preview functionality from the back-end and test
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1351#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1360</link>
+        <guid isPermaLink="false">http://localhost/ticket/1360</guid>
+        <title>#1360: Remove support for filter by download and filter by openness in search</title>
+        <pubDate>Mon, 26 Sep 2011 22:59:18 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Deliver little user benefit and easier just to search and then see what is listed as open and with resources.
+&lt;/p&gt;
+&lt;h2 id="ImplementationDetails"&gt;Implementation Details&lt;/h2&gt;
+&lt;p&gt;
+Areas to fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;UI
+&lt;/li&gt;&lt;li&gt;lib/search/...
+&lt;/li&gt;&lt;li&gt;tests
+&lt;/li&gt;&lt;li&gt;...?
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Cost"&gt;Cost&lt;/h2&gt;
+&lt;p&gt;
+Est: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1360#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1275</link>
+        <guid isPermaLink="false">http://localhost/ticket/1275</guid>
+        <title>#1275: Move solr search extension to ckan core</title>
+        <pubDate>Mon, 15 Aug 2011 13:06:37 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1275#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1302</link>
+        <guid isPermaLink="false">http://localhost/ticket/1302</guid>
+        <title>#1302: Move Resource and Tag search code to logic layer</title>
+        <pubDate>Thu, 01 Sep 2011 14:08:22 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Resource and Tag search is currently still using the old ckan query parser which is unnecessary. Refactor this out and move to the logic layer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1302#changelog</comments>
+    </item>
+ </channel>
+</rss>

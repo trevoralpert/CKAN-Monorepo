@@ -1,0 +1,68 @@
+id,summary,owner,type,priority,component,resolution
+763,Read-only mode - Setup,,enhancement,minor,ckan,
+948,Highlight (to a sysadmin) which packages are deleted,,enhancement,minor,ckan,
+1285,Errors cause emails,,enhancement,minor,ckan,
+1366,Search inside extra fields,,defect,major,ckan,
+1458,Support previewing kml files in data viewer,rgrp,enhancement,awaiting triage,ckan,
+1749,Allow creating activity details through API,,enhancement,awaiting triage,ckan,
+1778,Replace classmethod's with module-level functions,seanh,enhancement,awaiting triage,ckan,
+2234,Write a CKAN extension for pulling items from RSS/Atom feeds into CKAN templates,,enhancement,awaiting triage,ckan,
+2348,Java client library for CKAN,,enhancement,minor,ckan,
+2378,Extract metadata directly from resources that contain it.,,enhancement,awaiting triage,ckan,
+2404,Auto-screenshot for related items,,enhancement,awaiting triage,ckan,
+2552,Controlling access to features,,enhancement,awaiting triage,ckan,
+84,Revert support on versioned objects,kindly,enhancement,minor,vdm,
+377,API Should return JSON in all cases,,enhancement,awaiting triage,ckan,wontfix
+1444,Language detection defaults to en_us?,dread,defect,minor,ckan,wontfix
+1563,Finish Data Storage,David Raznik,enhancement,awaiting triage,ckan,invalid
+1568,Moderated Edits,David Raznik,enhancement,awaiting triage,ckan,duplicate
+1570,Integrated file Storage,David Raznik,enhancement,awaiting triage,ckan,invalid
+1664,Smarter group activity streams,seanh,enhancement,awaiting triage,ckan,fixed
+1796,Get rid of lxml dependency,ross,enhancement,awaiting triage,ckan,fixed
+2238,"Deploy some test vocabs and publishers on test.ckan.net, check tutorial-style instructions for these",seanh,enhancement,minor,ckan,duplicate
+2312,Analysis of how datasets could belong to users instead of Groups,ross,enhancement,awaiting triage,ckan,duplicate
+2544,facet.sort is not available in the package_search action,,enhancement,awaiting triage,ckan,duplicate
+1650,Add new language/translation of fields for datasets.,ross,enhancement,awaiting triage,ecportal,wontfix
+989,Extending the model from plugins,kindly,enhancement,major,ckan,
+1096,[super] CKAN Hosted,rufuspollock,defect,awaiting triage,ckan,
+1165,Add multi-site support to ckan,,enhancement,awaiting triage,ckan,
+1235,[super] Search Improvements,,enhancement,major,ckan,
+1438,Action API - parameter discovery/checking,,enhancement,major,ckan,
+1457,Bug with DataNL instance,,defect,awaiting triage,ckan,
+1557,Complete Webstore Preview Extension,David Rasnik,enhancement,awaiting triage,ckan,
+1558,Publisher Tools,David Raznik,enhancement,awaiting triage,ckan,
+1560,Follow extension,David Raznik,enhancement,awaiting triage,ckan,
+1561,To do extension,David Raznik,enhancement,awaiting triage,ckan,
+1562,Finish Geo Spatial,Adria,enhancement,awaiting triage,ckan,
+1564,Structured Data (Data API),David Raznik,enhancement,awaiting triage,ckan,
+1565,Admin dashboard finished?,Rufus Pollock,enhancement,awaiting triage,ckan,
+1567,Finish QA extension,David Raznik,enhancement,awaiting triage,ckan,
+1569,Wordpressser,David Raznik,enhancement,awaiting triage,ckan,
+1572,Meta data Harvester,David Raznik,enhancement,awaiting triage,ckan,
+1573,Apps and Ideas,David Raznik,enhancement,awaiting triage,ckan,
+1581,Blog post about Google Analytics extension for CKAN,mark.wainwright@okfn.org,enhancement,minor,ckan,
+1596,Refactor authz roles,,enhancement,awaiting triage,ckan,
+1667,Add an extension point for rendering activity streams,seanh,enhancement,awaiting triage,ckan,
+1740,Get rid of `from module import ...`,,enhancement,awaiting triage,ckan,
+1748,Make activity streams conform to http://activitystrea.ms/ standard,seanh,enhancement,awaiting triage,ckan,
+1782,Improvements to datasets page UX (Feb 2012),zephod,enhancement,awaiting triage,ckan,
+1787,[super] Improve RESTful API,,enhancement,awaiting triage,ckan,
+1790,"Click to delete tags, rather than have all existing tags in the tag text box",,enhancement,awaiting triage,ckan,
+1800,Tidy up *_list() and *_search() functions in ckan/logic/action/get.py,,refactor,awaiting triage,ckan,
+1818,Spatial metadata editor,amercader,enhancement,major,ckan,
+1824,Add vocabulary pages,,enhancement,awaiting triage,ckan,
+2200,Add vocabulary_id option to tag_show() logic action function,seanh,enhancement,awaiting triage,ckan,
+2235,Group drop down on dataset edit should use chosen and sort groups by name,,enhancement,awaiting triage,ckan,
+2244,clean up auth,toby,enhancement,awaiting triage,ckan,
+2258,Customizable contributor agreement,,enhancement,awaiting triage,ckan,
+2265,'More Like This' for a dataset,,enhancement,awaiting triage,ckan,
+2282,log api calls for users,toby,enhancement,awaiting triage,ckan,
+2287,Consistent datetime and time period strings localization,,enhancement,awaiting triage,ckan,
+2301,Replace old-style string formatting with format() method (at least in strings marked for translation),seanh,enhancement,minor,ckan,
+2326,dataset permalinks,toby,enhancement,minor,ckan,
+2382,Investigate options for basic geocoding,amercader,task,awaiting triage,ckan,
+2411,.ini file is a mess,toby,enhancement,awaiting triage,ckan,
+2573,package_search does not allow solr's per-field facet parameters,,enhancement,awaiting triage,ckan,
+2810,heroku ckan support,,enhancement,awaiting triage,ckan,
+1815,Reenable Sparql endpoint on publicdata.eu,amercader,task,awaiting triage,pdeu,
+2202,Display page view count on dataset and resource pages,,enhancement,awaiting triage,ckan,

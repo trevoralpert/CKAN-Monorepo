@@ -1,0 +1,22 @@
+id	summary	keywords	status	owner	type	priority
+2912	ckanext/organizations: Neither public or private initially selected when adding dataset	organizations cmap	new		defect	awaiting triage
+2978	Tests for permissions for organizations and groups	organizations	new		enhancement	awaiting triage
+2975	Tests for auth functions and new actions	organizations	new		enhancement	awaiting triage
+2979	Requesting membership to groups and organizations	organizations	new		enhancement	awaiting triage
+2972	Remove any imports of authz.py and delete file	organizations	new		enhancement	awaiting triage
+2976	Polish group and organization member pages	organizations	new		enhancement	awaiting triage
+2846	Organizations allows you to set an organization as the parent organization of itself	organizations	new		defect	awaiting triage
+2967	Organization members edit page reloads after demoting self	organizations	new		defect	awaiting triage
+2970	Organization and group member links use id not name	organizations	new		defect	awaiting triage
+2917	Organization admins can delete themselves	organizations	new	johnmartin	enhancement	awaiting triage
+2619	Omit private datasets from public activity streams	activity_streams organizations	assigned	seanh	enhancement	awaiting triage
+2973	Move new_authz.py into logic/auth/__init__.py	organizations	new		enhancement	awaiting triage
+2964	Last organization admin can remove herself	organizations	new		defect	awaiting triage
+2969	Group members page 500s	organizations	new		defect	awaiting triage
+2974	General of all auth functions	organizations	new		enhancement	awaiting triage
+2977	Fix user autocomplete on group and organization member pages	organizations	new		enhancement	awaiting triage
+2990	Fix descriptions of groups and organizations on /groups and /organizations pages	organizations	new		enhancement	awaiting triage
+2968	Anyone can access organization members page	organizations	new		defect	awaiting triage
+2966	'Add' button text is wrong when editing organization members	organizations	new		enhancement	awaiting triage
+2971	"""Are ytou sure you want to delete this member?"" should say which member"	organizations	new		enhancement	awaiting triage
+2989	"""Add dataset to organization"" should auto-select the organization"	organizations	new		enhancement	awaiting triage

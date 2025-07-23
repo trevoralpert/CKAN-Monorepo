@@ -1,0 +1,45 @@
+id,summary,owner,type,priority,component,resolution
+378,My user story #1,johnbywater,story,,,fixed
+379,My dev task #1,johnbywater,task,,,fixed
+380,My dev task #2,johnbywater,task,,,fixed
+382,Measure quality of service parameters,johnbywater,story,,,
+383,Create middleware feature to generate QoS throughput log,johnbywater,task,,,fixed
+384,Send alert when QoS measurements break expectation,johnbywater,story,,,
+385,Send email if QoS measurement breaks QoS criteria,johnbywater,task,,,fixed
+386,Set limits in /etc/security/limits.conf,johnbywater,task,,,fixed
+387,Fix failing tests in search sub-system trigged by recent changes,johnbywater,task,,,fixed
+388,"Reply to ""two projects"" question from RS",johnbywater,task,,,fixed
+389,Investigate timezone issue raised by SB,johnbywater,task,,,fixed
+391,Create monitoring feature to generate QoS responsiveness log,johnbywater,task,,,fixed
+392,Create monitoring feature to generate QoS availability log,johnbywater,task,,,fixed
+393,Create aggregation feature to aggregate QoS log,johnbywater,task,,,fixed
+397,Implement QoS monitoring for DGU,johnbywater,task,,,fixed
+333,CKAN front end requirements for package notifications,,enhancement,awaiting triage,ckan,wontfix
+326,Centralise importation of json library,dread,task,minor,ckan,fixed
+337,Download links for resources should open in new window,johnbywater,enhancement,minor,ckan,fixed
+227,UI Review - General checks,nickstenning,enhancement,major,ckan,fixed
+233,Allow simple site-specific customization/overriding of templates,rgrp,enhancement,major,ckan,fixed
+273,Investigate search index options and create tickets,pudo,task,major,ckan,fixed
+310,Commit message box looks wrong in edit page since edit style overhaul,dread,defect,major,ckan,fixed
+320,site_title configuration variable which is used in template,dread,enhancement,major,ckan,fixed
+356,Search box in at top of page (UI),,enhancement,major,ckan,fixed
+226,UI Review - History,nickstenning,enhancement,critical,ckan,fixed
+242,Miscellaneous tidying up (v0.11),pudo,defect,critical,ckan,fixed
+263,Improve and test openid login,johnbywater,enhancement,critical,ckan,fixed
+311,Reordering of package resources can lead to integri,dread,defect,critical,ckan,fixed
+313,Allow packages to be specified by IDs in REST interface,rgrp,enhancement,critical,ckan,fixed
+315,Improvements and fixes to csv dump,dread,defect,critical,ckan,fixed
+317,Make search pluggable,pudo,enhancement,critical,ckan,fixed
+325,Event push notification,dread,enhancement,critical,ckan,fixed
+328,Mention code libraries in API documentation,dread,enhancement,critical,ckan,fixed
+338,"Reference groups by ID in addition to name, since group names can change",johnbywater,story,critical,ckan,
+340,Web UI theme easier to configure,dread,enhancement,critical,ckan,fixed
+374,Design servicization of CKAN API,johnbywater,task,critical,ckan,fixed
+375,Integrate Forms API into Drupal,johnbywater,task,critical,ckan,fixed
+376,Implement servicization of CKAN API,johnbywater,task,critical,ckan,fixed
+322,Client interface for Notification Service,dread,enhancement,blocker,ckan,fixed
+323,Notification message,dread,enhancement,blocker,ckan,fixed
+324,Search indexing using notifications,dread,enhancement,blocker,ckan,fixed
+329,Bad dates cause exception on Gov form,rgrp,defect,blocker,ckan,fixed
+335,Post-package-edit redirect to configurable URL,dread,enhancement,blocker,ckan,fixed
+336,Resource Search API,dread,defect,blocker,ckan,fixed

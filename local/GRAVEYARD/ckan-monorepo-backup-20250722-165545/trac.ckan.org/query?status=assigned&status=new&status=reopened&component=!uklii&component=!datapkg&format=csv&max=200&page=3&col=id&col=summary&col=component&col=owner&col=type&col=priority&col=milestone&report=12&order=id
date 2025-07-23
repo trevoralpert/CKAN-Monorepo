@@ -1,0 +1,69 @@
+id,summary,component,owner,type,priority,milestone
+2952,incorporate javascriopt translations into translations workflow,ckan,seanh,enhancement,minor,ckan 2.0
+2956,Allow for resource editing in CKAN 2.0,ckan,shevski,enhancement,awaiting triage,ckan 2.0
+2957,New datastore on postgres prior to 9.0,ckan,,task,awaiting triage,
+2958,Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8,ckan,,defect,awaiting triage,ckan-v1.8
+2959,Changing a Group's name through the action api disassociates it from its datasets in the index,ckan,icmurray,defect,minor,ckan 2.0
+2960,Private datasets are not private,ckan,,task,awaiting triage,ckan-backlog
+2961,Preview plugin endpoint,ckan,dominik,enhancement,awaiting triage,ckan 2.0
+2962,Search across multiple ckan instances,ckan,,enhancement,awaiting triage,ckan-backlog
+2963,Timeout on tag pages with lots of datasets,ckan,,defect,major,ckan-v1.8
+2964,Last organization admin can remove herself,ckan,,defect,awaiting triage,ckan 2.0
+2965,Stats extension broken on 1.8,ckan,,defect,awaiting triage,ckan-v1.8
+2966,'Add' button text is wrong when editing organization members,ckan,,enhancement,awaiting triage,ckan 2.0
+2967,Organization members edit page reloads after demoting self,ckan,,defect,awaiting triage,ckan 2.0
+2968,Anyone can access organization members page,ckan,,defect,awaiting triage,ckan 2.0
+2969,Group members page 500s,ckan,,defect,awaiting triage,ckan 2.0
+2970,Organization and group member links use id not name,ckan,,defect,awaiting triage,ckan 2.0
+2971,"""Are ytou sure you want to delete this member?"" should say which member",ckan,,enhancement,awaiting triage,ckan 2.0
+2972,Remove any imports of authz.py and delete file,ckan,,enhancement,awaiting triage,ckan 2.0
+2973,Move new_authz.py into logic/auth/__init__.py,ckan,,enhancement,awaiting triage,ckan 2.0
+2974,General of all auth functions,ckan,,enhancement,awaiting triage,ckan 2.0
+2975,Tests for auth functions and new actions,ckan,,enhancement,awaiting triage,ckan 2.0
+2976,Polish group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2977,Fix user autocomplete on group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2978,Tests for permissions for organizations and groups,ckan,,enhancement,awaiting triage,ckan 2.0
+2979,Requesting membership to groups and organizations,ckan,,enhancement,awaiting triage,ckan 2.0
+2981,Remove config from jinja templates,ckan,,refactor,awaiting triage,ckan 2.0
+2982,Move functionality from controllers into template helpers,ckan,,refactor,awaiting triage,ckan 2.0
+2983,Refactor lib/base.py to remove circular import issues,ckan,,refactor,awaiting triage,ckan 2.0
+2984,"Auto-populate context with user, model, session, etc.",ckan,,refactor,awaiting triage,ckan 2.0
+2985,Make lib/helpers.py more template-specific,ckan,,refactor,awaiting triage,ckan 2.0
+2986,Make lib/base.py more like it was originally intended,ckan,,refactor,awaiting triage,ckan 2.0
+2987,Remove all direct calls to logic action and auth functions,ckan,,refactor,awaiting triage,ckan 2.0
+2988,UI functional tests for CKAN 2.0,ckan,,enhancement,awaiting triage,ckan 2.0
+2989,"""Add dataset to organization"" should auto-select the organization",ckan,,enhancement,awaiting triage,ckan 2.0
+2990,Fix descriptions of groups and organizations on /groups and /organizations pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2991,Add blocks to header.html template,ckan,,enhancement,awaiting triage,ckan 2.0
+2992,Delete resource should send me back to edit dataset page,ckan,,enhancement,awaiting triage,
+2993,"""logged_in"" and ""visitor"" show in user list at /users",ckan,,defect,awaiting triage,ckan 2.0
+2994,Add dataset and user popovers throughout the site,ckan,,enhancement,awaiting triage,ckan 2.0
+2995,"Popovers for resources, groups, organizations, tags...",ckan,,enhancement,awaiting triage,ckan 2.0
+2996,Fix behaviour of View Profile button in user popover when already on user's profile,ckan,,enhancement,minor,ckan 2.0
+2997,Add activity streams to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2998,Add activity streams to group pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2999,Add activity streams to organization pages,ckan,,enhancement,awaiting triage,ckan 2.0
+3000,Add number of followers to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+3001,Multilingual plugin crashes CKAN on add dataset when some languages are default,ckan,,defect,awaiting triage,ckan 2.0
+3002,API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string,ckan,,defect,minor,ckan-v1.8
+3003,New pg databases should be created with UTF8 encoding rather than system default,ckan,,enhancement,awaiting triage,ckan-v1.8
+3005,"Add following/unfollowing of groups: model, API, frontend, tests",ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3006,Update translations from Transifex,ckan,,enhancement,awaiting triage,ckan-v1.8.1
+3007,Adding a dataset creates multiple activities,ckan,,enhancement,awaiting triage,ckan 2.0
+3010,Pin images don't appear in data explorer,ckan,,enhancement,awaiting triage,ckan 2.0
+3011,Recline fixes and updates for CKAN 2.0,ckan,johnglover,enhancement,major,ckan 2.0
+3012,data.gov auth,ckan,toby,enhancement,awaiting triage,
+3013,common-error-messages is unreadable,ckan,dominik,defect,awaiting triage,
+3014,Crash when deleting a non-empty vocabulary,ckan,,defect,awaiting triage,ckan 2.0
+3016,CKAN 2.0 template tweaks,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3017,New stable branch for the demo server,ckan,johnglover,enhancement,major,ckan 2.0
+3018,Load more in activity streams,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3019,Cannot delete dataset extras,ckan,,defect,major,ckan 2.0
+3020,Update CKAN coding standards,ckan,,enhancement,awaiting triage,
+3023,New methods on IPackageController to provide access to the data_dict,ckan,amercader,enhancement,awaiting triage,
+3025,Add requests to core requirements,ckan,amercader,enhancement,awaiting triage,
+3026,Support icons on  nav_named_link,ckan,amercader,enhancement,minor,
+3027,solr for 2.0,ckan,kindly,enhancement,awaiting triage,
+3028,Feature: dashboard activity stream filtering,ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3029,JSONP parameter scuppers Search in API,ckan,seanh,defect,awaiting triage,
+3030,clean up helper functions,ckan,,enhancement,awaiting triage,

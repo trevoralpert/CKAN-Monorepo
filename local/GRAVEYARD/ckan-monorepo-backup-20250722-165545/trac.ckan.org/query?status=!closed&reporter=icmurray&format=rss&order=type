@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=icmurray&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=icmurray&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2412</link>
+        <guid isPermaLink="false">http://localhost/ticket/2412</guid>
+        <title>#2412: More than one resource invalidatiing breaks dataset edit form</title>
+        <pubDate>Tue, 22 May 2012 20:05:48 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When attempting to add more than one resource at once, if more than one resource invalidates, this results in a js error, leaving the form in an inconsistent state.
+&lt;/p&gt;
+&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to /dataset/new
+&lt;/li&gt;&lt;li&gt;Add a new resource.  Fill in one of the fields with an invalid value. eg - last_modified, or size...
+&lt;/li&gt;&lt;li&gt;Add another resource, doing the same thing: make one of the fields invalid.
+&lt;/li&gt;&lt;li&gt;Try to save the dataset.
+&lt;/li&gt;&lt;li&gt;The entered resource information will be lost, and a js error "Uncaught Error: Can't add the same model to a set twice,: backbone.js:586" will be thrown.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2784</link>
+        <guid isPermaLink="false">http://localhost/ticket/2784</guid>
+        <title>#2784: model dictize sensitive data</title>
+        <pubDate>Wed, 01 Aug 2012 09:51:25 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The model dictize layer doesn't consistently remove sensitive data from the dictized models.  It should use the current context to decide whether to include sensitive data or not.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2784#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2859</link>
+        <guid isPermaLink="false">http://localhost/ticket/2859</guid>
+        <title>#2859: Fix the build</title>
+        <pubDate>Thu, 16 Aug 2012 09:26:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The requires files have been removed.  These were required by buildkit.
+&lt;/p&gt;
+&lt;p&gt;
+We've lost the information regarding which packages were already in ubuntu repos, which conflicted and which were missing.  But perhaps we can just package everything up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2859#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2959</link>
+        <guid isPermaLink="false">http://localhost/ticket/2959</guid>
+        <title>#2959: Changing a Group's name through the action api disassociates it from its datasets in the index</title>
+        <pubDate>Thu, 04 Oct 2012 15:18:55 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create a new Group, named "test-group".
+&lt;/li&gt;&lt;li&gt;Add a dataset to it.
+&lt;/li&gt;&lt;li&gt;Verify the dataset belongs to the group by visiting the Group's read-page
+&lt;/li&gt;&lt;li&gt;Update the Group through the action api (group_update), using the uid in the "id" field, and a new name in the "name" field.
+&lt;/li&gt;&lt;li&gt;Visit the group's read-page.  The list of datasets will be empty.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This was an issue when editing a Group through the web interface, which was fixed in &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.  However it only fixes the issue in the group controller.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/dbe25d8b8d7fabfc40c5d794a920b91cec349335"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/dbe25d8b8d7fabfc40c5d794a920b91cec349335&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2959#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2298</link>
+        <guid isPermaLink="false">http://localhost/ticket/2298</guid>
+        <title>#2298: Add sort-by controls to the search results page</title>
+        <pubDate>Mon, 16 Apr 2012 09:39:22 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Sort-by functionality was exposed through the package controller in &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.  But no controls were added to the search-page.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;What should the sortBy controls/widget look like?
+&lt;/li&gt;&lt;li&gt;Which fields should be exposed?
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The above commit is in the release-1.6.1 branch, so this work is dependant upon release-1.6.1 from being merged into master.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/8685c6000d1cb211928b4dbc63990fb72d884f8c"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/8685c6000d1cb211928b4dbc63990fb72d884f8c&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2298#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2310</link>
+        <guid isPermaLink="false">http://localhost/ticket/2310</guid>
+        <title>#2310: Refactor the search-query construction in feeds.py</title>
+        <pubDate>Mon, 16 Apr 2012 16:01:31 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The feeds controller, used to construct atom feeds, duplicates code found in the package controller's search action (in order to construct the custom feed).
+&lt;/p&gt;
+&lt;p&gt;
+Refactor this to remove duplication.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2310#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2350</link>
+        <guid isPermaLink="false">http://localhost/ticket/2350</guid>
+        <title>#2350: Hooks  in package controller for validating form data</title>
+        <pubDate>Tue, 01 May 2012 14:16:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When the validation schema was moved from the package controller into the logic layer, the schema's role was changed from that of processing a form and validating data; to just validating data.  Whilst is makes sense to have a schema for validating data as it comes in and leaves the logic layer; there's no longer the hook available to &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; subclasses to do form validation/processing.
+&lt;/p&gt;
+&lt;p&gt;
+Add a hook into _save_new() and save_edit() prior to the logic-layer call which subclasses can then override.
+&lt;/p&gt;
+&lt;p&gt;
+NB - form processing/validation *is* different to validating data.  For example, many data can be inferred from a user's input; or there may be aspects of the form that need to be filled in, but do not make sense to pass as data into the logic-layer, eg. agreeing to T&amp;amp;Cs.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[ ] Add hooks
+&lt;/li&gt;&lt;li&gt;[ ] Use in ckanext-example
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2350#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2499</link>
+        <guid isPermaLink="false">http://localhost/ticket/2499</guid>
+        <title>#2499: Documentation for the internal analytics</title>
+        <pubDate>Thu, 07 Jun 2012 11:58:17 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+There's no docs for setting up the internal analytics, nor what it provides.
+&lt;/p&gt;
+&lt;h2 id="Setup"&gt;Setup&lt;/h2&gt;
+&lt;p&gt;
+Add:  &lt;tt&gt;ckan.tracking_enabled = true&lt;/tt&gt; to .ini file
+&lt;/p&gt;
+&lt;p&gt;
+Run: &lt;tt&gt;paster tracking -c dev.ini&lt;/tt&gt;
+&lt;/p&gt;
+&lt;h2 id="Relatedlinks"&gt;Related links&lt;/h2&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://trac.ckan.org/ticket/2251"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2251&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2499#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2543</link>
+        <guid isPermaLink="false">http://localhost/ticket/2543</guid>
+        <title>#2543: facet.sort is not available in the package_search action</title>
+        <pubDate>Mon, 18 Jun 2012 09:55:35 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Not all solr facet parameters are available through the pcakage_search action.  In particular, &lt;tt&gt;facet.sort&lt;/tt&gt; has been asked for; but this ticket should check to see if there are other parameters that would be easy to add too.
+&lt;/p&gt;
+&lt;p&gt;
+See: &lt;a class="ext-link" href="http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2543#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2573</link>
+        <guid isPermaLink="false">http://localhost/ticket/2573</guid>
+        <title>#2573: package_search does not allow solr's per-field facet parameters</title>
+        <pubDate>Tue, 19 Jun 2012 13:27:19 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Solr allows its facet parameters to be specified on a per-field basis, eg. &lt;tt&gt;facet.limit&lt;/tt&gt; applies to &lt;em&gt;all&lt;/em&gt; facet fields, but solr allows it to be overriden for a specific field, eg. &lt;tt&gt;facet.tags.limit&lt;/tt&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+We don't support this at the moment because we have a whitelist of valid solr query parameters that we accept.  See &lt;tt&gt;ckan.lib.search.query.VALID_SOLR_PARAMETERS&lt;/tt&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2573#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2679</link>
+        <guid isPermaLink="false">http://localhost/ticket/2679</guid>
+        <title>#2679: Change default behaviour of TemplateController.view to 404.</title>
+        <pubDate>Mon, 16 Jul 2012 10:55:33 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The current behaviour of &lt;a class="missing wiki"&gt;TemplateController?&lt;/a&gt;.view() (which is the fallback controller should all others fail) is to attempt to render (as a genshi template) the requested file.
+&lt;/p&gt;
+&lt;p&gt;
+Although this may be a feature that some instances want.  In general, it leads to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;500s when attempting to access a normal template (eg - &lt;a class="ext-link" href="http://datahub.io/importer/preview"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/importer/preview&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;A way of inadvertantly serving things you may not want to serve.  (Small risk, as it needs to be renderable as a genshi template).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Solution:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Change the controller to 404
+&lt;/li&gt;&lt;li&gt;Ensure there's a way for existing ckan instances to override that behaviour should they need it.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2679#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2777</link>
+        <guid isPermaLink="false">http://localhost/ticket/2777</guid>
+        <title>#2777: bug: user attributes</title>
+        <pubDate>Tue, 31 Jul 2012 09:19:23 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2777#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2951</link>
+        <guid isPermaLink="false">http://localhost/ticket/2951</guid>
+        <title>#2951: Paster command for building css from less</title>
+        <pubDate>Mon, 01 Oct 2012 19:12:20 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+With the latest template, css and js changes in 2.0, there are a number of things that need preparation prior to a production deployment. One of these is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the less files should be compiled to css (main.css, not just main.debug.css)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This ticket is to provide a paster command which will compile the .less into the main.css file.  The idea of the paster command is that it will be run by developers, and they will check in the resulting .css files.  It will also provide a convenient mechanism for production scenarios with node.js installed on the production server, as they will be able to compile the .less there as well.
+&lt;/p&gt;
+&lt;p&gt;
+## Background
+&lt;/p&gt;
+&lt;p&gt;
+The .css files that need to be served are built using &lt;tt&gt;less&lt;/tt&gt;.  The css files that are generated *are* checked-in to the repo; but they are a build artifact.  So the general workflow is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;commit changes to the less files
+&lt;/li&gt;&lt;li&gt;build the main.css file and commit
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This paster command slots into the above workflow for convenience.
+&lt;/p&gt;
+&lt;p&gt;
+## Notes
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;doc/frontend-development.rst
+&lt;/li&gt;&lt;li&gt;bin/less
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+to run this paster command, &lt;tt&gt;Node&lt;/tt&gt; will be required.  So that dependency should be checked.
+&lt;/p&gt;
+&lt;p&gt;
+## The paster command
+&lt;/p&gt;
+&lt;p&gt;
+This is the proposed behaviour of the paster command:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ensure &lt;tt&gt;custom.less&lt;/tt&gt; does not exist
+&lt;/li&gt;&lt;li&gt;for each colour in{fuchsia,green,maroon,red}:
+&lt;ul&gt;&lt;li&gt;generate a &lt;tt&gt;custom.less&lt;/tt&gt; file for $colour.  There's a paster command that does this already: `paster color &amp;lt;color name&amp;gt;.
+&lt;/li&gt;&lt;li&gt;generate the &lt;tt&gt;css&lt;/tt&gt; from the &lt;tt&gt;less&lt;/tt&gt; files.  ie - the equivelant of running &lt;tt&gt;bin/less --production&lt;/tt&gt;.
+&lt;ul&gt;&lt;li&gt;this will generate a &lt;tt&gt;main.css&lt;/tt&gt; file, which should be renamed to &lt;tt&gt;$color.css&lt;/tt&gt;.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;ensure &lt;tt&gt;custom.less&lt;/tt&gt; does not exist
+&lt;/li&gt;&lt;li&gt;generate the &lt;tt&gt;css&lt;/tt&gt; from the &lt;tt&gt;less&lt;/tt&gt; files.  This will create a &lt;tt&gt;main.css&lt;/tt&gt; with the default colour scheme.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;call the paster command that minifies css and js files.  (This command does not exist yet, see &lt;a class="closed ticket" href="http://localhost/ticket/2950" title="requirement: paster command to minify javascript and css (closed: fixed)"&gt;#2950&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2951#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2952</link>
+        <guid isPermaLink="false">http://localhost/ticket/2952</guid>
+        <title>#2952: incorporate javascriopt translations into translations workflow</title>
+        <pubDate>Mon, 01 Oct 2012 19:15:45 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+There are now javascript translations.  There's a paster command, &lt;tt&gt;trans js&lt;/tt&gt;.  This is a ticket to ensure that using &lt;tt&gt;trans js&lt;/tt&gt; is documented in the normal ckan translation workflow (which is followed after a feature freeze, prior to release).  And to see if there's any need for further incorporation into the current translation process.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2952#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2277</link>
+        <guid isPermaLink="false">http://localhost/ticket/2277</guid>
+        <title>#2277: Use the new atom feeds in IATI</title>
+        <pubDate>Mon, 02 Apr 2012 17:10:28 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Atom feeds have been implemented in core in &lt;a class="closed ticket" href="http://localhost/ticket/1593" title="enhancement: [super] Create feeds from search results (closed: fixed)"&gt;#1593&lt;/a&gt;.  The IATI-specific implementation can now be removed when IATI move to CKAN &amp;gt;= 1.6.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2603</link>
+        <guid isPermaLink="false">http://localhost/ticket/2603</guid>
+        <title>#2603: Remove deprecated 'fields' parameter from resource_search</title>
+        <pubDate>Tue, 26 Jun 2012 17:10:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The fields parameter of resource_search was deprecated when fixing &lt;a class="closed ticket" href="http://localhost/ticket/2438" title="enhancement: resource_search action not accessible via GET request (closed: fixed)"&gt;#2438&lt;/a&gt;.  It can be removed in release 1.9, and the action tidied up as a result.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2603#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2621</link>
+        <guid isPermaLink="false">http://localhost/ticket/2621</guid>
+        <title>#2621: Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete</title>
+        <pubDate>Thu, 28 Jun 2012 16:22:49 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+This was deprecated in 1.8 as it wasn't accessible via GET requests due to being a dict.  See &lt;a class="closed ticket" href="http://localhost/ticket/2439" title="defect: tag_search and tag_autocomplete not fully available via GET request (closed: fixed)"&gt;#2439&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In a future release of CKAN (probably 1.9) it can be removed.
+&lt;/p&gt;
+&lt;p&gt;
+Internal uses of it were removed in &lt;a class="closed ticket" href="http://localhost/ticket/2439" title="defect: tag_search and tag_autocomplete not fully available via GET request (closed: fixed)"&gt;#2439&lt;/a&gt;, but there are tests that still use it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2621#changelog</comments>
+    </item>
+ </channel>
+</rss>

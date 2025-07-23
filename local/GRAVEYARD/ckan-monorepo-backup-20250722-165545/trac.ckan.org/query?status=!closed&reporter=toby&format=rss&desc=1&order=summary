@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=toby&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=toby&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2644</link>
+        <guid isPermaLink="false">http://localhost/ticket/2644</guid>
+        <title>#2644: user dashboard for demo theme</title>
+        <pubDate>Tue, 10 Jul 2012 09:00:21 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we now have a user dashboard that needs theming not sure if we need sam to look at it
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/user/dashboard"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/user/dashboard&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2644#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2823</link>
+        <guid isPermaLink="false">http://localhost/ticket/2823</guid>
+        <title>#2823: resource additional info title order</title>
+        <pubDate>Thu, 09 Aug 2012 09:32:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Order the items so that none user fields are first from ticket &lt;a class="closed ticket" href="http://localhost/ticket/2707" title="enhancement: Tidy up additional info boxes on dataset and resource pages (closed: fixed)"&gt;#2707&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2823#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2579</link>
+        <guid isPermaLink="false">http://localhost/ticket/2579</guid>
+        <title>#2579: move sort_by functions into lib.helpers</title>
+        <pubDate>Thu, 21 Jun 2012 12:29:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+make these more available but keep existing functionality so not to break any users
+&lt;/p&gt;
+&lt;p&gt;
+remove_field()
+&lt;/p&gt;
+&lt;p&gt;
+drill_down_url()
+&lt;/p&gt;
+&lt;p&gt;
+etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2579#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2583</link>
+        <guid isPermaLink="false">http://localhost/ticket/2583</guid>
+        <title>#2583: make sure that we implement authentication where needed</title>
+        <pubDate>Fri, 22 Jun 2012 10:04:38 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+in development many auth checks may have been lost we need to check they are still working etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2583#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2790</link>
+        <guid isPermaLink="false">http://localhost/ticket/2790</guid>
+        <title>#2790: logic.action.user_show is slow</title>
+        <pubDate>Wed, 01 Aug 2012 20:21:23 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This is a very slow call it would benefit from the sort of speed-ups that package-search received
+&lt;/p&gt;
+&lt;p&gt;
+for me locally this is taking 6 seconds for rufus using the datahub data I have.  I think a lot of this is the dataset retrival/dictization
+&lt;/p&gt;
+&lt;p&gt;
+can we just grab json blobs from solr?
+&lt;/p&gt;
+&lt;p&gt;
+also is it possible to specify a sort order/paging?
+&lt;/p&gt;
+&lt;p&gt;
+I've put this as a demo-theme ticket as it is an big issue on the demo we are at 25 second page loads - which i can get down to about 8.8 secs so this is the main pain point now
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2790#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2282</link>
+        <guid isPermaLink="false">http://localhost/ticket/2282</guid>
+        <title>#2282: log api calls for users</title>
+        <pubDate>Tue, 10 Apr 2012 16:18:45 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This was part of &lt;a class="closed ticket" href="http://localhost/ticket/2251" title="enhancement: Internal analytics for ckan. (closed: fixed)"&gt;#2251&lt;/a&gt; but is now it's own ticket.
+&lt;/p&gt;
+&lt;p&gt;
+we need clarity on this.  The use cases so far have been possible limiting api calls for users.
+&lt;/p&gt;
+&lt;p&gt;
+so we want to monitor the user or ip address
+&lt;/p&gt;
+&lt;p&gt;
+what about the api calls?
+&lt;/p&gt;
+&lt;p&gt;
+do we want to record all calls or just some?  do we want to record the type of call and to what level of detail?
+&lt;/p&gt;
+&lt;p&gt;
+recording the url just seems to specific to me.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2282#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2708</link>
+        <guid isPermaLink="false">http://localhost/ticket/2708</guid>
+        <title>#2708: limit extra data for package/group show</title>
+        <pubDate>Wed, 18 Jul 2012 14:40:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;blockquote&gt;
+&lt;p&gt;
+context&lt;a class="missing wiki"&gt;package_limits?&lt;/a&gt; = { 'tags': 5,     &amp;lt;- get first 5
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+'extras': 0,   &amp;lt;- get all
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+only get what you ask for have to be explicit
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+context&lt;a class="missing wiki"&gt;group_limits?&lt;/a&gt; = {}   only main item
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+start with datasets/groups expand if we like it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2708#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2663</link>
+        <guid isPermaLink="false">http://localhost/ticket/2663</guid>
+        <title>#2663: h.resource_display_name needs love</title>
+        <pubDate>Wed, 11 Jul 2012 14:42:26 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This function is shit and needs cleaning up and a doc string
+&lt;/p&gt;
+&lt;p&gt;
+description is markdown and should be treated properly
+&lt;/p&gt;
+&lt;p&gt;
+either we should truncate all or leave it to the templates but work universally
+&lt;/p&gt;
+&lt;p&gt;
+url if no name / desc this is in demo-theme branch
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2663#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2758</link>
+        <guid isPermaLink="false">http://localhost/ticket/2758</guid>
+        <title>#2758: file storage gives error if config not available but no useful user information</title>
+        <pubDate>Thu, 26 Jul 2012 07:28:29 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+We get an error which should be improved the actual problem is this but not passed to user
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+⇝ &lt;a class="missing wiki"&gt;KeyError?&lt;/a&gt;: 'ofs.impl'
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+View as:   Interactive (full)  |  Text (full)  |  XML (full)
+Module ckan.controllers.storage:2 in auth_form         view
+Module ckan.lib.jsonp:26 in jsonpify         view
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+data = func(*args, &lt;strong&gt;kwargs)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.storage:407 in auth_form         view
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+authorize(method, bucket, label, c.userobj, self.ofs)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.storage:200 in ofs         view
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+StorageAPIController._ofs_impl = get_ofs()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.storage:71 in get_ofs         view
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+storage_backend = config&lt;a class="missing wiki"&gt;ofs.impl?&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module paste.registry:146 in &lt;span class="underline"&gt;getitem&lt;/span&gt;         view
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self._current_obj()[key]
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;KeyError?&lt;/a&gt;: 'ofs.impl'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2758#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2326</link>
+        <guid isPermaLink="false">http://localhost/ticket/2326</guid>
+        <title>#2326: dataset permalinks</title>
+        <pubDate>Wed, 25 Apr 2012 16:39:06 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+create permalinks
+&lt;/p&gt;
+&lt;p&gt;
+eg \dataset\~a5-DQ\nice-name
+&lt;/p&gt;
+&lt;p&gt;
+~XXXXX defines the permalink the nice-name is ignored
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;packages table needs a new field for this data
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;existing datasets need updating
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;new datasets need the identifier creating
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;routing needs updating
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;needs to work for all urls like edit
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Once this is implemented we can decide when we will use permalinks vs the normal urls.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2326#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3012</link>
+        <guid isPermaLink="false">http://localhost/ticket/3012</guid>
+        <title>#3012: data.gov auth</title>
+        <pubDate>Thu, 08 Nov 2012 16:50:09 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3012#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2257</link>
+        <guid isPermaLink="false">http://localhost/ticket/2257</guid>
+        <title>#2257: cleanup template vars</title>
+        <pubDate>Fri, 23 Mar 2012 14:35:07 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+look at reducing what is pulled into templates eg ckan.lib.helpers
+ensure that these changes don't break existing extensions etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2257#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2572</link>
+        <guid isPermaLink="false">http://localhost/ticket/2572</guid>
+        <title>#2572: clean up stats plugin</title>
+        <pubDate>Tue, 19 Jun 2012 11:24:14 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+attempt to disengage the stats plugin from core as much as possible
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2572#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3030</link>
+        <guid isPermaLink="false">http://localhost/ticket/3030</guid>
+        <title>#3030: clean up helper functions</title>
+        <pubDate>Tue, 18 Dec 2012 12:33:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3030#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2244</link>
+        <guid isPermaLink="false">http://localhost/ticket/2244</guid>
+        <title>#2244: clean up auth</title>
+        <pubDate>Mon, 19 Mar 2012 17:22:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;cache admins etc
+&lt;/li&gt;&lt;li&gt;aim to move check_access so independent of logic function
+&lt;/li&gt;&lt;li&gt;general spruce up
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2244#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2751</link>
+        <guid isPermaLink="false">http://localhost/ticket/2751</guid>
+        <title>#2751: check translations for full demo site</title>
+        <pubDate>Wed, 25 Jul 2012 11:40:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to check everything gets translated - sean did this before so will have info
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2751#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2822</link>
+        <guid isPermaLink="false">http://localhost/ticket/2822</guid>
+        <title>#2822: Resource additional info titles format/i18n</title>
+        <pubDate>Thu, 09 Aug 2012 09:30:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+the title for additional info should be translated
+&lt;/p&gt;
+&lt;p&gt;
+capitalised etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2822#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2939</link>
+        <guid isPermaLink="false">http://localhost/ticket/2939</guid>
+        <title>#2939: Orgs are groups</title>
+        <pubDate>Tue, 25 Sep 2012 09:07:14 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+holder for ticket number
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2939#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2830</link>
+        <guid isPermaLink="false">http://localhost/ticket/2830</guid>
+        <title>#2830: Need method to undelete groups</title>
+        <pubDate>Thu, 09 Aug 2012 10:50:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need controller action and front-end method
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2830#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2493</link>
+        <guid isPermaLink="false">http://localhost/ticket/2493</guid>
+        <title>#2493: Demo site 404 needs some love</title>
+        <pubDate>Wed, 06 Jun 2012 12:34:41 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+templates/error_document_template.html
+&lt;/p&gt;
+&lt;p&gt;
+I've converted the 404 page to the new style but we probably want to serve this as a 'full page' ie content is 100% page width not sidebar and primary content
+&lt;/p&gt;
+&lt;p&gt;
+just go to a non-existant url to see
+&lt;/p&gt;
+&lt;p&gt;
+Discusion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63374042/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63374042/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/404"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/404&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2493#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2795</link>
+        <guid isPermaLink="false">http://localhost/ticket/2795</guid>
+        <title>#2795: Check validation of HTML, CSS, JS</title>
+        <pubDate>Thu, 02 Aug 2012 10:25:28 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Ensure that we are being standards compliant
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2795#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2829</link>
+        <guid isPermaLink="false">http://localhost/ticket/2829</guid>
+        <title>#2829: Archiver fails on 403 http response</title>
+        <pubDate>Thu, 09 Aug 2012 10:34:44 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Had this issue with the archiver on my local machine need to be logged in (I am admin) to see via web front end
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;$ paster archiver update -c ../ckan/development.ini
+2012-08-09 11:01:37,636 INFO  [ckanext.archiver.commands] Archival of dataset resource data added to celery queue: opencontext-chogha-mish-fauna (1 resources)
+2012-08-09 11:01:37,671 INFO  [ckanext.archiver.commands] Getting dataset metadata: south-african-national-gov-budget-2012-13
+2012-08-09 11:01:37,900 INFO  [ckan.lib.base]  /api/action/package_show render time 0.043 seconds
+Traceback (most recent call last):
+  File "/home/toby/okfn/pyenv/bin/paster", line 8, in &amp;lt;module&amp;gt;
+    load_entry_point('PasteScript==1.7.5', 'console_scripts', 'paster')()
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 104, in run
+    invoke(command, command_name, options, args[1:])
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 143, in invoke
+    exit_code = runner.run(args)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 238, in run
+    result = self.command()
+  File "/home/toby/okfn/pyenv/src/ckanext-archiver/ckanext/archiver/commands.py", line 98, in command
+    response = app.post(api_url + '/package_show', data)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 262, in post
+    expect_errors=expect_errors)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 243, in _gen_request
+    return self.do_request(req, status=status)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 406, in do_request
+    self._check_status(status, res)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 439, in _check_status
+    res.body))
+paste.fixture.AppError: Bad response: 403 Forbidden (not 200 OK or 3xx redirect for /api/action/package_show)
+{"help": "Return the metadata of a dataset (package) and its resources.\n\n    :param id: the id or name of the dataset\n    :type id: string\n\n    :rtype: dictionary\n\n    ", "success": false, "error": {"message": "Access denied", "__type": "Authorization Error"}}
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2829#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2433</link>
+        <guid isPermaLink="false">http://localhost/ticket/2433</guid>
+        <title>#2433: API uses name not id for some version 3 calls</title>
+        <pubDate>Fri, 25 May 2012 14:54:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+see &lt;a class="ext-link" href="https://github.com/okfn/ckan/pull/5"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/pull/5&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2433#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,20 @@
+id	summary	owner	type	priority	component	resolution
+1100	Get buildbot running on ckan branches		defect	awaiting triage	ckan	fixed
+1084	ckan.net RDF links changed	wwaites	task	major	ckan	fixed
+829	Admin CRUD broken	rgrp	defect	awaiting triage	ckan	wontfix
+1106	Bugs related to routes arising from API refactor + removal of default routes	rgrp	defect	blocker	ckan	fixed
+515	Inconsistent use of 'location' header in API	kindly	defect	minor	ckan	fixed
+1092	refactor logic layer to seperate out api, form logic	kindly	defect	awaiting triage	ckan	fixed
+833	[super] Administrative dashboard extension	johnlawrenceaspden	enhancement	critical	ckan	fixed
+854	Tests for authorization_group	johnlawrenceaspden	defect	major	ckan	fixed
+1075	Administrative dashboard - Edit Authorization related to System object	johnlawrenceaspden	enhancement	major	ckan	fixed
+936	Follow / watch package extension	johnglover	enhancement	major	ckan	fixed
+840	On/off switch for ETags cache	dread	enhancement	major	ckan	fixed
+919	Package preview contains API & datapkg instructions	dread	enhancement	awaiting triage	ckan	fixed
+1056	User links for OpenID users are broken	dread	defect	critical	ckan	fixed
+1089	"Check for ""--ckan"" when running nosetests"	dread	enhancement	minor	ckan	fixed
+1090	Visitor can't create packages on new CKAN install	dread	defect	minor	ckan	fixed
+1093	500 errors on GET to api/rest/licenses	dread	defect	major	ckan	fixed
+1097	Sidebar hideable	dread	enhancement	major	ckan	fixed
+1098	--ckan-migration tests not initialised correctly	dread	task	minor	ckan	fixed
+1037	More Robust Harvesting for DGU	amercader	defect	major	uklii	fixed

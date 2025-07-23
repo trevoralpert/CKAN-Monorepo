@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1806</link>
+        <guid isPermaLink="false">http://localhost/ticket/1806</guid>
+        <title>#1806: make drop down language selector</title>
+        <pubDate>Mon, 20 Feb 2012 12:36:33 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+language chooser should look like the ec one
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1806#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1775</link>
+        <guid isPermaLink="false">http://localhost/ticket/1775</guid>
+        <title>#1775: Enable adding many tags at once to controlled vocabularies via API</title>
+        <pubDate>Mon, 06 Feb 2012 15:10:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We already have API calls for adding one tag or removing one tag at a time to/from a vocab. Want more convenient ways to add or remove many in one call, or just pass in a list of tags to completely replace a vocab's current list.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add tags_create() function that calls the existing tag_create() many times?
+&lt;/li&gt;&lt;li&gt;Also tags_delete()?
+&lt;/li&gt;&lt;li&gt;Or just let tag_create() and tag_delete() accept a list?
+&lt;/li&gt;&lt;li&gt;Add tags argument to vocabulary_update() to pass in a list of tags to replace the vocab's current tags? (But it should still be possible to simply rename a vocab without changing its tags and without having to pass in the tag list.)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1775#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1817</link>
+        <guid isPermaLink="false">http://localhost/ticket/1817</guid>
+        <title>#1817: Importer for EC publisher info</title>
+        <pubDate>Mon, 20 Feb 2012 18:24:50 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;write importer for publisher info (currently in JSON format), add to ckanext-ecportal
+&lt;/li&gt;&lt;li&gt;add group translations to translations table
+&lt;/li&gt;&lt;li&gt;run on test server
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1817#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1821</link>
+        <guid isPermaLink="false">http://localhost/ticket/1821</guid>
+        <title>#1821: create internal multilingual extension that brings together all multilingual features</title>
+        <pubDate>Mon, 20 Feb 2012 20:54:27 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This extension point needs to combine.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt; Making sure the correct data get put in search index.
+&lt;/li&gt;&lt;li&gt; Make the search queries are modified to weight multilingual search correctly.
+&lt;/li&gt;&lt;li&gt; View pages, including search results are translated.
+&lt;/li&gt;&lt;li&gt; Bring together all search schema modifications.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1821#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1822</link>
+        <guid isPermaLink="false">http://localhost/ticket/1822</guid>
+        <title>#1822: Weight mulilingual searches correctly</title>
+        <pubDate>Mon, 20 Feb 2012 21:08:00 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Dismax query across languages. Titles and selected languages, weighted more highly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1822#changelog</comments>
+    </item>
+ </channel>
+</rss>

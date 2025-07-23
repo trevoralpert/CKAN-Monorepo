@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=johnglover&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=johnglover&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/3011</link>
+        <guid isPermaLink="false">http://localhost/ticket/3011</guid>
+        <title>#3011: Recline fixes and updates for CKAN 2.0</title>
+        <pubDate>Wed, 07 Nov 2012 11:40:55 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Fixes and updates to Recline / Datapreview for CKAN 2.0.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3011#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1584</link>
+        <guid isPermaLink="false">http://localhost/ticket/1584</guid>
+        <title>#1584: QA report improvements - 2.5d</title>
+        <pubDate>Wed, 21 Dec 2011 09:23:53 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;qa/{username}
+&lt;/li&gt;&lt;li&gt;qa/{groupname}
+&lt;/li&gt;&lt;li&gt;paginate QA results
+&lt;/li&gt;&lt;li&gt;search / filter QA results
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;list organisation report by default, but can disable via config option&lt;/del&gt; (done)
+&lt;/li&gt;&lt;li&gt;UX tidy up of report pages - hide border if no sidebar, etc
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1584#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1588</link>
+        <guid isPermaLink="false">http://localhost/ticket/1588</guid>
+        <title>#1588: QA - Give SPARQL endpoints a 4 star rating</title>
+        <pubDate>Wed, 21 Dec 2011 15:13:25 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Richard Cyganiak on the CKAN Discuss list:
+&lt;/p&gt;
+&lt;p&gt;
+Besides considering the media type of resources, it would also make sense to check for the presence of a SPARQL endpoint. SPARQL endpoints are recorded for more than 300 datasets on the Data Hub using the pseudo-type "api/sparql". A few more are recorded with the format "SPARQL". I suggest that datasets with such resources should also be considered for the fourth star.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1588#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1589</link>
+        <guid isPermaLink="false">http://localhost/ticket/1589</guid>
+        <title>#1589: QA - Give 5 star rating to datasets with link metadata</title>
+        <pubDate>Wed, 21 Dec 2011 15:16:40 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Richard Cyganiak on the CKAN Discuss list:
+&lt;/p&gt;
+&lt;p&gt;
+Regarding the fifth star (is the dataset linked to others?). This cannot be automatically determined just by looking at the format. It either requires inspection of the actual data, or information about links in the metadata. As you're probably aware, we've established conventions for recording information on data links in CKAN &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;, as part of the work of the lodcloud group on the Data Hub. Link information is captured for hundreds of datasets. I would claim that we have the majority of four-star datasets covered there, and hence you can determine if they should get the fifth star by checking for the presence of a links:xxx field.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1589#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3017</link>
+        <guid isPermaLink="false">http://localhost/ticket/3017</guid>
+        <title>#3017: New stable branch for the demo server</title>
+        <pubDate>Tue, 13 Nov 2012 15:04:48 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3017#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2733</link>
+        <guid isPermaLink="false">http://localhost/ticket/2733</guid>
+        <title>#2733: Datastore logic functions</title>
+        <pubDate>Mon, 23 Jul 2012 15:54:46 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;h2 id="Wheredoesthedatago"&gt;Where does the data go?&lt;/h2&gt;
+&lt;p&gt;
+In a postgres database configured by the ckan.datastore_write_url config option which is a sqlalchemy url.
+&lt;/p&gt;
+&lt;p&gt;
+The user should have rights to create tables.
+&lt;/p&gt;
+&lt;h2 id="Whatstheapilike"&gt;Whats the api like?&lt;/h2&gt;
+&lt;p&gt;
+We will just implement it as logic functions like the rest of CKAN and will part of core.  After that we may add some nicer api functions that use these but that is a secondary concern.
+&lt;/p&gt;
+&lt;h2 id="Whataretheinitiallogicfunctions"&gt;What are the initial logic functions?&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;datastore_create
+&lt;/li&gt;&lt;li&gt;datastore_delete
+&lt;/li&gt;&lt;li&gt;datastore_show
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="WhatistheJSONinputformatfordatastore_create"&gt;What is the JSON input format for datastore_create&lt;/h2&gt;
+&lt;p&gt;
+To begin with it can have the following keys. It is fairly consistent with Max Ogdens' gut servers.  Except adds resource_id.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+resource_id: resource_id # the data is going to be stored against.
+fields: a list of dictionaries of fields/columns and their extra metadata.
+records: a list of dictionaries of the data eg  [{"dob": "2005", "some_stuff": ['a', b']}, ..]
+}
+&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;The first row will be used to guess types not in the fields and the guessed types will be added to the headers permanently. Consecutive rows have to conform to the field definitions.
+&lt;/li&gt;&lt;li&gt;rows: can be empty so that you can just set the fields
+&lt;/li&gt;&lt;li&gt;fields are optional but needed if you want to do type hinting or add extra information for certain columns or to explicitly define ordering.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+eg:  [{"id": "dob", "type": "timestamp" }, {"id": "some_stuff", "type": "text"},  ...].
+A header items values can not be changed after it has been defined nor can the ordering of them be changed.  They can be extended though.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Any error results in total failure!! For now pass back the actual error.
+&lt;/li&gt;&lt;li&gt;Should be transactional
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Whatjsondoesdatastore_deletetake"&gt;What json does datastore_delete take?&lt;/h2&gt;
+&lt;pre class="wiki"&gt;{
+resource_id: resource_id # the data is going to be deleted.
+filters: dictionary of matching conditions to delete
+    e.g  {'key1': 'a. 'key2': 'b'}  this will be equivalent to "delete from table where key1 = 'a' and key2 = 'b' ".
+    No filters (either not present or not defined) then delete the table. If we want truncate then add truncate: true to truncate the table.
+}
+&lt;/pre&gt;&lt;h2 id="Whatjsondoesdatastore_searchtake"&gt;What json does datastore_search take?&lt;/h2&gt;
+&lt;pre class="wiki"&gt;{
+resource_id: resource_id # the data is going to be selected.
+filters : dictionary of matching conditions to select
+    e.g  {'key1': 'a. 'key2': 'b'}  this will be equivalent to "select * from table where key1 = 'a' and key2 = 'b' "
+q: full text query
+limit: limit the amount of rows to size default 100
+offset: offset the amount of rows
+fields:  list of fields return in that order, defaults (empty or not present) to all fields in fields order.
+sort: comma separated field names with ordering e.g "fieldname1, fieldname2 desc"
+}
+&lt;/pre&gt;&lt;p&gt;
+Some free code: &lt;a class="ext-link" href="https://gist.github.com/3163864"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/3163864&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Whatjsondoesdatastore_searchreturn"&gt;What json does datastore_search return?&lt;/h2&gt;
+&lt;pre class="wiki"&gt;{
+fields: same type as datastore_create accepts (i.e. with metadata)
+offset: The same offset that was supplied in datastore_show
+limit: The original limit
+filters: The filters that were applied in data_show
+total: # total matching records without size or offset
+records: [same as data_create] # list of matching results
+}
+&lt;/pre&gt;&lt;p&gt;
+On error will return:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+__error__: … sql error …
+}
+&lt;/pre&gt;&lt;h2 id="Whattypesareallowed"&gt;What types are allowed?&lt;/h2&gt;
+&lt;p&gt;
+Aim to support as many postgres/postgis types that have string representations.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.postgresql.org/docs/9.1/static/datatype.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.postgresql.org/docs/9.1/static/datatype.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.postgresql.org/docs/9.1/static/sql-createdomain.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.postgresql.org/docs/9.1/static/sql-createdomain.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="IDs"&gt;IDs&lt;/h2&gt;
+&lt;p&gt;
+Each row in a table will be given an _id column which has an id generated by us which you can use in queries.
+&lt;/p&gt;
+&lt;h2 id="OtherFeatures"&gt;Other Features&lt;/h2&gt;
+&lt;p&gt;
+Each row will store the _full_text index of all the data in the row. At some later point there will most likely be a way to index fields add constraints etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2733#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1581</link>
+        <guid isPermaLink="false">http://localhost/ticket/1581</guid>
+        <title>#1581: Blog post about Google Analytics extension for CKAN</title>
+        <pubDate>Tue, 20 Dec 2011 17:40:00 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+The CKAN Google Analytics extension has been updated to work with the latest version of CKAN, could make for a nice blog post.
+&lt;/p&gt;
+&lt;p&gt;
+Can ping John Glover in January for any details required.
+&lt;/p&gt;
+&lt;p&gt;
+Key link is: &lt;a class="ext-link" href="http://thedatahub.org/analytics/dataset/top"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/analytics/dataset/top&lt;/a&gt; though this should probably move to be under stats (e.g. &lt;a class="ext-link" href="http://thedatahub.org/stats/usage"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/stats/usage&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1581#changelog</comments>
+    </item>
+ </channel>
+</rss>

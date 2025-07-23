@@ -1,0 +1,33 @@
+id,summary,owner,type,priority,resolution,time
+1397,[super] Resource archiving,kindly,enhancement,major,fixed,10/13/11 18:13:13
+1465,Upgrade the harvester to support publishers properly,,enhancement,awaiting triage,fixed,11/15/11 16:52:03
+1496,Render a user's activity stream on her user page,seanh,enhancement,awaiting triage,fixed,11/28/11 15:53:08
+1515,[super] Activity Streams,seanh,enhancement,awaiting triage,fixed,12/05/11 17:10:48
+1530,URL field help text in wrong place,zephod,defect,critical,fixed,12/07/11 12:46:24
+1566,[super] Finalize Google analytics extension,David Raznik,enhancement,minor,fixed,12/19/11 11:12:48
+1574,[super] Storage changes including automated save to Webstore,ross,enhancement,awaiting triage,fixed,12/19/11 17:27:13
+1601,[super] Well integrated Geo-spatial support including search,amercader,enhancement,awaiting triage,fixed,12/30/11 15:43:41
+1605,[super] Multilingual support in CKAN,kindly,enhancement,critical,fixed,01/02/12 03:02:47
+1607,[super] Data.gov.uk Maintenance Refactor and UKLP Development Support,icmurray,enhancement,major,fixed,01/02/12 11:22:28
+1669,[super] Publisher profile,ross,enhancement,awaiting triage,fixed,01/17/12 12:14:33
+1734,[super] Updates on harvesting for UKLP,amercader,enhancement,critical,fixed,01/31/12 11:14:34
+2230,Tidy up of search facets code duplication,,refactor,awaiting triage,fixed,03/14/12 16:54:45
+2332,Fixes for v1.7 release,amercader,enhancement,critical,fixed,04/28/12 20:15:16
+1404,Search Page UI improvements,zephod,enhancement,awaiting triage,wontfix,10/17/11 10:36:58
+1510,Migrate existing data into activity streams database tables,seanh,enhancement,awaiting triage,wontfix,12/05/11 14:05:01
+1594,[super] QA Improvements,johnglover,enhancement,major,wontfix,12/21/11 17:47:00
+1595,Editing of a Group leads to recording a change against all associated datasets,kindly,defect,awaiting triage,wontfix,12/21/11 22:01:15
+1600,[super] User guide with integrated help in the WUI,rgrp,enhancement,awaiting triage,wontfix,12/30/11 15:10:24
+1632,Render a group's activity stream on its' page,seanh,enhancement,awaiting triage,wontfix,01/11/12 17:49:59
+1633,Render a dataset's activity stream on its' page,seanh,enhancement,awaiting triage,wontfix,01/11/12 17:51:38
+1636,Purge items from activity streams when object (package etc.) purged from CKAN,seanh,enhancement,awaiting triage,wontfix,01/11/12 17:59:14
+1692,Add image attribute to Dataset and Group,,enhancement,awaiting triage,wontfix,01/21/12 01:19:21
+1763,Add some simple model-level tests for activity streams,seanh,enhancement,awaiting triage,wontfix,02/06/12 13:51:25
+1764,Move activity streams API tests into tests/logic,seanh,enhancement,awaiting triage,wontfix,02/06/12 13:54:59
+1784,Links to renamed objects break,seanh,enhancement,awaiting triage,wontfix,02/07/12 11:19:15
+2288,Fix i18n of strings on auth group add/edit pages,,defect,awaiting triage,wontfix,04/12/12 18:23:23
+2317,Corrections to dataset creation form for v1.7,,enhancement,critical,wontfix,04/21/12 15:27:41
+1586,'Sort by' field for package search,toby,enhancement,major,duplicate,12/21/11 14:59:48
+1603,Search query builder,zephod,enhancement,awaiting triage,duplicate,12/30/11 18:06:04
+1634,"Allow users to follow/unfollow activity streams of other users, datasets and groups",seanh,enhancement,awaiting triage,duplicate,01/11/12 17:55:42
+2201,Add citation info to Dataset and Resource page,,enhancement,major,duplicate,03/03/12 08:58:00

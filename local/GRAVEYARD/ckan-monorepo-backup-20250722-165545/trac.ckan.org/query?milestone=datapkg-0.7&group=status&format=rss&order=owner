@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=datapkg-0.7&amp;group=status&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=datapkg-0.7&amp;group=status&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/359</link>
+        <guid isPermaLink="false">http://localhost/ticket/359</guid>
+        <title>#359: Create Storage with pluggable extensions</title>
+        <pubDate>Mon, 28 Jun 2010 18:44:14 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Storage represents something you can upload to (download is done in &lt;a class="closed ticket" href="http://localhost/ticket/406" title="requirement: Download sub-system (closed: fixed)"&gt;ticket:406&lt;/a&gt;).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;storage sub package with defined interface (maybe just use OFS)
+&lt;/li&gt;&lt;li&gt;Only support uploading single files for the moment (though can do multiple files).
+&lt;ul&gt;&lt;li&gt;Relationship to build (&lt;a class="closed ticket" href="http://localhost/ticket/306" title="enhancement: datapkg build command (closed: duplicate)"&gt;ticket:306&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;No support for syncing e.g. hg/git repos -- that's up to you as a user
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Upload command
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+At end of this we can deprecate Repository.
+&lt;/p&gt;
+&lt;p&gt;
+Having Repository encapsulate Index and Storage (without Storage being explicit) is not helpful and leads to duplication.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/359#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/98</link>
+        <guid isPermaLink="false">http://localhost/ticket/98</guid>
+        <title>#98: Replace use of pastescript templates in PythonDistribution with of something simpler</title>
+        <pubDate>Tue, 11 Aug 2009 09:43:30 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Replace use of pastescript templates in &lt;a class="missing wiki"&gt;PythonDistribution?&lt;/a&gt; (write) with of something simpler (allowing us to remove dependency on pastescript).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/98#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/171</link>
+        <guid isPermaLink="false">http://localhost/ticket/171</guid>
+        <title>#171: Create consolidated config for CLI</title>
+        <pubDate>Sun, 25 Oct 2009 16:26:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Create consolidated set of config by merging config from .datapkgrc and command line options and use that instead of mixture of command line options and other stuff ... (likely to be less buggy!)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/171#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/307</link>
+        <guid isPermaLink="false">http://localhost/ticket/307</guid>
+        <title>#307: datapkg upload command</title>
+        <pubDate>Wed, 28 Apr 2010 17:03:44 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Support uploading a distribution somewhere.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;New cli command: upload
+&lt;/li&gt;&lt;li&gt;Pluggable uploader framework. Suggest initial support
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Depends on &lt;a class="closed ticket" href="http://localhost/ticket/306" title="enhancement: datapkg build command (closed: duplicate)"&gt;ticket:306&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/307#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/360</link>
+        <guid isPermaLink="false">http://localhost/ticket/360</guid>
+        <title>#360: New sqlite-based DB index</title>
+        <pubDate>Tue, 29 Jun 2010 09:19:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+In 0.5 and 0.6 have been more oriented to getting file indexes working to support the convenience of using packages on disk directly. However we now need to go back to having a better central/default index and the best model for this is a simple db index using sqlite (which is now supported in the standard library).
+&lt;/p&gt;
+&lt;p&gt;
+NB: this is a retrospective ticket (been working on this for a couple of months)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/360#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/361</link>
+        <guid isPermaLink="false">http://localhost/ticket/361</guid>
+        <title>#361: Allow specification of the default index in configuration</title>
+        <pubDate>Tue, 29 Jun 2010 09:21:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/361#changelog</comments>
+    </item>
+ </channel>
+</rss>

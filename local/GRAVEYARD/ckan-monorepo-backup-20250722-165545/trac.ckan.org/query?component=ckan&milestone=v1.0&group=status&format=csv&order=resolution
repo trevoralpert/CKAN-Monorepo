@@ -1,0 +1,55 @@
+id,summary,owner,type,priority,resolution,time
+59,Provide a basic guide to CKAN on the site,johnbywater,enhancement,awaiting triage,fixed,04/06/09 11:49:43
+124,Display Generic Package Attributes in WUI,rgrp,enhancement,awaiting triage,fixed,09/23/09 12:41:42
+138,User has editable home page,rgrp,enhancement,blocker,fixed,10/05/09 11:23:09
+156,Whitelist for html in mark-down field,johnbywater,enhancement,major,fixed,10/15/09 16:26:13
+164,Creating RDF data from CKAN,wwaites,enhancement,critical,fixed,10/20/09 15:30:43
+179,Restore 404 and 500 messages in WUI,dread,defect,critical,fixed,11/05/09 09:17:48
+182,Improve openness icons,,enhancement,critical,fixed,11/06/09 19:09:50
+196,RDF URI to resolve on CKAN,dread,defect,critical,fixed,11/20/09 14:39:48
+201,Stress test ckan,rgrp,enhancement,awaiting triage,fixed,12/03/09 12:53:56
+206,UI review,nickstenning,enhancement,critical,fixed,12/07/09 15:32:21
+207,Reimplement tag selection in jQuery,dread,enhancement,minor,fixed,12/07/09 15:39:00
+215,UI Review - Home page,rgrp,enhancement,critical,fixed,12/15/09 12:22:12
+216,UI Review - Search,nickstenning,enhancement,critical,fixed,12/15/09 12:23:22
+221,UI Review - Package edit,dread,enhancement,major,fixed,12/15/09 12:29:35
+223,UI Review - Tag,nickstenning,enhancement,critical,fixed,12/15/09 12:31:16
+230,Refactor 'package preview' to use 'package read',dread,task,blocker,fixed,01/06/10 14:28:04
+239,Test migrate scripts,dread,task,critical,fixed,01/25/10 17:18:46
+240,Do not allow creation of PackageResource object without a url,johnbywater,defect,major,fixed,02/05/10 19:55:47
+241,License doesn't preview correctly,rgrp,defect,awaiting triage,fixed,02/08/10 10:39:06
+247,Alternative formats links on package page,dread,enhancement,major,fixed,02/11/10 12:12:06
+248,i18n of forms,dread,enhancement,critical,fixed,02/11/10 12:45:13
+251,"Present in the API a list of revision IDs, and present individual revisions when referenced by ID",johnbywater,enhancement,critical,fixed,02/18/10 19:02:23
+254,Package relationships - 1. model,dread,enhancement,blocker,fixed,02/23/10 12:34:09
+255,Package relationships - 2. Read in WUI,dread,enhancement,blocker,fixed,02/23/10 12:35:42
+257,Package relationships - 4. Read in API,dread,enhancement,blocker,fixed,02/23/10 12:37:10
+258,Add uuids into package in REST,rgrp,enhancement,awaiting triage,fixed,02/23/10 19:52:02
+259,isitopen enquiry broken,rgrp,defect,awaiting triage,fixed,02/24/10 11:57:46
+260,Display group package list in standard (richer) way,dread,enhancement,major,fixed,02/25/10 12:24:20
+261,License does not work through REST API,dread,defect,major,fixed,02/25/10 21:52:58
+264,Investigate why there are revisions with no associated packages,dread,defect,major,fixed,03/03/10 08:37:08
+265,More detail shown in Atom feed,johnbywater,enhancement,critical,fixed,03/04/10 13:12:44
+266,Package feed,johnbywater,enhancement,critical,fixed,03/04/10 15:26:57
+271,The system shall support distributing changes.,johnbywater,enhancement,awaiting triage,fixed,03/15/10 16:55:37
+276,Resources in Package form seen multiple times upon preview,dread,defect,critical,fixed,03/22/10 10:56:39
+278,Spaces in extra field keys,dread,defect,awaiting triage,fixed,03/25/10 12:40:45
+279,Ensure package's license is an option when it's edited,johnbywater,enhancement,minor,fixed,04/02/10 10:58:51
+280,Disappearing extra fields,dread,defect,blocker,fixed,04/02/10 12:01:24
+281,Refactor forms to be plugin-able,dread,enhancement,critical,fixed,04/06/10 08:24:08
+284,Move tag/read/xxx to simple tag/xxx like package and group,johnbywater,defect,critical,fixed,04/07/10 18:22:32
+286,Refactor forms templates,dread,enhancement,critical,fixed,04/08/10 10:45:13
+287,Customise Canadian package edit form,dread,enhancement,critical,fixed,04/09/10 08:18:06
+288,Foreign and escaped characters in extras fields,dread,defect,critical,fixed,04/13/10 15:18:19
+289,Document config options,rgrp,enhancement,major,fixed,04/14/10 12:38:10
+290,Revision API - docs,johnbywater,defect,critical,fixed,04/14/10 18:12:39
+292,PackageResources are created new on every package edit,dread,defect,blocker,fixed,04/20/10 09:32:44
+293,REST PackageResource update causes exception,johnbywater,defect,critical,fixed,04/20/10 09:35:02
+295,Add multiple packages when editing a group,dread,enhancement,major,fixed,04/20/10 09:45:13
+300,Resource ordering issue,rgrp,defect,blocker,fixed,04/26/10 12:46:34
+302,Advertise a package's feed visually,johnbywater,enhancement,awaiting triage,fixed,04/27/10 12:13:17
+303,"Package history & diff & feed to show changes to tags, extras and resources",dread,defect,major,fixed,04/27/10 12:17:39
+304,Previewing package with resource with missing url is broken,johnbywater,defect,critical,fixed,04/27/10 14:45:50
+305,Search result pagination is broken,johnbywater,defect,major,fixed,04/28/10 15:23:49
+125,Edit Generic Package Attributes in WUI,dread,enhancement,blocker,duplicate,09/23/09 12:41:52
+155,Adding multiple packages to a group,dread,enhancement,major,duplicate,10/15/09 15:49:39

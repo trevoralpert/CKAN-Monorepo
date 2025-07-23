@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~deprecation&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~deprecation&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2603</link>
+        <guid isPermaLink="false">http://localhost/ticket/2603</guid>
+        <title>#2603: Remove deprecated 'fields' parameter from resource_search</title>
+        <pubDate>Tue, 26 Jun 2012 17:10:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The fields parameter of resource_search was deprecated when fixing &lt;a class="closed ticket" href="http://localhost/ticket/2438" title="enhancement: resource_search action not accessible via GET request (closed: fixed)"&gt;#2438&lt;/a&gt;.  It can be removed in release 1.9, and the action tidied up as a result.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2603#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2621</link>
+        <guid isPermaLink="false">http://localhost/ticket/2621</guid>
+        <title>#2621: Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete</title>
+        <pubDate>Thu, 28 Jun 2012 16:22:49 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+This was deprecated in 1.8 as it wasn't accessible via GET requests due to being a dict.  See &lt;a class="closed ticket" href="http://localhost/ticket/2439" title="defect: tag_search and tag_autocomplete not fully available via GET request (closed: fixed)"&gt;#2439&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In a future release of CKAN (probably 1.9) it can be removed.
+&lt;/p&gt;
+&lt;p&gt;
+Internal uses of it were removed in &lt;a class="closed ticket" href="http://localhost/ticket/2439" title="defect: tag_search and tag_autocomplete not fully available via GET request (closed: fixed)"&gt;#2439&lt;/a&gt;, but there are tests that still use it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2621#changelog</comments>
+    </item>
+ </channel>
+</rss>

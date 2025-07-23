@@ -1,0 +1,27 @@
+id,summary,owner,type,priority,component,resolution
+560,Deleted packages showing up in tag lists,kindly,defect,blocker,ckan,fixed
+662,Can't put entity that is returned by posting to package register,sebbacon,defect,blocker,ckan,fixed
+1040,File system mounted,thejimmyg,defect,blocker,ckan,fixed
+371,The system shall monitor QoS against SLA,nils.toedtmann,requirement,critical,ckan,fixed
+894,harvest from http://locationmetadataeditor.data.gov.uk/geonetwork/srv/csw,wwaites,defect,critical,ckan,invalid
+366,A flash message says why you are redirected to the 'user login' page,pudo,enhancement,major,ckan,fixed
+569,Harvested GEMINI document metadata validation,thejimmyg,requirement,major,uklii,fixed
+663,Duplicate sibling relationships displayed,kindly,defect,major,ckan,fixed
+784,End to end testing for UKLP,thejimmyg,task,major,uklii,wontfix
+893,ExtrasField should not overwrite more specific extras,,defect,major,ckan,wontfix
+965,make migration testing plugin to nose,kindly,enhancement,major,ckan,fixed
+1038,Authz tool - operate on all packages at once,dread,enhancement,major,ckan,fixed
+1039,Default user roles read from config,dread,enhancement,major,ckan,fixed
+1076,Improve revision and package purge system,johnlawrenceaspden,enhancement,major,ckan,fixed
+480,Catalogue service shall conform to specification,thejimmyg,requirement,minor,ckan,fixed
+767,Harvest metadata records from ArcGIS CSW API,thejimmyg,task,minor,uklii,wontfix
+929,Handle the case when the licenses service is down better,rgrp,defect,minor,ckan,fixed
+933,get rid of self when it should be cls in classmethods,,enhancement,minor,ckan,fixed
+996,Run some basic load testing.,kindly,task,minor,ckan,fixed
+1012,Add package revision history to api,kindly,defect,minor,ckan,fixed
+435,Switching between ckan instances causes orphaned postgres processes,thejimmyg,defect,awaiting triage,ckan,wontfix
+539,The system shall improve performance,wwaites,requirement,awaiting triage,ckan,invalid
+664,Sibling relationships shown for deleted packages,kindly,defect,awaiting triage,ckan,fixed
+883,uklii harvesting refactor,wwaites,enhancement,awaiting triage,uklii,fixed
+887,move harvesting to generic module,wwaites,enhancement,awaiting triage,uklii,fixed
+1088,content-type autonegotiation is wonky,,defect,awaiting triage,ckan,fixed

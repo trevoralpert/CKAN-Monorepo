@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=pudo&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=pudo&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1009</link>
+        <guid isPermaLink="false">http://localhost/ticket/1009</guid>
+        <title>#1009: Improvements to user accounts sytem</title>
+        <pubDate>Fri, 25 Feb 2011 12:13:11 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Forgot password (email a new password)
+&lt;/li&gt;&lt;li&gt;Confirm email
+&lt;/li&gt;&lt;li&gt;Do not show register page if you are logged in (redirect to home page)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1010" title="enhancement: List CKAN users in WUI (closed: fixed)"&gt;ticket:1010&lt;/a&gt; - listing of users.
+&lt;ul&gt;&lt;li&gt;Do not use /user for general user account home page (either user normal user page /user/{id} or /user/myaccount)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1009#changelog</comments>
+    </item>
+ </channel>
+</rss>

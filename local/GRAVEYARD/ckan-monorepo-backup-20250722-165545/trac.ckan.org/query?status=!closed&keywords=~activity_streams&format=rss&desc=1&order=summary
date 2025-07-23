@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~activity_streams&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~activity_streams&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1785</link>
+        <guid isPermaLink="false">http://localhost/ticket/1785</guid>
+        <title>#1785: Replace 'Revisions' page with site-wide activity stream</title>
+        <pubDate>Tue, 07 Feb 2012 16:34:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Replace the /revision page with a /activity page showing a site-wide activity stream of all activities in the site. Or perhaps the site-wide activity stream can go somewhere on the front page of the site instead?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2619</link>
+        <guid isPermaLink="false">http://localhost/ticket/2619</guid>
+        <title>#2619: Omit private datasets from public activity streams</title>
+        <pubDate>Thu, 28 Jun 2012 11:49:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Activities about private datasets should not appear in public activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to actually purge the activities from the db, because you might still want them to appear in private activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I do think that when a dataset goes private all its past activity should go private, because I imagine that users are going to want to hide everything about the dataset and not have any past activities 'leaking out'
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to consider whether the dataset was private when the activity happened, rather if a dataset is private now then all its past activities are private (and the simplest thing would be to say that if a dataset is public now then all its past activities become public as well, but is that a privacy concern?)
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way to implement this is going to be by modifying the *_activity_list() action functions in get.py, after they pull their activity lists out of the db they should pass them through a function that filters out stuff about private datasets.
+&lt;/p&gt;
+&lt;p&gt;
+An activity about a private dataset is one whose object_type is 'dataset' and whose object_id matches the id of a private dataset. You should also check the object_type and object_id of all of the activity object's activity detail objects, if any of those match a private dataset then mark the whole activity as private.
+&lt;/p&gt;
+&lt;p&gt;
+Currently all activity streams are public so should have all private datasets filtered out from them, except for the dashboard activity stream which is private to the individual user. In this case private datasets that the user has permission to see should not be filtered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2619#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1750</link>
+        <guid isPermaLink="false">http://localhost/ticket/1750</guid>
+        <title>#1750: Move ckan/lib/activity.py into the model</title>
+        <pubDate>Sun, 05 Feb 2012 18:18:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Move ckan/lib/activity.py moved to into the model - say ckan/model/activity_extension.py, because it's so tightly knit with the model code, whereas most of the lib code is used in the controllers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1750#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1748</link>
+        <guid isPermaLink="false">http://localhost/ticket/1748</guid>
+        <title>#1748: Make activity streams conform to http://activitystrea.ms/ standard</title>
+        <pubDate>Sun, 05 Feb 2012 14:06:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+At the very least we should make our JSON output conform to their spec:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://activitystrea.ms/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://activitystrea.ms/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1748#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3018</link>
+        <guid isPermaLink="false">http://localhost/ticket/3018</guid>
+        <title>#3018: Load more in activity streams</title>
+        <pubDate>Wed, 14 Nov 2012 13:34:11 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Activity streams should be able to load more than 15 items within them. Suggest the default amount of loading is around 30 and then click to load more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3028</link>
+        <guid isPermaLink="false">http://localhost/ticket/3028</guid>
+        <title>#3028: Feature: dashboard activity stream filtering</title>
+        <pubDate>Mon, 10 Dec 2012 12:07:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/13"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/13&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3028#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1747</link>
+        <guid isPermaLink="false">http://localhost/ticket/1747</guid>
+        <title>#1747: Expire old activities</title>
+        <pubDate>Sun, 05 Feb 2012 12:56:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the activity streams database tables just get longer and longer over time. Do we want to eventually delete the oldest activities, to keep the length of the table within limits?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1747#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1635</link>
+        <guid isPermaLink="false">http://localhost/ticket/1635</guid>
+        <title>#1635: Email notifications (e.g. for activity streams)</title>
+        <pubDate>Wed, 11 Jan 2012 17:56:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should be able to send email notifications to users.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe have a notifications table in the db, and a server-side job that runs periodically and consumes rows from this table, mailing them to the users.
+&lt;/p&gt;
+&lt;p&gt;
+One thing that we may want to send users notifications of is activity stream events. So the activity streams code would have to add rows to the notifications table for the mailer job to consume. But remember that email notifications feature is separate from activity streams - we may want to send notifications of other things as well.
+&lt;/p&gt;
+&lt;p&gt;
+Need to implement (at least some of) &lt;a class="closed ticket" href="http://localhost/ticket/1634" title="enhancement: Allow users to follow/unfollow activity streams of other users, datasets ... (closed: duplicate)"&gt;#1634&lt;/a&gt; before this can be implemented, in order to have something to send notifications about.
+&lt;/p&gt;
+&lt;p&gt;
+Analysis here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1635#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1749</link>
+        <guid isPermaLink="false">http://localhost/ticket/1749</guid>
+        <title>#1749: Allow creating activity details through API</title>
+        <pubDate>Sun, 05 Feb 2012 18:10:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the activity_create() logic action function only lets you create top-level activity stream items, and not their related activity details. It should handle activity details via nested dicts.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1749#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3007</link>
+        <guid isPermaLink="false">http://localhost/ticket/3007</guid>
+        <title>#3007: Adding a dataset creates multiple activities</title>
+        <pubDate>Mon, 29 Oct 2012 13:15:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Adding a new dataset creates multiple activity stream activities, e.g. seanh created the dataset foo, seanh add the resource bar to the dataset foo, and seanh updated the dataset foo are all created when I add a new dataset. I wonder if these can be collapsed into a single activity.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3007#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1667</link>
+        <guid isPermaLink="false">http://localhost/ticket/1667</guid>
+        <title>#1667: Add an extension point for rendering activity streams</title>
+        <pubDate>Tue, 17 Jan 2012 10:29:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently rendering of activity stream events to HTML works by looking up a rendering function in a dictionary that maps activity types ('new package', 'changed group', etc.) to rendering functions that take an activity stream event and return the rendered HTML.
+&lt;/p&gt;
+&lt;p&gt;
+There needs to be an extension point where extensions can register their own rendering functions for particular activity types.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1667#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,2042 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1</link>
+        <guid isPermaLink="false">http://localhost/ticket/1</guid>
+        <title>#1: Visitor visits service</title>
+        <pubDate>Mon, 10 Jul 2006 16:36:57 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Title"&gt;Title&lt;/h2&gt;
+&lt;p&gt;
+Visitor visits service
+&lt;/p&gt;
+&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor (general web user)
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Visit the website of the service (frontpage)
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;See the front page and discover information about the service
+&lt;/li&gt;&lt;li&gt;Perform various activities related to the service such as registering and finding packages, registering as a user and logging in
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2</link>
+        <guid isPermaLink="false">http://localhost/ticket/2</guid>
+        <title>#2: Register as user on the service</title>
+        <pubDate>Mon, 10 Jul 2006 16:40:35 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Be able to register as a user on the service
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+One can login and be an authenticated user and perform the actions that only authenticated users can perform
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Registration involves the provisional of a minimal set of user details, namely:
+&lt;ol&gt;&lt;li&gt;username (unique in lifetime of the service)
+&lt;/li&gt;&lt;li&gt;fullname
+&lt;/li&gt;&lt;li&gt;email
+&lt;/li&gt;&lt;li&gt;password
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3</link>
+        <guid isPermaLink="false">http://localhost/ticket/3</guid>
+        <title>#3: Login to the service</title>
+        <pubDate>Mon, 10 Jul 2006 16:41:57 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Login to the service
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I am now an authenticated user and may perform the actions that only authenticated users may perform
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Login by providing username and password
+&lt;/li&gt;&lt;li&gt;Login screen should also include a link or information about registration
+&lt;/li&gt;&lt;li&gt;If username do not match (or the username does not exist) a login failure is noted and the visitor is re-presented with the login screen as well as information on how to register
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/4</link>
+        <guid isPermaLink="false">http://localhost/ticket/4</guid>
+        <title>#4: Find a package</title>
+        <pubDate>Mon, 10 Jul 2006 16:43:40 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Locate packages that I am, or might be, interested in
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I know what packages exist and can read the information associated with those packages
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;p&gt;
+Find a package by searching by (or some combination thereof):
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;tag
+&lt;/li&gt;&lt;li&gt;string contained in title or description
+&lt;/li&gt;&lt;li&gt;license
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/4#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/5</link>
+        <guid isPermaLink="false">http://localhost/ticket/5</guid>
+        <title>#5: Browse list of packages and select one to view</title>
+        <pubDate>Mon, 10 Jul 2006 16:44:44 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Browse a list of packages resulting from a search or browse request (see other use cases)
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I can select one of the packages to view in more detail (-&amp;gt; viewing an individual package &lt;a class="closed ticket" href="http://localhost/ticket/6" title="enhancement: View a package (closed: fixed)"&gt;ticket:6&lt;/a&gt;)
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;When browsing a list of packages you should be able to see summary information about the package such as title (though this may be shortened in order to conveniently fit the list
+&lt;/li&gt;&lt;li&gt;The list should be broken up into pages so that the number of packages per page should be kept to a reasonable number (&amp;lt;= 50). Response time should be kept reasonable
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/5#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/6</link>
+        <guid isPermaLink="false">http://localhost/ticket/6</guid>
+        <title>#6: View a package</title>
+        <pubDate>Mon, 10 Jul 2006 16:46:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+View the details of an individual package
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I know more about the package. Attributes available are detailed in updating a package (../UseCase12)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/6#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/9</link>
+        <guid isPermaLink="false">http://localhost/ticket/9</guid>
+        <title>#9: Register new package</title>
+        <pubDate>Mon, 10 Jul 2006 16:49:31 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Authenticated User
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Create/register a package
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+The package will be listed in the system and visible to users
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Full package registration process may be broken down into:
+&lt;ol&gt;&lt;li&gt;Creating a package by provision of minimal attributes:
+&lt;ol&gt;&lt;li&gt;name: unique and web-usable
+&lt;/li&gt;&lt;li&gt;auto-generation of default values such as:
+&lt;ol&gt;&lt;li&gt;date-registered (today's date)
+&lt;/li&gt;&lt;li&gt;first owner (one owner should be created corresponding to the authenticated user performing this action)
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;(?) auto-generate a default release
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;updating the created package -&amp;gt; ../UseCase12
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/9#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/11</link>
+        <guid isPermaLink="false">http://localhost/ticket/11</guid>
+        <title>#11: Delete package</title>
+        <pubDate>Mon, 10 Jul 2006 16:52:08 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Authenticated user
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Delete a package
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+So that the package is no longer displayed for visitors of the site
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;The permissions for this action are the same as for updating the package details (see &lt;a class="closed ticket" href="http://localhost/ticket/10" title="enhancement: Update package (closed: worksforme)"&gt;ticket:10&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;When a package is deleted it is put in an inactive state and is invisible to users and vistors of the service. However its name remains reserved and it may be undeleted or purged by the service administrator
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/11#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/20</link>
+        <guid isPermaLink="false">http://localhost/ticket/20</guid>
+        <title>#20: Purge a package</title>
+        <pubDate>Mon, 10 Jul 2006 17:01:50 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+Administrator
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Purge a deleted package
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;this need only be possible via the admin interface
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/20#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/21</link>
+        <guid isPermaLink="false">http://localhost/ticket/21</guid>
+        <title>#21: Undelete a package</title>
+        <pubDate>Mon, 10 Jul 2006 17:02:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/21#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/24</link>
+        <guid isPermaLink="false">http://localhost/ticket/24</guid>
+        <title>#24: View list of most recently registered or updated packages on front page</title>
+        <pubDate>Mon, 10 Jul 2006 17:08:11 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/24#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/25</link>
+        <guid isPermaLink="false">http://localhost/ticket/25</guid>
+        <title>#25: Autocompletion (and suggestion) of package tags when adding tags to a package</title>
+        <pubDate>Mon, 10 Jul 2006 17:08:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Currently have a text box where users can add space separated tags
+&lt;/li&gt;&lt;li&gt;Tags should auto-complete in a manner similar to delicious
+&lt;/li&gt;&lt;li&gt;would also be good to have a list of suggested tags. This could either be:
+&lt;ul&gt;&lt;li&gt;[simpler] a list below the tag box chosen by existing popularity  or
+&lt;/li&gt;&lt;li&gt;[more complex] a list of suggestions that updates as you add tags (based again on popularity but 'filtered/reranked' to reflect choices so far).
+&lt;/li&gt;&lt;li&gt;For first attempt to should probably just go for the simpler option.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/25#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/27</link>
+        <guid isPermaLink="false">http://localhost/ticket/27</guid>
+        <title>#27: Register/Update a package via a web-api</title>
+        <pubDate>Mon, 10 Jul 2006 17:09:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+User
+&lt;/p&gt;
+&lt;h1 id="IwantTo"&gt;I want To&lt;/h1&gt;
+&lt;p&gt;
+Create/register and update a package via a web api.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/27#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/29</link>
+        <guid isPermaLink="false">http://localhost/ticket/29</guid>
+        <title>#29: Improve installation process</title>
+        <pubDate>Mon, 10 Jul 2006 17:47:18 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;install documentation (currently &lt;a class="source" href="http://localhost/browser/trunk/INSTALL"&gt;source:trunk/INSTALL&lt;/a&gt; is empty)
+&lt;/li&gt;&lt;li&gt;improve ckan-admin as necessary
+&lt;/li&gt;&lt;li&gt;create default data (such as licenses)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/29#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/30</link>
+        <guid isPermaLink="false">http://localhost/ticket/30</guid>
+        <title>#30: Tags are added to a package by package owner</title>
+        <pubDate>Fri, 18 Aug 2006 12:55:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+Site User
+&lt;/p&gt;
+&lt;h2 id="IWantTo"&gt;I Want To&lt;/h2&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;Create/Edit/Update/Delete?&lt;/a&gt; tags associated with my package
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Tags are service-wide and &lt;strong&gt;not&lt;/strong&gt; package specific
+&lt;/li&gt;&lt;li&gt;Tags should not allow spaces (but allow everything else e.g. ':')
+&lt;/li&gt;&lt;li&gt;web interface details
+&lt;ul&gt;&lt;li&gt;should provide a text box where users can add space separated tags (a la delicious).
+&lt;/li&gt;&lt;li&gt;tag creation should be seemless (so if a tag does not already tag exists it should automatically be created in the background)
+&lt;/li&gt;&lt;li&gt;would like to provide a list of relevant existing tags. For time being could just list all existing tags below entry box but in long run would like auto-updating/auto-suggesting listing a la delicious
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/30#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/32</link>
+        <guid isPermaLink="false">http://localhost/ticket/32</guid>
+        <title>#32: View a tag</title>
+        <pubDate>Mon, 04 Sep 2006 13:19:28 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+View a tag's page which should list all packages associated with that tag (or link to a page containing that list).
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;The tags should have a nice primary url such as /tag/&amp;lt;tag-name&amp;gt; (could also use the plural i.e. /tag/&amp;lt;tag-name&amp;gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/32#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/33</link>
+        <guid isPermaLink="false">http://localhost/ticket/33</guid>
+        <title>#33: List and search tags</title>
+        <pubDate>Mon, 04 Sep 2006 13:19:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+View a list of the tags on the system and search for a tag by name
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As for a search of packages should search for tags that contains a given search string (or could use a glob approach allowing wildcards).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/33#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/35</link>
+        <guid isPermaLink="false">http://localhost/ticket/35</guid>
+        <title>#35: IP Address for non-logged in users is always 127.0.0.1 when deployed behind a proxy (e.g. on ckan.net)</title>
+        <pubDate>Thu, 19 Apr 2007 18:17:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When IP address is used to identify non-logged in users (for example on create and editing of packages) it is always 127.0.0.1 when using a reverse proxy (standard deployment configuration on a production machine and used e.g. on &lt;a class="ext-link" href="http://www.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.ckan.net&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+This could be corrected by using HTTP_X_FORWARDED_FOR when available.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/35#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/36</link>
+        <guid isPermaLink="false">http://localhost/ticket/36</guid>
+        <title>#36: Edit package page should support previews</title>
+        <pubDate>Thu, 19 Apr 2007 18:25:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When editing a package one would like to be able to preview one's changes before saving.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/36#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/37</link>
+        <guid isPermaLink="false">http://localhost/ticket/37</guid>
+        <title>#37: Purge a Revision (i.e. purge all changes associated with that revision)</title>
+        <pubDate>Wed, 17 Oct 2007 19:51:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Spam entries have started to occur on ckan.net in the last few months. It would be useful to be able to purge these revisions -- that is permanently delete all changes to domain objects associated with those revision (one might also permanently delete that revision -- or alternatively simply mark it as purged).
+&lt;/p&gt;
+&lt;p&gt;
+In addition to providing this facility from the shell it would also be useful to be able to do this from the web interface (with associated restrictions on usage via an authorization controller of some sort).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/37#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/38</link>
+        <guid isPermaLink="false">http://localhost/ticket/38</guid>
+        <title>#38: Make data available in machine-usable form</title>
+        <pubDate>Thu, 08 Nov 2007 11:33:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently all data is only available via the web interface which makes it difficult to obtain in bulk. Data should be provided in other more convenient, machine usable forms:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;DB Dump
+&lt;/li&gt;&lt;li&gt;JSON for each package page (maybe Atom as well)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/38#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/39</link>
+        <guid isPermaLink="false">http://localhost/ticket/39</guid>
+        <title>#39: When listing packages show more information than just name.</title>
+        <pubDate>Fri, 09 Nov 2007 11:48:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When a package listing is shown (as on &lt;a class="ext-link" href="http://ckan.net/package/list"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/list&lt;/a&gt;) more information than just name should be shown. For example package titles should be shown as well as names (could also list tags and other stuff but simplest is just title).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/39#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/40</link>
+        <guid isPermaLink="false">http://localhost/ticket/40</guid>
+        <title>#40: Reserved html characters (such as &amp;) in urls mean package does not render for read view</title>
+        <pubDate>Tue, 20 Nov 2007 13:27:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A url such as: &lt;a class="ext-link" href="http://someurl.com/xyz?x=1&amp;amp;VERSION=1.1&amp;amp;Service=WFS"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://someurl.com/xyz?x=1&amp;amp;VERSION=1.1&amp;amp;Service=WFS&lt;/a&gt; when set as url or download_url breaks the rendering of the package with an error like:
+&lt;/p&gt;
+&lt;p&gt;
+There was an error rendering the package: not well-formed (invalid token): line 1, column 181
+&lt;/p&gt;
+&lt;p&gt;
+Have checked that removing the &amp;amp; stuff makes the error go away so this looks like an issue with escaping urls when displaying them ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/40#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/41</link>
+        <guid isPermaLink="false">http://localhost/ticket/41</guid>
+        <title>#41: Upgrade to Latest Version of Pylons (0.9.6.*) and Deploy on Production Machine</title>
+        <pubDate>Tue, 08 Jan 2008 10:07:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should do this sooner rather than later to avoid 'clear water' opening up and need to deploy then asap onto production machine to avoid 'clear water' between trunk and production (which then prevents pushing from trunk to production).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/41#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/42</link>
+        <guid isPermaLink="false">http://localhost/ticket/42</guid>
+        <title>#42: In WUI where List of Items to Display is Large Results should be Paged</title>
+        <pubDate>Tue, 08 Jan 2008 10:12:42 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h1 id="IWantTo"&gt;I Want To&lt;/h1&gt;
+&lt;p&gt;
+View lists of items but not have too many on a page (as this leads to slow page loads and difficulty navigating the list). Where there are more items in the results of my action that can be fit on a single page the results should be 'paged' in some manner.
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;p&gt;
+Main place this issue arises:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;List of tags
+&lt;/li&gt;&lt;li&gt;List of packages
+&lt;/li&gt;&lt;li&gt;Repository history (/revision)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Should probably have no more than 50 (or so) items on a page. Obvious solution is for actions that return lists to have some kind of pageno parameter and then use this in controller to select what to display.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/42#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/43</link>
+        <guid isPermaLink="false">http://localhost/ticket/43</guid>
+        <title>#43: Generic Attributes for Packages</title>
+        <pubDate>Tue, 08 Jan 2008 10:28:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+User
+&lt;/p&gt;
+&lt;h1 id="IWantTo"&gt;I Want To&lt;/h1&gt;
+&lt;p&gt;
+Add arbitrary named attributes to packages (an attribute being a name, type, value triple).
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;We will do this using a dedicated (versioned) table associated to Package
+&lt;/li&gt;&lt;li&gt;Do we allow multiple attributes of the same name?
+&lt;ul&gt;&lt;li&gt;For the present: No (since we will key by attribute name)
+&lt;/li&gt;&lt;li&gt;Could allow for single attribute but with multiple values using json list ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;What types do we allow or do we just rely on JSON to take care of this?
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="QuestionsOriginal"&gt;Questions (Original)&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;How complex is this to implement?
+&lt;/li&gt;&lt;li&gt;What would an arbitrary user be able to edit? Possibilities:
+&lt;ol&gt;&lt;li&gt;'create new attribute' and setting the value (so name and type would be chosen from predefined list).
+&lt;/li&gt;&lt;li&gt;'create', setting of name and value (but not type -- type already set in predefined list)
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Could just use (machine) tags -- though this could be seen as a bit of a hack.
+&lt;/li&gt;&lt;li&gt;Would solve having to create special file/url attributes (though I think that perhaps file stuff is important enough to merit first class support in the domain model -- though, that said, since one won't want to have a file limit adding unlimited file support is very similar to unlimited attributes of arbitrary type).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/43#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/44</link>
+        <guid isPermaLink="false">http://localhost/ticket/44</guid>
+        <title>#44: Provide RSS/Atom Feed of Repository History</title>
+        <pubDate>Tue, 08 Jan 2008 10:34:17 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h1 id="IWantTo"&gt;I Want To&lt;/h1&gt;
+&lt;p&gt;
+Get an RSS/Atom Feed of the Repository History to use in my feed reader (or elsewhere).
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;Preference for Atom.
+&lt;/li&gt;&lt;li&gt;should just add parameter to /revision/list/ (or /revision/) to select atom format e.g. ?format=atom.
+&lt;/li&gt;&lt;li&gt;should have a 'days' attribute specifying number of days back to go e.g. &amp;amp;days=30
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="Cost"&gt;Cost&lt;/h1&gt;
+&lt;p&gt;
+Low
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/44#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/45</link>
+        <guid isPermaLink="false">http://localhost/ticket/45</guid>
+        <title>#45: Immunity to SQL injection attacks</title>
+        <pubDate>Wed, 23 Jan 2008 17:54:54 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/45#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/46</link>
+        <guid isPermaLink="false">http://localhost/ticket/46</guid>
+        <title>#46: Return error documents that look and feel like normal CKAN pages</title>
+        <pubDate>Wed, 23 Jan 2008 17:56:58 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/46#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/47</link>
+        <guid isPermaLink="false">http://localhost/ticket/47</guid>
+        <title>#47: Return OpenID signin pages that look and feel like normal pages</title>
+        <pubDate>Thu, 24 Jan 2008 14:12:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/47#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/48</link>
+        <guid isPermaLink="false">http://localhost/ticket/48</guid>
+        <title>#48: Create favicon</title>
+        <pubDate>Thu, 24 Jan 2008 19:26:29 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Because CKAN's worth it!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/48#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/50</link>
+        <guid isPermaLink="false">http://localhost/ticket/50</guid>
+        <title>#50: Investigate apt-get in more detail</title>
+        <pubDate>Mon, 07 Jul 2008 18:40:52 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Research apt-get especially wajig and python wrappers for apt-get. Post results on the wiki.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/50#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/51</link>
+        <guid isPermaLink="false">http://localhost/ticket/51</guid>
+        <title>#51: Upgrade CKAN to use sqlalchemy and vdm v0.2</title>
+        <pubDate>Mon, 08 Sep 2008 19:00:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Move CKAN codebase to use sqlalchemy (rather than sqlobject) along with vdm v0.2.
+&lt;/p&gt;
+&lt;p&gt;
+NB: the upgrade itself should not be too hard, the work will be in providing a satisfactory migration script to convert existing data on ckan.net service.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/51#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/53</link>
+        <guid isPermaLink="false">http://localhost/ticket/53</guid>
+        <title>#53: View Information about Package history (i.e. package revisions)</title>
+        <pubDate>Thu, 09 Oct 2008 11:35:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsA"&gt;As A&lt;/h1&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;Visitor/User?&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="Iwantto"&gt;I want to&lt;/h1&gt;
+&lt;p&gt;
+View information about a package history, i.e. what revisions it has.
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;History info should be available at package/history/pkg-name
+&lt;/li&gt;&lt;li&gt;Most basic info is just info from revision (when it occurred, author etc)
+&lt;/li&gt;&lt;li&gt;More sophisticated would be to have diff support to see differences between revisions
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/53#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/54</link>
+        <guid isPermaLink="false">http://localhost/ticket/54</guid>
+        <title>#54: Support dump and load of CKAN data to JSON</title>
+        <pubDate>Mon, 13 Oct 2008 14:24:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="Asa"&gt;As a&lt;/h1&gt;
+&lt;p&gt;
+Sysadmin
+&lt;/p&gt;
+&lt;h1 id="Iwantto"&gt;I want to&lt;/h1&gt;
+&lt;p&gt;
+Dump (serialize) CKAN data to a simple transport format (e.g. JSON) and be able to load it again.
+&lt;/p&gt;
+&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;Already have simple db dump. However dumping to JSON has various advantages, particularly where changes to the data need to be made upon reloading (e.g. during a migration).
+&lt;/li&gt;&lt;li&gt;Dump should include *all* CKAN data (i.e. all the data in the CKAN db tables)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/54#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/55</link>
+        <guid isPermaLink="false">http://localhost/ticket/55</guid>
+        <title>#55: Code to migrate data from v0.6 to v0.7 using dump and load</title>
+        <pubDate>Mon, 13 Oct 2008 14:30:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Associated to &lt;a class="closed ticket" href="http://localhost/ticket/51" title="enhancement: Upgrade CKAN to use sqlalchemy and vdm v0.2 (closed: fixed)"&gt;ticket:51&lt;/a&gt; (upgrade CKAN to new vdm) and &lt;a class="closed ticket" href="http://localhost/ticket/54" title="enhancement: Support dump and load of CKAN data to JSON (closed: fixed)"&gt;ticket:54&lt;/a&gt; (dump/load) need to convert v0.6 data for v0.7.
+&lt;/p&gt;
+&lt;p&gt;
+Obvious way to do this is via alteration to data load method.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/55#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/56</link>
+        <guid isPermaLink="false">http://localhost/ticket/56</guid>
+        <title>#56: Show icons indicating package openness</title>
+        <pubDate>Thu, 25 Dec 2008 13:18:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+User or Visitor
+&lt;/p&gt;
+&lt;h2 id="IWantTo"&gt;I Want To&lt;/h2&gt;
+&lt;p&gt;
+See simple icons (e.g. tick/cross) next to packages (in lists or on main page) indicating openness status of package.
+&lt;/p&gt;
+&lt;h2 id="SoThat"&gt;So That&lt;/h2&gt;
+&lt;p&gt;
+It is easy to see the openness status of a package.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Suggested by Liz Turner
+&lt;/li&gt;&lt;li&gt;Openness = open license at present (no easy way to determine whether accessible)
+&lt;/li&gt;&lt;li&gt;Have separate tick for downloadability (i.e. existence of download url)
+&lt;/li&gt;&lt;li&gt;Could do more stuff in future (e.g. money where tag price- exists, etc etc)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/56#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/57</link>
+        <guid isPermaLink="false">http://localhost/ticket/57</guid>
+        <title>#57: Basic datapkg integration with CKAN</title>
+        <pubDate>Fri, 03 Apr 2009 09:27:06 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Using datapkg a user can:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;list packages on CKAN
+&lt;/li&gt;&lt;li&gt;get info about package on CKAN
+&lt;/li&gt;&lt;li&gt;register and update a package on CKAN
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/57#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/58</link>
+        <guid isPermaLink="false">http://localhost/ticket/58</guid>
+        <title>#58: Make bookmarklet to enable easy package registration on CKAN</title>
+        <pubDate>Mon, 06 Apr 2009 11:48:37 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Make bookmarklet to enable easy package registration on CKAN
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;This requires redoing web interface to allow 1-step package creation/editing (as opposed to name then everything else approach at the moment)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/58#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/59</link>
+        <guid isPermaLink="false">http://localhost/ticket/59</guid>
+        <title>#59: Provide a basic guide to CKAN on the site</title>
+        <pubDate>Mon, 06 Apr 2009 11:49:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Use contents from ckan package notes section (rgrp)
+&lt;/li&gt;&lt;li&gt;Update that section to be more guide-like (jwyg)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/59#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/60</link>
+        <guid isPermaLink="false">http://localhost/ticket/60</guid>
+        <title>#60: Front page usability improvements</title>
+        <pubDate>Tue, 07 Apr 2009 08:51:06 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;List in sidebar 3 latest created/updated packages.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Put package search box on front page (might also want to move some of front page content into an about page).
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Similarly might want package creation box on front page.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/60#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/61</link>
+        <guid isPermaLink="false">http://localhost/ticket/61</guid>
+        <title>#61: When dumping data to json do not dump private information like API keys</title>
+        <pubDate>Tue, 07 Apr 2009 16:58:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/61#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/62</link>
+        <guid isPermaLink="false">http://localhost/ticket/62</guid>
+        <title>#62: Change tags to contain any character (other than space)</title>
+        <pubDate>Fri, 24 Apr 2009 14:58:15 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Requires us to url encode the tag names when displaying them ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/62#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/63</link>
+        <guid isPermaLink="false">http://localhost/ticket/63</guid>
+        <title>#63: Purge is broken after upgrade of vdm</title>
+        <pubDate>Tue, 16 Jun 2009 10:37:03 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Since we upgraded to new vdm (v0.4) which has built in purge support existing purge support looks to be broken. Should be reasonably easy to fix this.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/63#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/64</link>
+        <guid isPermaLink="false">http://localhost/ticket/64</guid>
+        <title>#64: Switch to repoze.who for authentication</title>
+        <pubDate>Tue, 16 Jun 2009 16:14:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Switch to repoze.who + openid plugin for authentication from authkit.
+&lt;/p&gt;
+&lt;p&gt;
+Already did this in microfacts so should be fairly easy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/64#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/65</link>
+        <guid isPermaLink="false">http://localhost/ticket/65</guid>
+        <title>#65: Add version attribute to package</title>
+        <pubDate>Wed, 17 Jun 2009 18:21:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+It is essential packages have a version attribute to assist in tracking releases etc (and to allow compatibility with other packaging systems e.g. distutils which is being used by datapkg).
+&lt;/p&gt;
+&lt;p&gt;
+cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/65#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/66</link>
+        <guid isPermaLink="false">http://localhost/ticket/66</guid>
+        <title>#66: Improve user account UI</title>
+        <pubDate>Wed, 17 Jun 2009 18:34:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Link at top should say "Your Account" when you are logged in
+&lt;ul&gt;&lt;li&gt;when not logged in should say: "Log in via openid"
+&lt;/li&gt;&lt;li&gt;Open Id info on /account/ should move to /account/login/ or be deleted
+&lt;/li&gt;&lt;li&gt;Going to /account/ when not logged in should redirect to /account/login/
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;When logged in the basic account index page should not give generic information but should reflect fact you are logged in by:
+&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;Saying something like: "You are logged in as: ..."
+&lt;/li&gt;&lt;li&gt;Showing your apikey or a link to apikey
+&lt;/li&gt;&lt;li&gt;Giving you a logout link
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+We can think of a bunch of other stuff that could go on their (recent edits, packages you own etc) but these will be separate tickets.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/66#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/67</link>
+        <guid isPermaLink="false">http://localhost/ticket/67</guid>
+        <title>#67: List all of a user's recent edits on their home page</title>
+        <pubDate>Wed, 17 Jun 2009 18:35:31 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Additional feature related to &lt;a class="closed ticket" href="http://localhost/ticket/66" title="enhancement: Improve user account UI (closed: fixed)"&gt;ticket:66&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/67#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/68</link>
+        <guid isPermaLink="false">http://localhost/ticket/68</guid>
+        <title>#68: Show affected packages in revision list view</title>
+        <pubDate>Mon, 22 Jun 2009 07:35:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When listing revisions (at /revision/ or in atom feed) show affected packages. Minor but v. useful UI improvement.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/68#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/69</link>
+        <guid isPermaLink="false">http://localhost/ticket/69</guid>
+        <title>#69: Change to text-only license field and use external license repo</title>
+        <pubDate>Mon, 22 Jun 2009 16:17:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Switch from license domain object to a simple license field and use license list from new centralised license repo:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;&lt;a class="ext-link" href="http://knowledgeforge.net/okfn/licenses/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://knowledgeforge.net/okfn/licenses/&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This will &lt;strong&gt;require&lt;/strong&gt; a migration
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 4h (plus migration ...)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/69#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/70</link>
+        <guid isPermaLink="false">http://localhost/ticket/70</guid>
+        <title>#70: Convert from py.test to nosetests</title>
+        <pubDate>Wed, 01 Jul 2009 07:52:33 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/70#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/71</link>
+        <guid isPermaLink="false">http://localhost/ticket/71</guid>
+        <title>#71: Upgrade to Pylons 0.9.7</title>
+        <pubDate>Wed, 01 Jul 2009 07:57:21 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/71#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/72</link>
+        <guid isPermaLink="false">http://localhost/ticket/72</guid>
+        <title>#72: Integrate new logo</title>
+        <pubDate>Wed, 01 Jul 2009 09:37:01 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Integrate new logo from &lt;a class="ext-link" href="http://wiki.okfn.org/ckan/logo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/ckan/logo&lt;/a&gt; into site:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;In title
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also can do favicon (separate &lt;a class="closed ticket" href="http://localhost/ticket/48" title="enhancement: Create favicon (closed: fixed)"&gt;ticket:48&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/72#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/74</link>
+        <guid isPermaLink="false">http://localhost/ticket/74</guid>
+        <title>#74: Add Is It Open links to package pages</title>
+        <pubDate>Fri, 17 Jul 2009 10:56:58 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+On each package page in the openness field if the package is not open provide a link to is it open create enquiry page.
+&lt;/p&gt;
+&lt;p&gt;
+Details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;may want to add to the url a query parameter indicating which package this relates to e.g. ?ckan-package=...
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://isitopen.ckan.net/enquiry/create/?ckan-package="&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://isitopen.ckan.net/enquiry/create/?ckan-package=&lt;/a&gt;...
+&lt;/li&gt;&lt;li&gt;do we provide link even if package is open (e.g. so that people can make enquiries about e.g. adding open data/content buttons ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 0.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/74#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/76</link>
+        <guid isPermaLink="false">http://localhost/ticket/76</guid>
+        <title>#76: Convert to use formalchemy for all forms</title>
+        <pubDate>Fri, 17 Jul 2009 11:10:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Current form stuff is not very good (uses formencode). Switch to formalchemy would improve this, especially on validation.
+&lt;/p&gt;
+&lt;p&gt;
+As an extra we could utilize the formalchemy pylons admin interface (pretty much for free).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 12h
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;Replace htmlfill and formencode extract in controllers/templates with formalchemy
+&lt;ol&gt;&lt;li&gt;Crude and simple
+&lt;/li&gt;&lt;li&gt;Suppress unwanted fields (revision, state, all revisions) and sort out ordering to be similar to before.
+&lt;/li&gt;&lt;li&gt;Sort out tag field with a special renderer
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Validation - testing definitely required.
+&lt;/li&gt;&lt;li&gt;Fix up description and pretty css etc
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/76#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/77</link>
+        <guid isPermaLink="false">http://localhost/ticket/77</guid>
+        <title>#77: Rate packages</title>
+        <pubDate>Fri, 17 Jul 2009 11:13:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsaUserorVisitor"&gt;As a User or Visitor&lt;/h1&gt;
+&lt;p&gt;
+I wish to rate a package in some way. On the package view, below Openness, there is a 'Rating' heading with the star rating which is selectable.
+&lt;/p&gt;
+&lt;p&gt;
+Rating out of 5. One user or IP, one vote.
+&lt;/p&gt;
+&lt;p&gt;
+package_rating table:
+&lt;/p&gt;
+&lt;p&gt;
+package      | user                  | rating
+annakarenina | joe.bloggs.openid.com | 4
+annakarenina | 154.2.5.47            | 1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/77#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/78</link>
+        <guid isPermaLink="false">http://localhost/ticket/78</guid>
+        <title>#78: Extend login cookie lifetime</title>
+        <pubDate>Fri, 17 Jul 2009 11:15:10 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When you login you get given a cookie but it is very short (life of your browser session I think).
+&lt;/p&gt;
+&lt;p&gt;
+Work out how to extend to something reasonable (30 days or perhaps forever with logout unsetting cookie).
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;A quick investigation to see whether this is possible
+&lt;/li&gt;&lt;li&gt;If possible do it
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Cost: ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/78#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/79</link>
+        <guid isPermaLink="false">http://localhost/ticket/79</guid>
+        <title>#79: Improvements to package search</title>
+        <pubDate>Fri, 17 Jul 2009 11:24:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Several things:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Default package search (used e.g. on front page) should deal well with multiple items: "abc xyz" means search for both abc and xyz (as separate searches)
+&lt;/li&gt;&lt;li&gt;Should automatically display a list of matching tags in a line at top with number of associated packages
+&lt;/li&gt;&lt;li&gt;have an option to only search for fully open material (or openly licensed material ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Since we should be moving to a more sophisticated search solution anyway (to allow prioritisation etc) maybe we should cautious as to what we do now.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/79#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/80</link>
+        <guid isPermaLink="false">http://localhost/ticket/80</guid>
+        <title>#80: Refactor or remove modes code</title>
+        <pubDate>Fri, 17 Jul 2009 15:24:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Get rid of modes in the RESTful API. Do json stuff directly in controllers.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;package will have to_dict and from_dict methods (called by rest controller) which provide and consume JSON friendly dictionaries representing the object. from_dict - class_method. stuff in forms for tags as_string, maybe factor out. reuse validation stuff.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/80#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/81</link>
+        <guid isPermaLink="false">http://localhost/ticket/81</guid>
+        <title>#81: Support for sqlalchemy 0.5</title>
+        <pubDate>Wed, 22 Jul 2009 17:57:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/81#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/82</link>
+        <guid isPermaLink="false">http://localhost/ticket/82</guid>
+        <title>#82: Support diffing of versioned objects</title>
+        <pubDate>Wed, 22 Jul 2009 19:04:59 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should have function/facility to get a diff of a version object between 2 revisions. Function should return a dictionary of fields with diffs.
+&lt;/p&gt;
+&lt;p&gt;
+Details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Do we deal with m2m relationships (and m2one on the many side)?
+&lt;/li&gt;&lt;li&gt;What is diff?
+&lt;ul&gt;&lt;li&gt;For text fields output of python diff command
+&lt;/li&gt;&lt;li&gt;For non-text field guess just simple +/- for what was there before and now
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 4h (don't think this is a huge request)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/82#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/83</link>
+        <guid isPermaLink="false">http://localhost/ticket/83</guid>
+        <title>#83: Allow "ignored" fields on versioned objects</title>
+        <pubDate>Thu, 23 Jul 2009 08:56:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Allow 'ignored' fields on versioned objects (i.e. attributes which are not 'versioned'). This is not hard to do as we already have most of the necessary mechanisms set up in the Revisioner object.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/83#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/85</link>
+        <guid isPermaLink="false">http://localhost/ticket/85</guid>
+        <title>#85: Convert state from an object to an enumeration</title>
+        <pubDate>Thu, 23 Jul 2009 09:01:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+No real benefit of having State object as opposed to a simple text field with enumerated values and this second option is both simpler and more flexible.
+&lt;/p&gt;
+&lt;p&gt;
+Main hassle here is that it requires migration in all projects that use vdm.
+&lt;/p&gt;
+&lt;p&gt;
+If we're going to do this we should do it sooner rather than later.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h (+ 1h for a conversion method)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/85#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/86</link>
+        <guid isPermaLink="false">http://localhost/ticket/86</guid>
+        <title>#86: Support for stateful dict-like collections</title>
+        <pubDate>Fri, 24 Jul 2009 10:19:58 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Already support stateful list-like collections and should extend this to dict-like collections.
+&lt;/p&gt;
+&lt;p&gt;
+(This is prerequisite for implementing versioned "extra" (key/value) attributes on packages in CKAN and elsewhere).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/86#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/88</link>
+        <guid isPermaLink="false">http://localhost/ticket/88</guid>
+        <title>#88: Download (link) metadata</title>
+        <pubDate>Mon, 27 Jul 2009 11:16:25 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Support for download metadata (file size, file formats, version information).
+&lt;/p&gt;
+&lt;p&gt;
+See also: &lt;a class="closed ticket" href="http://localhost/ticket/87" title="enhancement: Multiple download links (closed: duplicate)"&gt;ticket:87&lt;/a&gt; (multiple download links)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/88#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/89</link>
+        <guid isPermaLink="false">http://localhost/ticket/89</guid>
+        <title>#89: Tag cloud for package tags</title>
+        <pubDate>Mon, 27 Jul 2009 11:25:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should not be hard to do (lots of existing libraries) but not sure that this is very important.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/89#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/90</link>
+        <guid isPermaLink="false">http://localhost/ticket/90</guid>
+        <title>#90: Link to RDF versions of CKAN data</title>
+        <pubDate>Thu, 30 Jul 2009 08:49:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We should link to representations on semantic.ckan.net
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Each package page could link to its RDF representation
+&lt;ul&gt;&lt;li&gt;"Alternative formats" near star rating. Has logo for RDF (link to RDF) and JSON (link via CKAN REST i/f).
+&lt;/li&gt;&lt;li&gt;Some instances of ckan won't need this, so have option in ini file for this. rdf_store_url=xyz
+&lt;/li&gt;&lt;li&gt;Include machine-readable link to the RDF:
+&lt;pre class="wiki"&gt;&amp;lt;meta http-equiv=... /&amp;gt;
+&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;303 redirect to RDF when content negotiation requires RDF. Test:
+&lt;pre class="wiki"&gt;curl -I -H "Accept: application/rdf+xml" http://localhost:5000/package/warandpeace
+&lt;/pre&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 3h
+&lt;/p&gt;
+&lt;h2 id="Future"&gt;Future&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Search page to link to SPARQL interface: &lt;a class="ext-link" href="http://semantic.ckan.net/sparql"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://semantic.ckan.net/sparql&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;License/dump page could link to full RDF dump.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/90#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/91</link>
+        <guid isPermaLink="false">http://localhost/ticket/91</guid>
+        <title>#91: Add author and maintainer attributes to package</title>
+        <pubDate>Fri, 31 Jul 2009 14:16:20 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add the following attributes to package:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;author, author_email
+&lt;/li&gt;&lt;li&gt;maintainer, maintainer_email
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Gives us full compatibility to: &lt;a class="ext-link" href="http://docs.python.org/distutils/setupscript.html#additional-meta-data"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/distutils/setupscript.html#additional-meta-data&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Column ordering - should come after name, title, url, download_url.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/91#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/93</link>
+        <guid isPermaLink="false">http://localhost/ticket/93</guid>
+        <title>#93: Access control for packages</title>
+        <pubDate>Fri, 31 Jul 2009 15:44:09 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should be able to limit ability to a user's ability to do things with packages (read, edit etc). This is a big ticket (it may required splitting) and full details are in separate wiki page: &lt;a class="wiki" href="http://localhost/wiki/AccessControl"&gt;AccessControl&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 8d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/93#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/94</link>
+        <guid isPermaLink="false">http://localhost/ticket/94</guid>
+        <title>#94: Use sqlalchemy-migrate to handle db/model upgrades</title>
+        <pubDate>Sat, 01 Aug 2009 13:43:05 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Details of how to go about this here &amp;lt;&lt;a class="ext-link" href="http://www.rufuspollock.org/2009/07/27/sqlalchemy-migrate-with-pylons/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.rufuspollock.org/2009/07/27/sqlalchemy-migrate-with-pylons/&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/94#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/95</link>
+        <guid isPermaLink="false">http://localhost/ticket/95</guid>
+        <title>#95: Add manifest support</title>
+        <pubDate>Tue, 11 Aug 2009 09:10:42 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Support for listing files (manifest) contained within a package.
+&lt;/p&gt;
+&lt;p&gt;
+Traditional manifests just list the files. Suggest in addition we have support for optional metadata in form of key, value pairs.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/95#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/98</link>
+        <guid isPermaLink="false">http://localhost/ticket/98</guid>
+        <title>#98: Replace use of pastescript templates in PythonDistribution with of something simpler</title>
+        <pubDate>Tue, 11 Aug 2009 09:43:30 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Replace use of pastescript templates in &lt;a class="missing wiki"&gt;PythonDistribution?&lt;/a&gt; (write) with of something simpler (allowing us to remove dependency on pastescript).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/98#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/100</link>
+        <guid isPermaLink="false">http://localhost/ticket/100</guid>
+        <title>#100: Convert existing data on disk to a datapkg distribution</title>
+        <pubDate>Tue, 11 Aug 2009 10:30:28 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+(2008-10-29) convert existing directory on disk to a datapkg distribution (&lt;a class="missing wiki"&gt;PythonDistribution?&lt;/a&gt; by default). This would be presented in the CLI as a convert command.
+&lt;/p&gt;
+&lt;p&gt;
+Details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add a metadata file (setup.py), perhaps prompting for input
+&lt;/li&gt;&lt;li&gt;List all existing data in that directory
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 4h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/100#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/101</link>
+        <guid isPermaLink="false">http://localhost/ticket/101</guid>
+        <title>#101: (Improved) Download support</title>
+        <pubDate>Tue, 11 Aug 2009 11:07:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Given a url download from that url to disk
+&lt;/li&gt;&lt;li&gt;Given a package use download url to download to disk
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Once on disk should uncompress (if necessary).
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Should download either to tmp directory (defaulted in config) or a specified path on disk
+&lt;/li&gt;&lt;li&gt;In download would like to support as many types of target urls as possible:
+&lt;ol&gt;&lt;li&gt;Single files (usually compressed filesets but could be individual files)
+&lt;/li&gt;&lt;li&gt;Index pages listing files to download
+&lt;/li&gt;&lt;li&gt;Revision control repositories
+&lt;/li&gt;&lt;li&gt;...
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+This will obviously be a significant amount of work. Suggest:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;&lt;li&gt;Start off just supporting the first option.
+&lt;/li&gt;&lt;li&gt;Have something like a plugin system to handle new target types
+&lt;/li&gt;&lt;li&gt;Reuse existing work (e.g. easy_install and pip handle standard vcs such as svn, hg, git etc)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Cost: 1d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/101#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/102</link>
+        <guid isPermaLink="false">http://localhost/ticket/102</guid>
+        <title>#102: Switch to using UUIDs for revision ids</title>
+        <pubDate>Wed, 12 Aug 2009 09:09:35 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This is better for long term sustainability, especially if we want to "push and pull" from unrelated repositories in the future.
+&lt;/p&gt;
+&lt;p&gt;
+Details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;May wish to retain a number field updated in the usual incremental way (what's the cost/benefit here?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/102#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/103</link>
+        <guid isPermaLink="false">http://localhost/ticket/103</guid>
+        <title>#103: View a package at a given revision</title>
+        <pubDate>Wed, 26 Aug 2009 12:31:37 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to view a package at a given revision:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When I visit /package/read/xyz?rev=yyy I should be shown package at revision yyy
+&lt;/li&gt;&lt;li&gt;package history page should provide links to these pages
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/103#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/104</link>
+        <guid isPermaLink="false">http://localhost/ticket/104</guid>
+        <title>#104: View a package at a given version</title>
+        <pubDate>Wed, 26 Aug 2009 13:17:52 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a user i want to see a package at "version" X (NB: not revision X).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When I visit e.g. /package/read/xyz?version=0.7 I should be shown package at version 0.7 (or a message saying no such version)
+&lt;/li&gt;&lt;li&gt;Implementation:
+&lt;ul&gt;&lt;li&gt;Find revision for this version (search revision history for when version field was last 0.7)
+&lt;/li&gt;&lt;li&gt;Show pacakge at that revision (as in &lt;a class="closed ticket" href="http://localhost/ticket/103" title="enhancement: View a package at a given revision (closed: fixed)"&gt;ticket:103&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;On history page also shows versions in list of revisions associated with the package
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/104#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/105</link>
+        <guid isPermaLink="false">http://localhost/ticket/105</guid>
+        <title>#105: Package groups (view)</title>
+        <pubDate>Thu, 27 Aug 2009 16:58:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to be able to create groups of packages.
+&lt;/p&gt;
+&lt;p&gt;
+This functionality is different from tags:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The ability to add a package to a given group is restricted whereas anyone can add a given tag to a package
+&lt;/li&gt;&lt;li&gt;Specifically groups have owners and only the owners can add a package to that group
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Group properties
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;id (primarykey, uuid style)
+&lt;/li&gt;&lt;li&gt;name (restricted content - same rules as package)
+&lt;/li&gt;&lt;li&gt;title (no restrictions)
+&lt;/li&gt;&lt;li&gt;owners -- many:many with user object
+&lt;/li&gt;&lt;li&gt;description (markdown)
+&lt;/li&gt;&lt;li&gt;packages -- many:many with package object
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Don't version groups for now.
+&lt;/p&gt;
+&lt;p&gt;
+Groups address in the WUI will be:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;/group     - browse list of groups (reuse list action)
+&lt;/li&gt;&lt;li&gt;/group/list - same thing for now
+&lt;/li&gt;&lt;li&gt;/group/&amp;lt;groupname&amp;gt; - display: group properties with links to packages. No links to user pages (yet).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Group editing and searching will be another ticket.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 3d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/105#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/108</link>
+        <guid isPermaLink="false">http://localhost/ticket/108</guid>
+        <title>#108: Package search in the REST API</title>
+        <pubDate>Wed, 02 Sep 2009 18:24:05 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add package search facility in the rest api at /api/search
+&lt;/p&gt;
+&lt;p&gt;
+Queries can be provided as for the normal package search either by posting to that url or by performing a get with a query string.
+&lt;/p&gt;
+&lt;p&gt;
+E.g. .../api/search/package?q=xyz
+&lt;/p&gt;
+&lt;p&gt;
+Query parameters:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;q is keyword string (searches name, title, tags by default)
+&lt;ul&gt;&lt;li&gt;split by words and ANDed
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;additional parameters for specific fields
+&lt;/li&gt;&lt;li&gt;qjson is alternative to q for Searching by specific fields (in addition to keyword string). Payload to json is a JSON-encoded dict which is a dictionary with a q field for free text (keywords) and additional key/value pairs for specific fields
+&lt;ul&gt;&lt;li&gt;if q and qjson specified ignore q and just process qjson value
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Additional parameters in addition to query ("q" or "qjson") are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;limit
+&lt;/li&gt;&lt;li&gt;offset
+&lt;/li&gt;&lt;li&gt;fullinfo=0/1 - return full record for each result (default=0)
+&lt;/li&gt;&lt;li&gt;order_by=field_name
+&lt;/li&gt;&lt;li&gt;search_notes=0/1 (default 0) do we search notes field in a keyword search
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Return value is json encoded dictionary with keys:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'results': list of results
+&lt;/li&gt;&lt;li&gt;'count': total number of results
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Extrasforthefuture"&gt;Extras (for the future)&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Prioritisation is not part of this ticket (requires fulltext support in DB or in external app such as Xapian)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/108#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/109</link>
+        <guid isPermaLink="false">http://localhost/ticket/109</guid>
+        <title>#109: Tag search in the REST API</title>
+        <pubDate>Thu, 03 Sep 2009 11:11:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Similar to &lt;a class="closed ticket" href="http://localhost/ticket/108" title="enhancement: Package search in the REST API (closed: fixed)"&gt;ticket:108&lt;/a&gt; but for tags:
+&lt;/p&gt;
+&lt;p&gt;
+/api/search/tag?q
+&lt;/p&gt;
+&lt;p&gt;
+For tags search is extremely simple since you can only search by name.
+&lt;/p&gt;
+&lt;h2 id="PossibleExtras"&gt;Possible Extras&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Allow "exotic" ordering of results e.g. ordering by number of packages with that tag.
+&lt;/li&gt;&lt;li&gt;Return this number with tag list.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/109#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/110</link>
+        <guid isPermaLink="false">http://localhost/ticket/110</guid>
+        <title>#110: Integrate groups into packages</title>
+        <pubDate>Mon, 07 Sep 2009 09:32:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Package needs a groups property (backref Group.packages).
+&lt;/li&gt;&lt;li&gt;Put groups in the search api.
+&lt;/li&gt;&lt;li&gt;Display them on the package, but not editable. (Only editable from the group page.)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Follow up to &lt;a class="closed ticket" href="http://localhost/ticket/105" title="enhancement: Package groups (view) (closed: fixed)"&gt;ticket:105&lt;/a&gt; (Groups).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/110#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/111</link>
+        <guid isPermaLink="false">http://localhost/ticket/111</guid>
+        <title>#111: Create user object</title>
+        <pubDate>Mon, 07 Sep 2009 09:33:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Object properties:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;id (uuid)
+&lt;/li&gt;&lt;li&gt;apikey (uuid) -- migrated from the apikey table
+&lt;/li&gt;&lt;li&gt;name (username = openid)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+/account is being renamed to /user in the wui.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/111#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/113</link>
+        <guid isPermaLink="false">http://localhost/ticket/113</guid>
+        <title>#113: Simple script to test data migration on a production db</title>
+        <pubDate>Mon, 07 Sep 2009 09:42:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Must not alter the db.
+&lt;/p&gt;
+&lt;p&gt;
+Related to &lt;a class="closed ticket" href="http://localhost/ticket/112" title="enhancement: Test db schema created via migration scripts (closed: wontfix)"&gt;ticket:112&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/113#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/114</link>
+        <guid isPermaLink="false">http://localhost/ticket/114</guid>
+        <title>#114: Access Control - model</title>
+        <pubDate>Wed, 09 Sep 2009 11:08:47 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Create in the model basic operation of Access Control.
+&lt;/p&gt;
+&lt;p&gt;
+roles table
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;name | context | action
+-----------------------
+admin| package | edit
+admin| package | edit-permissions
+admin| package | read
+editor| package | update
+editor| package | read
+reader| package | read
+This data is set-up on db init and will have no interface.
+&lt;/pre&gt;&lt;p&gt;
+user-roles table:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;username | context_type | objectid | role
+rgrp     | system  | n/a | admin
+visitor  | package | * | reader
+bob      | package | geonames | admin
+visitor  | package | geonames | editor
+visitor  | package | geonames | reader
+john     | group | ukgov | admin
+dread    | group | ukgov | editor
+visitor  | group | ukgov | reader
+This data will be added when someone is given permissions for the system, a package or a group.
+&lt;/pre&gt;&lt;p&gt;
+Pseudo code:
+&lt;/p&gt;
+&lt;p&gt;
+class Package
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def is_allowed(name, action):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+is_allowed(name, action, context=self)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+class Group
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def is_allowed(name, action):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+is_allowed(name, action, context=self)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+def is_allowed(name, action, context=None):
+&lt;strong&gt; name: string - a username or IP for 'visitor'
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+action: string - 'read', 'edit', 'delete', 'edit-permissions'
+context: object - a Group or a Package or None (which means system)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;strong&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# look up user from name.
+# look up in user-roles table what roles this user has for this context.
+# for each roles, look up in roles table what actions are allowed.
+# return True if action is allowed, else False.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/114#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/115</link>
+        <guid isPermaLink="false">http://localhost/ticket/115</guid>
+        <title>#115: Access Control - wui constrained by model</title>
+        <pubDate>Tue, 15 Sep 2009 17:06:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Based on a section of &lt;a class="wiki" href="http://localhost/wiki/AccessControl"&gt;AccessControl&lt;/a&gt; design:
+Reading and writing to packages in the WUI and REST API are now dependent on the authz tables.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/115#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/116</link>
+        <guid isPermaLink="false">http://localhost/ticket/116</guid>
+        <title>#116: Access Control - edited in wui</title>
+        <pubDate>Tue, 15 Sep 2009 17:13:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Based on a section of &lt;a class="wiki" href="http://localhost/wiki/AccessControl"&gt;AccessControl&lt;/a&gt; design:
+WUI gives controls to user and administrator to change permissions on a package.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/116#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/117</link>
+        <guid isPermaLink="false">http://localhost/ticket/117</guid>
+        <title>#117: Access Control - group core functionality</title>
+        <pubDate>Fri, 18 Sep 2009 10:55:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Based on a section of &lt;a class="wiki" href="http://localhost/wiki/AccessControl"&gt;AccessControl&lt;/a&gt; design:
+Group reads and edits are controlled by access control. WUI and REST interfaces covered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/117#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/118</link>
+        <guid isPermaLink="false">http://localhost/ticket/118</guid>
+        <title>#118: Use paginate in webhelpers</title>
+        <pubDate>Fri, 18 Sep 2009 11:34:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Take out import of paginate in setup.py.
+Use paginate in webhelpers instead.
+Make changes to take account of any i/f changes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/118#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/119</link>
+        <guid isPermaLink="false">http://localhost/ticket/119</guid>
+        <title>#119: Ensure non-active packages don't show up</title>
+        <pubDate>Mon, 21 Sep 2009 10:36:54 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Ensure pending packages don't show up in search or browse
+&lt;/p&gt;
+&lt;p&gt;
+cost: 4h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/119#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/120</link>
+        <guid isPermaLink="false">http://localhost/ticket/120</guid>
+        <title>#120: Security audit</title>
+        <pubDate>Mon, 21 Sep 2009 10:37:07 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Look for all places where model is accessed and check authorization is checked.
+&lt;/p&gt;
+&lt;p&gt;
+Document holes (and, as necessary, suggestions for fixes) as new tickets. Likely areas that need looking at:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;search i/f
+&lt;/li&gt;&lt;li&gt;package WUI commit
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Write holes are obviously much more significant to us than read holes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/120#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/121</link>
+        <guid isPermaLink="false">http://localhost/ticket/121</guid>
+        <title>#121: Add 'Group' to main menu</title>
+        <pubDate>Wed, 23 Sep 2009 08:33:47 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+And associated page to browse group.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/121#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/122</link>
+        <guid isPermaLink="false">http://localhost/ticket/122</guid>
+        <title>#122: Add Group authz page</title>
+        <pubDate>Wed, 23 Sep 2009 08:34:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/122#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/123</link>
+        <guid isPermaLink="false">http://localhost/ticket/123</guid>
+        <title>#123: Ability to edit Group in WUI</title>
+        <pubDate>Wed, 23 Sep 2009 12:14:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Add Group editing page.
+&lt;/p&gt;
+&lt;p&gt;
+If no permissions to change group can't edit group. Also cannot view edit page.
+&lt;/p&gt;
+&lt;p&gt;
+Editable attributes: name, title, description
+&lt;/p&gt;
+&lt;p&gt;
+No preview needed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/123#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/124</link>
+        <guid isPermaLink="false">http://localhost/ticket/124</guid>
+        <title>#124: Display Generic Package Attributes in WUI</title>
+        <pubDate>Wed, 23 Sep 2009 12:41:42 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Split out from &lt;a class="closed ticket" href="http://localhost/ticket/43" title="enhancement: Generic Attributes for Packages (closed: fixed)"&gt;ticket:43&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/124#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/126</link>
+        <guid isPermaLink="false">http://localhost/ticket/126</guid>
+        <title>#126: Change package state in the WUI (delete and undelete)</title>
+        <pubDate>Thu, 24 Sep 2009 10:52:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+As a Package Admin I want to change the state of the package. In particular I wish to delete and undelete it.
+&lt;/p&gt;
+&lt;p&gt;
+(NB: this is quite separate from "purging" objects which is the term we shall use for irrevocable removal of an object from the domain model).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Only Package Admins (and sysadmins) should be able to change state
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="ImplementationSuggestions"&gt;Implementation Suggestions&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;'delete' action should be renamed to 'change-state' (NB: this requires a db migration ...)
+&lt;/li&gt;&lt;li&gt;Have new package formalchemy form (created via inheritance?) to incorporate state attribute. Suggest this is rendered as a dropdown (and may be simple object rendering of state, i.e. do NOT need to change it to a single name such 'active').
+&lt;/li&gt;&lt;li&gt;This form should then be used when the user satisfies is_authorized(..., model.Action.CHANGE_STATE) instead of the usual fieldset
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/126#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/127</link>
+        <guid isPermaLink="false">http://localhost/ticket/127</guid>
+        <title>#127: Minor form and UI improvements</title>
+        <pubDate>Thu, 24 Sep 2009 13:24:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;group form: description field for  needs to be a text area
+&lt;/li&gt;&lt;li&gt;group form: make title and name field wider
+&lt;/li&gt;&lt;li&gt;package view: need to move tags and license above notes
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/127#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/128</link>
+        <guid isPermaLink="false">http://localhost/ticket/128</guid>
+        <title>#128: Add ckan_url attribute to REST JSON representation of a Package</title>
+        <pubDate>Fri, 25 Sep 2009 08:18:33 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add ckan_url attribute to REST JSON representation of a Package pointing to the (read) url of package on CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 30m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/128#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/130</link>
+        <guid isPermaLink="false">http://localhost/ticket/130</guid>
+        <title>#130: Create a New Group via the WUI</title>
+        <pubDate>Mon, 28 Sep 2009 09:30:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+User
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Create a new group via the WUI
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;locate at /group/new/
+&lt;/li&gt;&lt;li&gt;You must be logged in to create a group
+&lt;/li&gt;&lt;li&gt;Group creator is automatically given role of group admin
+&lt;/li&gt;&lt;li&gt;Edit screen is same as edit screen ...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/130#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/131</link>
+        <guid isPermaLink="false">http://localhost/ticket/131</guid>
+        <title>#131: Groups REST interface</title>
+        <pubDate>Wed, 30 Sep 2009 10:52:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Controlling Groups through a REST interface.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/131#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/132</link>
+        <guid isPermaLink="false">http://localhost/ticket/132</guid>
+        <title>#132: Security hole - read package/group list (REST)</title>
+        <pubDate>Thu, 01 Oct 2009 09:31:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Using REST interface you can list packages and groups without authorization being checked.
+&lt;/p&gt;
+&lt;p&gt;
+Can be fixed using more advanced query to check authz.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/132#changelog</comments>
+    </item>
+ </channel>
+</rss>

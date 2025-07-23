@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~solr&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~solr&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2585</link>
+        <guid isPermaLink="false">http://localhost/ticket/2585</guid>
+        <title>#2585: Escape solr control characters in search queries, add advanced search screen</title>
+        <pubDate>Fri, 22 Jun 2012 10:26:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Suggestion from David Read:
+&lt;/p&gt;
+&lt;p&gt;
+We noticed that some search queries produce unexpected search results in CKAN, due to them containing special characters. For example if you were to search for "Spend over £25,000 - NHS Leeds" then it would not come up with the dataset with that exact name. It was excluding datasets with the word "NHS" due to the dash/minus sign. It works fine if you escape the minus sign: "Spend over £25,000 \- NHS Leeds".
+&lt;/p&gt;
+&lt;p&gt;
+So in data.gov.uk I've added escaping of such control characters in
+our plugin and this useful routine:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://fragmentsofcode.wordpress.com/2010/03/10/escape-special-characters-for-solrlucene-query/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://fragmentsofcode.wordpress.com/2010/03/10/escape-special-characters-for-solrlucene-query/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps you would consider providing this in CKAN core in future?
+&lt;/p&gt;
+&lt;p&gt;
+I think there is an occasional case when power users would want to use the special characters - brackets, +, -, boolean operators etc. but maybe these could be reserved for an 'advanced search' screen?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2585#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2962</link>
+        <guid isPermaLink="false">http://localhost/ticket/2962</guid>
+        <title>#2962: Search across multiple ckan instances</title>
+        <pubDate>Mon, 08 Oct 2012 22:50:22 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Could be done by:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;using the solr distributed search
+&lt;ul&gt;&lt;li&gt;difficult set up
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;merging result sets from apis
+&lt;ul&gt;&lt;li&gt;make sure that results can be merged properly (score, facets, ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2962#changelog</comments>
+    </item>
+ </channel>
+</rss>

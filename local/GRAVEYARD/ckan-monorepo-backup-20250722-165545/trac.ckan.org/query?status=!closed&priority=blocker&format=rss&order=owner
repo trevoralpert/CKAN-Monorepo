@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;priority=blocker&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;priority=blocker&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2859</link>
+        <guid isPermaLink="false">http://localhost/ticket/2859</guid>
+        <title>#2859: Fix the build</title>
+        <pubDate>Thu, 16 Aug 2012 09:26:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The requires files have been removed.  These were required by buildkit.
+&lt;/p&gt;
+&lt;p&gt;
+We've lost the information regarding which packages were already in ubuntu repos, which conflicted and which were missing.  But perhaps we can just package everything up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2859#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2766</link>
+        <guid isPermaLink="false">http://localhost/ticket/2766</guid>
+        <title>#2766: prevent draft datasets making it to activity stream</title>
+        <pubDate>Thu, 26 Jul 2012 16:06:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+The new ckan creates datasets as part of a 3 phase process.  To allow for this partially created datasets can have a state that is 'draft' or 'draft-complete'.  These datasets should not be seen as active by the activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+If we click 'add dataset' and then complete the first phase of adding a dataset then we end up having a activity stream created.  When we add a resource in the next phase (add data) again an activity stream item xxx added resource to dataset is created
+&lt;/p&gt;
+&lt;p&gt;
+We do not want these adding.  Essentially if a dataset has a state.startswith('draft') then we want the activity stream to ignore all actions involving it.
+&lt;/p&gt;
+&lt;p&gt;
+finally when the state is changed form state.startswith('draft') to state=='active' we want a xxx has created dataset ... to be added to the stream.
+&lt;/p&gt;
+&lt;p&gt;
+The best way to do this would be to branch from 2375-demo-theme-stable and get it to work there.
+&lt;/p&gt;
+&lt;p&gt;
+Let me know if you need any help with this ticket or a better explanation of the problem.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2582</link>
+        <guid isPermaLink="false">http://localhost/ticket/2582</guid>
+        <title>#2582: Do not hide notes / readme on dataset pages</title>
+        <pubDate>Thu, 21 Jun 2012 20:59:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Current we hide most of readme and then let users reveal it. Stop doing this and if necessary add a quick link down to resources section. (Maybe also rename resources to Data and Resources ...?)
+&lt;/p&gt;
+&lt;p&gt;
+Aside: believe I have mentioned this somewhere a month + ago but could not find the ticket.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2582#changelog</comments>
+    </item>
+ </channel>
+</rss>

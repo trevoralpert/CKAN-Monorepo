@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-ecportal&amp;group=resolution&amp;desc=1&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-ecportal&amp;group=resolution&amp;desc=1&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2351</link>
+        <guid isPermaLink="false">http://localhost/ticket/2351</guid>
+        <title>#2351: Install EC Portal on CentOS</title>
+        <pubDate>Tue, 01 May 2012 14:44:15 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Install and document (step-by-step) CKAN (and dependencies, and extensions) onto VM on s031.okserver.org which has CentOS 6.2 installed.  Paying particular attention to the fact that we won't have root access on the staging nor production servers, and so a) anything that requires root access must be documented carefully; and b) we want to be able to perform maintenance without being root.
+&lt;/p&gt;
+&lt;h2 id="Maintenance"&gt;Maintenance&lt;/h2&gt;
+&lt;p&gt;
+We want to have &lt;em&gt;non-root&lt;/em&gt; access to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKAN logs; (relevant) apache logs; qa process' logs; rdf cron logs
+&lt;/li&gt;&lt;li&gt;restarting CKAN
+&lt;/li&gt;&lt;li&gt;restarting qa processes
+&lt;/li&gt;&lt;li&gt;changing/disabling rdf cronjob
+&lt;/li&gt;&lt;li&gt;our database (through sql)
+&lt;/li&gt;&lt;li&gt;restarting solr
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="CKANandDependencies"&gt;CKAN and Dependencies&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;CKAN installed from source
+&lt;/li&gt;&lt;li&gt;Required plugins: synchronous_search ecportal ecportal_form organizations multilingual_dataset multilingual_group multilingual_tag qa
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Extraconfiguration"&gt;Extra configuration&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;uploads
+&lt;/li&gt;&lt;li&gt;analytics (toby)
+&lt;/li&gt;&lt;li&gt;qa
+&lt;/li&gt;&lt;li&gt;rdf cron
+&lt;/li&gt;&lt;li&gt;caching
+&lt;/li&gt;&lt;li&gt;datastore
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Thingstoremember"&gt;Things to remember&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Use ckanext/multilingual/solr/schema.xml and stopword files
+&lt;/li&gt;&lt;li&gt;Use nginx as proxy.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2351#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2593</link>
+        <guid isPermaLink="false">http://localhost/ticket/2593</guid>
+        <title>#2593: Setup nginx caching for EC ODP</title>
+        <pubDate>Mon, 25 Jun 2012 15:33:48 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Add caching config to ecportal-server-setup repository.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2593#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2594</link>
+        <guid isPermaLink="false">http://localhost/ticket/2594</guid>
+        <title>#2594: Add EU27 to EC ODP geographical coverage field</title>
+        <pubDate>Mon, 25 Jun 2012 15:36:16 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+EU27 option seems to have been removed at some point, needs to be added back to geographical coverage vocabulary and tested.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2594#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2645</link>
+        <guid isPermaLink="false">http://localhost/ticket/2645</guid>
+        <title>#2645: Update server setup to use local files</title>
+        <pubDate>Tue, 10 Jul 2012 10:31:21 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Server setup scripts need to have two distinct steps:
+&lt;/p&gt;
+&lt;p&gt;
+1) Download all files that aren't in RHEL repositories, create RPMs where necessary (python virtualenv).
+&lt;/p&gt;
+&lt;p&gt;
+2) Install from local files.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2645#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -10,7 +10,7 @@ A hardcoded SECRET_KEY was discovered in the public repository, identified by se
 
 ## 🚨 **What Was Exposed**
 
-- **Secret:** `SECRET_KEY = OPEXNgWETIOneem1sOxk7_bg8Jw`
+- **Secret:** `SECRET_KEY = [REDACTED-SECRET-REMOVED]`
 - **Location:** `CKAN-Modernization-20250721/ckan-monorepo/ckan/ckan-test.ini`
 - **First Commit:** `c0e1ad9` (July 22, 2025)
 - **Exposure Duration:** ~24 hours
@@ -40,7 +40,7 @@ A hardcoded SECRET_KEY was discovered in the public repository, identified by se
 
 ### Git History Clean ✅
 ```bash
-# Command: git log --all --full-history -S "OPEXNgWETIOneem1sOxk7_bg8Jw"
+# Command: git log --all --full-history -S "[REDACTED-SECRET]"
 # Result: No matches found (secret completely removed)
 ```
 

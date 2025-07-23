@@ -1,0 +1,56 @@
+id	summary	owner	type	priority	component	time
+2445	Create demo dataset add related page	toby	enhancement	major	ckan	05/28/12 13:10:52
+2491	Demo related page is missing breadcrumb	toby	enhancement	major	ckan	06/06/12 10:13:54
+2492	Demo create related form has broken error output	toby	enhancement	major	ckan	06/06/12 10:17:54
+2502	Create Jinja block for common helpers	toby	enhancement	minor	ckan	06/07/12 16:02:16
+2503	Look into allowing theme extensions to extend base templates	toby	enhancement	minor	ckan	06/07/12 16:04:56
+2512	Bad link on demo site.	toby	enhancement	trivial	ckan	06/12/12 16:29:57
+2208	Export strings from ckan and ckanext-ecportal to combined pot file	seanh	enhancement	minor	ckan	03/05/12 15:36:46
+2429	Get track to send notifications when tickets get assigned to peopel	seanh	enhancement	major	ckan	05/25/12 11:57:23
+2432	Draft new trac methodology	seanh	enhancement	major	ckan	05/25/12 12:02:07
+2481	Move Coding_Standards.rst into Sphinx	seanh	enhancement	awaiting triage	ckan	05/31/12 12:31:13
+2490	Dataset term translation isn't working on user pages, ckanext/multilingual test failing	seanh	defect	awaiting triage	ckan	06/04/12 15:09:37
+2506	Pull latest translations from Transifex into CKAN 1.7.1	seanh	enhancement	major	ckan	06/08/12 17:19:17
+2507	Search button on dataset search page wraps onto next line	seanh	enhancement	minor	ckan	06/11/12 10:10:32
+2521	synchronous_search plugin missing from deployment.ini_tmpl	seanh	defect	awaiting triage	ckan	06/13/12 13:49:21
+2293	Rename of Group results in disappearance of associated datasets from group page	ross	defect	awaiting merge	ckan	04/14/12 19:34:38
+2349	Make sure semantic.datahub.io gets created	ross	enhancement	awaiting triage	ckan	05/01/12 13:53:32
+2365	Investigation of multisite	ross	enhancement	awaiting triage	ckan	05/01/12 16:31:51
+2366	Remove Authorization Groups	ross	enhancement	awaiting merge	ckan	05/01/12 17:16:03
+2379	RDF output, api/sparql	ross	enhancement	awaiting triage	ckan	05/11/12 11:32:27
+2414	Remove LXML as a dependency on core CKAN	ross	enhancement	awaiting merge	ckan	05/23/12 08:19:52
+2425	Get rid of CKAN's flup dependency	kindly	enhancement	awaiting triage	ckan	05/25/12 11:47:01
+1587	QA - Check license as part of 5 star rating	johnglover	enhancement	major	ckan	12/21/11 15:10:08
+2459	Faceting improvements: fix tags and decide on facet fields	johnglover	enhancement	major	ecportal	05/28/12 13:32:05
+2460	Hide private datasets in 'top publishers' and 'recent updates' on home page	johnglover	enhancement	major	ecportal	05/28/12 13:33:38
+2463	Fix whitespace bug in breadcrumbs when zoomed in (Google Chrome)	johnglover	enhancement	major	ecportal	05/28/12 13:35:33
+2464	Rename 'organization' to 'publisher'	johnglover	enhancement	major	ecportal	05/28/12 13:42:33
+2465	Make sure dropdown lists on dataset edit form are sorted	johnglover	enhancement	major	ecportal	05/28/12 13:44:31
+2470	Fix inconsistency in package_list snippet	johnglover	enhancement	minor	ecportal	05/28/12 16:02:07
+2487	Don't preview text/html	johnglover	enhancement	major	ecportal	06/04/12 10:34:58
+2489	Select publisher when dataset created via 'publisher > add dataset'	johnglover	defect	minor	ecportal	06/04/12 11:33:15
+2509	UI style broken on organization read page	johnglover	defect	major	ckan	06/11/12 11:11:24
+2517	Test installation instructions for EC ODP on CentOS 6.2	johnglover	enhancement	major	ecportal	06/13/12 10:01:29
+2518	Create EC ODP CKAN release branch	johnglover	enhancement	major	ecportal	06/13/12 10:03:38
+2441	Create demo search page	aron.carroll	enhancement	major	ckan	05/28/12 13:02:35
+2442	Create demo dataset overview	aron.carroll	enhancement	major	ckan	05/28/12 13:04:09
+2443	Create demo dataset data (resource) page	aron.carroll	enhancement	major	ckan	05/28/12 13:06:22
+2444	Create demo dataset related page	aron.carroll	enhancement	major	ckan	05/28/12 13:09:19
+2448	Create demo groups overview page	aron.carroll	enhancement	major	ckan	05/28/12 13:16:00
+2449	Create demo group page	aron.carroll	enhancement	major	ckan	05/28/12 13:17:40
+2450	Create demo add group form	aron.carroll	enhancement	major	ckan	05/28/12 13:18:56
+2455	Create demo register page	aron.carroll	enhancement	major	ckan	05/28/12 13:25:41
+2456	Create demo forgot password page	aron.carroll	enhancement	major	ckan	05/28/12 13:26:44
+2474	Trial Jinja 2 as templating system	aron.carroll	enhancement	major	ckan	05/29/12 16:02:06
+2504	Remove all Genshi templates from demo theme	aron.carroll	enhancement	major	ckan	06/08/12 11:56:17
+2510	Demo tag lists should link to the search page	aron.carroll	enhancement	major	ckan	06/12/12 15:00:17
+2568	Crop/shorten titles in breadcrumb headings	aron.carroll	enhancement	minor	ckan	06/18/12 17:12:14
+2570	add 'back to dataset' button to resource pages	aron.carroll	enhancement	minor	ckan	06/18/12 17:14:40
+2468	Finish off SlickGrid based Recline view	amercader	enhancement	major	ckan	05/28/12 13:56:15
+2505	Docs improvements for 1.7.1	amercader	enhancement	major	ckan	06/08/12 14:42:13
+2494	Demo site has server error for a 404	toby	enhancement	minor	ckan	06/06/12 13:21:53
+2391	Fix cz.ckan.org theme and customisations	seanh	task	awaiting triage	ckan	05/16/12 08:55:53
+2476	Check that translating lists of strings is being tested in multilingual tests	seanh	defect	awaiting triage	ckan	05/30/12 11:41:18
+2527	Implement a method of loading templates into the demo site	aron.carroll	enhancement	major	ckan	06/14/12 14:08:04
+2462	Add converter to rename resource_type field to type	johnglover	enhancement	major	ecportal	05/28/12 13:34:25
+2488	Group update via API fails validation with organization and publisher profile enabled	johnglover	defect	major	ckan	06/04/12 10:39:34

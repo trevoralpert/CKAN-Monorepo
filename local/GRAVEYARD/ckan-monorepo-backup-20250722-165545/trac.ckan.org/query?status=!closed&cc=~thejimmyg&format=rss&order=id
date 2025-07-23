@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~thejimmyg&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~thejimmyg&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1287</link>
+        <guid isPermaLink="false">http://localhost/ticket/1287</guid>
+        <title>#1287: NAVL validation errors - Junk fields should be listed explicitly</title>
+        <pubDate>Wed, 24 Aug 2011 16:25:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package, but specify a key that is not allowed (e.g. 'relationships') then you get error message:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"__junk": ["The input field __junk was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+It should mention the actual key which is not expected. e.g.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"relationships": ["The input field 'relationships' was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+Kindly said that James' version of NAVL was better in this respect, so this might be best solved by moving to that.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1287#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1668</link>
+        <guid isPermaLink="false">http://localhost/ticket/1668</guid>
+        <title>#1668: repoze version discrepency</title>
+        <pubDate>Tue, 17 Jan 2012 12:02:26 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+There's a discrepency in repoze.who versions between the source and package installs:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;repoze.who - package 1.0.18 vs source 1.0.19
+&lt;/li&gt;&lt;li&gt;repoze.who-friendlyform - package 1.0b3 vs source 1.0.8
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+We get a test failure &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; with the 1.0b3 version (from the ubuntu 10.04 python-repoze.who-plugins package). But we've not noticed any problems on s057 instances (br, no, ie etc) which have the package versions of repoze.who.
+&lt;/p&gt;
+&lt;p&gt;
+The reason the package install uses the earlier packaged versions rather than the ones we'd like is that repoze uses all sorts of horrendous import hacks, making it too difficult to put into our 'ckan-conflict' source package.
+&lt;/p&gt;
+&lt;p&gt;
+James suggests we 'do something horrible like dynamically patch repoze on CKAN import'.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://buildbot.okfn.org/builders/builder-ckan/builds/1371/steps/shell/logs/stdio"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://buildbot.okfn.org/builders/builder-ckan/builds/1371/steps/shell/logs/stdio&lt;/a&gt;
+ERROR: ckan.tests.functional.test_user.&lt;a class="missing wiki"&gt;TestUserController?&lt;/a&gt;.test_user_create_unicode
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1668#changelog</comments>
+    </item>
+ </channel>
+</rss>

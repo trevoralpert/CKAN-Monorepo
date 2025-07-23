@@ -1,0 +1,129 @@
+id,summary,owner,type,priority,component,time
+885,reimplement csw module to use owslib,wwaites,defect,awaiting triage,uklii,12/25/10 11:54:59
+884,harvest job delete operation,thejimmyg,enhancement,major,uklii,12/25/10 11:50:00
+860,full text indexing for semantic.ckan.net,wwaites,defect,major,ckan,12/07/10 12:47:09
+862,deploy rdf on catalogue.data.gov.uk,wwaites,defect,critical,ckan,12/07/10 12:50:37
+977,db_upgrade errors,,defect,critical,ckan,02/11/11 10:35:58
+798,cospread importer using API,dread,task,awaiting triage,ckan,11/11/10 11:36:02
+992,Use X-forwarded-for whenever it is available to set remote IP address,rgrp,defect,minor,ckan,02/18/11 19:48:52
+689,Updated package for updated metadata document,johnbywater,task,,,10/11/10 09:25:34
+828,Update cache support in home controller to use cache config in ini file,rgrp,enhancement,critical,ckan,11/25/10 13:52:34
+481,Unrestricted total read-only access to catalogue API,,story,awaiting triage,ckan,08/21/10 20:31:37
+955,Tidy up tests,dread,defect,blocker,ckan,02/04/11 11:35:00
+739,The system shall support retrieving a copy of the harvested metadata for a given package,thejimmyg,requirement,major,uklii,10/22/10 20:35:10
+879,Storage auth API,wwaites,enhancement,critical,DGU,12/20/10 18:08:29
+364,Search for 'statistic' returns nothing,,defect,awaiting triage,ckan,07/12/10 15:47:00
+571,Save metadata document and associate with harvest source entity,johnbywater,story,,,09/09/10 13:54:55
+797,Rework core html layout to mirror wordpress twentyten,rgrp,enhancement,major,ckan,11/10/10 15:27:53
+804,Rework analysis for publisher/provider in UKLP,johnbywater,task,awaiting triage,uklii,11/15/10 10:14:14
+713,Review four definitions of DGU package attributes,johnbywater,task,,,10/20/10 13:25:58
+785,Review document from PP regarding CSW and WAF guidance,johnbywater,task,,,11/08/10 09:58:58
+732,Reproduce and investigate (geo coverage issue),dread,task,,,10/22/10 09:12:41
+742,Release ckan 1.2 to metastable,dread,task,,,10/25/10 10:26:37
+777,Put 503-returning middleware into a module,dread,task,awaiting triage,ckan,11/01/10 10:45:24
+903,Proper handling of deleted packages in Solr serps,pudo,defect,awaiting triage,ckan,01/12/11 11:17:34
+711,Packages shall support both UK government and location information with a common set of attributes,thejimmyg,requirement,minor,uklii,10/20/10 13:21:06
+779,Package edit form - stylesheet in DGU updated,thejimmyg,task,awaiting triage,ckan,11/01/10 17:00:00
+778,Package edit form - name auto-generated from title,thejimmyg,task,awaiting triage,ckan,11/01/10 16:59:37
+780,"Package edit form - 'preview' button shows preview, with form lower in page",thejimmyg,task,awaiting triage,ckan,11/01/10 17:00:29
+946,No default system rights,pudo,defect,critical,ckan,01/31/11 18:52:02
+932,Move to SQLAlchemy-Migrate 0.6,dread,enhancement,critical,ckan,01/27/11 19:31:00
+950,Move importer controller to ckanext-importer,dread,enhancement,minor,ckan,02/02/11 17:00:38
+831,Migrate ckan trac to ckan.org,rgrp,task,critical,ckan,11/26/10 08:40:20
+621,Metadata document links extracted from WAF response,johnbywater,task,,,09/11/10 15:58:27
+806,Metadata created and last modified timestamps for packages,rgrp,enhancement,major,component1,11/15/10 21:01:34
+792,Meeting to review pre-alpha testing report from TM,johnbywater,task,,,11/08/10 10:40:51
+231,Make group versioned,pudo,defect,critical,ckan,01/07/10 08:45:23
+677,License change script,dread,task,awaiting triage,ckan,10/06/10 17:05:56
+734,Investigate department issue (ONS import),dread,task,awaiting triage,ckan,10/22/10 11:34:33
+679,Improve standard package edit form,thejimmyg,task,awaiting triage,ckan,10/06/10 17:27:30
+814,Have an “About CKAN” link on every page,,requirement,awaiting triage,ckan,11/17/10 12:10:21
+648,Enable lock-down of package creation,,requirement,,ckan,09/19/10 09:45:19
+675,Draft specification of CSW harvesting behaviour with guide for publishing agents,johnbywater,task,,,10/04/10 17:54:37
+976,Documentation references knowledgeforge.net,,defect,minor,ckan,02/10/11 14:04:09
+974,Document site_description,,defect,minor,ckan,02/10/11 12:50:54
+681,Department field bug,dread,task,awaiting triage,ckan,10/06/10 17:38:05
+398,Create Public API documentation for DGU (draft),johnbywater,task,awaiting triage,ckan,08/05/10 09:33:48
+661,Create CKAN site tester,,task,,,09/24/10 17:15:58
+832,Convert stats to a plugin,rgrp,enhancement,awaiting triage,ckan,11/26/10 10:05:15
+991,Checkbox defaults to True,,defect,blocker,ckan,02/18/11 13:19:35
+576,CKAN Requires Old Version of SQLAlchemy,sebbacon,defect,major,ckan,09/10/10 17:59:33
+647,Authorization Groups for group-based access control,pudo,requirement,,ckan,09/19/10 09:43:38
+835,Authorization CLI and Documentation,pudo,enhancement,blocker,ckan,11/29/10 11:11:48
+422,Administrator imports meta-data into CKAN,,story,awaiting triage,ckan,08/10/10 09:44:50
+470,"Adjust API key's HTTP header name on DGU ""live"" and ""test""",dread,task,awaiting triage,ckan,08/20/10 13:27:34
+813,Add link to “Register new package” to the homepage,,requirement,awaiting triage,ckan,11/17/10 12:00:53
+782,Add and remove users from sysadmin role from the command line,pudo,defect,critical,component1,11/08/10 08:34:47
+983,'db upgrade' creates system priviledges,dread,defect,critical,ckan,02/12/11 13:44:25
+413,Write functional tests for DGU caching,johnbywater,task,awaiting triage,ckan,08/10/10 09:13:53
+692,The system shall support presenting map thumbnail for bounding box.,johnbywater,requirement,awaiting triage,ckan,10/11/10 18:50:49
+566,The system shall support harvesting remote metadata,johnbywater,requirement,awaiting triage,uklii,09/09/10 13:40:19
+565,The system shall support UKLP code lists,thejimmyg,requirement,awaiting triage,uklii,09/09/10 12:04:24
+533,The performance of CKAN shall scale,,requirement,awaiting triage,ckan,08/27/10 12:01:39
+504,The DGU fieldset shall conform to v3 of DGU metadata specification,dread,requirement,awaiting triage,dgu,08/24/10 14:30:46
+451,Show/Allow only departments associated with user,dread,task,awaiting triage,ckan,08/20/10 10:20:41
+557,Remove siblings from link_to/from relationship display,,defect,critical,ckan,09/03/10 19:36:35
+712,"Model government data package with ""v0.4"" of the attributes",johnbywater,story,awaiting triage,ckan,10/20/10 13:23:59
+611,Load local copy of XML schema for metadata document,johnbywater,task,awaiting triage,ckan,09/11/10 15:23:59
+793,Fix up changes in changeset aa9aa32e00a9,johnbywater,task,awaiting triage,ckan,11/08/10 10:41:47
+733,Fix problem (geo coverage issue),dread,task,,,10/22/10 09:12:44
+438,Data importers use minimal processing,dread,requirement,awaiting triage,ckan,08/19/10 13:26:23
+796,AlphaPage for non-latin languages,,defect,critical,ckan,11/09/10 09:57:42
+745,Web UI shall accept requests for harvesting jobs,,requirement,awaiting triage,ckan,10/25/10 13:25:48
+564,The system shall support location based search,,requirement,awaiting triage,uklii,09/09/10 12:03:49
+753,The system shall support filtered harvest of CSW sources,johnbywater,requirement,awaiting triage,ckan,10/25/10 20:58:10
+676,The system shall support browsing to correct version of the CKAN documentation for a given service,thejimmyg,requirement,minor,ckan,10/05/10 10:55:36
+346,Revision search API (response data format and documentation issue),dread,defect,trivial,ckan,06/14/10 13:51:57
+465,Require API key for all API requests.,,requirement,awaiting triage,ckan,08/20/10 12:55:04
+940,OpenID login via google for same user generates 2 different openid urls,pudo,defect,blocker,ckan,01/30/11 15:32:01
+466,Name of HTTP header for API key shall be configurable,dread,requirement,awaiting triage,ckan,08/20/10 12:56:35
+809,Link to the Wiki pages in package form,,requirement,awaiting triage,ckan,11/17/10 11:10:31
+770,Improve the paster harvester help command,thejimmyg,defect,trivial,uklii,10/27/10 14:37:00
+807,Handle robot traffic better,,enhancement,awaiting triage,ckan,11/16/10 09:30:26
+502,Data4nr uploading script shall remove deleted packages,dread,requirement,awaiting triage,dgu,08/24/10 14:15:04
+476,Daily database dumps shall be discoverable and downloadable,,requirement,awaiting triage,ckan,08/20/10 14:10:33
+667,API is slow,thejimmyg,defect,critical,ckan,09/30/10 22:20:28
+886,move uklii forms api to dgu module,wwaites,defect,awaiting triage,dgu,12/25/10 11:55:45
+570,Validate metadata document against UKLP schematron,johnbywater,story,awaiting triage,ckan,09/09/10 13:50:56
+665,The system shall support withdrawing a harvested dataset or service from publication,johnbywater,requirement,awaiting triage,uklii,09/27/10 11:50:50
+766,The system shall support harvesting metadata from ArcGIS,wwaites,requirement,minor,uklii,10/27/10 11:12:13
+786,The system shall support deleting a registered harvest source,wwaites,requirement,major,uklii,11/08/10 10:09:42
+789,The harvest source form shall validate location field by positive identification of source type,wwaites,requirement,major,uklii,11/08/10 10:28:26
+769,Tests for harvesting metadata from ArcGIS CSW API,johnbywater,task,awaiting triage,ckan,10/27/10 11:16:19
+791,Submit harvest source form with invalid CSW location,johnbywater,story,awaiting triage,ckan,11/08/10 10:39:11
+790,Submit  harvest source form with valid CSW location,johnbywater,story,awaiting triage,ckan,11/08/10 10:34:39
+395,Set up profiling to analyze performance issues,,task,awaiting triage,ckan,08/03/10 08:38:59
+772,Run CLI harvester command without arguments,,story,awaiting triage,ckan,10/27/10 14:39:33
+781,Package edit form - 'extra' fields have 'add' and 'delete' buttons,thejimmyg,task,awaiting triage,component1,11/01/10 17:02:15
+768,Obtain example ArcGIS CSW server,johnbywater,task,awaiting triage,ckan,10/27/10 11:15:34
+800,Get WAF records modified since given time,johnbywater,story,awaiting triage,ckan,11/11/10 13:49:03
+773,Fix CLI help command to return CLI help message,,task,awaiting triage,ckan,10/27/10 14:41:15
+774,Fix CLI harvester command to return harvester help message,,task,awaiting triage,ckan,10/27/10 14:42:02
+477,Discover location of the daily database dumps,,story,awaiting triage,ckan,08/20/10 14:16:28
+783,Delete harvested documents when remote metadata disappears from harvest source,johnbywater,story,awaiting triage,ckan,11/08/10 09:53:49
+757,Create migration script to add harvest source filter attribute to existing tables,thejimmyg,task,awaiting triage,uklii,10/25/10 21:03:04
+759,Construct and send filtered CSW GetRecords request,johnbywater,story,awaiting triage,ckan,10/25/10 21:05:53
+612,Check given XML schema validates given metadata document,johnbywater,task,awaiting triage,ckan,09/11/10 15:25:50
+617,Check UKLP schematron validates given metadata document,johnbywater,task,awaiting triage,ckan,09/11/10 15:34:58
+752,"Change package attribute names used by Gemini harvesting to DGU ""v.4""",johnbywater,task,awaiting triage,ckan,10/25/10 20:40:05
+758,Change API documentation to indicate harvest source entity has filter attribute,johnbywater,task,awaiting triage,ckan,10/25/10 21:04:03
+760,"Change ""CSW Get Records"" request class to accept and used given CSW filter",johnbywater,task,awaiting triage,ckan,10/25/10 21:09:53
+486,Catalogue service shall notify and query SOLR service,,requirement,awaiting triage,ckan,08/21/10 21:23:10
+441,CKAN read-only state,dread,requirement,awaiting triage,ckan,08/19/10 14:15:14
+544,Backport facet browsing to CKAN 1.2,,requirement,awaiting triage,ckan,08/31/10 15:08:12
+815,Autocomplete for the search field,,requirement,awaiting triage,ckan,11/17/10 12:12:31
+402,Archiving worker to back up package resources from a CKAN instance,pudo,task,critical,ckan,08/05/10 14:35:12
+467,Admin configures CKAN to expect API key in named HTTP header,,story,awaiting triage,ckan,08/20/10 13:22:42
+756,Add filter field to harvest source form,johnbywater,task,awaiting triage,ckan,10/25/10 21:02:25
+755,Add filter attribute to harvest source entity,johnbywater,task,awaiting triage,ckan,10/25/10 21:01:46
+788,API user deletes harvest source,johnbywater,story,awaiting triage,ckan,11/08/10 10:13:16
+795,"""Match up"" GEMINI2 ""metadata point of contact"" with registered entities",thejimmyg,story,awaiting triage,uklii,11/08/10 14:53:45
+463,package diff exception,,defect,major,ckan,08/20/10 12:07:17
+834,Searching in CKAN,,task,awaiting triage,ckan,11/26/10 11:06:04
+771,Run CLI help command without arguments,,story,awaiting triage,ckan,10/27/10 14:38:38
+817,Proposed redesign of Resources table on package pages,,requirement,awaiting triage,ckan,11/17/10 12:36:24
+442,Importing data,dread,requirement,awaiting triage,component1,08/19/10 14:42:57
+731,Geo coverage field losses in Form API,dread,bug,critical,ckan,10/22/10 09:08:59
+511,Better warnings and errors when using API,,requirement,awaiting triage,ckan,08/25/10 16:44:37
+572,Write CKAN package from metadata document,johnbywater,story,,,09/09/10 13:59:44
+568,Pull metadata documents from given harvest source entity,johnbywater,story,,,09/09/10 13:48:51

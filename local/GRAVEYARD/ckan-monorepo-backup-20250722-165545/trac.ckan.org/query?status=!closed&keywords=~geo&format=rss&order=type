@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~geo&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~geo&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1152</link>
+        <guid isPermaLink="false">http://localhost/ticket/1152</guid>
+        <title>#1152: True support for generic CSW servers</title>
+        <pubDate>Mon, 23 May 2011 09:02:14 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The CSW harvesters implemented at the moment were developed with the DGU
+project in mind, and they assume all remote CSW servers to implement the
+Gemini 2 specification. Gemini 2 is the profile defined in the UK for
+INSPIRE complying metadata, so obviously catalogs from other countries
+or non-INSPIRE complying ones won't be able to be harvested.
+&lt;/p&gt;
+&lt;p&gt;
+The changes needed to support generic CSW servers (i.e. those
+implementing the ISO 19139 profile) are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Handling the validators (right now are hardcoded in the harvester
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+code). This probably involves issues discussed in the CREP 3
+(ticket &lt;a class="new ticket" href="http://localhost/ticket/1134" title="CREP: CREP0003: Description and Configuration of Harvesters (new)"&gt;#1134&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Changes in the model to adapt the specification to ISO 19139
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Renaming objects and classes which are now Gemini-centric
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+List of CSW servers tested:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1152#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1818</link>
+        <guid isPermaLink="false">http://localhost/ticket/1818</guid>
+        <title>#1818: Spatial metadata editor</title>
+        <pubDate>Mon, 20 Feb 2012 18:52:21 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2.5d
+&lt;/p&gt;
+&lt;p&gt;
+Right now users need to manually enter a geojson value in the 'spatial' extra field in order to define a geometry for a dataset.
+&lt;/p&gt;
+&lt;p&gt;
+We need a map widget on the edit form that allows users to draw the geometry on top of a map. This will be based on the draw functions offered by &lt;a class="missing wiki"&gt;OpenLayers?&lt;/a&gt; &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;, &lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Things to take into account:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integration with the form sections.
+&lt;/li&gt;&lt;li&gt;Allow some degree of configuration (default extent, limit geometry types...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://openlayers.org/dev/examples/draw-feature.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://openlayers.org/dev/examples/draw-feature.html&lt;/a&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt; &lt;a class="ext-link" href="http://openlayers.org/dev/examples/modify-feature.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://openlayers.org/dev/examples/modify-feature.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1818#changelog</comments>
+    </item>
+ </channel>
+</rss>

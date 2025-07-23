@@ -1,0 +1,1697 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;repo=ckan&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;repo=ckan&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/3030</link>
+        <guid isPermaLink="false">http://localhost/ticket/3030</guid>
+        <title>#3030: clean up helper functions</title>
+        <pubDate>Tue, 18 Dec 2012 12:33:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3030#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3029</link>
+        <guid isPermaLink="false">http://localhost/ticket/3029</guid>
+        <title>#3029: JSONP parameter scuppers Search in API</title>
+        <pubDate>Tue, 11 Dec 2012 15:00:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;tt&gt;http://datahub.io/api/2/search/package?jsonp=jsonpcallback&amp;amp;q=canada&lt;/tt&gt; returns
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"count": 0, "results": []}
+&lt;/pre&gt;&lt;p&gt;
+I believe this worked in CKAN 1.4 or 1.5, but it is broken on 1.7.1, 1.8 and whatever demo.ckan.org is running. I suspect the jsonpcallback parameter is getting sent to SOLR.
+&lt;/p&gt;
+&lt;p&gt;
+This bug prevents using javascript on another site to search CKAN (although hopefully the action API would work).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3029#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3028</link>
+        <guid isPermaLink="false">http://localhost/ticket/3028</guid>
+        <title>#3028: Feature: dashboard activity stream filtering</title>
+        <pubDate>Mon, 10 Dec 2012 12:07:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/13"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/13&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3028#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3027</link>
+        <guid isPermaLink="false">http://localhost/ticket/3027</guid>
+        <title>#3027: solr for 2.0</title>
+        <pubDate>Tue, 04 Dec 2012 02:22:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+change mm
+support solr 3 and 4
+add *_date field
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3027#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3026</link>
+        <guid isPermaLink="false">http://localhost/ticket/3026</guid>
+        <title>#3026: Support icons on  nav_named_link</title>
+        <pubDate>Fri, 30 Nov 2012 18:51:56 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+nav_named_link won't include the nice icon even when passing the icon keyword param.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3026#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3025</link>
+        <guid isPermaLink="false">http://localhost/ticket/3025</guid>
+        <title>#3025: Add requests to core requirements</title>
+        <pubDate>Tue, 27 Nov 2012 21:35:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Because yes please
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3025#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3023</link>
+        <guid isPermaLink="false">http://localhost/ticket/3023</guid>
+        <title>#3023: New methods on IPackageController to provide access to the data_dict</title>
+        <pubDate>Thu, 22 Nov 2012 17:00:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Extension hooking into the edit and create methods of the IPackageController interface receive the package object. This may not include all the fields that came from the form. The new extension points will pass the validated data_dict so extensions can have access to it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3023#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3021</link>
+        <guid isPermaLink="false">http://localhost/ticket/3021</guid>
+        <title>#3021: Logout doesn't work without JS</title>
+        <pubDate>Tue, 20 Nov 2012 11:19:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially, the functionality should be as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add logout link that has &lt;tt&gt;.js-hide&lt;/tt&gt; attached to it within the header that isn't hidden within a dropdown
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+See &lt;a class="ext-link" href="http://plus.google.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://plus.google.com/&lt;/a&gt; (when logged in) with and without JS to see an example of the actual sign-out working without JS
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3021#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3020</link>
+        <guid isPermaLink="false">http://localhost/ticket/3020</guid>
+        <title>#3020: Update CKAN coding standards</title>
+        <pubDate>Fri, 16 Nov 2012 20:11:51 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3020#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3019</link>
+        <guid isPermaLink="false">http://localhost/ticket/3019</guid>
+        <title>#3019: Cannot delete dataset extras</title>
+        <pubDate>Wed, 14 Nov 2012 18:44:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Deleting extras in the web interface is broken
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3019#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3018</link>
+        <guid isPermaLink="false">http://localhost/ticket/3018</guid>
+        <title>#3018: Load more in activity streams</title>
+        <pubDate>Wed, 14 Nov 2012 13:34:11 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Activity streams should be able to load more than 15 items within them. Suggest the default amount of loading is around 30 and then click to load more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3017</link>
+        <guid isPermaLink="false">http://localhost/ticket/3017</guid>
+        <title>#3017: New stable branch for the demo server</title>
+        <pubDate>Tue, 13 Nov 2012 15:04:48 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3017#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3016</link>
+        <guid isPermaLink="false">http://localhost/ticket/3016</guid>
+        <title>#3016: CKAN 2.0 template tweaks</title>
+        <pubDate>Tue, 13 Nov 2012 13:30:17 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Just a ticket to keep track of a few suggested template changes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3016#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3014</link>
+        <guid isPermaLink="false">http://localhost/ticket/3014</guid>
+        <title>#3014: Crash when deleting a non-empty vocabulary</title>
+        <pubDate>Tue, 13 Nov 2012 10:50:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Knud Möller:
+&lt;/p&gt;
+&lt;p&gt;
+when I try to delete a non-empty tag vocabulary via the API (through HTTP), I get an internal server error. Checking
+the logs, this turns out to be a consistency error raised by  sqlalchemy:
+&lt;/p&gt;
+&lt;p&gt;
+Error - &amp;lt;class 'sqlalchemy.exc.&lt;a class="missing wiki"&gt;IntegrityError?&lt;/a&gt;'&amp;gt;: (&lt;a class="missing wiki"&gt;IntegrityError?&lt;/a&gt;) update or delete on table "vocabulary" violates
+foreign key constraint "tag_vocabulary_id_fkey" on table "tag"
+DETAIL:  Key (id)=(21421955-7560-467c-af30-9f790b73e6ae) is still referenced from table "tag".
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+'DELETE FROM vocabulary WHERE vocabulary.id = %(id)s' {'id': u'21421955-7560-467c-af30-9f790b73e6ae'}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://33.33.33.10:5000/api/action/vocabulary_delete"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://33.33.33.10:5000/api/action/vocabulary_delete&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The error makes sense, but I'm wondering if it would be useful to extend the API to also allow the deletion of
+non-empty vocabularies, possibly via a parameter (not sure what best practice in API design is). At the very least, it
+would be cool if the error message coming back in the response had more information in it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3014#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3013</link>
+        <guid isPermaLink="false">http://localhost/ticket/3013</guid>
+        <title>#3013: common-error-messages is unreadable</title>
+        <pubDate>Sat, 10 Nov 2012 13:18:25 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since the update of the doc theme, the page became unreadable.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/common-error-messages.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/common-error-messages.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3013#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3012</link>
+        <guid isPermaLink="false">http://localhost/ticket/3012</guid>
+        <title>#3012: data.gov auth</title>
+        <pubDate>Thu, 08 Nov 2012 16:50:09 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3012#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3011</link>
+        <guid isPermaLink="false">http://localhost/ticket/3011</guid>
+        <title>#3011: Recline fixes and updates for CKAN 2.0</title>
+        <pubDate>Wed, 07 Nov 2012 11:40:55 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Fixes and updates to Recline / Datapreview for CKAN 2.0.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3011#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3010</link>
+        <guid isPermaLink="false">http://localhost/ticket/3010</guid>
+        <title>#3010: Pin images don't appear in data explorer</title>
+        <pubDate>Wed, 31 Oct 2012 17:45:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When minified files are in use (set debug = false in ini file) the pin images for points don't show up in the data explorer map view when viewing a resource with geolocation data.
+&lt;/p&gt;
+&lt;p&gt;
+set debug = true will fix the problem by using unminified files instead but also turns on a bunch of debug stuff you wouldn't want on a production site.
+&lt;/p&gt;
+&lt;p&gt;
+middleware.py, around line 73, is where the decision to turn minified files on or off based on the debug setting is made. This can be hacked on a production site to run with unminified files but otherwise run on production mode thereby getting around the issue with the pins. But that doesn't fix the underlying bug.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3010#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3007</link>
+        <guid isPermaLink="false">http://localhost/ticket/3007</guid>
+        <title>#3007: Adding a dataset creates multiple activities</title>
+        <pubDate>Mon, 29 Oct 2012 13:15:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Adding a new dataset creates multiple activity stream activities, e.g. seanh created the dataset foo, seanh add the resource bar to the dataset foo, and seanh updated the dataset foo are all created when I add a new dataset. I wonder if these can be collapsed into a single activity.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3007#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3006</link>
+        <guid isPermaLink="false">http://localhost/ticket/3006</guid>
+        <title>#3006: Update translations from Transifex</title>
+        <pubDate>Mon, 29 Oct 2012 10:22:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are some new translations already on the CKAN 1.8 resource on Transifex already (e.g. 100% Norwegian translation I think). We should at least pull these from Transifex for 1.8.1, and may as well do a call for translations too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3006#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3005</link>
+        <guid isPermaLink="false">http://localhost/ticket/3005</guid>
+        <title>#3005: Add following/unfollowing of groups: model, API, frontend, tests</title>
+        <pubDate>Tue, 23 Oct 2012 17:35:44 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3005#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3003</link>
+        <guid isPermaLink="false">http://localhost/ticket/3003</guid>
+        <title>#3003: New pg databases should be created with UTF8 encoding rather than system default</title>
+        <pubDate>Fri, 19 Oct 2012 09:33:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Just to track @tauberer patch on Github.
+Probably going to 1.8.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3003#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3002</link>
+        <guid isPermaLink="false">http://localhost/ticket/3002</guid>
+        <title>#3002: API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string</title>
+        <pubDate>Fri, 19 Oct 2012 09:32:22 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Just to track @tauberer patch on Github.
+Would be nice to write a test for it. Probably going to 1.8.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3002#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3001</link>
+        <guid isPermaLink="false">http://localhost/ticket/3001</guid>
+        <title>#3001: Multilingual plugin crashes CKAN on add dataset when some languages are default</title>
+        <pubDate>Thu, 18 Oct 2012 16:50:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Enable the multilingual plugins:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.plugins = stats synchronous_search multilingual_dataset multilingual_group multilingual_tag
+&lt;/p&gt;
+&lt;p&gt;
+and set your default language to one not supported by the multilingual plugin, e.g.
+&lt;/p&gt;
+&lt;p&gt;
+ckan.locale_default = cs_CZ
+&lt;/p&gt;
+&lt;p&gt;
+now run CKAN and try to add a dataset:
+&lt;/p&gt;
+&lt;p&gt;
+File '/home/seanh/Projects/ckan171/ckan/ckanext/multilingual/plugin.py', line 141 in before_index
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+text_field_items&lt;a class="missing wiki"&gt;+ default_lang?&lt;/a&gt;.extend(all_terms)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;KeyError?&lt;/a&gt;: 'text_cs_CZ'
+&lt;/p&gt;
+&lt;p&gt;
+It doesn't matter what language you are viewing the site in in your browser, the default language setting in the ini file determines whether it crashed or not.
+&lt;/p&gt;
+&lt;p&gt;
+A number of supported languages are defined at the top of ckanext/multilingual/plugin.py. I think if the default language is not one of these it crashes.
+&lt;/p&gt;
+&lt;p&gt;
+I think this affects all versions of CKAN since the multilingual plugin was added so at least 1.7, 1.8 and 2.0
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3001#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3000</link>
+        <guid isPermaLink="false">http://localhost/ticket/3000</guid>
+        <title>#3000: Add number of followers to dataset pages</title>
+        <pubDate>Wed, 17 Oct 2012 14:36:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+User profile pages now show some interesting stats about the user: num. datasets, num. edits and num. followers. Would be nice to add some similar info to dataset pages. At least num. followers can be done (already implemented in backend).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3000#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2999</link>
+        <guid isPermaLink="false">http://localhost/ticket/2999</guid>
+        <title>#2999: Add activity streams to organization pages</title>
+        <pubDate>Wed, 17 Oct 2012 14:34:17 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Before we do this we need to merge the organizations branch into master, we need to implement smarter activity streams for organizations, and we need to implement following of organizations.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2999#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2998</link>
+        <guid isPermaLink="false">http://localhost/ticket/2998</guid>
+        <title>#2998: Add activity streams to group pages</title>
+        <pubDate>Wed, 17 Oct 2012 14:33:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Before we do this we should implement smarter group activity streams (i.e. what activities should appear in a group's activity stream?) and following of groups.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2998#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2997</link>
+        <guid isPermaLink="false">http://localhost/ticket/2997</guid>
+        <title>#2997: Add activity streams to dataset pages</title>
+        <pubDate>Wed, 17 Oct 2012 14:31:46 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add an activity stream tab to dataset pages, like we have on user profile pages. Dataset activity streams are already implemented in the backend.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2997#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2996</link>
+        <guid isPermaLink="false">http://localhost/ticket/2996</guid>
+        <title>#2996: Fix behaviour of View Profile button in user popover when already on user's profile</title>
+        <pubDate>Wed, 17 Oct 2012 14:30:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The user popovers that appear when you hover the mouse over a user in an activity stream include a View Profile button that takes you to that user's profile page. If you are already on that user's profile page then it simply reloads the same page, but it sends you to the Datasets tab if you were on another tab.
+&lt;/p&gt;
+&lt;p&gt;
+Possible solutions:
+&lt;/p&gt;
+&lt;p&gt;
+Don't show button if already on user's page?
+&lt;/p&gt;
+&lt;p&gt;
+Button just makes popover disappear, if already on user's page?
+&lt;/p&gt;
+&lt;p&gt;
+Button does reload the page, but reloads the same tab (datasets, followers, activity stream) that you were on.
+&lt;/p&gt;
+&lt;p&gt;
+Marking this low priority
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2996#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2995</link>
+        <guid isPermaLink="false">http://localhost/ticket/2995</guid>
+        <title>#2995: Popovers for resources, groups, organizations, tags...</title>
+        <pubDate>Wed, 17 Oct 2012 14:27:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If you hover the mouse over a dataset or user in an activity stream, you now get a popover with some info about that dataset or user and a follow/unfollow button.
+&lt;/p&gt;
+&lt;p&gt;
+It would be nice to add similar popovers for other types of object in CKAN, e.g. resources, groups, organizations, tags...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2995#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2994</link>
+        <guid isPermaLink="false">http://localhost/ticket/2994</guid>
+        <title>#2994: Add dataset and user popovers throughout the site</title>
+        <pubDate>Wed, 17 Oct 2012 14:26:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If you hover the mouse over a dataset or user in an activity stream, you now get a popover with some info about that dataset or user and a follow/unfollow button.
+&lt;/p&gt;
+&lt;p&gt;
+These popovers should appear wherever datasets or users are listed, throughout the site.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2994#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2993</link>
+        <guid isPermaLink="false">http://localhost/ticket/2993</guid>
+        <title>#2993: "logged_in" and "visitor" show in user list at /users</title>
+        <pubDate>Wed, 17 Oct 2012 09:42:02 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2993#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2992</link>
+        <guid isPermaLink="false">http://localhost/ticket/2992</guid>
+        <title>#2992: Delete resource should send me back to edit dataset page</title>
+        <pubDate>Tue, 16 Oct 2012 17:19:16 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2992#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2991</link>
+        <guid isPermaLink="false">http://localhost/ticket/2991</guid>
+        <title>#2991: Add blocks to header.html template</title>
+        <pubDate>Tue, 16 Oct 2012 11:10:20 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently if you want to customise the header.html template you have to copy the whole thing, it isn't broken up into blocks like other templates are.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2991#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2990</link>
+        <guid isPermaLink="false">http://localhost/ticket/2990</guid>
+        <title>#2990: Fix descriptions of groups and organizations on /groups and /organizations pages</title>
+        <pubDate>Mon, 15 Oct 2012 11:04:51 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2990#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2989</link>
+        <guid isPermaLink="false">http://localhost/ticket/2989</guid>
+        <title>#2989: "Add dataset to organization" should auto-select the organization</title>
+        <pubDate>Mon, 15 Oct 2012 11:04:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+'Add dataset to organization' button, when you get through to the third stage of the new dataset form the organization you came from is not selected.
+&lt;/p&gt;
+&lt;p&gt;
+I don't see any option to choose the group when adding or updating a dataset, but if I add a dataset via the "Add dataset to group" button on a group's page, then the dataset seems to get added to that group. (And I can also add/remove existing datasets by editing the group.) I wonder if organizations should work the same way, instead of having an Organization drop-down when creating or updating a dataset. The add dataset page needs to somehow indicate that you're adding a dataset to a certain group or organization though, doesn't currently.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2989#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2988</link>
+        <guid isPermaLink="false">http://localhost/ticket/2988</guid>
+        <title>#2988: UI functional tests for CKAN 2.0</title>
+        <pubDate>Mon, 15 Oct 2012 11:02:15 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Afaik the new CKAN 2.0 frontend has no functional tests
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2988#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2987</link>
+        <guid isPermaLink="false">http://localhost/ticket/2987</guid>
+        <title>#2987: Remove all direct calls to logic action and auth functions</title>
+        <pubDate>Mon, 15 Oct 2012 10:51:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2987#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2986</link>
+        <guid isPermaLink="false">http://localhost/ticket/2986</guid>
+        <title>#2986: Make lib/base.py more like it was originally intended</title>
+        <pubDate>Mon, 15 Oct 2012 10:50:45 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: make lib/base.py be more like it was originally intended eg defines
+stuff that is shared eg _ but maybe try to include stuff like
+render/get_action if the circular import stuff can be solved - which should
+be doable if hard and likely needs an extra file or two for the externals _
+etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2986#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2985</link>
+        <guid isPermaLink="false">http://localhost/ticket/2985</guid>
+        <title>#2985: Make lib/helpers.py more template-specific</title>
+        <pubDate>Mon, 15 Oct 2012 10:49:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: make lib/helpers more template specific and less generally shared with
+none template uses (some functions are shared but many shouldn't be) -
+again help avoid circular imports
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2985#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2984</link>
+        <guid isPermaLink="false">http://localhost/ticket/2984</guid>
+        <title>#2984: Auto-populate context with user, model, session, etc.</title>
+        <pubDate>Mon, 15 Oct 2012 10:48:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: make the context auto-populated with things like user/model/session if
+not user supplied - especially for extensions (pre 2.0) maybe via a helper
+or else a decorator on the action - helper seems nicer maybe done via
+get_action()
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2984#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2983</link>
+        <guid isPermaLink="false">http://localhost/ticket/2983</guid>
+        <title>#2983: Refactor lib/base.py to remove circular import issues</title>
+        <pubDate>Mon, 15 Oct 2012 10:47:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: c) refactor lib/base.py to remove the circular import issues (render
+functions to lib/render.py - would fix much of that)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2983#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2982</link>
+        <guid isPermaLink="false">http://localhost/ticket/2982</guid>
+        <title>#2982: Move functionality from controllers into template helpers</title>
+        <pubDate>Mon, 15 Oct 2012 10:46:42 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: strip more functionality from controllers and add via template helpers
+eg activity streams
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2982#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2981</link>
+        <guid isPermaLink="false">http://localhost/ticket/2981</guid>
+        <title>#2981: Remove config from jinja templates</title>
+        <pubDate>Mon, 15 Oct 2012 10:46:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: remove the config from jinja2 templates get all such stuff via g. (before 2.0)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2981#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2979</link>
+        <guid isPermaLink="false">http://localhost/ticket/2979</guid>
+        <title>#2979: Requesting membership to groups and organizations</title>
+        <pubDate>Mon, 15 Oct 2012 10:44:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: The requesting membership user stories and implementation remain needed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2979#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2978</link>
+        <guid isPermaLink="false">http://localhost/ticket/2978</guid>
+        <title>#2978: Tests for permissions for organizations and groups</title>
+        <pubDate>Mon, 15 Oct 2012 10:43:26 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: checking the logic around the who can do what from the user stories -
+via some tests may be a good approach
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2978#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2977</link>
+        <guid isPermaLink="false">http://localhost/ticket/2977</guid>
+        <title>#2977: Fix user autocomplete on group and organization member pages</title>
+        <pubDate>Mon, 15 Oct 2012 10:42:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: @johnmartin the user autocomplete on
+member add needs fixing it gets data but does not understand what to do
+with it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2977#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2976</link>
+        <guid isPermaLink="false">http://localhost/ticket/2976</guid>
+        <title>#2976: Polish group and organization member pages</title>
+        <pubDate>Mon, 15 Oct 2012 10:41:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: A little polish to the member pages and probably a little hardening of
+the controller and logic actions
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2976#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2975</link>
+        <guid isPermaLink="false">http://localhost/ticket/2975</guid>
+        <title>#2975: Tests for auth functions and new actions</title>
+        <pubDate>Mon, 15 Oct 2012 10:41:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: tests around the auth functions and new actions - probably needs an improved testing mechanism and things like test data creation on via actions
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2975#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2974</link>
+        <guid isPermaLink="false">http://localhost/ticket/2974</guid>
+        <title>#2974: General of all auth functions</title>
+        <pubDate>Mon, 15 Oct 2012 10:40:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby:
+&lt;/p&gt;
+&lt;p&gt;
+A general cleanup of all auth functions (in logic/auth) to check their fitness, error messages, etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2974#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2973</link>
+        <guid isPermaLink="false">http://localhost/ticket/2973</guid>
+        <title>#2973: Move new_authz.py into logic/auth/__init__.py</title>
+        <pubDate>Mon, 15 Oct 2012 10:39:05 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Makes sense to keep all auth stuff under logic/auth.
+&lt;/p&gt;
+&lt;p&gt;
+Also decide which functions from new_authz.pu should be marked private with _.
+&lt;/p&gt;
+&lt;p&gt;
+Also decide which functions from new_authz.py are really helpers for the auth functions in get.py, update.py and delete.py, and should maybe moved to another file, e.g. logic/auth/helpers.py
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2973#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2972</link>
+        <guid isPermaLink="false">http://localhost/ticket/2972</guid>
+        <title>#2972: Remove any imports of authz.py and delete file</title>
+        <pubDate>Mon, 15 Oct 2012 10:37:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+it is no longer used
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2972#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2971</link>
+        <guid isPermaLink="false">http://localhost/ticket/2971</guid>
+        <title>#2971: "Are ytou sure you want to delete this member?" should say which member</title>
+        <pubDate>Mon, 15 Oct 2012 10:27:20 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+when deleting members from groups and orgs
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2971#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2970</link>
+        <guid isPermaLink="false">http://localhost/ticket/2970</guid>
+        <title>#2970: Organization and group member links use id not name</title>
+        <pubDate>Mon, 15 Oct 2012 10:22:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. it the 'Members' button links to /organization/members/0a44... instead of /organization/members/foobar
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2970#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2969</link>
+        <guid isPermaLink="false">http://localhost/ticket/2969</guid>
+        <title>#2969: Group members page 500s</title>
+        <pubDate>Mon, 15 Oct 2012 10:20:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The group members page (e.g. /group/members/roger) seems broken, IDs instead of user names are shown for the members, and clicking on a member 500s
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2969#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2968</link>
+        <guid isPermaLink="false">http://localhost/ticket/2968</guid>
+        <title>#2968: Anyone can access organization members page</title>
+        <pubDate>Mon, 15 Oct 2012 10:19:15 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The button will not show if you are not authorized but browse to /organization/members/foo and you can edit the members, it does stop you when you try to save your changes, but you shouldn't be able to get to the page at all
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2968#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2967</link>
+        <guid isPermaLink="false">http://localhost/ticket/2967</guid>
+        <title>#2967: Organization members edit page reloads after demoting self</title>
+        <pubDate>Mon, 15 Oct 2012 10:17:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Edit an organizations members page and demote yourself from organization admin, after saving the members edit page reloads even though you are no longer an admin and should no longer be able to access this page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2967#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2966</link>
+        <guid isPermaLink="false">http://localhost/ticket/2966</guid>
+        <title>#2966: 'Add' button text is wrong when editing organization members</title>
+        <pubDate>Mon, 15 Oct 2012 10:15:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. if I just changed a member's capacity I am not adding anything 'save' is better maybe
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2966#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2965</link>
+        <guid isPermaLink="false">http://localhost/ticket/2965</guid>
+        <title>#2965: Stats extension broken on 1.8</title>
+        <pubDate>Mon, 15 Oct 2012 10:15:41 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Graphs not showing (looks like a flot related file is missing)
+&lt;/li&gt;&lt;li&gt;Wrong groups counts (e.g. Data Explorer Examples show 1800 datasets when it onlu has 8)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2965#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2964</link>
+        <guid isPermaLink="false">http://localhost/ticket/2964</guid>
+        <title>#2964: Last organization admin can remove herself</title>
+        <pubDate>Mon, 15 Oct 2012 10:14:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If you are the only admin of an organization you can edit the organization's members and demote yourself, then the org has no admins and no one (except sysadmins maybe) can edit it.
+&lt;/p&gt;
+&lt;p&gt;
+Last admin should not be able to remove or demote herself.
+&lt;/p&gt;
+&lt;p&gt;
+Also applies to groups.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2964#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2963</link>
+        <guid isPermaLink="false">http://localhost/ticket/2963</guid>
+        <title>#2963: Timeout on tag pages with lots of datasets</title>
+        <pubDate>Mon, 15 Oct 2012 10:13:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://thedatahub.org/tag/lod"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/tag/lod&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tags with less datasets work fine (e.g. &lt;a class="ext-link" href="http://thedatahub.org/tag/railways"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/tag/railways&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2963#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2962</link>
+        <guid isPermaLink="false">http://localhost/ticket/2962</guid>
+        <title>#2962: Search across multiple ckan instances</title>
+        <pubDate>Mon, 08 Oct 2012 22:50:22 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Could be done by:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;using the solr distributed search
+&lt;ul&gt;&lt;li&gt;difficult set up
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;merging result sets from apis
+&lt;ul&gt;&lt;li&gt;make sure that results can be merged properly (score, facets, ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2962#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2961</link>
+        <guid isPermaLink="false">http://localhost/ticket/2961</guid>
+        <title>#2961: Preview plugin endpoint</title>
+        <pubDate>Mon, 08 Oct 2012 11:39:27 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Users could write ckan extensions that offer previews for a certain datatype.
+&lt;/p&gt;
+&lt;p&gt;
+Advantages:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We can say that you can add your own previews
+&lt;/li&gt;&lt;li&gt;Every preview would have to define it's own dependencies
+&lt;/li&gt;&lt;li&gt;External development (community creates new extensions?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Questions to answer:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Specification of the interface
+&lt;/li&gt;&lt;li&gt;Precedence of previews for the same data types
+&lt;/li&gt;&lt;li&gt;Plugins only define the datatype that they are responsible for or do we call a function that returns whether the extension is responsible.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+As far as I can see, this should be fairly easy to implement by following these instructions: &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2961#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2960</link>
+        <guid isPermaLink="false">http://localhost/ticket/2960</guid>
+        <title>#2960: Private datasets are not private</title>
+        <pubDate>Mon, 08 Oct 2012 11:04:15 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment everyone can read all resources. There is no support for hiding resources that are in private datasets.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2960#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2959</link>
+        <guid isPermaLink="false">http://localhost/ticket/2959</guid>
+        <title>#2959: Changing a Group's name through the action api disassociates it from its datasets in the index</title>
+        <pubDate>Thu, 04 Oct 2012 15:18:55 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create a new Group, named "test-group".
+&lt;/li&gt;&lt;li&gt;Add a dataset to it.
+&lt;/li&gt;&lt;li&gt;Verify the dataset belongs to the group by visiting the Group's read-page
+&lt;/li&gt;&lt;li&gt;Update the Group through the action api (group_update), using the uid in the "id" field, and a new name in the "name" field.
+&lt;/li&gt;&lt;li&gt;Visit the group's read-page.  The list of datasets will be empty.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This was an issue when editing a Group through the web interface, which was fixed in &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.  However it only fixes the issue in the group controller.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/dbe25d8b8d7fabfc40c5d794a920b91cec349335"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/dbe25d8b8d7fabfc40c5d794a920b91cec349335&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2959#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2958</link>
+        <guid isPermaLink="false">http://localhost/ticket/2958</guid>
+        <title>#2958: Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8</title>
+        <pubDate>Thu, 04 Oct 2012 09:29:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. 2012_08(주요국가).xls
+&lt;/p&gt;
+&lt;p&gt;
+I tested in CKAN 2.0 and it seemed to work fine there.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2958#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2957</link>
+        <guid isPermaLink="false">http://localhost/ticket/2957</guid>
+        <title>#2957: New datastore on postgres prior to 9.0</title>
+        <pubDate>Wed, 03 Oct 2012 19:23:34 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;tt&gt;&lt;/tt&gt;GRANT SELECT ON ALL&lt;tt&gt;&lt;/tt&gt; and &lt;tt&gt;&lt;/tt&gt;ALTER DEFAULT PRIVILEGES&lt;tt&gt;&lt;/tt&gt; are not available in Postgres prior to version 9.0.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2957#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2956</link>
+        <guid isPermaLink="false">http://localhost/ticket/2956</guid>
+        <title>#2956: Allow for resource editing in CKAN 2.0</title>
+        <pubDate>Wed, 03 Oct 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the edit dataset page... there needs to be a way for users to be able to see all the resources associated to the dataset and edit them individually.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2956#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2952</link>
+        <guid isPermaLink="false">http://localhost/ticket/2952</guid>
+        <title>#2952: incorporate javascriopt translations into translations workflow</title>
+        <pubDate>Mon, 01 Oct 2012 19:15:45 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+There are now javascript translations.  There's a paster command, &lt;tt&gt;trans js&lt;/tt&gt;.  This is a ticket to ensure that using &lt;tt&gt;trans js&lt;/tt&gt; is documented in the normal ckan translation workflow (which is followed after a feature freeze, prior to release).  And to see if there's any need for further incorporation into the current translation process.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2952#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2951</link>
+        <guid isPermaLink="false">http://localhost/ticket/2951</guid>
+        <title>#2951: Paster command for building css from less</title>
+        <pubDate>Mon, 01 Oct 2012 19:12:20 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+With the latest template, css and js changes in 2.0, there are a number of things that need preparation prior to a production deployment. One of these is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the less files should be compiled to css (main.css, not just main.debug.css)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This ticket is to provide a paster command which will compile the .less into the main.css file.  The idea of the paster command is that it will be run by developers, and they will check in the resulting .css files.  It will also provide a convenient mechanism for production scenarios with node.js installed on the production server, as they will be able to compile the .less there as well.
+&lt;/p&gt;
+&lt;p&gt;
+## Background
+&lt;/p&gt;
+&lt;p&gt;
+The .css files that need to be served are built using &lt;tt&gt;less&lt;/tt&gt;.  The css files that are generated *are* checked-in to the repo; but they are a build artifact.  So the general workflow is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;commit changes to the less files
+&lt;/li&gt;&lt;li&gt;build the main.css file and commit
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This paster command slots into the above workflow for convenience.
+&lt;/p&gt;
+&lt;p&gt;
+## Notes
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;doc/frontend-development.rst
+&lt;/li&gt;&lt;li&gt;bin/less
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+to run this paster command, &lt;tt&gt;Node&lt;/tt&gt; will be required.  So that dependency should be checked.
+&lt;/p&gt;
+&lt;p&gt;
+## The paster command
+&lt;/p&gt;
+&lt;p&gt;
+This is the proposed behaviour of the paster command:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ensure &lt;tt&gt;custom.less&lt;/tt&gt; does not exist
+&lt;/li&gt;&lt;li&gt;for each colour in{fuchsia,green,maroon,red}:
+&lt;ul&gt;&lt;li&gt;generate a &lt;tt&gt;custom.less&lt;/tt&gt; file for $colour.  There's a paster command that does this already: `paster color &amp;lt;color name&amp;gt;.
+&lt;/li&gt;&lt;li&gt;generate the &lt;tt&gt;css&lt;/tt&gt; from the &lt;tt&gt;less&lt;/tt&gt; files.  ie - the equivelant of running &lt;tt&gt;bin/less --production&lt;/tt&gt;.
+&lt;ul&gt;&lt;li&gt;this will generate a &lt;tt&gt;main.css&lt;/tt&gt; file, which should be renamed to &lt;tt&gt;$color.css&lt;/tt&gt;.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;ensure &lt;tt&gt;custom.less&lt;/tt&gt; does not exist
+&lt;/li&gt;&lt;li&gt;generate the &lt;tt&gt;css&lt;/tt&gt; from the &lt;tt&gt;less&lt;/tt&gt; files.  This will create a &lt;tt&gt;main.css&lt;/tt&gt; with the default colour scheme.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;call the paster command that minifies css and js files.  (This command does not exist yet, see &lt;a class="closed ticket" href="http://localhost/ticket/2950" title="requirement: paster command to minify javascript and css (closed: fixed)"&gt;#2950&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2951#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2949</link>
+        <guid isPermaLink="false">http://localhost/ticket/2949</guid>
+        <title>#2949: Reenable Data API button on the new theme</title>
+        <pubDate>Mon, 01 Oct 2012 16:04:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The checks to show or not the button need to be updated for the latest datastore version
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2949#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2948</link>
+        <guid isPermaLink="false">http://localhost/ticket/2948</guid>
+        <title>#2948: Negative range breaks datastore backend</title>
+        <pubDate>Mon, 01 Oct 2012 14:30:54 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Recline allows negative ranges. The backend returns an error 500 for that which breaks the recline preview.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2948#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2947</link>
+        <guid isPermaLink="false">http://localhost/ticket/2947</guid>
+        <title>#2947: Redirect to the resource page from /resource/{res-id}</title>
+        <pubDate>Mon, 01 Oct 2012 13:15:25 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Use story:
+As a user of the datasore I want to be able to put the resource id without the dataset name in a url and see the resource page.
+&lt;/p&gt;
+&lt;p&gt;
+Proposed redirect:
+&lt;/p&gt;
+&lt;p&gt;
+/resource/{res-id} -&amp;gt; dataset/foo-bar/resource/{res-id}
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2947#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2945</link>
+        <guid isPermaLink="false">http://localhost/ticket/2945</guid>
+        <title>#2945: Pdf preview does not load in IE</title>
+        <pubDate>Mon, 01 Oct 2012 11:27:49 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The pdf preview does not load in IE 9.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2945#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2944</link>
+        <guid isPermaLink="false">http://localhost/ticket/2944</guid>
+        <title>#2944: Recline preview does not work in Opera</title>
+        <pubDate>Mon, 01 Oct 2012 11:26:42 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Opera cannot show a recline preview. I shows 0 records.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2944#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2943</link>
+        <guid isPermaLink="false">http://localhost/ticket/2943</guid>
+        <title>#2943: Chrome does not resize preview</title>
+        <pubDate>Mon, 01 Oct 2012 11:08:06 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Chrome does not resize iframe after a full refresh/ on first load
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2943#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2939</link>
+        <guid isPermaLink="false">http://localhost/ticket/2939</guid>
+        <title>#2939: Orgs are groups</title>
+        <pubDate>Tue, 25 Sep 2012 09:07:14 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+holder for ticket number
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2939#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2938</link>
+        <guid isPermaLink="false">http://localhost/ticket/2938</guid>
+        <title>#2938: Explain bundling in doc/resources.rst</title>
+        <pubDate>Mon, 24 Sep 2012 12:13:55 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since it makes sense to bundle resources into one js file that are commonly used together, there should be some explanations on how separate js scripts are merged into one file for production.
+&lt;/p&gt;
+&lt;p&gt;
+Explanations could include how groups are handled or different resource files.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2938#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2936</link>
+        <guid isPermaLink="false">http://localhost/ticket/2936</guid>
+        <title>#2936: Updating a group via the API clears its packages</title>
+        <pubDate>Wed, 19 Sep 2012 09:47:46 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If the group dict that you post to the API does not have any 'packages' key then all the group's packages get removed. I think it would be better if you could just update e.g. the group's description without having to also post the list of packages, and apparently this is how other update API actions work.
+&lt;/p&gt;
+&lt;p&gt;
+Might be worth checking all the update API actions for this behaviour, and making sure they're all consistent
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2936#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2934</link>
+        <guid isPermaLink="false">http://localhost/ticket/2934</guid>
+        <title>#2934: Webtests for CKAN</title>
+        <pubDate>Tue, 18 Sep 2012 11:10:47 GMT</pubDate>
+        
+        <dc:creator>Dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The tests in CKAN only test single pages (functional tests) or single methods (unit tests). In order to make sure that the whole system still works as expected, we need tests that cover whole processes.
+&lt;/p&gt;
+&lt;p&gt;
+An example user story to be tested would be:
+"As a user with create permissions I want to be able to log in, create a new resource, save it and then make sure that it is in the system."
+or:
+"As a user I want to use the search functionality and open a resource from the search page."
+&lt;/p&gt;
+&lt;p&gt;
+These user stories require a different testing system with interaction and processes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2934#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2933</link>
+        <guid isPermaLink="false">http://localhost/ticket/2933</guid>
+        <title>#2933: Update theming docs</title>
+        <pubDate>Mon, 17 Sep 2012 15:21:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There's quite a lot of custom stuff going on, with all the custom jinja extensions, and the use of Fanstatic plus custom fanstatic extensions. People who are new to CKAN wanting to write CKAN themes are likely to be confused. I think the whole lot could do with documentation, maybe in the Theming and Customizing chapter in the sphinx docs.
+&lt;/p&gt;
+&lt;p&gt;
+I suggest completely replacing the contents of doc/theming.rst, and putting a 'legacy theming' link at the bottom linking to a doc/legacy_theming.rst file with the old contents.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2933#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2932</link>
+        <guid isPermaLink="false">http://localhost/ticket/2932</guid>
+        <title>#2932: Add docstring to system_info.py</title>
+        <pubDate>Mon, 17 Sep 2012 14:50:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+What is the system_info table for? It looks like a way to override config file settings in the database, perhaps so that admins can use a web interface to change site title etc. Could do with a docstring explaining the intended purpose of the table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2932#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2931</link>
+        <guid isPermaLink="false">http://localhost/ticket/2931</guid>
+        <title>#2931: Better docstring for app_globals.py</title>
+        <pubDate>Mon, 17 Sep 2012 14:13:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt; The application's Globals object &lt;/strong&gt; is not very informative.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2931#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2929</link>
+        <guid isPermaLink="false">http://localhost/ticket/2929</guid>
+        <title>#2929: Remove is_fallback() from I*Form extension interfaces?</title>
+        <pubDate>Thu, 13 Sep 2012 16:09:57 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If a plugin wants to take over the default package type for example, it can return &lt;a class="missing wiki"&gt;dataset?&lt;/a&gt; from its package_types() method. I don't see how there can be a package type that is not the default 'package' and is not returned by the package_types() method of a plugin, because the URLs for such a package type would not be mapped. Am I missing something or is is_fallback() not needed?
+&lt;/p&gt;
+&lt;p&gt;
+Same for IGroupForm and IOrganizationForm
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2929#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2928</link>
+        <guid isPermaLink="false">http://localhost/ticket/2928</guid>
+        <title>#2928: Run CKAN tests with example_i*form extensions enabled</title>
+        <pubDate>Thu, 13 Sep 2012 16:05:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Before releasing CKAN 2.0 we need to run all the CKAN tests with a modified test-core.ini with the example_idatasetform, example_igroupform and example_iorganizationform plugins enabled. If any tests fail, fix the bugs. This needs to be done for each release so add it to the release process.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2928#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2927</link>
+        <guid isPermaLink="false">http://localhost/ticket/2927</guid>
+        <title>#2927: Test new package/group/organization type URLs support</title>
+        <pubDate>Thu, 13 Sep 2012 16:02:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+IPackageForm, IGroupForm and IOrganizationForm allow you to define e.g. new package types with new top-level URLs, but the example extensions don't have tests for this yet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2927#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2926</link>
+        <guid isPermaLink="false">http://localhost/ticket/2926</guid>
+        <title>#2926: I*Form tests for per-type templates</title>
+        <pubDate>Thu, 13 Sep 2012 16:01:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Finish the tests for the per-package-type custom template support in IPackageForm, IGroupForm and IOrganizationForm (i.e. the new_template(), read_template() etc. methods).
+&lt;/p&gt;
+&lt;p&gt;
+The new way that template inheritance works in jinja looks like it should allow this to be tested nicely without duplicating entire templates in the example extensions.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2926#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2925</link>
+        <guid isPermaLink="false">http://localhost/ticket/2925</guid>
+        <title>#2925: Remove trans mangle paster command?</title>
+        <pubDate>Thu, 13 Sep 2012 10:06:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Is &lt;tt&gt;trans mangle&lt;/tt&gt; really necessary? If you upload a pot file to
+Transifex, it can generate a po file for you with 100% strings
+translated into a fictional pseudo language where everything is really
+long strings of unicode characters. I found this worked well for
+coverage testing, and also tests handling of unicode and long strings
+all over the place.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2925#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2924</link>
+        <guid isPermaLink="false">http://localhost/ticket/2924</guid>
+        <title>#2924: Better docs for trans js command, and add to release process</title>
+        <pubDate>Thu, 13 Sep 2012 10:04:31 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add a better docstring to for trans js command explaining what it does and why, and how to use it.
+&lt;/p&gt;
+&lt;p&gt;
+Also add this command to the CKAN Release Process as it's needed there
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2924#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2923</link>
+        <guid isPermaLink="false">http://localhost/ticket/2923</guid>
+        <title>#2923: Change regularise -&gt; regularize</title>
+        <pubDate>Thu, 13 Sep 2012 10:03:02 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The function is called regularise_html(), can't remember what file it's in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2923#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2922</link>
+        <guid isPermaLink="false">http://localhost/ticket/2922</guid>
+        <title>#2922: Better docstring for CKANInternationalizationExtension</title>
+        <pubDate>Thu, 13 Sep 2012 10:01:47 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+I'm unsure about what's going on here. As I understand it, when we run
+&lt;tt&gt;python setup.py extract_messages&lt;/tt&gt; it's going to use the extract_ckan()
+function from ckan/lib/extract.py to process the HTML files. For the
+HTML files that are jinja2 templates, extract_ckan() will call
+jinja2_cleaner() which will call regularise_html() on the strings.  So
+the strings are regularised when they are extracted from the source
+files.
+&lt;/p&gt;
+&lt;p&gt;
+But then we have the parse() method of &lt;a class="missing wiki"&gt;CkanInternationalizationExtension?&lt;/a&gt;
+also calling regularise_html(). I don't get what's happening here. Why
+do the strings need to be regularised twice?
+&lt;/p&gt;
+&lt;p&gt;
+My guess is that &lt;a class="missing wiki"&gt;CkanInternationalizationExtension?&lt;/a&gt; is used when the
+strings are extracted from the templates at runtime, and they need to be
+regularised at this time in order to match them against the regularised
+strings in the mo files to find the translations to output?
+&lt;/p&gt;
+&lt;p&gt;
+Maybe &lt;a class="missing wiki"&gt;CkanInternationalizationExtension?&lt;/a&gt; needs a better docstring saying
+what it does?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2922#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2921</link>
+        <guid isPermaLink="false">http://localhost/ticket/2921</guid>
+        <title>#2921: Add docstring to top of lib/extract.py file</title>
+        <pubDate>Thu, 13 Sep 2012 10:00:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+I think it couldn't hurt for this module to have a docstring at the top
+of the file explaining what the module is for. I know from setup.py that
+it's there to provide the extract_ckan() string extractor function for
+Babel, but I think looking at the file on its own it's not so obvious.
+&lt;/p&gt;
+&lt;p&gt;
+Also a couple of other small fixes:
+&lt;/p&gt;
+&lt;p&gt;
+jinja2_cleaner looks like a helper function only meant to be used by
+extract_ckan(), might make things clearer if it was called
+_jinja2_cleaner(), just so it doesn't look like a public function the
+module wants to export.
+&lt;/p&gt;
+&lt;p&gt;
+jinja_extensions seems to be a module-level variable that is only used
+in one function, could be moved into the function, unless you think
+there might be more functions that want it in future.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2921#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2920</link>
+        <guid isPermaLink="false">http://localhost/ticket/2920</guid>
+        <title>#2920: Genshi text template message extractor no longer needed?</title>
+        <pubDate>Thu, 13 Sep 2012 09:57:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+In setup.py, do we still need:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+('templates/&lt;strong&gt;.txt', 'genshi', {
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+'template_class': 'genshi.template:TextTemplate'
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+}),
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+in message_extractors? Doesn't like there are any txt files in there
+anymore.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2920#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2919</link>
+        <guid isPermaLink="false">http://localhost/ticket/2919</guid>
+        <title>#2919: Remove IController from docs</title>
+        <pubDate>Wed, 12 Sep 2012 14:47:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Still in docs but seems gone from code
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2919#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2917</link>
+        <guid isPermaLink="false">http://localhost/ticket/2917</guid>
+        <title>#2917: Organization admins can delete themselves</title>
+        <pubDate>Wed, 12 Sep 2012 12:10:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Organization administrators can delete themselves from the user management pages.  We should disable this on the front-end as well as the back-end.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2917#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2915</link>
+        <guid isPermaLink="false">http://localhost/ticket/2915</guid>
+        <title>#2915: Refactor form_to_db_schema_options()</title>
+        <pubDate>Wed, 12 Sep 2012 10:37:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Having two methods form_to_db_schema(self) and form_to_db_schema_options(self, options) seems unnecessary, why not just have form_to_db_schema(self, options=None)?
+&lt;/p&gt;
+&lt;p&gt;
+Fixing this might break existing extensions although I don't think any are using form_to_db_schema_options() so it should be okay.
+&lt;/p&gt;
+&lt;p&gt;
+The same thing goes for db_to_form_schema_options().
+&lt;/p&gt;
+&lt;p&gt;
+Also why are we passing a dict 'options' that always contains the same three keys 'api', 'context' and 'type'? Why not three params api=None, contenxt=None, type=None?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2915#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2914</link>
+        <guid isPermaLink="false">http://localhost/ticket/2914</guid>
+        <title>#2914: Add form_to_db_schema_options() to IDatasetForm and IGroupForm</title>
+        <pubDate>Wed, 12 Sep 2012 10:29:55 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This optional method is supported when creating or updating groups and packages and is used in &lt;a class="missing wiki"&gt;DefaultGroupForm?&lt;/a&gt; and &lt;a class="missing wiki"&gt;DefaultPackageForm?&lt;/a&gt;, but seems to be missing from the interfaces. Should be added with docstring.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2914#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2913</link>
+        <guid isPermaLink="false">http://localhost/ticket/2913</guid>
+        <title>#2913: IGroupForm has package_form() method</title>
+        <pubDate>Tue, 11 Sep 2012 14:45:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Should be group_form() I think
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2913#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2912</link>
+        <guid isPermaLink="false">http://localhost/ticket/2912</guid>
+        <title>#2912: ckanext/organizations: Neither public or private initially selected when adding dataset</title>
+        <pubDate>Mon, 10 Sep 2012 09:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When adding a dataset with the organizations extension on, neither the Public or the Private radio button is initially selected. Public should be selected.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2912#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2911</link>
+        <guid isPermaLink="false">http://localhost/ticket/2911</guid>
+        <title>#2911: Internal documentation of Organization Groups</title>
+        <pubDate>Thu, 06 Sep 2012 14:23:04 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+A summary/user story doc of how organizations and groups are expected to work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2911#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,857 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-backlog&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-backlog&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2323</link>
+        <guid isPermaLink="false">http://localhost/ticket/2323</guid>
+        <title>#2323: Auto-complete in organizations</title>
+        <pubDate>Tue, 24 Apr 2012 13:32:34 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Apparently auto-complete in Organizations may not work.  Check and fix.
+&lt;/p&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/5eca7d5e37c0ef392b768b8b3768b2c3f93448b5"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/5eca7d5e37c0ef392b768b8b3768b2c3f93448b5&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2323#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1812</link>
+        <guid isPermaLink="false">http://localhost/ticket/1812</guid>
+        <title>#1812: Restrict editing rights/permissions based on publisher</title>
+        <pubDate>Mon, 20 Feb 2012 14:24:49 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;see how this currently works with DGU first
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1812#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1801</link>
+        <guid isPermaLink="false">http://localhost/ticket/1801</guid>
+        <title>#1801: No links to password reset</title>
+        <pubDate>Thu, 16 Feb 2012 15:14:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+You can reset your password (&lt;a class="closed ticket" href="http://localhost/ticket/1186" title="enhancement: Password reset facility (closed: fixed)"&gt;#1186&lt;/a&gt;) but you have to know the URI (/user/reset) - there is no link to this page!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1801#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1648</link>
+        <guid isPermaLink="false">http://localhost/ticket/1648</guid>
+        <title>#1648: Clarify that additional info = extra fields + add guidance</title>
+        <pubDate>Mon, 16 Jan 2012 00:47:23 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Need to decide which term to use and then have the same for editing as well as viewing a dataset.
+&lt;/p&gt;
+&lt;p&gt;
+In creating/editing a dataset, want more explanation about adding extra fields (probably as a tooltip or similar).. i.e. that this let's you add extra custom metadata such as 'location: uk' which is then searchable etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1648#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1579</link>
+        <guid isPermaLink="false">http://localhost/ticket/1579</guid>
+        <title>#1579: Full text search in Webstore</title>
+        <pubDate>Tue, 20 Dec 2011 12:54:58 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+We should allow full text search within databases for individual databases, although we may want to wait for any pending ports to postgres.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1579#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1551</link>
+        <guid isPermaLink="false">http://localhost/ticket/1551</guid>
+        <title>#1551: CKAN auth for webstore changes</title>
+        <pubDate>Fri, 16 Dec 2011 15:39:26 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Webstore should use auth api ( &lt;a class="assigned ticket" href="http://localhost/ticket/1550" title="enhancement: Allow simple auth via the API (assigned)"&gt;#1550&lt;/a&gt; ) for authenticating users accessing webstore rather than talking directly to the CKAN database. We also need it to suppose /user/  urls and /userid/ for accessing databases.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1551#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1528</link>
+        <guid isPermaLink="false">http://localhost/ticket/1528</guid>
+        <title>#1528: Gravatar next to My Account link on all pages</title>
+        <pubDate>Tue, 06 Dec 2011 18:58:51 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Rather than the anonymous 'user' icon in the top-right corner, we could display your gravatar on all pages when you are logged in.
+&lt;/p&gt;
+&lt;p&gt;
+This was suggested by Richard Cyganiak:
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-November/001825.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-November/001825.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1528#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1413</link>
+        <guid isPermaLink="false">http://localhost/ticket/1413</guid>
+        <title>#1413: Ask users to 'add email address' when logged in</title>
+        <pubDate>Mon, 24 Oct 2011 10:45:08 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+I'd like us to display a one-off banner that prompts users who log into thedatahub.org to go and update &amp;amp; their profile &amp;amp; fill in their email address (if we could do it just for those who don't have an email address, then even better)
+That is, once they log in, they see a banner which says:
+Please update your profile [here] and add your email address, so you can receive notifications, be able to reset your password and get updates
+&lt;/p&gt;
+&lt;p&gt;
+Then when we build notifications or if we decide to survey people, we can actually contact them. Email address should be required as standard
+&lt;/p&gt;
+&lt;p&gt;
+DR: Also, mention their Full Name too - v. useful for selecting correct user in group curation
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1413#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1388</link>
+        <guid isPermaLink="false">http://localhost/ticket/1388</guid>
+        <title>#1388: etags caching on home page</title>
+        <pubDate>Wed, 12 Oct 2011 14:24:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Needs to update on:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;language - It's broken on thedatahub.org if you change to German and then click on the CKAN icon top-left to go to thedatahub.org again.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+AND
+&lt;/p&gt;
+&lt;ol start="2"&gt;&lt;li&gt;whether signed in or not - &lt;a class="closed ticket" href="http://localhost/ticket/1373" title="defect: home page view does not react to logging in / out (closed: fixed)"&gt;#1373&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+BUT not latest revisions (which is what it was)
+&lt;/p&gt;
+&lt;p&gt;
+Or get rid of etag caching on this page and others?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1388#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1339</link>
+        <guid isPermaLink="false">http://localhost/ticket/1339</guid>
+        <title>#1339: Issues / question re navl and data conversion</title>
+        <pubDate>Tue, 13 Sep 2011 20:50:22 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+I ran into a bug with the size field on resources.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It would not accept an empty value from form (IMO this clearly equates to null/None)
+&lt;/li&gt;&lt;li&gt;This could be fixed via using ignore_empty instead of ignore_missing
+&lt;/li&gt;&lt;li&gt;However using this means there was no way to empty the field (e.g. i may just want to set the size field back to null not just change to another value)
+&lt;/li&gt;&lt;li&gt;similar issues could arise around other fields (such as last_modified ...)
+&lt;ul&gt;&lt;li&gt;cf cset:645031d07b60
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+To solve this (cset:58acdcfe6d4e) i created an int_converter temporarily in logic/schema.py (this is almost certainly the wrong place). But I think it raises a bigger issue about the conversion layer and how it works.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1339#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1305</link>
+        <guid isPermaLink="false">http://localhost/ticket/1305</guid>
+        <title>#1305: SMTP config for thedatahub.org and IATI</title>
+        <pubDate>Fri, 02 Sep 2011 09:44:17 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The email sending functionality (e.g for password reset) does not work on thedatahub.org and IATI (and probably some other instances) when using an address which is not a okfn.org one.
+&lt;/p&gt;
+&lt;p&gt;
+Could not send reset link:
+SMTPRecipientsRefused({u'amercadero@…': (550, 'relay not
+permitted')},)
+&lt;/p&gt;
+&lt;p&gt;
+As I said, adria.mercader@… works fine.
+The SMTP server used mail.okfn.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1305#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1290</link>
+        <guid isPermaLink="false">http://localhost/ticket/1290</guid>
+        <title>#1290: Better error when blank database</title>
+        <pubDate>Thu, 25 Aug 2011 09:24:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When installing CKAN, when doing "paster serve development.ini", lots of users encounter the error for every request:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ProgrammingError: (ProgrammingError) relation "user" does not exist
+&lt;/pre&gt;&lt;p&gt;
+This is because the database tables have not been created - they have forgotten or missed the "paster db init" step.
+&lt;/p&gt;
+&lt;p&gt;
+Can we provide a better error to say that the database is not initialised yet?
+&lt;/p&gt;
+&lt;h2 id="Implementationoptions"&gt;Implementation options&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;At the start of every request we reflect the database tables and check they are there. This is rather expensive!
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Uncached requests to the home page start with a cheap database query. If there is an exception then return this error about database setup. I really like Drupal's page for this that has in large letters that the site is currently off-line. Below a line, in small letters, there are developer suggestions on what is wrong and where to look to fix it.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1290#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1283</link>
+        <guid isPermaLink="false">http://localhost/ticket/1283</guid>
+        <title>#1283: Deleted packages shouldn't be searchable or browsable</title>
+        <pubDate>Tue, 23 Aug 2011 15:14:41 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+A package in deleted state doesn't show to general users, but admins DO see them. The idea is that they can resurrect them if they want. But now we have the trash can that lists deleted packages. So we don't want admins to see the deleted packages anywhere else.
+&lt;/p&gt;
+&lt;p&gt;
+(But an admin should still be able to READ and EDIT a deleted package, so if he clicks on it in the trash list he can see it to decide whether to resurrect and actually be able to change its state.)
+&lt;/p&gt;
+&lt;p&gt;
+Same in the Web interface and API.
+&lt;/p&gt;
+&lt;p&gt;
+This ticket ties in with &lt;a class="assigned ticket" href="http://localhost/ticket/948" title="enhancement: Highlight (to a sysadmin) which packages are deleted (assigned)"&gt;#948&lt;/a&gt; highlighting a package being deleted (when viewing or editing) and follows on from the introduction of the trash can &lt;a class="closed ticket" href="http://localhost/ticket/1076" title="enhancement: Improve revision and package purge system (closed: fixed)"&gt;#1076&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1283#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1280</link>
+        <guid isPermaLink="false">http://localhost/ticket/1280</guid>
+        <title>#1280: fix sqlalchemy so that it works with postgres 9.0</title>
+        <pubDate>Tue, 16 Aug 2011 16:44:50 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+After the ckan migrate process, sqlalcehmy reflect does not work and causes an error when reflecting indexes.  A bug report needs to be put into sqlalchemy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1280#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1251</link>
+        <guid isPermaLink="false">http://localhost/ticket/1251</guid>
+        <title>#1251: Rename wiki.ckan.net to wiki.ckan.org</title>
+        <pubDate>Fri, 29 Jul 2011 18:45:47 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Inline with general naming policy going forward.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1251#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1153</link>
+        <guid isPermaLink="false">http://localhost/ticket/1153</guid>
+        <title>#1153: Update CKAN wiki front page</title>
+        <pubDate>Mon, 23 May 2011 12:53:31 GMT</pubDate>
+        
+        <dc:creator>lucychambers</dc:creator>
+
+        <description>&lt;p&gt;
+Update CKAN wiki front page - a la &lt;a class="missing wiki"&gt;OpenSpending?&lt;/a&gt;: &lt;a class="ext-link" href="http://wiki.openspending.org/Main_Page"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.openspending.org/Main_Page&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Sections should relate to different types of people using the site:
+&lt;/p&gt;
+&lt;p&gt;
+Developers, Users etc..
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1153#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1141</link>
+        <guid isPermaLink="false">http://localhost/ticket/1141</guid>
+        <title>#1141: [super] Moderated Edits User Interface</title>
+        <pubDate>Wed, 18 May 2011 12:16:43 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer&lt;/strong&gt;: John Glover&lt;br /&gt;
+&lt;strong&gt;Seconder&lt;/strong&gt;: James Gardner
+&lt;/p&gt;
+&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+We are trying to achieve these goals:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;To get people involved with making edits to CKAN metadata.
+&lt;/li&gt;&lt;li&gt;To have an ownership model as to who can moderate and validate these changes
+&lt;/li&gt;&lt;li&gt;To not put too huge a burden on these owners.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This feature allows anyone to edit a package and create a new revision, but requires an owner/moderator to approve a revision before it is are made "official".
+&lt;/p&gt;
+&lt;p&gt;
+There have been a lot of discussions around the revisioning system side of this ticket (CREP 0002) and I think these are now largely resolved. We now want to discuss the user interface.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+We require the following functionality:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow a group of changes to be stored as a new revision.
+&lt;/li&gt;&lt;li&gt;Allow a linear stack of "community" revisions.
+&lt;/li&gt;&lt;li&gt;Provide a way for the editor and moderator to compare previous revisions to the current one.
+&lt;/li&gt;&lt;li&gt;When a moderator approves a change it creates a new revision flagged "moderated" (this is analogous to a merge commit)
+&lt;/li&gt;&lt;li&gt;Provide a way for the editor and moderator comment on revisions if necessary.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Extra features:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Need a way to summarise the changes (as part of the preview perhaps)
+&lt;/li&gt;&lt;li&gt;Sysadmin needs to purge a revision completely
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;h3 id="UIUX"&gt;UI/UX&lt;/h3&gt;
+&lt;p&gt;
+UI Mockup:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://localhost/attachment/ticket/1141/ModeratedEdits2.png"&gt;&lt;img src="http://localhost/raw-attachment/ticket/1141/ModeratedEdits2.png" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Revisions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Revisions are per package rather than per field.
+&lt;/li&gt;&lt;li&gt;Internally CKAN has separate revisions for resources, extras and package metadata.  From a user's point of view this could be confusing to expose, so everything that they see on a package form when they hit save is a single revision.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+On the Edit page:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We have a panel on the right, listing all the revisions with the current moderated one selected. Moderated revisions are highligted in some way (red and bold?).
+&lt;/li&gt;&lt;li&gt;The values displayed in the form are by default populated from the latest revision (whether community or moderated)
+&lt;/li&gt;&lt;li&gt;Under each field is a "shadow", showing the value of the field in the revision selected in the panel, if it is different from the value in the field. By default the shadow values are populated from the latest moderated revision which is the one selected in the revision panel by default too.
+&lt;/li&gt;&lt;li&gt;When you change the value of a field, a shadow may appear or disappear accordingly. If they disappear a box saying that they are the same replaces it
+&lt;/li&gt;&lt;li&gt;If you want to edit values from a previous revision, you first select that revision to get the shadows populated. There is a button named "Replace fields with values from this revision" under the revision list. You click this, a warning pops up and then you say "Yes". You then select the moderated revision again.
+&lt;/li&gt;&lt;li&gt;We also allow package comments the same way as the todo extension works at the moment. Additionally, we need to be able to differentiate between what the moderator wrote and what a community member wrote, and so we may need to make a small change to the todo extension to facilitate this.
+&lt;/li&gt;&lt;li&gt;In addition to package comments, each revision will have a revision log (analogous to a commit message).
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="TechnicalDetails"&gt;Technical Details&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;This CREP will result in a new CKAN extension.
+&lt;/li&gt;&lt;li&gt;It depends heavily on the new revisioning system (CREP0002), some of the details of which are yet to be finalised.
+&lt;/li&gt;&lt;li&gt;This CREP therefore requires working closely with David Raznick to come up with an API that the UI AJAX calls can use.
+&lt;/li&gt;&lt;li&gt;We will then use suitable test data to mimic these API calls until CREP0002 is ready.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;p&gt;
+This hopefully provides a clear and consistent mechanism allowing both a community member to make new revisions and a moderator to view and approve revisions, with largely the same UI/UX.
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;p&gt;
+A new CKAN extension, consisting of:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Code: Python, HTML, CSS, Javascript
+&lt;/li&gt;&lt;li&gt;Unit tests
+&lt;/li&gt;&lt;li&gt;Localization
+&lt;/li&gt;&lt;li&gt;Documentation
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+John Glover to do it.
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+John has implemented the bulk of this UI. Just some things to tidy up before it is complete:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Genshi stream filters to be updated with CKAN 1.5 / 1.5.1 templates
+&lt;/li&gt;&lt;li&gt;history_ajax / read_ajax to be replaced with calls to Action API (or Util REST API)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I've split these two off into a new ticket &lt;a class="new ticket" href="http://localhost/ticket/1604" title="enhancement: Get ckanext-moderatededits working with CKAN 1.5+ templates (new)"&gt;#1604&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h3 id="RelatedProgress"&gt;Related Progress&lt;/h3&gt;
+&lt;p&gt;
+The Todo extension is written and available at: &lt;a class="ext-link" href="https://bitbucket.org/johnglover/ckanext-todo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/johnglover/ckanext-todo&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+In the section 'The Problem', under extra features, we mention a need for the sysadmin to be able to purge a revision already. This is already done.
+&lt;/p&gt;
+&lt;h3 id="Seealso"&gt;See also&lt;/h3&gt;
+&lt;p&gt;
+&lt;a class="closed ticket" href="http://localhost/ticket/1129" title="CREP: CREP0002: Moderated  Edits (closed: fixed)"&gt;#1129&lt;/a&gt; Backend work
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1141#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1139</link>
+        <guid isPermaLink="false">http://localhost/ticket/1139</guid>
+        <title>#1139: Create CKAN Theme Gallery</title>
+        <pubDate>Tue, 17 May 2011 15:24:19 GMT</pubDate>
+        
+        <dc:creator>lucychambers</dc:creator>
+
+        <description>&lt;p&gt;
+Take screenshots of existing ckan instances esp those mentioned
+&amp;lt;&lt;a class="ext-link" href="http://wiki.ckan.net/Theming"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Theming&lt;/a&gt;&amp;gt; and put on flickr in ckan or ckan-theme
+group so we can create a gallery ... (both to illustrate theming but
+also to show ckan instances that are around -- could add to
+&lt;a class="ext-link" href="http://wiki.ckan.net/Instances"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Instances&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1139#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1004</link>
+        <guid isPermaLink="false">http://localhost/ticket/1004</guid>
+        <title>#1004: Group creation instructions missing</title>
+        <pubDate>Thu, 24 Feb 2011 14:52:24 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Need instructions on the group page to tell people they need to login to create a group. Someone must have deleted this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1004#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/925</link>
+        <guid isPermaLink="false">http://localhost/ticket/925</guid>
+        <title>#925: Change the search box icon to remove the down arrow</title>
+        <pubDate>Mon, 24 Jan 2011 11:13:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Is there a good reason why the search box has a 'down arrow' icon when there is no drop-down menu? Or can this be usefully removed?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/925#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/819</link>
+        <guid isPermaLink="false">http://localhost/ticket/819</guid>
+        <title>#819: Tag autocompletion widget broken</title>
+        <pubDate>Wed, 17 Nov 2010 14:28:41 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The widget for tag autocompletion is broken in various ways.
+&lt;/p&gt;
+&lt;p&gt;
+For example, if I edit a package that is tagged "music", and just tab through the form fields to get to the Author field, then the widget changes to "industrial-music" as I tab through it.
+&lt;/p&gt;
+&lt;p&gt;
+Or if the tag is "foo bar" and I hit alt-right to jump to the end of the text field (with the intent of adding a third tag), then the contents change to "foo barbecue".
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/819#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1330</link>
+        <guid isPermaLink="false">http://localhost/ticket/1330</guid>
+        <title>#1330: Deprecate / Remove test_authz.py</title>
+        <pubDate>Tue, 13 Sep 2011 07:32:09 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+test_authz.py appears to test in great detail some very specific additional authz (related to total site lock-down it seems -- introduced I think for hri project).
+&lt;/p&gt;
+&lt;p&gt;
+I think there are simpler ways to get total site lockdown (use external auth!) and this test is slow and delicate (e.g. depends on specific words in templates). Suggest removing. If we don't remove we should at least refactor tests for access to certain pages to use a proper method of testing (e.g. agreed html comments in each page) rather than being depending on the presence of absence of specific wording.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1330#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1132</link>
+        <guid isPermaLink="false">http://localhost/ticket/1132</guid>
+        <title>#1132: test_authz doesn't run</title>
+        <pubDate>Mon, 09 May 2011 18:48:43 GMT</pubDate>
+        
+        <dc:creator>johnlawrenceaspden</dc:creator>
+
+        <description>&lt;p&gt;
+Trying to run the tests in test_authz.py with
+&lt;/p&gt;
+&lt;p&gt;
+$ nosetests --ckan ckan/tests/functional/test_authz.py
+results in no tests being run:
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Ran 0 tests in 0.840s
+&lt;/p&gt;
+&lt;p&gt;
+OK (SKIP=3)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1132#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/952</link>
+        <guid isPermaLink="false">http://localhost/ticket/952</guid>
+        <title>#952: CKAN should run under nginx/uswgi</title>
+        <pubDate>Thu, 03 Feb 2011 10:54:58 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+second part of &lt;a class="closed ticket" href="http://localhost/ticket/908" title="defect: Issues deploying extensions with modwsgi / uwsgi (closed: fixed)"&gt;#908&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/952#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/129</link>
+        <guid isPermaLink="false">http://localhost/ticket/129</guid>
+        <title>#129: Secure db access by channelling query generation through authz module</title>
+        <pubDate>Fri, 25 Sep 2009 13:42:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Controllers and templates should not access db objects directly - they should do all access via authz module giving username. They are handed by a query that has already been filtered by the packages they are authorized to read.
+&lt;/p&gt;
+&lt;p&gt;
+(Additional idea to be discussed: When they request a package object, they are handed an copy of the db object - disconnected from the database - so it the db object can't be changed.)
+&lt;/p&gt;
+&lt;p&gt;
+A couple of tests can be reenabled when this is done:
+ckan.tests.functional.test_authz.&lt;a class="missing wiki"&gt;TestUsage?&lt;/a&gt;.test_admin_list_deleted ckan.tests.functional.test_authz.&lt;a class="missing wiki"&gt;TestUsage?&lt;/a&gt;.test_search_deleted
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/129#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1811</link>
+        <guid isPermaLink="false">http://localhost/ticket/1811</guid>
+        <title>#1811: Translate Eurovoc tags from ID to dataset language</title>
+        <pubDate>Mon, 20 Feb 2012 14:21:24 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1811#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1810</link>
+        <guid isPermaLink="false">http://localhost/ticket/1810</guid>
+        <title>#1810: Store list of Eurovoc tag names and IDs</title>
+        <pubDate>Mon, 20 Feb 2012 14:03:32 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Tag list not be added to CKAN core, what is the best way to do this in an extension?
+&lt;/li&gt;&lt;li&gt;Does the list need to be updated via API/WUI?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1810#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1746</link>
+        <guid isPermaLink="false">http://localhost/ticket/1746</guid>
+        <title>#1746: Activity streams pagination</title>
+        <pubDate>Sun, 05 Feb 2012 12:54:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently user, package and group activity streams only return the most recent 15 activities, even though all activities are kept in the db. Do we want to add pagination - to both the API and the HTML pages - to support retrieving older activities?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1746#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1685</link>
+        <guid isPermaLink="false">http://localhost/ticket/1685</guid>
+        <title>#1685: Move archiver download function to core</title>
+        <pubDate>Thu, 19 Jan 2012 14:42:50 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Archiver is included in some places just for access to download(), we should move this to lib in core.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1685#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1549</link>
+        <guid isPermaLink="false">http://localhost/ticket/1549</guid>
+        <title>#1549: [super] Short link tool</title>
+        <pubDate>Fri, 16 Dec 2011 12:03:18 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+It would be great to have a CKAN extension that allowed users (or CKAN itself) to generate short links to other URIs (both internal and external). Once created, shortlinks made by CKAN should be changeable. This would allow uploaded content to be moved without the user's link changing at all. The tool itself might also be of use as a general link-shortener to users other than the CKAN system itself.
+&lt;/p&gt;
+&lt;p&gt;
+Another useful feature would be for this to also collect some simple analytics such as the referrer and client IP for future reference. I'm not yet sure what we would do with the analytics other than some sort of popularity metric.
+&lt;/p&gt;
+&lt;p&gt;
+Questions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Core, or Extension, or Self-hosted?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1549#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1533</link>
+        <guid isPermaLink="false">http://localhost/ticket/1533</guid>
+        <title>#1533: Make sure ckanext-wordpresser works on CKAN 1.5.1</title>
+        <pubDate>Wed, 07 Dec 2011 17:07:40 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Superceded by &lt;a class="assigned ticket" href="http://localhost/ticket/2234" title="enhancement: Write a CKAN extension for pulling items from RSS/Atom feeds into CKAN ... (assigned)"&gt;#2234&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1508" title="enhancement: [super] Finalize and deploy some of our major (new) features as of Dec ... (closed: fixed)"&gt;#1508&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/wordpresser"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/wordpresser&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The wordpresser extension does not work with ckan 1.5.1. The wordpress page is not loaded.
+&lt;/p&gt;
+&lt;p&gt;
+Looks like this changeset may be involved
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-wordpresser/commit/0efa0649896a7339865f178a302be639ddc561e1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-wordpresser/commit/0efa0649896a7339865f178a302be639ddc561e1&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I think that even before that changeset, the page was shown without any margins.
+&lt;/p&gt;
+&lt;p&gt;
+In any case, the extension seems to be too sensible to changes in the ckan layout so perhaps it should take into account the CKAN version and have a fixed set of xpaths and templates that work for each version
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1533#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1306</link>
+        <guid isPermaLink="false">http://localhost/ticket/1306</guid>
+        <title>#1306: Tests for the logic layer</title>
+        <pubDate>Sun, 04 Sep 2011 16:21:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+AFAICT there are no tests for the logic layer at the moment. I imagine this is an issue (if it is not please explain and close as wontfix).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1306#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1289</link>
+        <guid isPermaLink="false">http://localhost/ticket/1289</guid>
+        <title>#1289: Remove 'relationships'</title>
+        <pubDate>Wed, 24 Aug 2011 17:21:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+Package Relationships have not taken off in the 18 months we've had them in the API. There are some issues with them and we need to spend more time improving them or consider getting rid of them.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+Original use cases are expressed here: &lt;a class="assigned ticket" href="http://localhost/ticket/253" title="enhancement: Package relationships (assigned)"&gt;#253&lt;/a&gt; Here are comments about how we could handle these specific examples better:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;groups of packages - maybe better with a custom tag?
+&lt;/li&gt;&lt;li&gt;fragment resources - soon to be covered by 'kind' resource field &lt;a class="closed ticket" href="http://localhost/ticket/957" title="enhancement: new &amp;#34;kind &amp;#34; field added to resources (closed: wontfix)"&gt;#957&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+3&amp;amp;5. derived resource - better to have some sort of resource relationship perhaps?
+&lt;/p&gt;
+&lt;ol start="4"&gt;&lt;li&gt;linked resource - again better to have some sort of resource relationship perhaps?
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Outstanding issues needing serious effort to fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/256" title="requirement: Package relationships - 3. Edit in WUI (assigned)"&gt;#256&lt;/a&gt; Editing them in Web UI (not done yet)
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1288" title="defect: Package edit/creation can't include 'relationships' field (new)"&gt;#1288&lt;/a&gt; Package edit/creation can't include 'relationships' field
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;p&gt;
+Remove relationships from model, API, tests, Web UI. Data migration to remove from db.
+&lt;/p&gt;
+&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;p&gt;
+Getting frustrated having problems with the code, when it's not used much. Often asked about what it's for, but rarely used. Seems an overly complicated design.
+&lt;/p&gt;
+&lt;h2 id="BackwardsCompatibility"&gt;Backwards Compatibility&lt;/h2&gt;
+&lt;p&gt;
+n/a
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;p&gt;
+See Specification
+&lt;/p&gt;
+&lt;h3 id="Risksandmitigations"&gt;Risks and mitigations&lt;/h3&gt;
+&lt;p&gt;
+Risk: a customer suddenly wants this, and the new ways to relate resources are not in place yet.
+&lt;/p&gt;
+&lt;p&gt;
+Mitigation: discuss this decision thoroughly to make sure we are confident the use cases are not important. Discuss with team, ckan-discuss and specifically the LOD people who have some related packages on thedatahub.org.
+&lt;/p&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+David Read
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+Not yet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1289#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1269</link>
+        <guid isPermaLink="false">http://localhost/ticket/1269</guid>
+        <title>#1269: User view page shows the packages followed by viewing user not user being viewed</title>
+        <pubDate>Tue, 09 Aug 2011 16:16:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This overlaps with Sean's follow support (for activity streams) and so will be dealt with there.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1269#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1231</link>
+        <guid isPermaLink="false">http://localhost/ticket/1231</guid>
+        <title>#1231: [super] Management Information Reporting</title>
+        <pubDate>Wed, 20 Jul 2011 14:58:39 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1101" title="enhancement: Integrate googlanalytics into site nav (new)"&gt;#1101&lt;/a&gt; Integrate stats and googlanalytics into site nav
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+We have a spreadsheet from UKLP of statistics we'd like to generate
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1231#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1197</link>
+        <guid isPermaLink="false">http://localhost/ticket/1197</guid>
+        <title>#1197: Add JavaScript guide for CKAN</title>
+        <pubDate>Thu, 23 Jun 2011 03:50:32 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+A new library, &lt;a class="ext-link" href="http://blog.optimizely.com/introducing-guidersjs-an-open-source-guider-e"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;guiders.js&lt;/a&gt;, has been open sourced that seems to be great at unobtrusively introducing new users to features of websites.
+&lt;/p&gt;
+&lt;p&gt;
+The library drives Optimizely's website. The GitHub repo is here: &lt;a class="ext-link" href="https://github.com/jeff-optimizely/Guiders-JS"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/jeff-optimizely/Guiders-JS&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Some examples:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://posterous.com/getfile/files.posterous.com/temp-2011-06-22/BnlgHDvhjpFfqbwvprsIaklqrpdgJyebfuhxajbDhmvnFgzdzzCJdvluJFki/Screen_shot_2011-06-22_at_6.42.21_PM.png.scaled500.png"&gt;&lt;img src="http://posterous.com/getfile/files.posterous.com/temp-2011-06-22/BnlgHDvhjpFfqbwvprsIaklqrpdgJyebfuhxajbDhmvnFgzdzzCJdvluJFki/Screen_shot_2011-06-22_at_6.42.21_PM.png.scaled500.png" alt="http://posterous.com/getfile/files.posterous.com/temp-2011-06-22/BnlgHDvhjpFfqbwvprsIaklqrpdgJyebfuhxajbDhmvnFgzdzzCJdvluJFki/Screen_shot_2011-06-22_at_6.42.21_PM.png.scaled500.png" title="http://posterous.com/getfile/files.posterous.com/temp-2011-06-22/BnlgHDvhjpFfqbwvprsIaklqrpdgJyebfuhxajbDhmvnFgzdzzCJdvluJFki/Screen_shot_2011-06-22_at_6.42.21_PM.png.scaled500.png" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://s3.amazonaws.com/files.posterous.com/temp-2011-06-22/CpvlcinkrxhtnAHfGtEHhxyGkraqlFmCjcnztFuugagBGxmBjCdwuquHpvEB/promo_gmail.png?AWSAccessKeyId=AKIAJFZAE65UYRT34AOQ&amp;amp;Expires=1308801019&amp;amp;Signature=DJWDgj7fmyq7K3ve177H7DPwKdw%3D"&gt;&lt;img src="http://s3.amazonaws.com/files.posterous.com/temp-2011-06-22/CpvlcinkrxhtnAHfGtEHhxyGkraqlFmCjcnztFuugagBGxmBjCdwuquHpvEB/promo_gmail.png?AWSAccessKeyId=AKIAJFZAE65UYRT34AOQ&amp;amp;Expires=1308801019&amp;amp;Signature=DJWDgj7fmyq7K3ve177H7DPwKdw%3D" alt="http://s3.amazonaws.com/files.posterous.com/temp-2011-06-22/CpvlcinkrxhtnAHfGtEHhxyGkraqlFmCjcnztFuugagBGxmBjCdwuquHpvEB/promo_gmail.png" title="http://s3.amazonaws.com/files.posterous.com/temp-2011-06-22/CpvlcinkrxhtnAHfGtEHhxyGkraqlFmCjcnztFuugagBGxmBjCdwuquHpvEB/promo_gmail.png" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1197#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/482</link>
+        <guid isPermaLink="false">http://localhost/ticket/482</guid>
+        <title>#482: API Rate Limiting</title>
+        <pubDate>Sat, 21 Aug 2010 20:32:36 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/482#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/363</link>
+        <guid isPermaLink="false">http://localhost/ticket/363</guid>
+        <title>#363: Blank revisions</title>
+        <pubDate>Mon, 12 Jul 2010 15:16:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Occasionally we seem to get revisions that are not connected to packages. These shouldn't appear, since all revisioned objects are linked to a package aren't they?
+&lt;/p&gt;
+&lt;p&gt;
+They appear on the 'Recently changed' list on the home page with an empty 'Packages' column.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/363#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1780</link>
+        <guid isPermaLink="false">http://localhost/ticket/1780</guid>
+        <title>#1780: Api to add translations.</title>
+        <pubDate>Mon, 06 Feb 2012 17:21:48 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Add api to translation to the term_translation table.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;add to logic 2d
+&lt;/li&gt;&lt;li&gt;test 2d
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1780#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/691</link>
+        <guid isPermaLink="false">http://localhost/ticket/691</guid>
+        <title>#691: Package Relationships</title>
+        <pubDate>Mon, 11 Oct 2010 18:45:35 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/691#changelog</comments>
+    </item>
+ </channel>
+</rss>

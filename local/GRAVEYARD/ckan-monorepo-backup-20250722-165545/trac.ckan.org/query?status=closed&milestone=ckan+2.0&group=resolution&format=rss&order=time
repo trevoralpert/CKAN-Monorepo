@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan+2.0&amp;group=resolution&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan+2.0&amp;group=resolution&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2916</link>
+        <guid isPermaLink="false">http://localhost/ticket/2916</guid>
+        <title>#2916: User management in orgs needs autocomplete</title>
+        <pubDate>Wed, 12 Sep 2012 12:09:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The user management in organizations ( &lt;a class="ext-link" href="http://localhost:5000/organization/users/NAME"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/organization/users/NAME&lt;/a&gt; ) should autocomplete names in the dropdown box so that only valid usernames are added to the table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2916#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2918</link>
+        <guid isPermaLink="false">http://localhost/ticket/2918</guid>
+        <title>#2918: Can't remove users from organizations</title>
+        <pubDate>Wed, 12 Sep 2012 13:12:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+When you remove someone, without adding them, the text box at the bottom (which should probably autocomplete) is empty, and this causes problems on the server.
+&lt;/p&gt;
+&lt;p&gt;
+Ideally when you add a user (select from the autocomplete) it would add another row to the table, defaulting the user to editor and setting the names to user&lt;span class="underline"&gt;{{X}}&lt;/span&gt;name and user&lt;span class="underline"&gt;{{X}}&lt;/span&gt;capacity where X is $('tr').size()
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2918#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2935</link>
+        <guid isPermaLink="false">http://localhost/ticket/2935</guid>
+        <title>#2935: Make recline work with new datastore</title>
+        <pubDate>Wed, 19 Sep 2012 08:14:19 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2935#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2940</link>
+        <guid isPermaLink="false">http://localhost/ticket/2940</guid>
+        <title>#2940: Edit different resources from edit dataset pag</title>
+        <pubDate>Tue, 25 Sep 2012 13:46:52 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+We need a nice way to be able to get to editing the different resources that are associated to a dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2940#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2941</link>
+        <guid isPermaLink="false">http://localhost/ticket/2941</guid>
+        <title>#2941: Add follower support back into CKAN 2.0</title>
+        <pubDate>Tue, 25 Sep 2012 14:51:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Add the views and functionality of following users and groups into 2.0
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2941#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2950</link>
+        <guid isPermaLink="false">http://localhost/ticket/2950</guid>
+        <title>#2950: paster command to minify javascript and css</title>
+        <pubDate>Mon, 01 Oct 2012 19:06:16 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+With the latest template, css and js changes in 2.0, there are a number of things that need preparation prior to a production deployment.  One of these is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the fanstatic_resources defined in &lt;tt&gt;ckan/lib/fanstatic_resources.py&lt;/tt&gt; (bottom of module) should be prepared, and minified.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This ticket is to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;provide a paster command which when run will generate the minified javascript as css files.
+&lt;/li&gt;&lt;li&gt;stop the auto-minification of files when CKAN starts up.
+&lt;/li&gt;&lt;li&gt;remove reference to the minified files in the &lt;tt&gt;.gitignore&lt;/tt&gt; file.
+&lt;/li&gt;&lt;li&gt;add instruction to the release process to run this command, and check-in the minified files to the repo.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+## Background
+&lt;/p&gt;
+&lt;p&gt;
+Currently, minification works seamlessly without the need for any preparation when CKAN is started in a development setup.  But on a production site, the webserver will (almost certainly) not have write-access to the directories that will contain the minified files.  And so the minification will fail, and the site will end up serving the un-minified media, or even *old* minified media.
+&lt;/p&gt;
+&lt;p&gt;
+One way around this would be to allow webserver write access to the directory its serving out of.  But this is not generally considered good practice.
+&lt;/p&gt;
+&lt;p&gt;
+Another method would be to distribute the minified files with CKAN.  This ticket describes how to do this without causing a lot of noise in the commit history of the repo.
+&lt;/p&gt;
+&lt;p&gt;
+The auto-minifcation occurs when importing &lt;tt&gt;ckan/lib/fanstatic_resources.py&lt;/tt&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+## Changing the process slightly
+&lt;/p&gt;
+&lt;p&gt;
+The reason for moving away from auto-minifying files at start-up, to minifying files when running a paster command is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;we should be distributing the minified files when we make a release (as we do with translation files).  This makes it easier to install CKAN from source.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;if we distribute the minified files, then they need to be checked-in to the repo.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;if they are auto-minified, whenever small changes are made, then this will create a lot of noise in the repo.  It will be clearer to have the minified-files generated manually as part of the release process. (Or whever we make a deployment internally).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2950#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2954</link>
+        <guid isPermaLink="false">http://localhost/ticket/2954</guid>
+        <title>#2954: Flickering on resource view when changing between views</title>
+        <pubDate>Wed, 03 Oct 2012 12:55:16 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+From the google doc: When I move between grid, graph and map view mode (or click on filters) the whole data explorer flickers (jumps up &amp;amp; down slightly) for a few moments before settling. This is happening on all resources for me and when you initially open launch the page: &lt;a class="ext-link" href="http://demo.ckan.org/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;. Only in Chrome, working fine in Firefox.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2954#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2955</link>
+        <guid isPermaLink="false">http://localhost/ticket/2955</guid>
+        <title>#2955: Recline should be updated</title>
+        <pubDate>Wed, 03 Oct 2012 13:22:14 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2955#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3004</link>
+        <guid isPermaLink="false">http://localhost/ticket/3004</guid>
+        <title>#3004: ImportError: No module named polib</title>
+        <pubDate>Mon, 22 Oct 2012 12:09:50 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This is happening whenever people try to run paster commands. polib should only be needed for the check-po-files command don't import otherwise.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3004#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3008</link>
+        <guid isPermaLink="false">http://localhost/ticket/3008</guid>
+        <title>#3008: Add tests for dashboard activity stream auth</title>
+        <pubDate>Tue, 30 Oct 2012 12:41:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We need to test that only logged in users can see their own dashboard activity streams, and they can only see their own dashboard activity streams not those of other users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3008#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3009</link>
+        <guid isPermaLink="false">http://localhost/ticket/3009</guid>
+        <title>#3009: On-site notification of new dashboard activity</title>
+        <pubDate>Tue, 30 Oct 2012 16:49:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want a "bubble" with a number in it to appear in the top-right of the site next to your user name when you're logged in, telling you how many new activity stream items you have in your dashboard activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+There's a github issue for this here:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/11"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/11&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3009#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3022</link>
+        <guid isPermaLink="false">http://localhost/ticket/3022</guid>
+        <title>#3022: setup_template_variables method of IDatasetForm never called</title>
+        <pubDate>Thu, 22 Nov 2012 16:45:43 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On the package controller the package_type is not passed to the lookup function, so the setup_template_variables defined on the extensions is never called
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3022#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3015</link>
+        <guid isPermaLink="false">http://localhost/ticket/3015</guid>
+        <title>#3015: Dropdowns don't work without JavaScript</title>
+        <pubDate>Tue, 13 Nov 2012 11:19:13 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially the default bootstrap dropdowns don't work properly without &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; which is a little bit of an issue with JS not working.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3015#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2549</link>
+        <guid isPermaLink="false">http://localhost/ticket/2549</guid>
+        <title>#2549: Merge organization logic into groups</title>
+        <pubDate>Mon, 18 Jun 2012 11:03:41 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+Merge the organizations plugin into the core groups functionality. Most of this is templating and a small number of changes to the group controller.
+&lt;/p&gt;
+&lt;p&gt;
+Investigate the possibility of removing the Membership model and using FKs.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+This is likely to consist of:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Updating the templates in templates/group/
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Configuring whether we want to constrain datasets to a single group (as per organizations)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Implementing the separate user management (add users to group).
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Checking the publisher auth to not necessarily rely on group type = 'organization'
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Making sure that the changes still work with publisher auth.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Code
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] Configuration
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Model/Migration?&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] Fix templates
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[ ] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2549#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2878</link>
+        <guid isPermaLink="false">http://localhost/ticket/2878</guid>
+        <title>#2878: Roles and Permissions for Organisations</title>
+        <pubDate>Mon, 20 Aug 2012 12:37:46 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+As part of merging Organisations into core, it is necessary that we clarify the capacity field with which the users/datasets are added as members to the group 'subclass'.
+&lt;/p&gt;
+&lt;p&gt;
+Rather than the capacity being an opaque string that implies auth but doesn't clearly specify it, we will use role names where roles are defined in the database - with a clearly defined set of standard roles.  The Role table is expected to have simply a string name/representation and acts as a container for permissions.
+&lt;/p&gt;
+&lt;p&gt;
+Each permission is a string of the form object.action (such as package.add, group.delete) of which several are expected to be associated with a role.  This means the permission table will contain a string and a reference to the role.
+&lt;/p&gt;
+&lt;p&gt;
+This work will require UI changes to the screens allowing users to be added to a group/organisation so that the list of available roles is available to add those users.
+&lt;/p&gt;
+&lt;p&gt;
+[x] Model for Role and Permission
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Logic layer changes for managing roles/permissions etc.
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Determine default roles, perhaps just admin/editor/viewer
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Fix the auth layer to use the permissions/roles - may be better implemented as another ticket.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2878#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2879</link>
+        <guid isPermaLink="false">http://localhost/ticket/2879</guid>
+        <title>#2879: Datasets (Package) should have a 'public' field</title>
+        <pubDate>Mon, 20 Aug 2012 12:39:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The Package model should have a boolean field added to it describing its visibility beyond that supplied via auth.
+&lt;/p&gt;
+&lt;p&gt;
+The related permission for viewing packages where public is set to False would be package.view (show, whatever), and *never* visible for unauthenticated users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2879#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2880</link>
+        <guid isPermaLink="false">http://localhost/ticket/2880</guid>
+        <title>#2880: Datasets (Package) should have owners</title>
+        <pubDate>Mon, 20 Aug 2012 12:42:15 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Each dataset should have an explicit owner that is an organisation.  This is the organisation that owns the dataset* and will be used for specifying who can move a dataset out of the default organisation.
+&lt;/p&gt;
+&lt;p&gt;
+This should probably be a foreign key link from dataset to organisation (or rather group).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Currently this won't necessarily be the organisation that the dataset is a member of, but it is likely that this will be the case initially (at least until someone moves it to another organisation).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2880#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2980</link>
+        <guid isPermaLink="false">http://localhost/ticket/2980</guid>
+        <title>#2980: Add new groups and organizations functionality into legacy templates</title>
+        <pubDate>Mon, 15 Oct 2012 10:44:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: add the functionality to legacy templates
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2980#changelog</comments>
+    </item>
+ </channel>
+</rss>

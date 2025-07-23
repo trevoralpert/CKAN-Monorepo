@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=shevski&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=shevski&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2697</link>
+        <guid isPermaLink="false">http://localhost/ticket/2697</guid>
+        <title>#2697: create dataset validation</title>
+        <pubDate>Wed, 18 Jul 2012 14:00:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Includes: missing fields, existing field checks (i.e. whether a name/dataset already exists with that name) during input (i.e. no need to submit form to check)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2697#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2674</link>
+        <guid isPermaLink="false">http://localhost/ticket/2674</guid>
+        <title>#2674: Data preview not loading on s031</title>
+        <pubDate>Mon, 16 Jul 2012 10:38:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Not loading for all resources as far as I can tell; e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Fine on demo.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2674#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2729</link>
+        <guid isPermaLink="false">http://localhost/ticket/2729</guid>
+        <title>#2729: searching for tags:[tag] works but tag:[tag] doesn't</title>
+        <pubDate>Sun, 22 Jul 2012 09:58:29 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+which is confusing since you can only search for one tag like this at a time. I.e.
+tags:economics,cvs or tags:economics, csv or tags:economics+CSV doesn't work for example; therefore tag:economics, should also work!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2729#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1384</link>
+        <guid isPermaLink="false">http://localhost/ticket/1384</guid>
+        <title>#1384: CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages</title>
+        <pubDate>Wed, 12 Oct 2011 10:07:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Most articles still refer and link to ckan.net, wiki.ckan.net and to packages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2477</link>
+        <guid isPermaLink="false">http://localhost/ticket/2477</guid>
+        <title>#2477: Add extensions section to readthedocs</title>
+        <pubDate>Wed, 30 May 2012 15:54:04 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Need a central up to date place for currently supported extensions (closest we have is &lt;a class="ext-link" href="http://wiki.ckan.org/List_of_Extensions"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/List_of_Extensions&lt;/a&gt;) &amp;amp; their documentation. I suggest this gets added to  a dedicated section of docs.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2477#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2766</link>
+        <guid isPermaLink="false">http://localhost/ticket/2766</guid>
+        <title>#2766: prevent draft datasets making it to activity stream</title>
+        <pubDate>Thu, 26 Jul 2012 16:06:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+The new ckan creates datasets as part of a 3 phase process.  To allow for this partially created datasets can have a state that is 'draft' or 'draft-complete'.  These datasets should not be seen as active by the activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+If we click 'add dataset' and then complete the first phase of adding a dataset then we end up having a activity stream created.  When we add a resource in the next phase (add data) again an activity stream item xxx added resource to dataset is created
+&lt;/p&gt;
+&lt;p&gt;
+We do not want these adding.  Essentially if a dataset has a state.startswith('draft') then we want the activity stream to ignore all actions involving it.
+&lt;/p&gt;
+&lt;p&gt;
+finally when the state is changed form state.startswith('draft') to state=='active' we want a xxx has created dataset ... to be added to the stream.
+&lt;/p&gt;
+&lt;p&gt;
+The best way to do this would be to branch from 2375-demo-theme-stable and get it to work there.
+&lt;/p&gt;
+&lt;p&gt;
+Let me know if you need any help with this ticket or a better explanation of the problem.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2699</link>
+        <guid isPermaLink="false">http://localhost/ticket/2699</guid>
+        <title>#2699: workflow for associating datasets with groups</title>
+        <pubDate>Wed, 18 Jul 2012 14:02:56 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+needs review &amp;amp; speccing out
+e.g. datasets created by a user who belongs to a certain publisher (group) get auto added to this group
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2699#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2702</link>
+        <guid isPermaLink="false">http://localhost/ticket/2702</guid>
+        <title>#2702: Future Javascript wishlist for demo</title>
+        <pubDate>Wed, 18 Jul 2012 14:07:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tooltip on popular datasets with number of views
+facets to update automatically
+creating a dataset without reloading page between steps
+hover on licences information
+autocomplete on search terms
+group filtering
+social share buttons in lightboxes
+dataset counts on homepage
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2698</link>
+        <guid isPermaLink="false">http://localhost/ticket/2698</guid>
+        <title>#2698: markdown preview</title>
+        <pubDate>Wed, 18 Jul 2012 14:01:25 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+for description / other fields with markdown support
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2698#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2718</link>
+        <guid isPermaLink="false">http://localhost/ticket/2718</guid>
+        <title>#2718: can't add dataset to more than one group</title>
+        <pubDate>Fri, 20 Jul 2012 10:35:50 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+trying to add a dataset to another group means it's no longer part of the first group
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://demo.ckan.org/dataset/edit/afterfibre"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/edit/afterfibre&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2718#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2721</link>
+        <guid isPermaLink="false">http://localhost/ticket/2721</guid>
+        <title>#2721: deleted groups should not show on 'Add to Groups' dropdown</title>
+        <pubDate>Sun, 22 Jul 2012 09:17:12 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Groups previously deleted still show up in the add dataset process in step 3 'Additional info'
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_metadata/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_metadata/ff&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2721#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2725</link>
+        <guid isPermaLink="false">http://localhost/ticket/2725</guid>
+        <title>#2725: Case sensitivity on tags</title>
+        <pubDate>Sun, 22 Jul 2012 09:34:27 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+My feeling is that 'country-US' and 'country-us' should be the same tag. However currently tags with caps are treated differently
+&lt;/p&gt;
+&lt;p&gt;
+see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+with TEST and test - there also get indexed twice in the search page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2725#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2726</link>
+        <guid isPermaLink="false">http://localhost/ticket/2726</guid>
+        <title>#2726: confusing logic on data preview formats</title>
+        <pubDate>Sun, 22 Jul 2012 09:38:47 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;If a user enters the wrong format on a file that can be previewed - it simply won't be previewed (e.g. a CSV or XML file that can be filled in with JSON in format will just not work or check this
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;If I incorrectly edit format to one that data preview will try to preview it will work even for a format that it doesn't accept (sometimes) e.g. this PDF file I changed the metadata to HTML &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2726#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2728</link>
+        <guid isPermaLink="false">http://localhost/ticket/2728</guid>
+        <title>#2728: deleted group shows on search index - for admins</title>
+        <pubDate>Sun, 22 Jul 2012 09:53:04 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+'test-group', which has been deleted,shows up on main search page under groups - and can be filtered by - see &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?groups=test-group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?groups=test-group&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2735</link>
+        <guid isPermaLink="false">http://localhost/ticket/2735</guid>
+        <title>#2735: Dataset order on user page</title>
+        <pubDate>Mon, 23 Jul 2012 17:01:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+I think the datasets on user pages &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/me"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/me&lt;/a&gt;
+should be ordered by latest updated (with most recent at the top) instead of in alphabetical order.
+&lt;/p&gt;
+&lt;p&gt;
+What do you think?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2735#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2768</link>
+        <guid isPermaLink="false">http://localhost/ticket/2768</guid>
+        <title>#2768: normalise excel to xls</title>
+        <pubDate>Thu, 26 Jul 2012 16:16:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+so that data proxy works
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2768#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2780</link>
+        <guid isPermaLink="false">http://localhost/ticket/2780</guid>
+        <title>#2780: way for admins to undelete datasets</title>
+        <pubDate>Tue, 31 Jul 2012 12:20:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Since admins can see deleted datasets - there should be a way for them
+a) to know they are currently deleted &amp;amp; not viewable by normal users - ticket: &lt;a class="closed ticket" href="http://localhost/ticket/2779" title="enhancement: add 'deleted' to deleted datasets that admins can view (closed: fixed)"&gt;#2779&lt;/a&gt;
+b) way to undelete such datasets - this ticket
+&lt;/p&gt;
+&lt;p&gt;
+I suggest a button on the edit form instead of the delete button
+i.e. remove normal delete button with 'deleted dataset, only admins can view' with undelete button next to the message?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2780#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2828</link>
+        <guid isPermaLink="false">http://localhost/ticket/2828</guid>
+        <title>#2828: Draft datasets are confusing - tickets need creating</title>
+        <pubDate>Thu, 09 Aug 2012 09:56:18 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+reported as editing datasets incorrect
+&lt;/p&gt;
+&lt;p&gt;
+e.g. clicking on edit here &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+takes you to create dataset page &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/edit/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/edit/ff&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+but this is the correct behaviour of a draft dataset
+&lt;/p&gt;
+&lt;p&gt;
+We need to show draft datasets correctly
+&lt;/p&gt;
+&lt;p&gt;
+proper tickets need making for the different issues after review of issues with them - who can see, where, admins and viewing, orgs too etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2828#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2857</link>
+        <guid isPermaLink="false">http://localhost/ticket/2857</guid>
+        <title>#2857: no UI to follow another user although option on dashboard</title>
+        <pubDate>Wed, 15 Aug 2012 16:59:43 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. second option in left hand sidebar is follow another user' &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/dashboard"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/dashboard&lt;/a&gt; but if you click on that and then any user, there's no follow button
+&lt;/p&gt;
+&lt;p&gt;
+to me the dashboard user stuff is highly unfinished and probably should not be included unless someone is very keen for it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2857#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2861</link>
+        <guid isPermaLink="false">http://localhost/ticket/2861</guid>
+        <title>#2861: Add qa breadcrumb</title>
+        <pubDate>Thu, 16 Aug 2012 10:47:26 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+can we add in the breadcrumb navigation to qa pages so that you can go back to &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa&lt;/a&gt; from sub pages such as &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2861#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2863</link>
+        <guid isPermaLink="false">http://localhost/ticket/2863</guid>
+        <title>#2863: non-admin users can edit other's draft datasets</title>
+        <pubDate>Thu, 16 Aug 2012 10:54:39 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+edit button shows up for daniel lewis for &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2863#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1414</link>
+        <guid isPermaLink="false">http://localhost/ticket/1414</guid>
+        <title>#1414: track user log-ins on thedatahub.org</title>
+        <pubDate>Mon, 24 Oct 2011 11:13:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Set up tracking for user logins so that we have stats about how many active users of thedatahub exist
+want to be able to see who logged in the the last x months
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1414#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1643</link>
+        <guid isPermaLink="false">http://localhost/ticket/1643</guid>
+        <title>#1643: Add fixed tags to thedatahub for better browsing</title>
+        <pubDate>Thu, 12 Jan 2012 18:34:53 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Similar to publicdata.eu, want to have themed areas such as finance, environment, census, etc and country tags
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1643#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1644</link>
+        <guid isPermaLink="false">http://localhost/ticket/1644</guid>
+        <title>#1644: Order default dataset page by most downloaded resources on thedatahub</title>
+        <pubDate>Thu, 12 Jan 2012 18:39:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Instead of alphabetically as we do currently, alternatively by most viewed datasets
+&lt;/p&gt;
+&lt;p&gt;
+for &lt;a class="ext-link" href="http://thedatahub.org/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1644#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1647</link>
+        <guid isPermaLink="false">http://localhost/ticket/1647</guid>
+        <title>#1647: add links to ckan discuss &amp; dev to thedatahub</title>
+        <pubDate>Mon, 16 Jan 2012 00:30:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+In the footer as well as more clearly &amp;amp; directly on the About page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1647#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1717</link>
+        <guid isPermaLink="false">http://localhost/ticket/1717</guid>
+        <title>#1717: [super] Search UX improvements</title>
+        <pubDate>Thu, 26 Jan 2012 18:53:01 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Make it possible to search by tag (e.g. by typing tag:csv into the search bar and clicking enter, it should add the 'csv' tag facet to the search)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Rename and standardise the list of format tags, on search page this should also be called 'Format' instead of 'res_format' (in the right hand side bar on search page).
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Make it possible to view full list of tags, formats and groups by clicking on the name. From here you should be table to click on a classification and go back to a search page faceted by that classification. E.g. from search page, click on 'tags', on tag page click on 'london' or whatever, and be navigated back to search page with search within 'london' tag only.  Or y'know, a better way of doing it.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;More standard classifications, such as 'Location' and 'Theme' - like on publicdata.eu
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;Blue search button should be displayed in line with the search bar, not underneath
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="6"&gt;&lt;li&gt;Datasets should be displayed in order of most viewed or downloaded instead of alphabetically. For alphabetic search we could consider adding a way to facet by first letter of dataset name
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1717#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2686</link>
+        <guid isPermaLink="false">http://localhost/ticket/2686</guid>
+        <title>#2686: enabling datastore &amp; data API breaks recline</title>
+        <pubDate>Tue, 17 Jul 2012 09:06:51 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+First I noticed that the gold prices dataset preview was not displaying &amp;amp; has data API enabled
+Secondly I tried enabling datastore for &lt;a class="ext-link" href="http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f&lt;/a&gt; and after I saved the preview no longer worked. Unticking the datastore &amp;amp; data api checkbox brought it back
+&lt;/p&gt;
+&lt;p&gt;
+Is this a known issue?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2686#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2748</link>
+        <guid isPermaLink="false">http://localhost/ticket/2748</guid>
+        <title>#2748: add 'add new resource' button to sidebar</title>
+        <pubDate>Wed, 25 Jul 2012 10:41:18 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+When editing a resource you see the current and any other existing resources in sidebar
+&lt;/p&gt;
+&lt;p&gt;
+(e.g. see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Would be good to have a pretty 'add new' slightly transparent resource folder/pointer undearneath - letting you add resources from the end resource page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2748#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2786</link>
+        <guid isPermaLink="false">http://localhost/ticket/2786</guid>
+        <title>#2786: target blank HTML downloads</title>
+        <pubDate>Wed, 01 Aug 2012 11:16:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. if I click on download here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b&lt;/a&gt; can it take me to a new tab instead of navigating away from ckan?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2854</link>
+        <guid isPermaLink="false">http://localhost/ticket/2854</guid>
+        <title>#2854: no way to see which dataset an app is related to on /apps page</title>
+        <pubDate>Wed, 15 Aug 2012 16:38:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. from &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps?page=1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps?page=1&lt;/a&gt; you cannot edit a related item as an admin or view what dataset the item is related to
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2854#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2869</link>
+        <guid isPermaLink="false">http://localhost/ticket/2869</guid>
+        <title>#2869: user profile not linked on disqus until page refresh</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:34 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Reported by Daniel:
+&lt;/p&gt;
+&lt;p&gt;
+Problem: DISQUS comments don't appear with profile details (inc. username).
+How to reproduce:
+1) Go to a dataset, e.g. I went to &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+2) I logged into DISQUS using the Google Authentication, e.g. in my case that is okfn.daniel.lewis@…
+3) I made a comment and submitted
+4) It comes up with the comment, but no linked profile until the page gets refreshed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2869#changelog</comments>
+    </item>
+ </channel>
+</rss>

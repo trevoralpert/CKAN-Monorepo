@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2012-05-29&amp;group=status&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2012-05-29&amp;group=status&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2345</link>
+        <guid isPermaLink="false">http://localhost/ticket/2345</guid>
+        <title>#2345: Rewrite action API docs using autodoc</title>
+        <pubDate>Tue, 01 May 2012 12:52:49 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2345#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2390</link>
+        <guid isPermaLink="false">http://localhost/ticket/2390</guid>
+        <title>#2390: create_test_data for multiple users, rights</title>
+        <pubDate>Tue, 15 May 2012 16:14:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+It would be useful (well for DGU, but no doubt for core too) to have be able to create multiple users with full properties using one commit. Also to be able to create rights (&lt;a class="missing wiki"&gt;UserObjectRoles?&lt;/a&gt;).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2390#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2400</link>
+        <guid isPermaLink="false">http://localhost/ticket/2400</guid>
+        <title>#2400: Password reset fails</title>
+        <pubDate>Wed, 16 May 2012 17:16:54 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+One user reports that after resetting the password via the reset form he was unable to log in again. He did have an email address associated and received the reset email. After updating his password, login failed
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;"Login failed. Bad username or password. (Or if using OpenID, it hasn't been associated with a user account.)"
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2400#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2383</link>
+        <guid isPermaLink="false">http://localhost/ticket/2383</guid>
+        <title>#2383: Date on add/edit resource breaks if offset is specified</title>
+        <pubDate>Tue, 15 May 2012 11:11:15 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2383#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2401</link>
+        <guid isPermaLink="false">http://localhost/ticket/2401</guid>
+        <title>#2401: CLI for time/speed profiling</title>
+        <pubDate>Thu, 17 May 2012 15:46:11 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+To enable you to easily track down what is taking all the time when you make a request.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2401#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2322</link>
+        <guid isPermaLink="false">http://localhost/ticket/2322</guid>
+        <title>#2322: Convenience offset on end of resource urls: /raw, /api, /viewer</title>
+        <pubDate>Tue, 24 Apr 2012 03:03:01 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Raw"&gt;Raw&lt;/h2&gt;
+&lt;p&gt;
+/raw or /download (latter may be better)
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/dataset/{id}/resource/{resource-id}/raw
+=&amp;gt; redirects to resource url (download)
+&lt;/pre&gt;&lt;h2 id="API"&gt;API&lt;/h2&gt;
+&lt;pre class="wiki"&gt;/dataset/{id}/resource/{resource-id}/api[/....]
+=&amp;gt; either redirects or directly serves /api/data/{resource-id}
+&lt;/pre&gt;&lt;h2 id="ViewerExplorer"&gt;Viewer (Explorer?)&lt;/h2&gt;
+&lt;p&gt;
+Do data viewer but without anything else showing (full-screen?). this would not be just the data explorer but other cases too (including iframe etc ...)
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/dataset/{id}/resource/{resource-id}/viewer
+Resource (pre)-viewer without anything else (perhaps include resource title)
+&lt;/pre&gt;&lt;hr /&gt;
+&lt;p&gt;
+Assigning for kindly for review.
+&lt;/p&gt;
+&lt;p&gt;
+These would take about 20m to implement and would be *very* convenient from my experience of using the data API.
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Implementation at enhancement-2322-convenience-urls
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2322#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2385</link>
+        <guid isPermaLink="false">http://localhost/ticket/2385</guid>
+        <title>#2385: Specifying capacity in search api call</title>
+        <pubDate>Tue, 15 May 2012 14:41:39 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Currently you can specify the capacity in the API search, this should be stripped and default to public for now.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2385#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2386</link>
+        <guid isPermaLink="false">http://localhost/ticket/2386</guid>
+        <title>#2386: Setup feature-2375-demo-theme test server</title>
+        <pubDate>Tue, 15 May 2012 15:16:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2386#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2387</link>
+        <guid isPermaLink="false">http://localhost/ticket/2387</guid>
+        <title>#2387: Upgrade cz.ckan.net to CKAN 1.7</title>
+        <pubDate>Tue, 15 May 2012 15:17:09 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2387#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2392</link>
+        <guid isPermaLink="false">http://localhost/ticket/2392</guid>
+        <title>#2392: Add language field to dataset</title>
+        <pubDate>Wed, 16 May 2012 09:11:41 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+An extra field on datasets called "metadata_language".  The language that the meta-data is in.  Drop-down list needs to be translatable.     Default value is "English".
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2392#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2393</link>
+        <guid isPermaLink="false">http://localhost/ticket/2393</guid>
+        <title>#2393: Map licenses with countryCode to license name without countryCode</title>
+        <pubDate>Wed, 16 May 2012 09:12:44 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Map licenses: given &lt;a class="ext-link" href="http://creativecommons.org/licenses/by/2.5/{countrycode}/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://creativecommons.org/licenses/by/2.5/{countrycode}/&lt;/a&gt; as a license value through the API, convert it to &lt;a class="ext-link" href="http://www.opendefinition.org/licenses/cc-by"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.opendefinition.org/licenses/cc-by&lt;/a&gt; .  Should also work if given &lt;a class="ext-link" href="http://www.opendefinition.org/licenses/cc-by"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.opendefinition.org/licenses/cc-by&lt;/a&gt;  .  NOTE: the API may send through a list of licenses; in this situation, take the head of the list.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2393#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2396</link>
+        <guid isPermaLink="false">http://localhost/ticket/2396</guid>
+        <title>#2396: Tag list page loads very slowly</title>
+        <pubDate>Wed, 16 May 2012 09:22:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2396#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2397</link>
+        <guid isPermaLink="false">http://localhost/ticket/2397</guid>
+        <title>#2397: Write CKAN docstring guidelines</title>
+        <pubDate>Wed, 16 May 2012 09:23:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2397#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2398</link>
+        <guid isPermaLink="false">http://localhost/ticket/2398</guid>
+        <title>#2398: Ubuntu 10.04 source install instructions not working?</title>
+        <pubDate>Wed, 16 May 2012 09:24:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2398#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2402</link>
+        <guid isPermaLink="false">http://localhost/ticket/2402</guid>
+        <title>#2402: search result speedup.</title>
+        <pubDate>Fri, 18 May 2012 00:16:41 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Search results are slow as we do many package_dictize.  Store the package_dict in the search index so that we do not have to hit the database for each of them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2402#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2403</link>
+        <guid isPermaLink="false">http://localhost/ticket/2403</guid>
+        <title>#2403: home page speed improvements</title>
+        <pubDate>Fri, 18 May 2012 00:56:22 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Home page loads *all* groups and dictizes them, it should only dictize the top 10 or so from the search facets.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2403#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2409</link>
+        <guid isPermaLink="false">http://localhost/ticket/2409</guid>
+        <title>#2409: Accept headers not handled correctly</title>
+        <pubDate>Tue, 22 May 2012 10:51:38 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN returns HTML when an Accept header should make it return RDF/XML:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002237.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002237.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2409#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2410</link>
+        <guid isPermaLink="false">http://localhost/ticket/2410</guid>
+        <title>#2410: New RDF serialization required VOID vocab for related datasets</title>
+        <pubDate>Tue, 22 May 2012 11:02:11 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Taken from &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002218.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002218.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+A few months ago, the RDF provided when dereferencing a dataset's URI was very useful.
+It described the datasets using many of the "right" RDF vocabularies (dcterms, void, etc).
+&lt;/p&gt;
+&lt;p&gt;
+The RDF that is returned now no longer has these nice descriptions.
+Instead, it seems to be a mindless transcription of the CKAN record.
+&lt;/p&gt;
+&lt;p&gt;
+For example, the older descriptions gave:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+void:subset [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+void:target &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/geonames-semantic-web"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/geonames-semantic-web&lt;/a&gt;&amp;gt; ;
+void:triples 50 ;
+a void:Linkset
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+], [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+void:target &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/dbpedia"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/dbpedia&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt; ;
+void:triples 52 ;
+a void:Linkset
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+], [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+void:target &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/govtrack"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/govtrack&lt;/a&gt;&amp;gt; ;
+void:triples 52 ;
+a void:Linkset
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+] ;
+void:triples 130005 ;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+but now it's simply:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+dct:relation  [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+rdf:value "130005" ;
+rdfs:label "triples"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+], [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+rdf:value "52" ;
+rdfs:label "links:dbpedia"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+], [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+rdf:value "50" ;
+rdfs:label "links:geonames-semantic-web"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+], [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+rdf:value "52" ;
+rdfs:label "links:govtrack"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+] ;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+My old copies of the dataset descriptions mentioned a "GoLD CKAN 1.0" that was credited for the nicer modeling.
+&lt;/p&gt;
+&lt;p&gt;
+Where did that go? Can we get it back?
+&lt;/p&gt;
+&lt;p&gt;
+Thanks,
+Tim Lebo
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;&lt;a class="ext-link" href="http://semantic.ckan.net/record/91d2c0de-75a4-4bb6-b260-bc2946e1be8b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://semantic.ckan.net/record/91d2c0de-75a4-4bb6-b260-bc2946e1be8b&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+dc:source &amp;lt;&lt;a class="ext-link" href="http://ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/&lt;/a&gt;&amp;gt; ;
+opmv:wasGeneratedBy [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+opmv:used &amp;lt;&lt;a class="ext-link" href="http://ckan.net/api/rest/package/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/rest/package/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt;, &amp;lt;&lt;a class="ext-link" href="http://ckan.net/api/rest/revision/9c2545b8-ebf1-42bf-ac92-633ff5ceba3f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/rest/revision/9c2545b8-ebf1-42bf-ac92-633ff5ceba3f&lt;/a&gt;&amp;gt; ;
+opmv:wasControlledBy [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+a foaf:Agent ;
+foaf:name "GoLD CKAN 1.0"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+] ;
+opmv:wasPerformedAt [
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+a time:Instant ;
+time:inXSDDateTime "2012-01-31T05:34:32Z&amp;#34;^^xsd:dateTime
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+] ;
+a opmv:Process
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+] ;
+a dcat:CatalogRecord ;
+dcat:dataset &amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/farmers-markets-geographic-data-united-states&lt;/a&gt;&amp;gt; ;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+…
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2410#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2413</link>
+        <guid isPermaLink="false">http://localhost/ticket/2413</guid>
+        <title>#2413: Replace/Fork autoneg</title>
+        <pubDate>Wed, 23 May 2012 08:18:45 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Take revelvant parts of autoneg ( &lt;a class="ext-link" href="https://github.com/wwaites/autoneg.git"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/wwaites/autoneg.git&lt;/a&gt; ) so that we can remove the dependency (just for two functions) and thereby remove flup as well.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2413#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2423</link>
+        <guid isPermaLink="false">http://localhost/ticket/2423</guid>
+        <title>#2423: Get rid of CKAN's lxml dependency</title>
+        <pubDate>Fri, 25 May 2012 11:43:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2423#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2424</link>
+        <guid isPermaLink="false">http://localhost/ticket/2424</guid>
+        <title>#2424: Get rid of CKAN's autoneg dependency</title>
+        <pubDate>Fri, 25 May 2012 11:44:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2424#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2436</link>
+        <guid isPermaLink="false">http://localhost/ticket/2436</guid>
+        <title>#2436: Write instructions for booting CKAN demo instances on s031</title>
+        <pubDate>Fri, 25 May 2012 17:52:25 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2436#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2331</link>
+        <guid isPermaLink="false">http://localhost/ticket/2331</guid>
+        <title>#2331: Search should AND terms not OR terms</title>
+        <pubDate>Sat, 28 Apr 2012 18:24:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Appears current default search in CKAN ORs terms rather than ANDing them (i.e. adding more terms increasing number of items found rather than reducing it).
+&lt;/p&gt;
+&lt;p&gt;
+Not sure when this crept in or if it has been there for a long time.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2331#changelog</comments>
+    </item>
+ </channel>
+</rss>

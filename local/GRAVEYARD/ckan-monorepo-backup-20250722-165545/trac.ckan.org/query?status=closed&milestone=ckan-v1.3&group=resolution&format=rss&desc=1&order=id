@@ -1,0 +1,1578 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.3&amp;group=resolution&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.3&amp;group=resolution&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/992</link>
+        <guid isPermaLink="false">http://localhost/ticket/992</guid>
+        <title>#992: Use X-forwarded-for whenever it is available to set remote IP address</title>
+        <pubDate>Fri, 18 Feb 2011 19:48:52 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment we only use X-forwarded to determine remote user address when remote-addr header is 127.0.0.1. However if a site is behind a cache remote_addr will always be the IP of the cache.
+&lt;/p&gt;
+&lt;p&gt;
+We should fix this by using x-forwarded-for header whenever available and only use remote-addr when it is not available.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 10m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/992#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/991</link>
+        <guid isPermaLink="false">http://localhost/ticket/991</guid>
+        <title>#991: Checkbox defaults to True</title>
+        <pubDate>Fri, 18 Feb 2011 13:19:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Form for new package has &lt;a class="missing wiki"&gt;CheckboxExtraField?&lt;/a&gt; checked, when the value is False.
+(as used in ckanext-dgu package v3 form)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/991#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/983</link>
+        <guid isPermaLink="false">http://localhost/ticket/983</guid>
+        <title>#983: 'db upgrade' creates system priviledges</title>
+        <pubDate>Sat, 12 Feb 2011 13:44:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(should leave priviledges alone)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/983#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/977</link>
+        <guid isPermaLink="false">http://localhost/ticket/977</guid>
+        <title>#977: db_upgrade errors</title>
+        <pubDate>Fri, 11 Feb 2011 10:35:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;db_upgrade (in ckan/model/&lt;span class="underline"&gt;init&lt;/span&gt;) makes call to validate_authorization_setup but forgets about rest of initialisation.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;it uses self.metadata.bind.url when it should be self.metadata.bind it seems (confused by sqlmigrate update?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/977#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/976</link>
+        <guid isPermaLink="false">http://localhost/ticket/976</guid>
+        <title>#976: Documentation references knowledgeforge.net</title>
+        <pubDate>Thu, 10 Feb 2011 14:04:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/976#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/974</link>
+        <guid isPermaLink="false">http://localhost/ticket/974</guid>
+        <title>#974: Document site_description</title>
+        <pubDate>Thu, 10 Feb 2011 12:50:54 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Configuration option 'ckan.site_description' isn't documented
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/974#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/955</link>
+        <guid isPermaLink="false">http://localhost/ticket/955</guid>
+        <title>#955: Tidy up tests</title>
+        <pubDate>Fri, 04 Feb 2011 11:35:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Removal of init_db from every setup etc.
+&lt;/li&gt;&lt;li&gt;Get them working
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/955#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/950</link>
+        <guid isPermaLink="false">http://localhost/ticket/950</guid>
+        <title>#950: Move importer controller to ckanext-importer</title>
+        <pubDate>Wed, 02 Feb 2011 17:00:38 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+ckan/controllers/importer.py provides a Pylons UI for importing spreadsheet data into CKAN. This would better live in an extension than core CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+In the same move, ckan/tests/misc/test_spreadsheet_importer.py, which is used by importer.py as well as various dgu data importers, should move into ckanext.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/950#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/946</link>
+        <guid isPermaLink="false">http://localhost/ticket/946</guid>
+        <title>#946: No default system rights</title>
+        <pubDate>Mon, 31 Jan 2011 18:52:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN currently comes out of the box being uneditable. We'd like to encourage people to have open CKANs and therefore by default init the db with this right:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;visitor -&amp;gt; is editor on -&amp;gt; System system
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/946#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/932</link>
+        <guid isPermaLink="false">http://localhost/ticket/932</guid>
+        <title>#932: Move to SQLAlchemy-Migrate 0.6</title>
+        <pubDate>Thu, 27 Jan 2011 19:31:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Basic steps from kindly:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;changing the setup.py dependencies for sqlalchemy-migrate and sqlalchemy to their latest versions.
+&lt;/li&gt;&lt;li&gt;running the migrate script on the repository (or changing the repository scripts manually).
+&lt;/li&gt;&lt;li&gt;checking in both these changes at once.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/932#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/903</link>
+        <guid isPermaLink="false">http://localhost/ticket/903</guid>
+        <title>#903: Proper handling of deleted packages in Solr serps</title>
+        <pubDate>Wed, 12 Jan 2011 11:17:34 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Currently, deleted packages are filtered from search results after solr returns. That means result count can drop below the requested number, down to 0. Thus we need to filter before or in Solr.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/903#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/885</link>
+        <guid isPermaLink="false">http://localhost/ticket/885</guid>
+        <title>#885: reimplement csw module to use owslib</title>
+        <pubDate>Sat, 25 Dec 2010 11:54:59 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/885#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/884</link>
+        <guid isPermaLink="false">http://localhost/ticket/884</guid>
+        <title>#884: harvest job delete operation</title>
+        <pubDate>Sat, 25 Dec 2010 11:50:00 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+implement paster subcommand to delete harvest jobs
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/884#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/879</link>
+        <guid isPermaLink="false">http://localhost/ticket/879</guid>
+        <title>#879: Storage auth API</title>
+        <pubDate>Mon, 20 Dec 2010 18:08:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+API to provide credentials to allow authorized 3rd parties (ie. one's with CKAN api keys) to make uploads to storage.
+&lt;/p&gt;
+&lt;p&gt;
+Implement as a CKAN extension.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/879#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/862</link>
+        <guid isPermaLink="false">http://localhost/ticket/862</guid>
+        <title>#862: deploy rdf on catalogue.data.gov.uk</title>
+        <pubDate>Tue, 07 Dec 2010 12:50:37 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+handle various dgu extras, configure apache for autonegotiation, etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/862#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/860</link>
+        <guid isPermaLink="false">http://localhost/ticket/860</guid>
+        <title>#860: full text indexing for semantic.ckan.net</title>
+        <pubDate>Tue, 07 Dec 2010 12:47:09 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/860#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/835</link>
+        <guid isPermaLink="false">http://localhost/ticket/835</guid>
+        <title>#835: Authorization CLI and Documentation</title>
+        <pubDate>Mon, 29 Nov 2010 11:11:48 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+As a sysadmin I want to take CKAN out of wiki-mode into normal mode. In normal mode visitor and logged in users cannot create or add packages.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest put this as an internal command in authz system and add to cli as paster command.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/835#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/832</link>
+        <guid isPermaLink="false">http://localhost/ticket/832</guid>
+        <title>#832: Convert stats to a plugin</title>
+        <pubDate>Fri, 26 Nov 2010 10:05:15 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Convert stats section to a ckan plugin.
+&lt;/p&gt;
+&lt;p&gt;
+Stats need not be in core and making it a plugin would make it easier to extend and expand.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/832#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/831</link>
+        <guid isPermaLink="false">http://localhost/ticket/831</guid>
+        <title>#831: Migrate ckan trac to ckan.org</title>
+        <pubDate>Fri, 26 Nov 2010 08:40:20 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Move ckan trac to new ckan.org location. Will also need to re-enable user accounts etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/831#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/828</link>
+        <guid isPermaLink="false">http://localhost/ticket/828</guid>
+        <title>#828: Update cache support in home controller to use cache config in ini file</title>
+        <pubDate>Thu, 25 Nov 2010 13:52:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently cache usage in home controller is inconsistent with elsewhere and, in particular, does not respect cache_disabled and is not configurable using path notation (e.g. ckan.controllers.home. ...).
+&lt;/p&gt;
+&lt;p&gt;
+This is especially frustrating in a development environment where is currently running into fact front page is being cached.
+&lt;/p&gt;
+&lt;p&gt;
+Fix this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/828#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/814</link>
+        <guid isPermaLink="false">http://localhost/ticket/814</guid>
+        <title>#814: Have an “About CKAN” link on every page</title>
+        <pubDate>Wed, 17 Nov 2010 12:10:21 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+A link “About CKAN” pointing to &lt;a class="ext-link" href="http://ckan.net/about"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/about&lt;/a&gt; should be visible on every page. This is important because people often land on subpages and may have trouble figuring out what CKAN is.
+&lt;/p&gt;
+&lt;p&gt;
+I would put this link into the main navigation bar, on the very right next to “Revision History”. Then I would also remove the “Home” item from the main navigation bar because it is redundant. The CKAN logo is already a link to the homepage. The only other subpage in the “Home” section is “Statistics” and that's already linked from the homepage sidebar.
+&lt;/p&gt;
+&lt;p&gt;
+But anywhere else would be fine as well.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/814#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/813</link>
+        <guid isPermaLink="false">http://localhost/ticket/813</guid>
+        <title>#813: Add link to “Register new package” to the homepage</title>
+        <pubDate>Wed, 17 Nov 2010 12:00:53 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+A link to the “register new package” page would be handy somewhere on the front page. As a frequent editor, I often go to &lt;a class="ext-link" href="http://ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net&lt;/a&gt; in order to create a new package. I don't want to hunt around for the link to the “new package” form.
+&lt;/p&gt;
+&lt;p&gt;
+The link could go into the bar next to “About / Statistics”. Or into the “More information” sidebar. Neither of these truly make sense, but it's a frequently accessed link and that's reason enough to put it somewhere onto the frontpage.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/813#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/806</link>
+        <guid isPermaLink="false">http://localhost/ticket/806</guid>
+        <title>#806: Metadata created and last modified timestamps for packages</title>
+        <pubDate>Mon, 15 Nov 2010 21:01:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Packages should provide create and last modified attributes which are included in package dict exposed via api.
+&lt;/p&gt;
+&lt;p&gt;
+These attributes will not be in db but are computed (depend not just on package but related objects -- package tags, package resources, package extras etc)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/806#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/804</link>
+        <guid isPermaLink="false">http://localhost/ticket/804</guid>
+        <title>#804: Rework analysis for publisher/provider in UKLP</title>
+        <pubDate>Mon, 15 Nov 2010 10:14:14 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+We need an incremental plan that connects with current state of DGU and reflects what is actually required by UKLP.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/804#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/798</link>
+        <guid isPermaLink="false">http://localhost/ticket/798</guid>
+        <title>#798: cospread importer using API</title>
+        <pubDate>Thu, 11 Nov 2010 11:36:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Move existing getdata/cospread.py into dgu repo and use the importer/loader mechanism.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/798#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/797</link>
+        <guid isPermaLink="false">http://localhost/ticket/797</guid>
+        <title>#797: Rework core html layout to mirror wordpress twentyten</title>
+        <pubDate>Wed, 10 Nov 2010 15:27:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+WP twentyten has an excellent core html structure. Furthermore, using that structure makes us compatible with all the WP twentyten compatible themes.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Convert to wp twentyten html
+&lt;/li&gt;&lt;li&gt;Switch css to be based off twentyten css (and perhaps rework somewhat)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/797#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/792</link>
+        <guid isPermaLink="false">http://localhost/ticket/792</guid>
+        <title>#792: Meeting to review pre-alpha testing report from TM</title>
+        <pubDate>Mon, 08 Nov 2010 10:40:51 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/792#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/785</link>
+        <guid isPermaLink="false">http://localhost/ticket/785</guid>
+        <title>#785: Review document from PP regarding CSW and WAF guidance</title>
+        <pubDate>Mon, 08 Nov 2010 09:58:58 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Scope of CSW guidance document has been broadened to include WAF.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/782</link>
+        <guid isPermaLink="false">http://localhost/ticket/782</guid>
+        <title>#782: Add and remove users from sysadmin role from the command line</title>
+        <pubDate>Mon, 08 Nov 2010 08:34:47 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Need to be able to create (and remove) sysadmins easily (used to be able to do this via ini file but this functionality was removed a while back in authz system reorganization it seems).
+&lt;/p&gt;
+&lt;p&gt;
+Suggest creating a new paster command as first step.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;# user identifier = openid (?)
+paster sysadmin add {user identifier}
+paster sysadmin remove {user identifier}
+&lt;/pre&gt;&lt;p&gt;
+Suggest this also be added to main CKAN docs.
+&lt;/p&gt;
+&lt;p&gt;
+This should go into metastable as well as default so that it goes into the v1.2 release (can do this via a transplant from one branch to the other)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/782#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/780</link>
+        <guid isPermaLink="false">http://localhost/ticket/780</guid>
+        <title>#780: Package edit form - 'preview' button shows preview, with form lower in page</title>
+        <pubDate>Mon, 01 Nov 2010 17:00:29 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This ticket refers to the form shown in Drupal. This doesn't have a preview function, but we don't have a requirement for it right now, so leaving ticket closed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/780#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/779</link>
+        <guid isPermaLink="false">http://localhost/ticket/779</guid>
+        <title>#779: Package edit form - stylesheet in DGU updated</title>
+        <pubDate>Mon, 01 Nov 2010 17:00:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/779#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/778</link>
+        <guid isPermaLink="false">http://localhost/ticket/778</guid>
+        <title>#778: Package edit form - name auto-generated from title</title>
+        <pubDate>Mon, 01 Nov 2010 16:59:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/778#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/777</link>
+        <guid isPermaLink="false">http://localhost/ticket/777</guid>
+        <title>#777: Put 503-returning middleware into a module</title>
+        <pubDate>Mon, 01 Nov 2010 10:45:24 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Also configure hmgckan, hmgapi, test-hmg and dev-hmg machines.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/777#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/742</link>
+        <guid isPermaLink="false">http://localhost/ticket/742</guid>
+        <title>#742: Release ckan 1.2 to metastable</title>
+        <pubDate>Mon, 25 Oct 2010 10:26:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Need to make sure &lt;a class="closed ticket" href="http://localhost/ticket/700" title="bug: Groups in package form (closed: fixed)"&gt;#700&lt;/a&gt; is fixed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/742#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/739</link>
+        <guid isPermaLink="false">http://localhost/ticket/739</guid>
+        <title>#739: The system shall support retrieving a copy of the harvested metadata for a given package</title>
+        <pubDate>Fri, 22 Oct 2010 20:35:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+...obviously, not all packages will have a harvested metadata document.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/739#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/734</link>
+        <guid isPermaLink="false">http://localhost/ticket/734</guid>
+        <title>#734: Investigate department issue (ONS import)</title>
+        <pubDate>Fri, 22 Oct 2010 11:34:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Creation of duplicate packages named with trailing underscore
+&lt;/p&gt;
+&lt;p&gt;
+ww 22/9/10:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;p&gt;
+Need to ...
+merge some packages (the "find packages by attributes"
+is not 100% reliable because of inconsistent data
+already in there).
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The "find by tags" algorithm uses (title, department).
+Unfortunately some of the data already there has no
+department. This causes it to make a new package (with
+trailing underscore).
+&lt;/p&gt;
+&lt;p&gt;
+dread 24/9/10:
+&lt;/p&gt;
+&lt;p&gt;
+I've done a test for the missing department issue and I can't
+reproduce the problem. This may be due to my general tidy up and
+getting tests passing using the latest ckanclient. Anyway, can you
+check over my test to see if this is what you mean?:
+dgu/ckanext/dgu/tests/ons/test_ons_loader.py:TestOnsLoadMissingDept
+&lt;/p&gt;
+&lt;p&gt;
+ww 20/10/10:
+&lt;/p&gt;
+&lt;p&gt;
+you should uncover it if you run against (a copy of) the dgu database.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/734#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/732</link>
+        <guid isPermaLink="false">http://localhost/ticket/732</guid>
+        <title>#732: Reproduce and investigate (geo coverage issue)</title>
+        <pubDate>Fri, 22 Oct 2010 09:12:41 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/732#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/713</link>
+        <guid isPermaLink="false">http://localhost/ticket/713</guid>
+        <title>#713: Review four definitions of DGU package attributes</title>
+        <pubDate>Wed, 20 Oct 2010 13:25:58 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/713#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/711</link>
+        <guid isPermaLink="false">http://localhost/ticket/711</guid>
+        <title>#711: Packages shall support both UK government and location information with a common set of attributes</title>
+        <pubDate>Wed, 20 Oct 2010 13:21:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Previously, a package type attribute was intended to distinguish between package data that came from government depts. and publishers location information (GEMINI). Now there is an intention use a common set of attributes to support data from either source.
+&lt;/p&gt;
+&lt;p&gt;
+Hence, there currently a v.3 of the government attributes, a document about extracting the attributes from Gemini document using XPath, and a comparison documents mapping between governemtn attributes and Gemini attributes.
+&lt;/p&gt;
+&lt;p&gt;
+That means there are potentially four different list of attributes. I'm not sure how to go about reviewing the lists and converging any differences.
+&lt;/p&gt;
+&lt;p&gt;
+But we do want to end up with a list of names, a description of their purpose, and then perhaps the XPath which would reveal the value from a Gemini doc?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/711#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/689</link>
+        <guid isPermaLink="false">http://localhost/ticket/689</guid>
+        <title>#689: Updated package for updated metadata document</title>
+        <pubDate>Mon, 11 Oct 2010 09:25:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/689#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/681</link>
+        <guid isPermaLink="false">http://localhost/ticket/681</guid>
+        <title>#681: Department field bug</title>
+        <pubDate>Wed, 06 Oct 2010 17:38:05 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/613"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/613&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/681#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/679</link>
+        <guid isPermaLink="false">http://localhost/ticket/679</guid>
+        <title>#679: Improve standard package edit form</title>
+        <pubDate>Wed, 06 Oct 2010 17:27:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Add help text, drawing from:
+&lt;ul&gt;&lt;li&gt;ca.ckan.net
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.okfn.org/ckan/doc/package"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/ckan/doc/package&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.okfn.org/ckan/doc/faq"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/ckan/doc/faq&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Make longer text revealed on click
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/679#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/677</link>
+        <guid isPermaLink="false">http://localhost/ticket/677</guid>
+        <title>#677: License change script</title>
+        <pubDate>Wed, 06 Oct 2010 17:05:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Uses API to change licenses of all packages in a CKAN instance to a particular one.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Run it on DGU.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/677#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/675</link>
+        <guid isPermaLink="false">http://localhost/ticket/675</guid>
+        <title>#675: Draft specification of CSW harvesting behaviour with guide for publishing agents</title>
+        <pubDate>Mon, 04 Oct 2010 17:54:37 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/675#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/661</link>
+        <guid isPermaLink="false">http://localhost/ticket/661</guid>
+        <title>#661: Create CKAN site tester</title>
+        <pubDate>Fri, 24 Sep 2010 17:15:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+From Rufus:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;'blackbox' testing command (read-only only would be fine) -- very
+useful for upgrade on sunday
+On blackbox thinking of something like:
+paster test-site http://hmg.ckan.net {package-name}
+Or (maybe better):
+paster test-site --site-spec {myconfig.json}
+my-config is a json file with info for testing (could overload
+--config rather than site-spec):
+site-url: http://hmg.ckan.net/
+package-name:
+package-title:
+...etc ...
+Then:
+Test front-page
+Test /revision/
+Test /package/{page}  -- check title
+Test /package/history
+Test /api/rest/package/ ...
+Test /api/search/package ...
+etc
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/661#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/648</link>
+        <guid isPermaLink="false">http://localhost/ticket/648</guid>
+        <title>#648: Enable lock-down of package creation</title>
+        <pubDate>Sun, 19 Sep 2010 09:45:19 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;copy exisiting tests, modify authz in setUp, adapt and extend tests
+&lt;ul&gt;&lt;li&gt;Problem: default_role_actions is read by init_db
+&lt;/li&gt;&lt;li&gt;Solution: nuke db after monkey-patching
+&lt;/li&gt;&lt;li&gt;role = model.Role('Reader'), del role.actions[...]
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.PRE_MAUTHZ_RULES = copy(mauthz.default_role_actions)
+mauthz.default_role_actions.remove((Role.READER, Action.CREATE))
+#raise Exception(mauthz.default_role_actions)
+model.Session.remove()
+model.repo.rebuild_db()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ol start="3"&gt;&lt;li&gt;Start from the functional
+&lt;ul&gt;&lt;li&gt;Both the api controllers and wui controllers to do
+&lt;/li&gt;&lt;li&gt;tests/function/test_authz.py extended to check CREATE in lockedDown mode. fails nicely.
+&lt;a class="ext-link" href="http://bitbucket.org/pudo/ckan-authz2"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/pudo/ckan-authz2&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+is_authorized(user, Action.Create, model.Package)
+&lt;/p&gt;
+&lt;p&gt;
+-&amp;gt; Doing this will put 'Package' in the context field of the user_object_role table. This will trigger SQLAlchemy to attempt a join towards &lt;a class="missing wiki"&gt;PackageRole?&lt;/a&gt; in all queries. Since for class-level role assignments there never is a &lt;a class="missing wiki"&gt;PackageRole?&lt;/a&gt; join table entry, this will never return any results.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cf branch "classes": &lt;a class="ext-link" href="http://bitbucket.org/pudo/ckan-authz2/src/6fd0475e0c66"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/pudo/ckan-authz2/src/6fd0475e0c66&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;No possibility of including "instance" column in inheritance decision.
+&lt;/li&gt;&lt;li&gt;Even if this can be cirumvented, it must happen on a per-query level and would require a major re-modelling.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;have a ckan install that would not allow visitors to either list packages or list groups
+&lt;ul&gt;&lt;li&gt;two paths: create the listing, but for each group/pkg decide that you
+cannot show this
+&lt;/li&gt;&lt;li&gt;lock down the whole page (/package/list)
+&lt;ul&gt;&lt;li&gt;this is class-based, not object-based
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+is_authorized(user, Action.Package_Create, model.System())
+is_authorized(user, Action.Group_Create, model.System())
+&lt;/p&gt;
+&lt;p&gt;
+[Separating Package and Group roles may be useful going forward: &lt;a class="missing wiki"&gt;PackageEditor?&lt;/a&gt;, &lt;a class="missing wiki"&gt;GroupEditor?&lt;/a&gt; etc]
+&lt;/p&gt;
+&lt;ol start="4"&gt;&lt;li&gt;Find a standard way to lock down classes
+&lt;ul&gt;&lt;li&gt;possibly add default rows in user_object_role
+&lt;/li&gt;&lt;li&gt;introduce lock-down into controllers: group new, package new, REST equivalents,
+&lt;/li&gt;&lt;li&gt;confirm tests
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/648#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/647</link>
+        <guid isPermaLink="false">http://localhost/ticket/647</guid>
+        <title>#647: Authorization Groups for group-based access control</title>
+        <pubDate>Sun, 19 Sep 2010 09:43:38 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+allow group-level authorization on all system entities
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/647#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/621</link>
+        <guid isPermaLink="false">http://localhost/ticket/621</guid>
+        <title>#621: Metadata document links extracted from WAF response</title>
+        <pubDate>Sat, 11 Sep 2010 15:58:27 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/621#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/576</link>
+        <guid isPermaLink="false">http://localhost/ticket/576</guid>
+        <title>#576: CKAN Requires Old Version of SQLAlchemy</title>
+        <pubDate>Fri, 10 Sep 2010 17:59:33 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+Requires 0.4. 0.5 is a maintenance branch, 0.6 is current.
+&lt;/p&gt;
+&lt;p&gt;
+VDM appears to work correctly (all the tests pass) with 0.5. CKAN does not -- requires more investigation to determine exactly why.
+&lt;/p&gt;
+&lt;p&gt;
+It would actually be nice to be able to run with 0.6 or 0.5, though 0.6 will require some changes to VDM as well
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/576#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/571</link>
+        <guid isPermaLink="false">http://localhost/ticket/571</guid>
+        <title>#571: Save metadata document and associate with harvest source entity</title>
+        <pubDate>Thu, 09 Sep 2010 13:54:55 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/571#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/481</link>
+        <guid isPermaLink="false">http://localhost/ticket/481</guid>
+        <title>#481: Unrestricted total read-only access to catalogue API</title>
+        <pubDate>Sat, 21 Aug 2010 20:31:37 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/481#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/470</link>
+        <guid isPermaLink="false">http://localhost/ticket/470</guid>
+        <title>#470: Adjust API key's HTTP header name on DGU "live" and "test"</title>
+        <pubDate>Fri, 20 Aug 2010 13:27:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/470#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/422</link>
+        <guid isPermaLink="false">http://localhost/ticket/422</guid>
+        <title>#422: Administrator imports meta-data into CKAN</title>
+        <pubDate>Tue, 10 Aug 2010 09:44:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Requirements:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cater naturally for multiple packages with multiple resources
+&lt;/li&gt;&lt;li&gt;international encoding
+&lt;/li&gt;&lt;li&gt;large number of packages
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/422#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/398</link>
+        <guid isPermaLink="false">http://localhost/ticket/398</guid>
+        <title>#398: Create Public API documentation for DGU (draft)</title>
+        <pubDate>Thu, 05 Aug 2010 09:33:48 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/398#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/364</link>
+        <guid isPermaLink="false">http://localhost/ticket/364</guid>
+        <title>#364: Search for 'statistic' returns nothing</title>
+        <pubDate>Mon, 12 Jul 2010 15:47:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On ckan.net there are plenty of packages (and indeed their tags) with the word 'statistic' in them, but no packages turn up when you search for it:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.net/package/search?q=statistic&amp;amp;search=Search+Packages+%C2%BB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/search?q=statistic&amp;amp;search=Search+Packages+%C2%BB&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+(Using Postgres full text search)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/364#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/231</link>
+        <guid isPermaLink="false">http://localhost/ticket/231</guid>
+        <title>#231: Make group versioned</title>
+        <pubDate>Thu, 07 Jan 2010 08:45:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Make group object revisioned/versioned.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Involves upgrade script both for group object and group_revision object
+&lt;/li&gt;&lt;li&gt;No changes required to WUI for present
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/231#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/796</link>
+        <guid isPermaLink="false">http://localhost/ticket/796</guid>
+        <title>#796: AlphaPage for non-latin languages</title>
+        <pubDate>Tue, 09 Nov 2010 09:57:42 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;a class="missing wiki"&gt;AlphaPage?&lt;/a&gt; implementation assumes that all packages start with a latin character. This is not true for Russian, Chinese, Arabian and Persian languages etc. We should either use a unicode solution (i.e. display a full class of characters based on the current locale) or use generic paging instead.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/796#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/793</link>
+        <guid isPermaLink="false">http://localhost/ticket/793</guid>
+        <title>#793: Fix up changes in changeset aa9aa32e00a9</title>
+        <pubDate>Mon, 08 Nov 2010 10:41:47 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/793#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/733</link>
+        <guid isPermaLink="false">http://localhost/ticket/733</guid>
+        <title>#733: Fix problem (geo coverage issue)</title>
+        <pubDate>Fri, 22 Oct 2010 09:12:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/733#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/712</link>
+        <guid isPermaLink="false">http://localhost/ticket/712</guid>
+        <title>#712: Model government data package with "v0.4" of the attributes</title>
+        <pubDate>Wed, 20 Oct 2010 13:23:59 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Where said "v0.4" would be the result of converging four lists mentioned in requirement &lt;a class="closed ticket" href="http://localhost/ticket/711" title="requirement: Packages shall support both UK government and location information with a ... (closed: fixed)"&gt;#711&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/712#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/692</link>
+        <guid isPermaLink="false">http://localhost/ticket/692</guid>
+        <title>#692: The system shall support presenting map thumbnail for bounding box.</title>
+        <pubDate>Mon, 11 Oct 2010 18:50:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+To do this for the UKLP, the Ordnance Survey would need to add to their map service an operation to return image for a given bounding box, and COI would need to present the image on the search result page.
+&lt;/p&gt;
+&lt;p&gt;
+Otherwise, it would be possible to use Google.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/692#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/611</link>
+        <guid isPermaLink="false">http://localhost/ticket/611</guid>
+        <title>#611: Load local copy of XML schema for metadata document</title>
+        <pubDate>Sat, 11 Sep 2010 15:23:59 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/611#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/566</link>
+        <guid isPermaLink="false">http://localhost/ticket/566</guid>
+        <title>#566: The system shall support harvesting remote metadata</title>
+        <pubDate>Thu, 09 Sep 2010 13:40:19 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/566#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/565</link>
+        <guid isPermaLink="false">http://localhost/ticket/565</guid>
+        <title>#565: The system shall support UKLP code lists</title>
+        <pubDate>Thu, 09 Sep 2010 12:04:24 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/565#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/557</link>
+        <guid isPermaLink="false">http://localhost/ticket/557</guid>
+        <title>#557: Remove siblings from link_to/from relationship display</title>
+        <pubDate>Fri, 03 Sep 2010 19:36:35 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Displaying siblings is not needed for link_to/from.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/557#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/533</link>
+        <guid isPermaLink="false">http://localhost/ticket/533</guid>
+        <title>#533: The performance of CKAN shall scale</title>
+        <pubDate>Fri, 27 Aug 2010 12:01:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN uses a database. We can put the database on another machine and then clone the CKAN machine. Then there are two machines calling the database and converting SQL results into HTTP responses.
+&lt;/p&gt;
+&lt;p&gt;
+How many machines can you have before the database becomes the bottleneck? At that point, what QoS can be obtained with normal hardware?
+&lt;/p&gt;
+&lt;p&gt;
+Afterwards, can CKAN be made to scale further than this with a little development? Can its Postgres database be mirrored in realtime? Or can we change SQL writes (create/updates) to write to many databases?
+&lt;/p&gt;
+&lt;p&gt;
+Are there any other options for scaling the persistence mechanism?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/533#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/504</link>
+        <guid isPermaLink="false">http://localhost/ticket/504</guid>
+        <title>#504: The DGU fieldset shall conform to v3 of DGU metadata specification</title>
+        <pubDate>Tue, 24 Aug 2010 14:30:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+No need for requirement - closing in favour of &lt;a class="closed ticket" href="http://localhost/ticket/505" title="enhancement: DGU fieldset supports v3 of DGU metadata specification (closed: fixed)"&gt;#505&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/504#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/451</link>
+        <guid isPermaLink="false">http://localhost/ticket/451</guid>
+        <title>#451: Show/Allow only departments associated with user</title>
+        <pubDate>Fri, 20 Aug 2010 10:20:41 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Use drupal api
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/451#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/438</link>
+        <guid isPermaLink="false">http://localhost/ticket/438</guid>
+        <title>#438: Data importers use minimal processing</title>
+        <pubDate>Thu, 19 Aug 2010 13:26:23 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. ONS importer
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/438#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/413</link>
+        <guid isPermaLink="false">http://localhost/ticket/413</guid>
+        <title>#413: Write functional tests for DGU caching</title>
+        <pubDate>Tue, 10 Aug 2010 09:13:53 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/413#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/940</link>
+        <guid isPermaLink="false">http://localhost/ticket/940</guid>
+        <title>#940: OpenID login via google for same user generates 2 different openid urls</title>
+        <pubDate>Sun, 30 Jan 2011 15:32:01 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This has been noted twice in the last couple of weeks.
+&lt;/p&gt;
+&lt;p&gt;
+Checking around my guess is this is due to someone logging in to www.ckan.net and ckan.net. Google generates openid based on the RP (requesting party) which is the requesting domain url unless the openid.realm is set. See:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://groups.google.com/group/google-federated-login-api/web/the-most-important-technical-issue-in-using-the-google-accounts-api?pli=1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://groups.google.com/group/google-federated-login-api/web/the-most-important-technical-issue-in-using-the-google-accounts-api?pli=1&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://stackoverflow.com/questions/3549953/how-to-get-unique-identifier-from-openid-google"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://stackoverflow.com/questions/3549953/how-to-get-unique-identifier-from-openid-google&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+To fix this we should set the openid.realm (not sure how atm).
+&lt;/p&gt;
+&lt;p&gt;
+If this is not possible an alternative is to make sure we redirect all users to a single site url (perhaps using ckan config option site_url, or doing this in apache).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/940#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/809</link>
+        <guid isPermaLink="false">http://localhost/ticket/809</guid>
+        <title>#809: Link to the Wiki pages in package form</title>
+        <pubDate>Wed, 17 Nov 2010 11:10:31 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+This would allow for a community-driven definition of field values, conventions, etc.
+&lt;/p&gt;
+&lt;p&gt;
+Plus: create wiki.ckan.net
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/809#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/807</link>
+        <guid isPermaLink="false">http://localhost/ticket/807</guid>
+        <title>#807: Handle robot traffic better</title>
+        <pubDate>Tue, 16 Nov 2010 09:30:26 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We get a lot of robot traffic. Notice that robots are visiting package edit pages. Suggest:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add rel=nofollow to various links
+&lt;/li&gt;&lt;li&gt;Throttle some robots (not all seem to respect robots.txt)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/807#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/770</link>
+        <guid isPermaLink="false">http://localhost/ticket/770</guid>
+        <title>#770: Improve the paster harvester help command</title>
+        <pubDate>Wed, 27 Oct 2010 14:37:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Issue 1. Help command without arguments fails:
+&lt;/p&gt;
+&lt;p&gt;
+$paster help --plugin ckan --config development.ini
+&lt;/p&gt;
+&lt;p&gt;
+gives:
+&lt;/p&gt;
+&lt;p&gt;
+EITHER
+&lt;/p&gt;
+&lt;p&gt;
+Command help not recognized
+&lt;/p&gt;
+&lt;p&gt;
+OR
+&lt;/p&gt;
+&lt;p&gt;
+paster help: error: no such option: --plugin
+&lt;/p&gt;
+&lt;p&gt;
+Issue 2: Harvester command with arguments fails.
+&lt;/p&gt;
+&lt;p&gt;
+$ paster harvester
+Traceback (most recent call last):
+...
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+cmd = self.args&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;IndexError?&lt;/a&gt;: list index out of range
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/770#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/753</link>
+        <guid isPermaLink="false">http://localhost/ticket/753</guid>
+        <title>#753: The system shall support filtered harvest of CSW sources</title>
+        <pubDate>Mon, 25 Oct 2010 20:58:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/753#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/745</link>
+        <guid isPermaLink="false">http://localhost/ticket/745</guid>
+        <title>#745: Web UI shall accept requests for harvesting jobs</title>
+        <pubDate>Mon, 25 Oct 2010 13:25:48 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/745#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/676</link>
+        <guid isPermaLink="false">http://localhost/ticket/676</guid>
+        <title>#676: The system shall support browsing to correct version of the CKAN documentation for a given service</title>
+        <pubDate>Tue, 05 Oct 2010 10:55:36 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/676#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/667</link>
+        <guid isPermaLink="false">http://localhost/ticket/667</guid>
+        <title>#667: API is slow</title>
+        <pubDate>Thu, 30 Sep 2010 22:20:28 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+See message and script:
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2010-September/000569.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2010-September/000569.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+1500 requests shouldn't take hours.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/667#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/564</link>
+        <guid isPermaLink="false">http://localhost/ticket/564</guid>
+        <title>#564: The system shall support location based search</title>
+        <pubDate>Thu, 09 Sep 2010 12:03:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/502</link>
+        <guid isPermaLink="false">http://localhost/ticket/502</guid>
+        <title>#502: Data4nr uploading script shall remove deleted packages</title>
+        <pubDate>Tue, 24 Aug 2010 14:15:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Occasionally data4nr removes a data package from its registry. When the latest full data4nr data is imported, these removed packages should be found and removed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/502#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/476</link>
+        <guid isPermaLink="false">http://localhost/ticket/476</guid>
+        <title>#476: Daily database dumps shall be discoverable and downloadable</title>
+        <pubDate>Fri, 20 Aug 2010 14:10:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/476#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/466</link>
+        <guid isPermaLink="false">http://localhost/ticket/466</guid>
+        <title>#466: Name of HTTP header for API key shall be configurable</title>
+        <pubDate>Fri, 20 Aug 2010 12:56:35 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/466#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/465</link>
+        <guid isPermaLink="false">http://localhost/ticket/465</guid>
+        <title>#465: Require API key for all API requests.</title>
+        <pubDate>Fri, 20 Aug 2010 12:55:04 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/465#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/346</link>
+        <guid isPermaLink="false">http://localhost/ticket/346</guid>
+        <title>#346: Revision search API (response data format and documentation issue)</title>
+        <pubDate>Mon, 14 Jun 2010 13:51:57 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Whilst going through the API docs for the revision search API, it was noticed that the "Gdu" SoS doc doesn't match up. It returns revision IDs (perhaps this is useful to note in the spec?) so the format is probably not 'limitedstring'. Also, they appear to be ordered youngest first, not oldest as stated.
+&lt;/p&gt;
+&lt;p&gt;
+And in the revision model, it refers to 'simplestring' which it
+doesn't define - I guess the names should be 'limitedstring'?
+&lt;/p&gt;
+&lt;p&gt;
+Could this be checked out?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/346#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/886</link>
+        <guid isPermaLink="false">http://localhost/ticket/886</guid>
+        <title>#886: move uklii forms api to dgu module</title>
+        <pubDate>Sat, 25 Dec 2010 11:55:45 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+doesn't belong in ckan core
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/886#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/815</link>
+        <guid isPermaLink="false">http://localhost/ticket/815</guid>
+        <title>#815: Autocomplete for the search field</title>
+        <pubDate>Wed, 17 Nov 2010 12:12:31 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The search field (on the homepage and in the top right corner of each page) should have autocomplete for package name. If a package name is selected, it should not do a search but go straight to the package page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/800</link>
+        <guid isPermaLink="false">http://localhost/ticket/800</guid>
+        <title>#800: Get WAF records modified since given time</title>
+        <pubDate>Thu, 11 Nov 2010 13:49:03 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/800#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/795</link>
+        <guid isPermaLink="false">http://localhost/ticket/795</guid>
+        <title>#795: "Match up" GEMINI2 "metadata point of contact" with registered entities</title>
+        <pubDate>Mon, 08 Nov 2010 14:53:45 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+TM wants to know how this will be "matched up". I don't know whether this always the data provider, or sometimes the publisher.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/795#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/791</link>
+        <guid isPermaLink="false">http://localhost/ticket/791</guid>
+        <title>#791: Submit harvest source form with invalid CSW location</title>
+        <pubDate>Mon, 08 Nov 2010 10:39:11 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/791#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/790</link>
+        <guid isPermaLink="false">http://localhost/ticket/790</guid>
+        <title>#790: Submit  harvest source form with valid CSW location</title>
+        <pubDate>Mon, 08 Nov 2010 10:34:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/790#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/789</link>
+        <guid isPermaLink="false">http://localhost/ticket/789</guid>
+        <title>#789: The harvest source form shall validate location field by positive identification of source type</title>
+        <pubDate>Mon, 08 Nov 2010 10:28:26 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/789#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/788</link>
+        <guid isPermaLink="false">http://localhost/ticket/788</guid>
+        <title>#788: API user deletes harvest source</title>
+        <pubDate>Mon, 08 Nov 2010 10:13:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Needs to delete all harving jobs and harvested documents, and probably to purge all packages (perhaps just delete?).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/788#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/786</link>
+        <guid isPermaLink="false">http://localhost/ticket/786</guid>
+        <title>#786: The system shall support deleting a registered harvest source</title>
+        <pubDate>Mon, 08 Nov 2010 10:09:42 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/783</link>
+        <guid isPermaLink="false">http://localhost/ticket/783</guid>
+        <title>#783: Delete harvested documents when remote metadata disappears from harvest source</title>
+        <pubDate>Mon, 08 Nov 2010 09:53:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+We need a condition for 'disappears'. Asked AW about this (prob. in July) but should chase for an answer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/783#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/781</link>
+        <guid isPermaLink="false">http://localhost/ticket/781</guid>
+        <title>#781: Package edit form - 'extra' fields have 'add' and 'delete' buttons</title>
+        <pubDate>Mon, 01 Nov 2010 17:02:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(Just like resource table, but extra fields don't need up/down buttons)
+&lt;/p&gt;
+&lt;p&gt;
+Nice to have: a blank field is added when you tab from the last filled-in field in the table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/781#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/774</link>
+        <guid isPermaLink="false">http://localhost/ticket/774</guid>
+        <title>#774: Fix CLI harvester command to return harvester help message</title>
+        <pubDate>Wed, 27 Oct 2010 14:42:02 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/774#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/773</link>
+        <guid isPermaLink="false">http://localhost/ticket/773</guid>
+        <title>#773: Fix CLI help command to return CLI help message</title>
+        <pubDate>Wed, 27 Oct 2010 14:41:15 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/773#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/772</link>
+        <guid isPermaLink="false">http://localhost/ticket/772</guid>
+        <title>#772: Run CLI harvester command without arguments</title>
+        <pubDate>Wed, 27 Oct 2010 14:39:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Should return help for the harvester (currently crashes).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/772#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/769</link>
+        <guid isPermaLink="false">http://localhost/ticket/769</guid>
+        <title>#769: Tests for harvesting metadata from ArcGIS CSW API</title>
+        <pubDate>Wed, 27 Oct 2010 11:16:19 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/769#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/768</link>
+        <guid isPermaLink="false">http://localhost/ticket/768</guid>
+        <title>#768: Obtain example ArcGIS CSW server</title>
+        <pubDate>Wed, 27 Oct 2010 11:15:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/768#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/766</link>
+        <guid isPermaLink="false">http://localhost/ticket/766</guid>
+        <title>#766: The system shall support harvesting metadata from ArcGIS</title>
+        <pubDate>Wed, 27 Oct 2010 11:12:13 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Perhaps 80% of the users of the UKLII may be using
+ArcGIS.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/766#changelog</comments>
+    </item>
+ </channel>
+</rss>

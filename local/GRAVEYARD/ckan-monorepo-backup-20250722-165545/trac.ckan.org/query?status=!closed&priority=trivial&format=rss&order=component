@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;priority=trivial&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;priority=trivial&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1260</link>
+        <guid isPermaLink="false">http://localhost/ticket/1260</guid>
+        <title>#1260: Remove duplicate functions from _util.html</title>
+        <pubDate>Wed, 03 Aug 2011 10:17:32 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+There seems to be both a list view for dictized and non dictized data structures for all entities in _util.html at the moment. Probably in the back of someone's mind already, but cleanup here would be nice.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1260#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1261</link>
+        <guid isPermaLink="false">http://localhost/ticket/1261</guid>
+        <title>#1261: Investigate dots in extras search</title>
+        <pubDate>Wed, 03 Aug 2011 10:19:28 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+It seems that searching for extras_foo:value works with solr, but extras_foo.bar:value doesn't. No theory on why.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1261#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1317</link>
+        <guid isPermaLink="false">http://localhost/ticket/1317</guid>
+        <title>#1317: password reset - improve user search</title>
+        <pubDate>Wed, 07 Sep 2011 17:12:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In password reset, it gets confused if you have two similar users. This is because with the string the user provides, it searches several fields, not just name but also fullname and email address, allowing you to search for these. But only name is unique.
+&lt;/p&gt;
+&lt;p&gt;
+Specific problem:
+Ira searches for "Irina" then it finds both:
+&lt;tt&gt;&amp;lt;User name=irina fullname=Irina email=irina.bolychevsky@okfn.org ]&lt;/tt&gt;
+and
+&lt;tt&gt;&amp;lt;User name=shevski fullname=Ira email=&amp;gt;&lt;/tt&gt;
+(I think)
+&lt;/p&gt;
+&lt;p&gt;
+Maybe need to choose which field it searches?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1317#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1647</link>
+        <guid isPermaLink="false">http://localhost/ticket/1647</guid>
+        <title>#1647: add links to ckan discuss &amp; dev to thedatahub</title>
+        <pubDate>Mon, 16 Jan 2012 00:30:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+In the footer as well as more clearly &amp;amp; directly on the About page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1647#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1823</link>
+        <guid isPermaLink="false">http://localhost/ticket/1823</guid>
+        <title>#1823: Spring clean bin directory</title>
+        <pubDate>Mon, 20 Feb 2012 21:28:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Huge number of accumulated (and likely unnecessary) scripts in /bin directory.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1823#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2656</link>
+        <guid isPermaLink="false">http://localhost/ticket/2656</guid>
+        <title>#2656: Feed with few results has bad paging link, causing exception</title>
+        <pubDate>Wed, 11 Jul 2012 10:05:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This page &lt;a class="ext-link" href="http://thedatahub.org/feeds/custom.atom?q=wombat"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/feeds/custom.atom?q=wombat&lt;/a&gt; has 0 results and contains a link to &lt;a class="ext-link" href="http://thedatahub.org/feeds/custom.atom?q=wombat&amp;amp;amp;page=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/feeds/custom.atom?q=wombat&amp;amp;amp;page=0&lt;/a&gt; which the page=0 causes this exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ckan.lib.search.common.SearchError'&amp;gt;: SOLR returned an error running query
+Error: "'start' parameter cannot be negative"
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2656#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,55 @@
+id	summary	owner	type	priority	time	changetime
+254	Package relationships - 1. model	dread	enhancement	blocker	02/23/10 12:34:09	05/11/10 16:43:00
+255	Package relationships - 2. Read in WUI	dread	enhancement	blocker	02/23/10 12:35:42	05/11/10 16:42:54
+257	Package relationships - 4. Read in API	dread	enhancement	blocker	02/23/10 12:37:10	05/11/10 16:42:50
+258	Add uuids into package in REST	rgrp	enhancement	awaiting triage	02/23/10 19:52:02	05/11/10 16:42:43
+259	isitopen enquiry broken	rgrp	defect	awaiting triage	02/24/10 11:57:46	05/11/10 16:42:33
+271	The system shall support distributing changes.	johnbywater	enhancement	awaiting triage	03/15/10 16:55:37	05/11/10 16:42:24
+223	UI Review - Tag	nickstenning	enhancement	critical	12/15/09 12:31:16	05/11/10 16:41:51
+216	UI Review - Search	nickstenning	enhancement	critical	12/15/09 12:23:22	05/11/10 16:41:42
+59	Provide a basic guide to CKAN on the site	johnbywater	enhancement	awaiting triage	04/06/09 11:49:43	05/05/10 17:20:19
+276	Resources in Package form seen multiple times upon preview	dread	defect	critical	03/22/10 10:56:39	05/04/10 18:03:57
+305	Search result pagination is broken	johnbywater	defect	major	04/28/10 15:23:49	05/04/10 17:40:04
+303	Package history & diff & feed to show changes to tags, extras and resources	dread	defect	major	04/27/10 12:17:39	05/04/10 16:15:28
+302	Advertise a package's feed visually	johnbywater	enhancement	awaiting triage	04/27/10 12:13:17	04/28/10 11:23:41
+279	Ensure package's license is an option when it's edited	johnbywater	enhancement	minor	04/02/10 10:58:51	04/28/10 10:43:04
+304	Previewing package with resource with missing url is broken	johnbywater	defect	critical	04/27/10 14:45:50	04/28/10 09:34:56
+264	Investigate why there are revisions with no associated packages	dread	defect	major	03/03/10 08:37:08	04/27/10 17:40:13
+295	Add multiple packages when editing a group	dread	enhancement	major	04/20/10 09:45:13	04/27/10 16:12:38
+300	Resource ordering issue	rgrp	defect	blocker	04/26/10 12:46:34	04/27/10 16:07:54
+240	Do not allow creation of PackageResource object without a url	johnbywater	defect	major	02/05/10 19:55:47	04/27/10 15:56:10
+292	PackageResources are created new on every package edit	dread	defect	blocker	04/20/10 09:32:44	04/26/10 12:46:45
+156	Whitelist for html in mark-down field	johnbywater	enhancement	major	10/15/09 16:26:13	04/22/10 19:01:11
+293	REST PackageResource update causes exception	johnbywater	defect	critical	04/20/10 09:35:02	04/22/10 12:41:23
+284	Move tag/read/xxx to simple tag/xxx like package and group	johnbywater	defect	critical	04/07/10 18:22:32	04/21/10 12:20:51
+221	UI Review - Package edit	dread	enhancement	major	12/15/09 12:29:35	04/20/10 09:45:57
+290	Revision API - docs	johnbywater	defect	critical	04/14/10 18:12:39	04/19/10 00:28:30
+266	Package feed	johnbywater	enhancement	critical	03/04/10 15:26:57	04/19/10 00:28:21
+265	More detail shown in Atom feed	johnbywater	enhancement	critical	03/04/10 13:12:44	04/19/10 00:28:11
+251	Present in the API a list of revision IDs, and present individual revisions when referenced by ID	johnbywater	enhancement	critical	02/18/10 19:02:23	04/16/10 13:18:37
+164	Creating RDF data from CKAN	wwaites	enhancement	critical	10/20/09 15:30:43	04/14/10 13:23:42
+207	Reimplement tag selection in jQuery	dread	enhancement	minor	12/07/09 15:39:00	04/14/10 13:12:20
+289	Document config options	rgrp	enhancement	major	04/14/10 12:38:10	04/14/10 12:49:28
+247	Alternative formats links on package page	dread	enhancement	major	02/11/10 12:12:06	04/14/10 12:40:13
+288	Foreign and escaped characters in extras fields	dread	defect	critical	04/13/10 15:18:19	04/13/10 15:49:37
+280	Disappearing extra fields	dread	defect	blocker	04/02/10 12:01:24	04/13/10 15:49:29
+278	Spaces in extra field keys	dread	defect	awaiting triage	03/25/10 12:40:45	04/13/10 15:49:12
+287	Customise Canadian package edit form	dread	enhancement	critical	04/09/10 08:18:06	04/09/10 08:20:10
+248	i18n of forms	dread	enhancement	critical	02/11/10 12:45:13	04/08/10 16:48:24
+281	Refactor forms to be plugin-able	dread	enhancement	critical	04/06/10 08:24:08	04/08/10 10:47:55
+286	Refactor forms templates	dread	enhancement	critical	04/08/10 10:45:13	04/08/10 10:47:09
+241	License doesn't preview correctly	rgrp	defect	awaiting triage	02/08/10 10:39:06	04/06/10 16:02:49
+182	Improve openness icons		enhancement	critical	11/06/09 19:09:50	04/06/10 15:18:36
+261	License does not work through REST API	dread	defect	major	02/25/10 21:52:58	02/26/10 18:09:36
+260	Display group package list in standard (richer) way	dread	enhancement	major	02/25/10 12:24:20	02/25/10 18:22:17
+215	UI Review - Home page	rgrp	enhancement	critical	12/15/09 12:22:12	02/18/10 17:18:43
+196	RDF URI to resolve on CKAN	dread	defect	critical	11/20/09 14:39:48	02/05/10 17:09:31
+179	Restore 404 and 500 messages in WUI	dread	defect	critical	11/05/09 09:17:48	02/04/10 17:45:49
+230	Refactor 'package preview' to use 'package read'	dread	task	blocker	01/06/10 14:28:04	02/04/10 14:32:33
+239	Test migrate scripts	dread	task	critical	01/25/10 17:18:46	02/04/10 12:28:41
+201	Stress test ckan	rgrp	enhancement	awaiting triage	12/03/09 12:53:56	02/04/10 11:53:39
+206	UI review	nickstenning	enhancement	critical	12/07/09 15:32:21	12/15/09 12:45:23
+138	User has editable home page	rgrp	enhancement	blocker	10/05/09 11:23:09	11/17/09 13:54:34
+124	Display Generic Package Attributes in WUI	rgrp	enhancement	awaiting triage	09/23/09 12:41:42	10/05/09 09:39:18
+155	Adding multiple packages to a group	dread	enhancement	major	10/15/09 15:49:39	04/20/10 10:40:41
+125	Edit Generic Package Attributes in WUI	dread	enhancement	blocker	09/23/09 12:41:52	11/16/09 13:20:21

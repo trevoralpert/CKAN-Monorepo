@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=dgu&amp;milestone=ckan-v1.3&amp;group=status&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=dgu&amp;milestone=ckan-v1.3&amp;group=status&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/502</link>
+        <guid isPermaLink="false">http://localhost/ticket/502</guid>
+        <title>#502: Data4nr uploading script shall remove deleted packages</title>
+        <pubDate>Tue, 24 Aug 2010 14:15:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Occasionally data4nr removes a data package from its registry. When the latest full data4nr data is imported, these removed packages should be found and removed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/502#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/504</link>
+        <guid isPermaLink="false">http://localhost/ticket/504</guid>
+        <title>#504: The DGU fieldset shall conform to v3 of DGU metadata specification</title>
+        <pubDate>Tue, 24 Aug 2010 14:30:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+No need for requirement - closing in favour of &lt;a class="closed ticket" href="http://localhost/ticket/505" title="enhancement: DGU fieldset supports v3 of DGU metadata specification (closed: fixed)"&gt;#505&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/504#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/886</link>
+        <guid isPermaLink="false">http://localhost/ticket/886</guid>
+        <title>#886: move uklii forms api to dgu module</title>
+        <pubDate>Sat, 25 Dec 2010 11:55:45 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+doesn't belong in ckan core
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/886#changelog</comments>
+    </item>
+ </channel>
+</rss>

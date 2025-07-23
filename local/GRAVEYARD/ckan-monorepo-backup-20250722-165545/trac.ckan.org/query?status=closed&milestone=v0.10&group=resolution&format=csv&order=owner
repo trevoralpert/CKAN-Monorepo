@@ -1,0 +1,34 @@
+id,summary,owner,type,priority,component,time
+62,Change tags to contain any character (other than space),dread,enhancement,minor,ckan,04/24/09 14:58:15
+74,Add Is It Open links to package pages,dread,enhancement,minor,ckan,07/17/09 10:56:58
+76,Convert to use formalchemy for all forms,dread,enhancement,critical,ckan,07/17/09 11:10:41
+79,Improvements to package search,dread,enhancement,minor,ckan,07/17/09 11:24:24
+80,Refactor or remove modes code,dread,enhancement,minor,ckan,07/17/09 15:24:23
+91,Add author and maintainer attributes to package,dread,enhancement,critical,ckan,07/31/09 14:16:20
+94,Use sqlalchemy-migrate to handle db/model upgrades,dread,enhancement,critical,ckan,08/01/09 13:43:05
+105,Package groups (view),dread,enhancement,critical,ckan,08/27/09 16:58:02
+108,Package search in the REST API,dread,enhancement,critical,ckan,09/02/09 18:24:05
+110,Integrate groups into packages,dread,enhancement,critical,ckan,09/07/09 09:32:36
+114,Access Control - model,dread,enhancement,major,ckan,09/09/09 11:08:47
+115,Access Control - wui constrained by model,dread,enhancement,major,ckan,09/15/09 17:06:34
+116,Access Control - edited in wui,dread,enhancement,critical,ckan,09/15/09 17:13:22
+117,Access Control - group core functionality,dread,enhancement,major,ckan,09/18/09 10:55:33
+118,Use paginate in webhelpers,dread,enhancement,major,ckan,09/18/09 11:34:17
+119,Ensure non-active packages don't show up,dread,enhancement,major,ckan,09/21/09 10:36:54
+120,Security audit,dread,enhancement,major,ckan,09/21/09 10:37:07
+121,Add 'Group' to main menu,dread,enhancement,major,ckan,09/23/09 08:33:47
+122,Add Group authz page,dread,enhancement,major,ckan,09/23/09 08:34:02
+123,Ability to edit Group in WUI,dread,enhancement,major,ckan,09/23/09 12:14:01
+126,Change package state in the WUI (delete and undelete),dread,enhancement,critical,ckan,09/24/09 10:52:51
+127,Minor form and UI improvements,dread,enhancement,minor,ckan,09/24/09 13:24:19
+130,Create a New Group via the WUI,dread,enhancement,critical,ckan,09/28/09 09:30:12
+131,Groups REST interface,dread,enhancement,major,ckan,09/30/09 10:52:39
+43,Generic Attributes for Packages,rgrp,enhancement,critical,ckan,01/08/08 10:28:29
+61,When dumping data to json do not dump private information like API keys,rgrp,enhancement,minor,ckan,04/07/09 16:58:49
+64,Switch to repoze.who for authentication,rgrp,enhancement,critical,ckan,06/16/09 16:14:13
+66,Improve user account UI,rgrp,enhancement,major,ckan,06/17/09 18:34:45
+67,List all of a user's recent edits on their home page,rgrp,enhancement,minor,ckan,06/17/09 18:35:31
+71,Upgrade to Pylons 0.9.7,rgrp,enhancement,minor,ckan,07/01/09 07:57:21
+72,Integrate new logo,rgrp,enhancement,major,ckan,07/01/09 09:37:01
+93,Access control for packages,rgrp,enhancement,critical,ckan,07/31/09 15:44:09
+111,Create user object,rgrp,enhancement,blocker,ckan,09/07/09 09:33:14

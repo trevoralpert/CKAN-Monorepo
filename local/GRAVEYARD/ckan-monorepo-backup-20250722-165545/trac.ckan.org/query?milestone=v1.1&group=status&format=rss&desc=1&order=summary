@@ -1,0 +1,908 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=v1.1&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=v1.1&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/320</link>
+        <guid isPermaLink="false">http://localhost/ticket/320</guid>
+        <title>#320: site_title configuration variable which is used in template</title>
+        <pubDate>Thu, 20 May 2010 18:09:27 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a sysadmin I want to configure basic site title information for use in the site templates.
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ckan.site_title config variable
+&lt;/li&gt;&lt;li&gt;set this on g in app_globals.py e.g.
+&lt;ul&gt;&lt;li&gt;from pylons import config; g.site_title = config.get('ckan.site_title, 'CKAN - Comprehensive Knowledge Archive Network')
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;use in head title and in main site title/logo section (use it as alt on logo image)
+&lt;/li&gt;&lt;li&gt;Also all other pages (e.g. index, about) which talk about CKAN
+&lt;ul&gt;&lt;li&gt;Is this needed? Would it not be better for people who want to customize the site to simply overwrite those templates?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Questions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Do we want a site_logo variable whic his use for site title/logo section instead of site_title if site_logo defined?
+&lt;/li&gt;&lt;li&gt;Probably yes, but &lt;strong&gt;not&lt;/strong&gt; part of this ticket.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/320#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/340</link>
+        <guid isPermaLink="false">http://localhost/ticket/340</guid>
+        <title>#340: Web UI theme easier to configure</title>
+        <pubDate>Tue, 08 Jun 2010 15:08:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+An install of CKAN should be configurable without changing any of the installed files. This makes it clear to upgrade CKAN. Complete the changes in this wiki page to allow static files to be served from outside CKAN paths over CKAN versions and additional CSS file to be pulled in.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://wiki.okfn.org/ckan/doc/theme"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/ckan/doc/theme&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/340#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/226</link>
+        <guid isPermaLink="false">http://localhost/ticket/226</guid>
+        <title>#226: UI Review - History</title>
+        <pubDate>Tue, 15 Dec 2009 12:35:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Repository History &lt;a href="http://localhost/revision"&gt;revision&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;What is this page called? "Recent Changes", "Repository History", "/revision": standardise. Between the link in the nav and the page &amp;lt;title&amp;gt; particularly, but the route is also important. Perhaps /changes or something similar?
+&lt;ul&gt;&lt;li&gt;Will change page title on /revision/ to Revision History. Will not change route for the time being.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;needs copyediting.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Pagination has similar issues to elsewhere. Also, most obvious here, is the fact that we don't need to display a link to every possible page. Please can we limit it to, say, a dozen nearby pages and an ellipsis.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Without looking at dates, its not clear whether I'm seeing most recent or oldest changes. Change pagination to say "Older"/"More recent" rather than "Previous"/"Next".&lt;/del&gt; (wontfix: now have text saying we are showing most recent changes)
+&lt;/li&gt;&lt;li&gt;Table layout is pretty ugly (yes, I'm aware this is my fault).
+&lt;ul&gt;&lt;li&gt;wontfix - nothing better at the moment
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Timestamps are horribly unreadable. At the absolute minimum get rid of the micros. Hover for more detail?
+&lt;/li&gt;&lt;li&gt;Can we link to an author page? Yes!
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Atom feed should have a feed icon~~
+&lt;/del&gt;&lt;/li&gt;&lt;li&gt;Why are we adding another &amp;lt;link rel="alternate"&amp;gt; to this page? We already have one for recent changes on every page in the site and the one we're adding has a less descriptive title. Which is correct? Use that one as a feed for every page.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/226#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/227</link>
+        <guid isPermaLink="false">http://localhost/ticket/227</guid>
+        <title>#227: UI Review - General checks</title>
+        <pubDate>Tue, 15 Dec 2009 12:35:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;There is huge inconsistency in the titles of pages across the site: to give one example "Edit Package:&amp;#34; vs &amp;#34;Package: mypkg [not linked]" vs "History - mypkg [linked to package page]"
+&lt;ul&gt;&lt;li&gt;Normalize and use terminology: "Data Package" - also change in navbar (but nowhere else for the time being). So hvae Data Package - mypkg, Data Package - mypkg - Edit etc
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;pagination is currently lost in amongst the results list. needs to be *much* more obvious, and should appear top and bottom, or at the very least at the bottom!
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/227#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/386</link>
+        <guid isPermaLink="false">http://localhost/ticket/386</guid>
+        <title>#386: Set limits in /etc/security/limits.conf</title>
+        <pubDate>Wed, 28 Jul 2010 22:36:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/386#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/385</link>
+        <guid isPermaLink="false">http://localhost/ticket/385</guid>
+        <title>#385: Send email if QoS measurement breaks QoS criteria</title>
+        <pubDate>Wed, 28 Jul 2010 22:18:47 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/385#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/384</link>
+        <guid isPermaLink="false">http://localhost/ticket/384</guid>
+        <title>#384: Send alert when QoS measurements break expectation</title>
+        <pubDate>Wed, 28 Jul 2010 20:10:41 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/324</link>
+        <guid isPermaLink="false">http://localhost/ticket/324</guid>
+        <title>#324: Search indexing using notifications</title>
+        <pubDate>Mon, 24 May 2010 17:51:23 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Currently search indexing is triggered directly using a Postgresql db callback. Now take advantage of the Notification system to register interest in all package changes and db changes to trigger this instead.
+&lt;/p&gt;
+&lt;p&gt;
+The indexing shall run in a separate shell/process, managed by supervisord.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/324#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/356</link>
+        <guid isPermaLink="false">http://localhost/ticket/356</guid>
+        <title>#356: Search box in at top of page (UI)</title>
+        <pubDate>Tue, 22 Jun 2010 19:36:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A small but useful ui improvement would be to have a search box at top right on every page.
+&lt;/p&gt;
+&lt;p&gt;
+As an example see the one here on trac or on github.com or bitbucket.org.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It would be particularly good to include a small advanced search link that took you to the full search page. Need to keep it small because screen real-estate here is limited (see how github.com does this for inspiration).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/356#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/336</link>
+        <guid isPermaLink="false">http://localhost/ticket/336</guid>
+        <title>#336: Resource Search API</title>
+        <pubDate>Tue, 01 Jun 2010 17:02:45 GMT</pubDate>
+        
+        <dc:creator>donovanhide</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+CKAN client such as ScraperWiki
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+search for Package Resources, either by URL or other field, or just get them all. I want to be able to get all the resource's fields, such as URL.
+&lt;/p&gt;
+&lt;h2 id="Proposedimplementation"&gt;Proposed implementation&lt;/h2&gt;
+&lt;p&gt;
+Add resource search API at:
+&lt;/p&gt;
+&lt;p&gt;
+/api/search/resource
+&lt;/p&gt;
+&lt;p&gt;
+AND resource added to model API at:
+&lt;/p&gt;
+&lt;p&gt;
+api/rest/resource
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+(see &lt;a class="closed ticket" href="http://localhost/ticket/358" title="enhancement: Resources in REST API (closed: duplicate)"&gt;ticket:358&lt;/a&gt;)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Functional differences from the ScraperWiki suggested patch:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;URL is not normalised
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;URLs are not grouped
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;All fields of the resource object are returned, not just the URL
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Package is identified by its ID, not name or full URL. (This is for consistency in the API - you can simple prepend '&lt;a class="ext-link" href="http://ckan.net/package/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/&lt;/a&gt;' to the package ID)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This is to make our API more general, simple and consistent. It means that the ScraperWiki client has to do a bit more processing to get exactly what it needs. Is this ok?
+&lt;/p&gt;
+&lt;h3 id="Examplesearch"&gt;Example search&lt;/h3&gt;
+&lt;p&gt;
+POST
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"url": "scraperwiki.com/", "all_fields": 1}
+&lt;/pre&gt;&lt;p&gt;
+to: /api/2/search/resource
+&lt;/p&gt;
+&lt;p&gt;
+returns JSON:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt; [{"id": "a3dd8f64-9078-4f04-845c-e3f047125028",
+   "package_id": "b8a325c8-af2a-43f3-8245-9db7d73dfbfe",
+   "URL": "http://scraperwiki.com/lincolnshire-councillors",
+   "format": "CSV",
+   "Description": "Scrape of www.lincs.gov/councillors.pdf by ScraperWiki.",
+   "hash": "",
+   "position": 2
+ }]
+&lt;/pre&gt;&lt;p&gt;
+Note use of package_id instead of package_name is something we're moving towards in the API, since names can change. When we've done &lt;a class="closed ticket" href="http://localhost/ticket/341" title="enhancement: Web UI accepts package IDs in URLs (closed: fixed)"&gt;ticket:341&lt;/a&gt; then ckan.net/package/lincs-councillors will be a synonym of ckan.net/package/b8a325c8-af2a-43f3-8245-9db7d73dfbfe
+&lt;/p&gt;
+&lt;h3 id="SearchParameters"&gt;Search Parameters&lt;/h3&gt;
+&lt;pre class="wiki"&gt;Key:  q
+Description: Search all resource fields for the value
+Key: url / description / format /
+Description: Search particular field for the value
+Key: all_fields
+Value: 0 or 1 (0 is default)
+Description: If 1 (true), the full record of the package resource
+(and it's package reference) are returned, rather than just the
+PackageResource ID.
+&lt;/pre&gt;&lt;p&gt;
+May also choose to introduce 'offset' and 'limit' to page through a large number of results.
+&lt;/p&gt;
+&lt;p&gt;
+JSONP achieved through API-wide parameter - see &lt;a class="closed ticket" href="http://localhost/ticket/342" title="enhancement: JSONP parameter in API (closed: fixed)"&gt;ticket:342&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Search is case insensitive.
+&lt;/p&gt;
+&lt;h2 id="Originalrequest"&gt;Original request&lt;/h2&gt;
+&lt;p&gt;
+Hi,
+have attached a patch for adding a resource list api call. Have also added a JSONP compatible callback section, along the lines of &lt;a class="closed ticket" href="http://localhost/ticket/388" title="task: Reply to &amp;#34;two projects&amp;#34; question from RS (closed: fixed)"&gt;#388&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Could also add a search version. Not sure what the best url would be for that though.
+&lt;/p&gt;
+&lt;p&gt;
+Haven't written a test as the structure seems to follow a functional spec. Is that document around somewhere?
+&lt;/p&gt;
+&lt;p&gt;
+Donovan
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/336#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/388</link>
+        <guid isPermaLink="false">http://localhost/ticket/388</guid>
+        <title>#388: Reply to "two projects" question from RS</title>
+        <pubDate>Thu, 29 Jul 2010 09:25:03 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/388#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/311</link>
+        <guid isPermaLink="false">http://localhost/ticket/311</guid>
+        <title>#311: Reordering of package resources can lead to integri</title>
+        <pubDate>Sat, 08 May 2010 20:02:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Created a new package resource line and then moved it up above existing one and hit save. Result: 500 error. In logs have:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;[Sat May 08 21:55:41 2010] [error] [client 86.26.8.30] Error - &amp;lt;class 'sqlalchemy.exceptions.IntegrityError'&amp;gt;: (IntegrityError) duplicate key value violates unique constraint "package_resource_revision_pkey", referer: http://ckan.net/package/edit/cofog
+[Sat May 08 21:55:41 2010] [error] [client 86.26.8.30]  'INSERT INTO package_resource_revision (id, package_id, url, format, description, hash, position, state, revision_id, continuity_id) VALUES (%(id)s, %(package_id)s, %(url)s, %(format)s, %(description)s, %(hash)s, %(position)s, %(state)s, %(revision_id)s, %(continuity_id)s)' {'hash': '', 'description': 'The Treasury record of COFOG functions. ', 'format': 'XLS', 'url': 'http://www.hm-treasury.gov.uk/d/cofog_definitions_coins250609.xls', 'package_id': '8482334d-fe2e-4285-9114-5243130f80c0', 'state': 'active', 'continuity_id': '8bf302db-8a80-47d3-b5dc-bc07512a3928', 'position': 3, 'revision_id': 'e4e2cb2d-4bd5-414e-b646-e484f174d9ab', 'id': '8bf302db-8a80-47d3-b5dc-bc07512a3928'}, referer: http://ckan.net/package/edit/cofog
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/311#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/338</link>
+        <guid isPermaLink="false">http://localhost/ticket/338</guid>
+        <title>#338: Reference groups by ID in addition to name, since group names can change</title>
+        <pubDate>Mon, 07 Jun 2010 08:58:57 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/338#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/335</link>
+        <guid isPermaLink="false">http://localhost/ticket/335</guid>
+        <title>#335: Post-package-edit redirect to configurable URL</title>
+        <pubDate>Tue, 01 Jun 2010 16:13:54 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+third-party interface to a CKAN instance
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+link to CKAN's package creation/editing pages. On 'commit', have the user redirected back to a URL in my interface that I can control. Also, when the package is created new, I need to be told what the new package's name is on return.
+&lt;/p&gt;
+&lt;h2 id="Design"&gt;Design&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;The 'return URL' is passed as a parameter to CKAN.
+&lt;/li&gt;&lt;li&gt;CKAN substitutes the package name into the return URL.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Example"&gt;Example&lt;/h2&gt;
+&lt;p&gt;
+Front-end links to:
+http://ca.ckan.net/package/new?return_to=http://datadotgc.ca/dataset/&amp;lt;NAME&amp;gt; (but with the parameter URL-encoded)
+&lt;/p&gt;
+&lt;p&gt;
+When finished editing and the user commits, CKAN redirects the user to: http://datadotgc.ca/dataset/pollution_data
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/335#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/323</link>
+        <guid isPermaLink="false">http://localhost/ticket/323</guid>
+        <title>#323: Notification message</title>
+        <pubDate>Mon, 24 May 2010 17:48:53 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h3 id="Whicheventstonotifyon"&gt;Which events to notify on&lt;/h3&gt;
+&lt;p&gt;
+Listed by domain object, these are the notification message 'change types' that will be sent:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Package
+&lt;/li&gt;&lt;li&gt;PackageResource
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also it is clear that it could be useful to know when db-wide maintenance is carried out:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;db - 'clean', 'rebuild' (db is wiped and replaced with new data), 'upgrade' (migration)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Ignoreddomainobjects"&gt;Ignored domain objects&lt;/h3&gt;
+&lt;p&gt;
+These parts of the domain model will not carry notifications as no use case has been identified for them:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Revision
+&lt;/li&gt;&lt;li&gt;Group
+&lt;/li&gt;&lt;li&gt;Tag
+&lt;/li&gt;&lt;li&gt;Rating
+&lt;/li&gt;&lt;li&gt;User - list of users is sensitive info
+&lt;/li&gt;&lt;li&gt;Relationships - complicated
+&lt;/li&gt;&lt;li&gt;Authz - complicated and sensitive info
+&lt;/li&gt;&lt;li&gt;License - change of a license's metadata is a question for the 'license service'
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Messageformat"&gt;Message format&lt;/h3&gt;
+&lt;p&gt;
+A notification message's header contains the routing key, identifying the object type. The client is probably interested in the object (all use cases so far), so it makes sense to send the object in the payload. This should be the JSON-encoded dictionary exactly as provided for the object's REST Entity.
+&lt;/p&gt;
+&lt;p&gt;
+For the 'db' notifications there shall be no payload.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/323#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/378</link>
+        <guid isPermaLink="false">http://localhost/ticket/378</guid>
+        <title>#378: My user story #1</title>
+        <pubDate>Wed, 28 Jul 2010 13:53:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/378#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/380</link>
+        <guid isPermaLink="false">http://localhost/ticket/380</guid>
+        <title>#380: My dev task #2</title>
+        <pubDate>Wed, 28 Jul 2010 13:55:04 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/380#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/379</link>
+        <guid isPermaLink="false">http://localhost/ticket/379</guid>
+        <title>#379: My dev task #1</title>
+        <pubDate>Wed, 28 Jul 2010 13:54:37 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/379#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/242</link>
+        <guid isPermaLink="false">http://localhost/ticket/242</guid>
+        <title>#242: Miscellaneous tidying up (v0.11)</title>
+        <pubDate>Tue, 09 Feb 2010 11:31:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Dumping ground for various minor and miscellaneous items (mainly refactorings):rgrp
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;controllers/tag.py: why does this not use lib/search.py (but controllers/packages.py search method does)?
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+done:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;lib/search.py: inheritance would be nicer than switching on entity in search (i.e. have &lt;a class="missing wiki"&gt;SearchPackage?&lt;/a&gt;, &lt;a class="missing wiki"&gt;SearchTag?&lt;/a&gt; etc)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/242#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/328</link>
+        <guid isPermaLink="false">http://localhost/ticket/328</guid>
+        <title>#328: Mention code libraries in API documentation</title>
+        <pubDate>Thu, 27 May 2010 19:21:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should prominently (at the top?) mention existing code libraries for working with ckan api. Have:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Python: ckanclient
+&lt;/li&gt;&lt;li&gt;Perl: luke closs wrote something
+&lt;/li&gt;&lt;li&gt;PHP: drupal library?
+&lt;/li&gt;&lt;li&gt;...?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/328#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/382</link>
+        <guid isPermaLink="false">http://localhost/ticket/382</guid>
+        <title>#382: Measure quality of service parameters</title>
+        <pubDate>Wed, 28 Jul 2010 19:56:14 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+As a service administrator, I want to measure responsiveness, throughput, and availability of a CKAN service.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/382#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/317</link>
+        <guid isPermaLink="false">http://localhost/ticket/317</guid>
+        <title>#317: Make search pluggable</title>
+        <pubDate>Wed, 19 May 2010 18:56:58 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Make lib/search.py pluggable so that we can plug in different search systems (e.g. SOLR).
+&lt;/p&gt;
+&lt;p&gt;
+Suggest we define a base Search class from which specific search implementations inherit (e.g. SQLSearch, SOLRSearch etc). The specific one being used would then be set via a config variable.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/317#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/389</link>
+        <guid isPermaLink="false">http://localhost/ticket/389</guid>
+        <title>#389: Investigate timezone issue raised by SB</title>
+        <pubDate>Thu, 29 Jul 2010 09:25:54 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/389#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/273</link>
+        <guid isPermaLink="false">http://localhost/ticket/273</guid>
+        <title>#273: Investigate search index options and create tickets</title>
+        <pubDate>Fri, 19 Mar 2010 11:08:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Work already here: &lt;a class="ext-link" href="http://knowledgeforge.net/ckan/trac/wiki/SearchEngine"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://knowledgeforge.net/ckan/trac/wiki/SearchEngine&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Add knowledge there or to:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://wiki.okfn.org/SoftwareTools/Search"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.okfn.org/SoftwareTools/Search&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/273#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/375</link>
+        <guid isPermaLink="false">http://localhost/ticket/375</guid>
+        <title>#375: Integrate Forms API into Drupal</title>
+        <pubDate>Tue, 27 Jul 2010 09:32:48 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Requested by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/375#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/315</link>
+        <guid isPermaLink="false">http://localhost/ticket/315</guid>
+        <title>#315: Improvements and fixes to csv dump</title>
+        <pubDate>Mon, 17 May 2010 12:54:47 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Issues with quote in fields: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2010-May/000240.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2010-May/000240.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Issues with package resource serialization into csv table.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&amp;lt;quote&amp;gt;
+In the latest dump there were 116(!) sets of the three columns (“resource-[n]-url”, “resource-[n]-format”, and “resource-[n]-description”). However, these are an extract of the packed “resource” column and I’m not sure whether they’re needed. Also, they irritatingly don’t appear in order in the CSV serialisation. If the resource columns could be ordered in the file that would be great; if a second version without the unpacked resource data would be excellent.
+&amp;lt;/quote&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/315#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/263</link>
+        <guid isPermaLink="false">http://localhost/ticket/263</guid>
+        <title>#263: Improve and test openid login</title>
+        <pubDate>Wed, 03 Mar 2010 08:30:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment the user has to figure out to login with providers -- this is not always obvious (e.g. google).
+&lt;/p&gt;
+&lt;p&gt;
+We could improve this with a small bit of javascript. As an example see: &lt;a class="ext-link" href="http://standalone.demo.civicrm.org/standalone/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://standalone.demo.civicrm.org/standalone/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Not sure exactly what library that is using (or if bespoke) so alternatives include (NB: we already use jquery):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://code.google.com/p/openid-realselector/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://code.google.com/p/openid-realselector/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://code.google.com/p/openid-selector/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://code.google.com/p/openid-selector/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+In addition to implementing this we also need to test logging in with main providers: google, wordpress -- as we have had reports of it not working with e.g. wordpress (not sure if this testing can be automated really -- best hope would be selenium I think -- so OK if done by hand).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 3h (2h UI), (1h testing)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/263#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/376</link>
+        <guid isPermaLink="false">http://localhost/ticket/376</guid>
+        <title>#376: Implement servicization of CKAN API</title>
+        <pubDate>Tue, 27 Jul 2010 09:33:46 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Requested by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/376#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/397</link>
+        <guid isPermaLink="false">http://localhost/ticket/397</guid>
+        <title>#397: Implement QoS monitoring for DGU</title>
+        <pubDate>Tue, 03 Aug 2010 17:02:15 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/397#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/387</link>
+        <guid isPermaLink="false">http://localhost/ticket/387</guid>
+        <title>#387: Fix failing tests in search sub-system trigged by recent changes</title>
+        <pubDate>Wed, 28 Jul 2010 22:56:44 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/387#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/325</link>
+        <guid isPermaLink="false">http://localhost/ticket/325</guid>
+        <title>#325: Event push notification</title>
+        <pubDate>Mon, 24 May 2010 17:51:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h3 id="Asa"&gt;As a&lt;/h3&gt;
+&lt;p&gt;
+CKAN client program
+&lt;/p&gt;
+&lt;h3 id="Iwantto"&gt;I want to&lt;/h3&gt;
+&lt;p&gt;
+be notified when changes to the CKAN metadata occur.
+&lt;/p&gt;
+&lt;h3 id="Examplesofuse"&gt;Examples of use&lt;/h3&gt;
+&lt;ol&gt;&lt;li&gt;An external search engine needing to (re)index a package. (interest: Package)
+&lt;/li&gt;&lt;li&gt;A front-end system that caches package info and wants to know when it changes, to keep in step. (interest: Package or Revision) See further details here: &lt;a class="closed ticket" href="http://localhost/ticket/352" title="enhancement: Package notification worker - sends XML-RPC (closed: wontfix)"&gt;ticket:352&lt;/a&gt; and previous iteration here: &lt;a class="closed ticket" href="http://localhost/ticket/333" title="enhancement: CKAN front end requirements for package notifications (closed: wontfix)"&gt;ticket:333&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;A system for automatically checking package URLs and resource URLs as they are put on the system. This could alert to bad URLs and automatically email feedback to (meta)data owners. (interest: PackageResource)
+&lt;/li&gt;&lt;li&gt;Do some processing on resource (e.g. extract sample data for display) (interest: PackageResource)
+&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="Context"&gt;Context&lt;/h3&gt;
+&lt;p&gt;
+The current state of CKAN can be queried through the REST API, you can keep track of changes by reviewing the feeds, but there is no way to find out the instant something is changed, without costly polling.
+&lt;/p&gt;
+&lt;h3 id="Design"&gt;Design&lt;/h3&gt;
+&lt;p&gt;
+Split-off into two tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Notification message - &lt;a class="closed ticket" href="http://localhost/ticket/323" title="enhancement: Notification message (closed: fixed)"&gt;ticket:323&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Which events to notify on
+&lt;/li&gt;&lt;li&gt;Message format
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Interface for Notifier Service - &lt;a class="closed ticket" href="http://localhost/ticket/322" title="enhancement: Client interface for Notification Service (closed: fixed)"&gt;ticket:322&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Testing"&gt;Testing&lt;/h3&gt;
+&lt;p&gt;
+To test notifications, Carrot / AMQP will be configured to use a native-Python Queue, instead of requiring RabbitMQ to be running on the machine.
+&lt;/p&gt;
+&lt;h3 id="Related"&gt;Related&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Run CKAN search indexing using this system - &lt;a class="closed ticket" href="http://localhost/ticket/324" title="enhancement: Search indexing using notifications (closed: fixed)"&gt;ticket:324&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Run SOLR indexing using this system - &lt;a class="closed ticket" href="http://localhost/ticket/353" title="defect: SOLR search indexing (closed: fixed)"&gt;ticket:353&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Web hooks for notifications - &lt;a class="closed ticket" href="http://localhost/ticket/327" title="defect: Create a web hook worker for CKAN (closed: wontfix)"&gt;ticket:327&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/325#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/337</link>
+        <guid isPermaLink="false">http://localhost/ticket/337</guid>
+        <title>#337: Download links for resources should open in new window</title>
+        <pubDate>Tue, 01 Jun 2010 19:55:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+target = _blank
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 30m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/337#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/374</link>
+        <guid isPermaLink="false">http://localhost/ticket/374</guid>
+        <title>#374: Design servicization of CKAN API</title>
+        <pubDate>Tue, 27 Jul 2010 09:31:58 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/374#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/391</link>
+        <guid isPermaLink="false">http://localhost/ticket/391</guid>
+        <title>#391: Create monitoring feature to generate QoS responsiveness log</title>
+        <pubDate>Thu, 29 Jul 2010 23:38:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/391#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/392</link>
+        <guid isPermaLink="false">http://localhost/ticket/392</guid>
+        <title>#392: Create monitoring feature to generate QoS availability log</title>
+        <pubDate>Thu, 29 Jul 2010 23:39:29 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/392#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/383</link>
+        <guid isPermaLink="false">http://localhost/ticket/383</guid>
+        <title>#383: Create middleware feature to generate QoS throughput log</title>
+        <pubDate>Wed, 28 Jul 2010 20:06:35 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/383#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/393</link>
+        <guid isPermaLink="false">http://localhost/ticket/393</guid>
+        <title>#393: Create aggregation feature to aggregate QoS log</title>
+        <pubDate>Thu, 29 Jul 2010 23:40:11 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/393#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/310</link>
+        <guid isPermaLink="false">http://localhost/ticket/310</guid>
+        <title>#310: Commit message box looks wrong in edit page since edit style overhaul</title>
+        <pubDate>Sat, 08 May 2010 19:58:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Suggest move this below the label and make full width of screen and only 3/4 rows high (more like a wiki site).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Also change label to: Edit summary (Briefly describe the changes you have made)
+&lt;/li&gt;&lt;li&gt;Remove: you can markdown formatting here.
+&lt;/li&gt;&lt;li&gt;Move author: if you have not signed in smaller and closer (like markdown instructions are nwo).
+&lt;/li&gt;&lt;li&gt;Change commit -&amp;gt; save
+&lt;/li&gt;&lt;li&gt;Remove "please save" just have the bullet points
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/310#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/322</link>
+        <guid isPermaLink="false">http://localhost/ticket/322</guid>
+        <title>#322: Client interface for Notification Service</title>
+        <pubDate>Mon, 24 May 2010 16:54:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h3 id="Usecases"&gt;Use cases&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Register for package changes
+&lt;/li&gt;&lt;li&gt;Register for all revisions
+&lt;/li&gt;&lt;li&gt;Notified of a package change
+&lt;/li&gt;&lt;li&gt;Notified of a revision
+&lt;/li&gt;&lt;li&gt;Deregistration
+&lt;/li&gt;&lt;li&gt;Configuration of port in pylons config
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Design"&gt;Design&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Default port: 5672 (standard for AMQP)
+&lt;/li&gt;&lt;li&gt;Exchange name: 'ckan'
+&lt;/li&gt;&lt;li&gt;Exchange type: topic exchange (most flexible)
+&lt;/li&gt;&lt;li&gt;Routing keys: (see below)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Routingdetail"&gt;Routing detail&lt;/h3&gt;
+&lt;p&gt;
+Routing key format: "OBJ_TYPE"
+(NB tags should be identified by their name, not ID)
+&lt;/p&gt;
+&lt;p&gt;
+Example routing keys
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'package' - Package edited/created
+&lt;/li&gt;&lt;li&gt;'resource' - Resource edited/created
+&lt;/li&gt;&lt;li&gt;'revision' - Any change
+&lt;/li&gt;&lt;li&gt;'db.clean'
+&lt;/li&gt;&lt;li&gt;'db.rebuild'
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Example queue bindings that clients may use:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;* - no filtering - client receives all notifications
+&lt;/li&gt;&lt;li&gt;package - only changes to packages
+&lt;/li&gt;&lt;li&gt;revision - all revisions
+&lt;/li&gt;&lt;li&gt;db - all database operations
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Versioning"&gt;Versioning&lt;/h3&gt;
+&lt;p&gt;
+Since message payloads will be tied into the REST Entities, it makes sense to join up with the REST versioning. This could be achieved by providing new exchanges called 'ckan-1.1' perhaps?
+&lt;/p&gt;
+&lt;h3 id="Documentation"&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;How to use
+&lt;/li&gt;&lt;li&gt;simple example of an external client?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/322#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/326</link>
+        <guid isPermaLink="false">http://localhost/ticket/326</guid>
+        <title>#326: Centralise importation of json library</title>
+        <pubDate>Tue, 25 May 2010 10:43:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Later versions of python use json which is better than simplejson, but it must be kept as an option for compatibility. So centralise the import of json to ckan.lib.helpers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/326#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/333</link>
+        <guid isPermaLink="false">http://localhost/ticket/333</guid>
+        <title>#333: CKAN front end requirements for package notifications</title>
+        <pubDate>Mon, 31 May 2010 16:40:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Usecase:newpackage"&gt;Use case: new package&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;An external front-end system provides a web page with a list of packages. Each package has the option to edit it or and there is also a button to create a new package.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;User: clicks 'new package'.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;CKAN presents the package/new form to the user.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;(After a couple of previews) User: clicks 'commit'.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;Notification message goes from CKAN to the front-end detailing the new package.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="6"&gt;&lt;li&gt;The user is redirected back to the front-end web page displaying the list of packages, which contains the new one.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+The notification message (step 5) has to get through to the front-end that the new package is created before the redirect (step 6). This suggests that the message sending needs to be *synchronous*, i.e. acknowledged by the front-end, before CKAN redirects the user to the front-end package listing page (step 6).
+&lt;/p&gt;
+&lt;p&gt;
+In addition, this use case suggests the front-end listens for package notifications, to save another call to CKAN to get the package details, before the displaying the list of packages. If this isn't possible (see next use case) and it must listen for revision notifications instead, then perhaps it is worth including the full package details in the payload for the revision notification message. Would there be a problem with such a large message in the next use case, with 100 packages?
+&lt;/p&gt;
+&lt;h2 id="Usecase:CKANimportspackages"&gt;Use case: CKAN imports packages&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;CKAN administrator runs a script that adds 100 new packages into CKAN.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;CKAN sends notification message to front-end to report the new packages/revisions.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Knowing there are new revisions, the front-end queries the CKAN revision interface to get the list of new packages.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;The front-end queries CKAN for each new package one-by-one.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;A new user request to the front-end will include the info about the new packages.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+The package addition could be achieved in 1 revision, 100 revisions or some compromise:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;If it is 1 revision then potentially there are problems displaying the long list of packages in the 'recent changes'.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;If it is 100 revisions, then the notification webhook would be called 100 times, which creates unnecessary load on the front-end. Suppose each Webhook call-back (step 2) triggers the front-end to make a call to CKAN to get the latest revisions (step3), in this case it would make 100 calls, most of them fruitless, causing unnecessary load on CKAN.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This use case suggests a bulk import of packages should go into one revision, and therefore generate one revision notification message and 100 package notification messages. The front-end client should listen to only revision messages.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/333#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/329</link>
+        <guid isPermaLink="false">http://localhost/ticket/329</guid>
+        <title>#329: Bad dates cause exception on Gov form</title>
+        <pubDate>Fri, 28 May 2010 15:30:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Reproduction"&gt;Reproduction&lt;/h2&gt;
+&lt;p&gt;
+Using the government form, create a new package with name 'test' and date released of '23/5/0210'. The result is a 500 error and 'Server Error' message.
+&lt;/p&gt;
+&lt;p&gt;
+Affects all versions of CKAN.
+&lt;/p&gt;
+&lt;h2 id="Whyitshappening"&gt;Why it's happening&lt;/h2&gt;
+&lt;p&gt;
+The dates module is raising an exception on the invalid date when saving the date, which is not being caught. The exception should have been raised only during the earlier 'validation' step and that would be caught.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/329#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/233</link>
+        <guid isPermaLink="false">http://localhost/ticket/233</guid>
+        <title>#233: Allow simple site-specific customization/overriding of templates</title>
+        <pubDate>Sat, 09 Jan 2010 01:26:36 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Options:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Allow for specification of genshi template paths to search in config. This way people can introduce their own templates and these templates can selectively override existing templates. (Already implemented this in shakespeare and it works)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol&gt;&lt;li&gt;Include an extra site-specific genshi template which can then be used to customize site (e.g. by having specific calls to py:def that user can define but which are ignored if they don't exist).
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Can do this using:
+&lt;/p&gt;
+&lt;p&gt;
+&amp;lt;xi:include href=&amp;#34;base.html&amp;#34;&amp;gt;&amp;lt;xi:fallback /&amp;gt;&amp;lt;/xi:include&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/233#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/313</link>
+        <guid isPermaLink="false">http://localhost/ticket/313</guid>
+        <title>#313: Allow packages to be specified by IDs in REST interface</title>
+        <pubDate>Tue, 11 May 2010 19:30:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If a package name changes, a simple CKAN client may not be aware of this (not monitoring the push notifications, revisions or feed), so it is preferable to refer to the package by its (invariant) ID.
+&lt;/p&gt;
+&lt;p&gt;
+It is still useful to refer to a package by its name though, so both should be valid arguments in the REST interface.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/313#changelog</comments>
+    </item>
+ </channel>
+</rss>

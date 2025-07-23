@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckanbuild&amp;group=resolution&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckanbuild&amp;group=resolution&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2469</link>
+        <guid isPermaLink="false">http://localhost/ticket/2469</guid>
+        <title>#2469: Find a better way to deploy CKAN instances</title>
+        <pubDate>Mon, 28 May 2012 14:41:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want a much quicker and easier way of deploying multiple CKAN instances to the same or multiple servers and managing them (e.g. configuration, themes, extensions, upgrades, and adding new instances). Currently we just deploy and manage each instance separately, which doesn't scale.. We'd also want to have (as far as possible) one single way of deploying CKAN that works across different situations, e.g. deployment server, demo server, jenkins, local deployment for development, these should share the same tools for installing CKAN and its dependencies.
+&lt;/p&gt;
+&lt;p&gt;
+Components that this might include:
+&lt;/p&gt;
+&lt;p&gt;
+Virtualenv bootstrap script &lt;a class="ext-link" href="https://gist.github.com/2206132"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/2206132&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Ansible &lt;a class="ext-link" href="http://ansible.github.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ansible.github.com/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+CKAN deb package
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2469#changelog</comments>
+    </item>
+ </channel>
+</rss>

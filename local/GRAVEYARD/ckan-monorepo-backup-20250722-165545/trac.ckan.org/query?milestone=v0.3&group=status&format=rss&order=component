@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=v0.3&amp;group=status&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=v0.3&amp;group=status&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/5</link>
+        <guid isPermaLink="false">http://localhost/ticket/5</guid>
+        <title>#5: Browse list of packages and select one to view</title>
+        <pubDate>Mon, 10 Jul 2006 16:44:44 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Browse a list of packages resulting from a search or browse request (see other use cases)
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I can select one of the packages to view in more detail (-&amp;gt; viewing an individual package &lt;a class="closed ticket" href="http://localhost/ticket/6" title="enhancement: View a package (closed: fixed)"&gt;ticket:6&lt;/a&gt;)
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;When browsing a list of packages you should be able to see summary information about the package such as title (though this may be shortened in order to conveniently fit the list
+&lt;/li&gt;&lt;li&gt;The list should be broken up into pages so that the number of packages per page should be kept to a reasonable number (&amp;lt;= 50). Response time should be kept reasonable
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/5#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/20</link>
+        <guid isPermaLink="false">http://localhost/ticket/20</guid>
+        <title>#20: Purge a package</title>
+        <pubDate>Mon, 10 Jul 2006 17:01:50 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+Administrator
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Purge a deleted package
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;this need only be possible via the admin interface
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/20#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/30</link>
+        <guid isPermaLink="false">http://localhost/ticket/30</guid>
+        <title>#30: Tags are added to a package by package owner</title>
+        <pubDate>Fri, 18 Aug 2006 12:55:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="AsA"&gt;As A&lt;/h2&gt;
+&lt;p&gt;
+Site User
+&lt;/p&gt;
+&lt;h2 id="IWantTo"&gt;I Want To&lt;/h2&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;Create/Edit/Update/Delete?&lt;/a&gt; tags associated with my package
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Tags are service-wide and &lt;strong&gt;not&lt;/strong&gt; package specific
+&lt;/li&gt;&lt;li&gt;Tags should not allow spaces (but allow everything else e.g. ':')
+&lt;/li&gt;&lt;li&gt;web interface details
+&lt;ul&gt;&lt;li&gt;should provide a text box where users can add space separated tags (a la delicious).
+&lt;/li&gt;&lt;li&gt;tag creation should be seemless (so if a tag does not already tag exists it should automatically be created in the background)
+&lt;/li&gt;&lt;li&gt;would like to provide a list of relevant existing tags. For time being could just list all existing tags below entry box but in long run would like auto-updating/auto-suggesting listing a la delicious
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/30#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/32</link>
+        <guid isPermaLink="false">http://localhost/ticket/32</guid>
+        <title>#32: View a tag</title>
+        <pubDate>Mon, 04 Sep 2006 13:19:28 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+View a tag's page which should list all packages associated with that tag (or link to a page containing that list).
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;The tags should have a nice primary url such as /tag/&amp;lt;tag-name&amp;gt; (could also use the plural i.e. /tag/&amp;lt;tag-name&amp;gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/32#changelog</comments>
+    </item>
+ </channel>
+</rss>

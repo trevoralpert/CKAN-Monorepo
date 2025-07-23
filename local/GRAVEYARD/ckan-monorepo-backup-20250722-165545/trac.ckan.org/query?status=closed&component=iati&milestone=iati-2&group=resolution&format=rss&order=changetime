@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=iati&amp;milestone=iati-2&amp;group=resolution&amp;order=changetime</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=iati&amp;milestone=iati-2&amp;group=resolution&amp;order=changetime</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/524</link>
+        <guid isPermaLink="false">http://localhost/ticket/524</guid>
+        <title>#524: Limit registering data to authenticated users either via API or manually.</title>
+        <pubDate>Fri, 27 Aug 2010 07:25:04 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Limit registering data to authenticated users either via API or manually.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Edits may only be made by authenticated entities
+&lt;/li&gt;&lt;li&gt;Priority: 5
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/524#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/525</link>
+        <guid isPermaLink="false">http://localhost/ticket/525</guid>
+        <title>#525: Confirm and approve publishing entity account</title>
+        <pubDate>Fri, 27 Aug 2010 07:27:20 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;So some kind of confirmation or approval by someone more senior?
+&lt;/li&gt;&lt;li&gt;Alternative: just have an account request.
+&lt;/li&gt;&lt;li&gt;Priority: 3
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/525#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/522</link>
+        <guid isPermaLink="false">http://localhost/ticket/522</guid>
+        <title>#522: Create publishing entity account</title>
+        <pubDate>Fri, 27 Aug 2010 07:21:08 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Publishing entity emails system editors
+&lt;/li&gt;&lt;li&gt;System editor creates publishing entity account and emails publishing entity with details
+&lt;/li&gt;&lt;li&gt;Priority: 4/5
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/522#changelog</comments>
+    </item>
+ </channel>
+</rss>

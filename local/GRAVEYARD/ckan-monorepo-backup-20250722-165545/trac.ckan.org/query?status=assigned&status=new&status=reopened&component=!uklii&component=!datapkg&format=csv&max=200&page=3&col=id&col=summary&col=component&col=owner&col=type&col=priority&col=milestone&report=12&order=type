@@ -1,0 +1,69 @@
+id,summary,component,owner,type,priority,milestone
+2948,Negative range breaks datastore backend,ckan,,enhancement,awaiting triage,
+2951,Paster command for building css from less,ckan,,enhancement,minor,ckan 2.0
+2952,incorporate javascriopt translations into translations workflow,ckan,seanh,enhancement,minor,ckan 2.0
+2956,Allow for resource editing in CKAN 2.0,ckan,shevski,enhancement,awaiting triage,ckan 2.0
+2961,Preview plugin endpoint,ckan,dominik,enhancement,awaiting triage,ckan 2.0
+2962,Search across multiple ckan instances,ckan,,enhancement,awaiting triage,ckan-backlog
+2966,'Add' button text is wrong when editing organization members,ckan,,enhancement,awaiting triage,ckan 2.0
+2971,"""Are ytou sure you want to delete this member?"" should say which member",ckan,,enhancement,awaiting triage,ckan 2.0
+2972,Remove any imports of authz.py and delete file,ckan,,enhancement,awaiting triage,ckan 2.0
+2973,Move new_authz.py into logic/auth/__init__.py,ckan,,enhancement,awaiting triage,ckan 2.0
+2974,General of all auth functions,ckan,,enhancement,awaiting triage,ckan 2.0
+2975,Tests for auth functions and new actions,ckan,,enhancement,awaiting triage,ckan 2.0
+2976,Polish group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2977,Fix user autocomplete on group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2978,Tests for permissions for organizations and groups,ckan,,enhancement,awaiting triage,ckan 2.0
+2979,Requesting membership to groups and organizations,ckan,,enhancement,awaiting triage,ckan 2.0
+2988,UI functional tests for CKAN 2.0,ckan,,enhancement,awaiting triage,ckan 2.0
+2989,"""Add dataset to organization"" should auto-select the organization",ckan,,enhancement,awaiting triage,ckan 2.0
+2990,Fix descriptions of groups and organizations on /groups and /organizations pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2991,Add blocks to header.html template,ckan,,enhancement,awaiting triage,ckan 2.0
+2992,Delete resource should send me back to edit dataset page,ckan,,enhancement,awaiting triage,
+2994,Add dataset and user popovers throughout the site,ckan,,enhancement,awaiting triage,ckan 2.0
+2995,"Popovers for resources, groups, organizations, tags...",ckan,,enhancement,awaiting triage,ckan 2.0
+2996,Fix behaviour of View Profile button in user popover when already on user's profile,ckan,,enhancement,minor,ckan 2.0
+2997,Add activity streams to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2998,Add activity streams to group pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2999,Add activity streams to organization pages,ckan,,enhancement,awaiting triage,ckan 2.0
+3000,Add number of followers to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+3003,New pg databases should be created with UTF8 encoding rather than system default,ckan,,enhancement,awaiting triage,ckan-v1.8
+3005,"Add following/unfollowing of groups: model, API, frontend, tests",ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3006,Update translations from Transifex,ckan,,enhancement,awaiting triage,ckan-v1.8.1
+3007,Adding a dataset creates multiple activities,ckan,,enhancement,awaiting triage,ckan 2.0
+3010,Pin images don't appear in data explorer,ckan,,enhancement,awaiting triage,ckan 2.0
+3011,Recline fixes and updates for CKAN 2.0,ckan,johnglover,enhancement,major,ckan 2.0
+3012,data.gov auth,ckan,toby,enhancement,awaiting triage,
+3016,CKAN 2.0 template tweaks,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3017,New stable branch for the demo server,ckan,johnglover,enhancement,major,ckan 2.0
+3018,Load more in activity streams,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3020,Update CKAN coding standards,ckan,,enhancement,awaiting triage,
+3023,New methods on IPackageController to provide access to the data_dict,ckan,amercader,enhancement,awaiting triage,
+3025,Add requests to core requirements,ckan,amercader,enhancement,awaiting triage,
+3026,Support icons on  nav_named_link,ckan,amercader,enhancement,minor,
+3027,solr for 2.0,ckan,kindly,enhancement,awaiting triage,
+3028,Feature: dashboard activity stream filtering,ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3030,clean up helper functions,ckan,,enhancement,awaiting triage,
+1800,Tidy up *_list() and *_search() functions in ckan/logic/action/get.py,ckan,,refactor,awaiting triage,ckan-future
+2277,Use the new atom feeds in IATI,ckan,icmurray,refactor,minor,ckan-backlog
+2603,Remove deprecated 'fields' parameter from resource_search,ckan,icmurray,refactor,minor,ckan-v1.9
+2621,Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete,ckan,icmurray,refactor,minor,ckan-v1.9
+2915,Refactor form_to_db_schema_options(),ckan,,refactor,awaiting triage,ckan 2.0
+2981,Remove config from jinja templates,ckan,,refactor,awaiting triage,ckan 2.0
+2982,Move functionality from controllers into template helpers,ckan,,refactor,awaiting triage,ckan 2.0
+2983,Refactor lib/base.py to remove circular import issues,ckan,,refactor,awaiting triage,ckan 2.0
+2984,"Auto-populate context with user, model, session, etc.",ckan,,refactor,awaiting triage,ckan 2.0
+2985,Make lib/helpers.py more template-specific,ckan,,refactor,awaiting triage,ckan 2.0
+2986,Make lib/base.py more like it was originally intended,ckan,,refactor,awaiting triage,ckan 2.0
+2987,Remove all direct calls to logic action and auth functions,ckan,,refactor,awaiting triage,ckan 2.0
+256,Package relationships - 3. Edit in WUI,ckan,,requirement,major,ckan-backlog
+653,Trackback links for packages,ckan,,requirement,awaiting triage,ckan-backlog
+818,Rethinking the author and maintainer fields,ckan,,requirement,awaiting triage,ckan-backlog
+1273,Create docs for API v3,ckan,,requirement,awaiting triage,ckan-backlog
+2546,ODS Managing homepage content,ckan,,requirement,awaiting triage,ckan-backlog
+1384,CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages,ckan,rgrp,task,awaiting triage,ckan-backlog
+1544,delete old git branches,ckan,,task,minor,ckan-backlog
+1815,Reenable Sparql endpoint on publicdata.eu,pdeu,amercader,task,awaiting triage,ckan-future
+2382,Investigate options for basic geocoding,ckan,amercader,task,awaiting triage,ckan-future
+2957,New datastore on postgres prior to 9.0,ckan,,task,awaiting triage,
+2960,Private datasets are not private,ckan,,task,awaiting triage,ckan-backlog

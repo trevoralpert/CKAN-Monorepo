@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~doc&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~doc&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1460</link>
+        <guid isPermaLink="false">http://localhost/ticket/1460</guid>
+        <title>#1460: Improve extensions documentation</title>
+        <pubDate>Sat, 12 Nov 2011 16:15:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Current extensions documentation needs some work: &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/plugins.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/plugins.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Queue extension section may now be out of date (?)
+&lt;/li&gt;&lt;li&gt;Think about how it integrates with &lt;a class="ext-link" href="https://github.com/okfn/ckanext-example"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-example&lt;/a&gt; (especially tutorial and example extension)
+&lt;/li&gt;&lt;li&gt;Document all plugin points (auto-extract from CKAN source??)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1460#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2337</link>
+        <guid isPermaLink="false">http://localhost/ticket/2337</guid>
+        <title>#2337: Sort out ini file confusion in docs</title>
+        <pubDate>Mon, 30 Apr 2012 14:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+For example if you follow the source install instructions then you have development.ini, then when you go onto Post-Installation Setup it talks about std.ini. People don't realise that these files are the same.
+&lt;/p&gt;
+&lt;p&gt;
+Either fix the docs or fix CKAN to use same ini file names in package and source installs/
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2337#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2520</link>
+        <guid isPermaLink="false">http://localhost/ticket/2520</guid>
+        <title>#2520: Document undocumented config options</title>
+        <pubDate>Wed, 13 Jun 2012 11:52:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are 21 undocumented config options in CKAN, some of which are not mentioned in the config file template either:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.admin.name
+ckan.admin.email
+ckan.default.group_type
+ckan.page_cache_enabled
+ckan.cache_enabled
+ckan.cache_expires
+ckan.extra_resource_fields
+ckan.extra_resource_group_fields
+ckan.storage.key_prefix
+ckan.storage.max_content_length
+ckan.feeds.authority_name *
+ckan.feeds.date *
+ckan.feeds.author_name *
+ckan.feeds.author_link *
+ckan.mail_from
+ckan.gravatar_default *
+ckan.plugins
+ckan.api_url
+ckan.auth.profile
+ckan.datastore.enabled
+ckan.tracking_enabled
+&lt;/p&gt;
+&lt;p&gt;
+There are also some options that are in the default deployment.ini even though they're deprecated:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.async_notifier
+carrot_messaging_library
+ckan.build_search_index_synchronously
+&lt;/p&gt;
+&lt;p&gt;
+See email to ckan-dev from David Read: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+It'd be best if the docs could be automatically pulled from the source into sphinx using autodoc, see &lt;a class="assigned ticket" href="http://localhost/ticket/1358" title="enhancement: Generate configuration documentation automatically from the ... (assigned)"&gt;#1358&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2520#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2761</link>
+        <guid isPermaLink="false">http://localhost/ticket/2761</guid>
+        <title>#2761: Document all the errors you can get when setting up filestore, and how to fix them</title>
+        <pubDate>Thu, 26 Jul 2012 11:36:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add it to a 'Troubleshooting' section on the filestore page: &lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.7.1/filestore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.7.1/filestore.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+For the error messages and their solutions, see various threads on ckan-dev
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2761#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2771</link>
+        <guid isPermaLink="false">http://localhost/ticket/2771</guid>
+        <title>#2771: Documentation and examples for IDatasetForm and IGroupForm</title>
+        <pubDate>Fri, 27 Jul 2012 12:30:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add minimal, working IDatasetForm and IGroupForm example extensions to core, with tests.
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm example should use tag vocabularies (two birds with one stone)
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm and IGroupForm docs are not very good (and are somewhat spread around different doc chapters), fix them up, and reference the new working examples.
+&lt;/p&gt;
+&lt;p&gt;
+Tab Vocabularies docs should reference IDatasetForm example.
+&lt;/p&gt;
+&lt;p&gt;
+When using convert_to/from_extras() you have to remove any free extras from the form or it won't work, this needs to be documented (in the docstring maybe)
+&lt;/p&gt;
+&lt;p&gt;
+There have been recent changes to the schemas that IDatasetForm and IGroupForm use, make sure the docs are up to date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2771#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2881</link>
+        <guid isPermaLink="false">http://localhost/ticket/2881</guid>
+        <title>#2881: Remove or improve 'Domain Model' docs page</title>
+        <pubDate>Tue, 21 Aug 2012 09:05:17 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.8/domain-model.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.8/domain-model.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Currently not very useful. Also these pages:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-dataset.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-dataset.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-resource.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-resource.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/domain-model-task-status.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/domain-model-task-status.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This just seems very incomplete to me (surely there is more to the domain model the dataset, resource and task status?) and very likely to not get updated as changes are mode to the code. Would anyone seriously refer to this rather than just looking at the source code?
+&lt;/p&gt;
+&lt;p&gt;
+If we want to have something along these lines in the docs, I suggest adding docstrings to packages, modules, classes and methods and then using autodoc to pull them into sphinx.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2881#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2882</link>
+        <guid isPermaLink="false">http://localhost/ticket/2882</guid>
+        <title>#2882: Remove User Stories Overview from docs?</title>
+        <pubDate>Tue, 21 Aug 2012 09:18:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Why is this here? Is it up to date? Is anyone keeping it up to date? Does this belong in some sort of CKAN planning or roadmap document rather than in the documentation?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/user-stories.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/user-stories.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2882#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2883</link>
+        <guid isPermaLink="false">http://localhost/ticket/2883</guid>
+        <title>#2883: Add high level dev overview to 'For CKAN Developers' section of docs</title>
+        <pubDate>Tue, 21 Aug 2012 10:52:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Here's a draft: &lt;a class="ext-link" href="https://gist.github.com/3414107"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/3414107&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2883#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2890</link>
+        <guid isPermaLink="false">http://localhost/ticket/2890</guid>
+        <title>#2890: Collect data previews and data store docs in one chapter</title>
+        <pubDate>Tue, 28 Aug 2012 10:20:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently there is this page:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/data-viewer.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/data-viewer.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+which covers Recline Data Explorer and other kinds of data preview in CKAN. It is under the Publishing Datasets section in the documentation. I had to to a search for 'recline' to find it.
+&lt;/p&gt;
+&lt;p&gt;
+Separately there is this page: &lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.7.1/datastore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.7.1/datastore.html&lt;/a&gt; which covers datastore, datastorer, and the data api.
+&lt;/p&gt;
+&lt;p&gt;
+I suggest collecting this together in one chapter called 'Data Previews'. If I understand it right the general gist would be:
+&lt;/p&gt;
+&lt;p&gt;
+CKAN has builtin previews of data resources on resource pages, enabled by default.
+&lt;/p&gt;
+&lt;p&gt;
+Images, Google Documents, and web page resources will be loaded into embedded iframes for preview.
+&lt;/p&gt;
+&lt;p&gt;
+Text-like files will be displayed raw.
+&lt;/p&gt;
+&lt;p&gt;
+CSV or Excel files uploaded to CKAN will be previewed using Recline Data Explorer.
+&lt;/p&gt;
+&lt;p&gt;
+Additionally, you can enable CKAN's &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt;, requires you to install &lt;a class="missing wiki"&gt;ElasticSearch?&lt;/a&gt; and nginx and put datastore.enabled=1 in your ini file. Lets you use the Data API to query data.
+&lt;/p&gt;
+&lt;p&gt;
+Does having &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; enabled mean you get preview of more types of resources? Any resource that's available via the Data API will be previewed using Recline,
+&lt;/p&gt;
+&lt;p&gt;
+You can install ckanext-datastorer, and then CSV and Excel files _linked to_ as CKAN resources will be previewed using Recline also. Requires celeryd.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2890#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2891</link>
+        <guid isPermaLink="false">http://localhost/ticket/2891</guid>
+        <title>#2891: Update or remove DataStore google presentation</title>
+        <pubDate>Tue, 28 Aug 2012 10:23:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently this page:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/ckan-1.8/datastore.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/ckan-1.8/datastore.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+has an embedded Google docs presentation about data store which contains some outdated information, e.g. links to datastoreclient which was merged into ckanclient.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest moving the google presentation into the documentation proper, so it works with grep etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2891#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2919</link>
+        <guid isPermaLink="false">http://localhost/ticket/2919</guid>
+        <title>#2919: Remove IController from docs</title>
+        <pubDate>Wed, 12 Sep 2012 14:47:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Still in docs but seems gone from code
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2919#changelog</comments>
+    </item>
+ </channel>
+</rss>

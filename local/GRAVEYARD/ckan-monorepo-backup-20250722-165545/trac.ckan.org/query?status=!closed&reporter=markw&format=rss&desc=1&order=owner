@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=markw&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=markw&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2479</link>
+        <guid isPermaLink="false">http://localhost/ticket/2479</guid>
+        <title>#2479: Meanings of Author and Maintainer fields are unclear</title>
+        <pubDate>Thu, 31 May 2012 08:28:18 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN's default schema has fields for Author ('The name of the main contact, for enquiries about this particular dataset') and 'Maintainer ('another important contact person'). The distinction is not clear. Also the fields are often left blank.
+&lt;/p&gt;
+&lt;p&gt;
+The roles that seems most important are those of the original owner/publisher of the data, and the person maintaining the CKAN record/copy of it. So I suggest:
+&lt;/p&gt;
+&lt;p&gt;
+(1) Rename the fields 'Owner' and 'Maintainer'.
+&lt;/p&gt;
+&lt;p&gt;
+(2) Change the explanatory text for the relevant fields:
+&lt;/p&gt;
+&lt;p&gt;
+Owner: 'The person or organisation who create/collect/publish the data in this dataset.'
+Owner e-mail: 'E-mail address for enquiries to the Owner named above.'
+Maintainer: 'The person maintaining this dataset on [name of CKAN instance], if different from the above.'
+Maintainer e-mail: 'E-mail address for enquiries to the Maintainer named above.'
+&lt;/p&gt;
+&lt;p&gt;
+(3) When a logged-in user creates a new dataset, the main form should have a checkbox, checked by default, marked 'I am the maintainer of this dataset'. If checked, the Maintainer name and e-mail fields are populated from the user's profile.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2479#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2480</link>
+        <guid isPermaLink="false">http://localhost/ticket/2480</guid>
+        <title>#2480: Better message when dataset has no resources</title>
+        <pubDate>Thu, 31 May 2012 08:31:33 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+If a dataset has no resources the resources list currently says
+'(none)'.
+&lt;/p&gt;
+&lt;p&gt;
+Here is a suggested improvement, provided that a maintainer is named: 'There are no data resources here yet. For information about this data, contact the dataset maintainer.'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2480#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2483</link>
+        <guid isPermaLink="false">http://localhost/ticket/2483</guid>
+        <title>#2483: Non-local resources should not have Download links</title>
+        <pubDate>Thu, 31 May 2012 12:52:14 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+At present, a resource which is just a URL link to an external resource has a 'Download' button on the resource page. This gives the misleading impression that the resource is stored locally.
+&lt;/p&gt;
+&lt;p&gt;
+This is related to another small UI issue: I think the URL of a resource should be much more prominent, not buried in the 'Additional Information' table.
+&lt;/p&gt;
+&lt;p&gt;
+Suggested fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Put the URL prominently at the top of the resource page (above the preview) (and make it link to the resource)
+&lt;/li&gt;&lt;li&gt;Disable the Download button unless the resource is stored locally.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2483#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2731</link>
+        <guid isPermaLink="false">http://localhost/ticket/2731</guid>
+        <title>#2731: Some sites permanently 'down for maintenance'</title>
+        <pubDate>Mon, 23 Jul 2012 12:06:08 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+A large number of XXX.ckan.net sites give the following message:
+&lt;/p&gt;
+&lt;p&gt;
+"This Site is Down for Maintenance
+We apologize for the inconvenience.
+~ The Open Knowledge Foundation sysadmins."
+&lt;/p&gt;
+&lt;p&gt;
+The message is unhelpful and patently false - the sites do not exist. Some of them were supposed to have been redirected to a relevant group at thedatahub.org in this ticket (now closed):
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://trac.okfn.org/ticket/933"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.okfn.org/ticket/933&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+However, the redirection only seems to have worked in one case, &lt;a class="ext-link" href="http://si.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://si.ckan.net&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The problem still affects the following sites - the first 4 of which have supposedly been merged:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://lt.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lt.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://hu.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://hu.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://be.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://be.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://gr.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://gr.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://nz.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://nz.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://bg.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bg.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://fi.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://fi.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://katalogdanych.centrumcyfrowe.pl"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://katalogdanych.centrumcyfrowe.pl&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://pl.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pl.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://southampton.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://southampton.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://sl.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://sl.ckan.net&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Please sort this out by redirecting, removing the sites, giving a more helpful (and accurate) failure message, etc, as appropriate.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2731#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2411</link>
+        <guid isPermaLink="false">http://localhost/ticket/2411</guid>
+        <title>#2411: .ini file is a mess</title>
+        <pubDate>Tue, 22 May 2012 11:41:40 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The .ini file needs cleaning up in assorted ways which Toby will expand upon.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2411#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2813</link>
+        <guid isPermaLink="false">http://localhost/ticket/2813</guid>
+        <title>#2813: Confusing sidebar on demo dataset page</title>
+        <pubDate>Wed, 08 Aug 2012 10:03:26 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+On a dataset page on demo.ckan.org, the left sidebar is confusing.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It starts with some random links. Actually they are links to groups which the dataset is in, but this isn't clear.
+&lt;/li&gt;&lt;li&gt;The sidebar elements that are actually part of the dataset are 'Datset extent' and 'License', so these should be right at the top (if they belong in the sidebar at all), instead of which they are right at the bottom in the junk part of the page (i.e. probably lower than the bottom of the main page, and hence lower than anyone will scroll).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2813#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2862</link>
+        <guid isPermaLink="false">http://localhost/ticket/2862</guid>
+        <title>#2862: Revised revised groups description</title>
+        <pubDate>Thu, 16 Aug 2012 10:52:02 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+Revised text for 'What are groups?' box at demo.ckan.org/group (after discussion with IB re &lt;a class="closed ticket" href="http://localhost/ticket/2812" title="enhancement: Groups description needs improving (closed: invalid)"&gt;#2812&lt;/a&gt;):
+&lt;/p&gt;
+&lt;p&gt;
+What are groups?
+&lt;/p&gt;
+&lt;p&gt;
+Groups allow you to group users and data together so that they are easier to manage. Group owners can assign roles and authorisations, giving each project or department control of its own data publishing.
+&lt;/p&gt;
+&lt;p&gt;
+Users can browse or facet by groups, which could be an organisation (for example, the Department of Health) or topic (e.g. Transport, Health), making it easier to find the data they are looking for.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2862#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2814</link>
+        <guid isPermaLink="false">http://localhost/ticket/2814</guid>
+        <title>#2814: Demo: upload file behaves oddly</title>
+        <pubDate>Wed, 08 Aug 2012 10:06:00 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;ol start="3"&gt;&lt;li&gt;Uploading a file behaves counter-intuitively (I would suggest wrongly).
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+When adding a new resource by uploading a file, I select a file called
+say create-group.png. I expect the following to happen:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the pathname of that file is filled in the box;
+&lt;/li&gt;&lt;li&gt;nothing is actually uploaded till I hit 'add' (confirming that I've got the right file etc).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Instead of this,
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the file is immediately and, seemingly, irrevocably uploaded;
+&lt;/li&gt;&lt;li&gt;the box is filled with a mysterious URL (&lt;a class="ext-link" href="https://commondatastorage.googleapis.com/ckan-demo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://commondatastorage.googleapis.com/ckan-demo&lt;/a&gt; ...)
+&lt;/li&gt;&lt;li&gt;the mysterious URL is so long I can't even see the final element, which is my file name.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2814#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2773</link>
+        <guid isPermaLink="false">http://localhost/ticket/2773</guid>
+        <title>#2773: About page needs improving</title>
+        <pubDate>Mon, 30 Jul 2012 11:13:15 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The about page for the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt; (thedatahub.org/about) could be improved. More importantly the default about page for a generic CKAN instance should be completely different - focus more on Open Data rather than the community hub idea (as this is more relevant for most installations) and remove specific references to tdh.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2773#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2406</link>
+        <guid isPermaLink="false">http://localhost/ticket/2406</guid>
+        <title>#2406: Errors in source install doc</title>
+        <pubDate>Mon, 21 May 2012 10:11:33 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+There are a few errors or unclarities in the source install doc - see
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002203.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002203.html&lt;/a&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002204.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002204.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2406#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2415</link>
+        <guid isPermaLink="false">http://localhost/ticket/2415</guid>
+        <title>#2415: Confusing message on attempting to register new account with upper case</title>
+        <pubDate>Wed, 23 May 2012 13:19:49 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+On registering a new account, if you try to use a capital letter in your 'Login', you get the unhelpful error message:
+&lt;/p&gt;
+&lt;p&gt;
+"The form contains invalid entries: Name: Url must be purely lowercase alphanumeric (ascii) characters and these symbols: -_"
+&lt;/p&gt;
+&lt;p&gt;
+What does 'Name' or 'Url' have to do with anything? It means 'Login must be ...'
+&lt;/p&gt;
+&lt;p&gt;
+But even better would be to make the login case-insensitive and allow capitals to be entered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2415#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2709</link>
+        <guid isPermaLink="false">http://localhost/ticket/2709</guid>
+        <title>#2709: Atom feeds are undocumented</title>
+        <pubDate>Wed, 18 Jul 2012 15:11:50 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+There doesn't seem to be any documentation yet for Atom feeds.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2709#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2407</link>
+        <guid isPermaLink="false">http://localhost/ticket/2407</guid>
+        <title>#2407: 'Access denied' message is unhelpful</title>
+        <pubDate>Mon, 21 May 2012 15:01:40 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+This chap tried to use the API to add a dataset to a group and got the uninformative message 'Access denied':
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The problem was he didn't have access to the group. A message like 'You don't have access to the group "LODcloud"' would have been clearer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2407#changelog</comments>
+    </item>
+ </channel>
+</rss>

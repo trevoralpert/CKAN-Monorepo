@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;priority=awaiting+merge&amp;order=milestone</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;priority=awaiting+merge&amp;order=milestone</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2550</link>
+        <guid isPermaLink="false">http://localhost/ticket/2550</guid>
+        <title>#2550: User types</title>
+        <pubDate>Mon, 18 Jun 2012 11:06:30 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+In the data hub plugin we require the ability to differentiate users between those that have paid for a service, and those that haven't. The distinction isn't boolean as there may be levels of service for paid users, so it may be that we need a 'type' of user where there are various grades of 'paid' which are likely to be strings (specific to the data hub).
+&lt;/p&gt;
+&lt;h2 id="Requiredinterface"&gt;Required interface&lt;/h2&gt;
+&lt;p&gt;
+Once changes have been made to the user schema, for a given user we want to be able to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;determine if they have a paid or a free account, and
+&lt;/li&gt;&lt;li&gt;get a string name of the type of paid account.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Care should be taken to ensure that the 'paid' status of the user cannot be set through the API and only by the datahub plugin.
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+User stories related to the management, setting and changing of a user's payment level, as well as historical information on payments should be done as part of the work that includes actually allowing purchases.  For now it is adequate that we can manually control these things through paster commands.
+&lt;/p&gt;
+&lt;p&gt;
+Payments types should be linear as I don't believe for this type of service a pick-and-mix modular model would work well. Organizations will inherit the payment level of their owner, so currently there is no requirement for it to affect organizations at all.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to use a paster command to
+manually set a user's payment level, or remove it entirely.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to run a paster command to
+view a list of users who have a payment plan, grouped by the plan
+that they have.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to use the API to change the
+payment status of a specific user through user_create and user_update.
+This shouldn't be available to anybody else.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a user, and only if I have one, I'd like to see my current payment
+level on my user profile page.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[x] Tests
+&lt;/p&gt;
+&lt;p&gt;
+[x] Plugin based migration
+&lt;/p&gt;
+&lt;p&gt;
+[x] Code
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[x] Model
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[x] API
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[x] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2550#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2362</link>
+        <guid isPermaLink="false">http://localhost/ticket/2362</guid>
+        <title>#2362: Improve plugin documentaion, including examples.</title>
+        <pubDate>Tue, 01 May 2012 16:13:11 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Improve documentation for plugins and add examples. Could use ckanext-example as a base.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2362#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2867</link>
+        <guid isPermaLink="false">http://localhost/ticket/2867</guid>
+        <title>#2867: 1.8 url_for error</title>
+        <pubDate>Thu, 16 Aug 2012 10:57:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Thu, Aug 16, 2012 at 10:30 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'routes.util.&lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;'&amp;gt;: url_for can only return a string, got unicode instead: &lt;a class="ext-link" href="https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6&lt;/a&gt;
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.storage:190 in file
+&amp;lt;&amp;lt;              return fapp(request.environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+h.redirect_to(file_url)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+h.redirect_to(file_url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.helpers:57 in redirect_to
+&amp;lt;&amp;lt;      if are_there_flash_messages():
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kw&lt;a class="missing wiki"&gt;__no_cache__?&lt;/a&gt; = True
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _redirect_to(url_for(*args, &lt;strong&gt;kw))
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def url(*args, &lt;strong&gt;kw):
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _redirect_to(url_for(*args, &lt;strong&gt;kw))
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.helpers:79 in url_for
+&amp;lt;&amp;lt;          # fix ver to include the slash
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kw&lt;a class="missing wiki"&gt;ver?&lt;/a&gt; = '/%s' % ver
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+my_url = _routes_default_url_for(*args, &lt;strong&gt;kw)
+kw&lt;a class="missing wiki"&gt;__ckan_no_root?&lt;/a&gt; = no_root
+return _add_i18n_to_url(my_url, locale=locale, &lt;/strong&gt;kw)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+my_url = _routes_default_url_for(*args, &lt;strong&gt;kw)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.util:265 in url_for
+&amp;lt;&amp;lt;      if not isinstance(url, str) and url is not None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;("url_for can only return a string, got "
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"unicode instead: %s" % url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if url is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;(
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"unicode instead: %s" % url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;: url_for can only return a string, got unicode instead: &lt;a class="ext-link" href="https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6&lt;/a&gt;
+CGI Variables
+CKAN_CURRENT_URL        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        '*/*'
+HTTP_ACCEPT_CHARSET        'utf-8;q=0.7,iso-8859-1;q=0.2,*;q=0.1'
+HTTP_CONNECTION        'close'
+HTTP_HOST        'ckan.net'
+HTTP_USER_AGENT        'Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@…)'
+PATH_INFO        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '37236'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345109433.273328, '_creation_time': 1345109433.273328}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f5303b05610&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt;.file of &amp;lt;ckan.controllers.storage.&lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt; object at 0x7f530891fa10&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.storage.&lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt; object at 0x7f530891fa10&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52f864f850&amp;gt;
+pylons.routes_dict        {'action': u'file', 'controller': u'ckan.controllers.storage:StorageController', 'label': u'file/fd3e00d9-eb0d-479b-8303-38909e5400ca'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f531296e690&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52f82cd450&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f52f5870cd8&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52f82cd450&amp;gt;, {'action': u'file', 'controller': u'ckan.controllers.storage:StorageController', 'label': u'file/fd3e00d9-eb0d-479b-8303-38909e5400ca'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2867#changelog</comments>
+    </item>
+ </channel>
+</rss>

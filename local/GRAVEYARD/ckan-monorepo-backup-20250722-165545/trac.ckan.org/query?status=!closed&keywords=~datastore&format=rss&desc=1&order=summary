@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~datastore&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~datastore&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2960</link>
+        <guid isPermaLink="false">http://localhost/ticket/2960</guid>
+        <title>#2960: Private datasets are not private</title>
+        <pubDate>Mon, 08 Oct 2012 11:04:15 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment everyone can read all resources. There is no support for hiding resources that are in private datasets.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2960#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2957</link>
+        <guid isPermaLink="false">http://localhost/ticket/2957</guid>
+        <title>#2957: New datastore on postgres prior to 9.0</title>
+        <pubDate>Wed, 03 Oct 2012 19:23:34 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;tt&gt;&lt;/tt&gt;GRANT SELECT ON ALL&lt;tt&gt;&lt;/tt&gt; and &lt;tt&gt;&lt;/tt&gt;ALTER DEFAULT PRIVILEGES&lt;tt&gt;&lt;/tt&gt; are not available in Postgres prior to version 9.0.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2957#changelog</comments>
+    </item>
+ </channel>
+</rss>

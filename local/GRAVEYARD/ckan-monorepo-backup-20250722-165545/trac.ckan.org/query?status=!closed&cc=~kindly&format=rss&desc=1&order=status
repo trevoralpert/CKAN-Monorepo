@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~kindly&amp;desc=1&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~kindly&amp;desc=1&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1198</link>
+        <guid isPermaLink="false">http://localhost/ticket/1198</guid>
+        <title>#1198: Publisher hierarchy</title>
+        <pubDate>Thu, 23 Jun 2011 09:16:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+'Publisher' entities in the model. They are hierarchical.
+&lt;/p&gt;
+&lt;p&gt;
+'User-Publisher' connections with one or more roles (e.g. drafter, moderator).
+&lt;/p&gt;
+&lt;p&gt;
+Authorization settings can control who can set what values in a 'published by' type field.
+&lt;/p&gt;
+&lt;p&gt;
+Publishers and User-Publishers available to read in the API.
+&lt;/p&gt;
+&lt;p&gt;
+Future tickets will provide:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;API to write Publishers and User-Publishers
+&lt;/li&gt;&lt;li&gt;UI to edit Publishers and User-Publishers
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(This feature deprecates authorization groups)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1198#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1438</link>
+        <guid isPermaLink="false">http://localhost/ticket/1438</guid>
+        <title>#1438: Action API - parameter discovery/checking</title>
+        <pubDate>Tue, 01 Nov 2011 15:38:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Many actions in the Action API require parameters. What params are needed should be listed and checked. Because currently, if you get them wrong you simply get a useless 500 error.
+&lt;/p&gt;
+&lt;p&gt;
+Currently they are listed in the docs, extracted from the code manually.
+&lt;/p&gt;
+&lt;p&gt;
+So you could GET /action/api/package_list to receive not only the help text, but a list of arguments.
+&lt;/p&gt;
+&lt;p&gt;
+And if you send an extra or missing argument then an intelligent error message can be returned.
+&lt;/p&gt;
+&lt;h1 id="implementation"&gt;implementation&lt;/h1&gt;
+&lt;p&gt;
+How about some sort of decorator on the action function:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;@logic_params(id, offset, limit)
+def get_package_list(context, data_dict):
+    ...
+&lt;/pre&gt;&lt;p&gt;
+This would do the param checking, and is there a way to extract these params from the function? Or do a registration of the logic function?
+&lt;/p&gt;
+&lt;p&gt;
+I'd certainly like to keep the list of the list of params for the function with the function, for ease of reading the code.
+&lt;/p&gt;
+&lt;p&gt;
+Another good thing would be to pass in the params named as themselves, rather than having them contained in the data_dict.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1438#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1439</link>
+        <guid isPermaLink="false">http://localhost/ticket/1439</guid>
+        <title>#1439: Action API discoverablility</title>
+        <pubDate>Tue, 01 Nov 2011 15:39:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+A good service API needs to be discoverable, so you are not always having to refer to the documentation html.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe /api/action should return a list of actions available? (Currently this returns a 404.)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It would be nice to sort these into get/create/update/delete.
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1438" title="enhancement: Action API - parameter discovery/checking (new)"&gt;#1438&lt;/a&gt; Parameters for each of the actions must be discoverable too
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+/api/action/{action_name} should also return the help text / parameters allowable. (Currently this returns 400 error)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1439#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1457</link>
+        <guid isPermaLink="false">http://localhost/ticket/1457</guid>
+        <title>#1457: Bug with DataNL instance</title>
+        <pubDate>Thu, 10 Nov 2011 11:37:21 GMT</pubDate>
+        
+        <dc:creator>jilly.mathews</dc:creator>
+
+        <description>&lt;blockquote&gt;
+&lt;p&gt;
+"when logging into &lt;a class="ext-link" href="http://register.data.overheid.nl/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://register.data.overheid.nl/&lt;/a&gt; with OpenID, the /user/me page gives a 404. CKAN version 1.3.4."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+n the manual it says an API key kan be created via &lt;a class="ext-link" href="http://test.ckan.net/user/me"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/user/me&lt;/a&gt; /. However, when I try the corresponding  &lt;a class="ext-link" href="http://register.data.overheid.nl/user/me"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://register.data.overheid.nl/user/me&lt;/a&gt;, I get a 404 error (not found).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1457#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1679</link>
+        <guid isPermaLink="false">http://localhost/ticket/1679</guid>
+        <title>#1679: Default roles problem</title>
+        <pubDate>Tue, 17 Jan 2012 17:57:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The 'editor', 'anon_editor' and 'reader' roles are intended to have immutable actions. This was designed to prevent their names being subverted - e.g. an editor should always be able to edit! It also meant that when we add Actions (e.g. DELETE-PACKAGE) then it can be added sensibly to these roles in an upgrade just by changing the defaults table (ckan/model/authz.py).
+&lt;/p&gt;
+&lt;p&gt;
+The problem is that this immutability is only enforced on 'db upgrade'. So you can happily change the editor role using the paster command and it works, right up until you do an upgrade and realise permissions are different.
+&lt;/p&gt;
+&lt;p&gt;
+We should stop the paster commands being able to edit these roles. Or get rid of the immutability completely. Views?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1679#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1787</link>
+        <guid isPermaLink="false">http://localhost/ticket/1787</guid>
+        <title>#1787: [super] Improve RESTful API</title>
+        <pubDate>Wed, 08 Feb 2012 11:54:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Lists of entities should be full URLs, rather than just the names
+&lt;/li&gt;&lt;li&gt;Discoverability - /api/v3/rest should list the entity types that can be listed
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This could be v3 of the RESTful interface.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1787#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2485</link>
+        <guid isPermaLink="false">http://localhost/ticket/2485</guid>
+        <title>#2485: Encourage leak containment by limiting the number of requests a CKAN process serves</title>
+        <pubDate>Fri, 01 Jun 2012 11:47:09 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN has &lt;a class="closed ticket" href="http://localhost/ticket/1345" title="enhancement: Investigate possible memory leak (closed: fixed)"&gt;memory leaks&lt;/a&gt;. They can be contained by limiting the time-to-live of a ckan process. An easy way to achieve this is to limit the number of requests a ckan server process can serve before it gets killed and replaced.
+&lt;/p&gt;
+&lt;p&gt;
+One should ...
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;research ways to limit requests-per-process with the different web servers (see below for a start);
+&lt;/li&gt;&lt;li&gt;explain these safeguards in the CKAN documentation and encourage users to apply them;
+&lt;/li&gt;&lt;li&gt;consider the helper script &lt;strong&gt;&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/bin/ckan-create-instance"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-create-instance&lt;/a&gt;&lt;/strong&gt; to generate Apache configs with &lt;strong&gt;WSGIDaemonProcess ... maximum-requests=XY&lt;/strong&gt; being active instead of &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/lib/ckan/common.sh#L262"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;commented out&lt;/a&gt;. Or at least let it warn the user to use &lt;strong&gt;MaxRequestsPerChild&lt;/strong&gt;;
+&lt;/li&gt;&lt;li&gt;Investigate current CKAN deployments whether they suffer from mem leaks, and if so contain them.
+&lt;/li&gt;&lt;/ul&gt;&lt;hr /&gt;
+&lt;p&gt;
+How to limit requests-per-process
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Apache:
+&lt;ul&gt;&lt;li&gt;Use &lt;strong&gt;WSGIDaemonProcess&lt;/strong&gt; with &lt;strong&gt;maximum-requests=50&lt;/strong&gt; or whatever limit is appropriate. We did this sucessfully on &lt;a class="ext-link" href="http://trac.okfn.org/ticket/904"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;datahub.io&lt;/a&gt; and the &lt;a class="ext-link" href="http://trac.okfn.org/ticket/1245"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan farm&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(This need to be verified) Without WSGIDaemonProcess, &lt;strong&gt;MaxRequestsPerChild 50&lt;/strong&gt; should achieve the same.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;nginx/supervisord: to be researched.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2485#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2788</link>
+        <guid isPermaLink="false">http://localhost/ticket/2788</guid>
+        <title>#2788: Speed improvements on creating/updating and indexing</title>
+        <pubDate>Wed, 01 Aug 2012 14:56:32 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Specially needed when importing large numbers of datasets.
+&lt;/p&gt;
+&lt;p&gt;
+Profiling the import command from the harvesting extension has shown some areas where improvements could be made.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2788#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2838</link>
+        <guid isPermaLink="false">http://localhost/ticket/2838</guid>
+        <title>#2838: Context variables accepted by action functions need to be documented</title>
+        <pubDate>Fri, 10 Aug 2012 20:35:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+I was doing this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;context = {'model': base.model, 'session': base.model.Session,
+                    'user': toolkit.c.user or toolkit.c.author,
+                    'extras_as_string': True}
+group_dict = logic.get_action('group_show')(context,
+                    {'id': group_id})
+&lt;/pre&gt;&lt;p&gt;
+in an extension and one of the group_dicts fields, one that uses convert_to/from_extras, was coming out with the wrong value. It took me ages to realise that I had to pass &lt;tt&gt;'extras_as_string': True&lt;/tt&gt; in the context. I don't think this or other context variables are documented anywhere.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2838#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3023</link>
+        <guid isPermaLink="false">http://localhost/ticket/3023</guid>
+        <title>#3023: New methods on IPackageController to provide access to the data_dict</title>
+        <pubDate>Thu, 22 Nov 2012 17:00:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Extension hooking into the edit and create methods of the IPackageController interface receive the package object. This may not include all the fields that came from the form. The new extension points will pass the validated data_dict so extensions can have access to it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3023#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1287</link>
+        <guid isPermaLink="false">http://localhost/ticket/1287</guid>
+        <title>#1287: NAVL validation errors - Junk fields should be listed explicitly</title>
+        <pubDate>Wed, 24 Aug 2011 16:25:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package, but specify a key that is not allowed (e.g. 'relationships') then you get error message:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"__junk": ["The input field __junk was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+It should mention the actual key which is not expected. e.g.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"relationships": ["The input field 'relationships' was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+Kindly said that James' version of NAVL was better in this respect, so this might be best solved by moving to that.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1287#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1322</link>
+        <guid isPermaLink="false">http://localhost/ticket/1322</guid>
+        <title>#1322: Action API improvements</title>
+        <pubDate>Thu, 08 Sep 2011 09:39:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Focusing on improving Action API as the v3 API:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;have an optional parameter of the data_dict called "options".  Options would contain items that would get passed into the context. e.g. &lt;tt&gt;{"options" : {"ref_package_by": "id"}}. &lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;instead of using API version to change the way packages are referenced, use the ref_package_by.
+&lt;/li&gt;&lt;li&gt;All package_show, group_show etc. to accept an object 'name' as an alternative to object 'id'.
+&lt;/li&gt;&lt;li&gt;Action API is v3 of api, replacement for v1 &amp;amp; v2. Default for most urls is still v1, but if url is /api/action then default to v3.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Next steps:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add search API (package, resource,
+&lt;/li&gt;&lt;li&gt;Add Util API
+&lt;/li&gt;&lt;li&gt;Clarify JSONP still applies
+&lt;/li&gt;&lt;li&gt;Add doc strings, clarifying parameters
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1322#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2412</link>
+        <guid isPermaLink="false">http://localhost/ticket/2412</guid>
+        <title>#2412: More than one resource invalidatiing breaks dataset edit form</title>
+        <pubDate>Tue, 22 May 2012 20:05:48 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When attempting to add more than one resource at once, if more than one resource invalidates, this results in a js error, leaving the form in an inconsistent state.
+&lt;/p&gt;
+&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to /dataset/new
+&lt;/li&gt;&lt;li&gt;Add a new resource.  Fill in one of the fields with an invalid value. eg - last_modified, or size...
+&lt;/li&gt;&lt;li&gt;Add another resource, doing the same thing: make one of the fields invalid.
+&lt;/li&gt;&lt;li&gt;Try to save the dataset.
+&lt;/li&gt;&lt;li&gt;The entered resource information will be lost, and a js error "Uncaught Error: Can't add the same model to a set twice,: backbone.js:586" will be thrown.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2686</link>
+        <guid isPermaLink="false">http://localhost/ticket/2686</guid>
+        <title>#2686: enabling datastore &amp; data API breaks recline</title>
+        <pubDate>Tue, 17 Jul 2012 09:06:51 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+First I noticed that the gold prices dataset preview was not displaying &amp;amp; has data API enabled
+Secondly I tried enabling datastore for &lt;a class="ext-link" href="http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f&lt;/a&gt; and after I saved the preview no longer worked. Unticking the datastore &amp;amp; data api checkbox brought it back
+&lt;/p&gt;
+&lt;p&gt;
+Is this a known issue?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2686#changelog</comments>
+    </item>
+ </channel>
+</rss>

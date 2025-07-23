@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-v1.4-sprint-2&amp;group=status&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-v1.4-sprint-2&amp;group=status&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/956</link>
+        <guid isPermaLink="false">http://localhost/ticket/956</guid>
+        <title>#956: Add a resource group table.</title>
+        <pubDate>Fri, 04 Feb 2011 12:05:12 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+We need a way to group resources by various different factors. The most important of which is timeseries.
+&lt;/p&gt;
+&lt;p&gt;
+The model will look like
+&lt;/p&gt;
+&lt;p&gt;
+Package  &amp;lt;o2m&amp;gt;  resource_group &amp;lt;o2m&amp;gt; resource
+&lt;/p&gt;
+&lt;p&gt;
+The use cases to this are outlined in this email. &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-February/000887.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-February/000887.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/956#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/808</link>
+        <guid isPermaLink="false">http://localhost/ticket/808</guid>
+        <title>#808: Allow i18n language choice on site (and possibly set automatically)</title>
+        <pubDate>Tue, 16 Nov 2010 21:53:14 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Allow choice of language on ckan instance.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Configuration variable listing language choices (could try doing this automatically but recommend against this)
+&lt;/li&gt;&lt;li&gt;Switcher option in UI (perhaps on user profile page)
+&lt;/li&gt;&lt;li&gt;Default it automatically based on browser settings (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Think this is high value (and cost is low)
+&lt;/p&gt;
+&lt;p&gt;
+Cost: low (4h)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/808#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/986</link>
+        <guid isPermaLink="false">http://localhost/ticket/986</guid>
+        <title>#986: Broken link report from the ckanext-qa code</title>
+        <pubDate>Mon, 14 Feb 2011 11:46:34 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Should have the following features:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;A list of all packages with broken links on the resource
+&lt;/li&gt;&lt;li&gt;Under each packages a description of any resources with broken links to include:
+&lt;ul&gt;&lt;li&gt;Link
+&lt;/li&gt;&lt;li&gt;Description
+&lt;/li&gt;&lt;li&gt;Format
+&lt;/li&gt;&lt;li&gt;First found to be broken date
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+[If you can't do the last one yet, don't worry]
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/986#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/877</link>
+        <guid isPermaLink="false">http://localhost/ticket/877</guid>
+        <title>#877: File upload in WUI (extension)</title>
+        <pubDate>Mon, 20 Dec 2010 18:02:26 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Support uploading files to a storage system from WUI with a simple upload form.
+&lt;/p&gt;
+&lt;h3 id="Implementation"&gt;Implementation&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Implement as an &lt;a class="wiki" href="http://localhost/wiki/Extensions"&gt;Extension&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Locate at /upload
+&lt;/li&gt;&lt;li&gt;Add new system action/permission (FILE_UPLOAD) and restrict by default to logged in users
+&lt;/li&gt;&lt;li&gt;Use OFS + boto -&amp;gt; generate form key (and create the bucket if it doesn't exist? Or do we assume bucket already exists)
+&lt;/li&gt;&lt;li&gt;This wants to be tied in to general package workflow. See parent &lt;a class="closed ticket" href="http://localhost/ticket/852" title="enhancement: [super] Dataset upload and archiving (closed: fixed)"&gt;ticket:852&lt;/a&gt;.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/877#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/984</link>
+        <guid isPermaLink="false">http://localhost/ticket/984</guid>
+        <title>#984: Fix migration, where upgrade diverges from actual model.</title>
+        <pubDate>Sun, 13 Feb 2011 20:04:07 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The migration scripts have not been inline with the upgrade scripts. There are lots of discrepancies.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/984#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/988</link>
+        <guid isPermaLink="false">http://localhost/ticket/988</guid>
+        <title>#988: Get a better HTML view of a GEMINI document using XSL</title>
+        <pubDate>Mon, 14 Feb 2011 12:19:35 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/988#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/993</link>
+        <guid isPermaLink="false">http://localhost/ticket/993</guid>
+        <title>#993: Link on ckan.net footer needs changing</title>
+        <pubDate>Sat, 19 Feb 2011 22:20:06 GMT</pubDate>
+        
+        <dc:creator>jason.kitcat@…</dc:creator>
+
+        <description>&lt;p&gt;
+The link for About &amp;gt; 'Project Home Page' on the CKAN.net footer should be changed to point to:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://ckan.org/"&gt;http://ckan.org/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The current link is broken.
+&lt;/p&gt;
+&lt;p&gt;
+Thanks,
+Jason
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/993#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1010</link>
+        <guid isPermaLink="false">http://localhost/ticket/1010</guid>
+        <title>#1010: List CKAN users in WUI</title>
+        <pubDate>Fri, 25 Feb 2011 15:53:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Should have user listing at /user/ rather than user account page.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;list users, sorted by number of packages contributed/edited
+&lt;/li&gt;&lt;li&gt;Move user home page to /user/{user-id}
+&lt;/li&gt;&lt;li&gt;Paginated
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1010#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/805</link>
+        <guid isPermaLink="false">http://localhost/ticket/805</guid>
+        <title>#805: Migration scripts on buildbot</title>
+        <pubDate>Mon, 15 Nov 2010 10:25:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/805#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/496</link>
+        <guid isPermaLink="false">http://localhost/ticket/496</guid>
+        <title>#496: Provide a mechanism for exporting GEMINII metadata via a CSW interface</title>
+        <pubDate>Sat, 21 Aug 2010 21:48:27 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/496#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/982</link>
+        <guid isPermaLink="false">http://localhost/ticket/982</guid>
+        <title>#982: Remove various pip-requirements versions</title>
+        <pubDate>Sat, 12 Feb 2011 13:07:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We can just use the branch name to pull down specific versions of pip requirements so we don't need all the different versions in head.
+&lt;/p&gt;
+&lt;p&gt;
+Remove them and update any client systems.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 20m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/982#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/821</link>
+        <guid isPermaLink="false">http://localhost/ticket/821</guid>
+        <title>#821: Some resources have disappeared in CKAN</title>
+        <pubDate>Wed, 17 Nov 2010 17:42:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Simon has spotted 31 packages whose resources have disappeared in CKAN, but still appear in the Drupal front-end.
+&lt;/p&gt;
+&lt;p&gt;
+Here are the details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;in CKAN's package view (in web interface, API and dump) no resources display
+&lt;/li&gt;&lt;li&gt;but they WERE created in CKAN, as shown by the revision diffs.
+&lt;/li&gt;&lt;li&gt;they are in the Drupal front-end
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+So these resources must have been in the CKAN API at some point and then disappeared without trace/revision to alert Drupal.
+&lt;/p&gt;
+&lt;p&gt;
+Packages affected: anti-social-behaviour-orders-1999-2007
+asylum-applications-jan-mar-2009
+control-of-immigration-quarterly-statistical-summary-united-kingdom-2009-october-december
+coroners-statistics-england-and-wales
+courts-statistics-user-survey-england-and-wales
+court-statistics-company-insolvency-and-bankruptcy-england-and-wales
+court-statistics-england-and-wales
+court-statistics-mortages-and-landlord-possession-england-and-wales
+crime-in-england-and-wales
+crime-statistics-local-reoffending-england-and-wales
+crime-statistics-prison-and-probation-england-and-wales
+crime-statistics-reoffending-of-adults-england-and-wales
+crime-statistics-reoffending-of-juvenilles-england-and-wales
+data_gov_uk-datasets
+digest-uk-energy-statistics-2008
+directgov-central-hottest-pages-monthly
+directgov-central-internal-search-terms-monthly
+directgov-section-visits-monthly
+electricity-consumption-2007
+electricity-gas-consumption-2007
+energy-consumption-uk-2008
+final-energy-consumption-2007
+foi-statistics-uk-central-government
+fuel-poverty-statistics-2007
+gas-consumption-2007
+gb-reported-bicycling-accidents
+gb-road-traffic-counts
+gb-traffic-matrix
+greenhouse-gas-emissions-2008
+high-level-indicators-energy-use-2006
+judicial-and-court-statistics-england-and-wales
+laboratory-tests-and-prices
+local-authority-carbon-dioxide-emissions-2007
+magistrates-courts-statistics-survey-england-and-wales
+monthly-energy-prices
+monthly-energy-trends
+ni_012_refused_and_deferred_houses_in_multiple_occupation_hmos_licence_applications_leading_to_immig
+ni_013_migrants_english_language_skills_and_knowledge
+ni_023_perceptions_that_people_in_the_area_treat_one_another_with_respect_and_consideration
+ni_024_satisfaction_with_the_way_the_police_and_local_council_dealt_with_anti-social_behaviour
+ni_025_satisfaction_of_different_groups_with_the_way_the_police_and_local_council_dealt_with_anti-so
+ni_026_specialist_support_to_victims_of_a_serious_sexual_offence
+ni_029_gun_crime_rate
+ni_031_re-offending_rate_of_registered_sex_offenders
+ni_032_repeat_incidents_of_domestic_violence
+ni_034_domestic_violence_-_murder
+ni_036_protection_against_terrorist_attack
+ni_038_drug_related_class_a_offending_rate
+ni_078_reduction_in_number_of_schools_where_fewer_than_30_of_pupils_achieve_5_or_more_a-_c_grades_at
+ni_101_looked_after_children_achieving_5_a-c_gcses_or_equivalent_at_key_stage_4_including_english_an
+ni_109_delivery_of_sure_start_childrens_centres
+ni_126_early_access_for_women_to_maternity_services
+ni_127_self_reported_experience_of_social_care_users
+ni_128_user_reported_measure_of_respect_and_dignity_in_their_treatment
+ni_181_time_taken_to_process_housing_benefit-council_tax_benefit_new_claims_and_change_events
+ni_184_food_establishments_in_the_area_which_are_broadly_compliant_with_food_hygiene_law
+ni_185_co2_reduction_from_local_authority_operations
+ni_190_achievement_in_meeting_standards_for_the_control_system_for_animal_health
+ni_194_air_quality_-_reduction_in_nox_and_primary_pm10_emissions_through_local_authorities_estate_an
+other-fuels-consumption-2006
+police-use-firearms-england-wales-2007-2008
+prison-end-of-custody-licence-releases-and-recalls-england-and-wales
+prison-population-england-and-wales
+probation-offender-management-caseload-statistics-england-and-wales
+probation-statistics-quarterly-brief-england-and-wales
+quality-indicators-energy-data-2007
+quarterly-energy-prices
+quarterly-energy-trends
+road-transport-energy-consumption-2007
+sentencing-statistics-england-and-wales
+statistics-terrorism-arrests-outcomes-2001-2008
+ukba-control-of-immigration-statistics-2008
+ukba-control-of-immigration-statistics-2008-supplementary-tables
+uk-energy-in-brief-2008
+uk-energy-sector-indicators-background-2008
+uk-energy-sector-indicators-key-supporting-2008
+uk-exportcontrollists
+uk-exportcontrol-sanctions
+uk-export-control-statistics
+uk-glossary-exportcontrol
+uk-ipo-offences
+weekly-fuel-prices
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/821#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/715</link>
+        <guid isPermaLink="false">http://localhost/ticket/715</guid>
+        <title>#715: The group list page shall show the group title *or* group name</title>
+        <pubDate>Wed, 20 Oct 2010 13:58:09 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Symptom &lt;a class="closed ticket" href="http://localhost/ticket/1" title="enhancement: Visitor visits service (closed: fixed)"&gt;#1&lt;/a&gt;: Groups without titles don't get a clickable link, because there is no text. Defaulting to the group name would solve this trouble.
+Symptom &lt;a class="closed ticket" href="http://localhost/ticket/2" title="enhancement: Register as user on the service (closed: fixed)"&gt;#2&lt;/a&gt;: Package groups drop-down list show's 'None' when a group doesn't have a title.
+&lt;/p&gt;
+&lt;p&gt;
+Therefore, we need to centralize presentation of group title, so it defers to group name. And we need tests.
+&lt;/p&gt;
+&lt;p&gt;
+Also please sort groups by title on group list page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/715#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1008</link>
+        <guid isPermaLink="false">http://localhost/ticket/1008</guid>
+        <title>#1008: eval() of user display name in template head</title>
+        <pubDate>Fri, 25 Feb 2011 11:18:06 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We're currently setting the user preferences links via a javascript snippet that also evals the name. This should be removed as we're not displaying the user name any longer.
+&lt;/p&gt;
+&lt;p&gt;
+We should also have page fragment caching in Genshi, which is not currently implmented.
+&lt;/p&gt;
+&lt;p&gt;
+cf. &lt;a class="ext-link" href="http://api.rubyonrails.org/classes/ActionController/Caching/Fragments.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://api.rubyonrails.org/classes/ActionController/Caching/Fragments.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1008#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/981</link>
+        <guid isPermaLink="false">http://localhost/ticket/981</guid>
+        <title>#981: fix authorization_group_user.id so it's added in migrate</title>
+        <pubDate>Fri, 11 Feb 2011 14:28:00 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This was missed out the migrate script. It should be to be added as a conditional script at the end of the repository so that databases can catch up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/981#changelog</comments>
+    </item>
+ </channel>
+</rss>

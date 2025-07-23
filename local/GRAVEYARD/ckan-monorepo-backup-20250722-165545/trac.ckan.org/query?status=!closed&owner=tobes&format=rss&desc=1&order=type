@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=tobes&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=tobes&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/235</link>
+        <guid isPermaLink="false">http://localhost/ticket/235</guid>
+        <title>#235: Resource format normalization and detection</title>
+        <pubDate>Mon, 18 Jan 2010 15:13:24 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Try to gather proper MIME  information for all package resources in CKAN. This is a shared ticket with dcat-tools (&lt;a class="ext-link" href="https://bitbucket.org/pudo/dcat-tools"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/pudo/dcat-tools&lt;/a&gt;), i.e. opendatasearch.org. This can then also be used by ckanrdf, the CKAN RDF conversion service.
+&lt;/p&gt;
+&lt;p&gt;
+Sub-tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create a Google Spreadsheet with two Worksheets: "MIME-Mappings", i.e. "CSV" -&amp;gt; "text/csv" and "Name mappings", i.e. "text/csv" -&amp;gt; "Comma-Separated Spreadsheet".
+&lt;/li&gt;&lt;li&gt;Collect and map surface forms from all CKANs
+&lt;/li&gt;&lt;li&gt;Access this via Swiss and apply, store as a &lt;a class="missing wiki"&gt;PackageResource?&lt;/a&gt; extra field pending &lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt; (Resource extras).
+&lt;/li&gt;&lt;li&gt;Add heuristics for format auto-detections:
+&lt;ul&gt;&lt;li&gt;Map well-known file extensions
+&lt;/li&gt;&lt;li&gt;Recognize obvious magic (Zip, Tar)
+&lt;/li&gt;&lt;li&gt;Peek into &lt;a class="missing wiki"&gt;Zipfile/Tarfiles?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Define a convention for generic data types (many CKAN packages have only "Spreadsheet" defined, either detect specific type or set MIME to */tabular-data or similar)
+&lt;/li&gt;&lt;li&gt;See also: &lt;a class="closed ticket" href="http://localhost/ticket/816" title="enhancement: Autocomplete for the resource format field (closed: fixed)"&gt;#816&lt;/a&gt; (Autocomplete for the resource format field)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/235#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1069</link>
+        <guid isPermaLink="false">http://localhost/ticket/1069</guid>
+        <title>#1069: Stub datasets (request for datasets)</title>
+        <pubDate>Fri, 01 Apr 2011 14:08:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Idea is to have stubs for datasets that someone wants but don't yet exist (or haven't been discovered) in the way one has stub pages on a wiki.
+&lt;/p&gt;
+&lt;p&gt;
+We could do this within the existing model by a slight 'abuse' - create a dataset and mark it with a special tag e.g. todo.does-not-yet-exist or similar ...
+&lt;/p&gt;
+&lt;p&gt;
+(Just as we have datasets listed that exist but aren't available ...)
+&lt;/p&gt;
+&lt;p&gt;
+Alternative would be to have a request for datasets subsystem.
+&lt;/p&gt;
+&lt;p&gt;
+I prefer the stub dataset model because it's simpler, provides a simple workflow (as a dataset is found or comes into existence), and the package page provides a natural space in which to accumulate information about what is wanted and what exists.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Agree a new dedicated tag. e.g. todo.does-not-exist
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Related"&gt;Related&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;This ticket has clear links to &lt;a class="ext-link" href="http://getthedata.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://getthedata.org/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1069#changelog</comments>
+    </item>
+ </channel>
+</rss>

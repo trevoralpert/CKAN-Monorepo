@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=contrib&amp;milestone=ckan-sprint-2012-01-09&amp;group=resolution&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=contrib&amp;milestone=ckan-sprint-2012-01-09&amp;group=resolution&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1599</link>
+        <guid isPermaLink="false">http://localhost/ticket/1599</guid>
+        <title>#1599: [contrib] Simple embeddable dataset count widget (esp for group count)</title>
+        <pubDate>Fri, 30 Dec 2011 11:59:18 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Simple embeddable widget for use on 3rd party sites showing dataset counts for a given search query. Have a specific version just for groups.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Simple group count widget in JS for embedding in wordpress and elsewhere
+&lt;ul&gt;&lt;li&gt;Requested by several people (e.g Guo Xu from Econ working group). Already have something like this in CKAN JS for doing an embeddable search box.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;All you need to do is do a dataset query over the API e.g. &lt;a class="ext-link" href="http://thedatahub.org/api/search/dataset?groups=economics"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/api/search/dataset?groups=economics&lt;/a&gt; and then embed in some html!
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Estimate: 30m (for someone who knows their jquery).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1599#changelog</comments>
+    </item>
+ </channel>
+</rss>

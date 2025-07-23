@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ecportal&amp;milestone=ckan-sprint-2012-05-29&amp;group=status&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ecportal&amp;milestone=ckan-sprint-2012-05-29&amp;group=status&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2392</link>
+        <guid isPermaLink="false">http://localhost/ticket/2392</guid>
+        <title>#2392: Add language field to dataset</title>
+        <pubDate>Wed, 16 May 2012 09:11:41 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+An extra field on datasets called "metadata_language".  The language that the meta-data is in.  Drop-down list needs to be translatable.     Default value is "English".
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2392#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2393</link>
+        <guid isPermaLink="false">http://localhost/ticket/2393</guid>
+        <title>#2393: Map licenses with countryCode to license name without countryCode</title>
+        <pubDate>Wed, 16 May 2012 09:12:44 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Map licenses: given &lt;a class="ext-link" href="http://creativecommons.org/licenses/by/2.5/{countrycode}/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://creativecommons.org/licenses/by/2.5/{countrycode}/&lt;/a&gt; as a license value through the API, convert it to &lt;a class="ext-link" href="http://www.opendefinition.org/licenses/cc-by"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.opendefinition.org/licenses/cc-by&lt;/a&gt; .  Should also work if given &lt;a class="ext-link" href="http://www.opendefinition.org/licenses/cc-by"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.opendefinition.org/licenses/cc-by&lt;/a&gt;  .  NOTE: the API may send through a list of licenses; in this situation, take the head of the list.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2393#changelog</comments>
+    </item>
+ </channel>
+</rss>

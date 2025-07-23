@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2012-04-02&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2012-04-02&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1819</link>
+        <guid isPermaLink="false">http://localhost/ticket/1819</guid>
+        <title>#1819: change search index code to use package_dictize instead of obj.to_dict</title>
+        <pubDate>Mon, 20 Feb 2012 20:42:35 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Search index code needs to use package_dictize so that it can get the new vocablurary information and is more consistant with the rest of the system.  This is in preperation for their translation being put in the search indexer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1819#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2213</link>
+        <guid isPermaLink="false">http://localhost/ticket/2213</guid>
+        <title>#2213: Update geographical coverage tags</title>
+        <pubDate>Tue, 06 Mar 2012 15:25:25 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;&lt;del&gt;create importer for geo tags&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;add translations to database&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;translate tags in WUI&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;test&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;deploy&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;document how to add a geo coverage field in &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/forms.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/forms.html&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2213#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2259</link>
+        <guid isPermaLink="false">http://localhost/ticket/2259</guid>
+        <title>#2259: Update ecportal theme for master changes (bootstrap)</title>
+        <pubDate>Mon, 26 Mar 2012 09:29:40 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Some recent changes caused things to break in ckanext-ecportal:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;change from blueprint to bootstrap
+&lt;/li&gt;&lt;li&gt;other style / css changes (eg: tables, resource view notes field ID, etc. Forms are also broken, but that will be addressed in &lt;a class="closed ticket" href="http://localhost/ticket/2262" title="enhancement: Update ecportal form and dataset style/ux to match CKAN master (closed: fixed)"&gt;#2262&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;change to going through db_to_form_schema on package_show
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2259#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2262</link>
+        <guid isPermaLink="false">http://localhost/ticket/2262</guid>
+        <title>#2262: Update ecportal form and dataset style/ux to match CKAN master</title>
+        <pubDate>Mon, 26 Mar 2012 12:13:22 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2262#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2245</link>
+        <guid isPermaLink="false">http://localhost/ticket/2245</guid>
+        <title>#2245: Update documentation for writing CKAN extensions</title>
+        <pubDate>Mon, 19 Mar 2012 17:35:46 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2245#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2248</link>
+        <guid isPermaLink="false">http://localhost/ticket/2248</guid>
+        <title>#2248: Update docs for creating custom forms</title>
+        <pubDate>Wed, 21 Mar 2012 11:17:10 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Should describe implementing IDatasetForm, subclassing controllers is deprecated
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2248#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2232</link>
+        <guid isPermaLink="false">http://localhost/ticket/2232</guid>
+        <title>#2232: Unicode Exception when rebuilding the search index</title>
+        <pubDate>Thu, 15 Mar 2012 13:03:02 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+In some cases this exception is fired when building the search index. As explained in &lt;a class="closed ticket" href="http://localhost/ticket/1616" title="defect: Catch exceptions when rebuilding the search index (closed: fixed)"&gt;#1616&lt;/a&gt; this makes the whole process stop.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/solr/core.py", line 326, in wrapper
+    return self._update(content, query)
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/solr/core.py", line 550, in _update
+    rsp = self._post(selector, request, self.xmlheaders)
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/solr/core.py", line 639, in _post
+    return check_response_status(self.conn.getresponse())
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/solr/core.py", line 1096, in check_response_status
+    raise ex
+SolrException: HTTP code=400, reason=ParseError at [row,col]:[1,2354] Message: An invalid XML character (Unicode: 0x1) was found in the element content of the document.
+Traceback (most recent call last):
+  File "/var/lib/ckan/pdeu/pyenv/bin/paster", line 9, in &amp;lt;module&amp;gt;
+    load_entry_point('PasteScript==1.7.3', 'console_scripts', 'paster')()
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/paste/script/command.py", line 84, in run
+    invoke(command, command_name, options, args[1:])
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/paste/script/command.py", line 123, in invoke
+    exit_code = runner.run(args)
+  File "/var/lib/ckan/pdeu/pyenv/lib/python2.6/site-packages/paste/script/command.py", line 218, in run
+    result = self.command()
+  File "/var/lib/ckan/pdeu/pyenv/src/ckan/ckan/lib/cli.py", line 298, in command
+    rebuild()
+  File "/var/lib/ckan/pdeu/pyenv/src/ckan/ckan/lib/search/__init__.py", line 134, in rebuild
+    {'id': pkg.id}
+  File "/var/lib/ckan/pdeu/pyenv/src/ckan/ckan/lib/search/index.py", line 54, in insert_dict
+    return self.update_dict(data)
+  File "/var/lib/ckan/pdeu/pyenv/src/ckan/ckan/lib/search/index.py", line 79, in update_dict
+    self.index_package(pkg_dict)
+  File "/var/lib/ckan/pdeu/pyenv/src/ckan/ckan/lib/search/index.py", line 153, in index_package
+    raise SearchIndexError(e)
+ckan.lib.search.common.SearchIndexError: HTTP code=400, reason=ParseError at [row,col]:[1,2354] Message: An invalid XML character (Unicode: 0x1) was found in the element content of the document.
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2232#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2216</link>
+        <guid isPermaLink="false">http://localhost/ticket/2216</guid>
+        <title>#2216: Translation of selected facets on search pages</title>
+        <pubDate>Wed, 07 Mar 2012 19:30:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2216#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2224</link>
+        <guid isPermaLink="false">http://localhost/ticket/2224</guid>
+        <title>#2224: Simplify javascript and css dependencies and add minified version</title>
+        <pubDate>Sat, 10 Mar 2012 13:20:23 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Get rid of jquery UI
+&lt;ul&gt;&lt;li&gt;Requires switching to bootstrap lookahead plus a small bit of coding for ajax part (see &lt;a class="ext-link" href="https://gist.github.com/2007241"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/2007241&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Remove modernizr (what do we use it for?)
+&lt;/li&gt;&lt;li&gt;Convert jquery.tmpl to jquery mustache (?)
+&lt;/li&gt;&lt;li&gt;Remove ckanjs moving core parts of it directly into our code.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Compress everything for releases and add minified version to build (with switch to enable use of this?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2224#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2250</link>
+        <guid isPermaLink="false">http://localhost/ticket/2250</guid>
+        <title>#2250: Setup nginx and datastore on ecportal</title>
+        <pubDate>Wed, 21 Mar 2012 11:49:30 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2250#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2242</link>
+        <guid isPermaLink="false">http://localhost/ticket/2242</guid>
+        <title>#2242: Research buildbot possibilities for CKAN</title>
+        <pubDate>Mon, 19 Mar 2012 15:53:25 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2242#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2241</link>
+        <guid isPermaLink="false">http://localhost/ticket/2241</guid>
+        <title>#2241: Look into making test_activity.py faster</title>
+        <pubDate>Mon, 19 Mar 2012 15:52:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+...but only if it can be done reasonably quickly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2241#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2249</link>
+        <guid isPermaLink="false">http://localhost/ticket/2249</guid>
+        <title>#2249: Fix google spreadsheet to work with DataStore.</title>
+        <pubDate>Wed, 21 Mar 2012 11:44:02 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need google spreadsheet app to work with the new datastore.  This should simplify it a lot.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2249#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2240</link>
+        <guid isPermaLink="false">http://localhost/ticket/2240</guid>
+        <title>#2240: Document CityData ideas</title>
+        <pubDate>Mon, 19 Mar 2012 15:09:21 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Document the ideas raised on 14/03 for &lt;a class="missing wiki"&gt;CityData?&lt;/a&gt; and distribute to team for discussion
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2240#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1559</link>
+        <guid isPermaLink="false">http://localhost/ticket/1559</guid>
+        <title>#1559: Comments Extension / Disqus</title>
+        <pubDate>Mon, 19 Dec 2011 10:48:40 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Polish off comments extension dev and test. estimate 2 days.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1559#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2246</link>
+        <guid isPermaLink="false">http://localhost/ticket/2246</guid>
+        <title>#2246: Change published_by metadata field to reference group instead of a custom extra</title>
+        <pubDate>Tue, 20 Mar 2012 11:30:36 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;probably needs a new converter, as needs to be usable via API as 'published_by'.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2246#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1616</link>
+        <guid isPermaLink="false">http://localhost/ticket/1616</guid>
+        <title>#1616: Catch exceptions when rebuilding the search index</title>
+        <pubDate>Fri, 06 Jan 2012 10:11:09 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now if an exception is found while reindexing, the whole process stops and the remaining datasets are left out of the index. The process should continue after logging the exception. If more than a certain number of exceptions occur in a row, the process should stop.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1616#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2266</link>
+        <guid isPermaLink="false">http://localhost/ticket/2266</guid>
+        <title>#2266: Can't delete all of a package's resources over REST API</title>
+        <pubDate>Wed, 28 Mar 2012 11:01:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Nothing happens if you set resources=[] or resources=null.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2266#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2231</link>
+        <guid isPermaLink="false">http://localhost/ticket/2231</guid>
+        <title>#2231: Base harvester broken on 1.6.1</title>
+        <pubDate>Thu, 15 Mar 2012 12:44:59 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On its current version, ckanext-harvest passed a custom schema to package_create and package_update to allow defining an id for new packages (the same as in remote ckan instances) &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Recent changes in the logic layer have made that the context object is no longer directly read from the context, but only get from plugins &lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt;. This makes the schema sent from ckanext-harvest to be ignored and the harvesting fails because the id field is not expected
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ValidationError: {'Id': u'The input field id was not expected.'}
+&lt;/pre&gt;&lt;p&gt;
+We need a way to either:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Be more flexible accepting schemas on the logic functions
+&lt;/li&gt;&lt;li&gt;Modify the harvester plugin to implement the necessary interface
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckanext-harvest/blob/master/ckanext/harvest/harvesters/base.py#L115"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-harvest/blob/master/ckanext/harvest/harvesters/base.py#L115&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/0c07d3be846777318b35c31325215dff00e99313/ckan/logic/action/create.py#L38"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/0c07d3be846777318b35c31325215dff00e99313/ckan/logic/action/create.py#L38&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2231#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2261</link>
+        <guid isPermaLink="false">http://localhost/ticket/2261</guid>
+        <title>#2261: All links need to option to change where language is placed in url.</title>
+        <pubDate>Mon, 26 Mar 2012 11:51:42 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+For the ecportal case we need links to be like the following
+&lt;/p&gt;
+&lt;p&gt;
+(%host)/open-data/en/data/(.*)&lt;br /&gt;
+(%host)/open-data/fr/data/(.*)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2261#changelog</comments>
+    </item>
+ </channel>
+</rss>

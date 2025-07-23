@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=uklii&amp;milestone=ckan-v1.4&amp;group=resolution&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=uklii&amp;milestone=ckan-v1.4&amp;group=resolution&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/883</link>
+        <guid isPermaLink="false">http://localhost/ticket/883</guid>
+        <title>#883: uklii harvesting refactor</title>
+        <pubDate>Sat, 25 Dec 2010 11:48:33 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;h2 id="masterticket"&gt;master ticket&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/884" title="enhancement: harvest job delete operation (closed: fixed)"&gt;#884&lt;/a&gt; implement harvest job delete command for an easier life
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/885" title="defect: reimplement csw module to use owslib (closed: fixed)"&gt;#885&lt;/a&gt; move csw code into dedicated ckanext plugin
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/886" title="defect: move uklii forms api to dgu module (closed: duplicate)"&gt;#886&lt;/a&gt; move forms api into dgu extension module
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/887" title="enhancement: move harvesting to generic module (closed: fixed)"&gt;#887&lt;/a&gt; move harvesting code to use generic harvesting module
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/883#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/887</link>
+        <guid isPermaLink="false">http://localhost/ticket/887</guid>
+        <title>#887: move harvesting to generic module</title>
+        <pubDate>Sat, 25 Dec 2010 11:56:55 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+in concert with pudo's work on harvesting different types of documents. should also make it possible to consume, e.g. dcat
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/887#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/569</link>
+        <guid isPermaLink="false">http://localhost/ticket/569</guid>
+        <title>#569: Harvested GEMINI document metadata validation</title>
+        <pubDate>Thu, 09 Sep 2010 13:50:21 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/569#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/767</link>
+        <guid isPermaLink="false">http://localhost/ticket/767</guid>
+        <title>#767: Harvest metadata records from ArcGIS CSW API</title>
+        <pubDate>Wed, 27 Oct 2010 11:14:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/767#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/784</link>
+        <guid isPermaLink="false">http://localhost/ticket/784</guid>
+        <title>#784: End to end testing for UKLP</title>
+        <pubDate>Mon, 08 Nov 2010 09:57:31 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/784#changelog</comments>
+    </item>
+ </channel>
+</rss>

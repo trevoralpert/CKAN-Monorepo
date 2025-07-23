@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=datapkg-0.8&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=datapkg-0.8&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/405</link>
+        <guid isPermaLink="false">http://localhost/ticket/405</guid>
+        <title>#405: Retrieval options for package resources</title>
+        <pubDate>Mon, 09 Aug 2010 09:40:06 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Download Command (was install command) should support the following modes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Download only the first listed resource (current behaviour, slightly arbitrary)
+&lt;/li&gt;&lt;li&gt;Download resources by interactive selection
+&lt;/li&gt;&lt;li&gt;Download resources by MIME type (cf &lt;a class="assigned ticket" href="http://localhost/ticket/235" title="enhancement: Resource format normalization and detection (assigned)"&gt;#235&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Download all resources.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/405#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/409</link>
+        <guid isPermaLink="false">http://localhost/ticket/409</guid>
+        <title>#409: Refactor cli to be more 'pluggable'</title>
+        <pubDate>Mon, 09 Aug 2010 10:10:59 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Load cli commands from setuptools entry point name datapkg.cli)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Document how other can write new commands
+&lt;/li&gt;&lt;li&gt;Refactor base Command class to support this pluggability (if necessary)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/409#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/404</link>
+        <guid isPermaLink="false">http://localhost/ticket/404</guid>
+        <title>#404: Make registries pluggable</title>
+        <pubDate>Mon, 09 Aug 2010 09:38:10 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Allow using different indexes, including ckan, file, dcat, ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/404#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/406</link>
+        <guid isPermaLink="false">http://localhost/ticket/406</guid>
+        <title>#406: Download sub-system</title>
+        <pubDate>Mon, 09 Aug 2010 09:40:22 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Factor out current downloader into dedicated download subpackage, abstract interface and make it pluggable so we can have downloaders loaded as per type of resource to download.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Also rename &lt;a class="missing wiki"&gt;InstallCommand?&lt;/a&gt; -&amp;gt; &lt;a class="missing wiki"&gt;DownloadCommand?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+And we should support interactive retrieving of resources ...
+&lt;/p&gt;
+&lt;h2 id="ImplementationIdeas"&gt;Implementation Ideas&lt;/h2&gt;
+&lt;pre class="wiki"&gt;for resources in pkg.resources:
+    # datapkg/hg
+    load_storage_handler(resource.format)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/406#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/433</link>
+        <guid isPermaLink="false">http://localhost/ticket/433</guid>
+        <title>#433: Data package metadata in the Egg</title>
+        <pubDate>Tue, 17 Aug 2010 20:57:40 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+Still not sure if we shouldn't use the existing setuptools machinery to manage this -- there is already a way to get at the metadata. In any event, I've just made an addition to datapkg that makes it possible to put datapkg_sources as a dictionary in your package's setup.py. Afterwards it is possible to pull the metadata out of the egg. Of course this could easily be changed to save the information in whatever form, indeed if you pass it a string instead of a dictionary it will just write whatever you gave it into the datapkg_sources.spec. The point is, I think that the egg is a good place to stuff this information.
+&lt;/p&gt;
+&lt;p&gt;
+For non-python users, it is always possible to simply put up the datapkg_sources.spec somewhere on the web so they can directly retrieve the data files.
+&lt;/p&gt;
+&lt;p&gt;
+From the docstring::
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    This is the implementation for an [egg_info.writers] entrypoint.
+    Datapkg adds an argument to setuptools's setup() function called
+    datapkg_sources. The argument should be a dictionary of the form:
+    .. code-block:: python
+        setup(
+            ...,
+            datapkg_sources = {
+                "cra2009" : "http://www.hm-treasury.gov.uk/d/cra_2009_db.csv"
+            }
+        )
+    The result of this is that there will be a file in the egg called
+    datapkg_sources.spec that looks like this::
+        [sources]
+        cra2009=http://www.hm-treasury.gov.uk/d/cra_2009_db.csv
+    How do you get at this data? Simple::
+    .. code-block:: python
+        import pkg_resources
+        dist = pkg_resources.get_distribution("ukgov_treasury_cra")
+        spec = dist.get_metadata("datapkg_sources.spec")
+    and 'spec' will be the contents of the file as a string.
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/433#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/964</link>
+        <guid isPermaLink="false">http://localhost/ticket/964</guid>
+        <title>#964: Create Resource Downloader and make it pluggable</title>
+        <pubDate>Wed, 09 Feb 2011 00:23:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+In downloading packages we need to download resources and we need a &lt;a class="missing wiki"&gt;ResourceDownloader?&lt;/a&gt; object for this. these should be pluggable so that we can add support for different types of resources.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/964#changelog</comments>
+    </item>
+ </channel>
+</rss>

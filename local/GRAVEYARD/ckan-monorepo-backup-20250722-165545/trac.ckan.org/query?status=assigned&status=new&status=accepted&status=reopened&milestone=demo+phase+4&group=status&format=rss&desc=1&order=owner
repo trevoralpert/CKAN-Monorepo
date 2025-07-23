@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=demo+phase+4&amp;group=status&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=demo+phase+4&amp;group=status&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2461</link>
+        <guid isPermaLink="false">http://localhost/ticket/2461</guid>
+        <title>#2461: Create demo revisions page</title>
+        <pubDate>Mon, 28 May 2012 13:34:15 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I believe this is to be merged in with site activity.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/revision"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/revision&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2461#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2698</link>
+        <guid isPermaLink="false">http://localhost/ticket/2698</guid>
+        <title>#2698: markdown preview</title>
+        <pubDate>Wed, 18 Jul 2012 14:01:25 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+for description / other fields with markdown support
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2698#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2873</link>
+        <guid isPermaLink="false">http://localhost/ticket/2873</guid>
+        <title>#2873: ckanext-qa: dataset summary incorrect</title>
+        <pubDate>Thu, 16 Aug 2012 14:13:49 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+For example see:  &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Which has: Example dataset as a score of: 4 After examination of the dataset (  &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/example-dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/example-dataset&lt;/a&gt; ) it is made up of a CSV and an HTML file.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2873#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2766</link>
+        <guid isPermaLink="false">http://localhost/ticket/2766</guid>
+        <title>#2766: prevent draft datasets making it to activity stream</title>
+        <pubDate>Thu, 26 Jul 2012 16:06:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+The new ckan creates datasets as part of a 3 phase process.  To allow for this partially created datasets can have a state that is 'draft' or 'draft-complete'.  These datasets should not be seen as active by the activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+If we click 'add dataset' and then complete the first phase of adding a dataset then we end up having a activity stream created.  When we add a resource in the next phase (add data) again an activity stream item xxx added resource to dataset is created
+&lt;/p&gt;
+&lt;p&gt;
+We do not want these adding.  Essentially if a dataset has a state.startswith('draft') then we want the activity stream to ignore all actions involving it.
+&lt;/p&gt;
+&lt;p&gt;
+finally when the state is changed form state.startswith('draft') to state=='active' we want a xxx has created dataset ... to be added to the stream.
+&lt;/p&gt;
+&lt;p&gt;
+The best way to do this would be to branch from 2375-demo-theme-stable and get it to work there.
+&lt;/p&gt;
+&lt;p&gt;
+Let me know if you need any help with this ticket or a better explanation of the problem.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2818</link>
+        <guid isPermaLink="false">http://localhost/ticket/2818</guid>
+        <title>#2818: Improve related item schema</title>
+        <pubDate>Thu, 09 Aug 2012 09:22:56 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item (e.g. a Visualisation), if you don't put in a URL it succeeds, but on the related items and apps pages it renders it as a link to the same page.
+Expected: Always require a URL and it should only submit
+if one is added
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2818#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2446</link>
+        <guid isPermaLink="false">http://localhost/ticket/2446</guid>
+        <title>#2446: Create demo dataset history/comparison page</title>
+        <pubDate>Mon, 28 May 2012 13:12:18 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This is a low priority for the demo site.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/history/adur_district_spending"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/history/adur_district_spending&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2446#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2457</link>
+        <guid isPermaLink="false">http://localhost/ticket/2457</guid>
+        <title>#2457: Create demo tags list page</title>
+        <pubDate>Mon, 28 May 2012 13:28:55 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This includes the tag page as well for now.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/tag"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/tag&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2457#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2834</link>
+        <guid isPermaLink="false">http://localhost/ticket/2834</guid>
+        <title>#2834: Defer all publish calls until all modules have been initialised</title>
+        <pubDate>Thu, 09 Aug 2012 17:08:13 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently if a module uses sandbox.publish() in its initilaize() function then any modules initialised afterwards will miss the event.
+&lt;/p&gt;
+&lt;p&gt;
+We should queue all calls to .publish() in the pubsub module in an array until all modules have loaded then iterate over and execute them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2834#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2850</link>
+        <guid isPermaLink="false">http://localhost/ticket/2850</guid>
+        <title>#2850: Add JSON support for IE7</title>
+        <pubDate>Tue, 14 Aug 2012 10:38:12 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; just isn't going to work without it. Look into either the newer JSON3:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://bestiejs.github.com/json3/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bestiejs.github.com/json3/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+or the old faithful:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/douglascrockford/JSON-js/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/douglascrockford/JSON-js/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2850#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2869</link>
+        <guid isPermaLink="false">http://localhost/ticket/2869</guid>
+        <title>#2869: user profile not linked on disqus until page refresh</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:34 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Reported by Daniel:
+&lt;/p&gt;
+&lt;p&gt;
+Problem: DISQUS comments don't appear with profile details (inc. username).
+How to reproduce:
+1) Go to a dataset, e.g. I went to &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+2) I logged into DISQUS using the Google Authentication, e.g. in my case that is okfn.daniel.lewis@…
+3) I made a comment and submitted
+4) It comes up with the comment, but no linked profile until the page gets refreshed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2869#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2718</link>
+        <guid isPermaLink="false">http://localhost/ticket/2718</guid>
+        <title>#2718: can't add dataset to more than one group</title>
+        <pubDate>Fri, 20 Jul 2012 10:35:50 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+trying to add a dataset to another group means it's no longer part of the first group
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://demo.ckan.org/dataset/edit/afterfibre"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/edit/afterfibre&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2718#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2721</link>
+        <guid isPermaLink="false">http://localhost/ticket/2721</guid>
+        <title>#2721: deleted groups should not show on 'Add to Groups' dropdown</title>
+        <pubDate>Sun, 22 Jul 2012 09:17:12 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Groups previously deleted still show up in the add dataset process in step 3 'Additional info'
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_metadata/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_metadata/ff&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2721#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2728</link>
+        <guid isPermaLink="false">http://localhost/ticket/2728</guid>
+        <title>#2728: deleted group shows on search index - for admins</title>
+        <pubDate>Sun, 22 Jul 2012 09:53:04 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+'test-group', which has been deleted,shows up on main search page under groups - and can be filtered by - see &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?groups=test-group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?groups=test-group&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2775</link>
+        <guid isPermaLink="false">http://localhost/ticket/2775</guid>
+        <title>#2775: Add bin/less to paster serve command</title>
+        <pubDate>Mon, 30 Jul 2012 22:01:26 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Ideally the ./bin/less command would be run when the server is started.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Also it would be good to have a paster command to build the production CSS with {{{ ./bin/less --production }}
+&lt;/li&gt;&lt;li&gt;The command could also detect missing node binaries and redirect to the documentation.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2775#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2780</link>
+        <guid isPermaLink="false">http://localhost/ticket/2780</guid>
+        <title>#2780: way for admins to undelete datasets</title>
+        <pubDate>Tue, 31 Jul 2012 12:20:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Since admins can see deleted datasets - there should be a way for them
+a) to know they are currently deleted &amp;amp; not viewable by normal users - ticket: &lt;a class="closed ticket" href="http://localhost/ticket/2779" title="enhancement: add 'deleted' to deleted datasets that admins can view (closed: fixed)"&gt;#2779&lt;/a&gt;
+b) way to undelete such datasets - this ticket
+&lt;/p&gt;
+&lt;p&gt;
+I suggest a button on the edit form instead of the delete button
+i.e. remove normal delete button with 'deleted dataset, only admins can view' with undelete button next to the message?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2780#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2822</link>
+        <guid isPermaLink="false">http://localhost/ticket/2822</guid>
+        <title>#2822: Resource additional info titles format/i18n</title>
+        <pubDate>Thu, 09 Aug 2012 09:30:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+the title for additional info should be translated
+&lt;/p&gt;
+&lt;p&gt;
+capitalised etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2822#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2828</link>
+        <guid isPermaLink="false">http://localhost/ticket/2828</guid>
+        <title>#2828: Draft datasets are confusing - tickets need creating</title>
+        <pubDate>Thu, 09 Aug 2012 09:56:18 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+reported as editing datasets incorrect
+&lt;/p&gt;
+&lt;p&gt;
+e.g. clicking on edit here &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+takes you to create dataset page &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/edit/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/edit/ff&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+but this is the correct behaviour of a draft dataset
+&lt;/p&gt;
+&lt;p&gt;
+We need to show draft datasets correctly
+&lt;/p&gt;
+&lt;p&gt;
+proper tickets need making for the different issues after review of issues with them - who can see, where, admins and viewing, orgs too etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2828#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2830</link>
+        <guid isPermaLink="false">http://localhost/ticket/2830</guid>
+        <title>#2830: Need method to undelete groups</title>
+        <pubDate>Thu, 09 Aug 2012 10:50:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need controller action and front-end method
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2830#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2857</link>
+        <guid isPermaLink="false">http://localhost/ticket/2857</guid>
+        <title>#2857: no UI to follow another user although option on dashboard</title>
+        <pubDate>Wed, 15 Aug 2012 16:59:43 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. second option in left hand sidebar is follow another user' &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/dashboard"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/dashboard&lt;/a&gt; but if you click on that and then any user, there's no follow button
+&lt;/p&gt;
+&lt;p&gt;
+to me the dashboard user stuff is highly unfinished and probably should not be included unless someone is very keen for it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2857#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2861</link>
+        <guid isPermaLink="false">http://localhost/ticket/2861</guid>
+        <title>#2861: Add qa breadcrumb</title>
+        <pubDate>Thu, 16 Aug 2012 10:47:26 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+can we add in the breadcrumb navigation to qa pages so that you can go back to &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa&lt;/a&gt; from sub pages such as &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2861#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2862</link>
+        <guid isPermaLink="false">http://localhost/ticket/2862</guid>
+        <title>#2862: Revised revised groups description</title>
+        <pubDate>Thu, 16 Aug 2012 10:52:02 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+Revised text for 'What are groups?' box at demo.ckan.org/group (after discussion with IB re &lt;a class="closed ticket" href="http://localhost/ticket/2812" title="enhancement: Groups description needs improving (closed: invalid)"&gt;#2812&lt;/a&gt;):
+&lt;/p&gt;
+&lt;p&gt;
+What are groups?
+&lt;/p&gt;
+&lt;p&gt;
+Groups allow you to group users and data together so that they are easier to manage. Group owners can assign roles and authorisations, giving each project or department control of its own data publishing.
+&lt;/p&gt;
+&lt;p&gt;
+Users can browse or facet by groups, which could be an organisation (for example, the Department of Health) or topic (e.g. Transport, Health), making it easier to find the data they are looking for.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2862#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2863</link>
+        <guid isPermaLink="false">http://localhost/ticket/2863</guid>
+        <title>#2863: non-admin users can edit other's draft datasets</title>
+        <pubDate>Thu, 16 Aug 2012 10:54:39 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+edit button shows up for daniel lewis for &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ff&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2863#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2790</link>
+        <guid isPermaLink="false">http://localhost/ticket/2790</guid>
+        <title>#2790: logic.action.user_show is slow</title>
+        <pubDate>Wed, 01 Aug 2012 20:21:23 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This is a very slow call it would benefit from the sort of speed-ups that package-search received
+&lt;/p&gt;
+&lt;p&gt;
+for me locally this is taking 6 seconds for rufus using the datahub data I have.  I think a lot of this is the dataset retrival/dictization
+&lt;/p&gt;
+&lt;p&gt;
+can we just grab json blobs from solr?
+&lt;/p&gt;
+&lt;p&gt;
+also is it possible to specify a sort order/paging?
+&lt;/p&gt;
+&lt;p&gt;
+I've put this as a demo-theme ticket as it is an big issue on the demo we are at 25 second page loads - which i can get down to about 8.8 secs so this is the main pain point now
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2790#changelog</comments>
+    </item>
+ </channel>
+</rss>

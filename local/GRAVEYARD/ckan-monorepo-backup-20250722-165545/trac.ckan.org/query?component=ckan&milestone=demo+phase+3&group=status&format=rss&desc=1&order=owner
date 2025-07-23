@@ -1,0 +1,1154 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=demo+phase+3&amp;group=status&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=demo+phase+3&amp;group=status&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2871</link>
+        <guid isPermaLink="false">http://localhost/ticket/2871</guid>
+        <title>#2871: user profile about text does not show up</title>
+        <pubDate>Thu, 16 Aug 2012 11:02:33 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tested with my &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/shevski"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/shevski&lt;/a&gt; and daniel's account. I have added about text and yet see '
+Irina Bolychevsky
+&lt;/p&gt;
+&lt;p&gt;
+You have not provided a biography.'
+&lt;/p&gt;
+&lt;p&gt;
+The about text is saved (and viewable on the edit form itself) but does not show on profile
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2871#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2302</link>
+        <guid isPermaLink="false">http://localhost/ticket/2302</guid>
+        <title>#2302: Simple theming</title>
+        <pubDate>Mon, 16 Apr 2012 13:23:48 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Needs re-testing after the ODS re-theme.
+====
+&lt;/p&gt;
+&lt;p&gt;
+Simple image upload, text changes and css updates for a single instance.  All done on a single configuration/admin page
+&lt;/p&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="http://ckan.okfnpad.org/simple-themes"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/simple-themes&lt;/a&gt; for user stories
+&lt;/p&gt;
+&lt;p&gt;
+[x] Initial version will only take an image_url rather than allowing an upload.
+&lt;/p&gt;
+&lt;p&gt;
+[x] New page with form for title, tagline, image loader etc.
+&lt;/p&gt;
+&lt;p&gt;
+[x] Allow the user to paste in values for the CSS, do we really want a colour swatch?
+&lt;/p&gt;
+&lt;p&gt;
+[x] Generate local CSS override which should *somehow* override colors in the original CSS.
+&lt;/p&gt;
+&lt;p&gt;
+[x] Allow user to provide text for an about page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2302#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2652</link>
+        <guid isPermaLink="false">http://localhost/ticket/2652</guid>
+        <title>#2652: get qa working with the demo</title>
+        <pubDate>Tue, 10 Jul 2012 16:21:55 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2652#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2701</link>
+        <guid isPermaLink="false">http://localhost/ticket/2701</guid>
+        <title>#2701: add comments to datasets</title>
+        <pubDate>Wed, 18 Jul 2012 14:06:46 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+disqus??
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2701#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2707</link>
+        <guid isPermaLink="false">http://localhost/ticket/2707</guid>
+        <title>#2707: Tidy up additional info boxes on dataset and resource pages</title>
+        <pubDate>Wed, 18 Jul 2012 14:24:31 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+This currently looks terrible. Some simple things we should do to improve this.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Localise and captitalise known (non custom) keys into human titles. eg. "size", "created_at", "mime_type".
+&lt;/li&gt;&lt;li&gt;Apply units to values of known keys where possible eg. "size in appropiate units"
+&lt;/li&gt;&lt;li&gt;Convert dates into a more human friendly format. We can avoid localisation hell by using an ISO format like YYYY/MM/DD hh:mm:ss which is still better than ISO8061
+&lt;/li&gt;&lt;li&gt;Move the non user fields to the top of the table.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2707#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2724</link>
+        <guid isPermaLink="false">http://localhost/ticket/2724</guid>
+        <title>#2724: Inconsistent labelling / UX on draft datasets</title>
+        <pubDate>Sun, 22 Jul 2012 09:30:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;One of the datasets here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/shevski"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/shevski&lt;/a&gt; has [DRAFT] after it. It's not clear why this has been added -&amp;gt; user confusion
+&lt;/li&gt;&lt;li&gt;The draft dataset is not clickable in the dataset list
+&lt;/li&gt;&lt;li&gt;The ff dataset (same as the ff [DRAFT] dataset) in the Activity Steam section a) is clickable and b) does not have [DRAFT] after it
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2724#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2750</link>
+        <guid isPermaLink="false">http://localhost/ticket/2750</guid>
+        <title>#2750: javascript translations need ripping</title>
+        <pubDate>Wed, 25 Jul 2012 11:37:26 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we need to ensure that translations in .js files are ripper for translation
+&lt;/p&gt;
+&lt;p&gt;
+look at what is available as preference to creating our own
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2750#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2755</link>
+        <guid isPermaLink="false">http://localhost/ticket/2755</guid>
+        <title>#2755: user pages very slow to load</title>
+        <pubDate>Wed, 25 Jul 2012 14:09:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+navigating to a user page -one's own or &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/ira"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/ira&lt;/a&gt; or &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/shevski"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/shevski&lt;/a&gt;, even when signed out is noticeably slower than navigating between other parts of the site; over 2 seconds. Maybe even 3
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2755#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2769</link>
+        <guid isPermaLink="false">http://localhost/ticket/2769</guid>
+        <title>#2769: add site wide related page</title>
+        <pubDate>Thu, 26 Jul 2012 17:26:07 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Can we add the related dashboard (&lt;a class="ext-link" href="http://trac.ckan.org/ticket/2347"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2347&lt;/a&gt;) to demo - central place to show off all the related stuff added.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2769#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2774</link>
+        <guid isPermaLink="false">http://localhost/ticket/2774</guid>
+        <title>#2774: Provide a method of passing localised strings into the JavaScript</title>
+        <pubDate>Mon, 30 Jul 2012 15:11:12 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+We need to be able to do the following:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Rip the localised strings from the &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; source code. These are strings that look like &lt;tt&gt;_('String')&lt;/tt&gt;, &lt;tt&gt;translate('String') &lt;/tt&gt; and &lt;tt&gt; isPlural('String') &lt;/tt&gt;.
+&lt;/li&gt;&lt;li&gt;An endpoint that provides the translations in the correct locale for the user.
+&lt;/li&gt;&lt;li&gt;The endpoint should provide the locale as JSON (possibly using &lt;a class="ext-link" href="http://jsgettext.berlios.de/doc/html/po2json.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://jsgettext.berlios.de/doc/html/po2json.html&lt;/a&gt; or similar tool)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; can then read this file on page load.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2774#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2782</link>
+        <guid isPermaLink="false">http://localhost/ticket/2782</guid>
+        <title>#2782: integrate with leaflet for demo background generation</title>
+        <pubDate>Tue, 31 Jul 2012 15:34:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+use &lt;a class="ext-link" href="http://leaflet.cloudmade.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://leaflet.cloudmade.com/&lt;/a&gt; properly to generate map backgrounds for demo instances
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2782#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2793</link>
+        <guid isPermaLink="false">http://localhost/ticket/2793</guid>
+        <title>#2793: Markdown of resource page not rendered as markdown</title>
+        <pubDate>Thu, 02 Aug 2012 08:37:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+As per &lt;a class="closed ticket" href="http://localhost/ticket/2650" title="enhancement: Description on resources not rendered as markdown (closed: fixed)"&gt;#2650&lt;/a&gt; (on master/1.8 now)
+&lt;/p&gt;
+&lt;p&gt;
+If the resource has a description it isn't rendered as markdown ..
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2793#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2799</link>
+        <guid isPermaLink="false">http://localhost/ticket/2799</guid>
+        <title>#2799: Translations for demo not picking up {% trans %} blocks</title>
+        <pubDate>Mon, 06 Aug 2012 08:50:05 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Also they seem to be missing the odd &lt;tt&gt; _() &lt;/tt&gt; block. Such in the new package form.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/2375-demo-theme-development/ckan/templates/package/snippets/package_form.html#L44"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/2375-demo-theme-development/ckan/templates/package/snippets/package_form.html#L44&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2799#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2812</link>
+        <guid isPermaLink="false">http://localhost/ticket/2812</guid>
+        <title>#2812: Groups description needs improving</title>
+        <pubDate>Wed, 08 Aug 2012 09:59:13 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The 'What are Groups?' text at &amp;lt;&lt;a class="ext-link" href="http://demo.ckan.org/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/group&lt;/a&gt;&amp;gt; is a
+bit naff. Here is a suggested replacement:
+&lt;/p&gt;
+&lt;p&gt;
+What are groups?
+&lt;/p&gt;
+&lt;p&gt;
+Groups allow you to group users and data together so that they are
+easier to manage. For example datasets in a group could be visible
+only to group members, or publicly visible but only editable by group
+members.
+&lt;/p&gt;
+&lt;p&gt;
+Groups can be used to collect together datasets from a single
+publisher, or related to a particular project, for example.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2812#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2826</link>
+        <guid isPermaLink="false">http://localhost/ticket/2826</guid>
+        <title>#2826: Null group image</title>
+        <pubDate>Thu, 09 Aug 2012 09:45:46 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: Example group ( &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/group/example-group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/group/example-group&lt;/a&gt; ) has a broken image, image not found. Link either incorrect, or no image set, if no image set then shouldn't it show a default image?
+Expected: There should be an image.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2826#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2836</link>
+        <guid isPermaLink="false">http://localhost/ticket/2836</guid>
+        <title>#2836: Need extra info for forms</title>
+        <pubDate>Fri, 10 Aug 2012 13:38:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+like we have on the form here
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+you said it partly exists so maybe I just need some training
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2836#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2847</link>
+        <guid isPermaLink="false">http://localhost/ticket/2847</guid>
+        <title>#2847: 'show inactive sources' checkbox displaying incorrectly</title>
+        <pubDate>Mon, 13 Aug 2012 13:25:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+On harvest page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest&lt;/a&gt; the checkbox appears above the text and not clear what it refers to/
+&lt;/p&gt;
+&lt;p&gt;
+Beter to relocate to the left (as on publicdata.eu) see screenshots attached.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2847#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2848</link>
+        <guid isPermaLink="false">http://localhost/ticket/2848</guid>
+        <title>#2848: no dataset descriptions on front page</title>
+        <pubDate>Tue, 14 Aug 2012 10:01:45 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2848#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2852</link>
+        <guid isPermaLink="false">http://localhost/ticket/2852</guid>
+        <title>#2852: better message for trying to refresh inactive sources in harvest</title>
+        <pubDate>Wed, 15 Aug 2012 16:31:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently if you try to refresh (i.e. schedule the harvester to re-run) an inactive source (one who's state is 'withdrawn' - e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest/3feea629-32d8-4431-9957-9f31d32864f1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest/3feea629-32d8-4431-9957-9f31d32864f1&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+you get the error message: "An error occurred: [Can not create jobs on inactive sources]"
+&lt;/p&gt;
+&lt;p&gt;
+This could be better and not red, e.g. and info box (maybe yellow) saying that "Cannot re-run harvesting on inactive sources. Please first change the status to 'active'"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2852#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2853</link>
+        <guid isPermaLink="false">http://localhost/ticket/2853</guid>
+        <title>#2853: unclear error message in refreshing harvest source</title>
+        <pubDate>Wed, 15 Aug 2012 16:34:42 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Tried to refresh the datagm harvest source to get error message:
+&lt;/p&gt;
+&lt;p&gt;
+"An error occurred: [There already is an unrun job for this source]"
+&lt;/p&gt;
+&lt;p&gt;
+This is unclear and not sure why it created an error. We should have something informative such as "A harvest has already been scheduled for this source"
+&lt;/p&gt;
+&lt;p&gt;
+Do we have a date/time for when this has been scheduled that we can display?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2853#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2856</link>
+        <guid isPermaLink="false">http://localhost/ticket/2856</guid>
+        <title>#2856: server error when clicking on deleted app link</title>
+        <pubDate>Wed, 15 Aug 2012 16:54:44 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;go to &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/okfn"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/okfn&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Click on activity stream
+&lt;/li&gt;&lt;li&gt;Click on 'Deletion test' related item that's linked to in entries 1 &amp;amp; 2
+&lt;/li&gt;&lt;li&gt;Server error
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2856#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2858</link>
+        <guid isPermaLink="false">http://localhost/ticket/2858</guid>
+        <title>#2858: Harvester tweaks</title>
+        <pubDate>Thu, 16 Aug 2012 07:46:38 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I've had a look at the new harvesting theme, it looks great, thanks. I
+did some minor changes and reworded the errors as per tickets &lt;a class="closed ticket" href="http://localhost/ticket/2852" title="enhancement: better message for trying to refresh inactive sources in harvest (closed: fixed)"&gt;#2852&lt;/a&gt;
+and &lt;a class="closed ticket" href="http://localhost/ticket/2853" title="enhancement: unclear error message in refreshing harvest source (closed: fixed)"&gt;#2853&lt;/a&gt;, but I kept the messages red, as the only other ones
+available ("flash_notice") are blue and are not very prominent.
+&lt;/p&gt;
+&lt;p&gt;
+Toby, on the old form there was a list of descriptions for all
+available harvesters which could be nice to have back. I couldn't find
+an easy way with the new form macro, so I don't know how easy would be
+to implement
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://i.imgur.com/pzS8z.png"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://i.imgur.com/pzS8z.png&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2858#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2860</link>
+        <guid isPermaLink="false">http://localhost/ticket/2860</guid>
+        <title>#2860: target blank link in qa report</title>
+        <pubDate>Thu, 16 Aug 2012 10:43:46 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+can we get the link going to an explanation of the 5 star system on page &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt; to open in new tab? it's leaving demo all together so better to open in new tab than navigate away
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2860#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2710</link>
+        <guid isPermaLink="false">http://localhost/ticket/2710</guid>
+        <title>#2710: make the api_info.html not look like shit</title>
+        <pubDate>Wed, 18 Jul 2012 15:13:05 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+you know the score
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2710#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2642</link>
+        <guid isPermaLink="false">http://localhost/ticket/2642</guid>
+        <title>#2642: Adapt harvest frontend to new theme</title>
+        <pubDate>Mon, 09 Jul 2012 15:03:16 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2642#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2680</link>
+        <guid isPermaLink="false">http://localhost/ticket/2680</guid>
+        <title>#2680: review group deletion</title>
+        <pubDate>Mon, 16 Jul 2012 11:02:05 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Super admins &amp;amp; owners/creators of groups need a way to delete them
+&lt;/p&gt;
+&lt;p&gt;
+Is the auth model in place for all this stuff? May be worth sitting down and going through how this should work
+&lt;/p&gt;
+&lt;p&gt;
+Currently can change state from active to deleted - this is not ery user friendly (want a button with a 2 step process maybe?) &amp;amp; I'd like to know who can view this option? Everyone who can edit a group? Who can edit?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2680#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2717</link>
+        <guid isPermaLink="false">http://localhost/ticket/2717</guid>
+        <title>#2717: French breaks the demo header</title>
+        <pubDate>Fri, 20 Jul 2012 10:34:47 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+when language is french
+&lt;/p&gt;
+&lt;p&gt;
+a) the menu overlaps the logo
+&lt;/p&gt;
+&lt;p&gt;
+b) much of the logo becomes unclickable
+&lt;/p&gt;
+&lt;p&gt;
+@shevski
+&lt;/p&gt;
+&lt;p&gt;
+a) seems like you  b) is aron
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2717#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2855</link>
+        <guid isPermaLink="false">http://localhost/ticket/2855</guid>
+        <title>#2855: language box no longer functional</title>
+        <pubDate>Wed, 15 Aug 2012 16:45:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. tried changing the lang here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt; to no effect. Doesn't work on any other pages either. Flags have also dissappeared
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2855#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2408</link>
+        <guid isPermaLink="false">http://localhost/ticket/2408</guid>
+        <title>#2408: Only 4 'extras' can be added at a time</title>
+        <pubDate>Tue, 22 May 2012 10:47:19 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The settings &amp;gt; extras page for a dataset allows extra fields to be added, but only four can be added a time in a single atomic update. It would be helpful to have an 'add another' button on the form that can be used any number of times.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2408#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2458</link>
+        <guid isPermaLink="false">http://localhost/ticket/2458</guid>
+        <title>#2458: Create demo statistics page</title>
+        <pubDate>Mon, 28 May 2012 13:31:46 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998513/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998513/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/stats"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/stats&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2458#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2614</link>
+        <guid isPermaLink="false">http://localhost/ticket/2614</guid>
+        <title>#2614: improve the documentation around less/node</title>
+        <pubDate>Wed, 27 Jun 2012 16:52:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+needs to move to a better home
+&lt;/p&gt;
+&lt;p&gt;
+better ubuntu install instructions plus test they work
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;apt-get install nodejs&lt;/tt&gt;
+&lt;/p&gt;
+&lt;p&gt;
+integrate with paster
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2614#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2700</link>
+        <guid isPermaLink="false">http://localhost/ticket/2700</guid>
+        <title>#2700: language box</title>
+        <pubDate>Wed, 18 Jul 2012 14:03:43 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+lang box improvements: styling, images, submit upon selection
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2700#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2713</link>
+        <guid isPermaLink="false">http://localhost/ticket/2713</guid>
+        <title>#2713: button colour not set properly in variables.css</title>
+        <pubDate>Thu, 19 Jul 2012 14:00:28 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+to reproduce run
+&lt;/p&gt;
+&lt;p&gt;
+paster color fuchsia -c development.ini
+&lt;/p&gt;
+&lt;p&gt;
+then go to &lt;a class="ext-link" href="http://localhost:5000/dataset/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Add button is blue gradient at the top this should be overridden in variables.less
+&lt;/p&gt;
+&lt;p&gt;
+when added send this ticket to me and i'll update the color command to change it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2713#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2722</link>
+        <guid isPermaLink="false">http://localhost/ticket/2722</guid>
+        <title>#2722: Ordering or search of datasets of a group brings up 'no results'</title>
+        <pubDate>Sun, 22 Jul 2012 09:20:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;go to a group, e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/group/data-explorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/data-explorer&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Order by anything, e.g. choose 'popular' and click go
+&lt;/li&gt;&lt;li&gt;"sorry no datasets found" message appears instead of ordering the group datasets in wanted order
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/group/data-explorer?q=&amp;amp;sort=views_recent+desc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/data-explorer?q=&amp;amp;sort=views_recent+desc&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2722#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2739</link>
+        <guid isPermaLink="false">http://localhost/ticket/2739</guid>
+        <title>#2739: Help text for format field</title>
+        <pubDate>Tue, 24 Jul 2012 09:46:15 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Can we please add some text next to the format field when user adding a new resource along the lines of:
+&lt;/p&gt;
+&lt;p&gt;
+"This will be generated automatically, but you can edit if you wish"
+&lt;/p&gt;
+&lt;p&gt;
+It always seems to work better when the user does not fill it themselves...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2739#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2759</link>
+        <guid isPermaLink="false">http://localhost/ticket/2759</guid>
+        <title>#2759: resource upload pointer incorrect</title>
+        <pubDate>Thu, 26 Jul 2012 07:57:49 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+On the add resource forms new or existing dataset
+&lt;/p&gt;
+&lt;p&gt;
+when hovering over &lt;tt&gt;Upload a file&lt;/tt&gt; css cursor should be pointer not text
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2759#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2760</link>
+        <guid isPermaLink="false">http://localhost/ticket/2760</guid>
+        <title>#2760: fix spacing between data API button and other buttons on dataset page</title>
+        <pubDate>Thu, 26 Jul 2012 10:09:20 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+see spacing between 'download' button and 'data api' button
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afterfibre/resource/66f5b980-06db-4ccd-a005-c18de4d68a4b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afterfibre/resource/66f5b980-06db-4ccd-a005-c18de4d68a4b&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2760#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2765</link>
+        <guid isPermaLink="false">http://localhost/ticket/2765</guid>
+        <title>#2765: Demo login error messages</title>
+        <pubDate>Thu, 26 Jul 2012 15:50:42 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I'd suggest we add a generic "failed to login, invalid fields" in the error_summary block. Then more specific "this field is required" when a required field is left empty.
+&lt;/p&gt;
+&lt;p&gt;
+So in general, provide an error dict
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2765#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2767</link>
+        <guid isPermaLink="false">http://localhost/ticket/2767</guid>
+        <title>#2767: Upgrade macro form.select to use tuples instead of dicts</title>
+        <pubDate>Thu, 26 Jul 2012 16:14:58 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This keeps the intended order.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2767#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2776</link>
+        <guid isPermaLink="false">http://localhost/ticket/2776</guid>
+        <title>#2776: add styled text field for header title</title>
+        <pubDate>Tue, 31 Jul 2012 08:50:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+to use on demos instead of the ckan logo &amp;amp; tag line.
+&lt;/p&gt;
+&lt;p&gt;
+Design here: &lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63387712/comments#190457381"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63387712/comments#190457381&lt;/a&gt;
+(First, text only one at the bottom)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2776#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2778</link>
+        <guid isPermaLink="false">http://localhost/ticket/2778</guid>
+        <title>#2778: apps dashboard needs some design love</title>
+        <pubDate>Tue, 31 Jul 2012 11:27:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+apps dashboard available at &lt;a class="ext-link" href="http://localhost:5000/apps"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/apps&lt;/a&gt; in main dev branch
+&lt;/p&gt;
+&lt;p&gt;
+I have got this to work in the demo however
+&lt;/p&gt;
+&lt;p&gt;
+a) it is a bit ugly
+&lt;/p&gt;
+&lt;p&gt;
+b) the template could do with some sorting eg the dropdowns should be being created in a nicer way
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2778#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2779</link>
+        <guid isPermaLink="false">http://localhost/ticket/2779</guid>
+        <title>#2779: add 'deleted' to deleted datasets that admins can view</title>
+        <pubDate>Tue, 31 Jul 2012 12:17:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently, as a logged in admin, you can view deleted datasets just as if they are live datasets. Nothing distinguishes them apart from normal datasets other than they don't show up on the dataset page
+&lt;/p&gt;
+&lt;p&gt;
+This is potentially very confusing
+Can we add some kind of banner / label to deleted datasets to show they have been deleted?
+&lt;/p&gt;
+&lt;p&gt;
+&amp;amp; Do you guys need Sam to design this?
+&lt;/p&gt;
+&lt;p&gt;
+Related ticket for undeleting datasets -  &lt;a class="ext-link" href="http://trac.ckan.org/ticket/2780"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2780&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2779#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2781</link>
+        <guid isPermaLink="false">http://localhost/ticket/2781</guid>
+        <title>#2781: add way to edit homepage text to simple theming</title>
+        <pubDate>Tue, 31 Jul 2012 12:42:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+demo.ckan.org has a small field for adding text on homepage
+current text:
+"Welcome to the CKAN demo
+Try out standard CKAN functionality in a sandbox environment. Search for datasets directly from the homepage or by navigating to the Datasets search page where you can facet by tags, groups and format."
+&lt;/p&gt;
+&lt;p&gt;
+Want to make this editable for demos
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2781#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2789</link>
+        <guid isPermaLink="false">http://localhost/ticket/2789</guid>
+        <title>#2789: logo fixups</title>
+        <pubDate>Wed, 01 Aug 2012 15:32:21 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+With the text logo I'd like the tag line to be under the site name so some css like
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;float:left;clear:left;font-size:13px;line-height:0.1;&lt;/tt&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Also the site name can be larger if no tagline
+&lt;/p&gt;
+&lt;p&gt;
+commit daac54dbd856  I've added a new global g.header_css that sets the hgroup class to
+&lt;/p&gt;
+&lt;p&gt;
+'header-image'
+'header-text-logo'
+'header-text-logo-tagline'
+&lt;/p&gt;
+&lt;p&gt;
+I think maybe we should also have 'header-image-css'  for the equivalent of the class="logo" in the link to allow/stop the image replacement
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2789#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2791</link>
+        <guid isPermaLink="false">http://localhost/ticket/2791</guid>
+        <title>#2791: Logo fix</title>
+        <pubDate>Thu, 02 Aug 2012 08:10:34 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron
+&lt;/p&gt;
+&lt;p&gt;
+We should be able to have longish tag lines that look ok currently they wrap and stop the logo text being clickable
+&lt;/p&gt;
+&lt;p&gt;
+Can we have &lt;tt&gt;white-space:nowrap;&lt;/tt&gt; for the tagline so long ones don't wrap and maybe look at aligning long ones
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2791#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2792</link>
+        <guid isPermaLink="false">http://localhost/ticket/2792</guid>
+        <title>#2792: dropdown fixes - open correctly</title>
+        <pubDate>Thu, 02 Aug 2012 08:14:56 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;  language dropdown expands downwards it should open upwards
+&lt;/p&gt;
+&lt;p&gt;
+select2 can do this see &lt;a class="ext-link" href="http://ivaynberg.github.com/select2/#documentation"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ivaynberg.github.com/select2/#documentation&lt;/a&gt; can you see if we can get this in ckan demo
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2792#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2794</link>
+        <guid isPermaLink="false">http://localhost/ticket/2794</guid>
+        <title>#2794: top buttons missing on edit resource</title>
+        <pubDate>Thu, 02 Aug 2012 08:58:46 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/resource-markdown/resource_edit/ba1b094d-697c-47c4-a72a-6c2557da5409"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/resource-markdown/resource_edit/ba1b094d-697c-47c4-a72a-6c2557da5409&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+should have &lt;tt&gt;back to resource&lt;/tt&gt; as a minimum
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2794#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2797</link>
+        <guid isPermaLink="false">http://localhost/ticket/2797</guid>
+        <title>#2797: plain_textarea styling</title>
+        <pubDate>Fri, 03 Aug 2012 13:27:02 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/ckan-admin/config"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/ckan-admin/config&lt;/a&gt; uses a plain (non markup) textarea for custom css
+&lt;/p&gt;
+&lt;p&gt;
+I've added form macro plain_textarea to provide one, however it renders without a bottom border due to markup textarea styling can you fix this - thanks
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2797#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2801</link>
+        <guid isPermaLink="false">http://localhost/ticket/2801</guid>
+        <title>#2801: no way to see full description of a related item</title>
+        <pubDate>Mon, 06 Aug 2012 09:36:49 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. see here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps&lt;/a&gt;
+same with related page on a dataset
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2801#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2802</link>
+        <guid isPermaLink="false">http://localhost/ticket/2802</guid>
+        <title>#2802: Need to tweak the JSON formatting of the localisations</title>
+        <pubDate>Mon, 06 Aug 2012 10:27:27 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This is what we need the JSON to look like. Taken from the Jed documentation (&lt;a class="ext-link" href="http://slexaxton.github.com/Jed/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://slexaxton.github.com/Jed/&lt;/a&gt;).
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+      // The empty string key is used as the configuration
+      // block for each domain
+      "" : {
+        // Domain name
+        "domain" : "the_domain",
+        // Language code
+        "lang" : "en",
+        // Plural form function for language
+        "plural_forms" : "nplurals=2; plural=(n != 1);"
+      },
+      // Other keys in a domain contain arrays as values
+      // that map to the translations for that key.
+      // Gettext suggests that you use english as your keys
+      // in case the key isn't found, and it can just pass
+      // the value directly through.
+      // Note: by convention, the 0-index location of the translations
+      // is never accessed. It's just a thing, I guess.
+      "a key" : [ null, "the translation", "the plural translations", ... ],
+      // The plural form string is converted into a function
+      // and the value that's passed into the gettext call
+      // is passed into the plural form function. It's result
+      // (plus 1) is the index that the translation comes from.
+      // We're using sprintf interpolation on our keys so we can
+      // then sub in the _actual_ values into the result.
+      "%d key" : [ null, "%d key", "%d keys" ],
+      // Contexts are keys that are just prefixed with a context string
+      // with a unicode \u0004 as the delimiter.
+      // You can use it for anything. Usually it's just for being content aware
+      // in some way (e.g. male vs. female, product vs. category)
+      "context\u0004%d key": [ null, "context %d key", "context %d keys" ]
+    }
+&lt;/pre&gt;&lt;p&gt;
+This looks like an appropriate python library to do the formatting. &lt;a class="ext-link" href="http://pypi.python.org/pypi/pojson/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pypi.python.org/pypi/pojson/&lt;/a&gt; but I'll leave to your discretion.
+&lt;/p&gt;
+&lt;p&gt;
+Finally an API endpoint that returns the appropriate request would save us making requests to the i18n directory.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/api/i18n/{locale}
+&lt;/pre&gt;&lt;p&gt;
+For example if the current url is &lt;a class="ext-link" href="http://localhost:5000/pl/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/pl/dataset&lt;/a&gt; then the client would request:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://localhost:5000/api/i18n/pl
+&lt;/pre&gt;&lt;p&gt;
+This should return the Content-Type: application/json and a 200 with an appropriate JSON body (this can be the language requested or an appropriate fallback). I think that if the fallback is the default language (in most cases English) then we just return a 204 No Content to save data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2802#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2803</link>
+        <guid isPermaLink="false">http://localhost/ticket/2803</guid>
+        <title>#2803: Convert all JS translations to use keywords</title>
+        <pubDate>Mon, 06 Aug 2012 11:16:57 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2803#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2804</link>
+        <guid isPermaLink="false">http://localhost/ticket/2804</guid>
+        <title>#2804: please make download button blue</title>
+        <pubDate>Mon, 06 Aug 2012 11:24:15 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+on resource pages (e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;), same as old ckan
+for continuity and to highlight!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2804#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2807</link>
+        <guid isPermaLink="false">http://localhost/ticket/2807</guid>
+        <title>#2807: autocomplete.js error</title>
+        <pubDate>Mon, 06 Aug 2012 15:17:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron,
+&lt;/p&gt;
+&lt;p&gt;
+edit dataset has a js error
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;TypeError?&lt;/a&gt;: options is undefined
+[Break On This Error]
+&lt;/p&gt;
+&lt;p&gt;
+this.lookup(options.term, options.callback);
+&lt;/p&gt;
+&lt;p&gt;
+autocomplete.js (line 231)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2807#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2808</link>
+        <guid isPermaLink="false">http://localhost/ticket/2808</guid>
+        <title>#2808: Confirm delete dialog badly placed on small screen</title>
+        <pubDate>Tue, 07 Aug 2012 09:57:54 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+If you make your browser window short - say half screen height on a page with delete eg &lt;a class="ext-link" href="http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+the dialog box is partially off the screen - it should try to stay on screen
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2808#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2809</link>
+        <guid isPermaLink="false">http://localhost/ticket/2809</guid>
+        <title>#2809: _ not defined for modules</title>
+        <pubDate>Tue, 07 Aug 2012 10:37:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+eg on confirm delete
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/zh_TW/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/zh_TW/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+_(....) gives [object Object] not translation
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2809#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2837</link>
+        <guid isPermaLink="false">http://localhost/ticket/2837</guid>
+        <title>#2837: checkbox styling</title>
+        <pubDate>Fri, 10 Aug 2012 13:39:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Is this done I know checkboxes are a pain but it looks a bit out of place compared to the other items.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2837#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2840</link>
+        <guid isPermaLink="false">http://localhost/ticket/2840</guid>
+        <title>#2840: tag line styling</title>
+        <pubDate>Mon, 13 Aug 2012 09:48:27 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron
+&lt;/p&gt;
+&lt;p&gt;
+Is it possible to get the tagline text to float  the other way
+&lt;/p&gt;
+&lt;p&gt;
+at the moment we have
+&lt;/p&gt;
+&lt;p&gt;
+...........Title
+Tag line to here
+&lt;/p&gt;
+&lt;p&gt;
+I'd like
+&lt;/p&gt;
+&lt;p&gt;
+...........Title
+...........Tag line to here
+&lt;/p&gt;
+&lt;p&gt;
+is this possible or too much pain
+&lt;/p&gt;
+&lt;p&gt;
+based partly on this comment
+Markw wrote
+&lt;/p&gt;
+&lt;p&gt;
+A minor problem visible on the home page
+&amp;lt;&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;&amp;gt; and other pages, when viewing in both
+Chrome and Firefox:
+&lt;/p&gt;
+&lt;p&gt;
+if the browser width is not very wide, the tag line 'Open source data
+portal' vanishes off the *left* hand side of the screen. For some
+reason the browser doesn't even recognise this with a horizontal
+scroll bar (as it does when stuff is off the *right* hand side) - it
+just chops off the text.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2840#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2841</link>
+        <guid isPermaLink="false">http://localhost/ticket/2841</guid>
+        <title>#2841: Slug generation fails on demo dev</title>
+        <pubDate>Mon, 13 Aug 2012 11:00:53 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On the add dataset form, slug generation fails with JS error:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Uncaught TypeError: Object [object Object] has no method 'incompleteFormWarning'    basic-form.js:5
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2841#changelog</comments>
+    </item>
+ </channel>
+</rss>

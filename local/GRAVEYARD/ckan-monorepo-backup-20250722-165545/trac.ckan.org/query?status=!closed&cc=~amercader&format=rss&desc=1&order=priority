@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~amercader&amp;desc=1&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~amercader&amp;desc=1&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2485</link>
+        <guid isPermaLink="false">http://localhost/ticket/2485</guid>
+        <title>#2485: Encourage leak containment by limiting the number of requests a CKAN process serves</title>
+        <pubDate>Fri, 01 Jun 2012 11:47:09 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN has &lt;a class="closed ticket" href="http://localhost/ticket/1345" title="enhancement: Investigate possible memory leak (closed: fixed)"&gt;memory leaks&lt;/a&gt;. They can be contained by limiting the time-to-live of a ckan process. An easy way to achieve this is to limit the number of requests a ckan server process can serve before it gets killed and replaced.
+&lt;/p&gt;
+&lt;p&gt;
+One should ...
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;research ways to limit requests-per-process with the different web servers (see below for a start);
+&lt;/li&gt;&lt;li&gt;explain these safeguards in the CKAN documentation and encourage users to apply them;
+&lt;/li&gt;&lt;li&gt;consider the helper script &lt;strong&gt;&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/bin/ckan-create-instance"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-create-instance&lt;/a&gt;&lt;/strong&gt; to generate Apache configs with &lt;strong&gt;WSGIDaemonProcess ... maximum-requests=XY&lt;/strong&gt; being active instead of &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/lib/ckan/common.sh#L262"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;commented out&lt;/a&gt;. Or at least let it warn the user to use &lt;strong&gt;MaxRequestsPerChild&lt;/strong&gt;;
+&lt;/li&gt;&lt;li&gt;Investigate current CKAN deployments whether they suffer from mem leaks, and if so contain them.
+&lt;/li&gt;&lt;/ul&gt;&lt;hr /&gt;
+&lt;p&gt;
+How to limit requests-per-process
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Apache:
+&lt;ul&gt;&lt;li&gt;Use &lt;strong&gt;WSGIDaemonProcess&lt;/strong&gt; with &lt;strong&gt;maximum-requests=50&lt;/strong&gt; or whatever limit is appropriate. We did this sucessfully on &lt;a class="ext-link" href="http://trac.okfn.org/ticket/904"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;datahub.io&lt;/a&gt; and the &lt;a class="ext-link" href="http://trac.okfn.org/ticket/1245"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan farm&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(This need to be verified) Without WSGIDaemonProcess, &lt;strong&gt;MaxRequestsPerChild 50&lt;/strong&gt; should achieve the same.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;nginx/supervisord: to be researched.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2485#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2726</link>
+        <guid isPermaLink="false">http://localhost/ticket/2726</guid>
+        <title>#2726: confusing logic on data preview formats</title>
+        <pubDate>Sun, 22 Jul 2012 09:38:47 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;If a user enters the wrong format on a file that can be previewed - it simply won't be previewed (e.g. a CSV or XML file that can be filled in with JSON in format will just not work or check this
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;If I incorrectly edit format to one that data preview will try to preview it will work even for a format that it doesn't accept (sometimes) e.g. this PDF file I changed the metadata to HTML &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2726#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2277</link>
+        <guid isPermaLink="false">http://localhost/ticket/2277</guid>
+        <title>#2277: Use the new atom feeds in IATI</title>
+        <pubDate>Mon, 02 Apr 2012 17:10:28 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Atom feeds have been implemented in core in &lt;a class="closed ticket" href="http://localhost/ticket/1593" title="enhancement: [super] Create feeds from search results (closed: fixed)"&gt;#1593&lt;/a&gt;.  The IATI-specific implementation can now be removed when IATI move to CKAN &amp;gt;= 1.6.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2641</link>
+        <guid isPermaLink="false">http://localhost/ticket/2641</guid>
+        <title>#2641: Adapt spatial widgets to new theme</title>
+        <pubDate>Mon, 09 Jul 2012 15:02:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Dataset extent map and spatial filter need to adapted to the new theme, as they are not showing up now
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2641#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2859</link>
+        <guid isPermaLink="false">http://localhost/ticket/2859</guid>
+        <title>#2859: Fix the build</title>
+        <pubDate>Thu, 16 Aug 2012 09:26:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The requires files have been removed.  These were required by buildkit.
+&lt;/p&gt;
+&lt;p&gt;
+We've lost the information regarding which packages were already in ubuntu repos, which conflicted and which were missing.  But perhaps we can just package everything up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2859#changelog</comments>
+    </item>
+ </channel>
+</rss>

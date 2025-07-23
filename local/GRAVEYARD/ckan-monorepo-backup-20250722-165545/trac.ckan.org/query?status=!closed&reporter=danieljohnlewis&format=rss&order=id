@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=danieljohnlewis&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=danieljohnlewis&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2818</link>
+        <guid isPermaLink="false">http://localhost/ticket/2818</guid>
+        <title>#2818: Improve related item schema</title>
+        <pubDate>Thu, 09 Aug 2012 09:22:56 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item (e.g. a Visualisation), if you don't put in a URL it succeeds, but on the related items and apps pages it renders it as a link to the same page.
+Expected: Always require a URL and it should only submit
+if one is added
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2818#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2820</link>
+        <guid isPermaLink="false">http://localhost/ticket/2820</guid>
+        <title>#2820: English Language: Visualization -&gt; Visualisation</title>
+        <pubDate>Thu, 09 Aug 2012 09:27:35 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: In the English version (which has a UK flag, indicating British English), the word "Visualization" is used. For an example see the "Filter by type" drop down on the /apps page.
+Expected: This should be "Visualisation" in British English. Any instances of "Visualize" should be changed to "Visualise" too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2820#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2821</link>
+        <guid isPermaLink="false">http://localhost/ticket/2821</guid>
+        <title>#2821: Featured Items on Filter</title>
+        <pubDate>Thu, 09 Aug 2012 09:28:24 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: On /apps page in the Filter Results box there is a "Only show featured items" checkbox, on selection it comes up with 0 solutions.
+Expected: Presumably an admin can create "featured items" so that they can be randomly selected on front page (is this correct)? If there are no "featured items" in the whole database can this check box be hidden?
+Bug is: no UI or obvious way to create featured items. Also the
+checkbox looks un-styled
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2821#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2873</link>
+        <guid isPermaLink="false">http://localhost/ticket/2873</guid>
+        <title>#2873: ckanext-qa: dataset summary incorrect</title>
+        <pubDate>Thu, 16 Aug 2012 14:13:49 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+For example see:  &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Which has: Example dataset as a score of: 4 After examination of the dataset (  &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/example-dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/example-dataset&lt;/a&gt; ) it is made up of a CSV and an HTML file.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2873#changelog</comments>
+    </item>
+ </channel>
+</rss>

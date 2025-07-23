@@ -1,0 +1,73 @@
+id,summary,owner,type,priority,time,changetime
+2961,Preview plugin endpoint,dominik,enhancement,awaiting triage,10/08/12 11:39:27,10/18/12 16:33:10
+2956,Allow for resource editing in CKAN 2.0,shevski,enhancement,awaiting triage,10/03/12 15:11:40,10/04/12 10:27:22
+1171,Citation instructions on dataset and resource view pages,mark.wainwright,enhancement,minor,06/01/11 09:33:19,09/11/12 10:18:25
+2329,Add back in RSS/Atom links on relevant pages,,enhancement,awaiting triage,04/26/12 12:15:40,09/03/12 09:24:31
+2654,UI support for ordering groups on group_read page,,enhancement,awaiting triage,07/10/12 18:11:31,09/03/12 08:49:16
+3028,Feature: dashboard activity stream filtering,seanh,enhancement,awaiting triage,12/10/12 12:07:24,12/10/12 12:07:24
+3018,Load more in activity streams,johnmartin,enhancement,awaiting triage,11/14/12 13:34:11,12/10/12 12:02:30
+3019,Cannot delete dataset extras,,defect,major,11/14/12 18:44:38,11/14/12 18:44:38
+3017,New stable branch for the demo server,johnglover,enhancement,major,11/13/12 15:04:48,11/13/12 15:04:48
+3016,CKAN 2.0 template tweaks,johnmartin,enhancement,awaiting triage,11/13/12 13:30:17,11/13/12 13:30:17
+3014,Crash when deleting a non-empty vocabulary,,defect,awaiting triage,11/13/12 10:50:08,11/13/12 10:50:08
+3011,Recline fixes and updates for CKAN 2.0,johnglover,enhancement,major,11/07/12 11:40:55,11/07/12 11:40:55
+3010,Pin images don't appear in data explorer,,enhancement,awaiting triage,10/31/12 17:45:06,10/31/12 17:45:06
+3007,Adding a dataset creates multiple activities,,enhancement,awaiting triage,10/29/12 13:15:07,10/29/12 13:23:39
+3005,"Add following/unfollowing of groups: model, API, frontend, tests",seanh,enhancement,awaiting triage,10/23/12 17:35:44,10/23/12 17:35:44
+3001,Multilingual plugin crashes CKAN on add dataset when some languages are default,,defect,awaiting triage,10/18/12 16:50:48,10/18/12 16:50:48
+2993,"""logged_in"" and ""visitor"" show in user list at /users",,defect,awaiting triage,10/17/12 09:42:02,10/17/12 14:40:26
+3000,Add number of followers to dataset pages,,enhancement,awaiting triage,10/17/12 14:36:00,10/17/12 14:36:00
+2999,Add activity streams to organization pages,,enhancement,awaiting triage,10/17/12 14:34:17,10/17/12 14:34:17
+2998,Add activity streams to group pages,,enhancement,awaiting triage,10/17/12 14:33:14,10/17/12 14:33:14
+2997,Add activity streams to dataset pages,,enhancement,awaiting triage,10/17/12 14:31:46,10/17/12 14:31:46
+2996,Fix behaviour of View Profile button in user popover when already on user's profile,,enhancement,minor,10/17/12 14:30:38,10/17/12 14:30:38
+2995,"Popovers for resources, groups, organizations, tags...",,enhancement,awaiting triage,10/17/12 14:27:21,10/17/12 14:27:21
+2994,Add dataset and user popovers throughout the site,,enhancement,awaiting triage,10/17/12 14:26:04,10/17/12 14:26:04
+2991,Add blocks to header.html template,,enhancement,awaiting triage,10/16/12 11:10:20,10/16/12 11:10:20
+2913,IGroupForm has package_form() method,,defect,awaiting triage,09/11/12 14:45:39,10/15/12 12:22:59
+2990,Fix descriptions of groups and organizations on /groups and /organizations pages,,enhancement,awaiting triage,10/15/12 11:04:51,10/15/12 11:04:51
+2989,"""Add dataset to organization"" should auto-select the organization",,enhancement,awaiting triage,10/15/12 11:04:12,10/15/12 11:04:12
+2988,UI functional tests for CKAN 2.0,,enhancement,awaiting triage,10/15/12 11:02:15,10/15/12 11:02:15
+2987,Remove all direct calls to logic action and auth functions,,refactor,awaiting triage,10/15/12 10:51:27,10/15/12 10:51:27
+2986,Make lib/base.py more like it was originally intended,,refactor,awaiting triage,10/15/12 10:50:45,10/15/12 10:50:45
+2985,Make lib/helpers.py more template-specific,,refactor,awaiting triage,10/15/12 10:49:48,10/15/12 10:49:48
+2984,"Auto-populate context with user, model, session, etc.",,refactor,awaiting triage,10/15/12 10:48:21,10/15/12 10:48:21
+2983,Refactor lib/base.py to remove circular import issues,,refactor,awaiting triage,10/15/12 10:47:24,10/15/12 10:47:24
+2982,Move functionality from controllers into template helpers,,refactor,awaiting triage,10/15/12 10:46:42,10/15/12 10:46:42
+2981,Remove config from jinja templates,,refactor,awaiting triage,10/15/12 10:46:00,10/15/12 10:46:00
+2979,Requesting membership to groups and organizations,,enhancement,awaiting triage,10/15/12 10:44:04,10/15/12 10:44:04
+2978,Tests for permissions for organizations and groups,,enhancement,awaiting triage,10/15/12 10:43:26,10/15/12 10:43:26
+2977,Fix user autocomplete on group and organization member pages,,enhancement,awaiting triage,10/15/12 10:42:29,10/15/12 10:42:29
+2976,Polish group and organization member pages,,enhancement,awaiting triage,10/15/12 10:41:49,10/15/12 10:41:49
+2975,Tests for auth functions and new actions,,enhancement,awaiting triage,10/15/12 10:41:00,10/15/12 10:41:00
+2974,General of all auth functions,,enhancement,awaiting triage,10/15/12 10:40:12,10/15/12 10:40:12
+2973,Move new_authz.py into logic/auth/__init__.py,,enhancement,awaiting triage,10/15/12 10:39:05,10/15/12 10:39:05
+2972,Remove any imports of authz.py and delete file,,enhancement,awaiting triage,10/15/12 10:37:22,10/15/12 10:37:22
+2968,Anyone can access organization members page,,defect,awaiting triage,10/15/12 10:19:15,10/15/12 10:31:10
+2971,"""Are ytou sure you want to delete this member?"" should say which member",,enhancement,awaiting triage,10/15/12 10:27:20,10/15/12 10:27:20
+2970,Organization and group member links use id not name,,defect,awaiting triage,10/15/12 10:22:11,10/15/12 10:22:11
+2969,Group members page 500s,,defect,awaiting triage,10/15/12 10:20:54,10/15/12 10:20:54
+2967,Organization members edit page reloads after demoting self,,defect,awaiting triage,10/15/12 10:17:07,10/15/12 10:17:07
+2966,'Add' button text is wrong when editing organization members,,enhancement,awaiting triage,10/15/12 10:15:49,10/15/12 10:15:49
+2964,Last organization admin can remove herself,,defect,awaiting triage,10/15/12 10:14:18,10/15/12 10:14:18
+2959,Changing a Group's name through the action api disassociates it from its datasets in the index,icmurray,defect,minor,10/04/12 15:18:55,10/04/12 15:18:55
+2951,Paster command for building css from less,,enhancement,minor,10/01/12 19:12:20,10/02/12 10:50:30
+2952,incorporate javascriopt translations into translations workflow,seanh,enhancement,minor,10/01/12 19:15:45,10/01/12 19:15:45
+2933,Update theming docs,,enhancement,awaiting triage,09/17/12 15:21:12,09/17/12 15:21:12
+2932,Add docstring to system_info.py,,enhancement,awaiting triage,09/17/12 14:50:29,09/17/12 14:50:29
+2931,Better docstring for app_globals.py,,enhancement,awaiting triage,09/17/12 14:13:14,09/17/12 14:16:18
+2929,Remove is_fallback() from I*Form extension interfaces?,,enhancement,awaiting triage,09/13/12 16:09:57,09/13/12 16:09:57
+2928,Run CKAN tests with example_i*form extensions enabled,,enhancement,awaiting triage,09/13/12 16:05:34,09/13/12 16:05:34
+2927,Test new package/group/organization type URLs support,,enhancement,awaiting triage,09/13/12 16:02:33,09/13/12 16:02:33
+2926,I*Form tests for per-type templates,,enhancement,awaiting triage,09/13/12 16:01:21,09/13/12 16:01:21
+2925,Remove trans mangle paster command?,,defect,awaiting triage,09/13/12 10:06:08,09/13/12 10:06:08
+2924,"Better docs for trans js command, and add to release process",,defect,awaiting triage,09/13/12 10:04:31,09/13/12 10:04:31
+2923,Change regularise -> regularize,,defect,awaiting triage,09/13/12 10:03:02,09/13/12 10:03:02
+2922,Better docstring for CKANInternationalizationExtension,,defect,awaiting triage,09/13/12 10:01:47,09/13/12 10:01:47
+2921,Add docstring to top of lib/extract.py file,,defect,awaiting triage,09/13/12 10:00:07,09/13/12 10:00:07
+2920,Genshi text template message extractor no longer needed?,,defect,awaiting triage,09/13/12 09:57:29,09/13/12 09:57:29
+2917,Organization admins can delete themselves,johnmartin,enhancement,awaiting triage,09/12/12 12:10:43,09/12/12 13:13:56
+2915,Refactor form_to_db_schema_options(),,refactor,awaiting triage,09/12/12 10:37:49,09/12/12 10:59:48
+2902,genshi is used in Group controller,,enhancement,awaiting triage,09/04/12 18:10:30,09/04/12 18:10:30
+2886,Configurable related items,,enhancement,awaiting triage,08/22/12 08:55:18,08/22/12 08:55:18
+2831,Create a limited subset of markdown that's supported,,enhancement,minor,08/09/12 11:41:07,08/09/12 11:41:07

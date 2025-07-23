@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=markw&amp;order=milestone</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=markw&amp;order=milestone</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2773</link>
+        <guid isPermaLink="false">http://localhost/ticket/2773</guid>
+        <title>#2773: About page needs improving</title>
+        <pubDate>Mon, 30 Jul 2012 11:13:15 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The about page for the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt; (thedatahub.org/about) could be improved. More importantly the default about page for a generic CKAN instance should be completely different - focus more on Open Data rather than the community hub idea (as this is more relevant for most installations) and remove specific references to tdh.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2773#changelog</comments>
+    </item>
+ </channel>
+</rss>

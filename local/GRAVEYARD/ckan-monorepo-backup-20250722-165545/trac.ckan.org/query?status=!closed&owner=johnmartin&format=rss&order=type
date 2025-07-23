@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=johnmartin&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=johnmartin&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2446</link>
+        <guid isPermaLink="false">http://localhost/ticket/2446</guid>
+        <title>#2446: Create demo dataset history/comparison page</title>
+        <pubDate>Mon, 28 May 2012 13:12:18 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This is a low priority for the demo site.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/history/adur_district_spending"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/history/adur_district_spending&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2446#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2451</link>
+        <guid isPermaLink="false">http://localhost/ticket/2451</guid>
+        <title>#2451: Create demo user list page</title>
+        <pubDate>Mon, 28 May 2012 13:20:13 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2451#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2457</link>
+        <guid isPermaLink="false">http://localhost/ticket/2457</guid>
+        <title>#2457: Create demo tags list page</title>
+        <pubDate>Mon, 28 May 2012 13:28:55 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This includes the tag page as well for now.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/tag"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/tag&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2457#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2641</link>
+        <guid isPermaLink="false">http://localhost/ticket/2641</guid>
+        <title>#2641: Adapt spatial widgets to new theme</title>
+        <pubDate>Mon, 09 Jul 2012 15:02:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Dataset extent map and spatial filter need to adapted to the new theme, as they are not showing up now
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2641#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2697</link>
+        <guid isPermaLink="false">http://localhost/ticket/2697</guid>
+        <title>#2697: create dataset validation</title>
+        <pubDate>Wed, 18 Jul 2012 14:00:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Includes: missing fields, existing field checks (i.e. whether a name/dataset already exists with that name) during input (i.e. no need to submit form to check)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2697#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2785</link>
+        <guid isPermaLink="false">http://localhost/ticket/2785</guid>
+        <title>#2785: Allow resources to be re-ordered</title>
+        <pubDate>Wed, 01 Aug 2012 10:22:03 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Not sure where this functionality should be added, possibly in one of the sidebar widgets when editing a resource?
+&lt;/p&gt;
+&lt;p&gt;
+Ira, what are your thoughts?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2917</link>
+        <guid isPermaLink="false">http://localhost/ticket/2917</guid>
+        <title>#2917: Organization admins can delete themselves</title>
+        <pubDate>Wed, 12 Sep 2012 12:10:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Organization administrators can delete themselves from the user management pages.  We should disable this on the front-end as well as the back-end.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2917#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3016</link>
+        <guid isPermaLink="false">http://localhost/ticket/3016</guid>
+        <title>#3016: CKAN 2.0 template tweaks</title>
+        <pubDate>Tue, 13 Nov 2012 13:30:17 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Just a ticket to keep track of a few suggested template changes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3016#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3018</link>
+        <guid isPermaLink="false">http://localhost/ticket/3018</guid>
+        <title>#3018: Load more in activity streams</title>
+        <pubDate>Wed, 14 Nov 2012 13:34:11 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Activity streams should be able to load more than 15 items within them. Suggest the default amount of loading is around 30 and then click to load more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3021</link>
+        <guid isPermaLink="false">http://localhost/ticket/3021</guid>
+        <title>#3021: Logout doesn't work without JS</title>
+        <pubDate>Tue, 20 Nov 2012 11:19:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially, the functionality should be as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add logout link that has &lt;tt&gt;.js-hide&lt;/tt&gt; attached to it within the header that isn't hidden within a dropdown
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+See &lt;a class="ext-link" href="http://plus.google.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://plus.google.com/&lt;/a&gt; (when logged in) with and without JS to see an example of the actual sign-out working without JS
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3021#changelog</comments>
+    </item>
+ </channel>
+</rss>

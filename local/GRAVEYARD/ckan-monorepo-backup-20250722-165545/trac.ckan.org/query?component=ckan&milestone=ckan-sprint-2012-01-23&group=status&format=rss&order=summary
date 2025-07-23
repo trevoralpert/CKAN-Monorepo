@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-01-23&amp;group=status&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-01-23&amp;group=status&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1626</link>
+        <guid isPermaLink="false">http://localhost/ticket/1626</guid>
+        <title>#1626: 'About CKAN' page update</title>
+        <pubDate>Tue, 10 Jan 2012 14:20:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+thedatahub.org/about contains info that is very general to the CKAN and really quite technical. The text should be changed to be both specific to thedatahub.org and provide the context in a non-technical way. It should be easy to customise the About page to be appropriate for say new-york.ckan.net - a bit of info about who runs it, plus the general stuff about CKAN powering it and it was written by OKF to further open data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1626#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1495</link>
+        <guid isPermaLink="false">http://localhost/ticket/1495</guid>
+        <title>#1495: API call for getting a user's public activity stream</title>
+        <pubDate>Mon, 28 Nov 2011 15:52:29 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+An API call that returns a user's public activity stream in JSON format.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1495#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1299</link>
+        <guid isPermaLink="false">http://localhost/ticket/1299</guid>
+        <title>#1299: Activity streams table migration</title>
+        <pubDate>Tue, 30 Aug 2011 09:30:35 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Migrate tables for activity streams
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1299#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1631</link>
+        <guid isPermaLink="false">http://localhost/ticket/1631</guid>
+        <title>#1631: Add activity stream events for new/changed groups</title>
+        <pubDate>Wed, 11 Jan 2012 17:47:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1631#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1625</link>
+        <guid isPermaLink="false">http://localhost/ticket/1625</guid>
+        <title>#1625: Add activity stream events for new/changed users</title>
+        <pubDate>Tue, 10 Jan 2012 09:29:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This requires adding a logic function for emitting an activity stream event, and then editing the logic functions for creating or updating users and making them call the new emit event function. This same emit event function can later be used to emit activity stream events for other types of object as well.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1625#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1547</link>
+        <guid isPermaLink="false">http://localhost/ticket/1547</guid>
+        <title>#1547: Add search methods (before and after) to the IPackageController interface</title>
+        <pubDate>Tue, 13 Dec 2011 12:23:16 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Time estimate: 1d
+&lt;/p&gt;
+&lt;p&gt;
+Add a two search method to the IPackageController interface so extensions can:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Modify the query being sent to Solr
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;
+def before_search(search_params):
+    return search_params
+&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;Modify the results returned (&lt;tt&gt;after_search&lt;/tt&gt;)
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;
+def after_search(search_results, search_params):
+    return search_results
+&lt;/pre&gt;&lt;p&gt;
+Please see this pad for implementation details:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.okfnpad.org/search"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/search&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1547#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1659</link>
+        <guid isPermaLink="false">http://localhost/ticket/1659</guid>
+        <title>#1659: Cannot logout if CKAN mounted at non-root url</title>
+        <pubDate>Mon, 16 Jan 2012 12:18:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If you set WSGIScriptAlias to mount CKAN at a URL other than / then you cannot logout without adjusting the OpenID logged_out_url to match in who.ini config. e.g.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[plugin:openid]
+...
+logged_out_url = /sub/dir/user/logged_out
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Note: all the other URLs in who.ini should not have the /sub/dir/ - it is just this one that doesn't take account of the mounting point.
+&lt;/p&gt;
+&lt;p&gt;
+The solution is to fix-up the repoze.who OpenID plugin to take account of the mounting point.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1659#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1609</link>
+        <guid isPermaLink="false">http://localhost/ticket/1609</guid>
+        <title>#1609: Celery task for ckanext-archiver to write to webstore.</title>
+        <pubDate>Tue, 03 Jan 2012 09:17:33 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From super Storage changes - &lt;a class="closed ticket" href="http://localhost/ticket/1574" title="enhancement: [super] Storage changes including automated save to Webstore (closed: fixed)"&gt;#1574&lt;/a&gt; - and &lt;a class="ext-link" href="http://ckan.okfnpad.org/newstorage"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/newstorage&lt;/a&gt; we determined that ckanext-archiver should have a celery task for grabbing local file uploads and writing to webstore
+&lt;/p&gt;
+&lt;h2 id="Analysis"&gt;Analysis&lt;/h2&gt;
+&lt;p&gt;
+When I upload a file to CKAN:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;End up with file in permanent storage
+&lt;/li&gt;&lt;li&gt;IF file is ot type ... csv,xls,xlsx,sqlite,.sql
+&lt;ul&gt;&lt;li&gt;End up with new db in webstore
+&lt;ul&gt;&lt;li&gt;Where? {username}/{resource-id}/...
+&lt;ul&gt;&lt;li&gt;If a single table: name it after the file name (appropriately slugified)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;A resource *always* corresponds to a 'database' in webstore ...
+&lt;/li&gt;&lt;li&gt;In Data Explorer have "Sheets" tab ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Resource url = /dataset/{x}/resource/{y}/link -&amp;gt; cached_url ...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1609#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1475</link>
+        <guid isPermaLink="false">http://localhost/ticket/1475</guid>
+        <title>#1475: Create documentation showing how to make an extension that use celery.</title>
+        <pubDate>Sun, 20 Nov 2011 22:04:41 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1475#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1683</link>
+        <guid isPermaLink="false">http://localhost/ticket/1683</guid>
+        <title>#1683: Dataset search results - last item out of order</title>
+        <pubDate>Thu, 19 Jan 2012 11:17:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On each page of package search results, all the items are neatly sorted apart from the last item of the page. SOLR gets the sorting of the results incorrect.
+&lt;/p&gt;
+&lt;p&gt;
+This is a known issue: &lt;a class="ext-link" href="https://issues.apache.org/jira/browse/SOLR-1777"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://issues.apache.org/jira/browse/SOLR-1777&lt;/a&gt; affecting SOLR 1.4 only (which comes with Ubuntu 10.04)
+&lt;/p&gt;
+&lt;p&gt;
+It is highlighted in CKAN test ckan/tests/functional/test_pagination.py:TestPaginationPackage of commit 39096ed54bda86d043521b08b2e14fc5e283a0ff which fails most of the time it is run (passes intermittently).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1683#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1622</link>
+        <guid isPermaLink="false">http://localhost/ticket/1622</guid>
+        <title>#1622: Deploy QA on DGU UAT test server - 0.5d</title>
+        <pubDate>Mon, 09 Jan 2012 13:39:40 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Update CKAN on DGU UAT to 1.5.1
+&lt;/li&gt;&lt;li&gt;Deploy Celery
+&lt;/li&gt;&lt;li&gt;Deploy QA extension
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1622#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1638</link>
+        <guid isPermaLink="false">http://localhost/ticket/1638</guid>
+        <title>#1638: Don't use JsonType in activity streams</title>
+        <pubDate>Wed, 11 Jan 2012 18:02:15 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Dump and load JSON explicitly instead.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1638#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1623</link>
+        <guid isPermaLink="false">http://localhost/ticket/1623</guid>
+        <title>#1623: Dump to exclude deleted objects</title>
+        <pubDate>Mon, 09 Jan 2012 14:23:07 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The database dump currently contains all Packages and their associated objects, even those that have been set to state=deleted. We should exclude these from the dump now.
+&lt;/p&gt;
+&lt;p&gt;
+Dump = paster db simple-dump-csv/json
+&lt;/p&gt;
+&lt;h2 id="reasoning"&gt;reasoning&lt;/h2&gt;
+&lt;p&gt;
+The dumps are designed for end-users to be able to run scripts on the mass of data. Since end-users don't see state=deleted packages then they shouldn't need them in the dump. In fact their presence in the dump probably confuses them.
+&lt;/p&gt;
+&lt;p&gt;
+Admins get the full database anyway in the backup pg_dump.
+&lt;/p&gt;
+&lt;p&gt;
+We only included them in the user dump because it was designed before use of state=deleted was established.
+&lt;/p&gt;
+&lt;p&gt;
+Time estimate: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1623#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1511</link>
+        <guid isPermaLink="false">http://localhost/ticket/1511</guid>
+        <title>#1511: Logic function for getting a user's public activity stream</title>
+        <pubDate>Mon, 05 Dec 2011 14:10:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add a function to logic.action.get that returns a user's public activity stream as a list of dicts.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1511#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1608</link>
+        <guid isPermaLink="false">http://localhost/ticket/1608</guid>
+        <title>#1608: Merge storage into Core</title>
+        <pubDate>Tue, 03 Jan 2012 09:14:04 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+As part of &lt;a class="closed ticket" href="http://localhost/ticket/1608#1574" title="enhancement: Merge storage into Core (closed: fixed)"&gt;Storage Changes&lt;/a&gt; and &lt;a class="ext-link" href="http://ckan.okfnpad.org/newstorage"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/newstorage&lt;/a&gt; it was decided to merge ckanext-storage back into core.
+&lt;/p&gt;
+&lt;p&gt;
+Other changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Remove /storage/upload page (we have frontend integration elsewhere now and we should also ensure that upload items relate to a resource or other domain object).
+&lt;/li&gt;&lt;li&gt;Provide a local path as well as remote path for form upload requests in API so that frontend can see url to CKAN path rather than cloud storage path ...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1608#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1613</link>
+        <guid isPermaLink="false">http://localhost/ticket/1613</guid>
+        <title>#1613: Post-dataset-edit URL has #section</title>
+        <pubDate>Wed, 04 Jan 2012 13:59:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Viewing a dataset, hit 'Edit'
+&lt;/li&gt;&lt;li&gt;Click on the "Basic Information" tab (note: URL has suffix   #section-basic-information
+&lt;/li&gt;&lt;li&gt;Click 'Save'
+&lt;/li&gt;&lt;li&gt;URL still has suffix #section-basic-information
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Affects 1.5, 1.5.1, 1.5.2a
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1613#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1646</link>
+        <guid isPermaLink="false">http://localhost/ticket/1646</guid>
+        <title>#1646: Resource navigator options display spuriously</title>
+        <pubDate>Fri, 13 Jan 2012 11:05:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When viewing a dataset, the "Resources" navigation button contained the Resource titles on the Resource navigator button, instead of in a drop-down mouse-hover menu.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://thedatahub.org/dataset/realtime-birth-data-in-bulgaria/resource/66fc5831-ce01-4954-9beb-e2889ef8a20f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/realtime-birth-data-in-bulgaria/resource/66fc5831-ce01-4954-9beb-e2889ef8a20f&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;Chrome/Linux?&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1646#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1541</link>
+        <guid isPermaLink="false">http://localhost/ticket/1541</guid>
+        <title>#1541: Setup server for the DGU form-refactor.</title>
+        <pubDate>Thu, 08 Dec 2011 15:51:24 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+To enable us to show DGU work in progress, for feedback.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1541#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1709</link>
+        <guid isPermaLink="false">http://localhost/ticket/1709</guid>
+        <title>#1709: Simple_search fails with all packages</title>
+        <pubDate>Wed, 25 Jan 2012 13:32:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The home page always shows the total number of packages as 0, because the query is '*:*' and SQL search doesn't know how to handle it.
+&lt;/p&gt;
+&lt;p&gt;
+Also, simple_search configuration is not documented.
+&lt;/p&gt;
+&lt;p&gt;
+Also, no tests for sql search.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1709#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1401</link>
+        <guid isPermaLink="false">http://localhost/ticket/1401</guid>
+        <title>#1401: Some links don't take account when CKAN is mounted at a non-root URL</title>
+        <pubDate>Fri, 14 Oct 2011 19:46:26 GMT</pubDate>
+        
+        <dc:creator>flofokus</dc:creator>
+
+        <description>&lt;p&gt;
+if you want your ckan to reside not at
+&lt;a class="ext-link" href="http://yourhost.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://yourhost.org/&lt;/a&gt;
+but rather e.g. at
+&lt;a class="ext-link" href="http://yourhost.org/ckan/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://yourhost.org/ckan/&lt;/a&gt;
+you can use this hint
+&lt;a class="ext-link" href="http://wiki.pylonshq.com/display/pylonsdocs/Configuration+Files"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.pylonshq.com/display/pylonsdocs/Configuration+Files&lt;/a&gt;
+and set ckan.site_url accordingly in your .ini.
+However, there are some instances where internal links are created without the required prefix.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1401#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1597</link>
+        <guid isPermaLink="false">http://localhost/ticket/1597</guid>
+        <title>#1597: Tag search - filter by group</title>
+        <pubDate>Thu, 22 Dec 2011 10:41:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I want to browse tags, but filtered for a particular group. Currently our tag API doesn't allow for filtering by group.
+&lt;/p&gt;
+&lt;p&gt;
+This is important for improving groups as communities within a site &lt;a class="closed ticket" href="http://localhost/ticket/1521" title="enhancement: [super] Groups UI and UX improvements in v1.6 from Cygri (closed: fixed)"&gt;#1521&lt;/a&gt;. It would be easy to do this by adding an option to filter by a group. BUT are there any other use cases that would warrant a more complete faceted tag search?
+&lt;/p&gt;
+&lt;p&gt;
+--
+&lt;/p&gt;
+&lt;p&gt;
+BTW I can currently draw a tag cloud for a group - I can get the top tags used in a group like this:
+&lt;/p&gt;
+&lt;p&gt;
+curl &lt;a class="ext-link" href="http://thedatahub.org/api/action/package_search"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/api/action/package_search&lt;/a&gt; -d
+'{"q":"groups:country-ca", "facet.field":"tags", "rows":"0"}'
+&lt;/p&gt;
+&lt;p&gt;
+but it only contains the top 20 tags.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1597#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1624</link>
+        <guid isPermaLink="false">http://localhost/ticket/1624</guid>
+        <title>#1624: Typo in dataset edit mode</title>
+        <pubDate>Mon, 09 Jan 2012 14:59:57 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Futher Information -&amp;gt; Further Information
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1624#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1591</link>
+        <guid isPermaLink="false">http://localhost/ticket/1591</guid>
+        <title>#1591: Upgrade CKAN 1.5 instances</title>
+        <pubDate>Wed, 21 Dec 2011 17:14:18 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN 1.5 installations need to be upgrade to 1.5.1.
+&lt;/p&gt;
+&lt;p&gt;
+Working methodically through the CKANs on &lt;a class="ext-link" href="http://datacatalogs.org/group/ckan"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datacatalogs.org/group/ckan&lt;/a&gt; :
+&lt;/p&gt;
+&lt;p&gt;
+At 1.5:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ckan-brazil &lt;a class="ext-link" href="http://br.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://br.ckan.net/&lt;/a&gt; s057 - DONE
+&lt;/li&gt;&lt;li&gt;ckan_ireland &lt;a class="ext-link" href="http://ie.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ie.ckan.net/&lt;/a&gt; s057 - DONE
+&lt;/li&gt;&lt;li&gt;cz-ckan-net &lt;a class="ext-link" href="http://cz.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://cz.ckan.net/&lt;/a&gt; s057 - DONE
+&lt;/li&gt;&lt;li&gt;datakilder-no &lt;a class="ext-link" href="http://no.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://no.ckan.net/&lt;/a&gt; s057 - DONE
+&lt;/li&gt;&lt;li&gt;data_gov_uk &lt;a class="ext-link" href="http://catalogue.data.gov.uk/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://catalogue.data.gov.uk/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;datacatalogs-org &lt;a class="ext-link" href="http://datacatalogs.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datacatalogs.org/&lt;/a&gt; s054 - DONE
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Other versions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;berlin-open-data &lt;a class="ext-link" href="http://daten.berlin.de/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://daten.berlin.de/&lt;/a&gt; CKAN hidden
+&lt;/li&gt;&lt;li&gt;ckan-italia &lt;a class="ext-link" href="http://it.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://it.ckan.net/&lt;/a&gt; 1.3.3b
+&lt;/li&gt;&lt;li&gt;ckan-poland &lt;a class="ext-link" href="http://pl.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pl.ckan.net/&lt;/a&gt; Down
+&lt;/li&gt;&lt;li&gt;data-norge-no &lt;a class="ext-link" href="http://data.norge.no/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://data.norge.no/&lt;/a&gt; CKAN hidden
+&lt;/li&gt;&lt;li&gt;datadotgc-ca &lt;a class="ext-link" href="http://datadotgc.ca/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datadotgc.ca/&lt;/a&gt; &lt;a class="ext-link" href="http://ca.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ca.ckan.net/&lt;/a&gt; 1.4.2a
+&lt;/li&gt;&lt;li&gt;datagm &lt;a class="ext-link" href="http://www.datagm.org.uk/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.datagm.org.uk/&lt;/a&gt; 1.3.3
+&lt;/li&gt;&lt;li&gt;datagov-ru &lt;a class="ext-link" href="http://datagov.ru/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datagov.ru/&lt;/a&gt; CKAN hidden
+&lt;/li&gt;&lt;li&gt;datospublicos-org &lt;a class="ext-link" href="http://datospublicos.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datospublicos.org/&lt;/a&gt; 1.4.2
+&lt;/li&gt;&lt;li&gt;iati-registry &lt;a class="ext-link" href="http://iatiregistry.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://iatiregistry.org/&lt;/a&gt; 1.5.1c
+&lt;/li&gt;&lt;li&gt;katalog-offene-daten-oesterreich &lt;a class="ext-link" href="http://offener.datenkatalog.at/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://offener.datenkatalog.at/&lt;/a&gt; 1.3.3b
+&lt;/li&gt;&lt;li&gt;nosdonnees_fr &lt;a class="ext-link" href="http://www.nosdonnees.fr/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.nosdonnees.fr/&lt;/a&gt; 1.3.1a
+&lt;/li&gt;&lt;li&gt;opengov-fi &lt;a class="ext-link" href="http://opengov.fi/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://opengov.fi/&lt;/a&gt; CKAN hidden
+&lt;/li&gt;&lt;li&gt;opengov_es &lt;a class="ext-link" href="http://opengov.es/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://opengov.es/&lt;/a&gt; 1.2
+&lt;/li&gt;&lt;li&gt;publicdata-eu &lt;a class="ext-link" href="http://publicdata.eu/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://publicdata.eu/&lt;/a&gt; 1.4.2a
+&lt;/li&gt;&lt;li&gt;the-data-hub &lt;a class="ext-link" href="http://thedatahub.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/&lt;/a&gt; 1.5.1
+&lt;/li&gt;&lt;li&gt;helsinki_finland &lt;a class="ext-link" href="http://hri.fi/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://hri.fi/&lt;/a&gt; CKAN hidden
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Now deleted from datacatalogs.org:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ckan-belgium &lt;a class="ext-link" href="http://be.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://be.ckan.net/&lt;/a&gt; Migrated
+&lt;/li&gt;&lt;li&gt;si-ckan-net &lt;a class="ext-link" href="http://si.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://si.ckan.net/&lt;/a&gt; migrated
+&lt;/li&gt;&lt;li&gt;gr-ckan-net &lt;a class="ext-link" href="http://gr.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://gr.ckan.net/&lt;/a&gt; Migrated
+&lt;/li&gt;&lt;li&gt;hu-ckan-net &lt;a class="ext-link" href="http://hu.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://hu.ckan.net/&lt;/a&gt; Migrated
+&lt;/li&gt;&lt;li&gt;ckan-lithuania &lt;a class="ext-link" href="http://lt.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lt.ckan.net/&lt;/a&gt; Migrated
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1591#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1521</link>
+        <guid isPermaLink="false">http://localhost/ticket/1521</guid>
+        <title>#1521: [super] Groups UI and UX improvements in v1.6 from Cygri</title>
+        <pubDate>Tue, 06 Dec 2011 11:12:41 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Various UX and UI improvements to groups.
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/feature-1521-groups-ux"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/feature-1521-groups-ux&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Improvedgroups"&gt;Improved groups&lt;/h2&gt;
+&lt;p&gt;
+From Richard Cyganiak.
+&lt;/p&gt;
+&lt;p&gt;
+This is a set of proposals to make the groups feature more powerful. As a result, currently separate CKAN instances such as &lt;a class="ext-link" href="http://ie.ckan.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ie.ckan.net/&lt;/a&gt; could be turned into a simple group on the &lt;a class="ext-link" href="http://thedatahub.org"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Data Hub&lt;/a&gt; without losing their separate identity.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;&lt;strong&gt;Group homepages:&lt;/strong&gt; Make the group pages more attractive and welcoming as homepages. The main Data Hub homepage does a great job at this now – can the group pages be made more like that? They're quite uninformative and bland right now.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Subdomains for groups:&lt;/strong&gt; Enable subdomains such as &lt;tt&gt;ie.thedatahub.org&lt;/tt&gt; as aliases for &lt;tt&gt;thedatahub.org/group/ireland&lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;&lt;strong&gt;Search within the group:&lt;/strong&gt; Have a big search box that searches just within the group on the group page, with a look like on &lt;a class="ext-link" href="http://thedatahub.org/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Have an &lt;strong&gt;Add a dataset to this group&lt;/strong&gt; link on the group page, perhaps in the sidebar.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;&lt;strong&gt;Navigation within the group:&lt;/strong&gt; Have some more navigation starting points on the group page, e.g., the Tags + Resource Format sidebar from &lt;a class="ext-link" href="http://thedatahub.org/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;&lt;strong&gt;Group documentation:&lt;/strong&gt; Add the ability to add more “About this group” text, or pages like “FAQ” and “Extra field conventions”.&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;The only place where one can currently put group-specific text is before the dataset list. Putting much text there is bad as it moves the datasets below the fold.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Can the top-level sections of a group's description be automatically turned into separate pages that are linked from the sidebar? With headlines &lt;em&gt;About&lt;/em&gt;, &lt;em&gt;Frequently Asked Questions&lt;/em&gt; and &lt;em&gt;How to get involved&lt;/em&gt;, we'd then get three links in the sidebar that point to &lt;tt&gt;datahub.org/group/ireland/about&lt;/tt&gt;, &lt;tt&gt;datahub.org/group/ireland/frequently-asked-questions&lt;/tt&gt;, &lt;tt&gt;datahub.org/group/ireland/how-to-get-involved&lt;/tt&gt;
+&lt;ul&gt;&lt;li&gt;RP: WONTFIX this is being considered for future (generally useful) but  cost/benefit here was low particularly as it wasn't clear what optimal implementation was.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Additional"&gt;Additional&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Display members of a group as well as admins (if less than 10? If more than 10 display count only ...?)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Better group index page (sort by number of dataset, allow searching ...) - &lt;a class="new ticket" href="http://localhost/ticket/1403" title="enhancement: Refactor groups index page (new)"&gt;#1403&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Add search to groups: &lt;a class="ext-link" href="http://thedatahub.org/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/group&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Way to filter by activity, number of datasets
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1597" title="enhancement: Tag search - filter by group (closed: fixed)"&gt;#1597&lt;/a&gt; &lt;strong&gt;Tag search, filtered by group&lt;/strong&gt;
+&lt;ul&gt;&lt;li&gt;RP: not worth it in terms of benefit/cost IMO
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;"Add Dataset" button on action bar&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Make it a dropdown? -&amp;gt; New Dataset / Existing Dataset&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Redirect Add Existing -&amp;gt; Edit&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Check permissions&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Expandable "about this group" box&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Implement simplest search-this-group box&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;turn the list of datasets into a dynamic list of search results&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;pagination&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Matching set of facets in the sidebar (matches 'real' search page)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Deleteable, displayed facets&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Nice-To-Have"&gt;Nice-To-Have&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Get rid of the old group_package_show action (confirm with team)
+&lt;/li&gt;&lt;li&gt;Tabbed "about this group" box (extract headers?)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Scrollable group members widget in the sidebar&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1521#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1641</link>
+        <guid isPermaLink="false">http://localhost/ticket/1641</guid>
+        <title>#1641: ckanext-archiver: Content-length header not reliable to check if resource has been modified</title>
+        <pubDate>Thu, 12 Jan 2012 13:53:40 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The download task in ckanext-archiver performs a HEAD request on the resource URL and checks if the "Content-Type" and "Content-Length" headers differ from the values stored to see if the resource needs to be updated &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The "Content-Length" header, although widely used, is not mandatory and some servers don't provide it, e.g.:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;$ curl -I http://portfolio.theglobalfund.org/en/IATI/Activities?countryCode=AFG
+HTTP/1.1 200 OK
+Cache-Control: private
+Transfer-Encoding: chunked
+Content-Type: text/xml
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.5
+Set-Cookie: ASP.NET_SessionId=3qhqekddgmre0kmk5cynq0sy; path=/; HttpOnly
+X-AspNetMvc-Version: 3.0
+content-disposition: attachment; filename=AFG_IATI_12012012.xml
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Thu, 12 Jan 2012 12:36:43 GMT
+&lt;/pre&gt;&lt;p&gt;
+Also worth noting that &lt;a class="ext-link" href="http://docs.python-requests.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;requests&lt;/a&gt;, the python library that uses ckanext-archiver, sets an "Accept-Encoding: gzip" header by default, which depending on the configuration of the remote web server, may prevent the "Content-Length" server from being sent, e.g.:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;$ curl -H "Accept-Encoding: gzip" -I http://iatistandard.org/published-temp/adb-activities.xml
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2012 12:12:46 GMT
+Server: Apache
+Last-Modified: Mon, 28 Nov 2011 15:55:35 GMT
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Type: application/xml
+curl -I http://iatistandard.org/published-temp/adb-activities.xml
+HTTP/1.1 200 OK
+Date: Thu, 12 Jan 2012 11:56:23 GMT
+Server: Apache
+Last-Modified: Mon, 28 Nov 2011 15:55:35 GMT
+Accept-Ranges: bytes
+Content-Length: 2686720
+Vary: Accept-Encoding
+Content-Type: application/xml
+&lt;/pre&gt;&lt;p&gt;
+All this can lead to some resources never getting updated, and of course the size property of the resource not being set.
+&lt;/p&gt;
+&lt;p&gt;
+As we need to download the resource anyway, it would be better to check if the real length of the data has been modified (and store it).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckanext-archiver/blob/0a189262dca4ab5b286fb6a02b4ab8a201f639f3/ckanext/archiver/tasks.py#L72"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-archiver/blob/0a189262dca4ab5b286fb6a02b4ab8a201f639f3/ckanext/archiver/tasks.py#L72&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1641#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1627</link>
+        <guid isPermaLink="false">http://localhost/ticket/1627</guid>
+        <title>#1627: favicon broken</title>
+        <pubDate>Tue, 10 Jan 2012 14:51:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On thedatahub.org the favicon doesn't display. i.e. the CKAN logo should appear in the browser's tab.
+&lt;/p&gt;
+&lt;p&gt;
+Original ticket &lt;a class="closed ticket" href="http://localhost/ticket/48" title="enhancement: Create favicon (closed: fixed)"&gt;#48&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1627#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1691</link>
+        <guid isPermaLink="false">http://localhost/ticket/1691</guid>
+        <title>#1691: paster user create command takes password on command line</title>
+        <pubDate>Fri, 20 Jan 2012 16:35:14 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Needed to support automated deployment more easily.
+&lt;/p&gt;
+&lt;p&gt;
+Est: 15m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1691#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1629</link>
+        <guid isPermaLink="false">http://localhost/ticket/1629</guid>
+        <title>#1629: permissions changed during upgrade to 1.5.1</title>
+        <pubDate>Tue, 10 Jan 2012 17:06:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This was seen on datacatalogs. When we upgraded it 1.5 to 1.5.1 we saw some permissions being reset so that it could be spammed. Anonymous and logged in users were given anon_editor and editor permissions. I don't know what the previous config was. Permissions for sysadmins remain unaffected.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1629#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1575</link>
+        <guid isPermaLink="false">http://localhost/ticket/1575</guid>
+        <title>#1575: tag punctuation lost in ca.ckan.net import</title>
+        <pubDate>Mon, 19 Dec 2011 17:47:40 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Last week I imported ca.ckan.net datasets into thedatahub.org, but the tags seem to have lost their dashes, underscores and dots.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1575#changelog</comments>
+    </item>
+ </channel>
+</rss>

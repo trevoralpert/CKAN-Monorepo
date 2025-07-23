@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      resource.patch on Ticket #336 – Attachment
+     – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="../../../raw-attachment/ticket/336/resource.patch" type="text/x-diff; charset=utf-8" title="Original Format" />
+        <link rel="up" href="../../../ticket/336.html" title="Ticket #336" />
+        <link rel="start" href="../../../wiki.1.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search CKAN" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="../../../chrome/common/js/folding.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          $('#preview table.code').enableCollapsibleColumns($('#preview table.code thead th.content'));
+        });
+      </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="../../../search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../prefs.html">Preferences</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li><a href="../../../report.html">View Tickets</a></li><li><a href="../../../search.html">Search</a></li><li class="last"><a href="../../../wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../ticket/336.html">Back to Ticket #336</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="../../../ticket/336.html">Ticket #336</a>: resource.patch</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">File resource.patch,
+                <span title="12005 bytes">11.7 KB</span>
+                (added by donovanhide, <a class="timeline" href="../../../timeline%3Ffrom=2010-06-01T17:02:58Z&amp;precision=second.html" title="2010-06-01T17:02:58Z in Timeline">4 years</a> ago)</th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+          
+  <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>ckan/controllers/rest.py</a>
+        </h2>
+        <pre>diff -r 170cac0b50ac ckan/controllers/rest.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/controllers/rest.py Mon May 31 16:11:40 2010 +0100">
+                      a
+                  </th>
+                  <th title="File b/ckan/controllers/rest.py Tue Jun 01 18:01:25 2010 +0100">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span>from ckan.lib.base import *</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>from ckan.lib.helpers import json</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>5</th><td class="r"><ins>from ckan.lib.urlnorm import norms</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>6</th><td class="l"><span>import ckan.model as model</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>7</th><td class="l"><span>import ckan.forms</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>8</th><td class="l"><span>from ckan.lib.search import make_search, SearchOptions</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>9</th><td class="l"><span>import ckan.authz</span> </td>
+                  </tr><tr>
+                          <th>9</th><th>10</th><td class="l"><span>import ckan.rating</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>11</th><td class="r"><ins>from collections import defaultdict</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>12</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>13</th><td class="l"><span>class RestController(BaseController):</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="resource.patch.html#L17">…</a></th>
+                  <th><a href="resource.patch.html#L19">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>19</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if register == 'revision':</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>20</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; revs = model.Session.query(model.Revision).all()</span> </td>
+                  </tr><tr>
+                          <th>19</th><th>21</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return self._finish_ok([rev.id for rev in revs])</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>22</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif register == u'resource':</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resources = model.Session.query(model.PackageResource).all()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; urls = [[norms(resource.url),resource.package.ckan_url] for resource in resources]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; results = defaultdict(list)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for resource, package in urls:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; results[resource].append(package)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>28</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return self._finish_ok(results)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>29</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif register == u'package' and not subregister:</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>30</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; query = ckan.authz.Authorizer().authorized_query(self._get_username(), model.Package)</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>31</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; packages = query.all() </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="resource.patch.html#L501">…</a></th>
+                  <th><a href="resource.patch.html#L510">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>501</th><th>510</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>502</th><th>511</th><td class="l"><span>&nbsp; &nbsp; def _finish_ok(self, response_data=None):</span> </td>
+                  </tr><tr>
+                          <th>503</th><th>512</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; response.status_int = 200</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>504</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; response.headers['Content-Type'] = 'application/json<del></del>'</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>513</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; response.headers['Content-Type'] = 'application/json<ins>;charset=utf-8</ins>'</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>505</th><th>514</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if response_data is not None:</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>515</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if request.params.has_key('callback'):</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>516</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return '%s(%s);' % (request.params['callback'],json.dumps(response_data))</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>506</th><th>517</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return json.dumps(response_data)</span> </td>
+                  </tr><tr>
+                          <th>507</th><th>518</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>508</th><th>519</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return ''</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>new file ckan/lib/urlnorm.py</a>
+        </h2>
+        <pre>diff -r 170cac0b50ac ckan/lib/urlnorm.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File /dev/null Thu Jan 01 00:00:00 1970 +0000">
+                      -
+                  </th>
+                  <th title="File b/ckan/lib/urlnorm.py Tue Jun 01 18:01:25 2010 +0100">
+                      +
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1</th><td class="r"><ins>#!/usr/bin/env python</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>3</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins>urlnorm.py - URL normalisation routines</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>5</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>6</th><td class="r"><ins>urlnorm normalises a URL by;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>7</th><td class="r"><ins>&nbsp; * lowercasing the scheme and hostname</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins>&nbsp; * taking out default port if present (e.g., http://www.foo.com:80/)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins>&nbsp; * collapsing the path (./, ../, etc)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins>&nbsp; * removing the last character in the hostname if it is '.'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>&nbsp; * unquoting any %-escaped characters</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>Available functions:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins>&nbsp; norms - given a URL (string), returns a normalised URL</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>&nbsp; norm - given a URL tuple, returns a normalised tuple</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>&nbsp; test - test suite</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>CHANGES:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>0.92 - unknown schemes now pass the port through silently</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins>0.91 - general cleanup</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins>&nbsp; &nbsp; &nbsp;- changed dictionaries to lists where appropriate</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>&nbsp; &nbsp; &nbsp;- more fine-grained authority parsing and normalisation</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>__license__ = """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>Copyright (c) 1999-2002 Mark Nottingham &lt;mnot@pobox.com&gt;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>Permission is hereby granted, free of charge, to any person obtaining a copy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>of this software and associated documentation files (the "Software"), to deal</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins>in the Software without restriction, including without limitation the rights</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>copies of the Software, and to permit persons to whom the Software is</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>furnished to do so, subject to the following conditions:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins>The above copyright notice and this permission notice shall be included in all</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>copies or substantial portions of the Software.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>SOFTWARE.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins>__version__ = "0.93"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>from urlparse import urlparse, urlunparse</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>from urllib import unquote</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>from string import lower</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>import re</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>_collapse = re.compile('([^/]+/\.\./?|/\./|//|/\.$|/\.\.$)')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>_server_authority = re.compile('^(?:([^\@]+)\@)?([^\:]+)(?:\:(.+))?$')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>_default_port = {&nbsp; &nbsp;'http': '80',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'https': '443',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'gopher': '70',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'news': '119',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'snews': '563',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'nntp': '119',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'snntp': '563',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'ftp': '21',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'telnet': '23',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'prospero': '191',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>_relative_schemes = [&nbsp; &nbsp;'http',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'https',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'news',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'snews',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'nntp',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'snntp',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'ftp',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'file',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins>_server_authority_schemes = [&nbsp; &nbsp;'http',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'https',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'news',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'snews',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'ftp',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>def norms(urlstring):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins>&nbsp; &nbsp; """given a string URL, return its normalised form"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>&nbsp; &nbsp; return urlunparse(norm(urlparse(urlstring)))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>def norm(urltuple):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>&nbsp; &nbsp; """given a six-tuple URL, return its normalised form"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins>&nbsp; &nbsp; (scheme, authority, path, parameters, query, fragment) = urltuple</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins>&nbsp; &nbsp; scheme = lower(scheme)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins>&nbsp; &nbsp; if authority:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; userinfo, host, port = _server_authority.match(authority).groups()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if host[-1] == '.':</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; host = host[:-1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; authority = lower(host)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if userinfo:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; authority = "%s@%s" % (userinfo, authority)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if port and port != _default_port.get(scheme, None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>102</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; authority = "%s:%s" % (authority, port)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins>&nbsp; &nbsp; if scheme in _relative_schemes:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>104</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; last_path = path</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>105</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; while 1:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; path = _collapse.sub('/', path, 1)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if last_path == path:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>108</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; last_path = path</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins>&nbsp; &nbsp; path = unquote(path)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>&nbsp; &nbsp; return (scheme, authority, path, parameters, query, fragment)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins>def test():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins>&nbsp; &nbsp; """ test suite; some taken from RFC1808. """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins>&nbsp; &nbsp; tests = {</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/.':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/./':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/foo/bar/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/..':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/foo/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../baz':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/foo/baz',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../..':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../../':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../../baz':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/baz',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../../../baz':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/../baz',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/../../../../baz':&nbsp; &nbsp; &nbsp; '/baz',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>128</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/./foo':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>129</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/../foo':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/../foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>130</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo.':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/foo.',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/.foo':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/.foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo..':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo..',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/..foo':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/..foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/./../foo':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/../foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/./foo/.':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/./bar':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo/../bar':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'/bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo//':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '/foo///bar//':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; '/foo/bar/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com:80/foo':&nbsp; &nbsp; &nbsp;'http://www.foo.com/foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com:8000/foo':&nbsp; &nbsp;'http://www.foo.com:8000/foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com./foo/bar.html': 'http://www.foo.com/foo/bar.html',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com.:81/foo':&nbsp; &nbsp; 'http://www.foo.com:81/foo',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com/%7ebar':&nbsp; &nbsp; &nbsp;'http://www.foo.com/~bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.foo.com/%7Ebar':&nbsp; &nbsp; &nbsp;'http://www.foo.com/~bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'ftp://user:pass@ftp.foo.net/foo/bar': 'ftp://user:pass@ftp.foo.net/foo/bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://USER:pass@www.Example.COM/foo/bar': 'http://USER:pass@www.example.com/foo/bar',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 'http://www.example.com./':&nbsp; &nbsp; &nbsp; 'http://www.example.com/',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; '-':&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'-',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; }</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; n_correct, n_fail = 0, 0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; test_keys = tests.keys()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; test_keys.sort()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>&nbsp; &nbsp; for i in test_keys:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print 'ORIGINAL:', i</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cleaned = norms(i)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; answer = tests[i]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>159</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print 'CLEANED: ', cleaned</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>160</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print 'CORRECT: ', answer</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>161</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if cleaned != answer:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>162</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "*** TEST FAILED"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>163</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n_fail = n_fail + 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>164</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>165</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n_correct = n_correct + 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>166</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>167</th><td class="r"><ins>&nbsp; &nbsp; print "TOTAL CORRECT:", n_correct</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>168</th><td class="r"><ins>&nbsp; &nbsp; print "TOTAL FAILURE:", n_fail</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>169</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>170</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>171</th><td class="r"><ins>if __name__ == '__main__':</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>172</th><td class="r"><ins>&nbsp; &nbsp; test()</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/model/core.py</a>
+        </h2>
+        <pre>diff -r 170cac0b50ac ckan/model/core.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/model/core.py Mon May 31 16:11:40 2010 +0100">
+                      a
+                  </th>
+                  <th title="File b/ckan/model/core.py Tue Jun 01 18:01:25 2010 +0100">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>203</th><th>203</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _dict['ratings_count'] = len(self.ratings)</span> </td>
+                  </tr><tr>
+                          <th>204</th><th>204</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _dict['resources'] = [{'url':res.url, 'format':res.format, 'description':res.description} for res in self.resources]</span> </td>
+                  </tr><tr>
+                          <th>205</th><th>205</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _dict['download_url'] = self.resources[0].url if self.resources else ''</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; _dict['ckan_url'] = self.ckan_url</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; _dict['relationships'] = [rel.as_dict(self) for rel in self.get_relationships()]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return _dict</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins>&nbsp; &nbsp; @property</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; def ckan_url(self):</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>212</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ckan_host = config.get('ckan_host', None)</span> </td>
+                  </tr><tr>
+                          <th>207</th><th>213</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ckan_host:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>208</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _dict['ckan_url'] = 'http://%s/package/%s' % (ckan_host, self.name)</span> </td>
+                      </tr><tr>
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _dict['relationships'] = [rel.as_dict(self) for rel in self.get_relationships()]</span> </td>
+                      </tr><tr>
+                        <th>210</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return _dict</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>214</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return 'http://%s/package/%s' % (ckan_host, self.name)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return None</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>211</th><th>216</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>212</th><th>217</th><td class="l"><span>&nbsp; &nbsp; def add_relationship(self, type_, related_package, comment=u''):</span> </td>
+                  </tr><tr>
+                          <th>213</th><th>218</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; '''Creates a new relationship between this package and a</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>doc/api.rst</a>
+        </h2>
+        <pre>diff -r 170cac0b50ac doc/api.rst</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/doc/api.rst Mon May 31 16:11:40 2010 +0100">
+                      a
+                  </th>
+                  <th title="File b/doc/api.rst Tue Jun 01 18:01:25 2010 +0100">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>92</th><td class="l"><span>+--------------------------------+-------------------------------------------------------------------+</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>93</th><td class="l"><span>| Rating Entity&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | ``/api/rest/rating/PACKAGE-NAME``&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>94</th><td class="l"><span>+--------------------------------+-------------------------------------------------------------------+</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>95</th><td class="r"><ins>| Resource Package&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| /api/rest/resource&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>96</th><td class="r"><ins>+--------------------------------+-------------------------------------------------------------------+</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>97</th><td class="l"><span>| Package Relationships Register | ``/api/rest/package/PACKAGE-NAME/relationships``&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span> </td>
+                  </tr><tr>
+                          <th>96</th><th>98</th><td class="l"><span>+--------------------------------+-------------------------------------------------------------------+</span> </td>
+                  </tr><tr>
+                          <th>97</th><th>99</th><td class="l"><span>| Package Relationships Register | ``/api/rest/package/PACKAGE-NAME/relationships/PACKAGE-NAME``&nbsp; &nbsp; &nbsp;|</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="resource.patch.html#L156">…</a></th>
+                  <th><a href="resource.patch.html#L158">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>156</th><th>158</th><td class="l"><span>+-------------------------------+--------+------------------+-------------------+</span> </td>
+                  </tr><tr>
+                          <th>157</th><th>159</th><td class="l"><span>| Rating Entity&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| GET&nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Rating&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | </span> </td>
+                  </tr><tr>
+                          <th>158</th><th>160</th><td class="l"><span>+-------------------------------+--------+------------------+-------------------+</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>161</th><td class="r"><ins>| Resource Package&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | GET&nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Resource-Package&nbsp; |</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>162</th><td class="r"><ins>+-------------------------------+--------+------------------+-------------------+</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>159</th><th>163</th><td class="l"><span>| Package Relationships Register| GET&nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Pkg-Relationships | </span> </td>
+                  </tr><tr>
+                          <th>160</th><th>164</th><td class="l"><span>+-------------------------------+--------+------------------+-------------------+</span> </td>
+                  </tr><tr>
+                          <th>161</th><th>165</th><td class="l"><span>| Package Relationship Entity&nbsp; &nbsp;| GET&nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Pkg-Relationship&nbsp; |</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="resource.patch.html#L214">…</a></th>
+                  <th><a href="resource.patch.html#L218">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>214</th><th>218</th><td class="l"><span>| Resource&nbsp; &nbsp; &nbsp; &nbsp; | { url: String, format: String, description: String,&nbsp; &nbsp; &nbsp; &nbsp; |</span> </td>
+                  </tr><tr>
+                          <th>215</th><th>219</th><td class="l"><span>|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| hash: String }&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|</span> </td>
+                  </tr><tr>
+                          <th>216</th><th>220</th><td class="l"><span>+-----------------+------------------------------------------------------------+</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>221</th><td class="r"><ins>|Resource-Package | { resource_url: String, [package_url, package_url, ...]&nbsp; &nbsp; |</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>222</th><td class="r"><ins>+-----------------+------------------------------------------------------------+</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>217</th><th>223</th><td class="l"><span>| Rating&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | { package: Name-String, rating: int }&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span> </td>
+                  </tr><tr>
+                          <th>218</th><th>224</th><td class="l"><span>+-----------------+------------------------------------------------------------+</span> </td>
+                  </tr><tr>
+                          <th>219</th><th>225</th><td class="l"><span>|Pkg-Relationships| [ Pkg-Relationship, Pkg-Relationship, ... ]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+
+        </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="../../../raw-attachment/ticket/336/resource.patch">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

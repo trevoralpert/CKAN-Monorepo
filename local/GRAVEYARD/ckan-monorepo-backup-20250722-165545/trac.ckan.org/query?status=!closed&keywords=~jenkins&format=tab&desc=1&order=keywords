@@ -1,0 +1,5 @@
+id	summary	keywords	status	owner	type	priority
+2341	Fix Jenkins issue when testing branches that contain model changes	jenkins	accepted	seanh	enhancement	minor
+2342	Fix Jenkins issue when testing branches with different solr schema versions	jenkins	accepted	seanh	enhancement	minor
+2336	Move Jenkins' install script into ckan core so it can be versioned	deployment jenkins	accepted	seanh	enhancement	minor
+2542	Create jenkins job to run ckanbuild, and run tests	deployment jenkins	accepted	seanh	enhancement	awaiting triage

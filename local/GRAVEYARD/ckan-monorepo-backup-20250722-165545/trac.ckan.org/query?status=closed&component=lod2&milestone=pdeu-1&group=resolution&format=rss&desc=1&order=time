@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=lod2&amp;milestone=pdeu-1&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=lod2&amp;milestone=pdeu-1&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1159</link>
+        <guid isPermaLink="false">http://localhost/ticket/1159</guid>
+        <title>#1159: Add RDFa to CKAN package pages</title>
+        <pubDate>Wed, 25 May 2011 15:38:27 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+RDFa can be used as a simple way to expose linked data or at least sameAs the API version of the data but we need to make sure we do not expose anything different from the "official" representation.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1159#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1158</link>
+        <guid isPermaLink="false">http://localhost/ticket/1158</guid>
+        <title>#1158: Put PDEU into read-only mode and remove unneeded functions</title>
+        <pubDate>Wed, 25 May 2011 15:36:26 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+PDEU should be in a mode where:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Users cannot edit or create packages
+&lt;/li&gt;&lt;li&gt;Users cannot sign up on their own
+&lt;/li&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;AuthorizationGroups?&lt;/a&gt; and &lt;a class="missing wiki"&gt;RevisionHistory?&lt;/a&gt; is completely gone from the UI
+&lt;/li&gt;&lt;li&gt;Groups have been repurposed as Subjects
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1158#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1157</link>
+        <guid isPermaLink="false">http://localhost/ticket/1157</guid>
+        <title>#1157: A simple theme for publicdata.eu, CKAN</title>
+        <pubDate>Wed, 25 May 2011 15:32:53 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Change the visual style of CKAN to be more like these sites:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;GitHub?&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Quora
+&lt;/li&gt;&lt;li&gt;Google Projects
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This does not include major UX work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1157#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1156</link>
+        <guid isPermaLink="false">http://localhost/ticket/1156</guid>
+        <title>#1156: Scraping harvesters for Paris and Vienna Catalogues</title>
+        <pubDate>Wed, 25 May 2011 15:30:28 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Import metadata from both sources into PDEU via the Harvesting framework but by scraping their respective catalogue pages.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://data.wien.gv.at/katalog/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://data.wien.gv.at/katalog/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://opendata.paris.fr/opendata/jsp/site/Portal.jsp"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://opendata.paris.fr/opendata/jsp/site/Portal.jsp&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1156#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1155</link>
+        <guid isPermaLink="false">http://localhost/ticket/1155</guid>
+        <title>#1155: Harvester for data.london.gov.uk</title>
+        <pubDate>Wed, 25 May 2011 15:28:38 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Write a harvester for data.london.gov.uk to import catalogue metadata into PDEU. API (or at least documentation) is available at: &lt;a class="ext-link" href="http://sourceforge.net/projects/londondatastore/files/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://sourceforge.net/projects/londondatastore/files/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1155#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1174</link>
+        <guid isPermaLink="false">http://localhost/ticket/1174</guid>
+        <title>#1174: API Representation Registry</title>
+        <pubDate>Thu, 02 Jun 2011 21:43:12 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+As CKAN grows, more and more optional representations of packages will become used. Besides RDF (which is the motivation for this ticket), support for DSPL, home-grown XML, or CSV listings is imaginable.
+&lt;/p&gt;
+&lt;p&gt;
+To properly support this CKAN should have an extensible representation registry that can be extended when new output types become available (and without changing the API in the process). This needs to integrate in two places:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We need to add support for file format extensions to the package handler and REST API.
+&lt;/li&gt;&lt;li&gt;We need to add HTTP content type negotiation (Accept headers).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+To support this we should have a registry with two registers:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;to map format extensions to mime types (e.g. "json" -&amp;gt; "application/json")
+&lt;/li&gt;&lt;li&gt;to map mime types and entity types to converter functions (e.g. 8"application/json", ckan.model.Package) -&amp;gt; func(obj, mime_type) )
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This should be set up on load_environment so that IConfigurer plugins can feed into it.
+&lt;/p&gt;
+&lt;p&gt;
+The registry should then first be added to _finish in the REST API (which needs to be refactored to be passed the {format} part of the URL if one is given. Based on the format part and HTTP headers, an appropriate representation can be generated by the registry and then be returned to the user.
+&lt;/p&gt;
+&lt;p&gt;
+Forwarding of requests to the regular WUI controllers with Accept headers set or a format specified can be implemented in a separate effort.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1174#changelog</comments>
+    </item>
+ </channel>
+</rss>

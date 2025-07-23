@@ -1,0 +1,76 @@
+id	summary	owner	type	priority	component	resolution
+1785	Replace 'Revisions' page with site-wide activity stream	seanh	enhancement	awaiting triage	ckan	
+2341	Fix Jenkins issue when testing branches that contain model changes	seanh	enhancement	minor	ckan	
+2342	Fix Jenkins issue when testing branches with different solr schema versions	seanh	enhancement	minor	ckan	
+2362	Improve plugin documentaion, including examples.	toby	enhancement	awaiting merge	ckan	
+2430	Look into marking tickets as dependent on other tickets in trac	seanh	enhancement	major	ckan	
+2431	Trac git integration	seanh	enhancement	major	ckan	
+2475	Upgrade trac.ckan.org to trac 0.12.3	seanh	enhancement	awaiting triage	ckan	
+2477	Add extensions section to readthedocs	seanh	enhancement	awaiting triage	ckan	
+2478	Get NeverNotifyUpdaterPlugin installed on trac.ckan.org	seanh	enhancement	awaiting triage	ckan	
+2516	Make 'Assign to:' field on trac.ckan.org into a dropdown list	seanh	enhancement	awaiting triage	ckan	
+2466	Fix spam handling on trac	seanh	task	major	ckan	
+2294	Unauthorized action on Data API gets 302 rather than 401 or similar	kindly	defect	minor	ckan	
+2335	Unicode characters don't work in CKAN ini files	seanh	defect	awaiting triage	ckan	
+2405	Improvements to data viewer embed	icmurray	defect	major	ckan	
+2520	Document undocumented config options	seanh	defect	awaiting triage	ckan	
+235	Resource format normalization and detection	tobes	enhancement	awaiting triage	ckan	
+250	RDF link in Atom feed	icmurray	enhancement	awaiting triage	ckan	
+2203	Data Viewer support for PDF	kindly	enhancement	minor	ckan	
+2334	Improved data import	kindly	enhancement	awaiting triage	ckan	
+2337	Sort out ini file confusion in docs	seanh	enhancement	awaiting triage	ckan	
+2370	Add examples of all config settings in default config file	seanh	enhancement	awaiting triage	ckan	
+2473	Make datstorer store field ordering in _meta field	kindly	enhancement	awaiting triage	ckan	
+2619	Omit private datasets from public activity streams	seanh	enhancement	awaiting triage	ckan	
+2668	Permission for sysadmin to read a deleted publisher	ross	defect	minor	ckan	fixed
+2371	fanstatic integration	toby	enhancement	minor	ckan	fixed
+2519	Dataproxy (converters) enhancement	ross	enhancement	awaiting triage	ckan	fixed
+2536	cleanup activity streams	toby	enhancement	awaiting merge	ckan	fixed
+2575	Licenses have i18n issues (was Inconsistent language on license dropdown)	toby	enhancement	awaiting merge	ckan	fixed
+2577	Dataproxy raises 500 when it can't get CSV	ross	enhancement	awaiting triage	ckan	fixed
+2629	Move ckanext-examplevocabs into master and document	seanh	enhancement	awaiting triage	ckan	duplicate
+2632	check allowed helpers exist	toby	enhancement	awaiting merge	ckan	fixed
+2671	fix allow_partial_update	toby	enhancement	awaiting triage	ckan	fixed
+2736	Archiver fixes	ross	enhancement	awaiting triage	ckan	wontfix
+2406	Errors in source install doc	kindly	defect	awaiting triage	ckan	
+2415	Confusing message on attempting to register new account with upper case	kindly	defect	awaiting triage	ckan	
+2485	Encourage leak containment by limiting the number of requests a CKAN process serves	icmurray	defect	awaiting triage	ckan	
+2745	Password reset returns an exception if the key parameter is missing		defect	major	ckan	
+1745	Dataset search UX improvements as of Jan 2012		enhancement	awaiting triage	ckan	
+2257	cleanup template vars	toby	enhancement	awaiting triage	ckan	
+2291	DataStorer incorrectly attempts to store JSON in DataStore	kindly	enhancement	awaiting triage	ckan	
+2298	Add sort-by controls to the search results page	icmurray	enhancement	minor	ckan	
+2320	Introduce new state: archived		enhancement	awaiting triage	ckan	
+2321	Use resource names/titles in URLs		enhancement	awaiting triage	ckan	
+2324	Link API docs to relevant version not just latest		enhancement	awaiting triage	ckan	
+2328	Link to Catalog API for each Dataset, Group and Tag		enhancement	awaiting triage	ckan	
+2333	Introduce new resource type datastore		enhancement	awaiting triage	ckan	
+2350	Hooks  in package controller for validating form data	icmurray	enhancement	minor	ckan	
+2407	'Access denied' message is unhelpful	amercader	enhancement	awaiting triage	ckan	
+2426	Get rid of CKAN's formalchemy dependency	kindly	enhancement	awaiting triage	ckan	
+2427	Reduce cruft installed into CKAN's virtualenv due to Pylons	kindly	enhancement	awaiting triage	ckan	
+2479	Meanings of Author and Maintainer fields are unclear		enhancement	awaiting triage	ckan	
+2480	Better message when dataset has no resources		enhancement	awaiting triage	ckan	
+2483	Non-local resources should not have Download links		enhancement	awaiting triage	ckan	
+2529	DataHub (or CKAN) widgets		enhancement	awaiting triage	ckan	
+2530	DataHub purge fails on some revisions	kindly	enhancement	minor	ckan	
+2543	facet.sort is not available in the package_search action		enhancement	awaiting triage	ckan	
+2572	clean up stats plugin	toby	enhancement	awaiting triage	ckan	
+2579	move sort_by functions into lib.helpers	toby	enhancement	awaiting triage	ckan	
+2582	Do not hide notes / readme on dataset pages		enhancement	blocker	ckan	
+2585	Escape solr control characters in search queries, add advanced search screen		enhancement	awaiting triage	ckan	
+2625	Add i18n strings from non-core but supported extensions to ckan.pot file		enhancement	awaiting triage	ckan	
+2663	h.resource_display_name needs love	toby	enhancement	awaiting triage	ckan	
+2679	Change default behaviour of TemplateController.view to 404.	icmurray	enhancement	minor	ckan	
+2708	limit extra data for package/group show	kindly	enhancement	awaiting triage	ckan	
+2733	Datastore logic functions	johnglover	enhancement	major	ckan	
+2758	file storage gives error if config not available but no useful user information	toby	enhancement	awaiting triage	ckan	
+2773	About page needs improving	markw	enhancement	awaiting triage	ckan	
+2788	Speed improvements on creating/updating and indexing	amercader	enhancement	awaiting triage	ckan	
+2829	Archiver fails on 403 http response	johnglover	enhancement	awaiting triage	ckan	
+2838	Context variables accepted by action functions need to be documented		enhancement	awaiting triage	ckan	
+2885	Labels (editor, admin) not translated in authorization pages for datasets or groups		enhancement	awaiting triage	ckan	
+2889	Support JSON values in extras, when returning JSON from API		enhancement	awaiting triage	ckan	
+2603	Remove deprecated 'fields' parameter from resource_search	icmurray	refactor	minor	ckan	
+2621	Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete	icmurray	refactor	minor	ckan	
+2243	Fix ckanext-example	seanh	enhancement	minor	ckan	

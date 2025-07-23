@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~authz&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~authz&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1278</link>
+        <guid isPermaLink="false">http://localhost/ticket/1278</guid>
+        <title>#1278: Refactor authorized_query calls</title>
+        <pubDate>Mon, 15 Aug 2011 13:32:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+There are some functions that still use the Auhtorizer().authorized_query method:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;./ckan/controllers/authorization_group.py:24:        query = ckan.authz.Authorizer().authorized_query(c.user, model.AuthorizationGroup)
+./ckan/lib/base.py:237:        groups = ckan.authz.Authorizer.authorized_query(c.user, model.Group,
+./ckan/lib/search/sql.py:55:        q = authz.Authorizer().authorized_query(username, model.Group)
+./ckan/lib/search/sql.py:118:        q = authz.Authorizer().authorized_query(self.options.get('username'), model.Package)
+./ckan/logic/action/get.py:154:    query = Authorizer().authorized_query(user, model.Group, model.Action.EDIT)
+./ckan/tests/test_authz.py:158:        q = self.authorizer.authorized_query(self.notadmin.name, model.Package)
+./ckan/tests/test_authz.py:353:        q = self.authorizer.authorized_query(self.notmember.name, model.Package)
+./ckan/tests/test_authz.py:357:        q = self.authorizer.authorized_query(self.member.name, model.Package)
+./ckan/tests/functional/test_authorization_group.py:44:        group_count = Authorizer.authorized_query(u'russianfan', model.AuthorizationGroup).count()
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1278#changelog</comments>
+    </item>
+ </channel>
+</rss>

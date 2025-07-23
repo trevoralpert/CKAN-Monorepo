@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.4-sprint-4&amp;group=status&amp;desc=1&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.4-sprint-4&amp;group=status&amp;desc=1&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1051</link>
+        <guid isPermaLink="false">http://localhost/ticket/1051</guid>
+        <title>#1051: Ability to set custom favicon</title>
+        <pubDate>Mon, 21 Mar 2011 10:26:00 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+Allow deployers to set a URL pointing to their own favicon
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1051#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1058</link>
+        <guid isPermaLink="false">http://localhost/ticket/1058</guid>
+        <title>#1058: Give 400 error (not 500) for invalid locale or package_form</title>
+        <pubDate>Mon, 28 Mar 2011 08:51:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Examples which prompt annoying exception emails:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://ckan.net/locale?locale=ja
+Module ckan.i18n:21 in set_session_locale
+           assert locale in _KNOWN_LOCALES
+&lt;/pre&gt;&lt;p&gt;
+A bot has caused these:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://ca.ckan.net/package/new?package_form=gov
+Module ckan.forms.registry:32 in get_fieldset
+               raise ValueError('Could not find package_form name %r in those found: \n%r' % (package_form, [en.name for en in entrypoints]))
+ValueError: Could not find package_form name u'gov)' in those found: ['gov', 'standard', 'ca']
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1058#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/841</link>
+        <guid isPermaLink="false">http://localhost/ticket/841</guid>
+        <title>#841: Caching docs (as a whole)</title>
+        <pubDate>Thu, 02 Dec 2010 16:54:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Documentation article on caching / improving performance. (To complement configuration docs.)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Different sorts of cache - beaker style, etags, package_dict in search results(?)
+&lt;/li&gt;&lt;li&gt;How each one affects performance
+&lt;/li&gt;&lt;li&gt;How to turn them on/off and configure them
+&lt;/li&gt;&lt;li&gt;Is it possible to bypass each of them in the browser or with wget/curl?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/841#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1036</link>
+        <guid isPermaLink="false">http://localhost/ticket/1036</guid>
+        <title>#1036: Add tests for three functions in ckan/model/user.py</title>
+        <pubDate>Mon, 14 Mar 2011 18:37:20 GMT</pubDate>
+        
+        <dc:creator>johnlawrenceaspden</dc:creator>
+
+        <description>&lt;p&gt;
+create a new test file ckan/model/test_user.py
+&lt;/p&gt;
+&lt;p&gt;
+add tests for the following three functions in ckan/model/user.py
+&lt;/p&gt;
+&lt;p&gt;
+number_of_edits,
+number_administered_packages,
+search
+&lt;/p&gt;
+&lt;p&gt;
+merged in in changeset 0046f83aedcf
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1036#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1047</link>
+        <guid isPermaLink="false">http://localhost/ticket/1047</guid>
+        <title>#1047: Package edit form claims you're not logged in at the end when you are</title>
+        <pubDate>Thu, 17 Mar 2011 17:55:56 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+At the bottom, it says something like
+&lt;/p&gt;
+&lt;p&gt;
+Author: Bob Bumgardner
+Since you have not signed in this will just be your IP address. Click here to sign in before saving (opens in new window).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1047#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1048</link>
+        <guid isPermaLink="false">http://localhost/ticket/1048</guid>
+        <title>#1048: Complete making groups versioned</title>
+        <pubDate>Thu, 17 Mar 2011 18:47:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Deleting a group changes state to 'deleted' rather than purging it
+&lt;/li&gt;&lt;li&gt;Adding authz tests for deleted groups
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1048#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1052</link>
+        <guid isPermaLink="false">http://localhost/ticket/1052</guid>
+        <title>#1052: Authz holes</title>
+        <pubDate>Mon, 21 Mar 2011 12:05:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+No authz on:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Group creation/edit/listing
+&lt;/li&gt;&lt;li&gt;Package relationship create/edit/delete
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1052#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1006</link>
+        <guid isPermaLink="false">http://localhost/ticket/1006</guid>
+        <title>#1006: Deprecate stable branch</title>
+        <pubDate>Fri, 25 Feb 2011 09:09:56 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Now that we have release branches we should deprecate the stable branch (ie. make sure it is no longer a head and then do --close-branch and merge into default one last time).
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 10m (giving high priority because of low cost)
+&lt;/p&gt;
+&lt;p&gt;
+(Assigning to dread as he has been managing the stable branch).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1006#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1045</link>
+        <guid isPermaLink="false">http://localhost/ticket/1045</guid>
+        <title>#1045: Group identified by ID in API</title>
+        <pubDate>Thu, 17 Mar 2011 11:17:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;pre class="wiki"&gt;http://ckan.net/api/2/rest/group
+&lt;/pre&gt;&lt;p&gt;
+returns group IDs but I can only reach a group by name:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://ckan.net/api/2/rest/group/economics
+&lt;/pre&gt;&lt;p&gt;
+when I also want to get a group by ID:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://ckan.net/api/2/rest/group/04fb43d2-8ddf-4485-9bf5-66d47d3672f3
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1045#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1054</link>
+        <guid isPermaLink="false">http://localhost/ticket/1054</guid>
+        <title>#1054: Ordering of resources</title>
+        <pubDate>Thu, 24 Mar 2011 12:20:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Changing an old resource and creating a new resource on the end results in the old resource moving to the end in the ordering.
+&lt;/p&gt;
+&lt;p&gt;
+This breaks tests:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;(ckanext-dgu) ckanext/dgu/tests/ons/test_ons_loader.py:TestOnsLoadBasic.test_fields
+&lt;/li&gt;&lt;li&gt;(ckanext-importlib) ckanext/importlib/tests/test_loader.py:TestLoaderInsertingResources.test_0_reload
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+You can make a ckan test break with this patch:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;diff -r e6643cf1324c ckan/tests/models/test_resource.py
+--- a/ckan/tests/models/test_resource.py        Wed Mar 23 13:25:52 2011 +0000
++++ b/ckan/tests/models/test_resource.py        Wed Mar 23 19:22:35 2011 +0000
+@@ -297,6 +297,8 @@
+                'url':self.urls[1], 'format':u'OTHER FORMAT',
+                'description':self.description, 'hash':self.hash,
+                'id':original_res_ids[2]},
++            { #new
++                'url':'new'},
+            ]
+        pkg.update_resources(res_dicts)
+        model.repo.commit_and_remove()
+&lt;/pre&gt;&lt;p&gt;
+There seems to be a problem with vdm creating a replacement Resource for the old resource - because it has a duplicate position it is put to the end by the SQLAlchemy ordering_list function.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1054#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1001</link>
+        <guid isPermaLink="false">http://localhost/ticket/1001</guid>
+        <title>#1001: API should use normal user credentials if available</title>
+        <pubDate>Wed, 23 Feb 2011 19:35:05 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When using the API 'locally' i.e. from the CKAN instance (as would be the case with an ajax interface) the API, especially that allowing READ requests should use the normal user credentials if they are available prior to looking for an API key.
+&lt;/p&gt;
+&lt;p&gt;
+The key change appears to be to change _get_user_for_apikey method in lib/base.py &lt;a class="missing wiki"&gt;BaseController?&lt;/a&gt; to check the c.user attribute (may wish to rename as the name may now be a bit misleading ...).
+&lt;/p&gt;
+&lt;p&gt;
+This is critical to incorporating any ajax editing into the frontend.
+&lt;/p&gt;
+&lt;p&gt;
+As part of this ticket we should do a general consolidation of the identification system in lib/base.py so that both api_key and normal user auth lead to the same set of auth-related objects being available (suggest c.user and c.userobj and c.author).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1001#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1031</link>
+        <guid isPermaLink="false">http://localhost/ticket/1031</guid>
+        <title>#1031: User lookup API</title>
+        <pubDate>Thu, 10 Mar 2011 18:06:59 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add an api for searching users. This is needed for any kind of ajax autocomplete (needed for anywhere we want to add users).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;API location: /api/util/user/lookup?q=querystr&amp;amp;limit=10
+&lt;/li&gt;&lt;li&gt;Return json objects containing {id: ..., name: ..., fullname: ...}
+&lt;/li&gt;&lt;li&gt;Put in a module called controllers/apiv2/user.py
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1031#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1055</link>
+        <guid isPermaLink="false">http://localhost/ticket/1055</guid>
+        <title>#1055: @search_related tests not running</title>
+        <pubDate>Thu, 24 Mar 2011 16:47:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Tests marked decorated "@search_related" should only be run against postgresql, but in fact they don't get run at all.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1055#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,69 @@
+id,summary,component,owner,type,priority,milestone
+1232,[super] Interface improvements,ckan,,enhancement,awaiting triage,ckan-backlog
+1571,[super] Issues Extension,ckan,rgrp,enhancement,awaiting triage,ckan-backlog
+1578,[super] Re-enable and refactor ratings,ckan,,enhancement,awaiting triage,ckan-backlog
+1235,[super] Search Improvements,ckan,,enhancement,major,ckan-future
+1717,[super] Search UX improvements,ckan,,enhancement,awaiting triage,ckan-backlog
+1343,"[super] User related improvements (login, user pages etc)",ckan,rgrp,enhancement,major,ckan-backlog
+2748,add 'add new resource' button to sidebar,ckan,,enhancement,awaiting triage,demo phase 5
+1647,add links to ckan discuss & dev to thedatahub,ckan,,enhancement,trivial,ckan-backlog
+2777,bug: user attributes,ckan,,enhancement,awaiting triage,
+2718,can't add dataset to more than one group,ckan,toby,enhancement,awaiting triage,demo phase 4
+2751,check translations for full demo site,ckan,toby,enhancement,critical,demo phase 5
+1314,ckanclient search - generator improvements,ckan,,enhancement,minor,ckan-backlog
+2873,ckanext-qa: dataset summary incorrect,ckan,toby,defect,awaiting triage,demo phase 4
+2912,ckanext/organizations: Neither public or private initially selected when adding dataset,ckan,,defect,awaiting triage,ckan-v1.8.1
+2244,clean up auth,ckan,toby,enhancement,awaiting triage,ckan-future
+3030,clean up helper functions,ckan,,enhancement,awaiting triage,
+2572,clean up stats plugin,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+2257,cleanup template vars,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+3013,common-error-messages is unreadable,ckan,dominik,defect,awaiting triage,
+2726,confusing logic on data preview formats,ckan,toby,enhancement,awaiting triage,demo phase 5
+2697,create dataset validation,ckan,johnmartin,enhancement,awaiting triage,demo phase 5
+3012,data.gov auth,ckan,toby,enhancement,awaiting triage,
+2326,dataset permalinks,ckan,toby,enhancement,minor,ckan-future
+1832,dataset purge API,ckan,,enhancement,critical,ckan-backlog
+2897,db_to_form_package_schema() crashes historical dataset page,ckan,,defect,awaiting triage,ckan-v1.8.1
+2815,"db_to_form_package_schema() strips tracking summary, isopen",ckan,seanh,defect,awaiting triage,ckan-v1.8.1
+1544,delete old git branches,ckan,,task,minor,ckan-backlog
+2728,deleted group shows on search index - for admins,ckan,toby,defect,awaiting triage,demo phase 4
+2721,deleted groups should not show on 'Add to Groups' dropdown,ckan,toby,defect,awaiting triage,demo phase 4
+1447,disk space leakage,ckan,kindly,defect,major,ckan-backlog
+2686,enabling datastore & data API breaks recline,ckan,,defect,critical,ckan-backlog
+2543,facet.sort is not available in the package_search action,ckan,,enhancement,awaiting triage,ckan-v1.9
+2758,file storage gives error if config not available but no useful user information,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+2902,genshi is used in Group controller,ckan,,enhancement,awaiting triage,ckan 2.0
+2663,h.resource_display_name needs love,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+2810,heroku ckan support,ckan,,enhancement,awaiting triage,ckan-future
+2952,incorporate javascriopt translations into translations workflow,ckan,seanh,enhancement,minor,ckan 2.0
+2708,limit extra data for package/group show,ckan,kindly,enhancement,awaiting triage,ckan-v1.9
+2282,log api calls for users,ckan,toby,enhancement,awaiting triage,ckan-future
+2790,logic.action.user_show is slow,ckan,kindly,enhancement,major,demo phase 4
+2583,make sure that we implement authentication where needed,ckan,toby,enhancement,awaiting triage,demo phase 5
+2698,markdown preview,ckan,toby,enhancement,minor,demo phase 4
+1606,metadata license config option,ckan,,enhancement,awaiting triage,ckan-backlog
+2784,model dictize sensitive data,ckan,icmurray,defect,awaiting triage,
+2579,move sort_by functions into lib.helpers,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+2857,no UI to follow another user although option on dashboard,ckan,toby,defect,awaiting triage,demo phase 4
+2854,no way to see which dataset an app is related to on /apps page,ckan,,enhancement,awaiting triage,demo phase 5
+2863,non-admin users can edit other's draft datasets,ckan,toby,defect,awaiting triage,demo phase 4
+2768,normalise excel to xls,ckan,toby,enhancement,awaiting triage,demo phase 5
+2573,package_search does not allow solr's per-field facet parameters,ckan,,enhancement,awaiting triage,ckan-future
+1317,password reset - improve user search,ckan,,defect,trivial,ckan-backlog
+2395,paster db clean/init don't work when spatial extension enabled,ckan,,defect,minor,ckan-backlog
+2766,prevent draft datasets making it to activity stream,ckan,seanh,enhancement,blocker,demo phase 4
+1668,repoze version discrepency,ckan,,defect,awaiting triage,ckan-backlog
+2823,resource additional info title order,ckan,toby,enhancement,minor,demo phase 5
+2896,resource_create crashes on ValidationErrors with KeyError: 'resources',ckan,,defect,awaiting triage,ckan-v1.8.1
+2729,searching for tags:[tag] works but tag:[tag] doesn't,ckan,kindly,enhancement,awaiting triage,ckan-backlog
+1201,seperate out logic in atom feeds to logic layer.,ckan,,enhancement,awaiting triage,ckan-backlog
+2673,simplify set of options for resources,ckan,,enhancement,minor,
+2900,snippets/package_list.html template crashes on dataset that has no 'notes',ckan,,defect,awaiting triage,ckan-v1.8.1
+3027,solr for 2.0,ckan,kindly,enhancement,awaiting triage,
+2786,target blank HTML downloads,ckan,,enhancement,awaiting triage,demo phase 5
+2762,test_related.py crashes,ckan,,defect,awaiting triage,ckan-v1.8
+1414,track user log-ins on thedatahub.org,ckan,,enhancement,awaiting triage,ckan-backlog
+2644,user dashboard for demo theme,ckan,shevski,enhancement,minor,demo phase 5
+2869,user profile not linked on disqus until page refresh,ckan,,defect,awaiting triage,demo phase 4
+2780,way for admins to undelete datasets,ckan,toby,enhancement,awaiting triage,demo phase 4
+2699,workflow for associating datasets with groups,ckan,shevski,enhancement,awaiting triage,demo phase 5

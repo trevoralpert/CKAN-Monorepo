@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=amercader&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=amercader&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2949</link>
+        <guid isPermaLink="false">http://localhost/ticket/2949</guid>
+        <title>#2949: Reenable Data API button on the new theme</title>
+        <pubDate>Mon, 01 Oct 2012 16:04:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The checks to show or not the button need to be updated for the latest datastore version
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2949#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1152</link>
+        <guid isPermaLink="false">http://localhost/ticket/1152</guid>
+        <title>#1152: True support for generic CSW servers</title>
+        <pubDate>Mon, 23 May 2011 09:02:14 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The CSW harvesters implemented at the moment were developed with the DGU
+project in mind, and they assume all remote CSW servers to implement the
+Gemini 2 specification. Gemini 2 is the profile defined in the UK for
+INSPIRE complying metadata, so obviously catalogs from other countries
+or non-INSPIRE complying ones won't be able to be harvested.
+&lt;/p&gt;
+&lt;p&gt;
+The changes needed to support generic CSW servers (i.e. those
+implementing the ISO 19139 profile) are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Handling the validators (right now are hardcoded in the harvester
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+code). This probably involves issues discussed in the CREP 3
+(ticket &lt;a class="new ticket" href="http://localhost/ticket/1134" title="CREP: CREP0003: Description and Configuration of Harvesters (new)"&gt;#1134&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Changes in the model to adapt the specification to ISO 19139
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Renaming objects and classes which are now Gemini-centric
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+List of CSW servers tested:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1152#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1818</link>
+        <guid isPermaLink="false">http://localhost/ticket/1818</guid>
+        <title>#1818: Spatial metadata editor</title>
+        <pubDate>Mon, 20 Feb 2012 18:52:21 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2.5d
+&lt;/p&gt;
+&lt;p&gt;
+Right now users need to manually enter a geojson value in the 'spatial' extra field in order to define a geometry for a dataset.
+&lt;/p&gt;
+&lt;p&gt;
+We need a map widget on the edit form that allows users to draw the geometry on top of a map. This will be based on the draw functions offered by &lt;a class="missing wiki"&gt;OpenLayers?&lt;/a&gt; &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;, &lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Things to take into account:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integration with the form sections.
+&lt;/li&gt;&lt;li&gt;Allow some degree of configuration (default extent, limit geometry types...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://openlayers.org/dev/examples/draw-feature.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://openlayers.org/dev/examples/draw-feature.html&lt;/a&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt; &lt;a class="ext-link" href="http://openlayers.org/dev/examples/modify-feature.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://openlayers.org/dev/examples/modify-feature.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1818#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2407</link>
+        <guid isPermaLink="false">http://localhost/ticket/2407</guid>
+        <title>#2407: 'Access denied' message is unhelpful</title>
+        <pubDate>Mon, 21 May 2012 15:01:40 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+This chap tried to use the API to add a dataset to a group and got the uninformative message 'Access denied':
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The problem was he didn't have access to the group. A message like 'You don't have access to the group "LODcloud"' would have been clearer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2407#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2788</link>
+        <guid isPermaLink="false">http://localhost/ticket/2788</guid>
+        <title>#2788: Speed improvements on creating/updating and indexing</title>
+        <pubDate>Wed, 01 Aug 2012 14:56:32 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Specially needed when importing large numbers of datasets.
+&lt;/p&gt;
+&lt;p&gt;
+Profiling the import command from the harvesting extension has shown some areas where improvements could be made.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2788#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3023</link>
+        <guid isPermaLink="false">http://localhost/ticket/3023</guid>
+        <title>#3023: New methods on IPackageController to provide access to the data_dict</title>
+        <pubDate>Thu, 22 Nov 2012 17:00:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Extension hooking into the edit and create methods of the IPackageController interface receive the package object. This may not include all the fields that came from the form. The new extension points will pass the validated data_dict so extensions can have access to it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3023#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3025</link>
+        <guid isPermaLink="false">http://localhost/ticket/3025</guid>
+        <title>#3025: Add requests to core requirements</title>
+        <pubDate>Tue, 27 Nov 2012 21:35:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Because yes please
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3025#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3026</link>
+        <guid isPermaLink="false">http://localhost/ticket/3026</guid>
+        <title>#3026: Support icons on  nav_named_link</title>
+        <pubDate>Fri, 30 Nov 2012 18:51:56 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+nav_named_link won't include the nice icon even when passing the icon keyword param.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3026#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/728</link>
+        <guid isPermaLink="false">http://localhost/ticket/728</guid>
+        <title>#728: CSW Harvesting shall be optimised in respect of reharvesting only records that have changed</title>
+        <pubDate>Thu, 21 Oct 2010 15:35:40 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Hi Will, this is important again because some CSW servers we use have over 300 documents in. Could you take a look at modifying the filter please?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/794</link>
+        <guid isPermaLink="false">http://localhost/ticket/794</guid>
+        <title>#794: Investigate reconciling UKLP Publisher and Provider with DGU</title>
+        <pubDate>Mon, 08 Nov 2010 14:50:11 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+This needs more analysis, but the GEMINI2 attribute "metadata point of contact" must be reconciled with the registered publisher (or agent).
+&lt;/p&gt;
+&lt;p&gt;
+This might also be used to filter records harvested from a CSW source, but filtering also needs more analysis, as does distinction between agent and provider.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/794#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1815</link>
+        <guid isPermaLink="false">http://localhost/ticket/1815</guid>
+        <title>#1815: Reenable Sparql endpoint on publicdata.eu</title>
+        <pubDate>Mon, 20 Feb 2012 17:08:43 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate: ?
+&lt;/p&gt;
+&lt;p&gt;
+The 4store Sparql endpoint has been down for a long time.
+It needs to be reenabled and we need to check that the necessary informtion is pushed when creating /editing a dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2382</link>
+        <guid isPermaLink="false">http://localhost/ticket/2382</guid>
+        <title>#2382: Investigate options for basic geocoding</title>
+        <pubDate>Mon, 14 May 2012 17:39:20 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+A simple way for geocoding place names would be very useful, e.g in the spatial search, defining a geometry for a dataset (on the form or bulk)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2382#changelog</comments>
+    </item>
+ </channel>
+</rss>

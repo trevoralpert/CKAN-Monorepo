@@ -1,0 +1,350 @@
+id,summary,status,owner,type,milestone,priority
+140,News section on front page,new,,enhancement,ckan-backlog,awaiting triage
+235,Resource format normalization and detection,assigned,tobes,enhancement,ckan-v1.9,awaiting triage
+250,RDF link in Atom feed,assigned,icmurray,enhancement,ckan-v1.9,awaiting triage
+253,Package relationships,assigned,,enhancement,ckan-backlog,awaiting triage
+277,Set some config options / settings in WUI (extension),assigned,zephod,enhancement,ckan-backlog,awaiting triage
+285,Paginate list of packages on tag read page,assigned,,enhancement,,awaiting triage
+301,Package discussion pages,assigned,,enhancement,,awaiting triage
+331,Timezone of CKAN timestamps should be configurable,new,,enhancement,ckan-backlog,awaiting triage
+350,Search engine optimisation,reopened,,enhancement,ckan-backlog,awaiting triage
+351,"Homepage: list new, updated and 'hot' packages",new,,enhancement,ckan-backlog,awaiting triage
+369,"""Package Listing Key"" should appear on Tag results",new,,enhancement,ckan-backlog,awaiting triage
+370,Use better email encryption for author_email and maintainer_email,new,,enhancement,ckan-backlog,awaiting triage
+653,Trackback links for packages,new,,requirement,ckan-backlog,awaiting triage
+737,Markdown syntax summary page,new,,enhancement,ckan-backlog,awaiting triage
+765,Read-only mode - API usage,assigned,,enhancement,ckan-backlog,awaiting triage
+811,Extra field editing form layout breaks when there are long field names,new,,defect,ckan-backlog,awaiting triage
+812,Package edit form only allows three extra fields,new,,defect,ckan-backlog,awaiting triage
+818,Rethinking the author and maintainer fields,new,,requirement,ckan-backlog,awaiting triage
+837,CKAN integration with freebase gridworks / google refine,new,,enhancement,ckan-backlog,awaiting triage
+895,Add version number (or simular) to css/js includes query string,new,,defect,ckan-backlog,awaiting triage
+909,DCat importer for CKAN,assigned,,enhancement,ckan-backlog,awaiting triage
+979,Edit Resource extras in the API,assigned,kindly,enhancement,ckan-backlog,awaiting triage
+1009,Improvements to user accounts sytem,new,pudo,enhancement,ckan-backlog,awaiting triage
+1069,Stub datasets (request for datasets),assigned,tobes,enhancement,,awaiting triage
+1077,Move to simpler vdm system,new,kindly,enhancement,ckan-backlog,awaiting triage
+1096,[super] CKAN Hosted,new,rufuspollock,defect,ckan-future,awaiting triage
+1101,Integrate googlanalytics into site nav,new,,enhancement,ckan-backlog,awaiting triage
+1120,Atom feeds of each tag,new,,enhancement,ckan-backlog,awaiting triage
+1130,First time users,assigned,,enhancement,,awaiting triage
+1144,Support DSPL,new,,enhancement,ckan-backlog,awaiting triage
+1145,Support the Handle System,new,,enhancement,ckan-backlog,awaiting triage
+1165,Add multi-site support to ckan,new,,enhancement,ckan-future,awaiting triage
+1179,Support tag aliases,new,,enhancement,ckan-backlog,awaiting triage
+1182,"Comments from deleted packages appear in ""Recent Comments"" feed",new,,defect,ckan-backlog,awaiting triage
+1184,Support Wuala as CKAN storage option,new,,enhancement,ckan-backlog,awaiting triage
+1185,Administrators can't delete packages from web UI,new,,defect,ckan-backlog,awaiting triage
+1188,Allow diffing against initial (blank) package version,new,,enhancement,ckan-backlog,awaiting triage
+1201,seperate out logic in atom feeds to logic layer.,new,,enhancement,ckan-backlog,awaiting triage
+1203,"Moderated edits: html code shows as ""changed"" although it is not",new,johnglover,defect,ckan-backlog,awaiting triage
+1227,Display packages' tags in search results,new,,enhancement,ckan-backlog,awaiting triage
+1232,[super] Interface improvements,new,,enhancement,ckan-backlog,awaiting triage
+1233,[super] Improve wiki-style functionality for history,new,,enhancement,ckan-backlog,awaiting triage
+1240,[super] API v4,assigned,kindly,enhancement,ckan-backlog,awaiting triage
+1255,Drupal consistancy checks.,assigned,kindly,enhancement,ckan-backlog,awaiting triage
+1273,Create docs for API v3,new,,requirement,ckan-backlog,awaiting triage
+1278,Refactor authorized_query calls,new,,enhancement,ckan-backlog,awaiting triage
+1287,NAVL validation errors - Junk fields should be listed explicitly,assigned,thejimmyg,enhancement,ckan-backlog,awaiting triage
+1341,Delete spam users from ckan,reopened,kindly,enhancement,ckan-backlog,awaiting triage
+1355,Package extras property does not include the newly created ones,new,,defect,ckan-backlog,awaiting triage
+1358,Generate configuration documentation automatically from the deployment_ini_tmpl file,assigned,zephod,enhancement,ckan-backlog,awaiting triage
+1384,CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages,new,rgrp,task,ckan-backlog,awaiting triage
+1403,Refactor groups index page,new,zephod,enhancement,ckan-backlog,awaiting triage
+1406,Re-enable RSS subscriptions,new,,enhancement,ckan-backlog,awaiting triage
+1411,Force resource format to be lower case (also mimetype),new,zephod,enhancement,ckan-backlog,awaiting triage
+1414,track user log-ins on thedatahub.org,new,,enhancement,ckan-backlog,awaiting triage
+1423,Edit resources suggestions,new,,enhancement,ckan-backlog,awaiting triage
+1429,Provide DOIs for datasets in a CKAN instance,new,rgrp,enhancement,ckan-backlog,awaiting triage
+1432,[super] Data processing system for CKAN and Webstore,new,,enhancement,ckan-backlog,awaiting triage
+1457,Bug with DataNL instance,new,,defect,ckan-future,awaiting triage
+1458,Support previewing kml files in data viewer,assigned,rgrp,enhancement,ckan-future,awaiting triage
+1459,Featured Dataset feature,new,rgrp,enhancement,ckan-backlog,awaiting triage
+1507,Minor fixes to dataset add on Group edit form - 0.5d,assigned,zephod,enhancement,ckan-backlog,awaiting triage
+1535,Plump for auth header of: X-CKAN-API-KEY,new,,enhancement,ckan-backlog,awaiting triage
+1550,Allow simple auth via the API,assigned,,enhancement,ckan-backlog,awaiting triage
+1557,Complete Webstore Preview Extension,new,David Rasnik,enhancement,ckan-future,awaiting triage
+1558,Publisher Tools,new,David Raznik,enhancement,ckan-future,awaiting triage
+1560,Follow extension,new,David Raznik,enhancement,ckan-future,awaiting triage
+1561,To do extension,new,David Raznik,enhancement,ckan-future,awaiting triage
+1562,Finish Geo Spatial,new,Adria,enhancement,ckan-future,awaiting triage
+1564,Structured Data (Data API),new,David Raznik,enhancement,ckan-future,awaiting triage
+1565,Admin dashboard finished?,new,Rufus Pollock,enhancement,ckan-future,awaiting triage
+1567,Finish QA extension,new,David Raznik,enhancement,ckan-future,awaiting triage
+1569,Wordpressser,new,David Raznik,enhancement,ckan-future,awaiting triage
+1571,[super] Issues Extension,assigned,rgrp,enhancement,ckan-backlog,awaiting triage
+1572,Meta data Harvester,new,David Raznik,enhancement,ckan-future,awaiting triage
+1573,Apps and Ideas,new,David Raznik,enhancement,ckan-future,awaiting triage
+1578,[super] Re-enable and refactor ratings,new,,enhancement,ckan-backlog,awaiting triage
+1596,Refactor authz roles,new,,enhancement,ckan-future,awaiting triage
+1598,Reinstate Ratings,new,,enhancement,ckan-backlog,awaiting triage
+1604,Get ckanext-moderatededits working with CKAN 1.5+ templates,new,,enhancement,ckan-backlog,awaiting triage
+1606,metadata license config option,new,,enhancement,ckan-backlog,awaiting triage
+1635,Email notifications (e.g. for activity streams),new,seanh,enhancement,ckan-backlog,awaiting triage
+1642,Extra link generators generate garbled HTML,new,,defect,ckan-backlog,awaiting triage
+1643,Add fixed tags to thedatahub for better browsing,new,,enhancement,ckan-backlog,awaiting triage
+1644,Order default dataset page by most downloaded resources on thedatahub,new,,enhancement,ckan-backlog,awaiting triage
+1652,How we intergrate with Drupal Multiligual?,assigned,kindly,enhancement,ckan-backlog,awaiting triage
+1667,Add an extension point for rendering activity streams,new,seanh,enhancement,ckan-future,awaiting triage
+1668,repoze version discrepency,new,,defect,ckan-backlog,awaiting triage
+1679,Default roles problem,new,,enhancement,ckan-backlog,awaiting triage
+1684,Remove all config from ckanext-archiver,assigned,,enhancement,ckan-backlog,awaiting triage
+1697,A Configurable list of states for a Dataset,new,,enhancement,ckan-backlog,awaiting triage
+1717,[super] Search UX improvements,new,,enhancement,ckan-backlog,awaiting triage
+1740,Get rid of `from module import ...`,new,,enhancement,ckan-future,awaiting triage
+1745,Dataset search UX improvements as of Jan 2012,new,,enhancement,ckan-v1.9,awaiting triage
+1747,Expire old activities,new,,enhancement,ckan-backlog,awaiting triage
+1748,Make activity streams conform to http://activitystrea.ms/ standard,new,seanh,enhancement,ckan-future,awaiting triage
+1749,Allow creating activity details through API,assigned,,enhancement,ckan-future,awaiting triage
+1750,Move ckan/lib/activity.py into the model,new,,enhancement,ckan-backlog,awaiting triage
+1778,Replace classmethod's with module-level functions,assigned,seanh,enhancement,ckan-future,awaiting triage
+1782,Improvements to datasets page UX (Feb 2012),new,zephod,enhancement,ckan-future,awaiting triage
+1785,Replace 'Revisions' page with site-wide activity stream,accepted,seanh,enhancement,ckan-v1.9,awaiting triage
+1787,[super] Improve RESTful API,new,,enhancement,ckan-future,awaiting triage
+1789,Implement a tag_update() logic action function,new,,enhancement,ckan-backlog,awaiting triage
+1790,"Click to delete tags, rather than have all existing tags in the tag text box",new,,enhancement,ckan-future,awaiting triage
+1800,Tidy up *_list() and *_search() functions in ckan/logic/action/get.py,new,,refactor,ckan-future,awaiting triage
+1815,Reenable Sparql endpoint on publicdata.eu,new,amercader,task,ckan-future,awaiting triage
+1824,Add vocabulary pages,new,,enhancement,ckan-future,awaiting triage
+1831,Login with email address,assigned,,enhancement,ckan-backlog,awaiting triage
+2197,Storage Metadata API: add/update not working with local file storage (Pairtree),assigned,,defect,ckan-backlog,awaiting triage
+2200,Add vocabulary_id option to tag_show() logic action function,new,seanh,enhancement,ckan-future,awaiting triage
+2202,Display page view count on dataset and resource pages,reopened,,enhancement,ckan-future,awaiting triage
+2234,Write a CKAN extension for pulling items from RSS/Atom feeds into CKAN templates,assigned,,enhancement,ckan-future,awaiting triage
+2235,Group drop down on dataset edit should use chosen and sort groups by name,new,,enhancement,ckan-future,awaiting triage
+2244,clean up auth,new,toby,enhancement,ckan-future,awaiting triage
+2257,cleanup template vars,new,toby,enhancement,ckan-v1.9,awaiting triage
+2258,Customizable contributor agreement,new,,enhancement,ckan-future,awaiting triage
+2265,'More Like This' for a dataset,new,,enhancement,ckan-future,awaiting triage
+2282,log api calls for users,new,toby,enhancement,ckan-future,awaiting triage
+2284,Local queries/views/viz in Related stuff.,assigned,,enhancement,ckan-backlog,awaiting triage
+2287,Consistent datetime and time period strings localization,new,,enhancement,ckan-future,awaiting triage
+2291,DataStorer incorrectly attempts to store JSON in DataStore,new,kindly,enhancement,ckan-v1.9,awaiting triage
+2320,Introduce new state: archived,new,,enhancement,ckan-v1.9,awaiting triage
+2321,Use resource names/titles in URLs,new,,enhancement,ckan-v1.9,awaiting triage
+2324,Link API docs to relevant version not just latest,new,,enhancement,ckan-v1.9,awaiting triage
+2328,"Link to Catalog API for each Dataset, Group and Tag",new,,enhancement,ckan-v1.9,awaiting triage
+2329,Add back in RSS/Atom links on relevant pages,assigned,,enhancement,ckan 2.0,awaiting triage
+2333,Introduce new resource type datastore,new,,enhancement,ckan-v1.9,awaiting triage
+2334,Improved data import,assigned,kindly,enhancement,ckan-v1.9,awaiting triage
+2335,Unicode characters don't work in CKAN ini files,assigned,seanh,defect,ckan-v1.9,awaiting triage
+2337,Sort out ini file confusion in docs,assigned,seanh,enhancement,ckan-v1.9,awaiting triage
+2370,Add examples of all config settings in default config file,assigned,seanh,enhancement,ckan-v1.9,awaiting triage
+2378,Extract metadata directly from resources that contain it.,assigned,,enhancement,ckan-future,awaiting triage
+2382,Investigate options for basic geocoding,new,amercader,task,ckan-future,awaiting triage
+2404,Auto-screenshot for related items,assigned,,enhancement,ckan-future,awaiting triage
+2406,Errors in source install doc,new,kindly,defect,ckan-v1.9,awaiting triage
+2407,'Access denied' message is unhelpful,new,amercader,enhancement,ckan-v1.9,awaiting triage
+2411,.ini file is a mess,new,toby,enhancement,ckan-future,awaiting triage
+2415,Confusing message on attempting to register new account with upper case,new,kindly,defect,ckan-v1.9,awaiting triage
+2426,Get rid of CKAN's formalchemy dependency,new,kindly,enhancement,ckan-v1.9,awaiting triage
+2427,Reduce cruft installed into CKAN's virtualenv due to Pylons,new,kindly,enhancement,ckan-v1.9,awaiting triage
+2473,Make datstorer store field ordering in _meta field,assigned,kindly,enhancement,ckan-v1.9,awaiting triage
+2475,Upgrade trac.ckan.org to trac 0.12.3,accepted,seanh,enhancement,ckan-v1.9,awaiting triage
+2477,Add extensions section to readthedocs,accepted,seanh,enhancement,ckan-v1.9,awaiting triage
+2478,Get NeverNotifyUpdaterPlugin installed on trac.ckan.org,accepted,seanh,enhancement,ckan-v1.9,awaiting triage
+2479,Meanings of Author and Maintainer fields are unclear,new,,enhancement,ckan-v1.9,awaiting triage
+2480,Better message when dataset has no resources,new,,enhancement,ckan-v1.9,awaiting triage
+2483,Non-local resources should not have Download links,new,,enhancement,ckan-v1.9,awaiting triage
+2485,Encourage leak containment by limiting the number of requests a CKAN process serves,new,icmurray,defect,ckan-v1.9,awaiting triage
+2486,Should be able to use . in dataset names,new,,defect,ckan-backlog,awaiting triage
+2499,Documentation for the internal analytics,new,toby,enhancement,ckan-v1.8,awaiting triage
+2508,Make it possible to run CKAN tests for each language,new,,enhancement,ckan-backlog,awaiting triage
+2513,Dataproxy should not default to utf8,assigned,,enhancement,ckan-backlog,awaiting triage
+2516,Make 'Assign to:' field on trac.ckan.org into a dropdown list,accepted,seanh,enhancement,ckan-v1.9,awaiting triage
+2520,Document undocumented config options,assigned,seanh,defect,ckan-v1.9,awaiting triage
+2524,If there are no translation files for selected language fall back to default lang.,new,kindly,enhancement,ckan-ecportal,awaiting triage
+2529,DataHub (or CKAN) widgets,new,,enhancement,ckan-v1.9,awaiting triage
+2531,New state option: archived / deprecated,new,,enhancement,ckan-backlog,awaiting triage
+2535,SSL certificate for DataHub + https by default,assigned,,enhancement,,awaiting triage
+2537,Test and document ckanbuild,accepted,seanh,enhancement,ckanbuild,awaiting triage
+2538,Add multiple-instance support to ckanbuild,accepted,seanh,enhancement,ckanbuild,awaiting triage
+2539,Investigate the existing ckan debian package for ckanbuild,accepted,seanh,enhancement,ckanbuild,awaiting triage
+2540,Implement a way of upgrading ckan sites using ckanbuild,accepted,seanh,enhancement,ckanbuild,awaiting triage
+2541,Add non-core extensions to ckanbuild,accepted,seanh,enhancement,ckanbuild,awaiting triage
+2542,"Create jenkins job to run ckanbuild, and run tests",accepted,seanh,enhancement,ckanbuild,awaiting triage
+2543,facet.sort is not available in the package_search action,new,,enhancement,ckan-v1.9,awaiting triage
+2546,ODS Managing homepage content,assigned,,requirement,ckan-backlog,awaiting triage
+2547,ODS Initial data sets,assigned,shevski,enhancement,opendatasuite 2,awaiting triage
+2548,Object ownership for groups/package,assigned,kindly,enhancement,datahub-july,awaiting triage
+2552,Controlling access to features,assigned,,enhancement,ckan-future,awaiting triage
+2554,Research Virtuoso cartridges,assigned,,enhancement,ckan-backlog,awaiting triage
+2572,clean up stats plugin,new,toby,enhancement,ckan-v1.9,awaiting triage
+2573,package_search does not allow solr's per-field facet parameters,new,,enhancement,ckan-future,awaiting triage
+2579,move sort_by functions into lib.helpers,new,toby,enhancement,ckan-v1.9,awaiting triage
+2583,make sure that we implement authentication where needed,new,toby,enhancement,demo phase 5,awaiting triage
+2585,"Escape solr control characters in search queries, add advanced search screen",new,,enhancement,ckan-v1.9,awaiting triage
+2590,Publisher dashboard,assigned,shevski,enhancement,ckan-backlog,awaiting triage
+2607,'Upload a file' appears on resource form when storage not enabled,assigned,,defect,ckan-backlog,awaiting triage
+2619,Omit private datasets from public activity streams,assigned,seanh,enhancement,ckan-v1.9,awaiting triage
+2622,Login fails in Opera 12,new,,defect,,awaiting triage
+2625,Add i18n strings from non-core but supported extensions to ckan.pot file,new,,enhancement,ckan-v1.9,awaiting triage
+2654,UI support for ordering groups on group_read page,assigned,,enhancement,ckan 2.0,awaiting triage
+2663,h.resource_display_name needs love,new,toby,enhancement,ckan-v1.9,awaiting triage
+2683,Add no-cache header to _tracking API call's response to make sure it doesn't get cached,new,,enhancement,,awaiting triage
+2688,Allow ordering of groups in WUI,new,,enhancement,,awaiting triage
+2697,create dataset validation,assigned,johnmartin,enhancement,demo phase 5,awaiting triage
+2699,workflow for associating datasets with groups,assigned,shevski,enhancement,demo phase 5,awaiting triage
+2702,Future Javascript wishlist for demo,assigned,shevski,enhancement,demo phase 5,awaiting triage
+2708,limit extra data for package/group show,new,kindly,enhancement,ckan-v1.9,awaiting triage
+2709,Atom feeds are undocumented,new,icmurray,enhancement,,awaiting triage
+2718,can't add dataset to more than one group,new,toby,enhancement,demo phase 4,awaiting triage
+2721,deleted groups should not show on 'Add to Groups' dropdown,new,toby,defect,demo phase 4,awaiting triage
+2725,Case sensitivity on tags,new,toby,enhancement,demo phase 5,awaiting triage
+2726,confusing logic on data preview formats,new,toby,enhancement,demo phase 5,awaiting triage
+2728,deleted group shows on search index - for admins,new,toby,defect,demo phase 4,awaiting triage
+2729,searching for tags:[tag] works but tag:[tag] doesn't,new,kindly,enhancement,ckan-backlog,awaiting triage
+2731,Some sites permanently 'down for maintenance',new,,enhancement,,awaiting triage
+2732,New file upload functionality,assigned,,enhancement,ckan-backlog,awaiting triage
+2735,Dataset order on user page,assigned,toby,enhancement,demo phase 5,awaiting triage
+2748,add 'add new resource' button to sidebar,new,,enhancement,demo phase 5,awaiting triage
+2758,file storage gives error if config not available but no useful user information,new,toby,enhancement,ckan-v1.9,awaiting triage
+2761,"Document all the errors you can get when setting up filestore, and how to fix them",new,,enhancement,ckan-v1.8,awaiting triage
+2762,test_related.py crashes,new,,defect,ckan-v1.8,awaiting triage
+2763,Multilingual tests failing,new,,defect,ckan-v1.8.1,awaiting triage
+2768,normalise excel to xls,new,toby,enhancement,demo phase 5,awaiting triage
+2771,Documentation and examples for IDatasetForm and IGroupForm,new,seanh,enhancement,ckan-v1.8,awaiting triage
+2773,About page needs improving,new,markw,enhancement,ckan-v1.9,awaiting triage
+2777,bug: user attributes,new,,enhancement,,awaiting triage
+2780,way for admins to undelete datasets,new,toby,enhancement,demo phase 4,awaiting triage
+2784,model dictize sensitive data,new,icmurray,defect,,awaiting triage
+2786,target blank HTML downloads,new,,enhancement,demo phase 5,awaiting triage
+2788,Speed improvements on creating/updating and indexing,new,amercader,enhancement,ckan-v1.9,awaiting triage
+2795,"Check validation of HTML, CSS, JS",new,,enhancement,demo phase 5,awaiting triage
+2796,Need a datahub one-pager,new,mark.wainwright,enhancement,,awaiting triage
+2810,heroku ckan support,new,,enhancement,ckan-future,awaiting triage
+2813,Confusing sidebar on demo dataset page,new,toby,enhancement,demo phase 5,awaiting triage
+2814,Demo: upload file behaves oddly,assigned,shevski,enhancement,,awaiting triage
+2815,"db_to_form_package_schema() strips tracking summary, isopen",new,seanh,defect,ckan-v1.8.1,awaiting triage
+2820,English Language: Visualization -> Visualisation,new,,defect,demo phase 5,awaiting triage
+2821,Featured Items on Filter,new,,enhancement,demo phase 5,awaiting triage
+2828,Draft datasets are confusing - tickets need creating,new,toby,enhancement,demo phase 4,awaiting triage
+2829,Archiver fails on 403 http response,new,johnglover,enhancement,ckan-v1.9,awaiting triage
+2830,Need method to undelete groups,new,toby,enhancement,demo phase 4,awaiting triage
+2838,Context variables accepted by action functions need to be documented,new,,enhancement,ckan-v1.9,awaiting triage
+2844,SQL-only (no solr) version of CKAN,new,,enhancement,,awaiting triage
+2846,Organizations allows you to set an organization as the parent organization of itself,new,,defect,ckan-v1.8.1,awaiting triage
+2851,Preview of PDF tries to connect to datastore,new,,enhancement,,awaiting triage
+2854,no way to see which dataset an app is related to on /apps page,new,,enhancement,demo phase 5,awaiting triage
+2857,no UI to follow another user although option on dashboard,new,toby,defect,demo phase 4,awaiting triage
+2861,Add qa breadcrumb,new,toby,enhancement,demo phase 4,awaiting triage
+2862,Revised revised groups description,new,toby,enhancement,demo phase 4,awaiting triage
+2863,non-admin users can edit other's draft datasets,new,toby,defect,demo phase 4,awaiting triage
+2869,user profile not linked on disqus until page refresh,new,,defect,demo phase 4,awaiting triage
+2870,1.8 tag_list not defined,new,seanh,enhancement,,awaiting triage
+2873,ckanext-qa: dataset summary incorrect,assigned,toby,defect,demo phase 4,awaiting triage
+2874,Clean up bin directory,assigned,rgrp,enhancement,,awaiting triage
+2877,Bugs with datastore v2,assigned,kindly,enhancement,,awaiting triage
+2881,Remove or improve 'Domain Model' docs page,new,,defect,ckan-v1.8.1,awaiting triage
+2882,Remove User Stories Overview from docs?,new,,defect,ckan-v1.8.1,awaiting triage
+2883,Add high level dev overview to 'For CKAN Developers' section of docs,new,,enhancement,ckan-v1.8.1,awaiting triage
+2884,Lock icon shown next to unknown licenses,new,,defect,ckan-v1.8.1,awaiting triage
+2885,"Labels (editor, admin) not translated in authorization pages for datasets or groups",new,,enhancement,ckan-v1.9,awaiting triage
+2886,Configurable related items,new,,enhancement,ckan 2.0,awaiting triage
+2888,Datapreview in Iframe,new,,enhancement,,awaiting triage
+2889,"Support JSON values in extras, when returning JSON from API",new,,enhancement,ckan-v1.9,awaiting triage
+2890,Collect data previews and data store docs in one chapter,new,,enhancement,ckan-v1.8.1,awaiting triage
+2891,Update or remove DataStore google presentation,new,,defect,ckan-v1.8.1,awaiting triage
+2892,IDatasetForm's form_to_db_schema() breaks API?,new,,defect,ckan-v1.8.1,awaiting triage
+2893,Tags missing from form_to_db_package_schema(),new,,defect,ckan-v1.8.1,awaiting triage
+2894,Empty lists get stripped from package dicst in package_show(),new,,defect,ckan-v1.8.1,awaiting triage
+2895,QA pages (e.g. broken resource links) are not paginated,new,,enhancement,,awaiting triage
+2896,resource_create crashes on ValidationErrors with KeyError: 'resources',new,,defect,ckan-v1.8.1,awaiting triage
+2897,db_to_form_package_schema() crashes historical dataset page,new,,defect,ckan-v1.8.1,awaiting triage
+2898,Looses data entered on step 1 of create dataset after login,new,,defect,demo phase 5,awaiting triage
+2899,Step 2 > Save & add another bug,new,,enhancement,demo phase 5,awaiting triage
+2900,snippets/package_list.html template crashes on dataset that has no 'notes',new,,defect,ckan-v1.8.1,awaiting triage
+2902,genshi is used in Group controller,new,,enhancement,ckan 2.0,awaiting triage
+2904,Show more formats/groups/tags shouldn't display if there aren't more,new,,enhancement,demo phase 5,awaiting triage
+2905,Add dataset URL key behaviour,new,,enhancement,demo phase 5,awaiting triage
+2908,Dataset related with image should retain aspect ratio,new,,enhancement,demo phase 5,awaiting triage
+2909,User profile headers are a bit weird,new,,enhancement,demo phase 5,awaiting triage
+2910,User listings are not very compelling,new,,enhancement,demo phase 5,awaiting triage
+2911,Internal documentation of Organization Groups,new,,enhancement,,awaiting triage
+2912,ckanext/organizations: Neither public or private initially selected when adding dataset,new,,defect,ckan-v1.8.1,awaiting triage
+2913,IGroupForm has package_form() method,new,,defect,ckan 2.0,awaiting triage
+2914,Add form_to_db_schema_options() to IDatasetForm and IGroupForm,new,,defect,ckan-v1.8.1,awaiting triage
+2915,Refactor form_to_db_schema_options(),new,,refactor,ckan 2.0,awaiting triage
+2917,Organization admins can delete themselves,new,johnmartin,enhancement,ckan 2.0,awaiting triage
+2919,Remove IController from docs,new,,defect,ckan-v1.8,awaiting triage
+2920,Genshi text template message extractor no longer needed?,new,,defect,ckan 2.0,awaiting triage
+2921,Add docstring to top of lib/extract.py file,new,,defect,ckan 2.0,awaiting triage
+2922,Better docstring for CKANInternationalizationExtension,new,,defect,ckan 2.0,awaiting triage
+2923,Change regularise -> regularize,new,,defect,ckan 2.0,awaiting triage
+2924,"Better docs for trans js command, and add to release process",new,,defect,ckan 2.0,awaiting triage
+2925,Remove trans mangle paster command?,new,,defect,ckan 2.0,awaiting triage
+2926,I*Form tests for per-type templates,new,,enhancement,ckan 2.0,awaiting triage
+2927,Test new package/group/organization type URLs support,new,,enhancement,ckan 2.0,awaiting triage
+2928,Run CKAN tests with example_i*form extensions enabled,new,,enhancement,ckan 2.0,awaiting triage
+2929,Remove is_fallback() from I*Form extension interfaces?,new,,enhancement,ckan 2.0,awaiting triage
+2931,Better docstring for app_globals.py,new,,enhancement,ckan 2.0,awaiting triage
+2932,Add docstring to system_info.py,new,,enhancement,ckan 2.0,awaiting triage
+2933,Update theming docs,new,,enhancement,ckan 2.0,awaiting triage
+2934,Webtests for CKAN,new,,enhancement,,awaiting triage
+2936,Updating a group via the API clears its packages,new,,defect,ckan-v1.8,awaiting triage
+2938,Explain bundling in doc/resources.rst,new,Toby,enhancement,,awaiting triage
+2939,Orgs are groups,new,toby,enhancement,,awaiting triage
+2943,Chrome does not resize preview,new,,enhancement,,awaiting triage
+2944,Recline preview does not work in Opera,new,,enhancement,,awaiting triage
+2945,Pdf preview does not load in IE,new,,enhancement,,awaiting triage
+2948,Negative range breaks datastore backend,new,,enhancement,,awaiting triage
+2956,Allow for resource editing in CKAN 2.0,assigned,shevski,enhancement,ckan 2.0,awaiting triage
+2957,New datastore on postgres prior to 9.0,new,,task,,awaiting triage
+2958,Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8,new,,defect,ckan-v1.8,awaiting triage
+2960,Private datasets are not private,new,,task,ckan-backlog,awaiting triage
+2961,Preview plugin endpoint,assigned,dominik,enhancement,ckan 2.0,awaiting triage
+2962,Search across multiple ckan instances,new,,enhancement,ckan-backlog,awaiting triage
+2964,Last organization admin can remove herself,new,,defect,ckan 2.0,awaiting triage
+2965,Stats extension broken on 1.8,new,,defect,ckan-v1.8,awaiting triage
+2966,'Add' button text is wrong when editing organization members,new,,enhancement,ckan 2.0,awaiting triage
+2967,Organization members edit page reloads after demoting self,new,,defect,ckan 2.0,awaiting triage
+2968,Anyone can access organization members page,new,,defect,ckan 2.0,awaiting triage
+2969,Group members page 500s,new,,defect,ckan 2.0,awaiting triage
+2970,Organization and group member links use id not name,new,,defect,ckan 2.0,awaiting triage
+2971,"""Are ytou sure you want to delete this member?"" should say which member",new,,enhancement,ckan 2.0,awaiting triage
+2972,Remove any imports of authz.py and delete file,new,,enhancement,ckan 2.0,awaiting triage
+2973,Move new_authz.py into logic/auth/__init__.py,new,,enhancement,ckan 2.0,awaiting triage
+2974,General of all auth functions,new,,enhancement,ckan 2.0,awaiting triage
+2975,Tests for auth functions and new actions,new,,enhancement,ckan 2.0,awaiting triage
+2976,Polish group and organization member pages,new,,enhancement,ckan 2.0,awaiting triage
+2977,Fix user autocomplete on group and organization member pages,new,,enhancement,ckan 2.0,awaiting triage
+2978,Tests for permissions for organizations and groups,new,,enhancement,ckan 2.0,awaiting triage
+2979,Requesting membership to groups and organizations,new,,enhancement,ckan 2.0,awaiting triage
+2981,Remove config from jinja templates,new,,refactor,ckan 2.0,awaiting triage
+2982,Move functionality from controllers into template helpers,new,,refactor,ckan 2.0,awaiting triage
+2983,Refactor lib/base.py to remove circular import issues,new,,refactor,ckan 2.0,awaiting triage
+2984,"Auto-populate context with user, model, session, etc.",new,,refactor,ckan 2.0,awaiting triage
+2985,Make lib/helpers.py more template-specific,new,,refactor,ckan 2.0,awaiting triage
+2986,Make lib/base.py more like it was originally intended,new,,refactor,ckan 2.0,awaiting triage
+2987,Remove all direct calls to logic action and auth functions,new,,refactor,ckan 2.0,awaiting triage
+2988,UI functional tests for CKAN 2.0,new,,enhancement,ckan 2.0,awaiting triage
+2989,"""Add dataset to organization"" should auto-select the organization",new,,enhancement,ckan 2.0,awaiting triage
+2990,Fix descriptions of groups and organizations on /groups and /organizations pages,new,,enhancement,ckan 2.0,awaiting triage
+2991,Add blocks to header.html template,new,,enhancement,ckan 2.0,awaiting triage
+2992,Delete resource should send me back to edit dataset page,new,,enhancement,,awaiting triage
+2993,"""logged_in"" and ""visitor"" show in user list at /users",new,,defect,ckan 2.0,awaiting triage
+2994,Add dataset and user popovers throughout the site,new,,enhancement,ckan 2.0,awaiting triage
+2995,"Popovers for resources, groups, organizations, tags...",new,,enhancement,ckan 2.0,awaiting triage
+2997,Add activity streams to dataset pages,new,,enhancement,ckan 2.0,awaiting triage
+2998,Add activity streams to group pages,new,,enhancement,ckan 2.0,awaiting triage
+2999,Add activity streams to organization pages,new,,enhancement,ckan 2.0,awaiting triage
+3000,Add number of followers to dataset pages,new,,enhancement,ckan 2.0,awaiting triage
+3001,Multilingual plugin crashes CKAN on add dataset when some languages are default,new,,defect,ckan 2.0,awaiting triage
+3003,New pg databases should be created with UTF8 encoding rather than system default,new,,enhancement,ckan-v1.8,awaiting triage
+3005,"Add following/unfollowing of groups: model, API, frontend, tests",new,seanh,enhancement,ckan 2.0,awaiting triage
+3006,Update translations from Transifex,new,,enhancement,ckan-v1.8.1,awaiting triage
+3007,Adding a dataset creates multiple activities,new,,enhancement,ckan 2.0,awaiting triage
+3010,Pin images don't appear in data explorer,new,,enhancement,ckan 2.0,awaiting triage
+3012,data.gov auth,new,toby,enhancement,,awaiting triage
+3013,common-error-messages is unreadable,new,dominik,defect,,awaiting triage
+3014,Crash when deleting a non-empty vocabulary,new,,defect,ckan 2.0,awaiting triage
+3016,CKAN 2.0 template tweaks,new,johnmartin,enhancement,ckan 2.0,awaiting triage
+3018,Load more in activity streams,new,johnmartin,enhancement,ckan 2.0,awaiting triage
+3020,Update CKAN coding standards,new,,enhancement,,awaiting triage
+3021,Logout doesn't work without JS,accepted,johnmartin,enhancement,,awaiting triage
+3023,New methods on IPackageController to provide access to the data_dict,new,amercader,enhancement,,awaiting triage
+3025,Add requests to core requirements,new,amercader,enhancement,,awaiting triage
+3027,solr for 2.0,new,kindly,enhancement,,awaiting triage
+3028,Feature: dashboard activity stream filtering,new,seanh,enhancement,ckan 2.0,awaiting triage
+3029,JSONP parameter scuppers Search in API,assigned,seanh,defect,,awaiting triage
+3030,clean up helper functions,new,,enhancement,,awaiting triage

@@ -1,0 +1,36 @@
+id,summary,owner,type,priority,component,resolution
+1431,Captcha field - foreign chars cause exception,dread,defect,minor,ckan,fixed
+1410,Add Gravatars to user profiles,zephod,enhancement,awaiting triage,ckan,duplicate
+1361,Simple search support,rgrp,enhancement,critical,ckan,fixed
+1354,Pass the context object to plugins implementing the IPackageController and IGroupController,amercader,enhancement,major,ckan,wontfix
+1353,No UI to remove resources,,defect,awaiting triage,ckan,fixed
+1294,[super] Package creation and editing UX improvements,rgrp,enhancement,critical,ckan,fixed
+1282,JS and WUI tidy up,rgrp,enhancement,major,ckan,fixed
+1252,Deprecate ckan.net in favour of thedatahub.org,rgrp,enhancement,major,ckan,fixed
+1250,Search results should be sorted by score rather than alphabetical,pudo,enhancement,major,ckan,fixed
+1249,Exclude script tag from extraction for i18n,pudo,enhancement,major,ckan,fixed
+1245,Reorganise ckan.org pages,,task,major,ckan,fixed
+1211,[super] Drupal integration,kindly,enhancement,awaiting triage,ckan,fixed
+1190,[super] CREP 0004 Data API and Data Processing System,rgrp,enhancement,awaiting triage,ckan,fixed
+1142,[super] Major Overhaul and Extension of CKAN Documentation,annapowellsmith,enhancement,critical,ckan,fixed
+1140,Adding the package to the group is not search indexed,,defect,major,ckan,fixed
+1129,CREP0002: Moderated  Edits,,CREP,major,ckan,fixed
+1094,[super] Refactor the Auth System,thejimmyg,enhancement,critical,ckan,duplicate
+1078,Refactors WUI controllers and forms to use logic layer,kindly,enhancement,awaiting triage,ckan,fixed
+1074,Refactor authz web user interface to have common code and templating,rgrp,enhancement,major,ckan,fixed
+1070,Plan a new domain model and layer architecture for CKAN,rgrp,enhancement,critical,ckan,fixed
+1053,Deletion in Model API,dread,defect,awaiting triage,ckan,fixed
+972,Merge 'extras' into main package dict rather than having separate key,sebbacon,enhancement,major,ckan,wontfix
+961,"[super] Refactoring of forms, validation and model synchronization",kindly,enhancement,blocker,ckan,fixed
+958,ui for new kind field,,enhancement,awaiting triage,ckan,duplicate
+954,[super] API version 3,kindly,enhancement,major,ckan,fixed
+941,Submit apps or ideas for apps related to datasets (extension),thejimmyg,enhancement,trivial,ckan,wontfix
+913,Handle licenses in dcat-tools,pudo,enhancement,critical,lod2,wontfix
+912,Rethink result row representation in dcat-tools/rdfsolr,pudo,defect,awaiting triage,lod2,wontfix
+910,Refactor CKANrdf to support extras,pudo,enhancement,major,lod2,invalid
+852,[super] Dataset upload and archiving,rgrp,enhancement,critical,DGU,fixed
+810,"Move ""add packages"" field up in group form",pudo,enhancement,major,ckan,wontfix
+764,Read-only CKAN Web UI,thejimmyg,enhancement,awaiting triage,ckan,duplicate
+559,Fix package lookup on group edit form,pudo,defect,critical,ckan,invalid
+358,Resources in REST API,rgrp,enhancement,major,ckan,duplicate
+103,View a package at a given revision,kindly,enhancement,minor,ckan,fixed

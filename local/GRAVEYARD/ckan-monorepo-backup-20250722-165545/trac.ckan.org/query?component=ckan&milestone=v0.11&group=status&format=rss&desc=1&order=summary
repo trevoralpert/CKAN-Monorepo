@@ -1,0 +1,1230 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=v0.11&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=v0.11&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/135</link>
+        <guid isPermaLink="false">http://localhost/ticket/135</guid>
+        <title>#135: sysadmins defined in the db</title>
+        <pubDate>Mon, 05 Oct 2009 09:36:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/135#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/203</link>
+        <guid isPermaLink="false">http://localhost/ticket/203</guid>
+        <title>#203: show package counts for groups in WUI</title>
+        <pubDate>Mon, 07 Dec 2009 12:08:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In two places in the WUI
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;list of groups
+&lt;/li&gt;&lt;li&gt;group page in title e.g. ukgov (5)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/203#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/134</link>
+        <guid isPermaLink="false">http://localhost/ticket/134</guid>
+        <title>#134: admin interface is only available to sysadmins</title>
+        <pubDate>Mon, 05 Oct 2009 09:35:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/134#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/151</link>
+        <guid isPermaLink="false">http://localhost/ticket/151</guid>
+        <title>#151: User object should have a created attribute</title>
+        <pubDate>Thu, 15 Oct 2009 06:54:54 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+User object should have a "created" attribute initialized to current datetime.
+&lt;/p&gt;
+&lt;p&gt;
+Require a db migration but o/w very simple.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 1.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/151#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/136</link>
+        <guid isPermaLink="false">http://localhost/ticket/136</guid>
+        <title>#136: User has publicly viewable page</title>
+        <pubDate>Mon, 05 Oct 2009 11:20:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+A user's 'home page' is at:
+user/&amp;lt;user.id&amp;gt;
+e.g. user/28394723982-03849472
+&lt;/p&gt;
+&lt;p&gt;
+Step 1:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Current user home page with recent edits
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Step 2:
+Readonly
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Number of edits
+&lt;/li&gt;&lt;li&gt;Number of Packages they are admin of
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+How do we do a nicer URL for the home page - can we use their openid login?
+&lt;/p&gt;
+&lt;p&gt;
+Follow on tickets: &lt;a class="closed ticket" href="http://localhost/ticket/138" title="enhancement: User has editable home page (closed: fixed)"&gt;ticket:138&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/142" title="defect: Update User object with additional fields such as 'nickname' (closed: fixed)"&gt;ticket:142&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/136#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/21</link>
+        <guid isPermaLink="false">http://localhost/ticket/21</guid>
+        <title>#21: Undelete a package</title>
+        <pubDate>Mon, 10 Jul 2006 17:02:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/21#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/217</link>
+        <guid isPermaLink="false">http://localhost/ticket/217</guid>
+        <title>#217: UI Review - Search results</title>
+        <pubDate>Tue, 15 Dec 2009 12:24:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Package search results page &lt;a href="http://localhost/package/search?q=something"&gt;package/search&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;need clearer delineation between search entry form and results.
+&lt;/li&gt;&lt;li&gt;0 results needs to be clearer, and the alternative suggestion: 'would you like to create a new package' needs to not look like a search result.
+&lt;/li&gt;&lt;li&gt;"N tags found" -- why do I care? this should be presented as "filter results by tag" -- very unlikely that I'm looking for a tag: I'm looking for a package, but tags might help me narrow down my search.
+&lt;/li&gt;&lt;li&gt;tags should be displayed more like the way they're displayed when you add them to a package (i.e. blue 'tag' background)
+&lt;/li&gt;&lt;li&gt;filter out particular tags
+&lt;/li&gt;&lt;li&gt;tag cloud?
+&lt;/li&gt;&lt;li&gt;copywriting: "Packages - Search" -&amp;gt; "Search packages"
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/217#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/220</link>
+        <guid isPermaLink="false">http://localhost/ticket/220</guid>
+        <title>#220: UI Review - Package read</title>
+        <pubDate>Tue, 15 Dec 2009 12:28:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Package page &lt;a href="http://localhost/package/mypackagename"&gt;package/mypackagename&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Design
+&lt;ul&gt;&lt;li&gt;In general: a huge amount of visual and typographic noise: "Package:" is redundant.
+&lt;/li&gt;&lt;li&gt;"{edit}", "{history}" -- ugly, and it's not clear that these are primary actions on this page. Notably, why on earth is "make an enquiry with Is It Open?" bigger than these?
+&lt;/li&gt;&lt;li&gt;Openness/downloadability icons: need help, as discussed earlier
+&lt;/li&gt;&lt;li&gt;"Rating:" redundant, as is the second set of stars -- why can't both the display and rate widget
+&lt;ul&gt;&lt;li&gt;Rating - alternative to GET on set_rating.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;"Metadata:" technospeak, probably redundant.
+&lt;/li&gt;&lt;li&gt;&amp;lt;li&amp;gt; bullets add nothing.
+&lt;/li&gt;&lt;li&gt;Title, Version, URL can probably go in one line.
+&lt;/li&gt;&lt;li&gt;Resources can be made more prominent.
+&lt;/li&gt;&lt;li&gt;Author, author email and Maintainer, maintainer email can be merged.
+&lt;/li&gt;&lt;li&gt;Groups, tags in little boxes?
+&lt;/li&gt;&lt;li&gt;Notes made more delineated -- Markdown has the capacity to look like other parts of the page: perhaps monospace the typeface?
+&lt;/li&gt;&lt;li&gt;Don't show extras unless there are any.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/220#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/218</link>
+        <guid isPermaLink="false">http://localhost/ticket/218</guid>
+        <title>#218: UI Review - Package listing</title>
+        <pubDate>Tue, 15 Dec 2009 12:25:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;openness/downloadability ticks/crosses are totally inscrutable to non-techies (those who don't know about the title attribute). need better icons, and a key in a box on RHS.
+&lt;/li&gt;&lt;li&gt;maybe highlight two-tick entries with a particular colour, but the open knowledge badge is horrendous, and breaks visual cadence.
+&lt;/li&gt;&lt;li&gt;results data should be tabulated, with the project names and descriptions made most prominent. &amp;lt;li&amp;gt; blobs are unnecessary visual noise.
+&lt;/li&gt;&lt;li&gt;maybe links should go on the full titles? Get rid of package names.
+&lt;/li&gt;&lt;li&gt;Should have filter by name (à la KForge alphanum widget) and also by tag: list of most common tags in box on RHS?
+&lt;/li&gt;&lt;li&gt;same comments as search listing (&lt;a class="closed ticket" href="http://localhost/ticket/217" title="enhancement: UI Review - Search results (closed: fixed)"&gt;ticket:217&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/218#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/224</link>
+        <guid isPermaLink="false">http://localhost/ticket/224</guid>
+        <title>#224: UI Review - Groups</title>
+        <pubDate>Tue, 15 Dec 2009 12:32:40 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Groups landing page &lt;a href="http://localhost/group"&gt;group&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Yeesh! What's up with the typography for "Just login..."?
+&lt;/li&gt;&lt;li&gt;Truncated description along with group name.
+&lt;/li&gt;&lt;li&gt;Explanation text about what groups are for (RHS)
+&lt;/li&gt;&lt;li&gt;Another case of &amp;lt;li&amp;gt; bullets adding nothing.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/224#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/214</link>
+        <guid isPermaLink="false">http://localhost/ticket/214</guid>
+        <title>#214: UI Review - General template</title>
+        <pubDate>Tue, 15 Dec 2009 12:19:41 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Set hover names on navigation links.
+&lt;/li&gt;&lt;li&gt;Do we really need to display "About CKAN" everywhere? Just on home page.
+&lt;/li&gt;&lt;li&gt;Redirect in routing /groups and /tags rather than /group and /tag. At the very least make the plural versions forward to the singular versions.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/214#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/112</link>
+        <guid isPermaLink="false">http://localhost/ticket/112</guid>
+        <title>#112: Test db schema created via migration scripts</title>
+        <pubDate>Mon, 07 Sep 2009 09:41:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+'paster db upgrade' should result in the same database as 'paster db create' on a clean system. In particular, all tests should pass.
+&lt;/p&gt;
+&lt;p&gt;
+Note: equivalent of paster db upgrade isn't being run from tests at the moment (we haven't been able to get this to work).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/112#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/162</link>
+        <guid isPermaLink="false">http://localhost/ticket/162</guid>
+        <title>#162: Tags should be automatially lowere-cased if not already</title>
+        <pubDate>Tue, 20 Oct 2009 14:17:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Rather than raising a validation error automatically lower-case tags on submission.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 0.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/162#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/161</link>
+        <guid isPermaLink="false">http://localhost/ticket/161</guid>
+        <title>#161: Tag listing is incorrect</title>
+        <pubDate>Tue, 20 Oct 2009 09:28:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+E.g. &lt;a class="ext-link" href="http://ckan.net/tag/read/postcodes"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/tag/read/postcodes&lt;/a&gt; this has no-postcode listed but when you look at that package 'postcodes' isn't a tag ...
+&lt;/p&gt;
+&lt;p&gt;
+I suspect this may be to do with search using deleted tags as I think no-postcode had postcodes as a tag at some point earlier ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/161#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/180</link>
+        <guid isPermaLink="false">http://localhost/ticket/180</guid>
+        <title>#180: Tag cloud as way to view CKAN tags</title>
+        <pubDate>Fri, 06 Nov 2009 19:04:14 GMT</pubDate>
+        
+        <dc:creator>jwyg</dc:creator>
+
+        <description>&lt;p&gt;
+Create big tag cloud with all CKAN tags - perhaps weighting with size and colour...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/180#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/212</link>
+        <guid isPermaLink="false">http://localhost/ticket/212</guid>
+        <title>#212: Switch to using m.okfn.org "kforge" media (css and behaviour)</title>
+        <pubDate>Sun, 13 Dec 2009 11:28:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We are already using standard kforge css though copied locally and with a few modifications.
+&lt;/p&gt;
+&lt;p&gt;
+We should switch to using common copy on m.okfn.org. Some work will be required to factor out any changes we have made.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/212#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/113</link>
+        <guid isPermaLink="false">http://localhost/ticket/113</guid>
+        <title>#113: Simple script to test data migration on a production db</title>
+        <pubDate>Mon, 07 Sep 2009 09:42:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Must not alter the db.
+&lt;/p&gt;
+&lt;p&gt;
+Related to &lt;a class="closed ticket" href="http://localhost/ticket/112" title="enhancement: Test db schema created via migration scripts (closed: wontfix)"&gt;ticket:112&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/113#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/197</link>
+        <guid isPermaLink="false">http://localhost/ticket/197</guid>
+        <title>#197: Simple dumper</title>
+        <pubDate>Mon, 23 Nov 2009 10:34:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+admin / user
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Admin: export all HEAD data to JSON / CSV / RDF format dump.
+&lt;/p&gt;
+&lt;p&gt;
+User: wants to get hold of this dump.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Just do JSON &amp;amp; CSV for now.
+&lt;/li&gt;&lt;li&gt;Put this in CLI.
+&lt;/li&gt;&lt;li&gt;Just do list of packages - as_dict info. CSV needs a bit of flattening.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/197#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/159</link>
+        <guid isPermaLink="false">http://localhost/ticket/159</guid>
+        <title>#159: Searching for tags:... resulting in lots of tags being found</title>
+        <pubDate>Tue, 20 Oct 2009 09:14:57 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Search of form: tags: ... behaves differently depending on whether there is a leading space:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;tags: postcode - tags found correctly but no packages found
+&lt;/li&gt;&lt;li&gt;tags:postcode - tags incorrectly found but correct packages found
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Let's fix this.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 0.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/159#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/141</link>
+        <guid isPermaLink="false">http://localhost/ticket/141</guid>
+        <title>#141: Search api docs</title>
+        <pubDate>Wed, 07 Oct 2009 08:10:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Write up search api documentation and put it in a template that shows up at api/search/.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/141#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/229</link>
+        <guid isPermaLink="false">http://localhost/ticket/229</guid>
+        <title>#229: Resource hashes</title>
+        <pubDate>Tue, 05 Jan 2010 10:11:27 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+New field for resources - hash of the resource file.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKAN itself will not calculate the hash value - user just pastes it in.
+&lt;/li&gt;&lt;li&gt;Display text field in resource table.
+&lt;/li&gt;&lt;li&gt;Requires migration script.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Questions for the field's value:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Which hash to use? Restrict to python hashlib and other major hash libraries.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Should we use merkle trees?
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Thanks to Julien D'Assanges for the suggestion.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/229#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/163</link>
+        <guid isPermaLink="false">http://localhost/ticket/163</guid>
+        <title>#163: Regularly put CKAN RDF on Talis CC</title>
+        <pubDate>Tue, 20 Oct 2009 15:29:47 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Related to:
+&lt;a class="closed ticket" href="http://localhost/ticket/90" title="enhancement: Link to RDF versions of CKAN data (closed: fixed)"&gt;ticket:90&lt;/a&gt; Link to RDF version of CKAN data on Talis Connected Commons
+&lt;a class="closed ticket" href="http://localhost/ticket/164" title="enhancement: Creating RDF data from CKAN (closed: fixed)"&gt;ticket:164&lt;/a&gt; Creating RDF data from CKAN
+&lt;/p&gt;
+&lt;p&gt;
+Regularly re-upload the CKAN RDF data to Talis CC.
+&lt;/p&gt;
+&lt;p&gt;
+In the long run may wish to only re-convert packages changed since the last upload. However given relatively smaller size of full dataset this optimization is probably not yet required.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: ? (1d+ depending on e.g. how easy integration with Talis CC is)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/163#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/77</link>
+        <guid isPermaLink="false">http://localhost/ticket/77</guid>
+        <title>#77: Rate packages</title>
+        <pubDate>Fri, 17 Jul 2009 11:13:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h1 id="AsaUserorVisitor"&gt;As a User or Visitor&lt;/h1&gt;
+&lt;p&gt;
+I wish to rate a package in some way. On the package view, below Openness, there is a 'Rating' heading with the star rating which is selectable.
+&lt;/p&gt;
+&lt;p&gt;
+Rating out of 5. One user or IP, one vote.
+&lt;/p&gt;
+&lt;p&gt;
+package_rating table:
+&lt;/p&gt;
+&lt;p&gt;
+package      | user                  | rating
+annakarenina | joe.bloggs.openid.com | 4
+annakarenina | 154.2.5.47            | 1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/77#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/167</link>
+        <guid isPermaLink="false">http://localhost/ticket/167</guid>
+        <title>#167: REST interface you can't update multiple tags</title>
+        <pubDate>Thu, 22 Oct 2009 11:13:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Only first tag is updated.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/167#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/147</link>
+        <guid isPermaLink="false">http://localhost/ticket/147</guid>
+        <title>#147: Parser and loader for esw.org data</title>
+        <pubDate>Tue, 13 Oct 2009 13:31:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/147#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/148</link>
+        <guid isPermaLink="false">http://localhost/ticket/148</guid>
+        <title>#148: Parser and loader for esw.org data</title>
+        <pubDate>Tue, 13 Oct 2009 13:31:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;parse like data4nr code
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Follow up tickets: &lt;a class="closed ticket" href="http://localhost/ticket/149" title="enhancement: Loader for esw data recognises existing packages (closed: fixed)"&gt;ticket:149&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/150" title="enhancement: Loader for esw data uses REST API (closed: fixed)"&gt;ticket:150&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/148#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/170</link>
+        <guid isPermaLink="false">http://localhost/ticket/170</guid>
+        <title>#170: Paginate search results</title>
+        <pubDate>Fri, 23 Oct 2009 15:59:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.ckan.net/package/search?q=science&amp;amp;search=Search+Packages+%C2%BB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.ckan.net/package/search?q=science&amp;amp;search=Search+Packages+%C2%BB&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Results are capped at 20, but can't see past first page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/170#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/174</link>
+        <guid isPermaLink="false">http://localhost/ticket/174</guid>
+        <title>#174: Packages search broken for 'only openly licensed'</title>
+        <pubDate>Tue, 27 Oct 2009 13:41:07 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+the "only openly licensed packages" tick box seems
+to return blank page every time - as do queries for only openly
+licensed and only downloadable packages. The "only downloadable
+packages" tick box by itself seems to work fine. E.g. try searching
+for 'science'.
+&lt;/p&gt;
+&lt;p&gt;
+Raised by Jonathan Gray
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/174#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/152</link>
+        <guid isPermaLink="false">http://localhost/ticket/152</guid>
+        <title>#152: Package has editable 'Extra' fields</title>
+        <pubDate>Thu, 15 Oct 2009 14:01:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Package edit page has fields for extra key-value pairs. Don't use formalchemy. The form displays the existing ones and new ones as follows:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Key           Value            delete
+[ country   ] [ uk, spain   ]  [x]
+&lt;/pre&gt;&lt;p&gt;
+When presenting the form, existing pairs and 3 blank pairs are provided.
+&lt;/p&gt;
+&lt;p&gt;
+When saving the data, keys that are not changed use the existing PackageExtra object (perhaps with new value). Deleted keys put the PackageExtra state to deleted. For new keys, only create a new PackageExtra if there isn't a state=deleted one to resurrect.
+&lt;/p&gt;
+&lt;p&gt;
+Validators ensure no repeated keys.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/152#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/154</link>
+        <guid isPermaLink="false">http://localhost/ticket/154</guid>
+        <title>#154: Package form guidance</title>
+        <pubDate>Thu, 15 Oct 2009 15:46:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Give guidance on what to put in 'author' and 'maintainer' fields (e.g.
+name? URL?)
+&lt;/p&gt;
+&lt;p&gt;
+Suggestion from Jonathan Gray
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/154#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/208</link>
+        <guid isPermaLink="false">http://localhost/ticket/208</guid>
+        <title>#208: Obfuscate author email and maintainer email field</title>
+        <pubDate>Mon, 07 Dec 2009 16:38:58 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Obfuscate author email and maintainer email field.
+&lt;/p&gt;
+&lt;p&gt;
+Use: webhelpers.html.tools.mail_to e.g. webhelpers.html.tools.mail_to('mike@…', encode='javascript')
+&lt;/p&gt;
+&lt;p&gt;
+Do we want to? Surely only public addresses should be on CKAN in which case why obfuscate?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/208#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/189</link>
+        <guid isPermaLink="false">http://localhost/ticket/189</guid>
+        <title>#189: Multiple download urls</title>
+        <pubDate>Mon, 16 Nov 2009 15:42:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+See also: &lt;a class="wiki" href="http://localhost/wiki/PackageResources"&gt;PackageResources&lt;/a&gt; which defines a 'distribution' as a package's payload (perhaps with metadata). In our case, at least within CKAN, the representation of the distribution will just be the reference to get it (plus some minor metadata). We are expanding this functionality to be any kind of 'resource' associated with a package since it is likely in some cases people will want to link to a file containing a part, but not the whole, of a package's data.
+&lt;/p&gt;
+&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+User (package editor and package user)
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+(package editor)
+Associate multiple distributions with a package.
+&lt;/p&gt;
+&lt;p&gt;
+(package user)
+Easily have access to multiple distributions of a package should they exist.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+There is an object called 'Resource' with the following attributes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;url (text) (required in UI, but not in db table)
+&lt;/li&gt;&lt;li&gt;format (text)
+&lt;/li&gt;&lt;li&gt;description (text)
+&lt;/li&gt;&lt;li&gt;package (association) - a resource is always associated with 1 package
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+A package's list of resources will have an order which is preserved. The first in the list will be known as the 'default resource' (the presumption will always be that this is a 'distribution').
+&lt;/p&gt;
+&lt;h3 id="Howtoreplacedownloadurl"&gt;How to replace download url&lt;/h3&gt;
+&lt;p&gt;
+download_url removed and replaced as a proxy attribute. Read returns the url of the default distribution. Write changes the url of the default resource. Ensures backward compatibility.
+&lt;/p&gt;
+&lt;p&gt;
+REST API has new attribute in package dictionary 'resouces' - an ordered list.
+&lt;/p&gt;
+&lt;p&gt;
+In WUI, replace download url in package read with a table  of the distributions.
+&lt;/p&gt;
+&lt;p&gt;
+In the WUI package edit, be able to add/remove/edit/reorder distributions.
+&lt;/p&gt;
+&lt;h2 id="Example"&gt;Example&lt;/h2&gt;
+&lt;p&gt;
+Example part of package:
+&lt;/p&gt;
+&lt;h3 id="Distributions:"&gt;Distributions:&lt;/h3&gt;
+&lt;table class="wiki"&gt;
+&lt;tr&gt;&lt;td&gt; http://some.com/pollution.pdf &lt;/td&gt;&lt;td&gt; PDF &lt;/td&gt;&lt;td&gt; Original report
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; http://some.com/pollution.csv &lt;/td&gt;&lt;td&gt; csv &lt;/td&gt;&lt;td&gt; Original data
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt; http://some.com/pollution &lt;/td&gt;&lt;td&gt; sparql &lt;/td&gt;&lt;td&gt; Linked version of data
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;
+Existing data to be migrated to new structure.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 4 days
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/189#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/144</link>
+        <guid isPermaLink="false">http://localhost/ticket/144</guid>
+        <title>#144: Most popular packages listed on homepage</title>
+        <pubDate>Thu, 08 Oct 2009 13:59:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Based on number of views.
+&lt;/p&gt;
+&lt;p&gt;
+Related to &lt;a class="assigned ticket" href="http://localhost/ticket/143" title="enhancement: Most active users listed on homepage (assigned)"&gt;ticket:143&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/144#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/157</link>
+        <guid isPermaLink="false">http://localhost/ticket/157</guid>
+        <title>#157: Log message not persisted through preview</title>
+        <pubDate>Fri, 16 Oct 2009 11:59:56 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Log message on package edit page is no longer persisted through a preview (no doubt due to recent form upgrades). Let's fix this.
+&lt;/p&gt;
+&lt;p&gt;
+cost: 0.5h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/157#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/150</link>
+        <guid isPermaLink="false">http://localhost/ticket/150</guid>
+        <title>#150: Loader for esw data uses REST API</title>
+        <pubDate>Tue, 13 Oct 2009 13:33:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(instead of sqlalchemy interface, to facilitate general usage of the loader)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;use ckanclient
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/148" title="enhancement: Parser and loader for esw.org data (closed: fixed)"&gt;ticket:148&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/149" title="enhancement: Loader for esw data recognises existing packages (closed: fixed)"&gt;ticket:149&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/150#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/149</link>
+        <guid isPermaLink="false">http://localhost/ticket/149</guid>
+        <title>#149: Loader for esw data recognises existing packages</title>
+        <pubDate>Tue, 13 Oct 2009 13:32:31 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/148" title="enhancement: Parser and loader for esw.org data (closed: fixed)"&gt;ticket:148&lt;/a&gt;.
+Sister to &lt;a class="closed ticket" href="http://localhost/ticket/150" title="enhancement: Loader for esw data uses REST API (closed: fixed)"&gt;ticket:150&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/149#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/90</link>
+        <guid isPermaLink="false">http://localhost/ticket/90</guid>
+        <title>#90: Link to RDF versions of CKAN data</title>
+        <pubDate>Thu, 30 Jul 2009 08:49:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We should link to representations on semantic.ckan.net
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Each package page could link to its RDF representation
+&lt;ul&gt;&lt;li&gt;"Alternative formats" near star rating. Has logo for RDF (link to RDF) and JSON (link via CKAN REST i/f).
+&lt;/li&gt;&lt;li&gt;Some instances of ckan won't need this, so have option in ini file for this. rdf_store_url=xyz
+&lt;/li&gt;&lt;li&gt;Include machine-readable link to the RDF:
+&lt;pre class="wiki"&gt;&amp;lt;meta http-equiv=... /&amp;gt;
+&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;303 redirect to RDF when content negotiation requires RDF. Test:
+&lt;pre class="wiki"&gt;curl -I -H "Accept: application/rdf+xml" http://localhost:5000/package/warandpeace
+&lt;/pre&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 3h
+&lt;/p&gt;
+&lt;h2 id="Future"&gt;Future&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Search page to link to SPARQL interface: &lt;a class="ext-link" href="http://semantic.ckan.net/sparql"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://semantic.ckan.net/sparql&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;License/dump page could link to full RDF dump.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/90#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/202</link>
+        <guid isPermaLink="false">http://localhost/ticket/202</guid>
+        <title>#202: Internationalization (i18n) try-out</title>
+        <pubDate>Mon, 07 Dec 2009 09:46:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Try i18n for one language (German) for ckan (de.ckan.net).
+&lt;/p&gt;
+&lt;p&gt;
+Basic approach to i18n is well-covered in Pylons book: &lt;a class="ext-link" href="http://pylonsbook.com/en/1.1/internationalization-and-localization.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pylonsbook.com/en/1.1/internationalization-and-localization.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+However, we need to integrate with our Genshi templates. Details on how to do this in comment:
+&lt;a class="ext-link" href="http://wiki.pylonshq.com/display/pylonsdocs/Internationalization+and+Localization"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.pylonshq.com/display/pylonsdocs/Internationalization+and+Localization&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;i18n templates
+&lt;ul&gt;&lt;li&gt;Extract content using Babel
+&lt;/li&gt;&lt;li&gt;Get genshi translation working
+&lt;/li&gt;&lt;li&gt;Do the translation!
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;i18n all strings in controllers (if any)
+&lt;/li&gt;&lt;li&gt;i18n forms
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/202#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/188</link>
+        <guid isPermaLink="false">http://localhost/ticket/188</guid>
+        <title>#188: Improve package listing views</title>
+        <pubDate>Tue, 10 Nov 2009 16:20:31 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Propose change to tabular-like format showing these attributes (perhaps should be configurable?)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Openness status
+&lt;/li&gt;&lt;li&gt;Title (not sure name is needed)
+&lt;/li&gt;&lt;li&gt;Tags
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 4h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/188#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/160</link>
+        <guid isPermaLink="false">http://localhost/ticket/160</guid>
+        <title>#160: Implement internal links in CKAN notes markup</title>
+        <pubDate>Tue, 20 Oct 2009 09:25:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Suggest form is: key:value (with optional space after ':'.
+&lt;/p&gt;
+&lt;p&gt;
+Keys would be for an object, i.e. 'package', 'tag', 'group'.
+&lt;/p&gt;
+&lt;p&gt;
+Becomes a link.
+&lt;/p&gt;
+&lt;p&gt;
+This would be implemented by implementing a 'Parser' or 'Processor' object which is run before markdown is done. Regex replace.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 4h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/160#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/153</link>
+        <guid isPermaLink="false">http://localhost/ticket/153</guid>
+        <title>#153: Group's packages listed alphabetically</title>
+        <pubDate>Thu, 15 Oct 2009 15:45:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This is so you can easily look up whether a given package is already listed - otherwise as lists get bigger becomes difficult to see what is already there.
+&lt;/p&gt;
+&lt;p&gt;
+Suggested by Jonathan Gray
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/153#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/145</link>
+        <guid isPermaLink="false">http://localhost/ticket/145</guid>
+        <title>#145: Group shows its administrators</title>
+        <pubDate>Thu, 08 Oct 2009 14:00:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When viewing a group you see a list of the users who have admin rights to it. (Akin to owners / moderators)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/145#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/187</link>
+        <guid isPermaLink="false">http://localhost/ticket/187</guid>
+        <title>#187: Full-text search</title>
+        <pubDate>Tue, 10 Nov 2009 16:19:10 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Standard search should search notes field in addition to name, title and tags (discussed in &lt;a class="closed ticket" href="http://localhost/ticket/108" title="enhancement: Package search in the REST API (closed: fixed)"&gt;ticket:108&lt;/a&gt; but not done). For this to work we need proper text search since o/w we get poor ordering and lots of bad results.
+&lt;/p&gt;
+&lt;p&gt;
+If we do this we need:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;To weight across fields in a sensible way
+&lt;/li&gt;&lt;li&gt;We can also use proper text search on title or ...
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Easiest way to do this is to use existing facilities in dbs e.g. postgres has full text support since 8.3: &lt;a class="ext-link" href="http://www.postgresql.org/docs/8.3/static/textsearch.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.postgresql.org/docs/8.3/static/textsearch.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Using this with sqlalchemy: &lt;a class="ext-link" href="http://lowmanio.co.uk/blog/entries/postgresql-full-text-search-and-sqlalchemy/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lowmanio.co.uk/blog/entries/postgresql-full-text-search-and-sqlalchemy/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Issues with fulltext search:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;tags not indexed, so would need to 'or' search of tags. This would cause problems with the order_by of the query, since the tags wouldn't have a ranking.
+&lt;/li&gt;&lt;li&gt;if tags are indexed then perhaps we don't want them converted into lexemes? Exact match could well be better.
+&lt;/li&gt;&lt;li&gt;can we split the name on dash or underscore before being indexed?
+&lt;/li&gt;&lt;li&gt;natural language search doesn't do partial words, so search for 'gov' doesn't bring up 'government'.
+&lt;/li&gt;&lt;li&gt;do we keep the existing search system usable with a config file switch for if we install on a db aside from postgres?
+&lt;/li&gt;&lt;li&gt;we want to weight name and title higher than other fields - achievable with custom trigger.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/187#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/178</link>
+        <guid isPermaLink="false">http://localhost/ticket/178</guid>
+        <title>#178: Excel package importer</title>
+        <pubDate>Tue, 03 Nov 2009 10:27:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+/tool
+New 'tools' section of the WUI with 'Excel package import' page.
+&lt;/p&gt;
+&lt;p&gt;
+/tool/import
+Import page allows you to upload a file. The format of the required Excel file is described here. List of licenses provided for copy&amp;amp;paste.
+&lt;/p&gt;
+&lt;p&gt;
+/tool/import/preview
+When you upload it, it gives you a simple preview of the file, offering import. Text as per Package Preview. 'import button' for completing process.
+&lt;/p&gt;
+&lt;p&gt;
+File format:
+&lt;/p&gt;
+&lt;p&gt;
+First row to have a cell value of 'name' or 'title' in it is the Title Row. It contains the field names, as per package. It includes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;license - name of license
+&lt;/li&gt;&lt;li&gt;tags - space separated
+&lt;/li&gt;&lt;li&gt;groups - space separated
+&lt;/li&gt;&lt;li&gt;anything - for extra key-values
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+When importing, values are bound into the package fieldset, validated and displayed for the preview and synced to complete.
+&lt;/p&gt;
+&lt;p&gt;
+User has to log in to use importer. Auth is checked for putting into groups.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/178#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/139</link>
+        <guid isPermaLink="false">http://localhost/ticket/139</guid>
+        <title>#139: Ensure you cannot add same tag twice to a package</title>
+        <pubDate>Mon, 05 Oct 2009 18:49:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Seems some package have ended up with same tag twice: &lt;a class="ext-link" href="http://www.ckan.net/package/fred2dot0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.ckan.net/package/fred2dot0&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Check whether this is still possible and if it is fix it ...
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/139#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/88</link>
+        <guid isPermaLink="false">http://localhost/ticket/88</guid>
+        <title>#88: Download (link) metadata</title>
+        <pubDate>Mon, 27 Jul 2009 11:16:25 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Support for download metadata (file size, file formats, version information).
+&lt;/p&gt;
+&lt;p&gt;
+See also: &lt;a class="closed ticket" href="http://localhost/ticket/87" title="enhancement: Multiple download links (closed: duplicate)"&gt;ticket:87&lt;/a&gt; (multiple download links)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/88#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/173</link>
+        <guid isPermaLink="false">http://localhost/ticket/173</guid>
+        <title>#173: Diffing WUI</title>
+        <pubDate>Mon, 26 Oct 2009 13:56:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Use vdm diff functionality (see &lt;a class="closed ticket" href="http://localhost/ticket/82" title="enhancement: Support diffing of versioned objects (closed: fixed)"&gt;ticket:82&lt;/a&gt;) to implement diffing of packages between versions in WUI.
+&lt;/p&gt;
+&lt;p&gt;
+In package history you should be able to select to revisions and show the diff.
+&lt;/p&gt;
+&lt;p&gt;
+Estimated cost: 12h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/173#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/204</link>
+        <guid isPermaLink="false">http://localhost/ticket/204</guid>
+        <title>#204: Custom package input form</title>
+        <pubDate>Mon, 07 Dec 2009 12:29:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+admin
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+input government data in a constrained way
+&lt;/p&gt;
+&lt;h2 id="sothat"&gt;so that&lt;/h2&gt;
+&lt;p&gt;
+you get consistency in the db which is easily searched, discovered and automatically linked.
+&lt;/p&gt;
+&lt;h2 id="implementation"&gt;implementation&lt;/h2&gt;
+&lt;p&gt;
+Form has fields suitable for government data.
+(related to custom excel importer ticket)
+&lt;/p&gt;
+&lt;p&gt;
+In pylons config specify the form schema to use - whether the existing one or the government one.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;On submission, during validation, warn if a field isn't completed (unless it's optional - agency, maintainer, maintainer_email)&lt;/strong&gt;
+&lt;/p&gt;
+&lt;h3 id="Simplefields"&gt;Simple fields&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;all basic ckan fields
+&lt;/li&gt;&lt;li&gt;default license to OKD::Crown Copyright
+&lt;/li&gt;&lt;li&gt;co_id, precision, taxonomy url, agency
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Datefields"&gt;Date fields&lt;/h3&gt;
+&lt;p&gt;
+Date format: machine readable. Can be specific or vague: year or month/year or day/month/year.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;date_released
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;date_updated
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;temporal_coverage_from, temporal_coverage_to - two date fields combined
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Strictselection"&gt;Strict selection&lt;/h3&gt;
+&lt;p&gt;
+Drop down combo
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;department
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Selectionorfreetext"&gt;Selection or free text&lt;/h3&gt;
+&lt;p&gt;
+Editable combo
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;update_frequency - selections: never, weekly, monthly, annually, discontinued
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;geographic_granularity - selections: national, regional, local authority, ward, point
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;temporal_granularity - selections: yes, months, weeks, days, hours, point
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Specialisedfields"&gt;Specialised fields&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;geographic_coverage - UI is tick boxes. store a comma separated list of all that apply from: england, scotland, wales, northern ireland, overseas, global
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(Idea for future version: Select the most relevant one from a choice of OS hierarchical geographic IDs in the UK. Stored in the database as the RDF URI. Question - what to do beyond the UK?)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;national_statisic - UI is check box, store as 'Yes' or 'No'
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;resources - use standard table, but suggestions for file type are: RDF, CSV, SPARQL, REST, XBRL, SDMX, Other XML, HTML+RDFa, XLS, DOC. Have warning label saying it is not ideal to have PDF, zip or html targets.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;categories - multi values from strict selection of ONS categories. Stored as comma-separated.
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Fielddataprocessed"&gt;Field data processed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;tags - in addition to words entered here, search for known keywords in other fields: title, notes, department, agency, geographic coverage &amp;amp; categories.
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Future-optional"&gt;Future - optional&lt;/h3&gt;
+&lt;p&gt;
+Each form schemas is made available (or not) in the pylons config, along with the default schema for new packages. If there is more than just the 'basic' schema available then the 'new package' form has at the top a drop-down to select the schema with a 'switch' button. This submits the form's current data and parameter schema=xyz and the form arrives back populated with the existing options. No data should be lost switching views.
+&lt;/p&gt;
+&lt;p&gt;
+When you edit a package it detects the schema based on the extra fields that are present.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/204#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/175</link>
+        <guid isPermaLink="false">http://localhost/ticket/175</guid>
+        <title>#175: Creation date</title>
+        <pubDate>Wed, 28 Oct 2009 18:21:10 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+'created' attribute on User, Group and Rating
+&lt;/p&gt;
+&lt;p&gt;
+datetime object: default=datetime.datetime.now()
+&lt;/p&gt;
+&lt;p&gt;
+See example on revision
+&lt;/p&gt;
+&lt;p&gt;
+Requires migrate script
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/175#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/194</link>
+        <guid isPermaLink="false">http://localhost/ticket/194</guid>
+        <title>#194: Check star ratings aren't influenced by search engine crawlers</title>
+        <pubDate>Tue, 17 Nov 2009 15:25:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+rel=nofollow or robots.txt ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/194#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/172</link>
+        <guid isPermaLink="false">http://localhost/ticket/172</guid>
+        <title>#172: Build ckan documentation using sphinx and upload</title>
+        <pubDate>Sun, 25 Oct 2009 16:43:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Use python sphinx to build documenation in ./doc and then upload it somewhere publicly accessible.
+&lt;/p&gt;
+&lt;p&gt;
+NB: improving the documentation is another matter (as is integrating e.g. existing api docs).
+&lt;/p&gt;
+&lt;p&gt;
+Upload location (these are docs for CKAN codebase/concept not the ckan service at ckan.net so good not to associate it too closely with ckan.net):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://knowledgeforge.net/ckan/ckan/doc/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://knowledgeforge.net/ckan/ckan/doc/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(Other options: &lt;a class="ext-link" href="http://www.ckan.net/doc/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.ckan.net/doc/&lt;/a&gt; &lt;a class="ext-link" href="http://doc.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://doc.ckan.net&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/172#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/213</link>
+        <guid isPermaLink="false">http://localhost/ticket/213</guid>
+        <title>#213: Automate CKAN deployment</title>
+        <pubDate>Mon, 14 Dec 2009 17:28:27 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+fabric script to automate ckan deployment
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/213#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/195</link>
+        <guid isPermaLink="false">http://localhost/ticket/195</guid>
+        <title>#195: Association listings should be alphabetically sorted (e.g. a group's packages)</title>
+        <pubDate>Tue, 17 Nov 2009 16:30:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Where an item has an association listing (e.g. package's tags or group's packages) these should be sorted in a sensible way. For present choose to sort alphabetically by name.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/195#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/166</link>
+        <guid isPermaLink="false">http://localhost/ticket/166</guid>
+        <title>#166: Add extras editing to ckanclient</title>
+        <pubDate>Thu, 22 Oct 2009 09:26:21 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Ensure logging is working on server.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/166#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/128</link>
+        <guid isPermaLink="false">http://localhost/ticket/128</guid>
+        <title>#128: Add ckan_url attribute to REST JSON representation of a Package</title>
+        <pubDate>Fri, 25 Sep 2009 08:18:33 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add ckan_url attribute to REST JSON representation of a Package pointing to the (read) url of package on CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 30m
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/128#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/158</link>
+        <guid isPermaLink="false">http://localhost/ticket/158</guid>
+        <title>#158: Add 'extras' to REST API</title>
+        <pubDate>Fri, 16 Oct 2009 14:27:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Ensure you can add/change/delete extra fields from packages using the REST API.
+&lt;/li&gt;&lt;li&gt;Update API docs to cover this.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+On Package get, ensure separation of extra attributes from other attributes.
+&lt;/p&gt;
+&lt;p&gt;
+What is the meaning of posting an incomplete dictionary (updating a package)?
+Option 1 - if field not present, leave field alone
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Delete field if field value is None
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Option 2 - user must supply all fields
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Delete field if field absent
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Prefer option 1. Document this.
+&lt;/p&gt;
+&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/152" title="enhancement: Package has editable 'Extra' fields (closed: fixed)"&gt;ticket:152&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/158#changelog</comments>
+    </item>
+ </channel>
+</rss>

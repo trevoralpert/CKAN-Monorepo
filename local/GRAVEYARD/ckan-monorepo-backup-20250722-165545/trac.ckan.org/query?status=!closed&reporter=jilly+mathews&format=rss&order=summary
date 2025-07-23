@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=jilly+mathews&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=jilly+mathews&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1565</link>
+        <guid isPermaLink="false">http://localhost/ticket/1565</guid>
+        <title>#1565: Admin dashboard finished?</title>
+        <pubDate>Mon, 19 Dec 2011 11:11:32 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Is testing complete and ready for release?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1565#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1573</link>
+        <guid isPermaLink="false">http://localhost/ticket/1573</guid>
+        <title>#1573: Apps and Ideas</title>
+        <pubDate>Mon, 19 Dec 2011 11:36:33 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2 weeks for someone to finish and test.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1573#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1557</link>
+        <guid isPermaLink="false">http://localhost/ticket/1557</guid>
+        <title>#1557: Complete Webstore Preview Extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:40:53 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Finish any work out standing on web store preview extension to be able to package and release.
+&lt;/p&gt;
+&lt;p&gt;
+Ref James and I going through existing features and trying to mention any polishing that needed doing to get exiting features ready for release with projects such as CKAN hosted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1557#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1562</link>
+        <guid isPermaLink="false">http://localhost/ticket/1562</guid>
+        <title>#1562: Finish Geo Spatial</title>
+        <pubDate>Mon, 19 Dec 2011 10:56:33 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimated 4 weeks of Adria's time. I guess this will need to be broken down into more tickets. This feature is being requested by a number of potential customers and we have some ideas of requirements between Rufus and Jilly for this. This is the most popular new feature we talk about to new clients.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1562#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1567</link>
+        <guid isPermaLink="false">http://localhost/ticket/1567</guid>
+        <title>#1567: Finish QA extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:19:59 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Requires change to celeryd. Estimated 4 weeks.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1567#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1560</link>
+        <guid isPermaLink="false">http://localhost/ticket/1560</guid>
+        <title>#1560: Follow extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:51:19 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2 days to finish dev and test.
+&lt;/p&gt;
+&lt;p&gt;
+David can you add any info needed here?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1560#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1572</link>
+        <guid isPermaLink="false">http://localhost/ticket/1572</guid>
+        <title>#1572: Meta data Harvester</title>
+        <pubDate>Mon, 19 Dec 2011 11:35:09 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Need to write custom harvesters for each client. Is it worth having one for data hub?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1572#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1558</link>
+        <guid isPermaLink="false">http://localhost/ticket/1558</guid>
+        <title>#1558: Publisher Tools</title>
+        <pubDate>Mon, 19 Dec 2011 10:46:13 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Summarise final set of requirements for this and finish development and test. Estimated 10 working days.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1558#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1564</link>
+        <guid isPermaLink="false">http://localhost/ticket/1564</guid>
+        <title>#1564: Structured Data (Data API)</title>
+        <pubDate>Mon, 19 Dec 2011 11:07:14 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Basic websotre exists but this may be not what is described yet.
+&lt;/p&gt;
+&lt;p&gt;
+CKAN provides a rich API for the data itself, allowing users to query retrieve and use data instantly from datasets in CKAN without needing to download or process it first.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1561</link>
+        <guid isPermaLink="false">http://localhost/ticket/1561</guid>
+        <title>#1561: To do extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:52:52 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Can we finish this ready for release on data hub and CKAN Hosted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1561#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1569</link>
+        <guid isPermaLink="false">http://localhost/ticket/1569</guid>
+        <title>#1569: Wordpressser</title>
+        <pubDate>Mon, 19 Dec 2011 11:27:36 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+How much effort will this be to be ready to use?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1569#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1571</link>
+        <guid isPermaLink="false">http://localhost/ticket/1571</guid>
+        <title>#1571: [super] Issues Extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:30:25 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+"Proper" issues extension.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/issues&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Code: &lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Overview
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This would be an extension and improvement of existing todo extension - &lt;a class="closed ticket" href="http://localhost/ticket/842" title="enhancement: Todo list CKAN extension (closed: fixed)"&gt;#842&lt;/a&gt; (&lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Current extension does work but lacks polish
+&lt;/li&gt;&lt;li&gt;Should we polish or do significant improvements?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Functionality - see etherpad
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Rename todo(s) -&amp;gt; issue(s) in existing extension)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1571#changelog</comments>
+    </item>
+ </channel>
+</rss>

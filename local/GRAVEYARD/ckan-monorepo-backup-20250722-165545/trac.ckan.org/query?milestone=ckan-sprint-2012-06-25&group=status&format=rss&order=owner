@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2012-06-25&amp;group=status&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2012-06-25&amp;group=status&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2412</link>
+        <guid isPermaLink="false">http://localhost/ticket/2412</guid>
+        <title>#2412: More than one resource invalidatiing breaks dataset edit form</title>
+        <pubDate>Tue, 22 May 2012 20:05:48 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When attempting to add more than one resource at once, if more than one resource invalidates, this results in a js error, leaving the form in an inconsistent state.
+&lt;/p&gt;
+&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to /dataset/new
+&lt;/li&gt;&lt;li&gt;Add a new resource.  Fill in one of the fields with an invalid value. eg - last_modified, or size...
+&lt;/li&gt;&lt;li&gt;Add another resource, doing the same thing: make one of the fields invalid.
+&lt;/li&gt;&lt;li&gt;Try to save the dataset.
+&lt;/li&gt;&lt;li&gt;The entered resource information will be lost, and a js error "Uncaught Error: Can't add the same model to a set twice,: backbone.js:586" will be thrown.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2468</link>
+        <guid isPermaLink="false">http://localhost/ticket/2468</guid>
+        <title>#2468: Finish off SlickGrid based Recline view</title>
+        <pubDate>Mon, 28 May 2012 13:56:15 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Please see these &lt;a class="missing wiki"&gt;GitHub?&lt;/a&gt; issues:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/recline/issues/130"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/130&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/recline/issues/131"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/131&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2468#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2505</link>
+        <guid isPermaLink="false">http://localhost/ticket/2505</guid>
+        <title>#2505: Docs improvements for 1.7.1</title>
+        <pubDate>Fri, 08 Jun 2012 14:42:13 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+There are some areas where the documentation could use some improvement and it would be good to have it available for 1.7.1.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add an introduction to harvesting support
+&lt;/li&gt;&lt;li&gt;Add an introduction to CSW support
+&lt;/li&gt;&lt;li&gt;Better upgrade docs: Some users suggested improvements to the upgrade docs on the list &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;. Also we should mention how the upgrade would work for point point releases
+&lt;/li&gt;&lt;li&gt;Source install: see &lt;a class="new ticket" href="http://localhost/ticket/2406" title="defect: Errors in source install doc (new)"&gt;#2406&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002178.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002178.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2505#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2441</link>
+        <guid isPermaLink="false">http://localhost/ticket/2441</guid>
+        <title>#2441: Create demo search page</title>
+        <pubDate>Mon, 28 May 2012 13:02:35 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2441#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2442</link>
+        <guid isPermaLink="false">http://localhost/ticket/2442</guid>
+        <title>#2442: Create demo dataset overview</title>
+        <pubDate>Mon, 28 May 2012 13:04:09 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61752357/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61752357/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2442#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2443</link>
+        <guid isPermaLink="false">http://localhost/ticket/2443</guid>
+        <title>#2443: Create demo dataset data (resource) page</title>
+        <pubDate>Mon, 28 May 2012 13:06:22 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62308209/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62308209/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+(to be added once test server is working)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2443#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2444</link>
+        <guid isPermaLink="false">http://localhost/ticket/2444</guid>
+        <title>#2444: Create demo dataset related page</title>
+        <pubDate>Mon, 28 May 2012 13:09:19 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62821386/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62821386/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2444#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2448</link>
+        <guid isPermaLink="false">http://localhost/ticket/2448</guid>
+        <title>#2448: Create demo groups overview page</title>
+        <pubDate>Mon, 28 May 2012 13:16:00 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2448#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2449</link>
+        <guid isPermaLink="false">http://localhost/ticket/2449</guid>
+        <title>#2449: Create demo group page</title>
+        <pubDate>Mon, 28 May 2012 13:17:40 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/group/test-group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/test-group&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2449#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2450</link>
+        <guid isPermaLink="false">http://localhost/ticket/2450</guid>
+        <title>#2450: Create demo add group form</title>
+        <pubDate>Mon, 28 May 2012 13:18:56 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61911712/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/group/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/new&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2450#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2455</link>
+        <guid isPermaLink="false">http://localhost/ticket/2455</guid>
+        <title>#2455: Create demo register page</title>
+        <pubDate>Mon, 28 May 2012 13:25:41 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998362/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998362/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/register"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/register&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2455#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2456</link>
+        <guid isPermaLink="false">http://localhost/ticket/2456</guid>
+        <title>#2456: Create demo forgot password page</title>
+        <pubDate>Mon, 28 May 2012 13:26:44 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62935295/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62935295/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/reset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/reset&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2456#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2474</link>
+        <guid isPermaLink="false">http://localhost/ticket/2474</guid>
+        <title>#2474: Trial Jinja 2 as templating system</title>
+        <pubDate>Tue, 29 May 2012 16:02:06 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Percieved benefits of switching to Jinja 2
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Block inheritance for base templates which is much simpler to understand.
+&lt;/li&gt;&lt;li&gt;Large number of developers (and designers) are familiar with it due to its
+similarities with the Django templates.
+&lt;/li&gt;&lt;li&gt;Should be much faster at parsing and rendering templates.
+&lt;/li&gt;&lt;li&gt;Has localisation support.
+&lt;/li&gt;&lt;li&gt;Good documentation both on it's website and on sites like Stack Overflow.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+We should convert a couple of existing templates to test the switchover and then get peoples feedback.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2474#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2504</link>
+        <guid isPermaLink="false">http://localhost/ticket/2504</guid>
+        <title>#2504: Remove all Genshi templates from demo theme</title>
+        <pubDate>Fri, 08 Jun 2012 11:56:17 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2504#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2510</link>
+        <guid isPermaLink="false">http://localhost/ticket/2510</guid>
+        <title>#2510: Demo tag lists should link to the search page</title>
+        <pubDate>Tue, 12 Jun 2012 15:00:17 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Instead of pointing to /tags/{tagname} all tag links should just point to a dataset search filtered by that tag.
+&lt;/p&gt;
+&lt;p&gt;
+Examples are on the homepage and the dataset pages.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2510#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2527</link>
+        <guid isPermaLink="false">http://localhost/ticket/2527</guid>
+        <title>#2527: Implement a method of loading templates into the demo site</title>
+        <pubDate>Thu, 14 Jun 2012 14:08:04 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; needs to be able to insert html templates into the document.
+&lt;/p&gt;
+&lt;p&gt;
+There are three common solutions to templating at the moment.
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Insert the html into &amp;lt;script&amp;gt; tags at the bottom of the page and pull them in using the DOM and innerHTML. This is a very simple solution but not very portable.
+&lt;/li&gt;&lt;li&gt;Request the HTML snippets as plain text/html using XHR. This adds an extra HTTP request per template but is very clean. It would also be possible to inline the HTML into the JS at the minification stage for production.
+&lt;/li&gt;&lt;li&gt;Include the HTML in &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; strings (horrible to maintain and bloats the js)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+It makes sense to keep these with the other templates so that we can take advantage of localisation where possible. This indicates 1 or 2.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2527#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2568</link>
+        <guid isPermaLink="false">http://localhost/ticket/2568</guid>
+        <title>#2568: Crop/shorten titles in breadcrumb headings</title>
+        <pubDate>Mon, 18 Jun 2012 17:12:14 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+So that they don't interfere with buttons such as here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/afterfibre/resource/5d19f9fa-c5a4-426c-84de-c624d6e8c3b3"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/afterfibre/resource/5d19f9fa-c5a4-426c-84de-c624d6e8c3b3&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2568#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2570</link>
+        <guid isPermaLink="false">http://localhost/ticket/2570</guid>
+        <title>#2570: add 'back to dataset' button to resource pages</title>
+        <pubDate>Mon, 18 Jun 2012 17:14:40 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Suggest making this consistent with &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related&lt;/a&gt; by adding same button in top right of resource pages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2570#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1587</link>
+        <guid isPermaLink="false">http://localhost/ticket/1587</guid>
+        <title>#1587: QA - Check license as part of 5 star rating</title>
+        <pubDate>Wed, 21 Dec 2011 15:10:08 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Richard Cyganiak on the CKAN discuss list:
+&lt;/p&gt;
+&lt;p&gt;
+According to (most of) the definitions of the five-star scheme, the first star already requires an open license, so a dataset shouldn't get any stars at all if it's not under an open license.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1587#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2459</link>
+        <guid isPermaLink="false">http://localhost/ticket/2459</guid>
+        <title>#2459: Faceting improvements: fix tags and decide on facet fields</title>
+        <pubDate>Mon, 28 May 2012 13:32:05 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;the facet tags should only show free (non-vocab) tags
+&lt;/li&gt;&lt;li&gt;decide on what fields to include in search facet list
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2459#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2460</link>
+        <guid isPermaLink="false">http://localhost/ticket/2460</guid>
+        <title>#2460: Hide private datasets in 'top publishers' and 'recent updates' on home page</title>
+        <pubDate>Mon, 28 May 2012 13:33:38 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2460#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2462</link>
+        <guid isPermaLink="false">http://localhost/ticket/2462</guid>
+        <title>#2462: Add converter to rename resource_type field to type</title>
+        <pubDate>Mon, 28 May 2012 13:34:25 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2462#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2463</link>
+        <guid isPermaLink="false">http://localhost/ticket/2463</guid>
+        <title>#2463: Fix whitespace bug in breadcrumbs when zoomed in (Google Chrome)</title>
+        <pubDate>Mon, 28 May 2012 13:35:33 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2463#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2464</link>
+        <guid isPermaLink="false">http://localhost/ticket/2464</guid>
+        <title>#2464: Rename 'organization' to 'publisher'</title>
+        <pubDate>Mon, 28 May 2012 13:42:33 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Already done for basic publisher forms (index, read, edit), but needs to be done for additional forms (in particular, form paths like 'organization_apply' that are hardcoded into the organizations controller).
+&lt;/li&gt;&lt;li&gt;change organization mapping to /publisher
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2464#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2465</link>
+        <guid isPermaLink="false">http://localhost/ticket/2465</guid>
+        <title>#2465: Make sure dropdown lists on dataset edit form are sorted</title>
+        <pubDate>Mon, 28 May 2012 13:44:31 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2465#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2470</link>
+        <guid isPermaLink="false">http://localhost/ticket/2470</guid>
+        <title>#2470: Fix inconsistency in package_list snippet</title>
+        <pubDate>Mon, 28 May 2012 16:02:07 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Datasets listed in search results have not gone through schema validation (but on the user page they do), so package_list snippet currently has to display both 'notes' and 'description'.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2470#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2487</link>
+        <guid isPermaLink="false">http://localhost/ticket/2487</guid>
+        <title>#2487: Don't preview text/html</title>
+        <pubDate>Mon, 04 Jun 2012 10:34:58 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Quite a few of the current test dataset resources have their format incorrectly specified as text/html. Attempting to preview these results in the browser trying to automatically download the resource, so for now we will not preview this format.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2487#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2488</link>
+        <guid isPermaLink="false">http://localhost/ticket/2488</guid>
+        <title>#2488: Group update via API fails validation with organization and publisher profile enabled</title>
+        <pubDate>Mon, 04 Jun 2012 10:39:34 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Reported on IRC by 'floapps'.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;when posting a group update with {packages: [package-1, package-2, etc.]}, getting &lt;a class="missing wiki"&gt;ValidationError?&lt;/a&gt;: {'Packages': {'name': &lt;a class="missing wiki"&gt;Missing value?&lt;/a&gt;}}, although package objects did contain a name field
+&lt;/li&gt;&lt;li&gt;same API call worked with organization and publisher profile disabled
+&lt;/li&gt;&lt;li&gt;also worked if added a form_to_db_schema_options function which used default_update_group_schema for api updates instead of default_group_schema
+&lt;/li&gt;&lt;li&gt;tried on both 1.7 and 1.7.1b
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2488#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2489</link>
+        <guid isPermaLink="false">http://localhost/ticket/2489</guid>
+        <title>#2489: Select publisher when dataset created via 'publisher &gt; add dataset'</title>
+        <pubDate>Mon, 04 Jun 2012 11:33:15 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+When clicking 'add dataset' on a publisher/group page, the new dataset form should select the appropriate group.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2489#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2509</link>
+        <guid isPermaLink="false">http://localhost/ticket/2509</guid>
+        <title>#2509: UI style broken on organization read page</title>
+        <pubDate>Mon, 11 Jun 2012 11:11:24 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Looks like some of the style has been updated/changed on the group read page but the changes haven't been applied to the organizations read page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2509#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2517</link>
+        <guid isPermaLink="false">http://localhost/ticket/2517</guid>
+        <title>#2517: Test installation instructions for EC ODP on CentOS 6.2</title>
+        <pubDate>Wed, 13 Jun 2012 10:01:29 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;created repo for final list of instructions: &lt;a class="ext-link" href="http://github.com/okfn/ecportal-server-setup"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://github.com/okfn/ecportal-server-setup&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2517#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2518</link>
+        <guid isPermaLink="false">http://localhost/ticket/2518</guid>
+        <title>#2518: Create EC ODP CKAN release branch</title>
+        <pubDate>Wed, 13 Jun 2012 10:03:38 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;branch from 1.7.1
+&lt;/li&gt;&lt;li&gt;apply CKAN patches that are current part of installation instructions
+&lt;/li&gt;&lt;li&gt;create i18n patch so custom i18n directories can be specified via a config option
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2518#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2425</link>
+        <guid isPermaLink="false">http://localhost/ticket/2425</guid>
+        <title>#2425: Get rid of CKAN's flup dependency</title>
+        <pubDate>Fri, 25 May 2012 11:47:01 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2425#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2293</link>
+        <guid isPermaLink="false">http://localhost/ticket/2293</guid>
+        <title>#2293: Rename of Group results in disappearance of associated datasets from group page</title>
+        <pubDate>Sat, 14 Apr 2012 19:34:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Rename of group makes all the datasets associated with the group disappear on the group listing page. (But they are still there if you look at edit).
+&lt;/p&gt;
+&lt;p&gt;
+Suspect this is because we are using group name (rather than id!!) in the search index ...
+&lt;/p&gt;
+&lt;p&gt;
+As group rename should be rare I'm marking this as minor though actual effect is major.
+&lt;/p&gt;
+&lt;p&gt;
+Assigning to rossjones for review and cost assessment.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2293#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2349</link>
+        <guid isPermaLink="false">http://localhost/ticket/2349</guid>
+        <title>#2349: Make sure semantic.datahub.io gets created</title>
+        <pubDate>Tue, 01 May 2012 13:53:32 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+[x] Redeploy Sparql endpoint
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Done at linkeddata.openlinksw.com/sparql
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[x] Make sure it is available at datahub.io/sparql or semantic.datahub.io/sparql
+&lt;/p&gt;
+&lt;p&gt;
+[x] Generate daily dumps
+&lt;/p&gt;
+&lt;p&gt;
+[x] Make dumps available via web
+&lt;/p&gt;
+&lt;p&gt;
+[x] Notify Hugh once running
+&lt;/p&gt;
+&lt;p&gt;
+[x] Announce to LD guys
+&lt;/p&gt;
+&lt;p&gt;
+[x]  Think about how we can apply this to publicdata.eu (can we do the same?) ... (being done elsewhere)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2349#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2365</link>
+        <guid isPermaLink="false">http://localhost/ticket/2365</guid>
+        <title>#2365: Investigation of multisite</title>
+        <pubDate>Tue, 01 May 2012 16:31:51 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+What would as a multisite CKAN look like?
+&lt;/p&gt;
+&lt;p&gt;
+This is really part of the work around turnkey/hosted CKAN
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2365#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2366</link>
+        <guid isPermaLink="false">http://localhost/ticket/2366</guid>
+        <title>#2366: Remove Authorization Groups</title>
+        <pubDate>Tue, 01 May 2012 17:16:03 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+1.7 will hide the link on the footer and put a deprecation notice on the related pages, but they should be completely removed on 1.8.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2366#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2379</link>
+        <guid isPermaLink="false">http://localhost/ticket/2379</guid>
+        <title>#2379: RDF output, api/sparql</title>
+        <pubDate>Fri, 11 May 2012 11:32:27 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From:
+Pierre-Yves Vandenbussche
+&lt;/p&gt;
+&lt;p&gt;
+In my use case I need to fetch every sparql endpoint associated to a dataset. With the previous version of your endpoint, I was doing this query:
+SELECT DISTINCT ?dataset ?endpoint ?title ?identifier WHERE {
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+?dataset &amp;lt;&lt;a class="ext-link" href="http://www.w3.org/ns/dcat#distribution"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.w3.org/ns/dcat#distribution&lt;/a&gt;&amp;gt; ?distribution.
+?distribution &amp;lt;&lt;a class="ext-link" href="http://purl.org/dc/terms/format"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://purl.org/dc/terms/format&lt;/a&gt;&amp;gt; [ &amp;lt;&lt;a class="ext-link" href="http://moat-project.org/ns#taggedWithTag"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://moat-project.org/ns#taggedWithTag&lt;/a&gt;&amp;gt; [ &amp;lt;&lt;a class="ext-link" href="http://moat-project.org/ns#name"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://moat-project.org/ns#name&lt;/a&gt;&amp;gt; "api/sparql" ] ].
+?distribution &amp;lt;&lt;a class="ext-link" href="http://www.w3.org/ns/dcat#accessURL"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.w3.org/ns/dcat#accessURL&lt;/a&gt;&amp;gt; ?endpoint.
+?dataset &amp;lt;&lt;a class="ext-link" href="http://purl.org/dc/terms/title"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://purl.org/dc/terms/title&lt;/a&gt;&amp;gt; ?title.
+?dataset &amp;lt;&lt;a class="ext-link" href="http://purl.org/dc/terms/identifier"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://purl.org/dc/terms/identifier&lt;/a&gt;&amp;gt; ?identifier.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+} ORDER BY ?title
+&lt;/p&gt;
+&lt;p&gt;
+Using your new version,dcterms:title of a dataset is now a rdfs:label ... OK
+&lt;/p&gt;
+&lt;p&gt;
+Unfortunately, I don't have the information of "api/sparql"  anymore. So I can not differentiate between a dump file and a SPARQL endpoint...
+&lt;span class="underline"&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Add the required information to the RDF template.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2379#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2414</link>
+        <guid isPermaLink="false">http://localhost/ticket/2414</guid>
+        <title>#2414: Remove LXML as a dependency on core CKAN</title>
+        <pubDate>Wed, 23 May 2012 08:19:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Core CKAN currently has a dependency on LXML and it would be nice if we could remove it (although this *may* be indirectly through genshi).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2414#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2208</link>
+        <guid isPermaLink="false">http://localhost/ticket/2208</guid>
+        <title>#2208: Export strings from ckan and ckanext-ecportal to combined pot file</title>
+        <pubDate>Mon, 05 Mar 2012 15:36:46 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+All strings from the ckanext-ecportal extension (and from CKAN core) need to be exported to a pot file to send to tenforce.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2208#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2391</link>
+        <guid isPermaLink="false">http://localhost/ticket/2391</guid>
+        <title>#2391: Fix cz.ckan.org theme and customisations</title>
+        <pubDate>Wed, 16 May 2012 08:55:53 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2391#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2429</link>
+        <guid isPermaLink="false">http://localhost/ticket/2429</guid>
+        <title>#2429: Get track to send notifications when tickets get assigned to peopel</title>
+        <pubDate>Fri, 25 May 2012 11:57:23 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2432</link>
+        <guid isPermaLink="false">http://localhost/ticket/2432</guid>
+        <title>#2432: Draft new trac methodology</title>
+        <pubDate>Fri, 25 May 2012 12:02:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want a new way of working with trac tickets and milestones etc:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We will have a single queue of tickets, ordered by priority, that we all work on
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Tickets only get into the queue after triaging (which the devs do at regular intervals), so we and others can use new trac tickets as a dumping ground for any and all CKAN bugs and ideas without messing up the priority queue. Therefore the priority queue needs to be a special CKAN milestone or something. The devs need to regularly go through the inbox of untriaged tickets and triage them all, moving them all out of the inbox.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Will we also assign tickets from the priority queue to individual devs in sprint planning meetings like we currently do?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2432#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2476</link>
+        <guid isPermaLink="false">http://localhost/ticket/2476</guid>
+        <title>#2476: Check that translating lists of strings is being tested in multilingual tests</title>
+        <pubDate>Wed, 30 May 2012 11:41:18 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Check that lists of strings are being correctly translated. See &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/f1d68c3d2d4d25a0c0f8a89a68940643fc19b156"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/f1d68c3d2d4d25a0c0f8a89a68940643fc19b156&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2476#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2481</link>
+        <guid isPermaLink="false">http://localhost/ticket/2481</guid>
+        <title>#2481: Move Coding_Standards.rst into Sphinx</title>
+        <pubDate>Thu, 31 May 2012 12:31:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2481#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2490</link>
+        <guid isPermaLink="false">http://localhost/ticket/2490</guid>
+        <title>#2490: Dataset term translation isn't working on user pages, ckanext/multilingual test failing</title>
+        <pubDate>Mon, 04 Jun 2012 15:09:37 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2490#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2506</link>
+        <guid isPermaLink="false">http://localhost/ticket/2506</guid>
+        <title>#2506: Pull latest translations from Transifex into CKAN 1.7.1</title>
+        <pubDate>Fri, 08 Jun 2012 17:19:17 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2506#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2507</link>
+        <guid isPermaLink="false">http://localhost/ticket/2507</guid>
+        <title>#2507: Search button on dataset search page wraps onto next line</title>
+        <pubDate>Mon, 11 Jun 2012 10:10:32 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If you change the language to one where the word for 'Search' is longer than the English word (e.g. fr) then the search button wraps onto the next line, below the text field, which looks bad.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2521</link>
+        <guid isPermaLink="false">http://localhost/ticket/2521</guid>
+        <title>#2521: synchronous_search plugin missing from deployment.ini_tmpl</title>
+        <pubDate>Wed, 13 Jun 2012 13:49:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It still contains the old build_search_index_synchronously which no longer works
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2521#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2445</link>
+        <guid isPermaLink="false">http://localhost/ticket/2445</guid>
+        <title>#2445: Create demo dataset add related page</title>
+        <pubDate>Mon, 28 May 2012 13:10:52 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62821386/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62821386/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Needs a new endpoint at /dataset/DATASET/related/new this should have a form containing the following fields.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Title (required)
+&lt;/li&gt;&lt;li&gt;Type of item (Application|Visualisation)
+&lt;/li&gt;&lt;li&gt;Description
+&lt;/li&gt;&lt;li&gt;URL (required)
+&lt;/li&gt;&lt;li&gt;Image URL
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+When submitted if  an item is created it should redirect (303) back to /dataset/DATASET/related with a flash message saying "Related item was successfully created".
+&lt;/p&gt;
+&lt;p&gt;
+If failed to create it should redirect (303) back to the form and populate the error messages, see add dataset for examples (&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/package/new_package_form.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/package/new_package_form.html&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2445#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2491</link>
+        <guid isPermaLink="false">http://localhost/ticket/2491</guid>
+        <title>#2491: Demo related page is missing breadcrumb</title>
+        <pubDate>Wed, 06 Jun 2012 10:13:54 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+The following pages are missing complete breadcrumbs.
+&lt;/p&gt;
+&lt;p&gt;
+Add related page:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Needs to look like.
+&lt;/p&gt;
+&lt;p&gt;
+Dataset &amp;gt; {dataset_title} &amp;gt; Related &amp;gt; Create Related
+&lt;/p&gt;
+&lt;p&gt;
+Template here: &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/related/pages/form_page.html#L6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/related/pages/form_page.html#L6&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Same deal with Edit related.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related/edit/5f9e665b-3e3c-428f-88b1-8554189cf14a"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related/edit/5f9e665b-3e3c-428f-88b1-8554189cf14a&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Needs to look like.
+&lt;/p&gt;
+&lt;p&gt;
+Dataset &amp;gt; {dataset_title} &amp;gt; Related &amp;gt; Edit Related
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/related/edit.html#L5"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/feature-2375-demo-theme/ckan/templates/related/edit.html#L5&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2491#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2492</link>
+        <guid isPermaLink="false">http://localhost/ticket/2492</guid>
+        <title>#2492: Demo create related form has broken error output</title>
+        <pubDate>Wed, 06 Jun 2012 10:17:54 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+See: &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending/related/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending/related/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Submit the form to see broken formatting.
+&lt;/p&gt;
+&lt;p&gt;
+eg. [u'Missing value']
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://localhost/attachment/ticket/2492/ckan-broken-error.png"&gt;&lt;img src="http://localhost/raw-attachment/ticket/2492/ckan-broken-error.png" alt="Example of broken image" title="Example of broken image" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2492#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2494</link>
+        <guid isPermaLink="false">http://localhost/ticket/2494</guid>
+        <title>#2494: Demo site has server error for a 404</title>
+        <pubDate>Wed, 06 Jun 2012 13:21:53 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Example
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/not-here"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/not-here&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Should show the 404 template.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2494#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2502</link>
+        <guid isPermaLink="false">http://localhost/ticket/2502</guid>
+        <title>#2502: Create Jinja block for common helpers</title>
+        <pubDate>Thu, 07 Jun 2012 16:02:16 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Most important is {% snippet %} but {% url_for %} would be great too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2502#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2503</link>
+        <guid isPermaLink="false">http://localhost/ticket/2503</guid>
+        <title>#2503: Look into allowing theme extensions to extend base templates</title>
+        <pubDate>Thu, 07 Jun 2012 16:04:56 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+For example:
+&lt;/p&gt;
+&lt;p&gt;
+Creating a template in ckanext-demo/templates/base.html containing something like
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{% ckan_extends "base.html" %}
+&lt;/pre&gt;&lt;p&gt;
+Will extend ckan/templates/base.html
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2503#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2512</link>
+        <guid isPermaLink="false">http://localhost/ticket/2512</guid>
+        <title>#2512: Bad link on demo site.</title>
+        <pubDate>Tue, 12 Jun 2012 16:29:57 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+On the group read page &lt;a class="ext-link" href="http://s031.okserver.org:2375/group/nhs"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/nhs&lt;/a&gt; the add dataset button goes to the edit group page instead of the add dataset url.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2512#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,62 @@
+id,summary,owner,type,priority,time,changetime
+2659,HTML preview window in demo too small,aron.carroll,defect,critical,07/11/12 12:45:23,07/12/12 10:35:10
+2660,server error when updating dataset,shevski,defect,critical,07/11/12 12:49:30,07/12/12 10:51:41
+2662,adding colons in tags results in server error on demo,toby,defect,major,07/11/12 14:39:54,07/11/12 15:01:38
+2675,editing related item uses 'create' button instead of save,aron.carroll,defect,awaiting triage,07/16/12 10:46:16,07/16/12 17:58:54
+2687,uploading file breaks add dataset process,aron.carroll,defect,major,07/17/12 09:47:02,07/17/12 14:20:55
+2692,'add your own data' link in no search results wrong,aron.carroll,defect,awaiting triage,07/17/12 16:00:03,07/18/12 13:15:28
+2694,index page 500 error,toby,defect,minor,07/18/12 10:01:39,07/19/12 06:52:51
+2723,Search result summary badly displayed,aron.carroll,defect,awaiting triage,07/22/12 09:25:43,07/24/12 13:23:10
+2730,please change pricing footer link,toby,defect,awaiting triage,07/22/12 10:02:33,07/23/12 08:36:52
+2744,license dropdown is cramped,aron.carroll,defect,awaiting triage,07/24/12 15:42:23,07/25/12 12:28:18
+2225,Run jshint on our javascript and clean up as needed,aron.carroll,enhancement,major,03/10/12 19:21:56,07/25/12 12:48:22
+2553,Create a get snippet api action,toby,enhancement,major,06/18/12 11:56:53,07/12/12 10:47:58
+2559,Demo theme add resource has missing functionality,toby,enhancement,major,06/18/12 16:02:16,07/12/12 09:22:20
+2560,Demo theme add metadata is missing functionality,toby,enhancement,major,06/18/12 16:03:04,07/12/12 09:23:08
+2569,add other resources to sidebar of resource pages,toby,enhancement,major,06/18/12 17:13:28,07/12/12 09:27:15
+2581,allow state = 'draft',toby,enhancement,awaiting triage,06/21/12 14:01:38,07/12/12 06:30:35
+2589,users can view draft datasets,toby,enhancement,awaiting triage,06/22/12 13:53:14,07/13/12 09:44:54
+2595,Demo add dataset needs to remember which stages have been visited,toby,enhancement,major,06/25/12 16:37:26,07/12/12 09:45:46
+2612,Hide options based on auth,shevski,enhancement,major,06/27/12 15:49:25,07/19/12 16:16:53
+2617,Move data preview into demo,aron.carroll,enhancement,major,06/28/12 09:19:52,07/12/12 10:25:44
+2620,Pass a  related item into the dataset tempate,toby,enhancement,major,06/28/12 15:36:49,07/12/12 06:32:17
+2633,for dev always look for templates,toby,enhancement,awaiting triage,07/09/12 10:00:58,07/09/12 10:37:58
+2637,Submit search form when user changes sort order,aron.carroll,enhancement,major,07/09/12 12:00:18,07/18/12 13:13:46
+2640,Update recline on the demo site,amercader,enhancement,major,07/09/12 14:58:31,07/12/12 17:05:30
+2643,Demo homepage redesign,aron.carroll,enhancement,major,07/09/12 15:44:45,07/18/12 13:14:07
+2646,delete dataset,toby,enhancement,awaiting triage,07/10/12 11:41:06,07/11/12 13:42:50
+2648,Add file upload to the demo site,shevski,enhancement,major,07/10/12 11:51:21,07/19/12 16:17:39
+2653,Requesting file upload authentication fails on demo,toby,enhancement,blocker,07/10/12 16:41:07,07/11/12 11:12:47
+2657,hide history button on group pages until retheme,toby,enhancement,critical,07/11/12 11:46:53,07/11/12 12:12:45
+2661,delete dataset/group javascript confirm,aron.carroll,enhancement,major,07/11/12 13:13:15,07/19/12 16:41:10
+2664,tags with : cause crazy error message on add dataset in demo,toby,enhancement,awaiting triage,07/11/12 14:55:03,07/18/12 17:27:58
+2665,add dataset stages need to be form buttonable,aron.carroll,enhancement,blocker,07/11/12 16:26:11,07/12/12 10:24:10
+2667,edit resource needs form,shevski,enhancement,blocker,07/13/12 09:01:43,07/23/12 15:49:38
+2677,related item links should open in new tab,aron.carroll,enhancement,awaiting triage,07/16/12 10:52:03,07/16/12 17:59:36
+2678,No UI for deleting a related item,toby,enhancement,minor,07/16/12 10:54:47,07/19/12 08:18:52
+2684,.js leaving forms warning,aron.carroll,enhancement,minor,07/17/12 07:34:37,07/17/12 15:40:37
+2685,delete buttons should be form buttons,toby,enhancement,awaiting triage,07/17/12 07:36:05,07/17/12 08:40:43
+2689,clicking on 'save & add another' doesn't act as expected,aron.carroll,enhancement,awaiting triage,07/17/12 15:15:26,07/18/12 13:14:53
+2690,long URL misaligns edit button for slug,aron.carroll,enhancement,awaiting triage,07/17/12 15:18:21,07/17/12 16:26:34
+2691,Tag 404 error,toby,enhancement,awaiting triage,07/17/12 15:21:30,07/18/12 09:37:53
+2695,autocomplete for tags,aron.carroll,enhancement,major,07/18/12 13:58:11,07/24/12 13:57:20
+2696,autocomplete for resource format,aron.carroll,enhancement,major,07/18/12 13:58:58,07/24/12 14:00:54
+2703,add new resource to existing dataset,toby,enhancement,major,07/18/12 14:14:45,07/19/12 08:42:12
+2706,hide all prefilled fileds from resource edit form page,aron.carroll,enhancement,major,07/18/12 14:23:01,07/19/12 14:21:58
+2712,delete resource functionality needed,toby,enhancement,awaiting triage,07/19/12 06:48:37,07/19/12 09:28:24
+2715,inactive sidebar widgets,toby,enhancement,awaiting triage,07/19/12 16:07:53,07/19/12 16:55:31
+2716,truncate long resource names,toby,enhancement,awaiting triage,07/19/12 16:09:42,07/19/12 16:47:54
+2720,no padding around gravitars on all users page,aron.carroll,enhancement,minor,07/22/12 09:08:31,07/25/12 12:39:59
+2727,long resource name breaks sidebar navigation box,toby,enhancement,awaiting triage,07/22/12 09:41:33,07/23/12 14:29:20
+2734,"once format on resource form has errored, no longer submits form",toby,enhancement,critical,07/23/12 15:57:41,07/24/12 10:51:41
+2737,change help/prefilled text in format field,toby,enhancement,awaiting triage,07/24/12 09:14:22,07/24/12 13:22:21
+2740,misleading breadcrumbs,toby,enhancement,minor,07/24/12 09:47:54,07/24/12 13:46:16
+2743,add dataset button within group,toby,enhancement,awaiting triage,07/24/12 10:20:02,07/24/12 11:58:12
+2746,help bubble on demo homepage missing,toby,enhancement,minor,07/25/12 09:43:07,07/25/12 11:00:31
+2747,Breadcrumb should use title not URL of dataset,toby,enhancement,awaiting triage,07/25/12 10:22:22,07/25/12 11:27:59
+2752,Navigation highlight missing,toby,enhancement,trivial,07/25/12 11:43:02,07/25/12 13:23:38
+2753,rename breadcrumb on user page,aron.carroll,enhancement,awaiting triage,07/25/12 14:04:48,07/25/12 14:43:51
+2754,Add + icon to two buttons,aron.carroll,enhancement,awaiting triage,07/25/12 14:06:17,07/25/12 14:44:06
+2613,Javascript functionality,aron.carroll,enhancement,major,06/27/12 16:24:31,07/18/12 14:09:03
+2636,Style activity stream in user profile,aron.carroll,enhancement,major,07/09/12 11:59:26,07/12/12 10:56:54
+2681,autofill on resource format,aron.carroll,enhancement,awaiting triage,07/16/12 12:06:46,07/24/12 13:17:54

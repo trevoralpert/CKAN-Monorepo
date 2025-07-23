@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2011-11-21&amp;group=resolution&amp;desc=1&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2011-11-21&amp;group=resolution&amp;desc=1&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1087</link>
+        <guid isPermaLink="false">http://localhost/ticket/1087</guid>
+        <title>#1087: version and contact info api call</title>
+        <pubDate>Tue, 12 Apr 2011 17:22:24 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+a simple api call that returns data like this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{ "version": ckan_software_version,
+  "contact": { "name": "Some Admin", "mbox": "admin@exmaple.org" },
+  "description": "Site Description",
+  "url": "http://canonical.name.ckan.net/"
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1087#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1398</link>
+        <guid isPermaLink="false">http://localhost/ticket/1398</guid>
+        <title>#1398: Automated conversion of resource data into webstore</title>
+        <pubDate>Thu, 13 Oct 2011 18:15:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Possible sibling / requirement: &lt;a class="closed ticket" href="http://localhost/ticket/1397" title="enhancement: [super] Resource archiving (closed: fixed)"&gt;#1397&lt;/a&gt; (resource archiving)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Setup test environment. 1d
+&lt;/li&gt;&lt;li&gt;Make task to upload files to webstorer. 3d
+&lt;ul&gt;&lt;li&gt;This includes writing back webstore_url and updated date. 0.5d
+&lt;/li&gt;&lt;li&gt;Type guessing of file format. 1d
+&lt;/li&gt;&lt;li&gt;Make cron to upload all un webstored resources. 0.5d
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Testing for errors by running cron 2d
+&lt;/li&gt;&lt;li&gt;Make nice way to deploy celery 1d.
+&lt;/li&gt;&lt;li&gt;Documentation. 1d
+&lt;/li&gt;&lt;li&gt;Deployment. 1d
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1398#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1420</link>
+        <guid isPermaLink="false">http://localhost/ticket/1420</guid>
+        <title>#1420: Refactor ckanext-qa to work as a celery task</title>
+        <pubDate>Wed, 26 Oct 2011 10:48:58 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Currently can run as a celery task launched by paster command.
+&lt;/p&gt;
+&lt;p&gt;
+Still have to add a CKAN plugin so that QA will run when a resource is added or URL changed, and then update the extension controller/templates to look for QA data from the task_status table instead of directly on the resource.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1420#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1433</link>
+        <guid isPermaLink="false">http://localhost/ticket/1433</guid>
+        <title>#1433: Support SQLAlchemy 0.7</title>
+        <pubDate>Tue, 01 Nov 2011 10:30:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Why: current stable version of sqlalchemy. geoalchemy stuff required 0.7 and likely that some other things will require it soon.
+&lt;/p&gt;
+&lt;p&gt;
+Probably requires work on vdm &lt;a class="ext-link" href="https://bitbucket.org/okfn/vdm"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/vdm&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+NB: should have discussion before making 0.7 the default required version in CKAN core.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1433#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1449</link>
+        <guid isPermaLink="false">http://localhost/ticket/1449</guid>
+        <title>#1449: Improved resource listing on dataset view page</title>
+        <pubDate>Mon, 07 Nov 2011 14:54:53 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Should list resources in the form of search results rather than as a table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1449#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1454</link>
+        <guid isPermaLink="false">http://localhost/ticket/1454</guid>
+        <title>#1454: postgres search code/data removal</title>
+        <pubDate>Wed, 09 Nov 2011 11:43:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We made SOLR the main and only supported way to do CKAN search three
+months ago (&lt;a class="closed ticket" href="http://localhost/ticket/1275" title="enhancement: Move solr search extension to ckan core (closed: fixed)"&gt;#1275&lt;/a&gt;), but I notice that we still have remnants of the
+postgres full-text search hanging around:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;model code (ckan/model/search_index.py)
+&lt;/li&gt;&lt;li&gt;table in the database (package_search)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The presence of these still create sqlalchemy warnings and add to our
+db, (&amp;amp; db backups etc), so it would be good to get rid of them if we
+are not using them. John says this can probably be removed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1454#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1456</link>
+        <guid isPermaLink="false">http://localhost/ticket/1456</guid>
+        <title>#1456: Use resource description instead of name if both are present</title>
+        <pubDate>Wed, 09 Nov 2011 18:16:59 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+If a resource has both description and name the name is used. Descriptions are generally more, well, descriptive, so let's use those.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1456#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1470</link>
+        <guid isPermaLink="false">http://localhost/ticket/1470</guid>
+        <title>#1470: Check user name in the profile form</title>
+        <pubDate>Wed, 16 Nov 2011 12:22:23 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1470#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1472</link>
+        <guid isPermaLink="false">http://localhost/ticket/1472</guid>
+        <title>#1472: Convert ckanclient to git and github from mercurial</title>
+        <pubDate>Fri, 18 Nov 2011 14:01:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1472#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1473</link>
+        <guid isPermaLink="false">http://localhost/ticket/1473</guid>
+        <title>#1473: max name length validators missing</title>
+        <pubDate>Fri, 18 Nov 2011 15:50:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Max length of package name and version field is 100 characters, but the validators seem to enforce this, although in the web interface the javascript limits typing in these fields, so it just affects the API really.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1473#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1474</link>
+        <guid isPermaLink="false">http://localhost/ticket/1474</guid>
+        <title>#1474: fix up navl tests</title>
+        <pubDate>Sun, 20 Nov 2011 21:51:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+navl tests are being skipped unskip them!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1474#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1488</link>
+        <guid isPermaLink="false">http://localhost/ticket/1488</guid>
+        <title>#1488: List of installed extensions - add to the status_show</title>
+        <pubDate>Thu, 24 Nov 2011 10:29:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Add the list of extensions install (config's ckan.plugins) to status_show logic action (See &lt;a class="closed ticket" href="http://localhost/ticket/1087" title="enhancement: version and contact info api call (closed: fixed)"&gt;#1087&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1488#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1463</link>
+        <guid isPermaLink="false">http://localhost/ticket/1463</guid>
+        <title>#1463: QA extension no-longer works with packaged CKAN 1.5</title>
+        <pubDate>Tue, 15 Nov 2011 16:46:54 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+The extension needs upgrading:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+No module named webstore.database
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The other option is to delay this functionality and merge with the publisher dashboards after the group refactor.
+&lt;/p&gt;
+&lt;p&gt;
+John, David Raznick, David Read, Ira, what do you think?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1463#changelog</comments>
+    </item>
+ </channel>
+</rss>

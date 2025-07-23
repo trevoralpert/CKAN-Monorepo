@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~0.5&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~0.5&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1507</link>
+        <guid isPermaLink="false">http://localhost/ticket/1507</guid>
+        <title>#1507: Minor fixes to dataset add on Group edit form - 0.5d</title>
+        <pubDate>Mon, 05 Dec 2011 12:33:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Group edit dataset add form needs some work
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Dataset name is not cleared when you add
+&lt;/li&gt;&lt;li&gt;No way to remove item from list of datasets to be added if I make a mistake
+&lt;/li&gt;&lt;li&gt;(2nd Apr 2012) It now seems that option to add multiple datasets at once has disappeared (perhaps during the CSS/HTML refactor ...)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2200</link>
+        <guid isPermaLink="false">http://localhost/ticket/2200</guid>
+        <title>#2200: Add vocabulary_id option to tag_show() logic action function</title>
+        <pubDate>Wed, 29 Feb 2012 16:41:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently tag_show() only works with free tags, it's not possible to get a tag_show for a vocabulary tag.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2200#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2203</link>
+        <guid isPermaLink="false">http://localhost/ticket/2203</guid>
+        <title>#2203: Data Viewer support for PDF</title>
+        <pubDate>Sun, 04 Mar 2012 11:24:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Boot viewer for format/mimetype: application/pdf, application/x-pdf, application/acrobat, applications/vnd.pdf, text/pdf, text/x-pdf
+&lt;/li&gt;&lt;li&gt;propose we use pdf.js - &lt;a class="ext-link" href="https://github.com/mozilla/pdf.js"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/mozilla/pdf.js&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;We could also try iframing for browsers with native support but this seems more complex
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2203#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2243</link>
+        <guid isPermaLink="false">http://localhost/ticket/2243</guid>
+        <title>#2243: Fix ckanext-example</title>
+        <pubDate>Mon, 19 Mar 2012 15:58:30 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2243#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2298</link>
+        <guid isPermaLink="false">http://localhost/ticket/2298</guid>
+        <title>#2298: Add sort-by controls to the search results page</title>
+        <pubDate>Mon, 16 Apr 2012 09:39:22 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Sort-by functionality was exposed through the package controller in &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.  But no controls were added to the search-page.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;What should the sortBy controls/widget look like?
+&lt;/li&gt;&lt;li&gt;Which fields should be exposed?
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The above commit is in the release-1.6.1 branch, so this work is dependant upon release-1.6.1 from being merged into master.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/8685c6000d1cb211928b4dbc63990fb72d884f8c"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/8685c6000d1cb211928b4dbc63990fb72d884f8c&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2298#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2310</link>
+        <guid isPermaLink="false">http://localhost/ticket/2310</guid>
+        <title>#2310: Refactor the search-query construction in feeds.py</title>
+        <pubDate>Mon, 16 Apr 2012 16:01:31 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The feeds controller, used to construct atom feeds, duplicates code found in the package controller's search action (in order to construct the custom feed).
+&lt;/p&gt;
+&lt;p&gt;
+Refactor this to remove duplication.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2310#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2350</link>
+        <guid isPermaLink="false">http://localhost/ticket/2350</guid>
+        <title>#2350: Hooks  in package controller for validating form data</title>
+        <pubDate>Tue, 01 May 2012 14:16:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When the validation schema was moved from the package controller into the logic layer, the schema's role was changed from that of processing a form and validating data; to just validating data.  Whilst is makes sense to have a schema for validating data as it comes in and leaves the logic layer; there's no longer the hook available to &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; subclasses to do form validation/processing.
+&lt;/p&gt;
+&lt;p&gt;
+Add a hook into _save_new() and save_edit() prior to the logic-layer call which subclasses can then override.
+&lt;/p&gt;
+&lt;p&gt;
+NB - form processing/validation *is* different to validating data.  For example, many data can be inferred from a user's input; or there may be aspects of the form that need to be filled in, but do not make sense to pass as data into the logic-layer, eg. agreeing to T&amp;amp;Cs.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[ ] Add hooks
+&lt;/li&gt;&lt;li&gt;[ ] Use in ckanext-example
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2350#changelog</comments>
+    </item>
+ </channel>
+</rss>

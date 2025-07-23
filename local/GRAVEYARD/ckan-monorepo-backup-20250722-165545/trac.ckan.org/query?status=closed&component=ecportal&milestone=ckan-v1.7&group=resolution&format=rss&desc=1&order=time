@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-v1.7&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-v1.7&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1736</link>
+        <guid isPermaLink="false">http://localhost/ticket/1736</guid>
+        <title>#1736: [Super] Multilingual Metadata</title>
+        <pubDate>Tue, 31 Jan 2012 12:24:57 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Translate all areas of metatdata to selected language. This includes finding datasets in all languages.
+&lt;/p&gt;
+&lt;p&gt;
+Multilingal Metadata:
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add translation table. 2d
+&lt;/li&gt;&lt;li&gt;Api to add translation 3d
+&lt;/li&gt;&lt;li&gt;Add extention point to dataset view. 3d
+&lt;/li&gt;&lt;li&gt;Add extension point to search index to add translations. 2d.
+&lt;/li&gt;&lt;li&gt;Add all eurovoc data to translations. 1d.
+&lt;/li&gt;&lt;li&gt;Make multilingual solr schema 2d &lt;a class="closed ticket" href="http://localhost/ticket/1715" title="enhancement: Search index multilingual (closed: fixed)"&gt;#1715&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1736#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1698</link>
+        <guid isPermaLink="false">http://localhost/ticket/1698</guid>
+        <title>#1698: [super] Tag Taxonomies</title>
+        <pubDate>Tue, 24 Jan 2012 14:35:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add drupal-like "taxonomies" to CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad with user stories, feature list, design and implementation discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.okfnpad.org/22"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/22&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Branch where this is being developed is feature-1698-tag-taxonomies:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/compare/master...feature-1698-tag-taxonomies"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/compare/master...feature-1698-tag-taxonomies&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tickets related to this have &lt;a class="ext-link" href="http://trac.ckan.org/query?status=accepted&amp;amp;status=assigned&amp;amp;status=closed&amp;amp;status=new&amp;amp;status=reopened&amp;amp;group=owner&amp;amp;max=1000&amp;amp;order=milestone&amp;amp;col=id&amp;amp;col=summary&amp;amp;col=status&amp;amp;col=owner&amp;amp;col=milestone&amp;amp;col=keywords&amp;amp;keywords=~taxonomies"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;keyword taxonomies&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1698#changelog</comments>
+    </item>
+ </channel>
+</rss>

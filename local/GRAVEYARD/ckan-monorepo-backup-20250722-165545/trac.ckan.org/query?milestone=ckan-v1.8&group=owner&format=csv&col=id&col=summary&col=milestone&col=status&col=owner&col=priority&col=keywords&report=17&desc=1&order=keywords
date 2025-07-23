@@ -1,0 +1,85 @@
+id,summary,milestone,status,owner,priority,keywords
+2757,Write documentation for upgrading a CKAN install from an older to a newer version of CKAN,ckan-v1.8,closed,Adria,awaiting merge,docs
+2388,"Update ""out of the box"" settings for CKAN",ckan-v1.8,closed,amercader,awaiting merge,
+2389,More robust handling of DataExplorer errors,ckan-v1.8,closed,amercader,major,
+2399,Model cleanup in CKAN core has broken ckanext-spatial,ckan-v1.8,closed,amercader,awaiting triage,
+2467,Fix stats extension frontend,ckan-v1.8,closed,amercader,minor,
+2534,ckanext-spatial is broken with CKAN 1.8b,ckan-v1.8,closed,amercader,awaiting triage,
+2604,Add Requests as requirement for tests,ckan-v1.8,closed,amercader,minor,
+1678,Make synchronous search the default behaviour,ckan-v1.8,closed,amercader,awaiting merge,search
+2639,Update recline version for 1.8 release,ckan-v1.8,closed,amercader,awaiting merge,recline
+2472,clean up datastore controller to get rid of datastore_url enables checks,ckan-v1.8,closed,amercader,minor,datastore
+2651,Check support for TSV which doesn't appear to work well.,ckan-v1.8,closed,icmurray,awaiting triage,
+2672,Session.is_modified should use passive=True,ckan-v1.8,closed,icmurray,awaiting triage,
+2313,Deprecate old facet data structures and related functions.,ckan-v1.8,closed,icmurray,awaiting merge,deprecate deprecation
+2859,Fix the build,ckan-v1.8,new,icmurray,blocker,build buildkit
+2347,Related stuff dashboard and changes,ckan-v1.8,closed,icmurray,awaiting merge,[6d][r:2d] ui
+2438,resource_search action not accessible via GET request,ckan-v1.8,closed,icmurray,awaiting merge,[1d]
+1737,Expose solr-based search API,ckan-v1.8,closed,icmurray,major,[0.5d]
+2437,Add coding standards to CKAN docs,ckan-v1.8,closed,icmurray,awaiting merge,[0.5d]
+2439,tag_search and tag_autocomplete not fully available via GET request,ckan-v1.8,closed,icmurray,awaiting merge,[0.5d]
+1732,Update CKAN's search for taxonomies,ckan-v1.8,closed,johnglover,awaiting triage,taxonomies
+2279,Write tutorial for our DataStore API / Data Explorer,ckan-v1.8,new,rgrp,major,
+1512,Modifying user name makes you semi-log-out,ckan-v1.8,closed,ross,minor,
+2374,tag search paging,ckan-v1.8,closed,ross,major,
+2381,Related item count on ALL dataset pages,ckan-v1.8,closed,ross,awaiting triage,
+2500,get_action should raise an exception if the action requested doesn't exist,ckan-v1.8,closed,ross,awaiting merge,
+2605,Problem with user.get_groups,ckan-v1.8,closed,ross,awaiting triage,
+2649,Description on resources not rendered as markdown,ckan-v1.8,closed,ross,awaiting triage,
+2650,Description on resources not rendered as markdown,ckan-v1.8,closed,ross,awaiting triage,
+2670,model.Group.get_children_groups returns deleted groups,ckan-v1.8,closed,ross,awaiting merge,
+2624,Organizations breaks dataset tag editing,ckan-v1.8,closed,ross,major,organizations cmap
+1279,Refactor or deprecate Authorization Groups,ckan-v1.8,closed,ross,awaiting triage,authz
+1471,Be compatible with new ubuntu release in April,ckan-v1.8,closed,seanh,awaiting triage,
+2434,Fix autodoc on readthedocs again,ckan-v1.8,closed,seanh,major,
+2435,ckanext-qa doesn't work with CKAN 1.7+,ckan-v1.8,closed,seanh,awaiting triage,
+2533,ckanext-harvest is broken with ckan 1.8b,ckan-v1.8,closed,seanh,awaiting triage,
+2627,IDatasetForm.form_to_db_schema() is not called,ckan-v1.8,closed,seanh,awaiting triage,
+2682,"CKAN's internal tracking counts each view twice, needs unit tests",ckan-v1.8,closed,seanh,awaiting merge,
+2693,License is out of date,ckan-v1.8,closed,seanh,awaiting triage,
+2756,Fix handling of extras in group read,ckan-v1.8,closed,seanh,awaiting merge,
+2770,Some strings potentially not marked for translation,ckan-v1.8,closed,seanh,blocker,
+2600,"Replace broken ""Login to Add an Organization"" button",ckan-v1.8,closed,seanh,awaiting triage,organizations cmap
+2843,Adding existing datasets to organizations is broken,ckan-v1.8,closed,seanh,awaiting merge,organizations cmap
+2845,Editing an organization removes all datasets from the organization,ckan-v1.8,closed,seanh,awaiting merge,organizations cmap
+2340,Get Jenkins to automatically run core extensions tests,ckan-v1.8,closed,seanh,minor,jenkins
+2344,Get jenkins install script into CKAN core,ckan-v1.8,closed,seanh,minor,jenkins
+1434,Add i18n strings from extensions,ckan-v1.8,closed,seanh,awaiting merge,i18n
+2772,Update transifex for 1.8 translations,ckan-v1.8,closed,seanh,major,i18n
+2290,Mark facet titles in search pages for translation,ckan-v1.8,closed,seanh,awaiting triage,ecportal i18n
+2592,Update and simplify source install instructions,ckan-v1.8,closed,seanh,awaiting triage,docs
+2630,UPdate docs after IDatasetForm schema change,ckan-v1.8,closed,seanh,awaiting triage,docs
+2771,Documentation and examples for IDatasetForm and IGroupForm,ckan-v1.8,new,seanh,awaiting triage,docs
+2428,Reduce/sort out CKAN's dependencies,ckan-v1.8,closed,seanh,awaiting merge,dev_meetup_2012-05
+2615,Add activity stream activity when a user starts to follow something,ckan-v1.8,closed,seanh,awaiting triage,activity_streams follow
+2305,User dashboard with private consolidated activity stream,ckan-v1.8,closed,seanh,minor,activity_streams
+2273,Review publisher organisations code with Ross,ckan-v1.8,closed,seanh,minor,[1d]
+1387,Not specifying a protocol in dataset url causes broken link to be served on dataset view page,ckan-v1.8,closed,toby,awaiting merge,
+2433,API uses name not id for some version 3 calls,ckan-v1.8,new,toby,minor,
+2484,move follower functionality into helper functions,ckan-v1.8,closed,toby,awaiting merge,
+2499,Documentation for the internal analytics,ckan-v1.8,new,toby,awaiting triage,
+2591,postgres unicode problems postgres v9.1.4,ckan-v1.8,closed,toby,critical,
+2634,change log - helper function limited in 1.8,ckan-v1.8,closed,toby,awaiting merge,
+2638,add a get from request param helper function,ckan-v1.8,closed,toby,awaiting merge,
+2816,DomainObjectOperation not in model,ckan-v1.8,closed,toby,awaiting merge,
+2289,Flash messages are not being translated?,ckan-v1.8,closed,toby,awaiting merge,ecportal i18n
+2363,Documentation of best caching practice.,ckan-v1.8,new,toby,major,[1d]
+2283,[super] Data Previewer / Viewer v3,ckan-v1.8,closed,,awaiting triage,
+2495,Stats page has lost styling ...,ckan-v1.8,closed,,awaiting triage,
+2762,test_related.py crashes,ckan-v1.8,new,,awaiting triage,
+2811,Author doesn't show on dataset read page,ckan-v1.8,closed,,awaiting triage,
+2839,Specifying sort order breaks search results on group page,ckan-v1.8,closed,,awaiting triage,
+2842,Allow sort ordering of dataset listings on group pages,ckan-v1.8,closed,,awaiting triage,
+2872,Non-open licenses are marked as open,ckan-v1.8,closed,,major,
+2936,Updating a group via the API clears its packages,ckan-v1.8,new,,awaiting triage,
+2937,GroupController.history() missing extras_as_string,ckan-v1.8,closed,,awaiting triage,
+2958,Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8,ckan-v1.8,new,,awaiting triage,
+2963,Timeout on tag pages with lots of datasets,ckan-v1.8,new,,major,
+3002,API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string,ckan-v1.8,new,,minor,
+3003,New pg databases should be created with UTF8 encoding rather than system default,ckan-v1.8,new,,awaiting triage,
+2319,Better auto-complete for groups on dataset edit page,ckan-v1.8,closed,,awaiting triage,ux
+2608,Uploading a file to a resource hangs,ckan-v1.8,closed,,awaiting triage,storage
+2965,Stats extension broken on 1.8,ckan-v1.8,new,,awaiting triage,stats
+2761,"Document all the errors you can get when setting up filestore, and how to fix them",ckan-v1.8,new,,awaiting triage,docs
+2919,Remove IController from docs,ckan-v1.8,new,,awaiting triage,docs
+2309,Organizations review with SH,ckan-v1.8,closed,,awaiting triage,[0.5d]

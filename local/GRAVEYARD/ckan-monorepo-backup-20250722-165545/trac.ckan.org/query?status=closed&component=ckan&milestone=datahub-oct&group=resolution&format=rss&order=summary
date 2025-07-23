@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=datahub-oct&amp;group=resolution&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=datahub-oct&amp;group=resolution&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2551</link>
+        <guid isPermaLink="false">http://localhost/ticket/2551</guid>
+        <title>#2551: Feature metrics</title>
+        <pubDate>Mon, 18 Jun 2012 11:08:09 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+Would be useful if we could extend the Google Analytics extension to push track events to GA so that we can determine how the system is being used, and where we can optimise the workflow.
+&lt;/p&gt;
+&lt;p&gt;
+Assuming it isn't configured to be off, track events should be added to some key action buttons so that the information on what users are doing is logged for analysis.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+This could possibly just be a list of JS calls to $('x').click(_gaq.push('track'...))
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a developer I would like to know which components of the system are used the most so I can streamline the processes.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a support developer I would like to know which parts add complexity to the system for minimal gain and could possibly be removed, de-prioritised.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+For which metrics, as many of the following as possible that are achievable without changing the templates. I think for now it is enough to just record counts of these pages/actions.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Any group link on homepage
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Clicking on username (to go to profile)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;In user profile, clicking on Edit Profile
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Clicking Save Changes on Edit Profile page
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Clicking on any dataset link on User Profile page
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Any of the group links on /group
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Clicking any of the right hand sidebar tags on /group/X
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Visiting /group/history/X
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Compare Button on /group/history/X
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Compare Button on /dataset/history/X
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Tags on right hand sidebar of /dataset/X
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Download button on any /dataset/X/resource/* page
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Data API button on any /dataset/X/resource/* page
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Analysis/Clarification?&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Code/Config?&lt;/a&gt; changes
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2551#changelog</comments>
+    </item>
+ </channel>
+</rss>

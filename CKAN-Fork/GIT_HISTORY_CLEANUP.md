@@ -2,7 +2,7 @@
 
 ## 🚨 **Situation Summary**
 
-**Secret Exposed**: `SECRET_KEY = OPEXNgWETIOneem1sOxk7_bg8Jw`  
+**Secret Exposed**: `SECRET_KEY = [REDACTED-SECRET-REMOVED]`  
 **First Committed**: commit `c0e1ad9` (July 22, 2025)  
 **Repository**: Public GitHub repository  
 **Origin**: Auto-generated during CKAN setup (not from upstream CKAN)
@@ -33,7 +33,7 @@ git filter-branch --force --env-filter '
     fi
 ' --tree-filter '
     if [ -f "CKAN-Modernization-20250721/ckan-monorepo/ckan/ckan-test.ini" ]; then
-        sed -i "s/SECRET_KEY = OPEXNgWETIOneem1sOxk7_bg8Jw/SECRET_KEY = %(ENV_SECRET_KEY)s/g" CKAN-Modernization-20250721/ckan-monorepo/ckan/ckan-test.ini
+        sed -i "s/SECRET_KEY = [REDACTED]/SECRET_KEY = %(ENV_SECRET_KEY)s/g" CKAN-Modernization-20250721/ckan-monorepo/ckan/ckan-test.ini
     fi
 ' --prune-empty --tag-name-filter cat -- --all
 
@@ -50,7 +50,7 @@ git gc --aggressive --prune=now
 # Download from: https://rtyley.github.io/bfg-repo-cleaner/
 
 # Create a file with the secret
-echo "OPEXNgWETIOneem1sOxk7_bg8Jw" > secrets.txt
+echo "[REDACTED-SECRET]" > secrets.txt
 
 # Clean the repository
 java -jar bfg.jar --replace-text secrets.txt --no-blob-protection .git

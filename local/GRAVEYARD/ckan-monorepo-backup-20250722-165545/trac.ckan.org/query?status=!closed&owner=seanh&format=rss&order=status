@@ -1,0 +1,2185 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=seanh&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=seanh&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1785</link>
+        <guid isPermaLink="false">http://localhost/ticket/1785</guid>
+        <title>#1785: Replace 'Revisions' page with site-wide activity stream</title>
+        <pubDate>Tue, 07 Feb 2012 16:34:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Replace the /revision page with a /activity page showing a site-wide activity stream of all activities in the site. Or perhaps the site-wide activity stream can go somewhere on the front page of the site instead?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2336</link>
+        <guid isPermaLink="false">http://localhost/ticket/2336</guid>
+        <title>#2336: Move Jenkins' install script into ckan core so it can be versioned</title>
+        <pubDate>Mon, 30 Apr 2012 13:35:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2336#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2341</link>
+        <guid isPermaLink="false">http://localhost/ticket/2341</guid>
+        <title>#2341: Fix Jenkins issue when testing branches that contain model changes</title>
+        <pubDate>Tue, 01 May 2012 12:46:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2341#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2342</link>
+        <guid isPermaLink="false">http://localhost/ticket/2342</guid>
+        <title>#2342: Fix Jenkins issue when testing branches with different solr schema versions</title>
+        <pubDate>Tue, 01 May 2012 12:47:25 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2342#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2430</link>
+        <guid isPermaLink="false">http://localhost/ticket/2430</guid>
+        <title>#2430: Look into marking tickets as dependent on other tickets in trac</title>
+        <pubDate>Fri, 25 May 2012 11:58:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2430#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2431</link>
+        <guid isPermaLink="false">http://localhost/ticket/2431</guid>
+        <title>#2431: Trac git integration</title>
+        <pubDate>Fri, 25 May 2012 11:58:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2431#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2466</link>
+        <guid isPermaLink="false">http://localhost/ticket/2466</guid>
+        <title>#2466: Fix spam handling on trac</title>
+        <pubDate>Mon, 28 May 2012 13:51:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2466#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2475</link>
+        <guid isPermaLink="false">http://localhost/ticket/2475</guid>
+        <title>#2475: Upgrade trac.ckan.org to trac 0.12.3</title>
+        <pubDate>Tue, 29 May 2012 18:46:16 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This is not trivial, requires a database upgrade. But 0.12.3 has some nice new features (multiple vcs repository support, ticket comment editing and nicer preview) and the latest spam filter plugin requires 0.12.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://trac.edgewall.org/wiki/ChangeLog"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.edgewall.org/wiki/ChangeLog&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2475#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2477</link>
+        <guid isPermaLink="false">http://localhost/ticket/2477</guid>
+        <title>#2477: Add extensions section to readthedocs</title>
+        <pubDate>Wed, 30 May 2012 15:54:04 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Need a central up to date place for currently supported extensions (closest we have is &lt;a class="ext-link" href="http://wiki.ckan.org/List_of_Extensions"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/List_of_Extensions&lt;/a&gt;) &amp;amp; their documentation. I suggest this gets added to  a dedicated section of docs.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2477#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2478</link>
+        <guid isPermaLink="false">http://localhost/ticket/2478</guid>
+        <title>#2478: Get NeverNotifyUpdaterPlugin installed on trac.ckan.org</title>
+        <pubDate>Wed, 30 May 2012 16:52:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2478#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2516</link>
+        <guid isPermaLink="false">http://localhost/ticket/2516</guid>
+        <title>#2516: Make 'Assign to:' field on trac.ckan.org into a dropdown list</title>
+        <pubDate>Wed, 13 Jun 2012 09:07:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+there's a setting for this
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2516#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2537</link>
+        <guid isPermaLink="false">http://localhost/ticket/2537</guid>
+        <title>#2537: Test and document ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:48:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanbuild"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanbuild&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Verify that what's there so far still works, write a README explaining how it works
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2537#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2538</link>
+        <guid isPermaLink="false">http://localhost/ticket/2538</guid>
+        <title>#2538: Add multiple-instance support to ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:51:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Probably use ansible to do this. To create an instance, create a dir at /etc/ckan/MYSITE, and put MYSITE.wsgi, MYSITE.ini and who.ini files in it. Also put a MYSITE file in /etc/apache2/sites-available. See the example files already present in ckanbuild. Booting a new site should be a single command.
+&lt;/p&gt;
+&lt;p&gt;
+May not handle the postgres/solr/elastic-search side of things yet, could just require the user to set these up herself first and then pass them as args to the create-instance command.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2538#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2539</link>
+        <guid isPermaLink="false">http://localhost/ticket/2539</guid>
+        <title>#2539: Investigate the existing ckan debian package for ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:54:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Do we want to build on top of the existing debian packaging code? Or throw it away and start fresh?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2539#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2540</link>
+        <guid isPermaLink="false">http://localhost/ticket/2540</guid>
+        <title>#2540: Implement a way of upgrading ckan sites using ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:55:40 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When there are multiple ckan sites installed on a single server via ckanbuild, there needs to be some way of upgrading them all to a new ckan version at once.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2540#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2541</link>
+        <guid isPermaLink="false">http://localhost/ticket/2541</guid>
+        <title>#2541: Add non-core extensions to ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:57:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want some extensions from outside of CKAN core to be included in ckanbuild. These would be pip installed into the virtualenv before packaging the debian package. Decide which extensions to include.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2541#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2542</link>
+        <guid isPermaLink="false">http://localhost/ticket/2542</guid>
+        <title>#2542: Create jenkins job to run ckanbuild, and run tests</title>
+        <pubDate>Fri, 15 Jun 2012 15:58:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It should run the script to create the debian package, boot a VM, install the debian package on the VM, boot a CKAN instance, then run the tests.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2542#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1778</link>
+        <guid isPermaLink="false">http://localhost/ticket/1778</guid>
+        <title>#1778: Replace classmethod's with module-level functions</title>
+        <pubDate>Mon, 06 Feb 2012 15:53:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+In many places we have @classmethods where simple module-level functions would do (and would be more idiomatic in Python), e.g. the &lt;tt&gt;get()&lt;/tt&gt; classmethods in the model/ classes.
+&lt;/p&gt;
+&lt;p&gt;
+Doing it with module functions lets us type module.function() instead of module.Class.method().
+&lt;/p&gt;
+&lt;p&gt;
+In many cases we're importing classes directly with &lt;tt&gt;from module import Class&lt;/tt&gt; and then doing &lt;tt&gt;Class.method()&lt;/tt&gt;, but &lt;tt&gt;from module import foo&lt;/tt&gt; is bad style: &lt;a class="ext-link" href="http://docs.python.org/dev/howto/doanddont.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/dev/howto/doanddont.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1778#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2335</link>
+        <guid isPermaLink="false">http://localhost/ticket/2335</guid>
+        <title>#2335: Unicode characters don't work in CKAN ini files</title>
+        <pubDate>Mon, 30 Apr 2012 12:42:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+You get a &lt;a class="missing wiki"&gt;UnicodeDecodeError?&lt;/a&gt;, looks like it tries to decode the ini file as ascii. This is a problem because someone might try to set their site description to something with an umlaut in it, for example.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2335#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2337</link>
+        <guid isPermaLink="false">http://localhost/ticket/2337</guid>
+        <title>#2337: Sort out ini file confusion in docs</title>
+        <pubDate>Mon, 30 Apr 2012 14:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+For example if you follow the source install instructions then you have development.ini, then when you go onto Post-Installation Setup it talks about std.ini. People don't realise that these files are the same.
+&lt;/p&gt;
+&lt;p&gt;
+Either fix the docs or fix CKAN to use same ini file names in package and source installs/
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2337#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2370</link>
+        <guid isPermaLink="false">http://localhost/ticket/2370</guid>
+        <title>#2370: Add examples of all config settings in default config file</title>
+        <pubDate>Thu, 03 May 2012 10:50:37 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The default config file should contains examples (maybe commented out) for all config variables. Makes it easier to edit the config. For example openid_enabled is not in there.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2370#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2520</link>
+        <guid isPermaLink="false">http://localhost/ticket/2520</guid>
+        <title>#2520: Document undocumented config options</title>
+        <pubDate>Wed, 13 Jun 2012 11:52:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are 21 undocumented config options in CKAN, some of which are not mentioned in the config file template either:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.admin.name
+ckan.admin.email
+ckan.default.group_type
+ckan.page_cache_enabled
+ckan.cache_enabled
+ckan.cache_expires
+ckan.extra_resource_fields
+ckan.extra_resource_group_fields
+ckan.storage.key_prefix
+ckan.storage.max_content_length
+ckan.feeds.authority_name *
+ckan.feeds.date *
+ckan.feeds.author_name *
+ckan.feeds.author_link *
+ckan.mail_from
+ckan.gravatar_default *
+ckan.plugins
+ckan.api_url
+ckan.auth.profile
+ckan.datastore.enabled
+ckan.tracking_enabled
+&lt;/p&gt;
+&lt;p&gt;
+There are also some options that are in the default deployment.ini even though they're deprecated:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.async_notifier
+carrot_messaging_library
+ckan.build_search_index_synchronously
+&lt;/p&gt;
+&lt;p&gt;
+See email to ckan-dev from David Read: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+It'd be best if the docs could be automatically pulled from the source into sphinx using autodoc, see &lt;a class="assigned ticket" href="http://localhost/ticket/1358" title="enhancement: Generate configuration documentation automatically from the ... (assigned)"&gt;#1358&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2520#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2619</link>
+        <guid isPermaLink="false">http://localhost/ticket/2619</guid>
+        <title>#2619: Omit private datasets from public activity streams</title>
+        <pubDate>Thu, 28 Jun 2012 11:49:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Activities about private datasets should not appear in public activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to actually purge the activities from the db, because you might still want them to appear in private activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I do think that when a dataset goes private all its past activity should go private, because I imagine that users are going to want to hide everything about the dataset and not have any past activities 'leaking out'
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to consider whether the dataset was private when the activity happened, rather if a dataset is private now then all its past activities are private (and the simplest thing would be to say that if a dataset is public now then all its past activities become public as well, but is that a privacy concern?)
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way to implement this is going to be by modifying the *_activity_list() action functions in get.py, after they pull their activity lists out of the db they should pass them through a function that filters out stuff about private datasets.
+&lt;/p&gt;
+&lt;p&gt;
+An activity about a private dataset is one whose object_type is 'dataset' and whose object_id matches the id of a private dataset. You should also check the object_type and object_id of all of the activity object's activity detail objects, if any of those match a private dataset then mark the whole activity as private.
+&lt;/p&gt;
+&lt;p&gt;
+Currently all activity streams are public so should have all private datasets filtered out from them, except for the dashboard activity stream which is private to the individual user. In this case private datasets that the user has permission to see should not be filtered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2619#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2766</link>
+        <guid isPermaLink="false">http://localhost/ticket/2766</guid>
+        <title>#2766: prevent draft datasets making it to activity stream</title>
+        <pubDate>Thu, 26 Jul 2012 16:06:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+The new ckan creates datasets as part of a 3 phase process.  To allow for this partially created datasets can have a state that is 'draft' or 'draft-complete'.  These datasets should not be seen as active by the activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+If we click 'add dataset' and then complete the first phase of adding a dataset then we end up having a activity stream created.  When we add a resource in the next phase (add data) again an activity stream item xxx added resource to dataset is created
+&lt;/p&gt;
+&lt;p&gt;
+We do not want these adding.  Essentially if a dataset has a state.startswith('draft') then we want the activity stream to ignore all actions involving it.
+&lt;/p&gt;
+&lt;p&gt;
+finally when the state is changed form state.startswith('draft') to state=='active' we want a xxx has created dataset ... to be added to the stream.
+&lt;/p&gt;
+&lt;p&gt;
+The best way to do this would be to branch from 2375-demo-theme-stable and get it to work there.
+&lt;/p&gt;
+&lt;p&gt;
+Let me know if you need any help with this ticket or a better explanation of the problem.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2818</link>
+        <guid isPermaLink="false">http://localhost/ticket/2818</guid>
+        <title>#2818: Improve related item schema</title>
+        <pubDate>Thu, 09 Aug 2012 09:22:56 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item (e.g. a Visualisation), if you don't put in a URL it succeeds, but on the related items and apps pages it renders it as a link to the same page.
+Expected: Always require a URL and it should only submit
+if one is added
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2818#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3029</link>
+        <guid isPermaLink="false">http://localhost/ticket/3029</guid>
+        <title>#3029: JSONP parameter scuppers Search in API</title>
+        <pubDate>Tue, 11 Dec 2012 15:00:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;tt&gt;http://datahub.io/api/2/search/package?jsonp=jsonpcallback&amp;amp;q=canada&lt;/tt&gt; returns
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"count": 0, "results": []}
+&lt;/pre&gt;&lt;p&gt;
+I believe this worked in CKAN 1.4 or 1.5, but it is broken on 1.7.1, 1.8 and whatever demo.ckan.org is running. I suspect the jsonpcallback parameter is getting sent to SOLR.
+&lt;/p&gt;
+&lt;p&gt;
+This bug prevents using javascript on another site to search CKAN (although hopefully the action API would work).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3029#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1635</link>
+        <guid isPermaLink="false">http://localhost/ticket/1635</guid>
+        <title>#1635: Email notifications (e.g. for activity streams)</title>
+        <pubDate>Wed, 11 Jan 2012 17:56:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should be able to send email notifications to users.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe have a notifications table in the db, and a server-side job that runs periodically and consumes rows from this table, mailing them to the users.
+&lt;/p&gt;
+&lt;p&gt;
+One thing that we may want to send users notifications of is activity stream events. So the activity streams code would have to add rows to the notifications table for the mailer job to consume. But remember that email notifications feature is separate from activity streams - we may want to send notifications of other things as well.
+&lt;/p&gt;
+&lt;p&gt;
+Need to implement (at least some of) &lt;a class="closed ticket" href="http://localhost/ticket/1634" title="enhancement: Allow users to follow/unfollow activity streams of other users, datasets ... (closed: duplicate)"&gt;#1634&lt;/a&gt; before this can be implemented, in order to have something to send notifications about.
+&lt;/p&gt;
+&lt;p&gt;
+Analysis here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1635#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1667</link>
+        <guid isPermaLink="false">http://localhost/ticket/1667</guid>
+        <title>#1667: Add an extension point for rendering activity streams</title>
+        <pubDate>Tue, 17 Jan 2012 10:29:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently rendering of activity stream events to HTML works by looking up a rendering function in a dictionary that maps activity types ('new package', 'changed group', etc.) to rendering functions that take an activity stream event and return the rendered HTML.
+&lt;/p&gt;
+&lt;p&gt;
+There needs to be an extension point where extensions can register their own rendering functions for particular activity types.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1667#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1748</link>
+        <guid isPermaLink="false">http://localhost/ticket/1748</guid>
+        <title>#1748: Make activity streams conform to http://activitystrea.ms/ standard</title>
+        <pubDate>Sun, 05 Feb 2012 14:06:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+At the very least we should make our JSON output conform to their spec:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://activitystrea.ms/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://activitystrea.ms/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1748#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2200</link>
+        <guid isPermaLink="false">http://localhost/ticket/2200</guid>
+        <title>#2200: Add vocabulary_id option to tag_show() logic action function</title>
+        <pubDate>Wed, 29 Feb 2012 16:41:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently tag_show() only works with free tags, it's not possible to get a tag_show for a vocabulary tag.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2200#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2301</link>
+        <guid isPermaLink="false">http://localhost/ticket/2301</guid>
+        <title>#2301: Replace old-style string formatting with format() method (at least in strings marked for translation)</title>
+        <pubDate>Mon, 16 Apr 2012 12:27:44 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Some strings in CKAN are passed to gettext with more than one %s in them, this is no good as translators may need to change the order of substituted words.
+&lt;/p&gt;
+&lt;p&gt;
+Strings should not use the old style % substitution, they should use the new format method in Python 2.6+, e.g.:
+&lt;/p&gt;
+&lt;p&gt;
+'This {food} is {adjective}.'.format(food='spam', adjective='absolutely horrible')
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.python.org/release/2.6.8/tutorial/inputoutput.html#fancier-output-formatting"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/release/2.6.8/tutorial/inputoutput.html#fancier-output-formatting&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We should probably only change strings that are marked for translation and that contain multiple %s, don't want to make too much work or cause too many strings to change and need to be re-translated.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2301#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2656</link>
+        <guid isPermaLink="false">http://localhost/ticket/2656</guid>
+        <title>#2656: Feed with few results has bad paging link, causing exception</title>
+        <pubDate>Wed, 11 Jul 2012 10:05:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This page &lt;a class="ext-link" href="http://thedatahub.org/feeds/custom.atom?q=wombat"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/feeds/custom.atom?q=wombat&lt;/a&gt; has 0 results and contains a link to &lt;a class="ext-link" href="http://thedatahub.org/feeds/custom.atom?q=wombat&amp;amp;amp;page=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/feeds/custom.atom?q=wombat&amp;amp;amp;page=0&lt;/a&gt; which the page=0 causes this exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ckan.lib.search.common.SearchError'&amp;gt;: SOLR returned an error running query
+Error: "'start' parameter cannot be negative"
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2656#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2771</link>
+        <guid isPermaLink="false">http://localhost/ticket/2771</guid>
+        <title>#2771: Documentation and examples for IDatasetForm and IGroupForm</title>
+        <pubDate>Fri, 27 Jul 2012 12:30:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add minimal, working IDatasetForm and IGroupForm example extensions to core, with tests.
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm example should use tag vocabularies (two birds with one stone)
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm and IGroupForm docs are not very good (and are somewhat spread around different doc chapters), fix them up, and reference the new working examples.
+&lt;/p&gt;
+&lt;p&gt;
+Tab Vocabularies docs should reference IDatasetForm example.
+&lt;/p&gt;
+&lt;p&gt;
+When using convert_to/from_extras() you have to remove any free extras from the form or it won't work, this needs to be documented (in the docstring maybe)
+&lt;/p&gt;
+&lt;p&gt;
+There have been recent changes to the schemas that IDatasetForm and IGroupForm use, make sure the docs are up to date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2771#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2815</link>
+        <guid isPermaLink="false">http://localhost/ticket/2815</guid>
+        <title>#2815: db_to_form_package_schema() strips tracking summary, isopen</title>
+        <pubDate>Wed, 08 Aug 2012 16:47:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If an IDatasetForm plugin with a db_to_form_schema() based on db_to_form_package_schema() (which is in turn based on default_package_schema()) is in use then the 'tracking_summary' dict and the 'isopen' bool get stripped from package dicts during validation, e.g. during package_show(), and these values are then not available to templates.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2870</link>
+        <guid isPermaLink="false">http://localhost/ticket/2870</guid>
+        <title>#2870: 1.8 tag_list not defined</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Thu, Aug 16, 2012 at 3:20 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'genshi.template.eval.&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;'&amp;gt;: "tag_list" not defined
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/dataset/uk-postboxes"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/dataset/uk-postboxes&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.package:322 in read
+&amp;lt;&amp;lt;          template = template[:template.index('.') + 1] + format
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def comments(self, id):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:153 in render
+&amp;lt;&amp;lt;      try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return cached_template(template_name, render_template,
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except ckan.exceptions.&lt;a class="missing wiki"&gt;CkanUrlException?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.templating:249 in cached_template
+&amp;lt;&amp;lt;          return content
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:102 in render_template
+&amp;lt;&amp;lt;          if loader_class == &lt;a class="missing wiki"&gt;NewTextTemplate?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding=None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method=method, encoding=None,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding =None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:183 in render
+&amp;lt;&amp;lt;              method = self.serializer or 'xml'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+generator = self.serialize(method=method, &lt;strong&gt;kwargs)
+return encode(generator, method=method, encoding=encoding, out=out)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def select(self, path, namespaces=None, variables=None):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return encode(generator, method=method, encoding=encoding, out =out)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:57 in encode
+&amp;lt;&amp;lt;          _encode = lambda string: string
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if out is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+for chunk in iterator:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+out.write(_encode(chunk))
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:569 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;      def &lt;span class="underline"&gt;call&lt;/span&gt;(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+strip_markup = self.strip_markup
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is TEXT:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+data = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckanext.googleanalytics.plugin:93 in download_adder
+&amp;lt;&amp;lt;                  [downloaded %s times]&amp;lt;/span&amp;gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+count = None
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark and kind == START:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href = data&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.get('href')
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1175 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          """
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+callable_value = hasattr(self.value, '&lt;span class="underline"&gt;call&lt;/span&gt;')
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if callable_value:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:605 in _include
+&amp;lt;&amp;lt;          from genshi.template.loader import &lt;a class="missing wiki"&gt;TemplateNotFound?&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is INCLUDE:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href, cls, fallback = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:565 in _flatten
+&amp;lt;&amp;lt;                  elif kind is EXPR:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+if result is not None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# First check for a string, otherwise the iterable test
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:277 in _eval_expr
+&amp;lt;&amp;lt;      if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.push(vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.pop()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:178 in evaluate
+&amp;lt;&amp;lt;          &lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+_globals = self._globals(data)
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/em&gt;&lt;/blockquote&gt;
+&lt;p&gt;
+Module ?:51 in &amp;lt;Expression u"tag_list(c.pkg_dict.get('tags', &lt;em&gt;))"&amp;gt;
+&amp;lt;&amp;lt;      &amp;lt;li py:if=&amp;#34;c.pkg_dict.get('tags')" class="sidebar-section"&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;h3&amp;gt;Tags&amp;lt;/h3&amp;gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;/li&amp;gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:309 in lookup_name
+&amp;lt;&amp;lt;              val = BUILTINS.get(name, val)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if val is UNDEFINED:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return val
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:410 in undefined
+&amp;lt;&amp;lt;          """Raise an &lt;tt&gt;&lt;/tt&gt;&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;&lt;tt&gt;&lt;/tt&gt; immediately."""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = True
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;: "tag_list" not defined
+CGI Variables
+CKAN_CURRENT_URL        '/dataset/uk-postboxes'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CKAN_PAGE_CACHABLE        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        'text/html,text/plain,text/xml'
+HTTP_ACCEPT_CHARSET        'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+HTTP_ACCEPT_ENCODING        'gzip'
+HTTP_ACCEPT_LANGUAGE        'vi,en-us;q=0.7,en;q=0.3'
+HTTP_CONNECTION        'close'
+HTTP_HOST        'ckan.net'
+HTTP_USER_AGENT        'coccoc/1.0 ()'
+PATH_INFO        '/dataset/uk-postboxes'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/dataset/uk-postboxes'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '47065'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/dataset/uk-postboxes'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345083636.079552, '_creation_time': 1345083636.079552}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f52e47477d0&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt;.read of &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52e477be90&amp;gt;
+pylons.routes_dict        {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f5312955a50&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f5308983a80&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;, {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2870#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2952</link>
+        <guid isPermaLink="false">http://localhost/ticket/2952</guid>
+        <title>#2952: incorporate javascriopt translations into translations workflow</title>
+        <pubDate>Mon, 01 Oct 2012 19:15:45 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+There are now javascript translations.  There's a paster command, &lt;tt&gt;trans js&lt;/tt&gt;.  This is a ticket to ensure that using &lt;tt&gt;trans js&lt;/tt&gt; is documented in the normal ckan translation workflow (which is followed after a feature freeze, prior to release).  And to see if there's any need for further incorporation into the current translation process.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2952#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3005</link>
+        <guid isPermaLink="false">http://localhost/ticket/3005</guid>
+        <title>#3005: Add following/unfollowing of groups: model, API, frontend, tests</title>
+        <pubDate>Tue, 23 Oct 2012 17:35:44 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3005#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3028</link>
+        <guid isPermaLink="false">http://localhost/ticket/3028</guid>
+        <title>#3028: Feature: dashboard activity stream filtering</title>
+        <pubDate>Mon, 10 Dec 2012 12:07:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/13"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/13&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3028#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2243</link>
+        <guid isPermaLink="false">http://localhost/ticket/2243</guid>
+        <title>#2243: Fix ckanext-example</title>
+        <pubDate>Mon, 19 Mar 2012 15:58:30 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2243#changelog</comments>
+    </item>
+ </channel>
+</rss>

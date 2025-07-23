@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-v1.3-sprint-3&amp;group=status&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-v1.3-sprint-3&amp;group=status&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/915</link>
+        <guid isPermaLink="false">http://localhost/ticket/915</guid>
+        <title>#915: Deploy dcat-tools/rdfsolr to publicdata.eu as a placeholder</title>
+        <pubDate>Mon, 17 Jan 2011 12:24:00 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We should present something there, why not start with a meta-search.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/915#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/914</link>
+        <guid isPermaLink="false">http://localhost/ticket/914</guid>
+        <title>#914: Handle formats in dcat-tools</title>
+        <pubDate>Mon, 17 Jan 2011 12:16:09 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create a list of valid predicates for format information (accessURL et al)
+&lt;/li&gt;&lt;li&gt;Execute &lt;a class="assigned ticket" href="http://localhost/ticket/235" title="enhancement: Resource format normalization and detection (assigned)"&gt;#235&lt;/a&gt; via Google Spreadsheets and include in DCat enrichment
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/914#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/911</link>
+        <guid isPermaLink="false">http://localhost/ticket/911</guid>
+        <title>#911: Add pager to dcat-tools/rdfsolr</title>
+        <pubDate>Mon, 17 Jan 2011 12:10:11 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/911#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/907</link>
+        <guid isPermaLink="false">http://localhost/ticket/907</guid>
+        <title>#907: Data previews: preview package resource data in the WUI</title>
+        <pubDate>Mon, 17 Jan 2011 10:46:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to preview a dataset ('resource') before downloading it.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+This will be implemented as an &lt;a class="wiki" href="http://localhost/wiki/Extensions"&gt;Extension&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+NB: This ticket requires a way to get data out of a remote url (the dataset). We do &lt;strong&gt;not want to put this data load/streaming into ckan core&lt;/strong&gt; due to a) complexity b) load problems (do not want to take ckan out by accidentally pulling in a 1GB file)
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Need a 'data proxy' - see &lt;a class="closed ticket" href="http://localhost/ticket/698" title="task: CKAN Data API v1 (closed: fixed)"&gt;ticket:698&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/888" title="enhancement: Improvements to the dataproxy and the data API (closed: fixed)"&gt;ticket:888&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Preview using javascript in WUI - do this in an extension &lt;a class="ext-link" href="http://bitbucket.org/okfn/ckanext-dataapi"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/okfn/ckanext-dataapi&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/907#changelog</comments>
+    </item>
+ </channel>
+</rss>

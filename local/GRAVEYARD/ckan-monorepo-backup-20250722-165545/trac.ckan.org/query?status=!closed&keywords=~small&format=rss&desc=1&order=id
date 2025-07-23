@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~small&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~small&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2203</link>
+        <guid isPermaLink="false">http://localhost/ticket/2203</guid>
+        <title>#2203: Data Viewer support for PDF</title>
+        <pubDate>Sun, 04 Mar 2012 11:24:53 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Boot viewer for format/mimetype: application/pdf, application/x-pdf, application/acrobat, applications/vnd.pdf, text/pdf, text/x-pdf
+&lt;/li&gt;&lt;li&gt;propose we use pdf.js - &lt;a class="ext-link" href="https://github.com/mozilla/pdf.js"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/mozilla/pdf.js&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;We could also try iframing for browsers with native support but this seems more complex
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2203#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1171</link>
+        <guid isPermaLink="false">http://localhost/ticket/1171</guid>
+        <title>#1171: Citation instructions on dataset and resource view pages</title>
+        <pubDate>Wed, 01 Jun 2011 09:33:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Some sort of citation helper. Something small on the dataset and resource page that would show how to cite.
+&lt;/p&gt;
+&lt;p&gt;
+wwaites: Some related thoughts on this from opb: &lt;a class="ext-link" href="http://homepages.inf.ed.ac.uk/opb/papers/ssdbm2006.pdf"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://homepages.inf.ed.ac.uk/opb/papers/ssdbm2006.pdf&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+timclicks: I'm looking at Dataverse for the first time&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;. It seems very popular in the social sciences. I noticed that there is a recommended citation for each dataset. For example, &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; is has this one: "Targeted Input Programme (TIP) 2000-01", &lt;a class="ext-link" href="http://hdl.handle.net/1902.1/SSC-MWI-TIP2000-01-M1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://hdl.handle.net/1902.1/SSC-MWI-TIP2000-01-M1&lt;/a&gt; V1 [Version]"
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+Add a small box at bottom of dataset / resource page (or in sidebar on dataset page) with title "Cite this" with contents like:
+&lt;/p&gt;
+&lt;p&gt;
+%title. %author. Retrieved %date. %site_title.
+&lt;/p&gt;
+&lt;p&gt;
+For resource: %title = %dataset_title. %resource_name.
+&lt;/p&gt;
+&lt;p&gt;
+Could also add export to ref managers (e.g. to bibtex) but that is for later.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1171#changelog</comments>
+    </item>
+ </channel>
+</rss>

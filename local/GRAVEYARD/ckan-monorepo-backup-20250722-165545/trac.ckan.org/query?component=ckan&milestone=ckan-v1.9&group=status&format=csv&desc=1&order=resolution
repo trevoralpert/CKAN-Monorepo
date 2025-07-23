@@ -1,0 +1,76 @@
+id,summary,owner,type,priority,resolution,time
+1785,Replace 'Revisions' page with site-wide activity stream,seanh,enhancement,awaiting triage,,02/07/12 16:34:18
+2341,Fix Jenkins issue when testing branches that contain model changes,seanh,enhancement,minor,,05/01/12 12:46:36
+2342,Fix Jenkins issue when testing branches with different solr schema versions,seanh,enhancement,minor,,05/01/12 12:47:25
+2362,"Improve plugin documentaion, including examples.",toby,enhancement,awaiting merge,,05/01/12 16:13:11
+2430,Look into marking tickets as dependent on other tickets in trac,seanh,enhancement,major,,05/25/12 11:58:06
+2431,Trac git integration,seanh,enhancement,major,,05/25/12 11:58:48
+2466,Fix spam handling on trac,seanh,task,major,,05/28/12 13:51:43
+2475,Upgrade trac.ckan.org to trac 0.12.3,seanh,enhancement,awaiting triage,,05/29/12 18:46:16
+2477,Add extensions section to readthedocs,seanh,enhancement,awaiting triage,,05/30/12 15:54:04
+2478,Get NeverNotifyUpdaterPlugin installed on trac.ckan.org,seanh,enhancement,awaiting triage,,05/30/12 16:52:14
+2516,Make 'Assign to:' field on trac.ckan.org into a dropdown list,seanh,enhancement,awaiting triage,,06/13/12 09:07:22
+235,Resource format normalization and detection,tobes,enhancement,awaiting triage,,01/18/10 15:13:24
+250,RDF link in Atom feed,icmurray,enhancement,awaiting triage,,02/18/10 15:41:35
+2203,Data Viewer support for PDF,kindly,enhancement,minor,,03/04/12 11:24:53
+2294,Unauthorized action on Data API gets 302 rather than 401 or similar,kindly,defect,minor,,04/14/12 19:35:04
+2334,Improved data import,kindly,enhancement,awaiting triage,,04/28/12 22:21:02
+2335,Unicode characters don't work in CKAN ini files,seanh,defect,awaiting triage,,04/30/12 12:42:06
+2337,Sort out ini file confusion in docs,seanh,enhancement,awaiting triage,,04/30/12 14:57:56
+2370,Add examples of all config settings in default config file,seanh,enhancement,awaiting triage,,05/03/12 10:50:37
+2405,Improvements to data viewer embed,icmurray,defect,major,,05/21/12 06:59:25
+2473,Make datstorer store field ordering in _meta field,kindly,enhancement,awaiting triage,,05/29/12 12:11:32
+2520,Document undocumented config options,seanh,defect,awaiting triage,,06/13/12 11:52:48
+2619,Omit private datasets from public activity streams,seanh,enhancement,awaiting triage,,06/28/12 11:49:00
+2629,Move ckanext-examplevocabs into master and document,seanh,enhancement,awaiting triage,duplicate,07/06/12 14:55:55
+2736,Archiver fixes,ross,enhancement,awaiting triage,wontfix,07/24/12 09:13:57
+2371,fanstatic integration,toby,enhancement,minor,fixed,05/03/12 12:00:11
+2519,Dataproxy (converters) enhancement,ross,enhancement,awaiting triage,fixed,06/13/12 10:55:55
+2536,cleanup activity streams,toby,enhancement,awaiting merge,fixed,06/15/12 13:02:03
+2575,Licenses have i18n issues (was Inconsistent language on license dropdown),toby,enhancement,awaiting merge,fixed,06/19/12 17:10:45
+2577,Dataproxy raises 500 when it can't get CSV,ross,enhancement,awaiting triage,fixed,06/20/12 15:45:24
+2632,check allowed helpers exist,toby,enhancement,awaiting merge,fixed,07/09/12 09:56:51
+2668,Permission for sysadmin to read a deleted publisher,ross,defect,minor,fixed,07/13/12 09:24:13
+2671,fix allow_partial_update,toby,enhancement,awaiting triage,fixed,07/13/12 12:46:58
+1745,Dataset search UX improvements as of Jan 2012,,enhancement,awaiting triage,,02/02/12 23:22:21
+2257,cleanup template vars,toby,enhancement,awaiting triage,,03/23/12 14:35:07
+2291,DataStorer incorrectly attempts to store JSON in DataStore,kindly,enhancement,awaiting triage,,04/14/12 19:19:07
+2298,Add sort-by controls to the search results page,icmurray,enhancement,minor,,04/16/12 09:39:22
+2320,Introduce new state: archived,,enhancement,awaiting triage,,04/23/12 20:12:29
+2321,Use resource names/titles in URLs,,enhancement,awaiting triage,,04/24/12 03:00:12
+2324,Link API docs to relevant version not just latest,,enhancement,awaiting triage,,04/25/12 10:58:52
+2328,"Link to Catalog API for each Dataset, Group and Tag",,enhancement,awaiting triage,,04/26/12 12:15:01
+2333,Introduce new resource type datastore,,enhancement,awaiting triage,,04/28/12 22:16:00
+2350,Hooks  in package controller for validating form data,icmurray,enhancement,minor,,05/01/12 14:16:01
+2406,Errors in source install doc,kindly,defect,awaiting triage,,05/21/12 10:11:33
+2407,'Access denied' message is unhelpful,amercader,enhancement,awaiting triage,,05/21/12 15:01:40
+2415,Confusing message on attempting to register new account with upper case,kindly,defect,awaiting triage,,05/23/12 13:19:49
+2426,Get rid of CKAN's formalchemy dependency,kindly,enhancement,awaiting triage,,05/25/12 11:47:42
+2427,Reduce cruft installed into CKAN's virtualenv due to Pylons,kindly,enhancement,awaiting triage,,05/25/12 11:48:27
+2479,Meanings of Author and Maintainer fields are unclear,,enhancement,awaiting triage,,05/31/12 08:28:18
+2480,Better message when dataset has no resources,,enhancement,awaiting triage,,05/31/12 08:31:33
+2483,Non-local resources should not have Download links,,enhancement,awaiting triage,,05/31/12 12:52:14
+2485,Encourage leak containment by limiting the number of requests a CKAN process serves,icmurray,defect,awaiting triage,,06/01/12 11:47:09
+2529,DataHub (or CKAN) widgets,,enhancement,awaiting triage,,06/15/12 08:47:29
+2530,DataHub purge fails on some revisions,kindly,enhancement,minor,,06/15/12 08:54:58
+2543,facet.sort is not available in the package_search action,,enhancement,awaiting triage,,06/18/12 09:55:35
+2572,clean up stats plugin,toby,enhancement,awaiting triage,,06/19/12 11:24:14
+2579,move sort_by functions into lib.helpers,toby,enhancement,awaiting triage,,06/21/12 12:29:58
+2582,Do not hide notes / readme on dataset pages,,enhancement,blocker,,06/21/12 20:59:00
+2585,"Escape solr control characters in search queries, add advanced search screen",,enhancement,awaiting triage,,06/22/12 10:26:13
+2603,Remove deprecated 'fields' parameter from resource_search,icmurray,refactor,minor,,06/26/12 17:10:01
+2621,Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete,icmurray,refactor,minor,,06/28/12 16:22:49
+2625,Add i18n strings from non-core but supported extensions to ckan.pot file,,enhancement,awaiting triage,,07/02/12 13:48:23
+2663,h.resource_display_name needs love,toby,enhancement,awaiting triage,,07/11/12 14:42:26
+2679,Change default behaviour of TemplateController.view to 404.,icmurray,enhancement,minor,,07/16/12 10:55:33
+2708,limit extra data for package/group show,kindly,enhancement,awaiting triage,,07/18/12 14:40:20
+2733,Datastore logic functions,johnglover,enhancement,major,,07/23/12 15:54:46
+2745,Password reset returns an exception if the key parameter is missing,,defect,major,,07/24/12 16:05:31
+2758,file storage gives error if config not available but no useful user information,toby,enhancement,awaiting triage,,07/26/12 07:28:29
+2773,About page needs improving,markw,enhancement,awaiting triage,,07/30/12 11:13:15
+2788,Speed improvements on creating/updating and indexing,amercader,enhancement,awaiting triage,,08/01/12 14:56:32
+2829,Archiver fails on 403 http response,johnglover,enhancement,awaiting triage,,08/09/12 10:34:44
+2838,Context variables accepted by action functions need to be documented,,enhancement,awaiting triage,,08/10/12 20:35:11
+2885,"Labels (editor, admin) not translated in authorization pages for datasets or groups",,enhancement,awaiting triage,,08/22/12 08:49:11
+2889,"Support JSON values in extras, when returning JSON from API",,enhancement,awaiting triage,,08/24/12 12:35:37
+2243,Fix ckanext-example,seanh,enhancement,minor,,03/19/12 15:58:30

@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.4-sprint-7&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.4-sprint-7&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/736</link>
+        <guid isPermaLink="false">http://localhost/ticket/736</guid>
+        <title>#736: URL validation for CSW and WMS links</title>
+        <pubDate>Fri, 22 Oct 2010 12:10:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Robust against slightly incorrect URLs (e.g. with trailing slash, or without /csw), and non-CWS service which also return &amp;lt;ows:ExceptionReport ... /&amp;gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Both cases would be resolved by checking capabilities (with CswClient's  check_get_capabilities() method).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/736#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/842</link>
+        <guid isPermaLink="false">http://localhost/ticket/842</guid>
+        <title>#842: Todo list CKAN extension</title>
+        <pubDate>Sat, 04 Dec 2010 13:01:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+An extension that provides a todo list feature on CKAN so that people can register and find things to do.
+&lt;/p&gt;
+&lt;p&gt;
+Extension name: ckanext-todo
+&lt;/p&gt;
+&lt;h2 id="UserStory"&gt;User Story&lt;/h2&gt;
+&lt;h3 id="Packagepage"&gt;Package page&lt;/h3&gt;
+&lt;p&gt;
+As a user I come to a package:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Have a todo count at that top that takes you down to the todo list (which may say nothing todo)
+&lt;/li&gt;&lt;li&gt;At the bottom is a section of the package display titled "&lt;a class="missing wiki"&gt;ToDo?&lt;/a&gt;" where I see a list of all toDos for the package most recent at the top
+&lt;ul&gt;&lt;li&gt;If I am logged in
+&lt;ul&gt;&lt;li&gt;See a form for "Add to do" at the top of the todo section and can add one straight away
+&lt;/li&gt;&lt;li&gt;I see a "now resolved" button next to each which goes green when you hover.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+When clicked the todo fades away.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Not logged in: I see a button that says "login to add todo"
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Todolistpage"&gt;Todo list page&lt;/h3&gt;
+&lt;p&gt;
+When a user comes to todo overview at /todo
+&lt;/p&gt;
+&lt;p&gt;
+At top list all todo categories with counts (or a progress bar). Click on category name or bar takes you down page to list for that category.
+&lt;/p&gt;
+&lt;p&gt;
+Category list has a list of todo items (ul with li items with class todo) - link to package relevant to the todo.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+The Todo form
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;One of the fields is category -&amp;gt; autocomplete the category (not constrained) (lowercase, no spaces, .-_ allowed)
+&lt;/li&gt;&lt;li&gt;Add a description
+&lt;/li&gt;&lt;li&gt;Submit, the todo gets added via AJAX to the list at the top as the most recent todo
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Model:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;todo table
+  id (autoincrement integer)
+  package_id
+  todo_category_id (required)
+  description (required)
+  created=NOW()
+  resolved=null (unresolved) or a datetime (datetime of resolution)
+  creator=user
+  resolver=user
+todo_category table
+  id
+  name
+Prepopulate with: broken-resource-link, no-author, bad-format, add-description
+&lt;/pre&gt;&lt;p&gt;
+API at /api/2/todo
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;GET / POST / PUT ...
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+/api/2/todo?package=package_id_or_name&amp;amp;category=...&amp;amp;resolved=0/1
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;support limit (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+/api/2/todo/category -&amp;gt; return list of todo categories
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;No GET / PUT / POST (these are auto-created by creation of todo)
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="OptionalExtrasWillnotbedoneatm"&gt;Optional Extras (Will not be done atm)&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Integrate todo tags (e.g. list packages tagged with a todo.{xxx} on Todo List page ...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/842#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1112</link>
+        <guid isPermaLink="false">http://localhost/ticket/1112</guid>
+        <title>#1112: Allow searching for all packages</title>
+        <pubDate>Thu, 28 Apr 2011 16:24:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;pre class="wiki"&gt;GET api/search/package?q=
+&lt;/pre&gt;&lt;p&gt;
+returns all packages. This is so you can filter them e.g. by openness, which is not currently possible.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1112#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1114</link>
+        <guid isPermaLink="false">http://localhost/ticket/1114</guid>
+        <title>#1114: CLI for viewing search index of a package</title>
+        <pubDate>Fri, 29 Apr 2011 11:59:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+To see what lexemes are generated for debug purposes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1114#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1119</link>
+        <guid isPermaLink="false">http://localhost/ticket/1119</guid>
+        <title>#1119: Fully functional storage extension with file upload</title>
+        <pubDate>Fri, 29 Apr 2011 16:26:22 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Previous work in &lt;a class="closed ticket" href="http://localhost/ticket/877" title="enhancement: File upload in WUI (extension) (closed: fixed)"&gt;#877&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/879" title="enhancement: Storage auth API (closed: fixed)"&gt;#879&lt;/a&gt; + &lt;a class="closed ticket" href="http://localhost/ticket/853" title="enhancement: Client upload to storage without having primary storage keys (closed: fixed)"&gt;#853&lt;/a&gt; (storage API). In this ticket:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Improve authorization
+&lt;/li&gt;&lt;li&gt;Establish convention for laying out files on disk
+&lt;/li&gt;&lt;li&gt;Add documentation
+&lt;/li&gt;&lt;li&gt;Fix bugs with &lt;a class="closed ticket" href="http://localhost/ticket/879" title="enhancement: Storage auth API (closed: fixed)"&gt;#879&lt;/a&gt; (does not currently work -- boto may have changed)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1119#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1126</link>
+        <guid isPermaLink="false">http://localhost/ticket/1126</guid>
+        <title>#1126: Exceptions arising from error page</title>
+        <pubDate>Thu, 05 May 2011 09:11:23 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I'm not completely clear what the use case is for loading the error page in this way, but somehow original_request is None and that creates an unnecessary exception with the logic refactor.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://ckan.net/error/document?__cache=39020485
+...
+Module ckan.controllers.error:29 in document
+&amp;lt;&amp;lt;          original_response = request.environ.get('pylons.original_response')
+               # Bypass error template for API operations.
+               if original_request.path.startswith('/api'):
+                   return original_response.body
+               # Otherwise, decorate original response with error template.
+&amp;gt;&amp;gt;  if original_request.path.startswith('/api'):
+AttributeError: 'NoneType' object has no attribute 'path'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1126#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1104</link>
+        <guid isPermaLink="false">http://localhost/ticket/1104</guid>
+        <title>#1104: create-test-data doesn't index the packages it creates</title>
+        <pubDate>Fri, 22 Apr 2011 17:50:35 GMT</pubDate>
+        
+        <dc:creator>johnlawrenceaspden</dc:creator>
+
+        <description>&lt;p&gt;
+With the default test data created by
+&lt;/p&gt;
+&lt;p&gt;
+paster db clean
+paster db init
+paster create-test-data
+&lt;/p&gt;
+&lt;p&gt;
+going to the front page shows two recently changed packages
+A Wonderful Story
+A Novel by Tolstoy
+&lt;/p&gt;
+&lt;p&gt;
+But none of those words "Wonderful", etc produce search hits.
+In fact as far as I can tell, nothing produces any search hits.
+&lt;/p&gt;
+&lt;p&gt;
+That isn't true on ckan.net, where searching seems to work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1104#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1116</link>
+        <guid isPermaLink="false">http://localhost/ticket/1116</guid>
+        <title>#1116: api search loses boolean q options</title>
+        <pubDate>Fri, 29 Apr 2011 14:20:23 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+filter_by_openness and filter_by_downloadable options don't work when specified as URI parameters. (They do work in qjson parameters)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1116#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1131</link>
+        <guid isPermaLink="false">http://localhost/ticket/1131</guid>
+        <title>#1131: Search param validation exception not caught</title>
+        <pubDate>Mon, 09 May 2011 11:53:43 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Example request:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://nl.ckan.net/api/2/search/package?q=delft&amp;amp;order_by=&amp;amp;offset=&amp;amp;limit=&amp;amp;tags=
+&lt;/pre&gt;&lt;p&gt;
+Gives 500 error:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;type 'exceptions.ValueError'&amp;gt;: invalid literal for int() with base 10: ''
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1131#changelog</comments>
+    </item>
+ </channel>
+</rss>

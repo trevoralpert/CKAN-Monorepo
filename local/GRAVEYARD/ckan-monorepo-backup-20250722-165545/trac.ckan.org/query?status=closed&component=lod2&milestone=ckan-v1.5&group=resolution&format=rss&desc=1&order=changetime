@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=lod2&amp;milestone=ckan-v1.5&amp;group=resolution&amp;desc=1&amp;order=changetime</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=lod2&amp;milestone=ckan-v1.5&amp;group=resolution&amp;desc=1&amp;order=changetime</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/910</link>
+        <guid isPermaLink="false">http://localhost/ticket/910</guid>
+        <title>#910: Refactor CKANrdf to support extras</title>
+        <pubDate>Mon, 17 Jan 2011 12:07:06 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Extra fields should be represented in some manner.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/910#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/913</link>
+        <guid isPermaLink="false">http://localhost/ticket/913</guid>
+        <title>#913: Handle licenses in dcat-tools</title>
+        <pubDate>Mon, 17 Jan 2011 12:13:27 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create a list of all valid predicates where licenses are stored.
+&lt;/li&gt;&lt;li&gt;Create a license normalization registry in GSpread
+&lt;/li&gt;&lt;li&gt;Fill spreadsheet from OKD/OSI lists.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/913#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/912</link>
+        <guid isPermaLink="false">http://localhost/ticket/912</guid>
+        <title>#912: Rethink result row representation in dcat-tools/rdfsolr</title>
+        <pubDate>Mon, 17 Jan 2011 12:11:39 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Should license go in the bottom line?
+&lt;/li&gt;&lt;li&gt;Formats should be styled as in CKAN
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/912#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,3225 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=id&amp;row=description</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=id&amp;row=description</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/3024</link>
+        <guid isPermaLink="false">http://localhost/ticket/3024</guid>
+        <title>#3024: Add activity stream tab to dataset read page</title>
+        <pubDate>Mon, 26 Nov 2012 17:13:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3024#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3022</link>
+        <guid isPermaLink="false">http://localhost/ticket/3022</guid>
+        <title>#3022: setup_template_variables method of IDatasetForm never called</title>
+        <pubDate>Thu, 22 Nov 2012 16:45:43 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On the package controller the package_type is not passed to the lookup function, so the setup_template_variables defined on the extensions is never called
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3022#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3015</link>
+        <guid isPermaLink="false">http://localhost/ticket/3015</guid>
+        <title>#3015: Dropdowns don't work without JavaScript</title>
+        <pubDate>Tue, 13 Nov 2012 11:19:13 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially the default bootstrap dropdowns don't work properly without &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; which is a little bit of an issue with JS not working.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3015#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3009</link>
+        <guid isPermaLink="false">http://localhost/ticket/3009</guid>
+        <title>#3009: On-site notification of new dashboard activity</title>
+        <pubDate>Tue, 30 Oct 2012 16:49:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want a "bubble" with a number in it to appear in the top-right of the site next to your user name when you're logged in, telling you how many new activity stream items you have in your dashboard activity stream.
+&lt;/p&gt;
+&lt;p&gt;
+There's a github issue for this here:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/11"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/11&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3009#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3008</link>
+        <guid isPermaLink="false">http://localhost/ticket/3008</guid>
+        <title>#3008: Add tests for dashboard activity stream auth</title>
+        <pubDate>Tue, 30 Oct 2012 12:41:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We need to test that only logged in users can see their own dashboard activity streams, and they can only see their own dashboard activity streams not those of other users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3008#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3004</link>
+        <guid isPermaLink="false">http://localhost/ticket/3004</guid>
+        <title>#3004: ImportError: No module named polib</title>
+        <pubDate>Mon, 22 Oct 2012 12:09:50 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This is happening whenever people try to run paster commands. polib should only be needed for the check-po-files command don't import otherwise.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3004#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2980</link>
+        <guid isPermaLink="false">http://localhost/ticket/2980</guid>
+        <title>#2980: Add new groups and organizations functionality into legacy templates</title>
+        <pubDate>Mon, 15 Oct 2012 10:44:43 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+From Toby: add the functionality to legacy templates
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2980#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2955</link>
+        <guid isPermaLink="false">http://localhost/ticket/2955</guid>
+        <title>#2955: Recline should be updated</title>
+        <pubDate>Wed, 03 Oct 2012 13:22:14 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2955#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2954</link>
+        <guid isPermaLink="false">http://localhost/ticket/2954</guid>
+        <title>#2954: Flickering on resource view when changing between views</title>
+        <pubDate>Wed, 03 Oct 2012 12:55:16 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+From the google doc: When I move between grid, graph and map view mode (or click on filters) the whole data explorer flickers (jumps up &amp;amp; down slightly) for a few moments before settling. This is happening on all resources for me and when you initially open launch the page: &lt;a class="ext-link" href="http://demo.ckan.org/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;. Only in Chrome, working fine in Firefox.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2954#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2953</link>
+        <guid isPermaLink="false">http://localhost/ticket/2953</guid>
+        <title>#2953: Server error in template directories</title>
+        <pubDate>Wed, 03 Oct 2012 08:28:40 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+If you go to: /{any template dir} for example /home or /related, a Server errror occurs.
+&lt;/p&gt;
+&lt;p&gt;
+IOError: [Errno 21] Is a directory: u'/../venv/src/ckan/ckan/templates/home'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2953#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2950</link>
+        <guid isPermaLink="false">http://localhost/ticket/2950</guid>
+        <title>#2950: paster command to minify javascript and css</title>
+        <pubDate>Mon, 01 Oct 2012 19:06:16 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+With the latest template, css and js changes in 2.0, there are a number of things that need preparation prior to a production deployment.  One of these is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the fanstatic_resources defined in &lt;tt&gt;ckan/lib/fanstatic_resources.py&lt;/tt&gt; (bottom of module) should be prepared, and minified.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This ticket is to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;provide a paster command which when run will generate the minified javascript as css files.
+&lt;/li&gt;&lt;li&gt;stop the auto-minification of files when CKAN starts up.
+&lt;/li&gt;&lt;li&gt;remove reference to the minified files in the &lt;tt&gt;.gitignore&lt;/tt&gt; file.
+&lt;/li&gt;&lt;li&gt;add instruction to the release process to run this command, and check-in the minified files to the repo.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+## Background
+&lt;/p&gt;
+&lt;p&gt;
+Currently, minification works seamlessly without the need for any preparation when CKAN is started in a development setup.  But on a production site, the webserver will (almost certainly) not have write-access to the directories that will contain the minified files.  And so the minification will fail, and the site will end up serving the un-minified media, or even *old* minified media.
+&lt;/p&gt;
+&lt;p&gt;
+One way around this would be to allow webserver write access to the directory its serving out of.  But this is not generally considered good practice.
+&lt;/p&gt;
+&lt;p&gt;
+Another method would be to distribute the minified files with CKAN.  This ticket describes how to do this without causing a lot of noise in the commit history of the repo.
+&lt;/p&gt;
+&lt;p&gt;
+The auto-minifcation occurs when importing &lt;tt&gt;ckan/lib/fanstatic_resources.py&lt;/tt&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+## Changing the process slightly
+&lt;/p&gt;
+&lt;p&gt;
+The reason for moving away from auto-minifying files at start-up, to minifying files when running a paster command is:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;we should be distributing the minified files when we make a release (as we do with translation files).  This makes it easier to install CKAN from source.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;if we distribute the minified files, then they need to be checked-in to the repo.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;if they are auto-minified, whenever small changes are made, then this will create a lot of noise in the repo.  It will be clearer to have the minified-files generated manually as part of the release process. (Or whever we make a deployment internally).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2950#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2946</link>
+        <guid isPermaLink="false">http://localhost/ticket/2946</guid>
+        <title>#2946: Pdf preview does not load in IE</title>
+        <pubDate>Mon, 01 Oct 2012 11:27:53 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The pdf preview does not load in IE 9.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2946#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2942</link>
+        <guid isPermaLink="false">http://localhost/ticket/2942</guid>
+        <title>#2942: API POST barfs on interesting Content-Type headers</title>
+        <pubDate>Tue, 25 Sep 2012 17:12:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When POSTing to the API, if specified, the 'Content-Type' header must be blank or 'application/x-www-form-urlencoded'. Otherwise we get an error like: "Bad request - JSON Error: Could not extract request body data: Bad content type: \'; charset=utf-8\'""
+&lt;/p&gt;
+&lt;p&gt;
+The problem is that this is a very reasonable header to send. Indeed requests 0.14 sends this particular header.
+&lt;/p&gt;
+&lt;p&gt;
+This affects all versions of CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+This is due to webob/requests.py:1248 being pretty basic.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2942#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2941</link>
+        <guid isPermaLink="false">http://localhost/ticket/2941</guid>
+        <title>#2941: Add follower support back into CKAN 2.0</title>
+        <pubDate>Tue, 25 Sep 2012 14:51:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Add the views and functionality of following users and groups into 2.0
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2941#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2940</link>
+        <guid isPermaLink="false">http://localhost/ticket/2940</guid>
+        <title>#2940: Edit different resources from edit dataset pag</title>
+        <pubDate>Tue, 25 Sep 2012 13:46:52 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+We need a nice way to be able to get to editing the different resources that are associated to a dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2940#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2937</link>
+        <guid isPermaLink="false">http://localhost/ticket/2937</guid>
+        <title>#2937: GroupController.history() missing extras_as_string</title>
+        <pubDate>Thu, 20 Sep 2012 15:42:10 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="missing wiki"&gt;GroupController?&lt;/a&gt;'s history() method doesn't pass 'extras_as_string': True in the context when it calls group_show. This means that if you have an IGroupForm plugin that is adding a custom metadata field and using convert_to/from_extras() then a field value of 'foo' will be returned as '"foo"'
+&lt;/p&gt;
+&lt;p&gt;
+Other &lt;a class="missing wiki"&gt;GroupController?&lt;/a&gt; and &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; methods do pass 'extras_as_string'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2937#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2935</link>
+        <guid isPermaLink="false">http://localhost/ticket/2935</guid>
+        <title>#2935: Make recline work with new datastore</title>
+        <pubDate>Wed, 19 Sep 2012 08:14:19 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2935#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2930</link>
+        <guid isPermaLink="false">http://localhost/ticket/2930</guid>
+        <title>#2930: convert_from_extras() returns qupted strings from API</title>
+        <pubDate>Fri, 14 Sep 2012 16:24:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Use an IGroupForm plugin to add a custom metadata field to groups using convert_to_extras() and convert_from_extras(), when calling group show the value comes back quoted, e.g. '"my_value"'
+&lt;/p&gt;
+&lt;p&gt;
+Should add tests to example_igroupform and others that setting and getting the custom fields works through the action API.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2930#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2918</link>
+        <guid isPermaLink="false">http://localhost/ticket/2918</guid>
+        <title>#2918: Can't remove users from organizations</title>
+        <pubDate>Wed, 12 Sep 2012 13:12:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+When you remove someone, without adding them, the text box at the bottom (which should probably autocomplete) is empty, and this causes problems on the server.
+&lt;/p&gt;
+&lt;p&gt;
+Ideally when you add a user (select from the autocomplete) it would add another row to the table, defaulting the user to editor and setting the names to user&lt;span class="underline"&gt;{{X}}&lt;/span&gt;name and user&lt;span class="underline"&gt;{{X}}&lt;/span&gt;capacity where X is $('tr').size()
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2918#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2916</link>
+        <guid isPermaLink="false">http://localhost/ticket/2916</guid>
+        <title>#2916: User management in orgs needs autocomplete</title>
+        <pubDate>Wed, 12 Sep 2012 12:09:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The user management in organizations ( &lt;a class="ext-link" href="http://localhost:5000/organization/users/NAME"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/organization/users/NAME&lt;/a&gt; ) should autocomplete names in the dropdown box so that only valid usernames are added to the table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2916#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2907</link>
+        <guid isPermaLink="false">http://localhost/ticket/2907</guid>
+        <title>#2907: Demo header</title>
+        <pubDate>Thu, 06 Sep 2012 11:28:45 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+The user login / avatar with in the header really should be within another topbar, as it goes against convention to have the user information within the normal header.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2907#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2903</link>
+        <guid isPermaLink="false">http://localhost/ticket/2903</guid>
+        <title>#2903: Two search boxes</title>
+        <pubDate>Wed, 05 Sep 2012 14:01:52 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+I think the architecture on the search page is a bit odd. Not sure I like that there is a doubling up of the search box (e.g. one in the header and one in the body of the search results page)
+&lt;/p&gt;
+&lt;p&gt;
+Needs some thought
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2903#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2880</link>
+        <guid isPermaLink="false">http://localhost/ticket/2880</guid>
+        <title>#2880: Datasets (Package) should have owners</title>
+        <pubDate>Mon, 20 Aug 2012 12:42:15 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Each dataset should have an explicit owner that is an organisation.  This is the organisation that owns the dataset* and will be used for specifying who can move a dataset out of the default organisation.
+&lt;/p&gt;
+&lt;p&gt;
+This should probably be a foreign key link from dataset to organisation (or rather group).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Currently this won't necessarily be the organisation that the dataset is a member of, but it is likely that this will be the case initially (at least until someone moves it to another organisation).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2880#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2879</link>
+        <guid isPermaLink="false">http://localhost/ticket/2879</guid>
+        <title>#2879: Datasets (Package) should have a 'public' field</title>
+        <pubDate>Mon, 20 Aug 2012 12:39:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The Package model should have a boolean field added to it describing its visibility beyond that supplied via auth.
+&lt;/p&gt;
+&lt;p&gt;
+The related permission for viewing packages where public is set to False would be package.view (show, whatever), and *never* visible for unauthenticated users.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2879#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2878</link>
+        <guid isPermaLink="false">http://localhost/ticket/2878</guid>
+        <title>#2878: Roles and Permissions for Organisations</title>
+        <pubDate>Mon, 20 Aug 2012 12:37:46 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+As part of merging Organisations into core, it is necessary that we clarify the capacity field with which the users/datasets are added as members to the group 'subclass'.
+&lt;/p&gt;
+&lt;p&gt;
+Rather than the capacity being an opaque string that implies auth but doesn't clearly specify it, we will use role names where roles are defined in the database - with a clearly defined set of standard roles.  The Role table is expected to have simply a string name/representation and acts as a container for permissions.
+&lt;/p&gt;
+&lt;p&gt;
+Each permission is a string of the form object.action (such as package.add, group.delete) of which several are expected to be associated with a role.  This means the permission table will contain a string and a reference to the role.
+&lt;/p&gt;
+&lt;p&gt;
+This work will require UI changes to the screens allowing users to be added to a group/organisation so that the list of available roles is available to add those users.
+&lt;/p&gt;
+&lt;p&gt;
+[x] Model for Role and Permission
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Logic layer changes for managing roles/permissions etc.
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Determine default roles, perhaps just admin/editor/viewer
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Fix the auth layer to use the permissions/roles - may be better implemented as another ticket.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2878#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2876</link>
+        <guid isPermaLink="false">http://localhost/ticket/2876</guid>
+        <title>#2876: Admin Config changes are not forced</title>
+        <pubDate>Fri, 17 Aug 2012 13:00:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to make sure these update everywhere when done
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2876#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2875</link>
+        <guid isPermaLink="false">http://localhost/ticket/2875</guid>
+        <title>#2875: Fanstatic css issues</title>
+        <pubDate>Fri, 17 Aug 2012 12:56:39 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Fanstatic does not support
+&lt;/p&gt;
+&lt;p&gt;
+@import ...
+&lt;/p&gt;
+&lt;p&gt;
+relative imports for images etc
+&lt;/p&gt;
+&lt;p&gt;
+need to get a fix for these asap
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2875#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2872</link>
+        <guid isPermaLink="false">http://localhost/ticket/2872</guid>
+        <title>#2872: Non-open licenses are marked as open</title>
+        <pubDate>Thu, 16 Aug 2012 13:35:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Set a dataset's license to 'Other (Not Open)', the dataset will have an Open Data icon next to it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2872#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2871</link>
+        <guid isPermaLink="false">http://localhost/ticket/2871</guid>
+        <title>#2871: user profile about text does not show up</title>
+        <pubDate>Thu, 16 Aug 2012 11:02:33 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tested with my &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/shevski"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/shevski&lt;/a&gt; and daniel's account. I have added about text and yet see '
+Irina Bolychevsky
+&lt;/p&gt;
+&lt;p&gt;
+You have not provided a biography.'
+&lt;/p&gt;
+&lt;p&gt;
+The about text is saved (and viewable on the edit form itself) but does not show on profile
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2871#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2868</link>
+        <guid isPermaLink="false">http://localhost/ticket/2868</guid>
+        <title>#2868: 1.8 SOLR error</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:16 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Wed, Aug 15, 2012 at 8:34 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'ckan.lib.search.common.&lt;a class="missing wiki"&gt;SearchError?&lt;/a&gt;'&amp;gt;: SOLR returned an error running query: {'sort': 'metadata_modified desc', 'fq': u'groups:&amp;#34;welcome&amp;#34; capacity:&amp;#34;public&amp;#34; +site_id:&amp;#34;www.ckan.net&amp;#34; +state:active', 'facet.mincount': 1, 'rows': 21, 'facet.limit': '50', 'facet': 'true', 'q': '*:*', 'start': -20, 'wt': 'json', 'fl': 'id data_dict'} Error: "'start' parameter cannot be negative"
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://thedatahub.org/feeds/group/welcome.atom?page=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/feeds/group/welcome.atom?page=0&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.feed:180 in group
+&amp;lt;&amp;lt;          data_dict&lt;a class="missing wiki"&gt;fq?&lt;/a&gt; = 'groups:&amp;#34;%s&amp;#34;' % id
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+item_count, results = _package_search(data_dict)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+navigation_urls = self._navigation_urls(params,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+item_count, results = _package_search(data_dict)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.feed:57 in _package_search
+&amp;lt;&amp;lt;      # package_search action modifies the data_dict, so keep our copy intact.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+query = get_action('package_search')(context, data_dict.copy())
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return query&lt;a class="missing wiki"&gt;count?&lt;/a&gt;, query&lt;a class="missing wiki"&gt;results?&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+query = get_action('package_search')(context, data_dict.copy())
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.logic.action.get:1130 in package_search
+&amp;lt;&amp;lt;          query = search.query_for(model.Package)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+query.run(data_dict)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for package in query.results:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+query.run(data_dict)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.search.query:350 in run
+&amp;lt;&amp;lt;          except &lt;a class="missing wiki"&gt;SolrException?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;SearchError?&lt;/a&gt;('SOLR returned an error running query: %r Error: %r' %
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+(query, e.reason))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+data = json.loads(solr_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+(query, e.reason))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;SearchError?&lt;/a&gt;: SOLR returned an error running query: {'sort': 'metadata_modified desc', 'fq': u'groups:&amp;#34;welcome&amp;#34; capacity:&amp;#34;public&amp;#34; +site_id:&amp;#34;www.ckan.net&amp;#34; +state:active', 'facet.mincount': 1, 'rows': 21, 'facet.limit': '50', 'facet': 'true', 'q': '*:*', 'start': -20, 'wt': 'json', 'fl': 'id data_dict'} Error: "'start' parameter cannot be negative"
+CGI Variables
+CKAN_CURRENT_URL        '/feeds/group/welcome.atom?page%3D0'
+CKAN_LANG        'ja'
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        '*/*'
+HTTP_ACCEPT_ENCODING        'gzip,deflate'
+HTTP_CONNECTION        'close'
+HTTP_FROM        'googlebot(at)googlebot.com'
+HTTP_HOST        'thedatahub.org'
+HTTP_USER_AGENT        'Mozilla/5.0 (compatible; Googlebot/2.1; +&lt;a class="ext-link" href="http://www.google.com/bot.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.google.com/bot.html&lt;/a&gt;)'
+PATH_INFO        '/feeds/group/welcome.atom'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/ja/feeds/group/welcome.atom'
+QUERY_STRING        'page=0'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '33139'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/ja/feeds/group/welcome.atom?page=0'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'thedatahub.org'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at thedatahub.org Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345016040.884951, '_creation_time': 1345016040.884951}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.parsed_dict_querystring        (&lt;a class="missing wiki"&gt;MultiDict?&lt;/a&gt;([('page', '0')]), 'page=0')
+paste.parsed_querystring        ([('page', '0')], 'page=0')
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f5302eef7d0&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;FeedController?&lt;/a&gt;.group of &amp;lt;ckan.controllers.feed.&lt;a class="missing wiki"&gt;FeedController?&lt;/a&gt; object at 0x7f52f0341750&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.feed.&lt;a class="missing wiki"&gt;FeedController?&lt;/a&gt; object at 0x7f52f0341750&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52f0341450&amp;gt;
+pylons.routes_dict        {'action': u'group', 'controller': u'feed', 'id': u'welcome'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f5312961e90&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52f0341210&amp;gt;
+webob._parsed_query_vars        (GET([('page', '0')]), 'page=0')
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f52ed4873f0&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52f0341210&amp;gt;, {'action': u'group', 'controller': u'feed', 'id': u'welcome'})
+&lt;/em&gt;&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2868#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2866</link>
+        <guid isPermaLink="false">http://localhost/ticket/2866</guid>
+        <title>#2866: 1.8 template error</title>
+        <pubDate>Thu, 16 Aug 2012 10:57:21 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://thedatahub.org/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d?key%3Db4c2d03fa8"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d?key%3Db4c2d03fa8&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.user:409 in perform_reset
+&amp;lt;&amp;lt;          c.reset_key = request.params.get('key')
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if not mailer.verify_reset_link(user_obj, c.reset_key):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+h.flash_error(_('Invalid reset key. Please try again.'))
+abort(403)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if not mailer.verify_reset_link(user_obj, c.reset_key):
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.mailer:100 in verify_reset_link
+&amp;lt;&amp;lt;      if not user.reset_key or len(user.reset_key) &amp;lt; 5:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return False
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return key.strip() == user.reset_key
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return key.strip() == user.reset_key
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;AttributeError?&lt;/a&gt;: '&lt;a class="missing wiki"&gt;NoneType?&lt;/a&gt;' object has no attribute 'strip'
+CGI Variables
+CKAN_CURRENT_URL        '/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d?key%253Db4c2d03fa8'
+CKAN_LANG        'it'
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        '*/*'
+HTTP_ACCEPT_ENCODING        'gzip,deflate'
+HTTP_CONNECTION        'close'
+HTTP_FROM        'googlebot(at)googlebot.com'
+HTTP_HOST        'thedatahub.org'
+HTTP_USER_AGENT        'Mozilla/5.0 (compatible; Googlebot/2.1; +&lt;a class="ext-link" href="http://www.google.com/bot.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.google.com/bot.html&lt;/a&gt;)'
+PATH_INFO        '/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/it/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d'
+QUERY_STRING        'key%3Db4c2d03fa8'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '54634'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/it/user/reset/3086e91c-fe09-4a98-92e1-19de67a9ac9d?key%3Db4c2d03fa8'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'thedatahub.org'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at thedatahub.org Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345066159.520708, '_creation_time': 1345066159.520708}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.parsed_dict_querystring        (&lt;a class="missing wiki"&gt;MultiDict?&lt;/a&gt;([('key=b4c2d03fa8', &lt;/em&gt;)]), 'key%3Db4c2d03fa8')
+paste.parsed_querystring        ([('key=b4c2d03fa8', &lt;em&gt;)], 'key%3Db4c2d03fa8')
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f52eba637d0&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;UserController?&lt;/a&gt;.perform_reset of &amp;lt;ckan.controllers.user.&lt;a class="missing wiki"&gt;UserController?&lt;/a&gt; object at 0x7f52e49f7a50&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.user.&lt;a class="missing wiki"&gt;UserController?&lt;/a&gt; object at 0x7f52e49f7a50&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52f5649ad0&amp;gt;
+pylons.routes_dict        {'action': u'perform_reset', 'controller': u'user', 'id': u'3086e91c-fe09-4a98-92e1-19de67a9ac9d'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f5312961ad0&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52de7f6390&amp;gt;
+webob._parsed_query_vars        (GET([('key=b4c2d03fa8', &lt;/em&gt;)]), 'key%3Db4c2d03fa8')
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f52fc4f1a08&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52de7f6390&amp;gt;, {'action': u'perform_reset', 'controller': u'user', 'id': u'3086e91c-fe09-4a98-92e1-19de67a9ac9d'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2866#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2865</link>
+        <guid isPermaLink="false">http://localhost/ticket/2865</guid>
+        <title>#2865: 1.8 unicode error</title>
+        <pubDate>Thu, 16 Aug 2012 10:56:53 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://thedatahub.org/el/tag/jutatt%C3%A1sok"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/el/tag/jutatt%C3%A1sok&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.template:30 in view
+&amp;lt;&amp;lt;          """
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except &lt;a class="missing wiki"&gt;TemplateNotFound?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if url.endswith('.html'):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:153 in render
+&amp;lt;&amp;lt;      try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return cached_template(template_name, render_template,
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except ckan.exceptions.&lt;a class="missing wiki"&gt;CkanUrlException?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.templating:249 in cached_template
+&amp;lt;&amp;lt;          return content
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:95 in render_template
+&amp;lt;&amp;lt;          template = globs&lt;a class="missing wiki"&gt;app_globals?&lt;/a&gt;.genshi_loader.load(template_name,
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+cls=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+stream = template.generate(&lt;strong&gt;globs)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+cls=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.loader:223 in load
+&amp;lt;&amp;lt;                      loadfunc = directory(loadfunc)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+filepath, filename, fileobj, uptodate = loadfunc(filename)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except IOError:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+continue
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+filepath, filename, fileobj, uptodate = loadfunc(filename)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.loader:286 in _load_from_directory
+&amp;lt;&amp;lt;          def _load_from_directory(filename):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+filepath = os.path.join(path, filename)
+fileobj = open(filepath, 'U')
+mtime = os.path.getmtime(filepath)
+def _uptodate():
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+fileobj = open(filepath, 'U')
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;UnicodeEncodeError?&lt;/a&gt;: 'ascii' codec can't encode character u'\xe1' in position 73: ordinal not in range(128)
+CGI Variables
+CKAN_CURRENT_URL        '/el/tag/jutatt%C3%A1sok'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CKAN_PAGE_CACHABLE        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        '*/*'
+HTTP_ACCEPT_ENCODING        'gzip,deflate'
+HTTP_CONNECTION        'close'
+HTTP_FROM        'googlebot(at)googlebot.com'
+HTTP_HOST        'thedatahub.org'
+HTTP_USER_AGENT        'Mozilla/5.0 (compatible; Googlebot/2.1; +&lt;a class="ext-link" href="http://www.google.com/bot.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.google.com/bot.html&lt;/a&gt;)'
+PATH_INFO        '/el/tag/jutatt\xc3\xa1sok'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/el/tag/jutatt\xc3\xa1sok'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '49520'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/el/tag/jutatt%c3%a1sok'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'thedatahub.org'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at thedatahub.org Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345113298.778472, '_creation_time': 1345113298.778472}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f5309add610&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;TemplateController?&lt;/a&gt;.view of &amp;lt;ckan.controllers.template.&lt;a class="missing wiki"&gt;TemplateController?&lt;/a&gt; object at 0x7f52b0ea2d10&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.template.&lt;a class="missing wiki"&gt;TemplateController?&lt;/a&gt; object at 0x7f52b0ea2d10&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52b0ea2b90&amp;gt;
+pylons.routes_dict        {'url': u'el/tag/jutatt\xe1sok', 'action': u'view', 'controller': u'template'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f531296ea10&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f5309add810&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f52d4004990&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f5309add810&amp;gt;, {'url': u'el/tag/jutatt\xe1sok', 'action': u'view', 'controller': u'template'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2865#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2864</link>
+        <guid isPermaLink="false">http://localhost/ticket/2864</guid>
+        <title>#2864: don't show `create one now` message on other's user pages</title>
+        <pubDate>Thu, 16 Aug 2012 10:55:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. I can see 'You haven't created any datasets. Create one now?. ' &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/kindly"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/kindly&lt;/a&gt; when logged in as shevski
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2864#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2860</link>
+        <guid isPermaLink="false">http://localhost/ticket/2860</guid>
+        <title>#2860: target blank link in qa report</title>
+        <pubDate>Thu, 16 Aug 2012 10:43:46 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+can we get the link going to an explanation of the 5 star system on page &lt;a class="ext-link" href="http://s031.okserver.org:2375/qa/dataset/five_stars"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/qa/dataset/five_stars&lt;/a&gt; to open in new tab? it's leaving demo all together so better to open in new tab than navigate away
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2860#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2858</link>
+        <guid isPermaLink="false">http://localhost/ticket/2858</guid>
+        <title>#2858: Harvester tweaks</title>
+        <pubDate>Thu, 16 Aug 2012 07:46:38 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I've had a look at the new harvesting theme, it looks great, thanks. I
+did some minor changes and reworded the errors as per tickets &lt;a class="closed ticket" href="http://localhost/ticket/2852" title="enhancement: better message for trying to refresh inactive sources in harvest (closed: fixed)"&gt;#2852&lt;/a&gt;
+and &lt;a class="closed ticket" href="http://localhost/ticket/2853" title="enhancement: unclear error message in refreshing harvest source (closed: fixed)"&gt;#2853&lt;/a&gt;, but I kept the messages red, as the only other ones
+available ("flash_notice") are blue and are not very prominent.
+&lt;/p&gt;
+&lt;p&gt;
+Toby, on the old form there was a list of descriptions for all
+available harvesters which could be nice to have back. I couldn't find
+an easy way with the new form macro, so I don't know how easy would be
+to implement
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://i.imgur.com/pzS8z.png"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://i.imgur.com/pzS8z.png&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2858#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2856</link>
+        <guid isPermaLink="false">http://localhost/ticket/2856</guid>
+        <title>#2856: server error when clicking on deleted app link</title>
+        <pubDate>Wed, 15 Aug 2012 16:54:44 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;go to &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/okfn"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/okfn&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Click on activity stream
+&lt;/li&gt;&lt;li&gt;Click on 'Deletion test' related item that's linked to in entries 1 &amp;amp; 2
+&lt;/li&gt;&lt;li&gt;Server error
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2856#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2855</link>
+        <guid isPermaLink="false">http://localhost/ticket/2855</guid>
+        <title>#2855: language box no longer functional</title>
+        <pubDate>Wed, 15 Aug 2012 16:45:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. tried changing the lang here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt; to no effect. Doesn't work on any other pages either. Flags have also dissappeared
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2855#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2853</link>
+        <guid isPermaLink="false">http://localhost/ticket/2853</guid>
+        <title>#2853: unclear error message in refreshing harvest source</title>
+        <pubDate>Wed, 15 Aug 2012 16:34:42 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Tried to refresh the datagm harvest source to get error message:
+&lt;/p&gt;
+&lt;p&gt;
+"An error occurred: [There already is an unrun job for this source]"
+&lt;/p&gt;
+&lt;p&gt;
+This is unclear and not sure why it created an error. We should have something informative such as "A harvest has already been scheduled for this source"
+&lt;/p&gt;
+&lt;p&gt;
+Do we have a date/time for when this has been scheduled that we can display?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2853#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2852</link>
+        <guid isPermaLink="false">http://localhost/ticket/2852</guid>
+        <title>#2852: better message for trying to refresh inactive sources in harvest</title>
+        <pubDate>Wed, 15 Aug 2012 16:31:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently if you try to refresh (i.e. schedule the harvester to re-run) an inactive source (one who's state is 'withdrawn' - e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest/3feea629-32d8-4431-9957-9f31d32864f1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest/3feea629-32d8-4431-9957-9f31d32864f1&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+you get the error message: "An error occurred: [Can not create jobs on inactive sources]"
+&lt;/p&gt;
+&lt;p&gt;
+This could be better and not red, e.g. and info box (maybe yellow) saying that "Cannot re-run harvesting on inactive sources. Please first change the status to 'active'"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2852#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2849</link>
+        <guid isPermaLink="false">http://localhost/ticket/2849</guid>
+        <title>#2849: header tagline misalighned</title>
+        <pubDate>Tue, 14 Aug 2012 10:03:58 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+should be left alighned, not right aligned. Otherwise tag line disappears left off the page.
+&lt;/p&gt;
+&lt;p&gt;
+See: header here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/ckan-admin/config"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/ckan-admin/config&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2849#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2848</link>
+        <guid isPermaLink="false">http://localhost/ticket/2848</guid>
+        <title>#2848: no dataset descriptions on front page</title>
+        <pubDate>Tue, 14 Aug 2012 10:01:45 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2848#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2847</link>
+        <guid isPermaLink="false">http://localhost/ticket/2847</guid>
+        <title>#2847: 'show inactive sources' checkbox displaying incorrectly</title>
+        <pubDate>Mon, 13 Aug 2012 13:25:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+On harvest page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest&lt;/a&gt; the checkbox appears above the text and not clear what it refers to/
+&lt;/p&gt;
+&lt;p&gt;
+Beter to relocate to the left (as on publicdata.eu) see screenshots attached.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2847#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2845</link>
+        <guid isPermaLink="false">http://localhost/ticket/2845</guid>
+        <title>#2845: Editing an organization removes all datasets from the organization</title>
+        <pubDate>Mon, 13 Aug 2012 12:01:26 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Run CKAN with the publisher profile and organizations plugins enabled. Make an organization. Make a dataset and add it to the organization. Edit the organization and change e.g. its description. After saving the organization, all its datasets have been removed from the organization and now belong to no organization.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2845#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2843</link>
+        <guid isPermaLink="false">http://localhost/ticket/2843</guid>
+        <title>#2843: Adding existing datasets to organizations is broken</title>
+        <pubDate>Mon, 13 Aug 2012 11:58:57 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+On the organization read page there is only an 'Add Dataset' button, not a drop-down with add new dataset or add existing dataset as on the default group page.
+&lt;/p&gt;
+&lt;p&gt;
+On the organization edit page you do have the drop-down, but if you click add existing dataset nothing happens except it appends #datasets to the URL
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2843#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2842</link>
+        <guid isPermaLink="false">http://localhost/ticket/2842</guid>
+        <title>#2842: Allow sort ordering of dataset listings on group pages</title>
+        <pubDate>Mon, 13 Aug 2012 11:01:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2842#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2841</link>
+        <guid isPermaLink="false">http://localhost/ticket/2841</guid>
+        <title>#2841: Slug generation fails on demo dev</title>
+        <pubDate>Mon, 13 Aug 2012 11:00:53 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On the add dataset form, slug generation fails with JS error:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Uncaught TypeError: Object [object Object] has no method 'incompleteFormWarning'    basic-form.js:5
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2841#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2840</link>
+        <guid isPermaLink="false">http://localhost/ticket/2840</guid>
+        <title>#2840: tag line styling</title>
+        <pubDate>Mon, 13 Aug 2012 09:48:27 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron
+&lt;/p&gt;
+&lt;p&gt;
+Is it possible to get the tagline text to float  the other way
+&lt;/p&gt;
+&lt;p&gt;
+at the moment we have
+&lt;/p&gt;
+&lt;p&gt;
+...........Title
+Tag line to here
+&lt;/p&gt;
+&lt;p&gt;
+I'd like
+&lt;/p&gt;
+&lt;p&gt;
+...........Title
+...........Tag line to here
+&lt;/p&gt;
+&lt;p&gt;
+is this possible or too much pain
+&lt;/p&gt;
+&lt;p&gt;
+based partly on this comment
+Markw wrote
+&lt;/p&gt;
+&lt;p&gt;
+A minor problem visible on the home page
+&amp;lt;&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;&amp;gt; and other pages, when viewing in both
+Chrome and Firefox:
+&lt;/p&gt;
+&lt;p&gt;
+if the browser width is not very wide, the tag line 'Open source data
+portal' vanishes off the *left* hand side of the screen. For some
+reason the browser doesn't even recognise this with a horizontal
+scroll bar (as it does when stuff is off the *right* hand side) - it
+just chops off the text.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2840#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2839</link>
+        <guid isPermaLink="false">http://localhost/ticket/2839</guid>
+        <title>#2839: Specifying sort order breaks search results on group page</title>
+        <pubDate>Sun, 12 Aug 2012 16:09:59 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Create a group, create some datasets and add them to the group, then view the group's page with a sort-order specified in the URL, e.g. &lt;tt&gt;/group/foo?q=&amp;amp;sort=title_string+asc&lt;/tt&gt;, no datasets are displayed even though there are datasets in the group that match the search query. Remove the sort order from the URL and the datasets will appear.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2839#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2837</link>
+        <guid isPermaLink="false">http://localhost/ticket/2837</guid>
+        <title>#2837: checkbox styling</title>
+        <pubDate>Fri, 10 Aug 2012 13:39:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Is this done I know checkboxes are a pain but it looks a bit out of place compared to the other items.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2837#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2836</link>
+        <guid isPermaLink="false">http://localhost/ticket/2836</guid>
+        <title>#2836: Need extra info for forms</title>
+        <pubDate>Fri, 10 Aug 2012 13:38:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+like we have on the form here
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/harvest/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/harvest/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+you said it partly exists so maybe I just need some training
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2836#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2832</link>
+        <guid isPermaLink="false">http://localhost/ticket/2832</guid>
+        <title>#2832: can't add a dataset to more than one group</title>
+        <pubDate>Thu, 09 Aug 2012 14:11:12 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+add to groups is a drop down menu where you can only choose one
+needs a new UI &amp;amp; logic allowing user to add new groups &amp;amp; potentially remove from other lists
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2832#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2827</link>
+        <guid isPermaLink="false">http://localhost/ticket/2827</guid>
+        <title>#2827: View Item - RSS Feed Issues</title>
+        <pubDate>Thu, 09 Aug 2012 09:46:30 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: Server Error (HTTP Code 500) when trying to see information related to an RSS feed... example: &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/testerisation/resource/974df29e-77bb-4b5e-982c-cb7a295c1923"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/testerisation/resource/974df29e-77bb-4b5e-982c-cb7a295c1923&lt;/a&gt;
+Expected: A page that looks a bit more like this: &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/epims-lod2/resource/97531bd8-e75c-4efa-bfa2-bb51d0ba90d0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/epims-lod2/resource/97531bd8-e75c-4efa-bfa2-bb51d0ba90d0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2827#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2826</link>
+        <guid isPermaLink="false">http://localhost/ticket/2826</guid>
+        <title>#2826: Null group image</title>
+        <pubDate>Thu, 09 Aug 2012 09:45:46 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: Example group ( &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/group/example-group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/group/example-group&lt;/a&gt; ) has a broken image, image not found. Link either incorrect, or no image set, if no image set then shouldn't it show a default image?
+Expected: There should be an image.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2826#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2825</link>
+        <guid isPermaLink="false">http://localhost/ticket/2825</guid>
+        <title>#2825: Loss of URL encoding on language change on apps page</title>
+        <pubDate>Thu, 09 Aug 2012 09:41:57 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: On /apps page if you start in one language, filter the data, and then change languages it loses the correct format for the HTTP Get Parameters (and therefore loses the filters). Example, start in English language, change filter settings to to Application and Newest, change language to German.
+Expected: Retain correct format for HTTP Get Parameters so that the filter settings are retained. Solution will involve not turning "=" into "%3D" in the URL, i.e. turn off URL encoding.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2825#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2824</link>
+        <guid isPermaLink="false">http://localhost/ticket/2824</guid>
+        <title>#2824: Multiple of the same Flag Issues</title>
+        <pubDate>Thu, 09 Aug 2012 09:40:15 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+There is some bizarre language flag issues.
+1) Log in to &lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt; (I'm logged in as danieljohnlewis)
+2) Visit the apps page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps&lt;/a&gt;
+3) Have a look at the languages drop down, flags look fine (although Deutsche does have an EU flag rather than the German flag.. but that's irrelevant)
+4) Change filters to, say, type: Application and sort: Newest, and apply. Web address becomes: &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps?page=1&amp;amp;type=application&amp;amp;sort=created_desc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps?page=1&amp;amp;type=application&amp;amp;sort=created_desc&lt;/a&gt;
+5) Look at the languages drop down: Flags are largely incorrect, with more than one country having the same flag.
+&lt;/p&gt;
+&lt;p&gt;
+Please see the attached screenshot.
+&lt;/p&gt;
+&lt;p&gt;
+Note: this was originally tested with Google Chrome on Linux (Ubuntu).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2824#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2819</link>
+        <guid isPermaLink="false">http://localhost/ticket/2819</guid>
+        <title>#2819: Related Item Summary of Descriptions Markdown Issue</title>
+        <pubDate>Thu, 09 Aug 2012 09:25:21 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item it mentions that you can use markdown in the description, however markdown doesn't render in apps page nor in related items page.
+Expected: Make shortened descriptions (on apps page &amp;amp; related items page) render markdown
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2819#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2817</link>
+        <guid isPermaLink="false">http://localhost/ticket/2817</guid>
+        <title>#2817: Item Type Reverts on Invalid URL</title>
+        <pubDate>Thu, 09 Aug 2012 09:21:16 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item, if you put in a invalid URL it loses the choice of Item Type (e.g. Visualisation, Application) and reverts to the first time (API).
+Expected: It remembers which one was chosen
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2817#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2816</link>
+        <guid isPermaLink="false">http://localhost/ticket/2816</guid>
+        <title>#2816: DomainObjectOperation not in model</title>
+        <pubDate>Thu, 09 Aug 2012 07:17:01 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Over-enthusiastic removal of some model items
+&lt;/p&gt;
+&lt;p&gt;
+this breaks qa extension
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2816#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2812</link>
+        <guid isPermaLink="false">http://localhost/ticket/2812</guid>
+        <title>#2812: Groups description needs improving</title>
+        <pubDate>Wed, 08 Aug 2012 09:59:13 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The 'What are Groups?' text at &amp;lt;&lt;a class="ext-link" href="http://demo.ckan.org/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/group&lt;/a&gt;&amp;gt; is a
+bit naff. Here is a suggested replacement:
+&lt;/p&gt;
+&lt;p&gt;
+What are groups?
+&lt;/p&gt;
+&lt;p&gt;
+Groups allow you to group users and data together so that they are
+easier to manage. For example datasets in a group could be visible
+only to group members, or publicly visible but only editable by group
+members.
+&lt;/p&gt;
+&lt;p&gt;
+Groups can be used to collect together datasets from a single
+publisher, or related to a particular project, for example.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2812#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2811</link>
+        <guid isPermaLink="false">http://localhost/ticket/2811</guid>
+        <title>#2811: Author doesn't show on dataset read page</title>
+        <pubDate>Wed, 08 Aug 2012 08:51:01 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Edit a dataset and add an author, dataset read page still says 'author not given'. If you fill out both the author and author email fields then it works.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2811#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2809</link>
+        <guid isPermaLink="false">http://localhost/ticket/2809</guid>
+        <title>#2809: _ not defined for modules</title>
+        <pubDate>Tue, 07 Aug 2012 10:37:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+eg on confirm delete
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/zh_TW/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/zh_TW/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+_(....) gives [object Object] not translation
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2809#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2808</link>
+        <guid isPermaLink="false">http://localhost/ticket/2808</guid>
+        <title>#2808: Confirm delete dialog badly placed on small screen</title>
+        <pubDate>Tue, 07 Aug 2012 09:57:54 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+If you make your browser window short - say half screen height on a page with delete eg &lt;a class="ext-link" href="http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+the dialog box is partially off the screen - it should try to stay on screen
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2808#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2807</link>
+        <guid isPermaLink="false">http://localhost/ticket/2807</guid>
+        <title>#2807: autocomplete.js error</title>
+        <pubDate>Mon, 06 Aug 2012 15:17:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron,
+&lt;/p&gt;
+&lt;p&gt;
+edit dataset has a js error
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/edit/1-kmwaterfractionfromnationaltopographicdatabasemapscanada&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;TypeError?&lt;/a&gt;: options is undefined
+[Break On This Error]
+&lt;/p&gt;
+&lt;p&gt;
+this.lookup(options.term, options.callback);
+&lt;/p&gt;
+&lt;p&gt;
+autocomplete.js (line 231)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2807#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2806</link>
+        <guid isPermaLink="false">http://localhost/ticket/2806</guid>
+        <title>#2806: way to read full group description</title>
+        <pubDate>Mon, 06 Aug 2012 11:58:12 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. currently no way to read full description for the 'data explorer examples' group here:http://s031.okserver.org:2375/group/data-explorer
+&lt;/p&gt;
+&lt;p&gt;
+Can we add a 'read more' link that expands and contracts the sidebar box or similar?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2806#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2805</link>
+        <guid isPermaLink="false">http://localhost/ticket/2805</guid>
+        <title>#2805: zh_TW has no Plural-Forms</title>
+        <pubDate>Mon, 06 Aug 2012 11:51:03 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+the .po file for zh_TW does not contain Plural-Forms which breaks the i18n &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; Extractions for ckan-demo.
+&lt;/p&gt;
+&lt;p&gt;
+I've added the following which may or may not be correct - from web search
+"Plural-Forms: nplurals=1; plural=0\n"
+&lt;/p&gt;
+&lt;p&gt;
+I suspect it will get overwritten when translations are pulled from transiflex so passing to you as you are the expert in that realm
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2805#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2804</link>
+        <guid isPermaLink="false">http://localhost/ticket/2804</guid>
+        <title>#2804: please make download button blue</title>
+        <pubDate>Mon, 06 Aug 2012 11:24:15 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+on resource pages (e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;), same as old ckan
+for continuity and to highlight!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2804#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2803</link>
+        <guid isPermaLink="false">http://localhost/ticket/2803</guid>
+        <title>#2803: Convert all JS translations to use keywords</title>
+        <pubDate>Mon, 06 Aug 2012 11:16:57 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2803#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2802</link>
+        <guid isPermaLink="false">http://localhost/ticket/2802</guid>
+        <title>#2802: Need to tweak the JSON formatting of the localisations</title>
+        <pubDate>Mon, 06 Aug 2012 10:27:27 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This is what we need the JSON to look like. Taken from the Jed documentation (&lt;a class="ext-link" href="http://slexaxton.github.com/Jed/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://slexaxton.github.com/Jed/&lt;/a&gt;).
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+      // The empty string key is used as the configuration
+      // block for each domain
+      "" : {
+        // Domain name
+        "domain" : "the_domain",
+        // Language code
+        "lang" : "en",
+        // Plural form function for language
+        "plural_forms" : "nplurals=2; plural=(n != 1);"
+      },
+      // Other keys in a domain contain arrays as values
+      // that map to the translations for that key.
+      // Gettext suggests that you use english as your keys
+      // in case the key isn't found, and it can just pass
+      // the value directly through.
+      // Note: by convention, the 0-index location of the translations
+      // is never accessed. It's just a thing, I guess.
+      "a key" : [ null, "the translation", "the plural translations", ... ],
+      // The plural form string is converted into a function
+      // and the value that's passed into the gettext call
+      // is passed into the plural form function. It's result
+      // (plus 1) is the index that the translation comes from.
+      // We're using sprintf interpolation on our keys so we can
+      // then sub in the _actual_ values into the result.
+      "%d key" : [ null, "%d key", "%d keys" ],
+      // Contexts are keys that are just prefixed with a context string
+      // with a unicode \u0004 as the delimiter.
+      // You can use it for anything. Usually it's just for being content aware
+      // in some way (e.g. male vs. female, product vs. category)
+      "context\u0004%d key": [ null, "context %d key", "context %d keys" ]
+    }
+&lt;/pre&gt;&lt;p&gt;
+This looks like an appropriate python library to do the formatting. &lt;a class="ext-link" href="http://pypi.python.org/pypi/pojson/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pypi.python.org/pypi/pojson/&lt;/a&gt; but I'll leave to your discretion.
+&lt;/p&gt;
+&lt;p&gt;
+Finally an API endpoint that returns the appropriate request would save us making requests to the i18n directory.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/api/i18n/{locale}
+&lt;/pre&gt;&lt;p&gt;
+For example if the current url is &lt;a class="ext-link" href="http://localhost:5000/pl/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/pl/dataset&lt;/a&gt; then the client would request:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://localhost:5000/api/i18n/pl
+&lt;/pre&gt;&lt;p&gt;
+This should return the Content-Type: application/json and a 200 with an appropriate JSON body (this can be the language requested or an appropriate fallback). I think that if the fallback is the default language (in most cases English) then we just return a 204 No Content to save data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2802#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2801</link>
+        <guid isPermaLink="false">http://localhost/ticket/2801</guid>
+        <title>#2801: no way to see full description of a related item</title>
+        <pubDate>Mon, 06 Aug 2012 09:36:49 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. see here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps&lt;/a&gt;
+same with related page on a dataset
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2801#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2800</link>
+        <guid isPermaLink="false">http://localhost/ticket/2800</guid>
+        <title>#2800: tooltip on popular datasets with number of views</title>
+        <pubDate>Mon, 06 Aug 2012 09:05:25 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+be good to do this in phase 3
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2800#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2799</link>
+        <guid isPermaLink="false">http://localhost/ticket/2799</guid>
+        <title>#2799: Translations for demo not picking up {% trans %} blocks</title>
+        <pubDate>Mon, 06 Aug 2012 08:50:05 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Also they seem to be missing the odd &lt;tt&gt; _() &lt;/tt&gt; block. Such in the new package form.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/2375-demo-theme-development/ckan/templates/package/snippets/package_form.html#L44"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/2375-demo-theme-development/ckan/templates/package/snippets/package_form.html#L44&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2799#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2798</link>
+        <guid isPermaLink="false">http://localhost/ticket/2798</guid>
+        <title>#2798: Admin Config reset</title>
+        <pubDate>Fri, 03 Aug 2012 16:50:05 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+this want to
+&lt;/p&gt;
+&lt;p&gt;
+a) be a link on the left of the form like deletes
+&lt;/p&gt;
+&lt;p&gt;
+b) needs a confirm like delete
+&lt;/p&gt;
+&lt;p&gt;
+c) wants to work with the autoform
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2798#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2797</link>
+        <guid isPermaLink="false">http://localhost/ticket/2797</guid>
+        <title>#2797: plain_textarea styling</title>
+        <pubDate>Fri, 03 Aug 2012 13:27:02 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/ckan-admin/config"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/ckan-admin/config&lt;/a&gt; uses a plain (non markup) textarea for custom css
+&lt;/p&gt;
+&lt;p&gt;
+I've added form macro plain_textarea to provide one, however it renders without a bottom border due to markup textarea styling can you fix this - thanks
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2797#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2794</link>
+        <guid isPermaLink="false">http://localhost/ticket/2794</guid>
+        <title>#2794: top buttons missing on edit resource</title>
+        <pubDate>Thu, 02 Aug 2012 08:58:46 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/resource-markdown/resource_edit/ba1b094d-697c-47c4-a72a-6c2557da5409"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/resource-markdown/resource_edit/ba1b094d-697c-47c4-a72a-6c2557da5409&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+should have &lt;tt&gt;back to resource&lt;/tt&gt; as a minimum
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2794#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2793</link>
+        <guid isPermaLink="false">http://localhost/ticket/2793</guid>
+        <title>#2793: Markdown of resource page not rendered as markdown</title>
+        <pubDate>Thu, 02 Aug 2012 08:37:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+As per &lt;a class="closed ticket" href="http://localhost/ticket/2650" title="enhancement: Description on resources not rendered as markdown (closed: fixed)"&gt;#2650&lt;/a&gt; (on master/1.8 now)
+&lt;/p&gt;
+&lt;p&gt;
+If the resource has a description it isn't rendered as markdown ..
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2793#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2792</link>
+        <guid isPermaLink="false">http://localhost/ticket/2792</guid>
+        <title>#2792: dropdown fixes - open correctly</title>
+        <pubDate>Thu, 02 Aug 2012 08:14:56 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/&lt;/a&gt;  language dropdown expands downwards it should open upwards
+&lt;/p&gt;
+&lt;p&gt;
+select2 can do this see &lt;a class="ext-link" href="http://ivaynberg.github.com/select2/#documentation"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ivaynberg.github.com/select2/#documentation&lt;/a&gt; can you see if we can get this in ckan demo
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2792#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2791</link>
+        <guid isPermaLink="false">http://localhost/ticket/2791</guid>
+        <title>#2791: Logo fix</title>
+        <pubDate>Thu, 02 Aug 2012 08:10:34 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+@aron
+&lt;/p&gt;
+&lt;p&gt;
+We should be able to have longish tag lines that look ok currently they wrap and stop the logo text being clickable
+&lt;/p&gt;
+&lt;p&gt;
+Can we have &lt;tt&gt;white-space:nowrap;&lt;/tt&gt; for the tagline so long ones don't wrap and maybe look at aligning long ones
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2791#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2789</link>
+        <guid isPermaLink="false">http://localhost/ticket/2789</guid>
+        <title>#2789: logo fixups</title>
+        <pubDate>Wed, 01 Aug 2012 15:32:21 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+With the text logo I'd like the tag line to be under the site name so some css like
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;float:left;clear:left;font-size:13px;line-height:0.1;&lt;/tt&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Also the site name can be larger if no tagline
+&lt;/p&gt;
+&lt;p&gt;
+commit daac54dbd856  I've added a new global g.header_css that sets the hgroup class to
+&lt;/p&gt;
+&lt;p&gt;
+'header-image'
+'header-text-logo'
+'header-text-logo-tagline'
+&lt;/p&gt;
+&lt;p&gt;
+I think maybe we should also have 'header-image-css'  for the equivalent of the class="logo" in the link to allow/stop the image replacement
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2789#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2787</link>
+        <guid isPermaLink="false">http://localhost/ticket/2787</guid>
+        <title>#2787: Ensure templates_legacy directory is loaded for extensions</title>
+        <pubDate>Wed, 01 Aug 2012 13:29:42 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the stats plugin has a template and templates_legacy directory. We need to ensure that the templates in templates_legacy are loaded.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2787#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2783</link>
+        <guid isPermaLink="false">http://localhost/ticket/2783</guid>
+        <title>#2783: Way to generate homepage backgrounds for demos/ckan hosted</title>
+        <pubDate>Wed, 01 Aug 2012 09:22:11 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Really we want this for CKAN Hosted &amp;amp; for creating demos.
+&lt;/p&gt;
+&lt;p&gt;
+Currently we're using &lt;a class="ext-link" href="http://leaflet.cloudmade.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://leaflet.cloudmade.com/&lt;/a&gt; - but by finding the area &amp;amp; taking screenshots. Would be better to interate with the app so that:
+a) this happens automatically and
+b) correct attribution will be visible on maps
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2783#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2782</link>
+        <guid isPermaLink="false">http://localhost/ticket/2782</guid>
+        <title>#2782: integrate with leaflet for demo background generation</title>
+        <pubDate>Tue, 31 Jul 2012 15:34:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+use &lt;a class="ext-link" href="http://leaflet.cloudmade.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://leaflet.cloudmade.com/&lt;/a&gt; properly to generate map backgrounds for demo instances
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2782#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2781</link>
+        <guid isPermaLink="false">http://localhost/ticket/2781</guid>
+        <title>#2781: add way to edit homepage text to simple theming</title>
+        <pubDate>Tue, 31 Jul 2012 12:42:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+demo.ckan.org has a small field for adding text on homepage
+current text:
+"Welcome to the CKAN demo
+Try out standard CKAN functionality in a sandbox environment. Search for datasets directly from the homepage or by navigating to the Datasets search page where you can facet by tags, groups and format."
+&lt;/p&gt;
+&lt;p&gt;
+Want to make this editable for demos
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2781#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2779</link>
+        <guid isPermaLink="false">http://localhost/ticket/2779</guid>
+        <title>#2779: add 'deleted' to deleted datasets that admins can view</title>
+        <pubDate>Tue, 31 Jul 2012 12:17:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently, as a logged in admin, you can view deleted datasets just as if they are live datasets. Nothing distinguishes them apart from normal datasets other than they don't show up on the dataset page
+&lt;/p&gt;
+&lt;p&gt;
+This is potentially very confusing
+Can we add some kind of banner / label to deleted datasets to show they have been deleted?
+&lt;/p&gt;
+&lt;p&gt;
+&amp;amp; Do you guys need Sam to design this?
+&lt;/p&gt;
+&lt;p&gt;
+Related ticket for undeleting datasets -  &lt;a class="ext-link" href="http://trac.ckan.org/ticket/2780"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2780&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2779#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2778</link>
+        <guid isPermaLink="false">http://localhost/ticket/2778</guid>
+        <title>#2778: apps dashboard needs some design love</title>
+        <pubDate>Tue, 31 Jul 2012 11:27:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+apps dashboard available at &lt;a class="ext-link" href="http://localhost:5000/apps"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/apps&lt;/a&gt; in main dev branch
+&lt;/p&gt;
+&lt;p&gt;
+I have got this to work in the demo however
+&lt;/p&gt;
+&lt;p&gt;
+a) it is a bit ugly
+&lt;/p&gt;
+&lt;p&gt;
+b) the template could do with some sorting eg the dropdowns should be being created in a nicer way
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2778#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2776</link>
+        <guid isPermaLink="false">http://localhost/ticket/2776</guid>
+        <title>#2776: add styled text field for header title</title>
+        <pubDate>Tue, 31 Jul 2012 08:50:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+to use on demos instead of the ckan logo &amp;amp; tag line.
+&lt;/p&gt;
+&lt;p&gt;
+Design here: &lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63387712/comments#190457381"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63387712/comments#190457381&lt;/a&gt;
+(First, text only one at the bottom)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2776#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2774</link>
+        <guid isPermaLink="false">http://localhost/ticket/2774</guid>
+        <title>#2774: Provide a method of passing localised strings into the JavaScript</title>
+        <pubDate>Mon, 30 Jul 2012 15:11:12 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+We need to be able to do the following:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Rip the localised strings from the &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; source code. These are strings that look like &lt;tt&gt;_('String')&lt;/tt&gt;, &lt;tt&gt;translate('String') &lt;/tt&gt; and &lt;tt&gt; isPlural('String') &lt;/tt&gt;.
+&lt;/li&gt;&lt;li&gt;An endpoint that provides the translations in the correct locale for the user.
+&lt;/li&gt;&lt;li&gt;The endpoint should provide the locale as JSON (possibly using &lt;a class="ext-link" href="http://jsgettext.berlios.de/doc/html/po2json.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://jsgettext.berlios.de/doc/html/po2json.html&lt;/a&gt; or similar tool)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; can then read this file on page load.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2774#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2772</link>
+        <guid isPermaLink="false">http://localhost/ticket/2772</guid>
+        <title>#2772: Update transifex for 1.8 translations</title>
+        <pubDate>Fri, 27 Jul 2012 12:48:19 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Upload the new pot file/resource on transifex, put out the call for translations. Some recent commits on master need to be merged into 1.8 first
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2772#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2770</link>
+        <guid isPermaLink="false">http://localhost/ticket/2770</guid>
+        <title>#2770: Some strings potentially not marked for translation</title>
+        <pubDate>Fri, 27 Jul 2012 11:00:40 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Luca De Santis reported these strings not marked in 1.7.1:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;ul&gt;&lt;li&gt;/user/login.html ("Remember me" &amp;amp; "Sign in")
+&lt;/li&gt;&lt;li&gt;/package/search.html and template/package/group/read.html (Tags, Resource Formats, Groups)
+&lt;/li&gt;&lt;li&gt;/package/resource_read.html (the "No description" message)
+&lt;/li&gt;&lt;li&gt;the "Add related item" dialog (some strings are i18n savvy, others not)
+&lt;/li&gt;&lt;li&gt;the stats page (labels on the graphs)
+&lt;/li&gt;&lt;li&gt;the history page (as far as the log messages are concerned).
+&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;p&gt;
+lets check that they are marked in 1.8
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2770#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2769</link>
+        <guid isPermaLink="false">http://localhost/ticket/2769</guid>
+        <title>#2769: add site wide related page</title>
+        <pubDate>Thu, 26 Jul 2012 17:26:07 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Can we add the related dashboard (&lt;a class="ext-link" href="http://trac.ckan.org/ticket/2347"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/2347&lt;/a&gt;) to demo - central place to show off all the related stuff added.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2769#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2767</link>
+        <guid isPermaLink="false">http://localhost/ticket/2767</guid>
+        <title>#2767: Upgrade macro form.select to use tuples instead of dicts</title>
+        <pubDate>Thu, 26 Jul 2012 16:14:58 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This keeps the intended order.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2767#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2765</link>
+        <guid isPermaLink="false">http://localhost/ticket/2765</guid>
+        <title>#2765: Demo login error messages</title>
+        <pubDate>Thu, 26 Jul 2012 15:50:42 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I'd suggest we add a generic "failed to login, invalid fields" in the error_summary block. Then more specific "this field is required" when a required field is left empty.
+&lt;/p&gt;
+&lt;p&gt;
+So in general, provide an error dict
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2765#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2764</link>
+        <guid isPermaLink="false">http://localhost/ticket/2764</guid>
+        <title>#2764: Simplify filestore</title>
+        <pubDate>Thu, 26 Jul 2012 11:58:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Definitely do:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Local file filestore: Remove pairtree (and OFS) and do something very simple
+&lt;/li&gt;&lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Options:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Local file only. Allow for uploaders to GS / S3 in the background
+&lt;ul&gt;&lt;li&gt;Advantages: simpler, if local upload can do progress bars etc etc
+&lt;/li&gt;&lt;li&gt;Disadvantages: strain for web-app (upload a 2GB file what happens)
+&lt;ul&gt;&lt;li&gt;This is probably fixable ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Stick with how we are
+&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="Newfilestorewithoutpairtree"&gt;New filestore without pairtree&lt;/h3&gt;
+&lt;p&gt;
+Each uploaded file is located on disk at:
+&lt;/p&gt;
+&lt;p&gt;
+{uuid}/{filename}
+&lt;/p&gt;
+&lt;p&gt;
+Alternative:
+&lt;/p&gt;
+&lt;p&gt;
+yyyy/mm/dd/{uuid}/{filename}
+&lt;/p&gt;
+&lt;p&gt;
+Need the uuid to avoid collisions.
+&lt;/p&gt;
+&lt;p&gt;
+Metadata: Store no metadata.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2764#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2760</link>
+        <guid isPermaLink="false">http://localhost/ticket/2760</guid>
+        <title>#2760: fix spacing between data API button and other buttons on dataset page</title>
+        <pubDate>Thu, 26 Jul 2012 10:09:20 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+see spacing between 'download' button and 'data api' button
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afterfibre/resource/66f5b980-06db-4ccd-a005-c18de4d68a4b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afterfibre/resource/66f5b980-06db-4ccd-a005-c18de4d68a4b&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2760#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2759</link>
+        <guid isPermaLink="false">http://localhost/ticket/2759</guid>
+        <title>#2759: resource upload pointer incorrect</title>
+        <pubDate>Thu, 26 Jul 2012 07:57:49 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+On the add resource forms new or existing dataset
+&lt;/p&gt;
+&lt;p&gt;
+when hovering over &lt;tt&gt;Upload a file&lt;/tt&gt; css cursor should be pointer not text
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2759#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2757</link>
+        <guid isPermaLink="false">http://localhost/ticket/2757</guid>
+        <title>#2757: Write documentation for upgrading a CKAN install from an older to a newer version of CKAN</title>
+        <pubDate>Wed, 25 Jul 2012 16:54:02 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2757#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2756</link>
+        <guid isPermaLink="false">http://localhost/ticket/2756</guid>
+        <title>#2756: Fix handling of extras in group read</title>
+        <pubDate>Wed, 25 Jul 2012 15:51:54 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It doesn't pass extras_as_string
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2756#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2755</link>
+        <guid isPermaLink="false">http://localhost/ticket/2755</guid>
+        <title>#2755: user pages very slow to load</title>
+        <pubDate>Wed, 25 Jul 2012 14:09:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+navigating to a user page -one's own or &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/ira"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/ira&lt;/a&gt; or &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/shevski"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/shevski&lt;/a&gt;, even when signed out is noticeably slower than navigating between other parts of the site; over 2 seconds. Maybe even 3
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2755#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2754</link>
+        <guid isPermaLink="false">http://localhost/ticket/2754</guid>
+        <title>#2754: Add + icon to two buttons</title>
+        <pubDate>Wed, 25 Jul 2012 14:06:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Specifically the 'add resource' button and the 'add item' button in related section
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2754#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2753</link>
+        <guid isPermaLink="false">http://localhost/ticket/2753</guid>
+        <title>#2753: rename breadcrumb on user page</title>
+        <pubDate>Wed, 25 Jul 2012 14:04:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently lower case 'active' is the name of this page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Should be 'All Users' or 'Active Users'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2753#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2752</link>
+        <guid isPermaLink="false">http://localhost/ticket/2752</guid>
+        <title>#2752: Navigation highlight missing</title>
+        <pubDate>Wed, 25 Jul 2012 11:43:02 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+When navigating to &lt;a class="ext-link" href="http://s031.okserver.org:2375/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group&lt;/a&gt; on the demo server, the Group link in the navbar is not highlighted in the same was as the other links are when visiting those pages.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2752#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=Adria&amp;desc=1&amp;order=milestone</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=Adria&amp;desc=1&amp;order=milestone</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1562</link>
+        <guid isPermaLink="false">http://localhost/ticket/1562</guid>
+        <title>#1562: Finish Geo Spatial</title>
+        <pubDate>Mon, 19 Dec 2011 10:56:33 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimated 4 weeks of Adria's time. I guess this will need to be broken down into more tickets. This feature is being requested by a number of potential customers and we have some ideas of requirements between Rufus and Jilly for this. This is the most popular new feature we talk about to new clients.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1562#changelog</comments>
+    </item>
+ </channel>
+</rss>

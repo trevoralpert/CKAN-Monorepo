@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=aron.carroll&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=aron.carroll&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2850</link>
+        <guid isPermaLink="false">http://localhost/ticket/2850</guid>
+        <title>#2850: Add JSON support for IE7</title>
+        <pubDate>Tue, 14 Aug 2012 10:38:12 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; just isn't going to work without it. Look into either the newer JSON3:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://bestiejs.github.com/json3/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bestiejs.github.com/json3/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+or the old faithful:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/douglascrockford/JSON-js/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/douglascrockford/JSON-js/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2850#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2775</link>
+        <guid isPermaLink="false">http://localhost/ticket/2775</guid>
+        <title>#2775: Add bin/less to paster serve command</title>
+        <pubDate>Mon, 30 Jul 2012 22:01:26 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Ideally the ./bin/less command would be run when the server is started.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Also it would be good to have a paster command to build the production CSS with {{{ ./bin/less --production }}
+&lt;/li&gt;&lt;li&gt;The command could also detect missing node binaries and redirect to the documentation.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2775#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2785</link>
+        <guid isPermaLink="false">http://localhost/ticket/2785</guid>
+        <title>#2785: Allow resources to be re-ordered</title>
+        <pubDate>Wed, 01 Aug 2012 10:22:03 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Not sure where this functionality should be added, possibly in one of the sidebar widgets when editing a resource?
+&lt;/p&gt;
+&lt;p&gt;
+Ira, what are your thoughts?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2835</link>
+        <guid isPermaLink="false">http://localhost/ticket/2835</guid>
+        <title>#2835: Client module needs a template loading method</title>
+        <pubDate>Thu, 09 Aug 2012 17:10:33 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;pre class="wiki"&gt;Client#getTemplate(name, params, success, error);
+&lt;/pre&gt;&lt;p&gt;
+Where params, success and error are optional arguments. test/index.html already has an implementation called loadFixture().
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2835#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2831</link>
+        <guid isPermaLink="false">http://localhost/ticket/2831</guid>
+        <title>#2831: Create a limited subset of markdown that's supported</title>
+        <pubDate>Thu, 09 Aug 2012 11:41:07 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Allowing people to use the full range of markdown results in extremely messy output across the site. I'd suggest limiting support to only a subset of common use cases.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow all inline elements, this allows bold, italic, code and links.
+&lt;/li&gt;&lt;li&gt;Allow lists.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Disallow
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Horizontal Rules
+&lt;/li&gt;&lt;li&gt;Headings
+&lt;/li&gt;&lt;li&gt;Block quote and code (this may turn out to be useful and so could be included)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This way you get markdowns paragraph handling and a few inline styles without breaking the entire layout of the page.
+&lt;/p&gt;
+&lt;p&gt;
+Here's the full syntax if anyone is interested &lt;a class="ext-link" href="http://daringfireball.net/projects/markdown/syntax"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://daringfireball.net/projects/markdown/syntax&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2831#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2357</link>
+        <guid isPermaLink="false">http://localhost/ticket/2357</guid>
+        <title>#2357: Create build script for front-end resources</title>
+        <pubDate>Tue, 01 May 2012 15:29:41 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Should minify and concatenate &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; and CSS as part of &lt;a class="closed ticket" href="http://localhost/ticket/2354" title="enhancement: Front end performance improvements [super] (closed: wontfix)"&gt;#2354&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2357#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2446</link>
+        <guid isPermaLink="false">http://localhost/ticket/2446</guid>
+        <title>#2446: Create demo dataset history/comparison page</title>
+        <pubDate>Mon, 28 May 2012 13:12:18 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This is a low priority for the demo site.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62414120/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/history/adur_district_spending"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/history/adur_district_spending&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2446#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2461</link>
+        <guid isPermaLink="false">http://localhost/ticket/2461</guid>
+        <title>#2461: Create demo revisions page</title>
+        <pubDate>Mon, 28 May 2012 13:34:15 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I believe this is to be merged in with site activity.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/revision"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/revision&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2461#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2457</link>
+        <guid isPermaLink="false">http://localhost/ticket/2457</guid>
+        <title>#2457: Create demo tags list page</title>
+        <pubDate>Mon, 28 May 2012 13:28:55 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+This includes the tag page as well for now.
+&lt;/p&gt;
+&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62998445/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/tag"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/tag&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2457#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2451</link>
+        <guid isPermaLink="false">http://localhost/ticket/2451</guid>
+        <title>#2451: Create demo user list page</title>
+        <pubDate>Mon, 28 May 2012 13:20:13 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2451#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2834</link>
+        <guid isPermaLink="false">http://localhost/ticket/2834</guid>
+        <title>#2834: Defer all publish calls until all modules have been initialised</title>
+        <pubDate>Thu, 09 Aug 2012 17:08:13 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently if a module uses sandbox.publish() in its initilaize() function then any modules initialised afterwards will miss the event.
+&lt;/p&gt;
+&lt;p&gt;
+We should queue all calls to .publish() in the pubsub module in an array until all modules have loaded then iterate over and execute them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2834#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2555</link>
+        <guid isPermaLink="false">http://localhost/ticket/2555</guid>
+        <title>#2555: Demo site needs a breadcrumb helper</title>
+        <pubDate>Mon, 18 Jun 2012 13:43:03 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Something to make building breadcrumbs a bit nicer
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2555#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2833</link>
+        <guid isPermaLink="false">http://localhost/ticket/2833</guid>
+        <title>#2833: Load module templates before calling .initialize()</title>
+        <pubDate>Thu, 09 Aug 2012 17:05:39 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I think this would be a nice feature for remote loading templates if the options.template value ends in ".html".
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ckan.module('my-module', {
+  options: {
+    template: 'my-template.html'
+  },
+  initialize: function () {
+    this.template // This is the loaded template.
+  }
+});
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2833#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2416</link>
+        <guid isPermaLink="false">http://localhost/ticket/2416</guid>
+        <title>#2416: Normalise resource/data types</title>
+        <pubDate>Wed, 23 May 2012 17:09:06 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently we have far too many types that are essentially the same format. The new demo theme is using icons for common types. So we need to normalise the common formats into pretty strings. e.g. application/json, JSON, .json and json all should be output as “json”
+&lt;/p&gt;
+&lt;p&gt;
+See the following Basecamp thread for UI examples and discussion.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments#comment_179681056"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments#comment_179681056&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2416#changelog</comments>
+    </item>
+ </channel>
+</rss>

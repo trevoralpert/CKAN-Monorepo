@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      no_autoflush_deletes.diff on Ticket #868 – Attachment
+     – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="../../../raw-attachment/ticket/868/no_autoflush_deletes.diff" type="text/x-diff; charset=utf-8" title="Original Format" />
+        <link rel="up" href="../../../ticket/868.html" title="Ticket #868" />
+        <link rel="start" href="../../../wiki.1.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../../chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search CKAN" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="../../../chrome/common/js/folding.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          $('#preview table.code').enableCollapsibleColumns($('#preview table.code thead th.content'));
+        });
+      </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="../../../search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../prefs.html">Preferences</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li><a href="../../../report.html">View Tickets</a></li><li><a href="../../../search.html">Search</a></li><li class="last"><a href="../../../wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../ticket/868.html">Back to Ticket #868</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="../../../ticket/868.html">Ticket #868</a>: no_autoflush_deletes.diff</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">File no_autoflush_deletes.diff,
+                <span title="3425 bytes">3.3 KB</span>
+                (added by kindly@…, <a class="timeline" href="../../../timeline%3Ffrom=2011-01-06T22:55:44Z&amp;precision=second.html" title="2011-01-06T22:55:44Z in Timeline">3 years</a> ago)</th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                <p>
+This is a patch so that we do not need to monkeypatch sqlalchemy dialects
+</p>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+          
+  <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>ckan/lib/create_test_data.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/lib/create_test_data.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/lib/create_test_data.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/lib/create_test_data.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>415</th><th>415</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model.Session.execute(sql)</span> </td>
+                  </tr><tr>
+                          <th>416</th><th>416</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; model.repo.commit_and_remove()</span> </td>
+                  </tr><tr>
+                          <th>417</th><th>417</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for pkg_name in self.pkg_names:</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>418</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model.Session().autoflush = False</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>418</th><th>419</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pkg = model.Package.by_name(unicode(pkg_name))</span> </td>
+                  </tr><tr>
+                          <th>419</th><th>420</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if pkg:</span> </td>
+                  </tr><tr>
+                          <th>420</th><th>421</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pkg.purge()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="no_autoflush_deletes.diff.html#L432">…</a></th>
+                  <th><a href="no_autoflush_deletes.diff.html#L433">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>432</th><th>433</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pkg.purge()</span> </td>
+                  </tr><tr>
+                          <th>433</th><th>434</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for grp in rev.groups:</span> </td>
+                  </tr><tr>
+                          <th>434</th><th>435</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grp.purge()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>436</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model.Session.commit()</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>435</th><th>437</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model.Session.delete(rev)</span> </td>
+                  </tr><tr>
+                          <th>436</th><th>438</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for user_name in self.user_names:</span> </td>
+                  </tr><tr>
+                          <th>437</th><th>439</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; user = model.User.by_name(unicode(user_name))</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/model/domain_object.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/model/domain_object.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/model/domain_object.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/model/domain_object.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.Session.delete(self)</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; &nbsp; def purge(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>78</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.Session().autoflush = False</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>79</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if hasattr(self, '__revisioned__'): # only for versioned objects ...</span> </td>
+                  </tr><tr>
+                          <th>79</th><th>80</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # this actually should auto occur due to cascade relationships but</span> </td>
+                  </tr><tr>
+                          <th>80</th><th>81</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ...</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/tests/forms/test_group.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/tests/forms/test_group.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/tests/forms/test_group.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/tests/forms/test_group.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>&nbsp; &nbsp; @classmethod</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>12</th><td class="l"><span>&nbsp; &nbsp; def teardown_class(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; <del>ckan.tests.CreateTestData.delete</del>()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; <ins>model.repo.clean_db</ins>()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span>&nbsp; &nbsp; def test_1(self):</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; group = model.Group.by_name(u'roger')</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/tests/functional/api/test_model.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/tests/functional/api/test_model.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/tests/functional/api/test_model.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/tests/functional/api/test_model.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>363</th><th>363</th><td class="l"><span>&nbsp; &nbsp; def teardown(self):</span> </td>
+                  </tr><tr>
+                          <th>364</th><th>364</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for relationship in self.anna.get_relationships():</span> </td>
+                  </tr><tr>
+                          <th>365</th><th>365</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; relationship.purge()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>366</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; model.Session.commit()</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>366</th><th>367</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; relationships = self.anna.get_relationships()</span> </td>
+                  </tr><tr>
+                          <th>367</th><th>368</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; assert relationships == [], "There are still some relationships: %s" % relationships</span> </td>
+                  </tr><tr>
+                          <th>368</th><th>369</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/tests/functional/test_group.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/tests/functional/test_group.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/tests/functional/test_group.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/tests/functional/test_group.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; @classmethod</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; def teardown_class(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; <del>CreateTestData.delete</del>()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; <ins>model.repo.clean_db</ins>()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>43</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>44</th><th>44</th><td class="l"><span>&nbsp; &nbsp; def test_mainmenu(self):</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>45</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; offset = url_for(controller='home', action='index')</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>ckan/tests/models/test_harvesting.py</a>
+        </h2>
+        <pre>diff -r 336570412918 ckan/tests/models/test_harvesting.py</pre>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File a/ckan/tests/models/test_harvesting.py Wed Jan 05 18:23:56 2011 +0000">
+                      a
+                  </th>
+                  <th title="File b/ckan/tests/models/test_harvesting.py Thu Jan 06 22:36:43 2011 +0000">
+                      b
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.gemini = GeminiExamples()</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>24</th><th>24</th><td class="l"><span>&nbsp; &nbsp; def teardown(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>25</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if self.document:</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.delete(self.document)</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; for document in HarvestedDocument.filter():</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.delete()</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if self.job:</del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.delete(self.job)</del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if self.source:</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.delete(self.source)</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.commit_remove()</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.purge_package_by_name('00a743bf-cca4-4c19-a8e5-e64f7edbcadd')</del> </td>
+                  </tr><tr class="last">
+                          <th>35</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; super(HarvesterTestCase, self).teardown()</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>25</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; model.repo.clean_db()</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>26</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>38</th><th>27</th><td class="l"><span>&nbsp; &nbsp; def create_fixture(self, domain_type, **kwds):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+
+        </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="../../../raw-attachment/ticket/868/no_autoflush_deletes.diff">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

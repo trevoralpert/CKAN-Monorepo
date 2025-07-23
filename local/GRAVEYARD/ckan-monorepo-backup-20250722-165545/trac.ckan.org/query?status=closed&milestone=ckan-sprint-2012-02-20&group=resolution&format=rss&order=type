@@ -1,0 +1,627 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-02-20&amp;group=resolution&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-02-20&amp;group=resolution&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1783</link>
+        <guid isPermaLink="false">http://localhost/ticket/1783</guid>
+        <title>#1783: Locale change exception when unicode in URL</title>
+        <pubDate>Tue, 07 Feb 2012 10:44:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If the current page URL has unicode in it (e.g. &lt;tt&gt;u'/tag/biocombust\xedveis'&lt;/tt&gt;) then I'm not sure how why it isn't more encoded, but we are seeing links such as &lt;tt&gt;http://beta.dados.gov.br/dados/locale?locale=hu&amp;amp;return_to=/dados/tag/biocombust%C3%ADveis&amp;amp;hash=7fd941b5ba1a28bc84406c4191bf07b45a42a251&lt;/tt&gt; which cause an exception when the foreign character is passed to ckan.lib.hash.get_message_hash().
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1783#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1791</link>
+        <guid isPermaLink="false">http://localhost/ticket/1791</guid>
+        <title>#1791: Changing locale on /dataset/new causes exception</title>
+        <pubDate>Mon, 13 Feb 2012 12:02:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you are on the /dataset/new page and you try and change locale then you get a 500 error.
+&lt;/p&gt;
+&lt;p&gt;
+This is because it adds the '&lt;span class="underline"&gt;cache' parameter, to ensure any proxy cache in the chain does not just send the cached page.
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+e.g.
+&lt;a class="ext-link" href="http://127.0.0.1:5000/dataset/new?__cache=37713707"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://127.0.0.1:5000/dataset/new?__cache=37713707&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1791#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1359</link>
+        <guid isPermaLink="false">http://localhost/ticket/1359</guid>
+        <title>#1359: Radically simplify standard list of licenses</title>
+        <pubDate>Mon, 26 Sep 2011 22:57:35 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Major UX grip and incredibly simple to do. May also want to have basic autocomplete support within the list (trivial to do as well I believe).
+&lt;/p&gt;
+&lt;p&gt;
+(Talk to RP about this re how we define lists of licenses).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1359#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1675</link>
+        <guid isPermaLink="false">http://localhost/ticket/1675</guid>
+        <title>#1675: Publisher admin authz</title>
+        <pubDate>Tue, 17 Jan 2012 12:22:03 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Authz for the publisher admin (who has permission to administer the publisher group themselves).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1675#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1705</link>
+        <guid isPermaLink="false">http://localhost/ticket/1705</guid>
+        <title>#1705: Implement Vocabularies domain model and API</title>
+        <pubDate>Tue, 24 Jan 2012 17:47:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add Vocabulary domain class, add logic functions for creating, updating, listing, getting, deleting vocabularies, add tests.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1705#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1715</link>
+        <guid isPermaLink="false">http://localhost/ticket/1715</guid>
+        <title>#1715: Search index multilingual</title>
+        <pubDate>Thu, 26 Jan 2012 17:28:04 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to make solr schema work for many languages. Get stopwords and choose correct analysis for each.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1715#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1720</link>
+        <guid isPermaLink="false">http://localhost/ticket/1720</guid>
+        <title>#1720: Add converter functions to convert tags (with a given taxonomy) to/from tags field</title>
+        <pubDate>Mon, 30 Jan 2012 17:11:11 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Part of &lt;a class="closed ticket" href="http://localhost/ticket/1698" title="enhancement: [super] Tag Taxonomies (closed: fixed)"&gt;#1698&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1720#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1721</link>
+        <guid isPermaLink="false">http://localhost/ticket/1721</guid>
+        <title>#1721: Tag taxonomies table migration</title>
+        <pubDate>Mon, 30 Jan 2012 17:23:57 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1721#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1722</link>
+        <guid isPermaLink="false">http://localhost/ticket/1722</guid>
+        <title>#1722: Update the package model for vocabularies</title>
+        <pubDate>Mon, 30 Jan 2012 19:06:13 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+See the etherpad for notes: &lt;a class="ext-link" href="http://ckan.okfnpad.org/22"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/22&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1722#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1724</link>
+        <guid isPermaLink="false">http://localhost/ticket/1724</guid>
+        <title>#1724: Update logic action functions for vocabularies</title>
+        <pubDate>Mon, 30 Jan 2012 19:12:41 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;tt&gt;ckan/logic/action/get.py:tag_list()&lt;/tt&gt;
+Currently (I think) just returns all tags in the CKAN instance that the user has access to.
+Needs an optional argument to get only tags from a particular vocabulary?
+When called with no argument, should only return free tags?
+Also add an optional dataset argument, so you can get tags for a given dataset and/or vocabulary?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;ckan/logic/action/get.py:tag_autocomplete()&lt;/tt&gt;
+Add optional argument to get only tags for a given vocab? When called with no argument, should get only free tags?
+&lt;/p&gt;
+&lt;p&gt;
+&lt;tt&gt;ckan/logic/action/get.py:tag_search()&lt;/tt&gt;
+Again, optional arguments for restricting by vocabulary and/or dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1724#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1728</link>
+        <guid isPermaLink="false">http://localhost/ticket/1728</guid>
+        <title>#1728: Update UKLP harvesters</title>
+        <pubDate>Tue, 31 Jan 2012 11:00:10 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Three small changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Set Resource type to None instead of 'Undefined'
+&lt;/li&gt;&lt;li&gt;Set extra 'UKLP' = True instead of 'INSPIRE' = True
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+These two changes will require manual update of the database.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow datasets to be updated if the old source is inactive, even if the metadata date hasn't changed:
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;    if last_harvested_object.metadata_modified_date is None \
+       or last_harvested_object.metadata_modified_date &amp;lt; self.obj.metadata_modified_date \
+       or self.force_import \
+       or last_harvested_object.metadata_modified_date == self.obj.metadata_modified_date and last_harvested_object.source.active is False:
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1730</link>
+        <guid isPermaLink="false">http://localhost/ticket/1730</guid>
+        <title>#1730: Form field for vocabularies</title>
+        <pubDate>Tue, 31 Jan 2012 11:04:57 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+A function that takes a vocabulary name or ID as argument and returns a nice select box for selecting items from that given vocabulary. Meant to be used by form templates, to make it easy for them to integrate custom vocabularies. Could use &lt;a class="ext-link" href="http://harvesthq.github.com/chosen/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://harvesthq.github.com/chosen/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1730#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1733</link>
+        <guid isPermaLink="false">http://localhost/ticket/1733</guid>
+        <title>#1733: Delete (inactivate) harvest sources</title>
+        <pubDate>Tue, 31 Jan 2012 11:11:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now harvest sources can be inactivated (only via the cli), but we need to make sure:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Expose this on the web interface (only for sysadmins, see &lt;a class="closed ticket" href="http://localhost/ticket/1731" title="enhancement: Publisher support for harvesting (closed: fixed)"&gt;#1731&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Inactive sources are not shown in the web interface
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also for deleted packages:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+a) Deleted packages get state="deleted" (not actually purged) so they are hidden on front end
+ACTION: need a button on the front end for "Delete" for sysamdins
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Done in &lt;a class="closed ticket" href="http://localhost/ticket/1425" title="enhancement: Dataset delete button (closed: fixed)"&gt;#1425&lt;/a&gt;. Not sure if the button is only shown to sysadmins.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+b) No undelete: If you reharvest a deleted package, it remains deleted
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Publisher should create a new record with new identifier and same/different content as applicable.
+&lt;/li&gt;&lt;li&gt;If publisher reharvests, a deleted document they get a error and are told to create new identifier for their updated.
+&lt;/li&gt;&lt;li&gt;You won't get the state where a package is updated in its deleted state
+&lt;/li&gt;&lt;li&gt;If they change the ID and reharvest, a new record appears on DGU.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+c) Update CSW interface so that export doesn't export deleted packages
+d) Check geospatial search doesn't search deleted pacakges
+e) Check deleted packages don't appear in harvest source details, or in the counts or anywhere in the harvest interface or API.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1733#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1741</link>
+        <guid isPermaLink="false">http://localhost/ticket/1741</guid>
+        <title>#1741: Add extention point to dataset view.</title>
+        <pubDate>Wed, 01 Feb 2012 14:15:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to add extension point to change the data_dict that passed to the dataset view template. This extensions modify what data gets shown.
+&lt;/p&gt;
+&lt;p&gt;
+Tasks include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Fix up data_dict and templates so that the pkg objects do not get used in the templates.  This is to assure that all data passed is modifiable. (2d) (complete)
+&lt;/li&gt;&lt;li&gt;Add extension point to Ipackage controller (1d)
+&lt;/li&gt;&lt;li&gt;Test (1d)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1741#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1751</link>
+        <guid isPermaLink="false">http://localhost/ticket/1751</guid>
+        <title>#1751: DGU dataset form: collection of updates from feedback</title>
+        <pubDate>Mon, 06 Feb 2012 11:10:12 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+A collection of improvements to the dataset creation/edition form (feedback form DGU).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[x] validation error formatting
+&lt;/li&gt;&lt;li&gt;[x] geograohic coverage: add local authority
+&lt;/li&gt;&lt;li&gt;[x] resource format field
+&lt;/li&gt;&lt;li&gt;[x] resource format auto-complete
+&lt;/li&gt;&lt;li&gt;[x] renamed data tab -&amp;gt; files tab
+&lt;/li&gt;&lt;li&gt;[x] integrate Adris'a INSPIRE changeset, and migration scripts as part of build
+&lt;/li&gt;&lt;li&gt;[x] remove "discontinued" from the update frequency
+&lt;/li&gt;&lt;li&gt;[x] disable the disabling of save
+&lt;/li&gt;&lt;li&gt;[x] Remove ability to edit url on the edit-form (and remove "url not available")
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1751#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1752</link>
+        <guid isPermaLink="false">http://localhost/ticket/1752</guid>
+        <title>#1752: DGU: collection of updates from feedback</title>
+        <pubDate>Mon, 06 Feb 2012 11:12:30 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;[x] hide black stars on the data-view page
+&lt;/li&gt;&lt;li&gt;[x] Edit on view form (if you have the right permission)
+&lt;/li&gt;&lt;li&gt;[x] RES_FORMAT ~&amp;gt; Resource Format
+&lt;/li&gt;&lt;li&gt;[x] Map Based Search -&amp;gt; UK Location Map Based Search
+&lt;/li&gt;&lt;li&gt;[x] Note at the top right expalining that these are seach filters (if they are) -&amp;gt; this requires "add a dataset" and "other access" to be moved to a different place (just some whitespace is fine)
+&lt;/li&gt;&lt;li&gt;[x] Display publisher and provider (UKLP records only).
+&lt;/li&gt;&lt;li&gt;[x] analysis of filter by OGL / non-OGL
+&lt;/li&gt;&lt;li&gt;[x] provide /dump on the build server
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1752#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1755</link>
+        <guid isPermaLink="false">http://localhost/ticket/1755</guid>
+        <title>#1755: DGU Alpha paged view of publishers</title>
+        <pubDate>Mon, 06 Feb 2012 12:17:14 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The publisher index page should show an alpha paged list of publishers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1755#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1756</link>
+        <guid isPermaLink="false">http://localhost/ticket/1756</guid>
+        <title>#1756: DGU Treeview of hierarchical publishers</title>
+        <pubDate>Mon, 06 Feb 2012 12:18:09 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The publisher index page should show a treeview of the publishers within the system. Probably behind a tab.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1756#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1758</link>
+        <guid isPermaLink="false">http://localhost/ticket/1758</guid>
+        <title>#1758: DGU Check user management auth</title>
+        <pubDate>Mon, 06 Feb 2012 12:21:55 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Ensure publisher edit page only allows admins to manage users. &lt;a class="closed ticket" href="http://localhost/ticket/1675" title="enhancement: Publisher admin authz (closed: fixed)"&gt;#1675&lt;/a&gt; is related.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1758#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1759</link>
+        <guid isPermaLink="false">http://localhost/ticket/1759</guid>
+        <title>#1759: DGU Create publisher form access</title>
+        <pubDate>Mon, 06 Feb 2012 12:22:36 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Only sysadmin can access create publisher form.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1759#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1760</link>
+        <guid isPermaLink="false">http://localhost/ticket/1760</guid>
+        <title>#1760: DGU Extract current publisher hierarchy</title>
+        <pubDate>Mon, 06 Feb 2012 12:23:21 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;blockquote&gt;
+&lt;p&gt;
+Get access to live Drupal MySQL database to get latest publisher list for migration.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Write a one-off script for import of the data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1760#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1761</link>
+        <guid isPermaLink="false">http://localhost/ticket/1761</guid>
+        <title>#1761: DGU History visibility</title>
+        <pubDate>Mon, 06 Feb 2012 12:54:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+History on user profile should only be visible to a user who is a member of at least one group.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1761#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1762</link>
+        <guid isPermaLink="false">http://localhost/ticket/1762</guid>
+        <title>#1762: DGU Join publisher form</title>
+        <pubDate>Mon, 06 Feb 2012 12:56:32 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+A new form for create publisher -&amp;gt; Add publisher access to your account'
+New wizard
+Autocomplete publisher name if linked from publisher view.
+Email address used to publish should be activated/validated on first use. Original email still used to log in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1762#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1765</link>
+        <guid isPermaLink="false">http://localhost/ticket/1765</guid>
+        <title>#1765: Enhance Tag and Package models with vocabularies</title>
+        <pubDate>Mon, 06 Feb 2012 14:04:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add a vocabulary column to the tags database table, change tags to have unique (tag_name, vocabulary_id) instrad of unique tag name, update methods in the Tag and Package classes to deal with the fact that tags may belong to vocabularies and that tag names are no longer unique.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1765#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1766</link>
+        <guid isPermaLink="false">http://localhost/ticket/1766</guid>
+        <title>#1766: Update and deploy EC Portal theme</title>
+        <pubDate>Mon, 06 Feb 2012 14:10:46 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1767</link>
+        <guid isPermaLink="false">http://localhost/ticket/1767</guid>
+        <title>#1767: Write end-to-end functional tests for tag vocabularies</title>
+        <pubDate>Mon, 06 Feb 2012 14:13:06 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Need to test:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;API call to create new vocab
+&lt;/li&gt;&lt;li&gt;API call to add tags with a given vocab
+&lt;/li&gt;&lt;li&gt;API call to update tags
+&lt;/li&gt;&lt;li&gt;Dummy plugin to test that updating tags works via WUI
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1767#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1771</link>
+        <guid isPermaLink="false">http://localhost/ticket/1771</guid>
+        <title>#1771: 32. Browse by Tags PHASE 1 MUST</title>
+        <pubDate>Mon, 06 Feb 2012 14:51:02 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1771#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1773</link>
+        <guid isPermaLink="false">http://localhost/ticket/1773</guid>
+        <title>#1773: 17. Filter “UK Location Records” MUST PHASE 1 [UKLP #21 SHOULD]</title>
+        <pubDate>Mon, 06 Feb 2012 14:55:30 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1773#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1774</link>
+        <guid isPermaLink="false">http://localhost/ticket/1774</guid>
+        <title>#1774: 22. Mixed Licenses MUST PHASE 2</title>
+        <pubDate>Mon, 06 Feb 2012 14:55:53 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1774#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1776</link>
+        <guid isPermaLink="false">http://localhost/ticket/1776</guid>
+        <title>#1776: Granular editing of vocabulary tags</title>
+        <pubDate>Mon, 06 Feb 2012 15:13:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add API calls for adding one or more tags to and removing one or more tags from a vocabulary, without affecting the other tags in that vocabulary and without having to pass the full list of the vocabulary's tags.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1776#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1777</link>
+        <guid isPermaLink="false">http://localhost/ticket/1777</guid>
+        <title>#1777: Write about multilingual features for ec.</title>
+        <pubDate>Mon, 06 Feb 2012 15:40:35 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Basic description of multilingual features intended to be supported.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1777#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1779</link>
+        <guid isPermaLink="false">http://localhost/ticket/1779</guid>
+        <title>#1779: Add multilingual translation table.</title>
+        <pubDate>Mon, 06 Feb 2012 17:17:11 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+A new table with 3 columns should be added. term, term_tranlastion, language_code.  This table will be used for all translations, including tags.  The table should have indexs on both the term and (term, language_code) combination.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1779#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1781</link>
+        <guid isPermaLink="false">http://localhost/ticket/1781</guid>
+        <title>#1781: Api to add translations.</title>
+        <pubDate>Mon, 06 Feb 2012 17:23:51 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Add api to translation to the term_translation table.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;add to logic 2d
+&lt;/li&gt;&lt;li&gt;test 1d
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1781#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1786</link>
+        <guid isPermaLink="false">http://localhost/ticket/1786</guid>
+        <title>#1786: Relationships lost when editing package</title>
+        <pubDate>Tue, 07 Feb 2012 17:20:26 GMT</pubDate>
+        
+        <dc:creator>mirko.spasic@…</dc:creator>
+
+        <description>&lt;p&gt;
+If I have a relationship between two packages, and then I edit any property of one of them (Author email, for example), the relationship will automatically be lost.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1723</link>
+        <guid isPermaLink="false">http://localhost/ticket/1723</guid>
+        <title>#1723: Update tests for taxonomies</title>
+        <pubDate>Mon, 30 Jan 2012 19:08:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+In the tag-taxonomies branch tags now (optionally) belong to vocabularies and where tags previously had unique names, a CKAN instance can now have two tags with the same name as long as they belong to different vocabularies. The tests for the tags model should probably be updated to reflect this.
+&lt;/p&gt;
+&lt;p&gt;
+Other tests might also need to be updated.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1723#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1735</link>
+        <guid isPermaLink="false">http://localhost/ticket/1735</guid>
+        <title>#1735: "Unsaved changes" warning briefly when you click "Save"</title>
+        <pubDate>Tue, 31 Jan 2012 11:30:20 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket &lt;a class="closed ticket" href="http://localhost/ticket/1744" title="enhancement: UX improvements to dataset edit as of Dec 2011 (closed: fixed)"&gt;#1744&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+If you edit a dataset, simply add a tag and click on "Save" then you get the message "You have unsaved changed. Make sure to click 'Save Changes' below before leaving this page." inserted whilst the submission takes place. (This is because the click moves focus away from the tag field). This (reasonably common) edge-case could usefully be squashed.
+&lt;/p&gt;
+&lt;p&gt;
+Also note typo: "unsaved changed"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1735#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1729</link>
+        <guid isPermaLink="false">http://localhost/ticket/1729</guid>
+        <title>#1729: Helper function for extensions to add vocabularies to a ckan instance</title>
+        <pubDate>Tue, 31 Jan 2012 11:02:03 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add a helper function to make it easy for extensions to add new vocabularies to default_package_schema(). The helper function should take the name or ID of a vocabulary (which should already exist in the db) and add the necessary key: [schema] entry to default_package_schema(), with the necessary validation, authorisation, transformation.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1729#changelog</comments>
+    </item>
+ </channel>
+</rss>

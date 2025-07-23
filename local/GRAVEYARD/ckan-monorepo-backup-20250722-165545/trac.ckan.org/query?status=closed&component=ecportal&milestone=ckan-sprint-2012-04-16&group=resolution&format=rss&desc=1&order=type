@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-sprint-2012-04-16&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ecportal&amp;milestone=ckan-sprint-2012-04-16&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2251</link>
+        <guid isPermaLink="false">http://localhost/ticket/2251</guid>
+        <title>#2251: Internal analytics for ckan.</title>
+        <pubDate>Wed, 21 Mar 2012 11:57:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Page views and Resources clicks need to be tracked.
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+US1 As a Site Admin / Visitor (?) I want to see how often a page has been viewed (every page) and how often resources have been downloaded.
+&lt;/p&gt;
+&lt;p&gt;
+US1a Next to a resource or a dataset see how often it has been downloaded / viewed
+&lt;/p&gt;
+&lt;p&gt;
+US1b I want to see datasets or resources ranked by most downloaded or viewed
+&lt;/p&gt;
+&lt;p&gt;
+US1c See a trend graph for a dataset (and resources)
+&lt;/p&gt;
+&lt;p&gt;
+Adminstrative Dashboard (?)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;I want to see the traffic breakdown by country to my site ...
+&lt;/li&gt;&lt;li&gt;Ditto for browser type, language, etc etc
+&lt;/li&gt;&lt;li&gt;I want to see it graphed over time ...
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="ImplementationDetails"&gt;Implementation Details&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;How do we store this data in CKAN?
+&lt;/li&gt;&lt;li&gt;How do we track (and store)?
+&lt;/li&gt;&lt;li&gt;How do we display
+&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;Config option ckan.status.enabled = False (by default)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="StoringData"&gt;Storing Data&lt;/h3&gt;
+&lt;p&gt;
+How does ckanext-googleanalytics do this? Current table:
+&lt;/p&gt;
+&lt;p&gt;
+package_id | count_recent | count_total
+&lt;/p&gt;
+&lt;p&gt;
+Move to a new stats_summary table
+&lt;/p&gt;
+&lt;p&gt;
+id | item_id | object_type | stats_type (total, month_yyyy_mm, ...) | value
+&lt;/p&gt;
+&lt;p&gt;
+Do we store this data into the search (solr) so we can search by it?
+&lt;/p&gt;
+&lt;h3 id="DisplayingData"&gt;Displaying Data&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Helper functions / dictize:
+&lt;ul&gt;&lt;li&gt;Helper function: h.stats_get(object_type, id, stats_type)
+&lt;ul&gt;&lt;li&gt;h.stats_top_ranked(object_type, number) -&amp;gt; returns object_dicts or just labels or ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Change to dictize
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Location in the default theme (do we show for example in search results too!)
+&lt;/li&gt;&lt;li&gt;Support for ranking by most popular in search?
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="TrackingData"&gt;Tracking Data&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Our own solution (just write to site_tracking)
+&lt;/li&gt;&lt;li&gt;Google analytics (plus extension for retrieving data) &amp;lt;- would need a refactor
+&lt;/li&gt;&lt;li&gt;Piwiki
+&lt;/li&gt;&lt;/ul&gt;&lt;h4 id="OwnSolution"&gt;Own Solution&lt;/h4&gt;
+&lt;p&gt;
+(For later: not as part of this ticket probably)
+&lt;/p&gt;
+&lt;p&gt;
+site_tracking table
+&lt;/p&gt;
+&lt;p&gt;
+id | url | timestamp | action (page_view, resource_download) |
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Make javascript to make request to ckan to store clicks and page views.
+&lt;/li&gt;&lt;li&gt;Add middleware so these requests do not go through pylons and just store data quickly.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2251#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2260</link>
+        <guid isPermaLink="false">http://localhost/ticket/2260</guid>
+        <title>#2260: Update ecportal theme to match latest changes to tenforce theme</title>
+        <pubDate>Mon, 26 Mar 2012 09:31:59 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2260#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,16 @@
+id,summary,status,type,priority,milestone,component
+2859,Fix the build,new,defect,blocker,ckan-v1.8,ckan
+2550,User types,assigned,enhancement,awaiting merge,datahub-july,ckan
+250,RDF link in Atom feed,assigned,enhancement,awaiting triage,ckan-v1.9,ckan
+2298,Add sort-by controls to the search results page,new,enhancement,minor,ckan-v1.9,ckan
+2350,Hooks  in package controller for validating form data,new,enhancement,minor,ckan-v1.9,ckan
+2405,Improvements to data viewer embed,assigned,defect,major,ckan-v1.9,ckan
+2485,Encourage leak containment by limiting the number of requests a CKAN process serves,new,defect,awaiting triage,ckan-v1.9,ckan
+2603,Remove deprecated 'fields' parameter from resource_search,new,refactor,minor,ckan-v1.9,ckan
+2621,Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete,new,refactor,minor,ckan-v1.9,ckan
+2679,Change default behaviour of TemplateController.view to 404.,new,enhancement,minor,ckan-v1.9,ckan
+2959,Changing a Group's name through the action api disassociates it from its datasets in the index,new,defect,minor,ckan 2.0,ckan
+2277,Use the new atom feeds in IATI,new,refactor,minor,ckan-backlog,ckan
+2310,Refactor the search-query construction in feeds.py,new,enhancement,minor,ckan-backlog,ckan
+2709,Atom feeds are undocumented,new,enhancement,awaiting triage,,ckan
+2784,model dictize sensitive data,new,defect,awaiting triage,,ckan

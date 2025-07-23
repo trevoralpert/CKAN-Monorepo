@@ -1,0 +1,2518 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-backlog&amp;group=status&amp;desc=1&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=assigned&amp;status=new&amp;status=accepted&amp;status=reopened&amp;milestone=ckan-backlog&amp;group=status&amp;desc=1&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/728</link>
+        <guid isPermaLink="false">http://localhost/ticket/728</guid>
+        <title>#728: CSW Harvesting shall be optimised in respect of reharvesting only records that have changed</title>
+        <pubDate>Thu, 21 Oct 2010 15:35:40 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Hi Will, this is important again because some CSW servers we use have over 300 documents in. Could you take a look at modifying the filter please?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/794</link>
+        <guid isPermaLink="false">http://localhost/ticket/794</guid>
+        <title>#794: Investigate reconciling UKLP Publisher and Provider with DGU</title>
+        <pubDate>Mon, 08 Nov 2010 14:50:11 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+This needs more analysis, but the GEMINI2 attribute "metadata point of contact" must be reconciled with the registered publisher (or agent).
+&lt;/p&gt;
+&lt;p&gt;
+This might also be used to filter records harvested from a CSW source, but filtering also needs more analysis, as does distinction between agent and provider.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/794#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/909</link>
+        <guid isPermaLink="false">http://localhost/ticket/909</guid>
+        <title>#909: DCat importer for CKAN</title>
+        <pubDate>Mon, 17 Jan 2011 12:05:58 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Write an importer that supports most well known variants of DCat in importing the data as CKAN packages. In particular, the following sources should be supported:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKANrdf generated exports
+&lt;/li&gt;&lt;li&gt;opengov.se RDF (not really DCat)
+&lt;/li&gt;&lt;li&gt;Sunlight Nationdatacatalog as harvested by dcat-tools.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/909#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/143</link>
+        <guid isPermaLink="false">http://localhost/ticket/143</guid>
+        <title>#143: Most active users listed on homepage</title>
+        <pubDate>Thu, 08 Oct 2009 13:59:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Display league of users' recent activity on homepage.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/143#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/253</link>
+        <guid isPermaLink="false">http://localhost/ticket/253</guid>
+        <title>#253: Package relationships</title>
+        <pubDate>Mon, 22 Feb 2010 16:05:21 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h1 id="Overview"&gt;Overview&lt;/h1&gt;
+&lt;p&gt;
+Functionality to formally associate packages. We see a need for specific parent-child, inheriting or dependency relations. Not only should this help navigation between packages in the web interface, but it also provides a mechanism to automatically pull dependencies when downloading a data package, in a similar manner as we see in software package management.
+&lt;/p&gt;
+&lt;h1 id="Examples"&gt;Examples&lt;/h1&gt;
+&lt;ol&gt;&lt;li&gt;There are 27 packages in data.gov.uk to do with the Data4NR's Health Poverty Index. There is currently no common link between these, unless you search for 'HPI' (which also brings up House Price Index), or look under tag 'health' (which also has 600 other results). There should be a link on each HPI package page to navigate to the other 'sibling' HPI packages, and to a 'root' package that has info about the set. This could be partially achieved using the existing tag or group concepts, but a more explicit/official/obvious marking of their relationship could be beneficial.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;In ckan.net is freedict, a collection of translation dictionaries. You could make each dictionary a child package and use this system. But it would probably be better to make each dictionary a different resource in the same package. (There are other ideas to denote a resource as the data making up a 'portion' of package, or a 'whole' of the package, to help people downloading datasets in the software package style.)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;OSM has had some Naptan data imported (bus stops), with special permission - i.e. a more liberal license. It would be useful to show this link on both OSM and Naptan packages in CKAN: OSM 'derives from' Naptan with a comment about the license change. I'm not sure this is useful to an automatic download or use of these datasets, but may aid exploration on the CKAN website and understanding the provenance of the bus stop data on it.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;IPCC collection of data linked / mirrored. Not sure if there are useful relationships here?
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;Dracos gets postbox locations from crowd sourcing and OSM. We could say Dracos 'derives from' OSM.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+See more examples discussed here: &lt;a class="ext-link" href="http://trac.ckan.org/ticket/253"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/253&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="Implementation"&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;
+This is split into four tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Model: &lt;a class="closed ticket" href="http://localhost/ticket/254" title="enhancement: Package relationships - 1. model (closed: fixed)"&gt;ticket:254&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Read in WUI: &lt;a class="closed ticket" href="http://localhost/ticket/255" title="enhancement: Package relationships - 2. Read in WUI (closed: fixed)"&gt;ticket:255&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Edit in WUI: &lt;a class="assigned ticket" href="http://localhost/ticket/256" title="requirement: Package relationships - 3. Edit in WUI (assigned)"&gt;ticket:256&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;API: &lt;a class="closed ticket" href="http://localhost/ticket/257" title="enhancement: Package relationships - 4. Read in API (closed: fixed)"&gt;ticket:257&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+No need for write access to be provided API for the moment.
+&lt;/p&gt;
+&lt;p&gt;
+This ticket also encompasses &lt;a class="closed ticket" href="http://localhost/ticket/169" title="enhancement: Package derivations (closed: duplicate)"&gt;ticket:169&lt;/a&gt; (Package derivations) and &lt;a class="closed ticket" href="http://localhost/ticket/176" title="enhancement: Package dependencies (closed: duplicate)"&gt;ticket:176&lt;/a&gt; (Package dependencies).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/253#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/256</link>
+        <guid isPermaLink="false">http://localhost/ticket/256</guid>
+        <title>#256: Package relationships - 3. Edit in WUI</title>
+        <pubDate>Tue, 23 Feb 2010 12:36:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+WUI:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Editable as part of package or separately? (e.g. like authz)
+&lt;/li&gt;&lt;li&gt;Do we normalize to only one type name of the pair?
+&lt;/li&gt;&lt;li&gt;Do we allow create of relationship from both ends (e.g. only from dependency to dependent or either way?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/256#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/277</link>
+        <guid isPermaLink="false">http://localhost/ticket/277</guid>
+        <title>#277: Set some config options / settings in WUI (extension)</title>
+        <pubDate>Mon, 22 Mar 2010 16:21:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Usecase"&gt;Use case&lt;/h2&gt;
+&lt;p&gt;
+As a ckan administrator I want to easily change options about the CKAN install.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;h3 id="SettingstobeinDB"&gt;Settings to be in DB&lt;/h3&gt;
+&lt;p&gt;
+Suggested:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;## Title of site (using in several places including templates and &amp;lt;title&amp;gt; tag
+ckan.site_title = CKAN
+## Logo image to use (replaces site_title string on front page if defined)
+ckan.site_logo = http://assets.okfn.org/p/ckan/img/ckan_logo_box.png
+## Site tagline / description (used on front page)
+ckan.site_description =
+## Used in creating some absolute urls (such as rss feeds, css files) and
+## dump filenames
+ckan.site_url =
+## Favicon (default is the CKAN software favicon)
+ckan.favicon = http://assets.okfn.org/p/ckan/img/ckan.ico
+## An 'id' for the site (using, for example, when creating entries in a common search index)
+## If not specified derived from the site_url
+# ckan.site_id = ckan.net
+## API url to use (e.g. in AJAX callbacks)
+## Enable if the API is at a different domain
+# ckan.api_url = http://www.ckan.net
+## html content to be inserted just before &amp;lt;/body&amp;gt; tag (e.g. google analytics code)
+## NB: can use html e.g. &amp;lt;strong&amp;gt;blah&amp;lt;/strong&amp;gt;
+## NB: can have multiline strings just indent following lines
+# ckan.template_footer_end =
+&lt;/pre&gt;&lt;p&gt;
+NB: these will still need to be stored somewhere for loading on initialization. do this in db init function ...
+&lt;/p&gt;
+&lt;h3 id="SettingsOptionsKeyValuesTable"&gt;Settings / Options / &lt;a class="missing wiki"&gt;KeyValues?&lt;/a&gt; Table&lt;/h3&gt;
+&lt;p&gt;
+Columns:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[namespace]: ? only if &lt;a class="missing wiki"&gt;KeyValues?&lt;/a&gt; (for settings this would then always be settings)
+&lt;/li&gt;&lt;li&gt;key
+&lt;/li&gt;&lt;li&gt;label
+&lt;/li&gt;&lt;li&gt;value (json)
+&lt;/li&gt;&lt;li&gt;type (e.g. date and to specify in advance what type should be)
+&lt;/li&gt;&lt;li&gt;description
+&lt;/li&gt;&lt;li&gt;tags: ?? (for grouping ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="LoadingsettingsfromDB"&gt;Loading settings from DB&lt;/h3&gt;
+&lt;p&gt;
+Do this in ckan/config/environment.py
+&lt;/p&gt;
+&lt;h3 id="WUI"&gt;WUI&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;/ckan-admin/settings
+&lt;/li&gt;&lt;li&gt;Show label, plus description plus text field
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Depends"&gt;Depends&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Would be part of ckan-admin section and hence build on &lt;a class="closed ticket" href="http://localhost/ticket/833" title="enhancement: [super] Administrative dashboard extension (closed: fixed)"&gt;ticket:833&lt;/a&gt; (Administrative dashboard)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/765</link>
+        <guid isPermaLink="false">http://localhost/ticket/765</guid>
+        <title>#765: Read-only mode - API usage</title>
+        <pubDate>Tue, 26 Oct 2010 11:18:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+All writes to the API are captured and you are returned an error explaining the reason.
+&lt;/p&gt;
+&lt;p&gt;
+Possible errors:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;503 temporary maintenance
+&lt;/li&gt;&lt;li&gt;403 forbidden (if server if permanently read-only)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/765#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/979</link>
+        <guid isPermaLink="false">http://localhost/ticket/979</guid>
+        <title>#979: Edit Resource extras in the API</title>
+        <pubDate>Fri, 11 Feb 2011 13:09:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt;. We can now edit resource extras in the WUI (to some extent - see &lt;a class="closed ticket" href="http://localhost/ticket/978" title="enhancement: Edit Resource including Extras in Web UI (closed: fixed)"&gt;#978&lt;/a&gt; for remaining issues) and we can view resource extras in the API, but we can't yet edit them in the API.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/979#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1041</link>
+        <guid isPermaLink="false">http://localhost/ticket/1041</guid>
+        <title>#1041: Start Using the CKAN Wiki for Tutorial-style documentation</title>
+        <pubDate>Wed, 16 Mar 2011 14:11:55 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+For example, I will document the following:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;A specific guide on using mercurial when working with our branching and merging policy
+&lt;ul&gt;&lt;li&gt;DONE - &lt;a class="ext-link" href="http://wiki.ckan.net/Becoming_a_CKAN_Developer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Becoming_a_CKAN_Developer&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Policy document on how we use tickets, plan sprints and make releases
+&lt;ul&gt;&lt;li&gt;DONE - &lt;a class="ext-link" href="http://wiki.ckan.net/Becoming_a_CKAN_Developer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Becoming_a_CKAN_Developer&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How to package software as .deb file for project deployment
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I'd love if someone else would write:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;An authorisation tutorial covering the core model, the command line tools and examples of every possible way of using the system
+&lt;/li&gt;&lt;li&gt;A HOWTO guide with screenshots for adding a package
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1041#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1062</link>
+        <guid isPermaLink="false">http://localhost/ticket/1062</guid>
+        <title>#1062: Data preview encoding error</title>
+        <pubDate>Tue, 29 Mar 2011 10:55:43 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+The preview of "Species Misc Turtle Download" at &lt;a class="ext-link" href="http://ckan.net/package/taxonconcept"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/taxonconcept&lt;/a&gt; results in the following error:
+&lt;/p&gt;
+&lt;p&gt;
+Unable to Preview - Had an error from dataproxy:
+Data Transformation Error (Data transformation failed. Reason: 'utf8' codec can't decode byte 0x8b in position 1: unexpected code byte
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1062#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1168</link>
+        <guid isPermaLink="false">http://localhost/ticket/1168</guid>
+        <title>#1168: Test system for deb packaging</title>
+        <pubDate>Thu, 26 May 2011 20:33:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Get buildbot to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;build the deb packages
+&lt;/li&gt;&lt;li&gt;install them into a fresh virtual machine
+&lt;/li&gt;&lt;li&gt;run smoke tests on the installed ckan
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1168#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1240</link>
+        <guid isPermaLink="false">http://localhost/ticket/1240</guid>
+        <title>#1240: [super] API v4</title>
+        <pubDate>Sun, 24 Jul 2011 16:41:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+(Just creating this ticket as somewhere to keep notes)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Decide on REST api versus action API
+&lt;ul&gt;&lt;li&gt;Do we want to support both?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Tidying
+&lt;ul&gt;&lt;li&gt;Unify on /api/v{version num}/... structure (do we want a default option that points to current default? e.g. /api/default/ ...)
+&lt;/li&gt;&lt;li&gt;extras merged into normal field list in package
+&lt;/li&gt;&lt;li&gt;Get rid of /rest/ so just have api/v1/package
+&lt;/li&gt;&lt;li&gt;Get rid of separation of search api from 'rest' api
+&lt;ul&gt;&lt;li&gt;Propose that GET on REST index is search e.g. /package/?q=...
+&lt;ul&gt;&lt;li&gt;This is also resolves issue whereby GET at root returns whole package set (a *bad* idea) as this would now become the matchall search query (with a default limit on items returned)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Resource read/write in API (separate from package)
+&lt;ul&gt;&lt;li&gt;Does this need authorization work?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;user/account API - read/write
+&lt;/li&gt;&lt;li&gt;Remove autocomplete -- can just use search
+&lt;ul&gt;&lt;li&gt;Do not worry about backwards compat as should only be used in our js (if others using it too bad!)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1240#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1255</link>
+        <guid isPermaLink="false">http://localhost/ticket/1255</guid>
+        <title>#1255: Drupal consistancy checks.</title>
+        <pubDate>Mon, 01 Aug 2011 17:32:48 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make a robust way to make sure the drupal database is consistent with the ckan data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1255#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1287</link>
+        <guid isPermaLink="false">http://localhost/ticket/1287</guid>
+        <title>#1287: NAVL validation errors - Junk fields should be listed explicitly</title>
+        <pubDate>Wed, 24 Aug 2011 16:25:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package, but specify a key that is not allowed (e.g. 'relationships') then you get error message:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"__junk": ["The input field __junk was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+It should mention the actual key which is not expected. e.g.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"relationships": ["The input field 'relationships' was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+Kindly said that James' version of NAVL was better in this respect, so this might be best solved by moving to that.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1287#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1314</link>
+        <guid isPermaLink="false">http://localhost/ticket/1314</guid>
+        <title>#1314: ckanclient search - generator improvements</title>
+        <pubDate>Wed, 07 Sep 2011 11:36:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Apparently the search generator always makes two requests, even if you don't want to see the search results, which might be slow. Can this be optimised?
+&lt;/p&gt;
+&lt;p&gt;
+Maybe we should also provide a second search function that doesn't use the generator - the original simple search function (that leaves the user to deal with limit &amp;amp; offset).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1314#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1317</link>
+        <guid isPermaLink="false">http://localhost/ticket/1317</guid>
+        <title>#1317: password reset - improve user search</title>
+        <pubDate>Wed, 07 Sep 2011 17:12:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In password reset, it gets confused if you have two similar users. This is because with the string the user provides, it searches several fields, not just name but also fullname and email address, allowing you to search for these. But only name is unique.
+&lt;/p&gt;
+&lt;p&gt;
+Specific problem:
+Ira searches for "Irina" then it finds both:
+&lt;tt&gt;&amp;lt;User name=irina fullname=Irina email=irina.bolychevsky@okfn.org ]&lt;/tt&gt;
+and
+&lt;tt&gt;&amp;lt;User name=shevski fullname=Ira email=&amp;gt;&lt;/tt&gt;
+(I think)
+&lt;/p&gt;
+&lt;p&gt;
+Maybe need to choose which field it searches?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1317#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1358</link>
+        <guid isPermaLink="false">http://localhost/ticket/1358</guid>
+        <title>#1358: Generate configuration documentation automatically from the deployment_ini_tmpl file</title>
+        <pubDate>Mon, 26 Sep 2011 22:32:30 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment documentation of config options is duplicated between source (deployment_ini_tmpl in ckan/config which is used to generate user ini file) and the docs.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest we write a script that automatedly generates reference documentation for the config from the source.
+&lt;/p&gt;
+&lt;p&gt;
+May be obsoleted by &lt;a class="assigned ticket" href="http://localhost/ticket/277" title="enhancement: Set some config options / settings in WUI (extension) (assigned)"&gt;#277&lt;/a&gt; (some config in db)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1358#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1393</link>
+        <guid isPermaLink="false">http://localhost/ticket/1393</guid>
+        <title>#1393: Don't skip search tests</title>
+        <pubDate>Thu, 13 Oct 2011 11:30:53 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Now we don't use postgres search, all the tests involving search now don't need to be skipped when running on sqlite. Should help coders spot earlier if these tests break.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1393#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1447</link>
+        <guid isPermaLink="false">http://localhost/ticket/1447</guid>
+        <title>#1447: disk space leakage</title>
+        <pubDate>Mon, 07 Nov 2011 11:54:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Periodically we see some CKAN servers fall over because they run out of disk space. We need to find out if there is a common cause and fix it.
+&lt;/p&gt;
+&lt;p&gt;
+One problem in the past has been file handles running out when creating lots of tiny files in the data directory.
+&lt;/p&gt;
+&lt;p&gt;
+Another problem has been several enourmous backups being created every day - pdeu on eu25.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1447#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1489</link>
+        <guid isPermaLink="false">http://localhost/ticket/1489</guid>
+        <title>#1489: Updating example theme/extension</title>
+        <pubDate>Thu, 24 Nov 2011 12:32:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+ckanext-example needs updating for CKAN 1.5:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;theme changes
+&lt;/li&gt;&lt;li&gt;new forms
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+About: 'ckanext-exampletheme' was created in Spring 2011 as an example CKAN extension that showed how to customise the look &amp;amp; operation of CKAN. This moved to github and renamed 'ckanext-example'.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1489#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1507</link>
+        <guid isPermaLink="false">http://localhost/ticket/1507</guid>
+        <title>#1507: Minor fixes to dataset add on Group edit form - 0.5d</title>
+        <pubDate>Mon, 05 Dec 2011 12:33:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Group edit dataset add form needs some work
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Dataset name is not cleared when you add
+&lt;/li&gt;&lt;li&gt;No way to remove item from list of datasets to be added if I make a mistake
+&lt;/li&gt;&lt;li&gt;(2nd Apr 2012) It now seems that option to add multiple datasets at once has disappeared (perhaps during the CSS/HTML refactor ...)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1550</link>
+        <guid isPermaLink="false">http://localhost/ticket/1550</guid>
+        <title>#1550: Allow simple auth via the API</title>
+        <pubDate>Fri, 16 Dec 2011 15:29:29 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+It should be possible to pass userid/username and api key and obtain a response from CKAN for external services that use CKAN auth. Those services shouldn't be talking to the DB directly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1550#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1571</link>
+        <guid isPermaLink="false">http://localhost/ticket/1571</guid>
+        <title>#1571: [super] Issues Extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:30:25 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+"Proper" issues extension.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/issues&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Code: &lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Overview
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This would be an extension and improvement of existing todo extension - &lt;a class="closed ticket" href="http://localhost/ticket/842" title="enhancement: Todo list CKAN extension (closed: fixed)"&gt;#842&lt;/a&gt; (&lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Current extension does work but lacks polish
+&lt;/li&gt;&lt;li&gt;Should we polish or do significant improvements?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Functionality - see etherpad
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Rename todo(s) -&amp;gt; issue(s) in existing extension)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1571#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1652</link>
+        <guid isPermaLink="false">http://localhost/ticket/1652</guid>
+        <title>#1652: How we intergrate with Drupal Multiligual?</title>
+        <pubDate>Mon, 16 Jan 2012 10:31:34 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Analysis of how/where we can integrate with Drupal Multilingual
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Is it likely to access CKAN via /en/data/... or /data/en/... (not sure, probably former) and we need to make sure that it ends up at /en/...
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check with Ian for other issues.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1652#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1661</link>
+        <guid isPermaLink="false">http://localhost/ticket/1661</guid>
+        <title>#1661: Wrong Routes version installed by CKAN package</title>
+        <pubDate>Mon, 16 Jan 2012 12:47:41 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Jaakko Louhio reported that the wrong Routes version got installed during CKAN's package install.
+&lt;/p&gt;
+&lt;p&gt;
+He is using Ubuntu 10.04 and he believes it install Routes 1.12.3 instead of what we use which is 1.11.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1661#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1684</link>
+        <guid isPermaLink="false">http://localhost/ticket/1684</guid>
+        <title>#1684: Remove all config from ckanext-archiver</title>
+        <pubDate>Thu, 19 Jan 2012 14:37:01 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+ckanext-archiver currently has a settings file (and a default) and it should be passed in all relevant information from the context.
+&lt;/p&gt;
+&lt;p&gt;
+Remove all settings (ARCHIVE_DIR and MAX_CONTENT_LENGTH and others) and pass them in from CKAN.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1684#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1831</link>
+        <guid isPermaLink="false">http://localhost/ticket/1831</guid>
+        <title>#1831: Login with email address</title>
+        <pubDate>Fri, 24 Feb 2012 08:58:26 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Users should be able to log in using either their username, or their email address, both of which are unique.
+&lt;/p&gt;
+&lt;p&gt;
+Will require a change to &lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; in ckan.lib.authenticator.py and possible a useful User.by_email in the user model if it doesn't already exist.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1831#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1832</link>
+        <guid isPermaLink="false">http://localhost/ticket/1832</guid>
+        <title>#1832: dataset purge API</title>
+        <pubDate>Fri, 24 Feb 2012 10:02:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Purging datasets (deleting them fully, not just changing the state to 'deleted') is important for users testing dataset creation over the API on a test CKAN instance.
+&lt;/p&gt;
+&lt;p&gt;
+Without this, they need to resort to more difficult methods such as:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cleaning and reloading the database
+&lt;/li&gt;&lt;li&gt;setting the test datasets to state 'deleted' and also appending a suffix '_00' and incrementing the number until there is no clash of names.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Requested for NHSIC.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;This could slot into the Action API.
+&lt;/li&gt;&lt;li&gt;Of course we would need to ensure the user's had been given the specific right to purge.
+&lt;/li&gt;&lt;li&gt;I suggest we log the full details of the dataset being purged.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1832#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2197</link>
+        <guid isPermaLink="false">http://localhost/ticket/2197</guid>
+        <title>#2197: Storage Metadata API: add/update not working with local file storage (Pairtree)</title>
+        <pubDate>Tue, 28 Feb 2012 09:29:37 GMT</pubDate>
+        
+        <dc:creator>zydio</dc:creator>
+
+        <description>&lt;p&gt;
+If OFS is configured with Pairtree to use a local file storage, all POST requests to add/update metadata ( /api/storage/metadata/{label} ) will fail.
+&lt;/p&gt;
+&lt;p&gt;
+This is due to the use of &lt;a class="ext-link" href="https://github.com/okfn/ofs/blob/master/ofs/remote/botostore.py"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;BotoOFS&lt;/a&gt; specific &lt;em&gt;private&lt;/em&gt; methods in &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan/controllers/storage.py"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;StorageAPIController.set_metadata()&lt;/a&gt;, eg: self.ofs.&lt;strong&gt;_require_bucket&lt;/strong&gt;(bucket), self.ofs.&lt;strong&gt;_get_key&lt;/strong&gt;(b, label), self.ofs.&lt;strong&gt;_update_key_metadata&lt;/strong&gt;(k, metadata) ... those methods can't be found in &lt;a class="ext-link" href="https://github.com/okfn/ofs/blob/master/ofs/local/pairtreestore.py"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;POTFS&lt;/a&gt; and this causes errors.
+The API should use only &lt;a class="ext-link" href="https://github.com/okfn/ofs/blob/master/ofs/base.py"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;OFSInterface&lt;/a&gt; methods, or should conditionally make calls based off the actual type of &lt;em&gt;self.ofs&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;em&gt;PS: I did set "ckan" as "Component" in the ticket because storage has been integrated back into the core in CKAN 1.6&lt;/em&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2197#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2284</link>
+        <guid isPermaLink="false">http://localhost/ticket/2284</guid>
+        <title>#2284: Local queries/views/viz in Related stuff.</title>
+        <pubDate>Thu, 12 Apr 2012 08:18:20 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From &lt;a class="closed ticket" href="http://localhost/ticket/2204" title="enhancement: [super] Related (Stuff) Extension (closed: fixed)"&gt;#2204&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+not sure how much we have thought through using this for storing queries / views / visualizations coming from our data viewer. In particular, wonder if this necessitates some kind of support for arbitrary json data ...
+&lt;/p&gt;
+&lt;p&gt;
+### Comments
+&lt;/p&gt;
+&lt;p&gt;
+In the simplest form, right now all I need to store is store the url to the resource plus hashbang config for recline. That would be super easy ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2284#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2513</link>
+        <guid isPermaLink="false">http://localhost/ticket/2513</guid>
+        <title>#2513: Dataproxy should not default to utf8</title>
+        <pubDate>Wed, 13 Jun 2012 08:23:40 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Unless explicitly told by the source web server the dataproxy should not assume that the content it has can be encoded as UTF-8.  Even though the chars from 128 - 255 overlap an attempt to decode some byte array as utf8 will fail whenever a latin1 char whose bitpattern has the MSB set.
+&lt;/p&gt;
+&lt;p&gt;
+This will mean that the UTF8Recoder can be more rigid in its acceptance of data, Postel aside.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2513#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2546</link>
+        <guid isPermaLink="false">http://localhost/ticket/2546</guid>
+        <title>#2546: ODS Managing homepage content</title>
+        <pubDate>Mon, 18 Jun 2012 10:54:02 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+Require the ability for users to control some level of content that is visible on the home page of their ODS installation.  This may be through RSS/Atom feeds (see &lt;a class="assigned ticket" href="http://localhost/ticket/2234" title="enhancement: Write a CKAN extension for pulling items from RSS/Atom feeds into CKAN ... (assigned)"&gt;#2234&lt;/a&gt;) or another mechanism but should result in admins being able to change blocks of text on their homepage.
+&lt;/p&gt;
+&lt;p&gt;
+This should not be configuration, but accessible through WUI.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a system administrator I want to have control over content displayed on the front page beyond featured/popular items.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;As a system administrator I don't want to manage content through having to write an extension.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Analysis
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2546#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2554</link>
+        <guid isPermaLink="false">http://localhost/ticket/2554</guid>
+        <title>#2554: Research Virtuoso cartridges</title>
+        <pubDate>Mon, 18 Jun 2012 13:37:25 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Look into writing a cartridge for importing CKAN data into a Virtuoso quadstore
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSponger#How"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSponger#How&lt;/a&gt; Does It Work?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2554#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2590</link>
+        <guid isPermaLink="false">http://localhost/ticket/2590</guid>
+        <title>#2590: Publisher dashboard</title>
+        <pubDate>Mon, 25 Jun 2012 10:03:37 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Need proper user stories but ...
+&lt;/p&gt;
+&lt;p&gt;
+Publisher admins/editors may need a more useful group read page showing things like:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The current search
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Recent activity
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;People within the group
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Followers
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Others?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2590#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2607</link>
+        <guid isPermaLink="false">http://localhost/ticket/2607</guid>
+        <title>#2607: 'Upload a file' appears on resource form when storage not enabled</title>
+        <pubDate>Wed, 27 Jun 2012 13:30:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+if the user tries to upload a file they will get "Failed to get credentials for storage upload. Upload cannot proceed"
+&lt;/p&gt;
+&lt;p&gt;
+Maybe add a test for it this time, this bug has appeared and reappeared before
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2607#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2686</link>
+        <guid isPermaLink="false">http://localhost/ticket/2686</guid>
+        <title>#2686: enabling datastore &amp; data API breaks recline</title>
+        <pubDate>Tue, 17 Jul 2012 09:06:51 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+First I noticed that the gold prices dataset preview was not displaying &amp;amp; has data API enabled
+Secondly I tried enabling datastore for &lt;a class="ext-link" href="http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/dataset/adur_district_spending/resource/281dffa6-ea9b-4446-be41-05dced06591f&lt;/a&gt; and after I saved the preview no longer worked. Unticking the datastore &amp;amp; data api checkbox brought it back
+&lt;/p&gt;
+&lt;p&gt;
+Is this a known issue?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2686#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2732</link>
+        <guid isPermaLink="false">http://localhost/ticket/2732</guid>
+        <title>#2732: New file upload functionality</title>
+        <pubDate>Mon, 23 Jul 2012 15:53:09 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+We should simplify upload and storage of files, initially only to local storage with archiver eventually being fixed to archive data externally. WIP pad is &lt;a class="ext-link" href="http://ckan.okfnpad.org/uploads"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/uploads&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Simplifying uploads&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Currently uploads are too painful/difficult/fiddly to use and/or configure.  We want to simplify uploads so that they are done directly to the CKAN server, without support for remote services (S3 etc) and/or the dependencies it introduces.
+&lt;/p&gt;
+&lt;p&gt;
+We want to fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;File uploads themselves
+&lt;/li&gt;&lt;li&gt;Storage of uploaded files
+&lt;/li&gt;&lt;li&gt;Notification of the upload to other components
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;strong&gt;File uploads&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Things file upload should do:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow sysadmin to disable
+&lt;/li&gt;&lt;li&gt;Allow auth'ed users to upload
+&lt;/li&gt;&lt;li&gt;Store whatever they send on disk, and store DB entry linking the file to the person
+&lt;/li&gt;&lt;li&gt;When creating the resource, the user should be able to choose from all of the files
+they have uploaded but not yet associated with a resource. This will allow for bulk
+upload and then a delayed association.  Whenver a user creates a resource they
+either upload a file now, or see previously uploaded files.
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;Can we do the upload asynchronously and then associate the
+uploaded key with the resource before the save ? What happens
+if the user tries to submit before asymc upload finishes ? Should
+we delay them?
+&lt;/pre&gt;&lt;p&gt;
+The upload workflow should look like...
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;File upload should be a straightforward file upload with normal auth checks and normal processing of the posted data.
+&lt;/li&gt;&lt;li&gt;
+&lt;ol class="loweralpha"&gt;&lt;li&gt;When called via ajax then the ID of the newly created file should be returned,
+&lt;/li&gt;&lt;li&gt;When called via WUI then it should also be given the url to redirect to after the file upload has been handled - the id will be passed as a query param.
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;The resource save should check whether it has a file id and in that case updates the file object to point to the resource.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+This should enable:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Separate file upload into a user's temporary store, either individually or as a batch.
+&lt;/li&gt;&lt;li&gt;Creating resources and simply choosing from previously uploaded, unassigned files
+&lt;/li&gt;&lt;li&gt;Adding files/data to a resource after the fact.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;File storage&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+File storage should be local to the CKAN install, and not a remote service.  Any archiving to remove storage providers should be outside of the main request.
+&lt;/p&gt;
+&lt;p&gt;
+File storage should:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;allow moving data, a sysadmin should be able to move the storage root and change configuration and  have the system continue running (i.e. don't store absolute paths).
+&lt;/li&gt;&lt;li&gt;provide maintainability, it should be easy to determine which old files are not associated with resources  and thus can be cleaned up.
+&lt;/li&gt;&lt;li&gt;allow for collection of information (i.e. estimate of storate space used)
+&lt;/li&gt;&lt;li&gt;check whether there is enough space and handling the conequences cleanly
+&lt;/li&gt;&lt;li&gt;ensure files to be written only underneath its own root folder, checks should be made after any path generation that the file begins with the location of the file storage.
+&lt;/li&gt;&lt;li&gt;Have a configurable maximum accepted blob size during upload.
+&lt;/li&gt;&lt;li&gt;Should store what meta-data was provided with the upload, such as mimetype.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Somewhere in the DB we should store ...
+&lt;/p&gt;
+&lt;table class="wiki"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Column&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Notes&lt;/strong&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;An identifier
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;owner&lt;/td&gt;&lt;td&gt;The owning user, who uploaded the file
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path&lt;/td&gt;&lt;td&gt;The path (from the 'storage root') to the file
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;The size in bytes of the file on disk
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mimetype&lt;/td&gt;&lt;td&gt;The mimetype of the file, as provided by the uploader
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upload_date&lt;/td&gt;&lt;td&gt;When the data was uploaded
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;resource&lt;/td&gt;&lt;td&gt;The ID of the resource it belongs to. A unidirectional relationship.
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;archived_url&lt;/td&gt;&lt;td&gt;The URL where this file has been archived
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;
+Generating paths should try and separate the files, perhaps based on username of the owner, or some other mechanism to avoid a single folder full of files.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Notifications&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We need to make sure that it is possible to notify other components within the system that an upload has taken place, or at least make it easy for them to be notified.  The primary use case for this is to notify the component that will translate/upload certain formats to the data store.
+&lt;/p&gt;
+&lt;p&gt;
+We could do this based on the post-upload update to the file model (i.e. when we record the total received size of the file).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2732#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1152</link>
+        <guid isPermaLink="false">http://localhost/ticket/1152</guid>
+        <title>#1152: True support for generic CSW servers</title>
+        <pubDate>Mon, 23 May 2011 09:02:14 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The CSW harvesters implemented at the moment were developed with the DGU
+project in mind, and they assume all remote CSW servers to implement the
+Gemini 2 specification. Gemini 2 is the profile defined in the UK for
+INSPIRE complying metadata, so obviously catalogs from other countries
+or non-INSPIRE complying ones won't be able to be harvested.
+&lt;/p&gt;
+&lt;p&gt;
+The changes needed to support generic CSW servers (i.e. those
+implementing the ISO 19139 profile) are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Handling the validators (right now are hardcoded in the harvester
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+code). This probably involves issues discussed in the CREP 3
+(ticket &lt;a class="new ticket" href="http://localhost/ticket/1134" title="CREP: CREP0003: Description and Configuration of Harvesters (new)"&gt;#1134&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Changes in the model to adapt the specification to ISO 19139
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Renaming objects and classes which are now Gemini-centric
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+List of CSW servers tested:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;hl=en_US&amp;amp;authkey=CNu4hsEB#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1152#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1382</link>
+        <guid isPermaLink="false">http://localhost/ticket/1382</guid>
+        <title>#1382: Deleted resources are present for harvested package</title>
+        <pubDate>Tue, 11 Oct 2011 12:58:09 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Perhaps the importer deletes them before re-importing. We shouldn't have deleted resources, so let's investigate.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1382#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2268</link>
+        <guid isPermaLink="false">http://localhost/ticket/2268</guid>
+        <title>#2268: UKLP Use same schema as form for harvested records</title>
+        <pubDate>Fri, 30 Mar 2012 11:56:46 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Datasets created via the harvesting (UKLP ones) and the ones created via the form use a different schema. That could lead to problems. We need to discuss the best approach.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2268#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1789</link>
+        <guid isPermaLink="false">http://localhost/ticket/1789</guid>
+        <title>#1789: Implement a tag_update() logic action function</title>
+        <pubDate>Thu, 09 Feb 2012 16:36:53 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+So users can rename a tag and/or move it between vocabularies using the API.
+&lt;/p&gt;
+&lt;p&gt;
+Currently we have create_tag() and delete_tag(), but if you were to 'update' a tag by deleting it and then recreating it all the datasets that had that tag will have lost it and you'll have to re-add it to them all.
+&lt;/p&gt;
+&lt;p&gt;
+What should happen to datasets that have the tag, if the tag gets moved between vocabularies? All the datasets just keep the tag with the new vocabulary? This will become a problem if/when we support 'radio button'-style vocabularies (where each dataset can only have one tag from the vocabulary).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1789#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/140</link>
+        <guid isPermaLink="false">http://localhost/ticket/140</guid>
+        <title>#140: News section on front page</title>
+        <pubDate>Wed, 07 Oct 2009 08:02:21 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Have a news section (suggest as a sidebar item).
+&lt;/p&gt;
+&lt;p&gt;
+News section will link to latest 3/4 blog posts on CKAN from blog.okfn.org.
+&lt;/p&gt;
+&lt;p&gt;
+Details:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Suggest pulling via rss or similar.
+&lt;/li&gt;&lt;li&gt;Will want to cache this ...
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 4h?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/140#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/331</link>
+        <guid isPermaLink="false">http://localhost/ticket/331</guid>
+        <title>#331: Timezone of CKAN timestamps should be configurable</title>
+        <pubDate>Mon, 31 May 2010 10:40:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Revisions are timestamped using the server's clock, which may not relate to the expected timezone for the site. e.g. the Norway site has a server on GMT. No timezone info is displayed either.
+&lt;/p&gt;
+&lt;p&gt;
+Would like to set timezone for a CKAN instance to use in rendering revision timestamps. For example, use CET or EST timezone.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/331#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/351</link>
+        <guid isPermaLink="false">http://localhost/ticket/351</guid>
+        <title>#351: Homepage: list new, updated and 'hot' packages</title>
+        <pubDate>Tue, 15 Jun 2010 09:56:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Have a simpler list of exciting data, as opposed to the big revision list.
+&lt;/p&gt;
+&lt;p&gt;
+For example:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Hot data
+===========
+New packages: package1, package2, package3
+Updated resources: package1, package2, package3
+Popular packages:
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/351#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/369</link>
+        <guid isPermaLink="false">http://localhost/ticket/369</guid>
+        <title>#369: "Package Listing Key" should appear on Tag results</title>
+        <pubDate>Thu, 22 Jul 2010 18:00:34 GMT</pubDate>
+        
+        <dc:creator>shudson@…</dc:creator>
+
+        <description>&lt;p&gt;
+Currently there's a nice legend titled "Package Listing Key" that appears in right side of "Browse Packages" results. The same key should show on other search results like when searching for a tag.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/369#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/370</link>
+        <guid isPermaLink="false">http://localhost/ticket/370</guid>
+        <title>#370: Use better email encryption for author_email and maintainer_email</title>
+        <pubDate>Thu, 22 Jul 2010 18:03:39 GMT</pubDate>
+        
+        <dc:creator>shudson@…</dc:creator>
+
+        <description>&lt;p&gt;
+The &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; email encryption used is not very reassuring. Google's &lt;a class="missing wiki"&gt;MailHide?&lt;/a&gt; is a much better solution that is easily implemented.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.google.com/recaptcha/mailhide/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.google.com/recaptcha/mailhide/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Check on the Mailhide API where there are even some Python libraries already built.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/370#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/653</link>
+        <guid isPermaLink="false">http://localhost/ticket/653</guid>
+        <title>#653: Trackback links for packages</title>
+        <pubDate>Tue, 21 Sep 2010 09:40:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When people link to a package, a track-back link is auto-created. (Similar system as for blogs).
+&lt;/p&gt;
+&lt;p&gt;
+As suggested by Tim Davies:
+&lt;/p&gt;
+&lt;p&gt;
+Allowing some form of ‘track back’ against datasets
+When a non-technical user comes to look at a dataset it would be really useful for them to be able to see if anyone has created an interface interpretation of it already.
+&lt;/p&gt;
+&lt;p&gt;
+I found quite a few cases in research of end-users struggling to make sense of a dataset when good interfaces to that data had already been built and blogged about, but without there being any link from the dataset listing to those data uses.
+Accepting track backs could also make it easier for technical users to find blog posts / shared code etc. relating to a given dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/653#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/737</link>
+        <guid isPermaLink="false">http://localhost/ticket/737</guid>
+        <title>#737: Markdown syntax summary page</title>
+        <pubDate>Fri, 22 Oct 2010 16:59:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I suggest we produce a quick Markdown cheat-sheet page, showing the key runes: e.g. create a title and quote some text. This page can link to the full Markdown docs for advanced users.
+&lt;/p&gt;
+&lt;p&gt;
+A user going to the Markdown docs that we link will have to read a couple of pages of the raison-d'etre of Markdown before he gets to the syntax. And it's not very easy to read, and being white on black it looks like proper geek stuff.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/737#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/811</link>
+        <guid isPermaLink="false">http://localhost/ticket/811</guid>
+        <title>#811: Extra field editing form layout breaks when there are long field names</title>
+        <pubDate>Wed, 17 Nov 2010 11:53:32 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The layout of the editing section for extra fields breaks when a field name is slightly too long. Field names jump over to the right. See &lt;a class="ext-link" href="http://ckan.net/package/edit/dbpedia"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/edit/dbpedia&lt;/a&gt; for examples.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/811#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/812</link>
+        <guid isPermaLink="false">http://localhost/ticket/812</guid>
+        <title>#812: Package edit form only allows three extra fields</title>
+        <pubDate>Wed, 17 Nov 2010 11:56:50 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;h1 id="Rationale"&gt;Rationale&lt;/h1&gt;
+&lt;p&gt;
+The package edit form is restricted to three extra fields. To enter more than three fields, one has to save the package and hit edit again (or hit preview).
+&lt;/p&gt;
+&lt;h1 id="Implementation"&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;
+A mechanism similar to the one for resources (where you can add lines as you go) would solve this. So, have a button that adds more extra field rows via JS. (Extra fields don't need up/down buttons that the Resource table has)
+&lt;/p&gt;
+&lt;p&gt;
+Nice to have: a blank field is added when you tab from the last filled-in field in the table.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/812#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/818</link>
+        <guid isPermaLink="false">http://localhost/ticket/818</guid>
+        <title>#818: Rethinking the author and maintainer fields</title>
+        <pubDate>Wed, 17 Nov 2010 14:18:44 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The semantics of the Author and Maintainer fields are really unclear at the moment. This leads to very inconsistent usage. Also, perhaps Name and Email are not the only fields that are needed for a contact.
+&lt;/p&gt;
+&lt;p&gt;
+Here is a table that shows the current usage of these fields in CKAN:
+&lt;a class="ext-link" href="http://richard.cyganiak.de/2010/ckan/ckan-ppl.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://richard.cyganiak.de/2010/ckan/ckan-ppl.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We note several problems:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Author and Maintainer are often the same
+&lt;/li&gt;&lt;li&gt;Author and Maintainer are often used interchangeably
+&lt;/li&gt;&lt;li&gt;People really want to specify URLs for the contacts and stick them into random places because there is no field for it
+&lt;/li&gt;&lt;li&gt;Multiple comma-separated names in a single field
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I'm not sure what to do about this, but a redesign is necessary in my opinion.
+&lt;/p&gt;
+&lt;p&gt;
+Some ideas:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Remove the maintainer field?
+&lt;/li&gt;&lt;li&gt;Make really clear that Author doesn't refer to the metadata on CKAN, but to the original data
+&lt;/li&gt;&lt;li&gt;Add an “author URL” field?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/818#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/837</link>
+        <guid isPermaLink="false">http://localhost/ticket/837</guid>
+        <title>#837: CKAN integration with freebase gridworks / google refine</title>
+        <pubDate>Tue, 30 Nov 2010 18:10:09 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Thread: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2010-November/000718.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2010-November/000718.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3 id="Scenario1"&gt;Scenario 1&lt;/h3&gt;
+&lt;ol&gt;&lt;li&gt;User installs Refine and CKAN extension for refine
+&lt;/li&gt;&lt;li&gt;On booting refine and asked to load data they can choose from any data package on CKAN.net (or any other CKAN instance)
+&lt;/li&gt;&lt;li&gt;They edit the dataset on Refine
+&lt;/li&gt;&lt;li&gt;On save (or perhaps as a separate option) they are prompted as to whether they wish  to sync the dataset back to CKAN (either as a new package or as a new resource on the existing package)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+NB: for the dataset sync back some form of "CKAN" storage would be
+required (we already have storage.ckan.net running but a closer
+integration would be required)
+&lt;/p&gt;
+&lt;h3 id="Scenario2"&gt;Scenario 2&lt;/h3&gt;
+&lt;ol&gt;&lt;li&gt;User visits a package on CKAN.net (or another CKAN instance)
+&lt;/li&gt;&lt;li&gt;There is a button on the page "View and edit this dataset in Google Refine"
+&lt;/li&gt;&lt;li&gt;Click button -- ask them if they have Google refine installed
+&lt;ul&gt;&lt;li&gt;Yes: instructions for loading dataset into refine
+&lt;/li&gt;&lt;li&gt;No: load dataset in hosted version of google refine (we could run this)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;User edits dataset and hits save. As in previous scenario they are prompted to sync the dataset.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/837#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/895</link>
+        <guid isPermaLink="false">http://localhost/ticket/895</guid>
+        <title>#895: Add version number (or simular) to css/js includes query string</title>
+        <pubDate>Thu, 06 Jan 2011 19:49:42 GMT</pubDate>
+        
+        <dc:creator>memespring</dc:creator>
+
+        <description>&lt;p&gt;
+Updates to css after a new deploy don't come through without a hard refresh. Adding the version number to the include urls will solve this e.g.
+&lt;/p&gt;
+&lt;p&gt;
+mycssfile.css?v=12345678
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/895#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/924</link>
+        <guid isPermaLink="false">http://localhost/ticket/924</guid>
+        <title>#924: Search box has no search button</title>
+        <pubDate>Mon, 24 Jan 2011 11:12:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The search box at the top-right of CKAN's page doesn't have a 'go' button. I feel that a larger percentage of users expect a 'go' or 'search' button on the right-hand side of the box to press to start searching. Techies tend to know the keyboard shortcut of pressing 'carriage-return' but it might be better to follow standard practise on this.
+&lt;/p&gt;
+&lt;p&gt;
+Examples with 'search' button: Internet Explorer, Firefox, Google, Amazon, trac
+Examples without: ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/924#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1009</link>
+        <guid isPermaLink="false">http://localhost/ticket/1009</guid>
+        <title>#1009: Improvements to user accounts sytem</title>
+        <pubDate>Fri, 25 Feb 2011 12:13:11 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Forgot password (email a new password)
+&lt;/li&gt;&lt;li&gt;Confirm email
+&lt;/li&gt;&lt;li&gt;Do not show register page if you are logged in (redirect to home page)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1010" title="enhancement: List CKAN users in WUI (closed: fixed)"&gt;ticket:1010&lt;/a&gt; - listing of users.
+&lt;ul&gt;&lt;li&gt;Do not use /user for general user account home page (either user normal user page /user/{id} or /user/myaccount)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1009#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1077</link>
+        <guid isPermaLink="false">http://localhost/ticket/1077</guid>
+        <title>#1077: Move to simpler vdm system</title>
+        <pubDate>Fri, 08 Apr 2011 23:14:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Option1:ChangesetModel"&gt;Option 1: 'Changeset' Model&lt;/h2&gt;
+&lt;p&gt;
+See &lt;a class="assigned ticket" href="http://localhost/ticket/1135" title="enhancement: Changeset model for vdm (assigned)"&gt;ticket:1135&lt;/a&gt; for vdm ticket. This would involve a) moving to changeset in vdm b) doing the migration in ckan to support this.
+&lt;/p&gt;
+&lt;p&gt;
+Have developed a new "changeset" based model for revisioning in vdm.
+&lt;/p&gt;
+&lt;h3 id="Implementation"&gt;Implementation&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The main challenge with this change is schema and data migration
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Every revisioned object has a revision_id and revision attribute.
+&lt;/p&gt;
+&lt;p&gt;
+Approximate algorithm:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Revision -&amp;gt; Changeset
+for revtype in [PackageRevision, ...]:
+    for pkgrev in package_revision:
+        changeset = lookupchangeset(package_revision)
+        ChangeObject(cset, (table, id), dictize(pkgrev))
+&lt;/pre&gt;&lt;p&gt;
+Question:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;does pkg include tags attributes or not? or we have to dictize, pkgrev, pkg2tagrev, and tag. Probably the latter.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Option2:SimplifyRevisionObjectModel"&gt;Option 2: Simplify Revision Object Model&lt;/h2&gt;
+&lt;p&gt;
+Just use a simpler vdm, see &lt;a class="assigned ticket" href="http://localhost/ticket/1136" title="enhancement: Move to SessionExtension in vdm (assigned)"&gt;ticket:1136&lt;/a&gt; (move to SessionExtension) and &lt;a class="assigned ticket" href="http://localhost/ticket/1137" title="enhancement: Remove need for statefulness in vdm (assigned)"&gt;ticket:1137&lt;/a&gt; (remove need for statefulness in vdm).
+&lt;/p&gt;
+&lt;h2 id="Discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;
+Advantage of Option 1 versus 2:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Easier support for pending state and similar behaviour
+&lt;/li&gt;&lt;li&gt;No need to introduce new tables (and hence migrations) when making something revisioned (or not).
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Disadvantages"&gt;Disadvantages&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Migration is required
+&lt;/li&gt;&lt;li&gt;More difficult to query revision history.
+&lt;ul&gt;&lt;li&gt;Could be addressed by having ChangeObject have separate cols for table name and id but would likely be more difficult.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Performance (?)
+&lt;ul&gt;&lt;li&gt;Have one big ChangeObject table to query when looking at changed objects rather than many revision tables.
+&lt;ul&gt;&lt;li&gt;Not sure this is a biggie as even with Revision model biggest revision object tables are probably on the order of the ChangeObject table
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;
+Implement Option 2 and leave Option 1 for present.
+&lt;/p&gt;
+&lt;p&gt;
+Option 1 includes Option 2 so it seems that that is required in either case (so we may as well with Option 2).
+&lt;/p&gt;
+&lt;p&gt;
+Option 1 requires significant effort (esp migration) so leave for present and then review the situation at some later date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1077#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1101</link>
+        <guid isPermaLink="false">http://localhost/ticket/1101</guid>
+        <title>#1101: Integrate googlanalytics into site nav</title>
+        <pubDate>Thu, 21 Apr 2011 13:52:06 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+There's a stats plugin (e.g. at &lt;a class="ext-link" href="http://trac.ckan.org/ticket/832"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/832&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+Output from the googleanalytics plugin should append to that page, if the stats plugin is present.
+&lt;/p&gt;
+&lt;p&gt;
+Possibly the stats plugin and the googleanalytics plugin should be merged?
+&lt;/p&gt;
+&lt;p&gt;
+Finally, if the stats plugin is active, then a link to the stats page should be added to the main site footer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1101#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1120</link>
+        <guid isPermaLink="false">http://localhost/ticket/1120</guid>
+        <title>#1120: Atom feeds of each tag</title>
+        <pubDate>Mon, 02 May 2011 04:08:05 GMT</pubDate>
+        
+        <dc:creator>tsm</dc:creator>
+
+        <description>&lt;p&gt;
+Tags could/should have an Atom feed. This would mean that every edit to relevant packages could be easily monitored. See &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-May/001162.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-May/001162.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1120#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1134</link>
+        <guid isPermaLink="false">http://localhost/ticket/1134</guid>
+        <title>#1134: CREP0003: Description and Configuration of Harvesters</title>
+        <pubDate>Wed, 11 May 2011 10:14:28 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer&lt;/strong&gt;: Adrià Mercader
+&lt;/p&gt;
+&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+The new harvester interface allows to create harvesters for different
+sources, but right now harvesters don't have many ways to describe and
+configure themselves. We need a way of allowing them to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Expose their type and other details so they can be used internally
+and on the UI.
+&lt;/li&gt;&lt;li&gt;Define configuration settings for particular harvester instances.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+The current UI for adding and editing harvest sources is the same used
+in ckanext-dgu, and thus the 3 harvester types used in DGU to harvest
+various GEMINI realted sources are hardcoded in the form. The form will
+be migrated to a DGU-independent one, so we need the harvesters to
+provide all the necessary data. There is a current &lt;tt&gt;get_type&lt;/tt&gt; method
+that returns the harvester type, but for make it compatible with the DGU
+forms, it returns a machine-readable string (e.g. "CSW Server"), making
+it error prone.
+&lt;/p&gt;
+&lt;h3 id="Arbitraryconfiguration"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+In the current implementation, when the harvest process is started,
+ckanext-harvest looks for all the available plugins that implement the
+&lt;tt&gt;IHarvester&lt;/tt&gt; interface and calls the appropiate methods for the
+current stage (&lt;tt&gt;gather_stage&lt;/tt&gt;,&lt;tt&gt;fetch_stage&lt;/tt&gt;,&lt;tt&gt;import_stage&lt;/tt&gt;).
+At these stages, harvesters have no way of applying arbitrary
+configuration options, so all harvesters of the same type behave on the
+same way.
+For instance, the CKAN harvester needs a way to define the API version
+to use when harvesting remote instances (Right now, the version 2 is
+hardcoded on the code).
+&lt;/p&gt;
+&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription1"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+Harvesters will need to provide the following information so the UI form
+can be built:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;name: machine-readable name (e.g. "waf"). This will be the value
+stored in the database, and the one used by ckanext-harvest to
+call the appropiate harvester.
+&lt;/li&gt;&lt;li&gt;title: human-readable name (e.g. "Web Accessible Folder (WAF)").
+This will appear in the form's select box.
+&lt;/li&gt;&lt;li&gt;description: a description of what the harvester does (e.g. "A Web
+Accessible Folder (WAF) displaying a list of GEMINI 2.1
+documents"). This will appear on the form as a guidance to the
+user.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The way to provide it will be an &lt;tt&gt;info&lt;/tt&gt; method that all harvesters
+must implement, which will return a dictionary with the previous
+elements:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    {
+        'name': 'csw',
+        'title': 'CSW Server',
+        'description': 'A server that implements OGC's Catalog Service
+                        for the Web (CSW) standard'
+    }
+&lt;/pre&gt;&lt;h3 id="Arbitraryconfiguration1"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+As different harvesters will have very different needs, we need to
+provide a way to persist arbitrary configuration flags for each harvest
+source. The more flexible way given the current architecture in my
+opinion would be to store the configuration options as a JSON encoded
+object as a property of the harvest source (There already is an unused
+DB field called &lt;tt&gt;config&lt;/tt&gt; in the database) (Maybe using &lt;a class="missing wiki"&gt;JsonType?&lt;/a&gt;?).
+&lt;/p&gt;
+&lt;p&gt;
+This will mean adding an extra field in the harvest source form to allow
+entering the configuration. This could be just a simple text field where
+users enter the JSON encoded object or a more clever mechanism (i.e an
+"Add a configuration flag" link that adds two new text fields for the
+key and value for each flag, and a mechanism to later build the JSON
+object). In any case, this should probably be hidden in an "Advance
+options" section.
+&lt;/p&gt;
+&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription2"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+The &lt;tt&gt;info&lt;/tt&gt; method would provide a single point to get all the
+information related to the harvester, and future properties could be
+added to the dictionary returned without having to modify the interface.
+&lt;/p&gt;
+&lt;h3 id="Arbitraryconfiguration2"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+There is an already existing &lt;tt&gt;config&lt;/tt&gt; field in the database, so we
+won't need to change the model.
+Harvesters could access the config object at any of the stages. Of
+course they could provide default values in their implementations so
+users don't need to enter them everytime.
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;h3 id="Risksandmitigations"&gt;Risks and mitigations&lt;/h3&gt;
+&lt;p&gt;
+The highest risk on the harvesters &lt;tt&gt;info&lt;/tt&gt; method side is that
+harvester implementation don't offer one of the necessary properties
+(namely name and title). This could fire a warning when showing the
+UI form or using the CLI.
+&lt;/p&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+Adrià Mercader to do it.
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+None yet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1134#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1144</link>
+        <guid isPermaLink="false">http://localhost/ticket/1144</guid>
+        <title>#1144: Support DSPL</title>
+        <pubDate>Thu, 19 May 2011 00:06:49 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+DSPL, the Dataset Publishing Language, is being promoted by Google for its "Google Public Data Explorer" system. It is an XML format with metadata.
+&lt;/p&gt;
+&lt;p&gt;
+The format is described on the &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/developer_guide.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;developer docs ofthe Google Code site&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Google provides a &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/dsplgen.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Python script which reads CSV data and generates DSPL&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Sample from &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/dspl_sample.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://code.google.com/apis/publicdata/docs/dspl_sample.html&lt;/a&gt;:
+&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;
+&lt;span class="cp"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dspl&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;"http://schemas.google.com/dspl/2010"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:geo=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:geo_usa=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo/us"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:time=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/time"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:quantity=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/quantity"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:entity=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/entity"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/time"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/quantity"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/entity"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;My statistics&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Some very interesting statistics about countries&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.stats-bureau.com/mystats/info.html&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;provider&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Bureau of Statistics&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.stats-bureau.com&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/provider&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;topics&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"geography"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Geography&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"social_indicators"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Social indicators&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population_indicators"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Population indicators&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"poverty_and_income"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Poverty &lt;span class="err"&gt;&amp;amp;&lt;/span&gt; income&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"health"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Health&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/topics&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;concepts&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- As noted in the tutorial, this concept should extend quantity:amount.--&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Population&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Size of the resident population.&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"population_indicators"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- This country concept is defined for educational purposes only. A country
+    concept exists in the Google geo dataset. See:
+    http://code.google.com/apis/publicdata/docs/canonical/geo.html --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"geo:location"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Country&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;My list of countries&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;property&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&lt;/span&gt; &lt;span class="na"&gt;xml:lang=&lt;/span&gt;&lt;span class="s"&gt;"en"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Country name&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;value&lt;/span&gt; &lt;span class="na"&gt;xml:lang=&lt;/span&gt;&lt;span class="s"&gt;"en"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;The official name of the country&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- This US state concept is defined for educational purposes only. A US state
+      concept exists in the Google geo US dataset. See:
+      http://code.google.com/apis/publicdata/docs/canonical/geo.us.html --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"geo:location"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;State&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;US states&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;property&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;isParent=&lt;/span&gt;&lt;span class="s"&gt;"true"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"states_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"entity:entity"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Gender&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Gender, Male or Female&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;pluralName&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Genders&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/pluralName&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;totalName&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Both genders&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/totalName&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"genders_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"quantity:rate"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;unemployment rate&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;The percent of the labor force that is unemployed, not seasonally
+            adjusted.&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.bls.gov/cps/cps_htgm.htm&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"social_indicators"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;attribute&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"is_percentage"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"boolean"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/attribute&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/concepts&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;slices&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"states_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/slices&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;tables&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"latitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"longitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;countries.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;country_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;US&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"latitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"longitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;states.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;state_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"genders_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;genders.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;gender_country_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/tables&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/dspl&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1144#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1145</link>
+        <guid isPermaLink="false">http://localhost/ticket/1145</guid>
+        <title>#1145: Support the Handle System</title>
+        <pubDate>Thu, 19 May 2011 00:26:15 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+The Handle System is an initiative to provide persistent references for resources. That is, it's basically a proxy system for preventing link rot.
+&lt;/p&gt;
+&lt;p&gt;
+Its documentation is here: &lt;a class="ext-link" href="http://www.handle.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.handle.net/&lt;/a&gt;. Servers running CKAN could host a "Local Handle Service", which redirects a hash of a resource to an actual URL.
+&lt;/p&gt;
+&lt;p&gt;
+Some suggested use cases:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Researcher would like to cite where data came from
+&lt;/li&gt;&lt;li&gt;Agencies would like to have a way to prevent vendor
+lock-in from CKAN if they decide to move to another
+platform
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1145#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1163</link>
+        <guid isPermaLink="false">http://localhost/ticket/1163</guid>
+        <title>#1163: Improvements to Storage Extension</title>
+        <pubDate>Thu, 26 May 2011 11:19:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Storage is now working but there are
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integrate with Resources (e.g. create a resource for each file upload and give option to associate with a package)
+&lt;ul&gt;&lt;li&gt;Should we introduce rule that files *not* associated with a Resource are periodically deleted?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Allow setting of a file name/path before upload
+&lt;/li&gt;&lt;li&gt;Allow for file overwriting/deleting etc (how should this work -- do we want to allow this sort of thing)
+&lt;/li&gt;&lt;li&gt;Integrate local file upload stuff in api/auth/*
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DifferentBackendIssues"&gt;Different Backend Issues&lt;/h2&gt;
+&lt;p&gt;
+Local file store is rather different from 'remote' storage in various ways:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;For remote you don't want to use many buckets as there are bucket limits while for local you want to. Should we there have a single path that users provide which we then partition differently for different backends.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1163#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1179</link>
+        <guid isPermaLink="false">http://localhost/ticket/1179</guid>
+        <title>#1179: Support tag aliases</title>
+        <pubDate>Tue, 07 Jun 2011 06:47:01 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+A small number of tags are near-duplicates of each other.
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps we could support word stemming from NLTK and/or manual tag aliases:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+statistics
+statistik
+...
+survey
+surveying
+surveys
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1179#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1182</link>
+        <guid isPermaLink="false">http://localhost/ticket/1182</guid>
+        <title>#1182: Comments from deleted packages appear in "Recent Comments" feed</title>
+        <pubDate>Thu, 09 Jun 2011 22:24:11 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+When a package has been deleted, say for spam moderation, comments still appear in the recent comments section.
+&lt;/p&gt;
+&lt;p&gt;
+This is a problem because non-admin users will be shown a warning that they're not authorised to view the package if they click on the link.
+&lt;/p&gt;
+&lt;p&gt;
+At CKAN.net currently, this affects the most recent comment.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1182#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1184</link>
+        <guid isPermaLink="false">http://localhost/ticket/1184</guid>
+        <title>#1184: Support Wuala as CKAN storage option</title>
+        <pubDate>Tue, 14 Jun 2011 06:59:11 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Most of CKANs storage options are tied to the USA. This brings concerns of data security for some organisations who may wish to adopt the system. &lt;a class="ext-link" href="http://wua.la"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Wuala&lt;/a&gt; is a distributed file system that stores data in a peer-to-peer manner. The company behind it, &lt;a class="missing wiki"&gt;LaCie?&lt;/a&gt; sells storage for a fee. However, they also enable clients to have 'free' storage space when machines act as a storage node.
+&lt;/p&gt;
+&lt;p&gt;
+In order to be a storage node, a machine needs to be online for more than 14% of the time - roughly 4h per day. Most CKAN servers are likely to have a far greater uptime than this.
+&lt;/p&gt;
+&lt;p&gt;
+Supporting Wuala would go some way to enabling CKAN to be used in a secure manner. That is, CKAN could be promoted for organisational use where there is lots of data to be stored and large geographic distances to be managed. There is a &lt;a class="ext-link" href="http://www.wuala.com/Wuala%20API/Sample%20Clients/Python/wualaAPI/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Python client available&lt;/a&gt; and a fairly &lt;a class="ext-link" href="http://www.youtube.com/watch?v=3xKZ4KGkQY8"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;long Google Tech Talk&lt;/a&gt; that overviews the system.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1184#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1185</link>
+        <guid isPermaLink="false">http://localhost/ticket/1185</guid>
+        <title>#1185: Administrators can't delete packages from web UI</title>
+        <pubDate>Wed, 15 Jun 2011 04:23:38 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Administrators have "View", "Edit" and "History" tabs. However, I can't see a way to delete a package from the web UI.
+&lt;/p&gt;
+&lt;p&gt;
+Version: CKAN.net as of today
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1185#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1188</link>
+        <guid isPermaLink="false">http://localhost/ticket/1188</guid>
+        <title>#1188: Allow diffing against initial (blank) package version</title>
+        <pubDate>Wed, 15 Jun 2011 15:52:40 GMT</pubDate>
+        
+        <dc:creator>nickstenning</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the history page only allows diffing between different versions of a package, but there doesn't appear to be any easy way to see the changes introduced by the first version of a package.
+&lt;/p&gt;
+&lt;p&gt;
+I'm requesting the ability to diff against a "blank slate" initial state of a project, so I can see the content of the first project commit.
+&lt;/p&gt;
+&lt;p&gt;
+Not sure if this is a vdm feature, so I'm putting this ticket in against ckan.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1188#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1198</link>
+        <guid isPermaLink="false">http://localhost/ticket/1198</guid>
+        <title>#1198: Publisher hierarchy</title>
+        <pubDate>Thu, 23 Jun 2011 09:16:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+'Publisher' entities in the model. They are hierarchical.
+&lt;/p&gt;
+&lt;p&gt;
+'User-Publisher' connections with one or more roles (e.g. drafter, moderator).
+&lt;/p&gt;
+&lt;p&gt;
+Authorization settings can control who can set what values in a 'published by' type field.
+&lt;/p&gt;
+&lt;p&gt;
+Publishers and User-Publishers available to read in the API.
+&lt;/p&gt;
+&lt;p&gt;
+Future tickets will provide:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;API to write Publishers and User-Publishers
+&lt;/li&gt;&lt;li&gt;UI to edit Publishers and User-Publishers
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(This feature deprecates authorization groups)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1198#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1201</link>
+        <guid isPermaLink="false">http://localhost/ticket/1201</guid>
+        <title>#1201: seperate out logic in atom feeds to logic layer.</title>
+        <pubDate>Fri, 24 Jun 2011 15:21:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Simplify the logic in the atom feed an make all feeds use logic layer to return lists.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1201#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1203</link>
+        <guid isPermaLink="false">http://localhost/ticket/1203</guid>
+        <title>#1203: Moderated edits: html code shows as "changed" although it is not</title>
+        <pubDate>Tue, 28 Jun 2011 15:29:30 GMT</pubDate>
+        
+        <dc:creator>rolf</dc:creator>
+
+        <description>&lt;p&gt;
+I've installed the Moderated Edits extension (ckanext-moderatededits) and am editing a package imported from IATIregistry.org, with an extra field which contains a bit of HTML.
+&lt;/p&gt;
+&lt;p&gt;
+The editor indicates the field has changed, although the content hasn't (see screenshot). All I can find so far is a minor difference: in the field content, there is a code &amp;amp;#8212 and in the rendered table that is an &amp;amp;mdash;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1203#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1227</link>
+        <guid isPermaLink="false">http://localhost/ticket/1227</guid>
+        <title>#1227: Display packages' tags in search results</title>
+        <pubDate>Tue, 19 Jul 2011 00:11:02 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+In when displaying search results, it would be useful to also display the tags of a package. Sometimes it's difficult to infer the scope of what the package does from the title and the first sentence of the description. Tags are quite concise way to display rich information.
+&lt;/p&gt;
+&lt;p&gt;
+ENV=datacatalos.org, with CKAN 1.4.2a
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1227#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1232</link>
+        <guid isPermaLink="false">http://localhost/ticket/1232</guid>
+        <title>#1232: [super] Interface improvements</title>
+        <pubDate>Wed, 20 Jul 2011 16:11:36 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1194" title="defect: &amp;#34;Welcome back&amp;#34; message for newly registered user (closed: fixed)"&gt;#1194&lt;/a&gt; "Welcome back" message for newly registered user
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1202" title="enhancement: Links to datapkg utility don't lead to info about it (closed: invalid)"&gt;#1202&lt;/a&gt; Links to datapkg utility don't lead to info about it
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/925" title="defect: Change the search box icon to remove the down arrow (closed: fixed)"&gt;#925&lt;/a&gt; Change the search box icon to remove the down arrow
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/923" title="defect: Search box doesn't work in leaderboard page (closed: worksforme)"&gt;#923&lt;/a&gt; Search box doesn't work in leaderboard page in stats extension
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1034" title="defect: Flash message cached (closed: duplicate)"&gt;#1034&lt;/a&gt; Flash message cached
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/737" title="enhancement: Markdown syntax summary page (new)"&gt;#737&lt;/a&gt; Markdown syntax summary page
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/811" title="defect: Extra field editing form layout breaks when there are long field names (new)"&gt;#811&lt;/a&gt; Extra field editing form layout breaks when there are long field names
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1232#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1233</link>
+        <guid isPermaLink="false">http://localhost/ticket/1233</guid>
+        <title>#1233: [super] Improve wiki-style functionality for history</title>
+        <pubDate>Wed, 20 Jul 2011 16:29:52 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment we have a good revisioning system but a poor history interface. We need to improve this in a number of areas:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/191" title="enhancement: Searching by modification date (closed: fixed)"&gt;#191&lt;/a&gt; Searching by modification date
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/193" title="enhancement: Searching by time-related field (closed: wontfix)"&gt;#193&lt;/a&gt; Searching by time-related field
+&lt;/li&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/301" title="enhancement: Package discussion pages (assigned)"&gt;#301&lt;/a&gt; Package discussion pages
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1236" title="enhancement: View a package at a given revision (closed: fixed)"&gt;#1236&lt;/a&gt; Package history page should provide links to pages at particular revisions, similar to the wikipedia pages
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1236" title="enhancement: View a package at a given revision (closed: fixed)"&gt;#1236&lt;/a&gt; Viewing old revisions or unmoderated changes should have a message at the top of the package page
+&lt;/li&gt;&lt;li&gt;Other improvements as per my word doc.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1233#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1257</link>
+        <guid isPermaLink="false">http://localhost/ticket/1257</guid>
+        <title>#1257: Anti-Spam tools</title>
+        <pubDate>Tue, 02 Aug 2011 11:12:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We are getting more and more spam on ckan.net and we need to improve our strategy of combating it. It is bad because google ranks who we link to (which we do want for legitimate links), and our front page contains the latest package edits, so spam is immediately very visible.
+&lt;/p&gt;
+&lt;p&gt;
+Spam:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Package creation
+&lt;/li&gt;&lt;li&gt;Package edit
+&lt;/li&gt;&lt;li&gt;User creation
+&lt;/li&gt;&lt;li&gt;Group creation
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Systems to consider:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Automatic
+&lt;ul&gt;&lt;li&gt;captcha
+&lt;/li&gt;&lt;li&gt;bayesian scoring
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Sysadmin
+&lt;ul&gt;&lt;li&gt;a tool to quickly analyse and remove packages, edits and users
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Helpful users
+&lt;ul&gt;&lt;li&gt;button to click indicating spam, leading to any/all of:
+&lt;ul&gt;&lt;li&gt;add TODO item (which emails package admin and sysadmins)
+&lt;/li&gt;&lt;li&gt;quarantine the package/user so it doesn't show up on the front page and a warning is shown when you view it
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+General thoughts:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We should learn from the wikipedia tools, as they are the experts
+&lt;/li&gt;&lt;li&gt;This is a serious problem that is only going to get worse and is a threat to the whole site.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1257#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1259</link>
+        <guid isPermaLink="false">http://localhost/ticket/1259</guid>
+        <title>#1259: "Add a row" for Extras on Package form</title>
+        <pubDate>Tue, 02 Aug 2011 16:31:33 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+The default package form offers 4 empty extras fields. Like the resource section, it should have an "add more" button to add another row.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1259#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1260</link>
+        <guid isPermaLink="false">http://localhost/ticket/1260</guid>
+        <title>#1260: Remove duplicate functions from _util.html</title>
+        <pubDate>Wed, 03 Aug 2011 10:17:32 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+There seems to be both a list view for dictized and non dictized data structures for all entities in _util.html at the moment. Probably in the back of someone's mind already, but cleanup here would be nice.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1260#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1261</link>
+        <guid isPermaLink="false">http://localhost/ticket/1261</guid>
+        <title>#1261: Investigate dots in extras search</title>
+        <pubDate>Wed, 03 Aug 2011 10:19:28 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+It seems that searching for extras_foo:value works with solr, but extras_foo.bar:value doesn't. No theory on why.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1261#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1262</link>
+        <guid isPermaLink="false">http://localhost/ticket/1262</guid>
+        <title>#1262: Enforce "create-user" permission</title>
+        <pubDate>Wed, 03 Aug 2011 12:41:36 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+This does not seem to have any implications at the moment, it should lock down registration and remove all related links.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1262#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1273</link>
+        <guid isPermaLink="false">http://localhost/ticket/1273</guid>
+        <title>#1273: Create docs for API v3</title>
+        <pubDate>Mon, 15 Aug 2011 12:41:23 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1273#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1278</link>
+        <guid isPermaLink="false">http://localhost/ticket/1278</guid>
+        <title>#1278: Refactor authorized_query calls</title>
+        <pubDate>Mon, 15 Aug 2011 13:32:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+There are some functions that still use the Auhtorizer().authorized_query method:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;./ckan/controllers/authorization_group.py:24:        query = ckan.authz.Authorizer().authorized_query(c.user, model.AuthorizationGroup)
+./ckan/lib/base.py:237:        groups = ckan.authz.Authorizer.authorized_query(c.user, model.Group,
+./ckan/lib/search/sql.py:55:        q = authz.Authorizer().authorized_query(username, model.Group)
+./ckan/lib/search/sql.py:118:        q = authz.Authorizer().authorized_query(self.options.get('username'), model.Package)
+./ckan/logic/action/get.py:154:    query = Authorizer().authorized_query(user, model.Group, model.Action.EDIT)
+./ckan/tests/test_authz.py:158:        q = self.authorizer.authorized_query(self.notadmin.name, model.Package)
+./ckan/tests/test_authz.py:353:        q = self.authorizer.authorized_query(self.notmember.name, model.Package)
+./ckan/tests/test_authz.py:357:        q = self.authorizer.authorized_query(self.member.name, model.Package)
+./ckan/tests/functional/test_authorization_group.py:44:        group_count = Authorizer.authorized_query(u'russianfan', model.AuthorizationGroup).count()
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1278#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1286</link>
+        <guid isPermaLink="false">http://localhost/ticket/1286</guid>
+        <title>#1286: Remove remaining formalchemy stuff</title>
+        <pubDate>Tue, 23 Aug 2011 16:29:56 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Stuff I've spotted:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;forms/*
+&lt;/li&gt;&lt;li&gt;template/group/edit_form.html
+&lt;/li&gt;&lt;li&gt;template/package/edit_form.html
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This can go once new DGU form is in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1286#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1288</link>
+        <guid isPermaLink="false">http://localhost/ticket/1288</guid>
+        <title>#1288: Package edit/creation can't include 'relationships' field</title>
+        <pubDate>Wed, 24 Aug 2011 16:34:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create or edit a package (via the API), you aren't able to specify the relationships it has. (If you do you get 409 &lt;tt&gt; {"__junk": ["The input field __junk was not expected."]} &lt;/tt&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+The normal way to create relationships is via /api/rest/relationships/ and this works. But when you GET a package, the dictionary lists all relationship details. So this bug creates a problem for editing a package that has relationships - you want to GET it, make any edits and then PUT it back. The work-around is to delete the 'relationships' key from the dict before you PUT it back.
+&lt;/p&gt;
+&lt;h2 id="Options"&gt;Options&lt;/h2&gt;
+&lt;p&gt;
+Ideally, CKAN would read the 'relationships' key and make the necessary changes. This is a chunk of work.
+&lt;/p&gt;
+&lt;p&gt;
+Another good option is to allow an unchanged 'relationships' value, but barf it is edited. This is also a chunk of work.
+&lt;/p&gt;
+&lt;p&gt;
+A bad option would be to just ignore the 'relationships' value, since users will get frustrated changing this value and wonder why it never saves, not understanding it is different to all the rest, without error message.
+&lt;/p&gt;
+&lt;p&gt;
+A final option is to get rid of relationships altogether.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1288#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1311</link>
+        <guid isPermaLink="false">http://localhost/ticket/1311</guid>
+        <title>#1311: Modal user register and login form</title>
+        <pubDate>Tue, 06 Sep 2011 08:20:27 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Subticket of: &lt;a class="closed ticket" href="http://localhost/ticket/1294" title="enhancement: [super] Package creation and editing UX improvements (closed: fixed)"&gt;#1294&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Rather than having to visit a dedicated page it would be good if registration and login could be done from a modal form (separate or combined ...).
+&lt;/p&gt;
+&lt;h2 id="Why"&gt;Why&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;It could be used from dataset creation page in situations where user needs to be registered / logged in to create a dataset (so we could allow someone to start creating a dataset and only get them to login at the end ...)
+&lt;/li&gt;&lt;li&gt;It allows for quicker and easier logging in
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;See Friedrich's work on the datahub
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1311#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1326</link>
+        <guid isPermaLink="false">http://localhost/ticket/1326</guid>
+        <title>#1326: Write a set of auth plugin functions to integrate with Druapl</title>
+        <pubDate>Mon, 12 Sep 2011 09:51:24 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Ticket &lt;a class="closed ticket" href="http://localhost/ticket/787" title="task: Auth API (closed: fixed)"&gt;#787&lt;/a&gt; described join auth between CKAN and Drupal. The authentication part is live and implemented. This ticket is a placeholder for work that will be needed in the new auth system to link authorization functions to Drupal. It is dependent on the groups refactor.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1326#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1336</link>
+        <guid isPermaLink="false">http://localhost/ticket/1336</guid>
+        <title>#1336: License fudge</title>
+        <pubDate>Tue, 13 Sep 2011 11:07:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+cset:4b59ab34137d ckan/logic/action/get.py:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;-            isopen = model.Package.get_license_register()[license_id].isopen()
+-            result_dict['isopen'] = isopen
++            try:
++                isopen = model.Package.get_license_register()[license_id].isopen()
++                result_dict['isopen'] = isopen
++            except KeyError:
++                # TODO: create a log message this error?
++                result_dict['isopen'] = False
+&lt;/pre&gt;&lt;p&gt;
+This change hides problems with the license server and returns potentially incorrect values for openness.
+&lt;/p&gt;
+&lt;p&gt;
+This has been noted as 'temporary fix' but seems to be forgotten about, since it has been merged to default and gone into release 1.4.3.
+&lt;/p&gt;
+&lt;p&gt;
+I suggest the licenses are cached (I thought this was already the case when CKAN first requests them after start-up?). I suggest failure would return 503.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1336#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1343</link>
+        <guid isPermaLink="false">http://localhost/ticket/1343</guid>
+        <title>#1343: [super] User related improvements (login, user pages etc)</title>
+        <pubDate>Wed, 14 Sep 2011 16:18:18 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Disallow account creation via openid - &lt;a class="closed ticket" href="http://localhost/ticket/1386" title="enhancement: Disallow account creation via openid (closed: fixed)"&gt;#1386&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Require email field - &lt;a class="closed ticket" href="http://localhost/ticket/1319" title="enhancement: Require an email address on User registration (closed: fixed)"&gt;#1319&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Require email confirmation to be activated (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Improvements to user page (e.g. show activity and more info about user) - &lt;a class="closed ticket" href="http://localhost/ticket/1396" title="enhancement: Improvements to user page UX - 1d (closed: fixed)"&gt;#1396&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Modal user login - &lt;a class="new ticket" href="http://localhost/ticket/1311" title="enhancement: Modal user register and login form (new)"&gt;#1311&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1343#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1352</link>
+        <guid isPermaLink="false">http://localhost/ticket/1352</guid>
+        <title>#1352: Use logic functions instead of as_dict when indexing entities</title>
+        <pubDate>Wed, 21 Sep 2011 14:29:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The current search implementation uses the output of the the as_dict method of the domain Package object to update the index
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/56c79e3fc44c/ckan/lib/search/index.py#cl-48"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/56c79e3fc44c/ckan/lib/search/index.py#cl-48&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+It also uses package_to_api1 in the &lt;a class="missing wiki"&gt;SynchronousSearch?&lt;/a&gt; plugin:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/f9dfb0506594/ckan/lib/search/__init__.py#cl-93"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/f9dfb0506594/ckan/lib/search/__init__.py#cl-93&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This prevents extensions from being able to index custom properties (e.g. faceting by custom extras not included in the model).
+&lt;/p&gt;
+&lt;p&gt;
+The search should use the logic function to get the package properties:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;get_action('package_show')(context,data_dict)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1352#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1355</link>
+        <guid isPermaLink="false">http://localhost/ticket/1355</guid>
+        <title>#1355: Package extras property does not include the newly created ones</title>
+        <pubDate>Mon, 26 Sep 2011 10:48:46 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The extras in the package object sent to the extensions after editing (&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/01efd5649c10/ckan/logic/action/update.py#cl-226"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/01efd5649c10/ckan/logic/action/update.py#cl-226&lt;/a&gt;) do not include the newly added.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1355#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1384</link>
+        <guid isPermaLink="false">http://localhost/ticket/1384</guid>
+        <title>#1384: CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages</title>
+        <pubDate>Wed, 12 Oct 2011 10:07:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Most articles still refer and link to ckan.net, wiki.ckan.net and to packages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1403</link>
+        <guid isPermaLink="false">http://localhost/ticket/1403</guid>
+        <title>#1403: Refactor groups index page</title>
+        <pubDate>Mon, 17 Oct 2011 10:31:52 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Groups are listed alphabetically with paging - not an ideal user experience. We would like to list groups in order of 'popularity': The number of datasets they contain.
+&lt;/p&gt;
+&lt;p&gt;
+Following this chain of thought, then, it would be nice to rearrange the groups table by clicking on column headers and having it sort by that column.
+&lt;/p&gt;
+&lt;p&gt;
+Furthermore, then, we'd like to implement a full-fledged groups search feature (if this is at all feasible).
+&lt;/p&gt;
+&lt;p&gt;
+The forthcoming groups refactor will probably have some bearing on this task.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1403#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1406</link>
+        <guid isPermaLink="false">http://localhost/ticket/1406</guid>
+        <title>#1406: Re-enable RSS subscriptions</title>
+        <pubDate>Mon, 17 Oct 2011 14:22:07 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+RSS 'subscribe' buttons appeared in many places on the site but were not very helpful. They took (confused) users pointed to the raw feed code, and Google Reader could not understand the feed. Safari, however, could interpret it correctly.
+&lt;/p&gt;
+&lt;p&gt;
+Their presentation needs to be clear and consistent; the RSS feed really needs testing in a variety of readers; and we need to decide exactly which items should get a feed. (Package updates? Groups?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1406#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1411</link>
+        <guid isPermaLink="false">http://localhost/ticket/1411</guid>
+        <title>#1411: Force resource format to be lower case (also mimetype)</title>
+        <pubDate>Sat, 22 Oct 2011 21:40:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Format should be lowercase. Automatically lower case (for extra points have a bit of javascript to force lower case when entering).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Even more points: do a update on thedatahub repo to make all format lower case (or script this as an update?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1411#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1414</link>
+        <guid isPermaLink="false">http://localhost/ticket/1414</guid>
+        <title>#1414: track user log-ins on thedatahub.org</title>
+        <pubDate>Mon, 24 Oct 2011 11:13:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Set up tracking for user logins so that we have stats about how many active users of thedatahub exist
+want to be able to see who logged in the the last x months
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1414#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1423</link>
+        <guid isPermaLink="false">http://localhost/ticket/1423</guid>
+        <title>#1423: Edit resources suggestions</title>
+        <pubDate>Wed, 26 Oct 2011 15:11:46 GMT</pubDate>
+        
+        <dc:creator>markbrough</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Description vs Name - Edit Resources view is showing the name of the package rather than the description, and a lot (all?) of the packages before the upgrade don't have names, so might be good to swap this round again, e.g.: &lt;a class="ext-link" href="http://thedatahub.org/dataset/edit/iati-registry"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/edit/iati-registry&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Moving resources - Moving them up or down the list used to be quite useful if you had a lot of resources that you might want to leave on the resources page, but only one or two that were actually current and that you wanted to draw attention to. This doesn't exist any more on CKAN but I think it would be good to add it back in.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1423#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1424</link>
+        <guid isPermaLink="false">http://localhost/ticket/1424</guid>
+        <title>#1424: Openness notice should be clearer</title>
+        <pubDate>Wed, 26 Oct 2011 16:54:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+ckan-discuss discussion suggests changes to the 'openness' indicator
+( &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-October/001786.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-October/001786.html&lt;/a&gt; )
+&lt;/p&gt;
+&lt;p&gt;
+Dataset view page:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;If there is an explicit but non-OKD compliant license, such as CC-BY-NC, then this should be stated explicitly, perhaps: “This dataset is Not Open. License: Creative Commons Attribution Noncommerical. This is not an open license as it does not meet the Open Knowledge Definition.”
+&lt;/li&gt;&lt;li&gt;If the license is marked as “Other::License Not Specified”, then this should be stated explicitly, perhaps:
+“This dataset is Not Open. It is published without an explicit license, the publisher reserves all rights to the dataset.”
+&lt;/li&gt;&lt;li&gt;3. If the license field was left empty by the contributor of the Data Hub record, then again this should be stated explicitly, perhaps: “This dataset is Not Open. The license of this dataset is unknown or unspecified. Start an enquiry on &lt;a class="missing wiki"&gt;IsItOpenData?&lt;/a&gt; »
+&lt;/li&gt;&lt;li&gt;There is a bug so that non-open licenses doesn't have an openness notice.
+&lt;/li&gt;&lt;li&gt;If downloadable resources are not available, this should not affect 'openness' - check this has been removed.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1424#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1429</link>
+        <guid isPermaLink="false">http://localhost/ticket/1429</guid>
+        <title>#1429: Provide DOIs for datasets in a CKAN instance</title>
+        <pubDate>Sun, 30 Oct 2011 12:21:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+DOI = digital object identifier = &lt;a class="ext-link" href="http://www.doi.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.doi.org/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+As a Publisher I want a DOI for my dataset so that it can be cited by and linked to by others in a standard and easy way.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Probably implement as extension rather than core
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1432</link>
+        <guid isPermaLink="false">http://localhost/ticket/1432</guid>
+        <title>#1432: [super] Data processing system for CKAN and Webstore</title>
+        <pubDate>Tue, 01 Nov 2011 10:19:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1190" title="enhancement: [super] CREP 0004 Data API and Data Processing System (closed: fixed)"&gt;#1190&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+A data processing system which utilizes the  Webstore. One could
+get a long way with simple javascript running in the browser for development with this javascript then run offline using something like nodejs. Alternatively one could allow one to specify a url to e.g. a python file which would then be run in a sandbox (with access to some specified set of python modules)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1432#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1439</link>
+        <guid isPermaLink="false">http://localhost/ticket/1439</guid>
+        <title>#1439: Action API discoverablility</title>
+        <pubDate>Tue, 01 Nov 2011 15:39:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+A good service API needs to be discoverable, so you are not always having to refer to the documentation html.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe /api/action should return a list of actions available? (Currently this returns a 404.)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It would be nice to sort these into get/create/update/delete.
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1438" title="enhancement: Action API - parameter discovery/checking (new)"&gt;#1438&lt;/a&gt; Parameters for each of the actions must be discoverable too
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+/api/action/{action_name} should also return the help text / parameters allowable. (Currently this returns 400 error)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1439#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1459</link>
+        <guid isPermaLink="false">http://localhost/ticket/1459</guid>
+        <title>#1459: Featured Dataset feature</title>
+        <pubDate>Sat, 12 Nov 2011 15:50:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Provide way to mark a dataset as featured. Featured database show up on the front page.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: detail this more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1459#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1466</link>
+        <guid isPermaLink="false">http://localhost/ticket/1466</guid>
+        <title>#1466: Need to support https login for multiple instances as part of the CKAN package install</title>
+        <pubDate>Tue, 15 Nov 2011 16:52:58 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1466#changelog</comments>
+    </item>
+ </channel>
+</rss>

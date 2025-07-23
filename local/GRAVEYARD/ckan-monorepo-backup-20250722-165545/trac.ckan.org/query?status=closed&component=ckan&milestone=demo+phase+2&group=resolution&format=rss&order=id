@@ -1,0 +1,1053 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=demo+phase+2&amp;group=resolution&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=demo+phase+2&amp;group=resolution&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2225</link>
+        <guid isPermaLink="false">http://localhost/ticket/2225</guid>
+        <title>#2225: Run jshint on our javascript and clean up as needed</title>
+        <pubDate>Sat, 10 Mar 2012 19:21:56 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2225#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2553</link>
+        <guid isPermaLink="false">http://localhost/ticket/2553</guid>
+        <title>#2553: Create a get snippet api action</title>
+        <pubDate>Mon, 18 Jun 2012 11:56:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+just passes template name
+&lt;/p&gt;
+&lt;p&gt;
+?template_name=...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2553#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2559</link>
+        <guid isPermaLink="false">http://localhost/ticket/2559</guid>
+        <title>#2559: Demo theme add resource has missing functionality</title>
+        <pubDate>Mon, 18 Jun 2012 16:02:16 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Show resources in the sidebar
+&lt;/li&gt;&lt;li&gt;Allow people to go backward and forward
+&lt;/li&gt;&lt;li&gt;Have a back button on each form
+&lt;/li&gt;&lt;li&gt;Lose resource type
+&lt;/li&gt;&lt;li&gt;Add extras as optional metadata
+&lt;/li&gt;&lt;li&gt;Remove save
+&lt;/li&gt;&lt;li&gt;Add back/Previous
+&lt;/li&gt;&lt;li&gt;Add Another
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2559#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2560</link>
+        <guid isPermaLink="false">http://localhost/ticket/2560</guid>
+        <title>#2560: Demo theme add metadata is missing functionality</title>
+        <pubDate>Mon, 18 Jun 2012 16:03:04 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Hide remove button when adding new field
+&lt;/li&gt;&lt;li&gt;Finish takes you to the newly created dataset
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2560#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2569</link>
+        <guid isPermaLink="false">http://localhost/ticket/2569</guid>
+        <title>#2569: add other resources to sidebar of resource pages</title>
+        <pubDate>Mon, 18 Jun 2012 17:13:28 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Allow user to navigate directly from one resource page to another via resource box in sidebar
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2569#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2581</link>
+        <guid isPermaLink="false">http://localhost/ticket/2581</guid>
+        <title>#2581: allow state = 'draft'</title>
+        <pubDate>Thu, 21 Jun 2012 14:01:38 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+pass some stuff through the context
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2581#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2589</link>
+        <guid isPermaLink="false">http://localhost/ticket/2589</guid>
+        <title>#2589: users can view draft datasets</title>
+        <pubDate>Fri, 22 Jun 2012 13:53:14 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to add some logic for this
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2589#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2595</link>
+        <guid isPermaLink="false">http://localhost/ticket/2595</guid>
+        <title>#2595: Demo add dataset needs to remember which stages have been visited</title>
+        <pubDate>Mon, 25 Jun 2012 16:37:26 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+For example.
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Start on stage one
+&lt;/li&gt;&lt;li&gt;Add dataset click next
+&lt;/li&gt;&lt;li&gt;Click previous
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Expect Stage 1 to be "active", stage two to be "complete"
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Start on stage one
+&lt;/li&gt;&lt;li&gt;Add dataset click next
+&lt;/li&gt;&lt;li&gt;Click next
+&lt;/li&gt;&lt;li&gt;Click previous
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Expect Stage 2 to be "active", stage one and three to be "complete"
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Start on stage one
+&lt;/li&gt;&lt;li&gt;Add dataset click next
+&lt;/li&gt;&lt;li&gt;Click next
+&lt;/li&gt;&lt;li&gt;Click previous
+&lt;/li&gt;&lt;li&gt;Click previous
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Expect Stage 1 to be "active", stage two and three to be "complete"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2595#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2612</link>
+        <guid isPermaLink="false">http://localhost/ticket/2612</guid>
+        <title>#2612: Hide options based on auth</title>
+        <pubDate>Wed, 27 Jun 2012 15:49:25 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+For example, hide the 'edit' button on user profiles &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/ross2#activity"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/ross2#activity&lt;/a&gt; unless I'm logged in as Ross
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2612#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2617</link>
+        <guid isPermaLink="false">http://localhost/ticket/2617</guid>
+        <title>#2617: Move data preview into demo</title>
+        <pubDate>Thu, 28 Jun 2012 09:19:52 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2617#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2620</link>
+        <guid isPermaLink="false">http://localhost/ticket/2620</guid>
+        <title>#2620: Pass a  related item into the dataset tempate</title>
+        <pubDate>Thu, 28 Jun 2012 15:36:49 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+See the related sidebar box
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/adur_district_spending"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/adur_district_spending&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+If a package has related items the first (or a random) related item should be passed into the snippet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2620#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2633</link>
+        <guid isPermaLink="false">http://localhost/ticket/2633</guid>
+        <title>#2633: for dev always look for templates</title>
+        <pubDate>Mon, 09 Jul 2012 10:00:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+so we find newly created templates
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2633#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2637</link>
+        <guid isPermaLink="false">http://localhost/ticket/2637</guid>
+        <title>#2637: Submit search form when user changes sort order</title>
+        <pubDate>Mon, 09 Jul 2012 12:00:18 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2637#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2640</link>
+        <guid isPermaLink="false">http://localhost/ticket/2640</guid>
+        <title>#2640: Update recline on the demo site</title>
+        <pubDate>Mon, 09 Jul 2012 14:58:31 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Depends on &lt;a class="closed ticket" href="http://localhost/ticket/2639" title="enhancement: Update recline version for 1.8 release (closed: fixed)"&gt;#2639&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2640#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2643</link>
+        <guid isPermaLink="false">http://localhost/ticket/2643</guid>
+        <title>#2643: Demo homepage redesign</title>
+        <pubDate>Mon, 09 Jul 2012 15:44:45 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61696765/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61696765/comments&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2643#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2646</link>
+        <guid isPermaLink="false">http://localhost/ticket/2646</guid>
+        <title>#2646: delete dataset</title>
+        <pubDate>Tue, 10 Jul 2012 11:41:06 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+make it so
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2646#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2648</link>
+        <guid isPermaLink="false">http://localhost/ticket/2648</guid>
+        <title>#2648: Add file upload to the demo site</title>
+        <pubDate>Tue, 10 Jul 2012 11:51:21 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2648#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2653</link>
+        <guid isPermaLink="false">http://localhost/ticket/2653</guid>
+        <title>#2653: Requesting file upload authentication fails on demo</title>
+        <pubDate>Tue, 10 Jul 2012 16:41:07 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Try: &lt;a class="ext-link" href="http://localhost:5000/api/storage/auth/form/photo-of-a-duck"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/api/storage/auth/form/photo-of-a-duck&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Gets:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;File '&amp;lt;string&amp;gt;', line 2 in auth_form
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/lib/jsonp.py', line 26 in jsonpify
+  data = func(*args, **kwargs)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/storage.py', line 407 in auth_form
+  authorize(method, bucket, label, c.userobj, self.ofs)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/storage.py', line 200 in ofs
+  StorageAPIController._ofs_impl = get_ofs()
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/storage.py', line 71 in get_ofs
+  storage_backend = config['ofs.impl']
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/paste/registry.py', line 146 in __getitem__
+  return self._current_obj()[key]
+KeyError: 'ofs.impl'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2653#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2657</link>
+        <guid isPermaLink="false">http://localhost/ticket/2657</guid>
+        <title>#2657: hide history button on group pages until retheme</title>
+        <pubDate>Wed, 11 Jul 2012 11:46:53 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+History button in top right of &lt;a class="ext-link" href="http://demo.ckan.org/group/data-explorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/group/data-explorer&lt;/a&gt; goes to &lt;a class="ext-link" href="http://demo.ckan.org/group/history/data-explorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/group/history/data-explorer&lt;/a&gt; and needs hiding
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2657#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2659</link>
+        <guid isPermaLink="false">http://localhost/ticket/2659</guid>
+        <title>#2659: HTML preview window in demo too small</title>
+        <pubDate>Wed, 11 Jul 2012 12:45:23 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="ext-link" href="http://demo.ckan.org/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+David previously fixed this on some version of demo, seems to have regressed. Just want the window to be longer
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2659#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2660</link>
+        <guid isPermaLink="false">http://localhost/ticket/2660</guid>
+        <title>#2660: server error when updating dataset</title>
+        <pubDate>Wed, 11 Jul 2012 12:49:30 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+same as yesterday: &lt;a class="ext-link" href="http://demo.ckan.org/dataset/edit/newcastle-city-council-payments-over-500"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/edit/newcastle-city-council-payments-over-500&lt;/a&gt;
+clicking update/save returns error
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2660#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2661</link>
+        <guid isPermaLink="false">http://localhost/ticket/2661</guid>
+        <title>#2661: delete dataset/group javascript confirm</title>
+        <pubDate>Wed, 11 Jul 2012 13:13:15 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+in 2375-demo-theme-development
+&lt;/p&gt;
+&lt;p&gt;
+templates/package/confirm_delete.html needs to be made to look nice note some writing in black
+&lt;/p&gt;
+&lt;p&gt;
+delete button needs nice home on dataset/edit
+&lt;/p&gt;
+&lt;p&gt;
+you can add js support add ?confirm=yes to url on dataset button to force delete
+&lt;/p&gt;
+&lt;p&gt;
+Please note delete is not yet implemented - but will be in the next few hours
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2661#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2662</link>
+        <guid isPermaLink="false">http://localhost/ticket/2662</guid>
+        <title>#2662: adding colons in tags results in server error on demo</title>
+        <pubDate>Wed, 11 Jul 2012 14:39:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+changing a tag from "country-uk" to "country:uk" and updating gives server error
+&lt;/p&gt;
+&lt;p&gt;
+otherwise updating metadata / adding tags seem fine
+&lt;/p&gt;
+&lt;p&gt;
+either we should allow colons or form should return a message indicating what characters are allowed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2662#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2664</link>
+        <guid isPermaLink="false">http://localhost/ticket/2664</guid>
+        <title>#2664: tags with : cause crazy error message on add dataset in demo</title>
+        <pubDate>Wed, 11 Jul 2012 14:55:03 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2664#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2665</link>
+        <guid isPermaLink="false">http://localhost/ticket/2665</guid>
+        <title>#2665: add dataset stages need to be form buttonable</title>
+        <pubDate>Wed, 11 Jul 2012 16:26:11 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+the stages snippet needs to be inside &amp;lt;form&amp;gt; so I can make some links buttons - eg stage 1 -&amp;gt; stage 2 I want to save the dataset not just move to add resource
+&lt;/p&gt;
+&lt;p&gt;
+if you can just move it within the form html leaving everything else the same - I can then add buttons and pass back for styling
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2665#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2667</link>
+        <guid isPermaLink="false">http://localhost/ticket/2667</guid>
+        <title>#2667: edit resource needs form</title>
+        <pubDate>Fri, 13 Jul 2012 09:01:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I thought I'd made this ticket before but can't find it.  When we have a fully created dataset we need to be able to edit the resources.
+&lt;/p&gt;
+&lt;p&gt;
+template: package/resource_edit.html
+&lt;/p&gt;
+&lt;p&gt;
+when you've made a form reassign to me and I'll get it working
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2667#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2675</link>
+        <guid isPermaLink="false">http://localhost/ticket/2675</guid>
+        <title>#2675: editing related item uses 'create' button instead of save</title>
+        <pubDate>Mon, 16 Jul 2012 10:46:16 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+see &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/gold-prices/related/edit/46ba1174-3666-486e-b822-b5b45ffbb703"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/gold-prices/related/edit/46ba1174-3666-486e-b822-b5b45ffbb703&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+when editing a record, button at bottom right should change to save instead of create
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2675#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2677</link>
+        <guid isPermaLink="false">http://localhost/ticket/2677</guid>
+        <title>#2677: related item links should open in new tab</title>
+        <pubDate>Mon, 16 Jul 2012 10:52:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Clicking on the blue buttons or images on related page &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/gold-prices/related"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/gold-prices/related&lt;/a&gt; should take you to a new tab instead of navigating you away
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2677#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2678</link>
+        <guid isPermaLink="false">http://localhost/ticket/2678</guid>
+        <title>#2678: No UI for deleting a related item</title>
+        <pubDate>Mon, 16 Jul 2012 10:54:47 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Needs to be a way for admins (owners of dataset) to delete related items. I suggest adding a button to the edit page
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/gold-prices/related/edit/d3249863-040a-4f55-a5d8-c86697d0b7b8"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/gold-prices/related/edit/d3249863-040a-4f55-a5d8-c86697d0b7b8&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2678#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2684</link>
+        <guid isPermaLink="false">http://localhost/ticket/2684</guid>
+        <title>#2684: .js leaving forms warning</title>
+        <pubDate>Tue, 17 Jul 2012 07:34:37 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I think it would be nice to have all form pages monitor their forms - excluding search ones - and if a field has changed then warn the user that they have not saved the form data but are leaving the page.
+&lt;/p&gt;
+&lt;p&gt;
+This would help with things like changing resources on the add dataset resource form etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2684#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2685</link>
+        <guid isPermaLink="false">http://localhost/ticket/2685</guid>
+        <title>#2685: delete buttons should be form buttons</title>
+        <pubDate>Tue, 17 Jul 2012 07:36:05 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+stop bots/browsers etc following links and auto deleting stuff
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2685#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2687</link>
+        <guid isPermaLink="false">http://localhost/ticket/2687</guid>
+        <title>#2687: uploading file breaks add dataset process</title>
+        <pubDate>Tue, 17 Jul 2012 09:47:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Once you upload a file, all the buttons on the page stop working. You can't complete &amp;amp; go to next step or save &amp;amp; add another or go to previous
+&lt;/p&gt;
+&lt;p&gt;
+Clicking on these just seems to re-load the page
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_resource/super"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_resource/super&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2687#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2689</link>
+        <guid isPermaLink="false">http://localhost/ticket/2689</guid>
+        <title>#2689: clicking on 'save &amp; add another' doesn't act as expected</title>
+        <pubDate>Tue, 17 Jul 2012 15:15:26 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Clicking on 'save &amp;amp; add another' button here &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_resource/yo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_resource/yo&lt;/a&gt; takes you to step 3 instead of leaving you on step 2 when you haven't added any data.
+&lt;/p&gt;
+&lt;p&gt;
+Instead it should show an alert/ message that no data has been added &amp;amp; that you need to link to a file or upload something
+&lt;/p&gt;
+&lt;p&gt;
+Also, can upload be option 2 instead of 3?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2689#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2690</link>
+        <guid isPermaLink="false">http://localhost/ticket/2690</guid>
+        <title>#2690: long URL misaligns edit button for slug</title>
+        <pubDate>Tue, 17 Jul 2012 15:18:21 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+See attachment. Just need to amke sure that there's enough spacing around the edit button and that it lines up so it doesn't look too wierd
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2690#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2691</link>
+        <guid isPermaLink="false">http://localhost/ticket/2691</guid>
+        <title>#2691: Tag 404 error</title>
+        <pubDate>Tue, 17 Jul 2012 15:21:30 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+404 Not Found The resource could not be found.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2691#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2692</link>
+        <guid isPermaLink="false">http://localhost/ticket/2692</guid>
+        <title>#2692: 'add your own data' link in no search results wrong</title>
+        <pubDate>Tue, 17 Jul 2012 16:00:03 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+the "add your own data"  link in "Try another search term, browse the datasets below or add your own data." here &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?q=stuff"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?q=stuff&lt;/a&gt; doesn't take you to add a dataset, just back to the search/datasets page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2692#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2694</link>
+        <guid isPermaLink="false">http://localhost/ticket/2694</guid>
+        <title>#2694: index page 500 error</title>
+        <pubDate>Wed, 18 Jul 2012 10:01:39 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we need to have proper fix for this - not sure if there is some caching issue
+&lt;/p&gt;
+&lt;p&gt;
+this around the group search
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2694#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2695</link>
+        <guid isPermaLink="false">http://localhost/ticket/2695</guid>
+        <title>#2695: autocomplete for tags</title>
+        <pubDate>Wed, 18 Jul 2012 13:58:11 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+in dataset creation / edit form
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2695#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2696</link>
+        <guid isPermaLink="false">http://localhost/ticket/2696</guid>
+        <title>#2696: autocomplete for resource format</title>
+        <pubDate>Wed, 18 Jul 2012 13:58:58 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+in create/edit dataset forms
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2696#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2703</link>
+        <guid isPermaLink="false">http://localhost/ticket/2703</guid>
+        <title>#2703: add new resource to existing dataset</title>
+        <pubDate>Wed, 18 Jul 2012 14:14:45 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+with add button on dataset page and in 'data &amp;amp; resource' section when there's no data
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2703#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2706</link>
+        <guid isPermaLink="false">http://localhost/ticket/2706</guid>
+        <title>#2706: hide all prefilled fileds from resource edit form page</title>
+        <pubDate>Wed, 18 Jul 2012 14:23:01 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+i.e. mimetype, size, last updated etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2706#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2712</link>
+        <guid isPermaLink="false">http://localhost/ticket/2712</guid>
+        <title>#2712: delete resource functionality needed</title>
+        <pubDate>Thu, 19 Jul 2012 06:48:37 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we need a delete_resource logic action and enable for resources
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2712#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2715</link>
+        <guid isPermaLink="false">http://localhost/ticket/2715</guid>
+        <title>#2715: inactive sidebar widgets</title>
+        <pubDate>Thu, 19 Jul 2012 16:07:53 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+hide trackbacks &amp;amp; subscribe wboxes on dataset pages until we add disqus
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2715#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2716</link>
+        <guid isPermaLink="false">http://localhost/ticket/2716</guid>
+        <title>#2716: truncate long resource names</title>
+        <pubDate>Thu, 19 Jul 2012 16:09:42 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/hi-people/resource/4558c365-fd7a-4f0e-9f2a-90ad47db6b39"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/hi-people/resource/4558c365-fd7a-4f0e-9f2a-90ad47db6b39&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2716#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2720</link>
+        <guid isPermaLink="false">http://localhost/ticket/2720</guid>
+        <title>#2720: no padding around gravitars on all users page</title>
+        <pubDate>Sun, 22 Jul 2012 09:08:31 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+needs some spacing between the image &amp;amp; user name
+&lt;/p&gt;
+&lt;p&gt;
+We could also display some stats here (e.g. number of dataset created, timestamp of last activity)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2720#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2723</link>
+        <guid isPermaLink="false">http://localhost/ticket/2723</guid>
+        <title>#2723: Search result summary badly displayed</title>
+        <pubDate>Sun, 22 Jul 2012 09:25:43 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Text goes over the order by text, with drop down floating on top meaning it's all impossible to read
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?q=unemployment%2C+data&amp;amp;sort=metadata_modified+desc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?q=unemployment%2C+data&amp;amp;sort=metadata_modified+desc&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2723#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2727</link>
+        <guid isPermaLink="false">http://localhost/ticket/2727</guid>
+        <title>#2727: long resource name breaks sidebar navigation box</title>
+        <pubDate>Sun, 22 Jul 2012 09:41:33 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset/resource_edit/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset/resource_edit/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;amp; image attached
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2727#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2730</link>
+        <guid isPermaLink="false">http://localhost/ticket/2730</guid>
+        <title>#2730: please change pricing footer link</title>
+        <pubDate>Sun, 22 Jul 2012 10:02:33 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Pricing &amp;lt;ckan.org/datasuite/solutions&amp;gt; needs to go to &amp;lt;ckan.org/datasuite/services&amp;gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://ckan.org/datasuite/services/"&gt;http://ckan.org/datasuite/services/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2730#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2734</link>
+        <guid isPermaLink="false">http://localhost/ticket/2734</guid>
+        <title>#2734: once format on resource form has errored, no longer submits form</title>
+        <pubDate>Mon, 23 Jul 2012 15:57:41 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Steps to reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;go to edit a resource, e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/ted/resource_edit/a621a6ad-6f1c-46d1-b858-03cdb7a25c07"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/ted/resource_edit/a621a6ad-6f1c-46d1-b858-03cdb7a25c07&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Change the format field to something it doesn't get. e.g. add a comma "HTML,"
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Get message: "The form contains invalid entries:
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Last modified: Date format incorrect
+Size: Invalid integer"
+&lt;/p&gt;
+&lt;ol start="4"&gt;&lt;li&gt;Format field reverts, try to re-save/submit form - i.e. click on "update resource"
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;nothing happens (same if you even try changing the format field
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2734#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2737</link>
+        <guid isPermaLink="false">http://localhost/ticket/2737</guid>
+        <title>#2737: change help/prefilled text in format field</title>
+        <pubDate>Tue, 24 Jul 2012 09:14:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Should be basic format (which is what the datastore wants &amp;amp; what we display to users) e.g. "CSV, XML, JSON etc"
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_resource/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_resource/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2737#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2740</link>
+        <guid isPermaLink="false">http://localhost/ticket/2740</guid>
+        <title>#2740: misleading breadcrumbs</title>
+        <pubDate>Tue, 24 Jul 2012 09:47:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+When adding a resource, the breadcrumb should say "add data" or "add resource" not "create dataset" as you see here:
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_resource/frere"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_resource/frere&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2740#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2743</link>
+        <guid isPermaLink="false">http://localhost/ticket/2743</guid>
+        <title>#2743: add dataset button within group</title>
+        <pubDate>Tue, 24 Jul 2012 10:20:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the 'add dataset' button on a group page &lt;a class="ext-link" href="http://s031.okserver.org:2375/group/another-group-in-the-wall"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group/another-group-in-the-wall&lt;/a&gt; goes to edit group. This is confusing since the interface for this is no way streamlined or helpful.
+&lt;/p&gt;
+&lt;p&gt;
+Can we get this to go to the create dataset process instead (ideally with the group pre-chosen) for now?
+&lt;/p&gt;
+&lt;p&gt;
+Further on will need to re-think &amp;amp; plan the workflow for publishers which will be a large part of new work
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2743#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2744</link>
+        <guid isPermaLink="false">http://localhost/ticket/2744</guid>
+        <title>#2744: license dropdown is cramped</title>
+        <pubDate>Tue, 24 Jul 2012 15:42:23 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+license dropdown - when open we need some line spacing at least in FF
+I think it'd be nice to fix this in phase 2
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2744#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2746</link>
+        <guid isPermaLink="false">http://localhost/ticket/2746</guid>
+        <title>#2746: help bubble on demo homepage missing</title>
+        <pubDate>Wed, 25 Jul 2012 09:43:07 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Hey, this is still missing. It's the one with the add dataset text
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2746#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2747</link>
+        <guid isPermaLink="false">http://localhost/ticket/2747</guid>
+        <title>#2747: Breadcrumb should use title not URL of dataset</title>
+        <pubDate>Wed, 25 Jul 2012 10:22:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+For example here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/new_resource/gold-prices"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/new_resource/gold-prices&lt;/a&gt;
+The breadcrumb shows "gold-prices" which is not the title of the dataset
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2747#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2752</link>
+        <guid isPermaLink="false">http://localhost/ticket/2752</guid>
+        <title>#2752: Navigation highlight missing</title>
+        <pubDate>Wed, 25 Jul 2012 11:43:02 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+When navigating to &lt;a class="ext-link" href="http://s031.okserver.org:2375/group"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/group&lt;/a&gt; on the demo server, the Group link in the navbar is not highlighted in the same was as the other links are when visiting those pages.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2752#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2753</link>
+        <guid isPermaLink="false">http://localhost/ticket/2753</guid>
+        <title>#2753: rename breadcrumb on user page</title>
+        <pubDate>Wed, 25 Jul 2012 14:04:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Currently lower case 'active' is the name of this page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Should be 'All Users' or 'Active Users'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2753#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2754</link>
+        <guid isPermaLink="false">http://localhost/ticket/2754</guid>
+        <title>#2754: Add + icon to two buttons</title>
+        <pubDate>Wed, 25 Jul 2012 14:06:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Specifically the 'add resource' button and the 'add item' button in related section
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2754#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2613</link>
+        <guid isPermaLink="false">http://localhost/ticket/2613</guid>
+        <title>#2613: Javascript functionality</title>
+        <pubDate>Wed, 27 Jun 2012 16:24:31 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;file uploads on dataset creation
+&lt;/li&gt;&lt;li&gt;create dataset validation
+&lt;/li&gt;&lt;li&gt;create dataset slugs
+&lt;/li&gt;&lt;li&gt;Add dataset to group process: pop-up allowing you to quickly search for a pick a dataset to add to group. Must check you have necc auth over dataset to be added
+validation of user name
+&lt;/li&gt;&lt;li&gt;Language box
+&lt;/li&gt;&lt;li&gt;toggling activity stream
+&lt;/li&gt;&lt;li&gt;Search sorting
+&lt;/li&gt;&lt;li&gt;autocomplete on tags
+&lt;/li&gt;&lt;li&gt;add and remove custom fields on forms
+&lt;/li&gt;&lt;li&gt;the rest:
+tooltip on popular datasets with number of views
+&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;
+&lt;p&gt;
+facets to update automatically
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+creating a dataset without reloading page between steps
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+hover on licences information
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+autocomplete on search terms
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+group filtering
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+add comment to datasets
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+social share buttons in lightboxes
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+dataset counts on homepage?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2613#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2636</link>
+        <guid isPermaLink="false">http://localhost/ticket/2636</guid>
+        <title>#2636: Style activity stream in user profile</title>
+        <pubDate>Mon, 09 Jul 2012 11:59:26 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2636#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2681</link>
+        <guid isPermaLink="false">http://localhost/ticket/2681</guid>
+        <title>#2681: autofill on resource format</title>
+        <pubDate>Mon, 16 Jul 2012 12:06:46 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+This is pretty key for standardization.
+&lt;/p&gt;
+&lt;p&gt;
+Also would like us to change the grey text to be: e.g. CSV, JSON, [more examples... i have no idea what they key ones are tbh]
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2681#changelog</comments>
+    </item>
+ </channel>
+</rss>

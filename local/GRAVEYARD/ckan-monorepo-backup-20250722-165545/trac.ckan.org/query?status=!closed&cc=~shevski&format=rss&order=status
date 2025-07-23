@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~shevski&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~shevski&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2247</link>
+        <guid isPermaLink="false">http://localhost/ticket/2247</guid>
+        <title>#2247: Resource preview glitch in some browsers</title>
+        <pubDate>Tue, 20 Mar 2012 12:30:14 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+From Ira:
+Preview for google spreadsheets are not displaying correctly for me in Firefox v.10.0.02, fine in Chrome.
+&lt;a class="ext-link" href="http://i.imgur.com/KJaqz.png"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://i.imgur.com/KJaqz.png&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2247#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2823</link>
+        <guid isPermaLink="false">http://localhost/ticket/2823</guid>
+        <title>#2823: resource additional info title order</title>
+        <pubDate>Thu, 09 Aug 2012 09:32:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Order the items so that none user fields are first from ticket &lt;a class="closed ticket" href="http://localhost/ticket/2707" title="enhancement: Tidy up additional info boxes on dataset and resource pages (closed: fixed)"&gt;#2707&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2823#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2830</link>
+        <guid isPermaLink="false">http://localhost/ticket/2830</guid>
+        <title>#2830: Need method to undelete groups</title>
+        <pubDate>Thu, 09 Aug 2012 10:50:08 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need controller action and front-end method
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2830#changelog</comments>
+    </item>
+ </channel>
+</rss>

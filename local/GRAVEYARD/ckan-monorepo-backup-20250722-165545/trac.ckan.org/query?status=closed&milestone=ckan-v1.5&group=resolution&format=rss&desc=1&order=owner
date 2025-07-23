@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.5&amp;group=resolution&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.5&amp;group=resolution&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1129</link>
+        <guid isPermaLink="false">http://localhost/ticket/1129</guid>
+        <title>#1129: CREP0002: Moderated  Edits</title>
+        <pubDate>Sun, 08 May 2011 10:44:58 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer:&lt;/strong&gt; David Raznick&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2 id="Abstract."&gt;Abstract.&lt;/h2&gt;
+&lt;p&gt;
+We are trying to achieve these goals.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;To get people involved with making edits to CKAN metadata.
+&lt;/li&gt;&lt;li&gt;To have an ownership model as to who can moderate and validate these changes
+&lt;/li&gt;&lt;li&gt;To not put too huge a burden on these owners.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+In order to achieve this, a feature which lets anyone edit a package but only let the moderator/owner accept it.  The moderator should be able to look at a list of changes and accept the ones that
+&lt;/p&gt;
+&lt;p&gt;
+This cep is not about 'if' we need such a feature, it is about 'how' we go about implementing it. Another cep may needed for the 'if' case.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+We need the following to be possible.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Storing revision of objects that are not the current active one.
+&lt;/li&gt;&lt;li&gt;A way of the user viewing past revisions.
+&lt;/li&gt;&lt;li&gt;Accessing not only the history of a particular object but also of related objects at that time. i.e If a resource related to a package changes we need a way to see this when looking at the package.
+&lt;/li&gt;&lt;li&gt;A robust way of doing this in the face of database schema changes.
+&lt;/li&gt;&lt;li&gt;Make sure database queries are quick.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Solutions."&gt;Solutions.&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt; Store the whole dictization of the package and all its related objects every time you change anything in its dictized representation and only save to the database proper if accepted.
+&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Pros
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Easy to implement, we already have a preview which makes the dictized form of a package without actually saving it.  This will just need to be persisted in some way.
+&lt;/li&gt;&lt;li&gt;Fast retrieval.
+&lt;/li&gt;&lt;li&gt;Potential to store a branching revision tree of changes.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Cons
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;No easy way to remake the dictized packages historically or if there is an there a change in the way we represent packages, i.e schema changes.
+&lt;/li&gt;&lt;li&gt;Will only work for the particular objects we decide to store these changes for.
+&lt;/li&gt;&lt;li&gt;Stores a lot of repeated information
+&lt;/li&gt;&lt;/ul&gt;&lt;ol start="2"&gt;&lt;li&gt; Write specialized queries for every read of the database looking only at the revision tables.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+This method requires there to be a change in the way we use VDM, so that we manage statefulness ourselves. We will need to add other states such as 'waiting for approval'.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Pros
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;No specialized storage required
+&lt;/li&gt;&lt;li&gt;Only need to change queries when schema changes
+&lt;/li&gt;&lt;li&gt;Can be made to work easily for other objects
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Cons
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Slower query time on read, as even looking at the last active package will need to do a fairly complicated query.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Implementationdetails."&gt;Implementation details.&lt;/h2&gt;
+&lt;p&gt;
+1.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+A new table with columns  id, user, package_id, timestamp, revision_id, parent_id, dictized_package.
+revision_id should be null unless it is actually persisted to the database.  parent_id is the id that this package_dict was changed from.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+We could store only the diffs of the dictized_package as long as we assure that everything inside the json is stably sorted, this will make getting the historical data out slower.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Getting out the history of the dictized packages is an intensive task, as it will require replaying the whole history of all the changes and creating the dict for each change.  This re-caching will need to be redone for every change we make to dictized representation of a package.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+2.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Every normal packages read needs to look at the revision table to see the last accepted change in the dictized representation of the package.
+We also need to way to get what the dictized representation of the package was like at any point of its revision history.  This querying is non-trivial in sql.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+David Raznick to do it.
+&lt;/p&gt;
+&lt;h2 id="Progress."&gt;Progress.&lt;/h2&gt;
+&lt;p&gt;
+Decided to go with option 2. However we will change the revisioning system to be like the schema attached.
+This gets rid of difficult querying problems caused by querying the revision tables by adding an end date, meaning you can do range queries.
+&lt;/p&gt;
+&lt;p&gt;
+The better and more normalized version of a revisioning system is outlined &lt;a class="ext-link" href="https://docs.google.com/drawings/d/1Y7nMgVsrs081Pame2RdbZHlCAlV33ddTZ8VAsab1j-0/edit?hl=en_GB&amp;amp;authkey=CJfd8vsB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://docs.google.com/drawings/d/1Y7nMgVsrs081Pame2RdbZHlCAlV33ddTZ8VAsab1j-0/edit?hl=en_GB&amp;amp;authkey=CJfd8vsB&lt;/a&gt;.
+We will be a step closer to that, with this change, but we will keep the current vdm more or less, intact.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1129#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1140</link>
+        <guid isPermaLink="false">http://localhost/ticket/1140</guid>
+        <title>#1140: Adding the package to the group is not search indexed</title>
+        <pubDate>Wed, 18 May 2011 11:31:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+To reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;&lt;tt&gt;paster db init&lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;&lt;tt&gt;paster create-test-data&lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;In Web UI: create new group 'tilo', which includes package 'annakarenina'
+&lt;/li&gt;&lt;li&gt;&lt;tt&gt;curl http://localhost:5000/api/search/package?groups=tilo&lt;/tt&gt;  results in 0 results (WRONG)
+&lt;/li&gt;&lt;li&gt;&lt;tt&gt;paster search-index rebuild&lt;/tt&gt;
+&lt;/li&gt;&lt;li&gt;&lt;tt&gt;curl http://localhost:5000/api/search/package?groups=tilo&lt;/tt&gt;  results in 1 result
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1140#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1245</link>
+        <guid isPermaLink="false">http://localhost/ticket/1245</guid>
+        <title>#1245: Reorganise ckan.org pages</title>
+        <pubDate>Thu, 28 Jul 2011 14:01:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Here is Rufus' plan for ckan.org reorganisation from &lt;a class="ext-link" href="http://ckan.okfnpad.org/documentation"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/documentation&lt;/a&gt; (22/7/11) (ticket made by dread):
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/solutions
+  /overview &amp;lt;--- current 'about' page (the software)
+  /customers &amp;lt;-- say "in addition to our clients..."
+  /features &amp;lt;-- needs most work (pictures etc)
+/pricing/  &amp;lt;-- simplest thing possible ... talk with Ira (cover pricing and support)
+/developers &amp;lt;--- links to http://docs.ckan.org/, getting the software, the wiki, the mailing list /contact
+/blog
+&lt;/pre&gt;&lt;p&gt;
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;add tagline in header - "the data portal software"
+&lt;/li&gt;&lt;li&gt;make and add glossy PDF
+&lt;/li&gt;&lt;li&gt;change "data hub" to "data portal" passim (if only using one  term)
+&lt;/li&gt;&lt;li&gt;add info@…
+&lt;/li&gt;&lt;li&gt;image banner on home page - redo screenshots without menus
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1245#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1353</link>
+        <guid isPermaLink="false">http://localhost/ticket/1353</guid>
+        <title>#1353: No UI to remove resources</title>
+        <pubDate>Thu, 22 Sep 2011 22:16:05 GMT</pubDate>
+        
+        <dc:creator>nickstenning</dc:creator>
+
+        <description>&lt;p&gt;
+I have no idea whether this was a deliberate decision or not, but there is a total absence of any UI with which to delete resources from the currently deployed version of thedatahub.org.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1353#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/852</link>
+        <guid isPermaLink="false">http://localhost/ticket/852</guid>
+        <title>#852: [super] Dataset upload and archiving</title>
+        <pubDate>Tue, 07 Dec 2010 11:56:33 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+3 (4) use cases: (With and without access to auth keys.)
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;upload form on ckan (by default local system has auth key for storage)
+&lt;/li&gt;&lt;li&gt;datapkg upload (client) (by default without key) (plumbing done)
+&lt;/li&gt;&lt;li&gt;background job archiving downloads (by queue client)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Most important are:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Upload form on ckan.net (with access to keys)
+&lt;/li&gt;&lt;li&gt;API for getting credentials for upload from ckan.net api (without access to keys).
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Aside: Once 2 was done we could deprecate storage.ckan.net
+&lt;/p&gt;
+&lt;h3 id="Sub-tickets"&gt;Sub-tickets&lt;/h3&gt;
+&lt;p&gt;
+&lt;strong&gt; Required infrastructure &lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt; - Resource 'extra' fields
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/358" title="enhancement: Resources in REST API (closed: duplicate)"&gt;#358&lt;/a&gt; - Resources in REST API
+&lt;/li&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/235" title="enhancement: Resource format normalization and detection (assigned)"&gt;#235&lt;/a&gt; - Resource format normalization and detection
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;strong&gt; User upload via Web UI &lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/877" title="enhancement: File upload in WUI (extension) (closed: fixed)"&gt;#877&lt;/a&gt; - File upload in WUI
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/878" title="enhancement: Integrate file upload with workflow around package resources (closed: fixed)"&gt;#878&lt;/a&gt; - Integrate file upload with workflow around package resources
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;strong&gt; User upload via CLI/datapkg &lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/853" title="enhancement: Client upload to storage without having primary storage keys (closed: fixed)"&gt;#853&lt;/a&gt; - plumbing for credential-less rest upload
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/879" title="enhancement: Storage auth API (closed: fixed)"&gt;#879&lt;/a&gt; - Storage auth API
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also related:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/405" title="task: Retrieval options for package resources (closed: fixed)"&gt;#405&lt;/a&gt; - Retrieval options for package resources
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="MoreInfo"&gt;More Info&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Upload/storage discussion: &lt;a class="ext-link" href="http://ckan.okfnpad.org/storage"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/storage&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;For api to generate upload key (for e.g. datapkg usage) suggest locating at ckan.net/api/utils/
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/852#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1070</link>
+        <guid isPermaLink="false">http://localhost/ticket/1070</guid>
+        <title>#1070: Plan a new domain model and layer architecture for CKAN</title>
+        <pubDate>Mon, 04 Apr 2011 09:55:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="ext-link" href="http://wiki.ckan.net/Domain_Model"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Domain_Model&lt;/a&gt; especially section on v2.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;New domain model is planned but not yet finally agreed.
+&lt;/li&gt;&lt;li&gt;Layer architecture is complete and implemented
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1070#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1074</link>
+        <guid isPermaLink="false">http://localhost/ticket/1074</guid>
+        <title>#1074: Refactor authz web user interface to have common code and templating</title>
+        <pubDate>Fri, 08 Apr 2011 14:06:26 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently repeat the same template and code across Package Authz, Group Authz, and Authz Group authz.
+&lt;/p&gt;
+&lt;p&gt;
+Having now implemented a new, cleaner setup in ckanext-admin we should port this back into core.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Common template code (checkbox template)
+&lt;/li&gt;&lt;li&gt;Logic code (or just common code) for wiring into authz system
+&lt;/li&gt;&lt;li&gt;Look for all places thoroughout the system where usernames, authzgroups or groups need to be typed into boxes, and make sure that they auto-complete appropriately.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Will also deliver a significant improvement in the form of ajax user lookup.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1074#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1190</link>
+        <guid isPermaLink="false">http://localhost/ticket/1190</guid>
+        <title>#1190: [super] CREP 0004 Data API and Data Processing System</title>
+        <pubDate>Thu, 16 Jun 2011 12:33:31 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+For some time (e.g. 1y+!) we have known that we want to integrate some kind of datastore / data processing system with CKAN. We've had a CREP in progress on this for some months (may copy that here at some point):
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://wiki.ckan.org/CEP0004"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/CEP0004&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We can distinguish 3 modules that are needed:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;"Webstore": A datastore with dataapi - &lt;a class="closed ticket" href="http://localhost/ticket/1208" title="enhancement: Webstore: a datastore with web API (closed: fixed)"&gt;#1208&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Suggestion is this would be sqlite based with a simple sql based API. &lt;a class="ext-link" href="http://ckan.net/api/data/{user|org}/{datastore_name}?q={some-read-sql-query"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/data/{user|org}/{datastore_name}?q={some-read-sql-query&lt;/a&gt;}
+&lt;/p&gt;
+&lt;ol start="2"&gt;&lt;li&gt;Automated conversion of suitable resources into datastore upon resource creation so that e.g. they are accessible via the API. &lt;a class="closed ticket" href="http://localhost/ticket/1398" title="enhancement: Automated conversion of resource data into webstore (closed: fixed)"&gt;#1398&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;A data processing system which utilizes this datastore. One could
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+get a long way with simple javascript running in the browser for development with this javascript then run offline using something like nodejs. Alternatively one could allow one to specify a url to e.g. a python file which would then be run in a sandbox (with access to some specified set of python modules) - &lt;a class="new ticket" href="http://localhost/ticket/1432" title="enhancement: [super] Data processing system for CKAN and Webstore (new)"&gt;#1432&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Moreinfo"&gt;More info&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Overview diagram: &lt;a class="ext-link" href="https://docs.google.com/drawings/d/1XK7dcpFXNlMzVFgLPYPZUXOsFRPzgCEvS-w7FcvydEQ/edit?hl=en_GB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://docs.google.com/drawings/d/1XK7dcpFXNlMzVFgLPYPZUXOsFRPzgCEvS-w7FcvydEQ/edit?hl=en_GB&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1190#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1252</link>
+        <guid isPermaLink="false">http://localhost/ticket/1252</guid>
+        <title>#1252: Deprecate ckan.net in favour of thedatahub.org</title>
+        <pubDate>Fri, 29 Jul 2011 18:48:59 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Deprecate ckan.net in favour of thedatahub.org
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Announce
+&lt;/li&gt;&lt;li&gt;Create thedatahub.org and have it run same data as ckan.net
+&lt;/li&gt;&lt;li&gt;Announce closing down of ckan.net with 302
+&lt;/li&gt;&lt;li&gt;Implement 302 permanent
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also redirect wiki.ckan.net to wiki.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1252#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1282</link>
+        <guid isPermaLink="false">http://localhost/ticket/1282</guid>
+        <title>#1282: JS and WUI tidy up</title>
+        <pubDate>Tue, 23 Aug 2011 09:06:29 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Consolidate js. Remove cruft.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Move stuff to vendor
+&lt;ul&gt;&lt;li&gt;Have all vendor libs local (?)
+&lt;/li&gt;&lt;li&gt;jquery, jquery-ui etc
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Consolidate autocomplete to use jquery-ui
+&lt;ul&gt;&lt;li&gt;package autocomplete (groups)
+&lt;/li&gt;&lt;li&gt;tag autocomplete (package)
+&lt;/li&gt;&lt;li&gt;user autocomplete (authz group create)
+&lt;ul&gt;&lt;li&gt;turns out that authz group edit had autocomplete disabled so refactoring meant enabling ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Move forms.css into main
+&lt;/li&gt;&lt;li&gt;Remove tag cloud from front page (can be example going forward)
+&lt;/li&gt;&lt;li&gt;Remove bookmarklet (since in wiki at: &lt;a class="ext-link" href="http://wiki.ckan.net/Managing_Data_Packages#How_Do_I_Install_the_CKAN_Bookmarklet.3F"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Managing_Data_Packages#How_Do_I_Install_the_CKAN_Bookmarklet.3F&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Move name slug generation into standard js and clean up
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Possible:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;JS unit tests for the given pages ...
+&lt;/li&gt;&lt;li&gt;Option to use external site to serve js and css (e.g. CDN)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1282#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1294</link>
+        <guid isPermaLink="false">http://localhost/ticket/1294</guid>
+        <title>#1294: [super] Package creation and editing UX improvements</title>
+        <pubDate>Sat, 27 Aug 2011 00:43:31 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Largely an integration of work from ckanjs
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1295" title="enhancement: Simplify package create form (closed: fixed)"&gt;#1295&lt;/a&gt; Simplify package create form
+&lt;/li&gt;&lt;li&gt;Improvements to edit form
+&lt;ul&gt;&lt;li&gt;Split edit form into sections
+&lt;/li&gt;&lt;li&gt;Remove preview from edit form (introduce inline preview on description/notes field)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1296" title="enhancement: Improved resource adding/editing on dataset/page page (closed: fixed)"&gt;#1296&lt;/a&gt; Improved resource adding/editing on dataset/page page
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/878" title="enhancement: Integrate file upload with workflow around package resources (closed: fixed)"&gt;#878&lt;/a&gt; File upload integrated into resource creation
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1297" title="enhancement: In-place preview of edited description markdown on edit dataset form (closed: fixed)"&gt;#1297&lt;/a&gt; In-place editing of notes field for existing packages
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1294#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1361</link>
+        <guid isPermaLink="false">http://localhost/ticket/1361</guid>
+        <title>#1361: Simple search support</title>
+        <pubDate>Mon, 26 Sep 2011 23:04:36 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Would be nice if CKAN could work out of the box without the need for SOLR (solr is great but complex and heavyweight to install).
+&lt;/p&gt;
+&lt;p&gt;
+Propose:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;ckan.simple_search config option
+&lt;/li&gt;&lt;li&gt;If set:
+&lt;ul&gt;&lt;li&gt;query via simple query to database backend
+&lt;/li&gt;&lt;li&gt;do no specialized indexing
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Extras"&gt;Extras&lt;/h2&gt;
+&lt;p&gt;
+Remove
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;TagSearchQuery?&lt;/a&gt; from lib/search (just do a search directly)?
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1360" title="enhancement: Remove support for filter by download and filter by openness in search (closed: fixed)"&gt;#1360&lt;/a&gt;: filter by downloadable and filter by open search options
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="PossibleExtras"&gt;Possible Extras&lt;/h2&gt;
+&lt;p&gt;
+(Probably future improvements)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Re-introduce full-text search indexing where supported in e.g. postgres and use for querying
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1361#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1249</link>
+        <guid isPermaLink="false">http://localhost/ticket/1249</guid>
+        <title>#1249: Exclude script tag from extraction for i18n</title>
+        <pubDate>Fri, 29 Jul 2011 16:55:36 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently have this script section put in for i18n. It shouldn't be.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;script type="text/javascript"&amp;gt;
+//&amp;lt;![CDATA[
+(function($){
+    $.fn.ajaxCreateSlug = function(name, url) {
+        var title = this;
+        var updater = {
+            init: function(title, name) {
+                // Add a new element where the validity of the package name can be displayed
+                this.name_field = name;
+                this.title_field = title;
+                this.name_field.parent().append('&amp;lt;div id="package_name_valid_msg"&amp;gt;&amp;lt;/div&amp;gt;');
+                this.title_field.blur(this.title_change_handler())
+                this.title_field.keyup(this.title_change_handler())
+                this.name_field.keyup(this.name_change_handler());
+                this.name_field.blur(this.name_blur_handler());
+                this.url = url;
+            },
+....
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1249#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1250</link>
+        <guid isPermaLink="false">http://localhost/ticket/1250</guid>
+        <title>#1250: Search results should be sorted by score rather than alphabetical</title>
+        <pubDate>Fri, 29 Jul 2011 18:39:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment we sort search results alphabetically. While this is useful for doing 'browse' case where no search bad for all other cases.
+&lt;/p&gt;
+&lt;p&gt;
+Adopt default sort order of 'score' though may wish to keep alphabetical for no search term (i.e. wildcard).
+&lt;/p&gt;
+&lt;p&gt;
+Options:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Default this in solr (no need to touch code) but fragile and affects everything ...
+&lt;/li&gt;&lt;li&gt;Do it in code and default to score
+&lt;/li&gt;&lt;li&gt;Do it in code and have alphabetical (on name or title?) when no criteria otherwise score
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Aside: may also wish to support search in query api but that is for later!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1250#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/103</link>
+        <guid isPermaLink="false">http://localhost/ticket/103</guid>
+        <title>#103: View a package at a given revision</title>
+        <pubDate>Wed, 26 Aug 2009 12:31:37 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a user I want to view a package at a given revision:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When I visit /package/read/xyz?rev=yyy I should be shown package at revision yyy
+&lt;/li&gt;&lt;li&gt;package history page should provide links to these pages
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/103#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/954</link>
+        <guid isPermaLink="false">http://localhost/ticket/954</guid>
+        <title>#954: [super] API version 3</title>
+        <pubDate>Fri, 04 Feb 2011 09:31:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1107" title="refactor: Move package autocomplete from package controller and move to API (closed: fixed)"&gt;#1107&lt;/a&gt; Move package autocomplete from package controller and move to API
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1087" title="enhancement: version and contact info api call (closed: fixed)"&gt;#1087&lt;/a&gt; version and contact info api call
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Move to a format that has a separate responseHeader and response.
+&lt;/p&gt;
+&lt;h3 id="Astandardpackageresponse"&gt;A standard package response&lt;/h3&gt;
+&lt;pre class="wiki"&gt;{
+  responseHeader: {
+    status: 0,
+  }
+  response: {package-dict}
+}
+&lt;/pre&gt;&lt;p&gt;
+On error:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+  responseHeader: {
+    status: {err-code},
+    error: 'message'
+  }
+  response: none
+}
+&lt;/pre&gt;&lt;h3 id="Asearchquery"&gt;A search query&lt;/h3&gt;
+&lt;p&gt;
+Based directly on solr.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{
+  responseHeader: {
+    status: 0,
+  }
+  response: {
+    numFound: 5,
+    start: 0
+    docs: [
+    ]
+  }
+}
+&lt;/pre&gt;&lt;h2 id="Issues"&gt;Issues&lt;/h2&gt;
+&lt;p&gt;
+This is a breaking change for clients
+&lt;/p&gt;
+&lt;h2 id="References"&gt;References&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.apache.org/solr/SolJSON"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.apache.org/solr/SolJSON&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://www.flickr.com/services/api/response.json.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.flickr.com/services/api/response.json.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/954#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/961</link>
+        <guid isPermaLink="false">http://localhost/ticket/961</guid>
+        <title>#961: [super] Refactoring of forms, validation and model synchronization</title>
+        <pubDate>Mon, 07 Feb 2011 09:10:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This is a meta-ticket to hold all of the work on refactoring forms, validation and model-synchronization in CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+ckan-dev thread: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2011-January/000180.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2011-January/000180.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="TheIssue"&gt;The Issue&lt;/h2&gt;
+&lt;p&gt;
+From &lt;a class="closed ticket" href="http://localhost/ticket/926" title="enhancement: Pick a simpler form framework (closed: fixed)"&gt;#926&lt;/a&gt;:
+&lt;/p&gt;
+&lt;p&gt;
+The current formalchemy setup conflates view, controller and model code in a way that makes it hard to debug and customise.
+&lt;/p&gt;
+&lt;p&gt;
+From &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2011-January/000181.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2011-January/000181.html&lt;/a&gt;:
+&lt;/p&gt;
+&lt;p&gt;
+... FormAlchemy, in retrospect, was probably a mistake as it merges too much model/validation/form generation into one thing.
+&lt;/p&gt;
+&lt;p&gt;
+At least 3 functions involved [in this area]:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Generating (or just filling) a form template with 'form data' (and errors)
+&lt;/li&gt;&lt;li&gt;Converting model data to form data (also happens for APIs in fact) -- let's call this 'dict-ization'
+&lt;/li&gt;&lt;li&gt;Converting form data to model data (and validating) (inverse of previous step)
+&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="RelatedTickets"&gt;Related Tickets&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/926" title="enhancement: Pick a simpler form framework (closed: fixed)"&gt;#926&lt;/a&gt; - Pick a simpler form framework
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1046" title="enhancement: Dictization and the new logic layer (closed: fixed)"&gt;#1046&lt;/a&gt; 'dictization' and the logic layer - serialization / deserialization of package (and other domain objects) to standard intermediate format such as json-convertable python dict
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1079" title="enhancement: Refactor API to use new logic layer and dictization (closed: fixed)"&gt;#1079&lt;/a&gt; Refactor API to use new logic layer and dictization
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1078" title="enhancement: Refactors WUI controllers and forms to use logic layer (closed: fixed)"&gt;#1078&lt;/a&gt; Refactor WUI controllers and forms to use logic layer
+&lt;/li&gt;&lt;li&gt;cf existing dumper and importer code
+&lt;/li&gt;&lt;li&gt;This will fix &lt;a class="closed ticket" href="http://localhost/ticket/662" title="defect: Can't put entity that is returned by posting to package register (closed: fixed)"&gt;#662&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[not ticketed yet] - validation layer (should work on serialized objects?)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/662" title="defect: Can't put entity that is returned by posting to package register (closed: fixed)"&gt;#662&lt;/a&gt; - Can't put entity that is returned by posting to package register (Defect)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/972" title="enhancement: Merge 'extras' into main package dict rather than having separate key (closed: wontfix)"&gt;#972&lt;/a&gt; - Merge 'extras' into main package dict rather than having separate key
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1035" title="enhancement: Form impressions given an ID (closed: wontfix)"&gt;#1035&lt;/a&gt; - Form impressions are given IDs
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/810" title="enhancement: Move &amp;#34;add packages&amp;#34; field up in group form (closed: wontfix)"&gt;#810&lt;/a&gt; - Move "add packages" field up in group form (easier to do this once forms are done)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/961#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1078</link>
+        <guid isPermaLink="false">http://localhost/ticket/1078</guid>
+        <title>#1078: Refactors WUI controllers and forms to use logic layer</title>
+        <pubDate>Mon, 11 Apr 2011 08:09:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Deserialize forms to new dict format.
+&lt;/li&gt;&lt;li&gt;Replace controllers/forms to use dictization.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1078#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1211</link>
+        <guid isPermaLink="false">http://localhost/ticket/1211</guid>
+        <title>#1211: [super] Drupal integration</title>
+        <pubDate>Wed, 06 Jul 2011 13:20:42 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Sub-tasks / tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1335" title="enhancement: Action API - basic (closed: fixed)"&gt;#1335&lt;/a&gt; Action API - access to any logic layer function
+&lt;/li&gt;&lt;li&gt;Standardize logic functions on ordering: (context, data_dict) and put parameters into data_dict.
+&lt;/li&gt;&lt;li&gt;Add package_create_validate &amp;amp; package_update_validate logic functions
+&lt;/li&gt;&lt;li&gt;Allow extensions to provide logic layer functions (IActions)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1211#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1053</link>
+        <guid isPermaLink="false">http://localhost/ticket/1053</guid>
+        <title>#1053: Deletion in Model API</title>
+        <pubDate>Tue, 22 Mar 2011 10:33:59 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Currently in the API if you DELETE a package/group/user (and you have the required permissions) then it purges the object, when it should probably just set the state to deleted.
+&lt;/p&gt;
+&lt;p&gt;
+There is no way to delete objects at the moment - changes to 'state' are ignored in the API.
+&lt;/p&gt;
+&lt;p&gt;
+Do we need an alternative way to purge objects in the API?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1053#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1431</link>
+        <guid isPermaLink="false">http://localhost/ticket/1431</guid>
+        <title>#1431: Captcha field - foreign chars cause exception</title>
+        <pubDate>Mon, 31 Oct 2011 16:34:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+During registering a user, the user inputs foreign chars into the captcha field.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://thedatahub.org/user/register
+...
+Module ckan.lib.captcha:22 in check_recaptcha
+&amp;lt;&amp;lt;                                     remoteip=client_ip_address,
+                                          challenge=recaptcha_challenge_field,
+                                          response=recaptcha_response_field))
+           f = urllib2.urlopen(recaptcha_server_name, params)
+           data = f.read()
+&amp;gt;&amp;gt;  response=recaptcha_response_field))
+Module urllib:1267 in urlencode
+&amp;lt;&amp;lt;          for k, v in query:
+                   k = quote_plus(str(k))
+                   v = quote_plus(str(v))
+                   l.append(k + '=' + v)
+           else:
+&amp;gt;&amp;gt;  v = quote_plus(str(v))
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xea' in position 0: ordinal not in range(128)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1431#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1142</link>
+        <guid isPermaLink="false">http://localhost/ticket/1142</guid>
+        <title>#1142: [super] Major Overhaul and Extension of CKAN Documentation</title>
+        <pubDate>Wed, 18 May 2011 14:04:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/1041" title="enhancement: Start Using the CKAN Wiki for Tutorial-style documentation (assigned)"&gt;#1041&lt;/a&gt; Start Using the CKAN Wiki for Tutorial-style documentation
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1192" title="task: Convert CKAN Sphinx docs into admin/reference manual (closed: fixed)"&gt;#1192&lt;/a&gt; Convert CKAN Sphinx docs into admin/reference manual
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Previous super ticket (from 3m ago): &lt;a class="ext-link" href="http://trac.ckan.org/ticket/927"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.ckan.org/ticket/927&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKAN 1-page overview (for enterprise and for data hackers)
+&lt;/li&gt;&lt;li&gt;Administrator's Guide (including install)
+&lt;/li&gt;&lt;li&gt;Extensions Guide
+&lt;/li&gt;&lt;li&gt;Separate CKAN.net info from Software Documentation (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also now a wiki page with more detail: &lt;a class="ext-link" href="http://wiki.ckan.net/Documentation_Plans"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Documentation_Plans&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="MinorItems"&gt;Minor Items&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1142#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/559</link>
+        <guid isPermaLink="false">http://localhost/ticket/559</guid>
+        <title>#559: Fix package lookup on group edit form</title>
+        <pubDate>Fri, 03 Sep 2010 19:39:36 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Lookup is needed to add a package but won't show up at some times.
+&lt;/p&gt;
+&lt;p&gt;
+Originally reported by Anja Jentzsch, re questions.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/559#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/910</link>
+        <guid isPermaLink="false">http://localhost/ticket/910</guid>
+        <title>#910: Refactor CKANrdf to support extras</title>
+        <pubDate>Mon, 17 Jan 2011 12:07:06 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Extra fields should be represented in some manner.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/910#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/941</link>
+        <guid isPermaLink="false">http://localhost/ticket/941</guid>
+        <title>#941: Submit apps or ideas for apps related to datasets (extension)</title>
+        <pubDate>Sun, 30 Jan 2011 15:58:19 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+The basic purpose of this extension is provide a way to record  'apps' (applications) that relate to datasets in CKAN. Both existing apps and ideas for apps should be permitted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/941#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/972</link>
+        <guid isPermaLink="false">http://localhost/ticket/972</guid>
+        <title>#972: Merge 'extras' into main package dict rather than having separate key</title>
+        <pubDate>Thu, 10 Feb 2011 10:04:42 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Rather than have a separate 'extras' key all the extras fields should be consolidated into the main package dict when presenting the package internally or e.g. via the API.
+&lt;/p&gt;
+&lt;p&gt;
+Why? Extras are really just an artefact of our internal storage model. Clients of the system (both internal and external) should just see a set of key/values with no distinction between extras and non-extras.
+&lt;/p&gt;
+&lt;h2 id="Issues"&gt;Issues&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Possible breaking change to the API (could enforce backwards compatibility by keepings extras for the time being)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Possible subticket of forms refactoring: &lt;a class="closed ticket" href="http://localhost/ticket/961" title="enhancement: [super] Refactoring of forms, validation and model synchronization (closed: fixed)"&gt;#961&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/972#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/810</link>
+        <guid isPermaLink="false">http://localhost/ticket/810</guid>
+        <title>#810: Move "add packages" field up in group form</title>
+        <pubDate>Wed, 17 Nov 2010 11:11:27 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Subticket of forms super ticket &lt;a class="closed ticket" href="http://localhost/ticket/961" title="enhancement: [super] Refactoring of forms, validation and model synchronization (closed: fixed)"&gt;#961&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/810#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/912</link>
+        <guid isPermaLink="false">http://localhost/ticket/912</guid>
+        <title>#912: Rethink result row representation in dcat-tools/rdfsolr</title>
+        <pubDate>Mon, 17 Jan 2011 12:11:39 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Should license go in the bottom line?
+&lt;/li&gt;&lt;li&gt;Formats should be styled as in CKAN
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/912#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/913</link>
+        <guid isPermaLink="false">http://localhost/ticket/913</guid>
+        <title>#913: Handle licenses in dcat-tools</title>
+        <pubDate>Mon, 17 Jan 2011 12:13:27 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create a list of all valid predicates where licenses are stored.
+&lt;/li&gt;&lt;li&gt;Create a license normalization registry in GSpread
+&lt;/li&gt;&lt;li&gt;Fill spreadsheet from OKD/OSI lists.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/913#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1354</link>
+        <guid isPermaLink="false">http://localhost/ticket/1354</guid>
+        <title>#1354: Pass the context object to plugins implementing the IPackageController and IGroupController</title>
+        <pubDate>Sun, 25 Sep 2011 13:01:20 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Plugins implementing some IPackageController or IGroupController operations (i.e. read, create, edit, delete) may need the context used in the logic action. For instance, to access the Session that created a package to perform additional queries from the extension (In that case the main logic action will still perform the final commit).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1354#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/958</link>
+        <guid isPermaLink="false">http://localhost/ticket/958</guid>
+        <title>#958: ui for new kind field</title>
+        <pubDate>Fri, 04 Feb 2011 12:34:56 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Ui for related new field in resource (&lt;a class="closed ticket" href="http://localhost/ticket/957" title="enhancement: new &amp;#34;kind &amp;#34; field added to resources (closed: wontfix)"&gt;#957&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/958#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1410</link>
+        <guid isPermaLink="false">http://localhost/ticket/1410</guid>
+        <title>#1410: Add Gravatars to user profiles</title>
+        <pubDate>Fri, 21 Oct 2011 12:39:34 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Since we now require email addresses, it's sensible to request users' gravatars to add a little flavour to their user profile (and, potentially, other places eg. comments threads?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1410#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/764</link>
+        <guid isPermaLink="false">http://localhost/ticket/764</guid>
+        <title>#764: Read-only CKAN Web UI</title>
+        <pubDate>Tue, 26 Oct 2010 11:13:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Whilse using CKAN web interface, you are not tempted to edit stuff:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;You know at all times this CKAN is read-only
+&lt;/li&gt;&lt;li&gt;All editing facilities are still seen but greyed-out with an indication why it is.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/764#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1094</link>
+        <guid isPermaLink="false">http://localhost/ticket/1094</guid>
+        <title>#1094: [super] Refactor the Auth System</title>
+        <pubDate>Mon, 18 Apr 2011 09:12:53 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Here are some proposed changes related to CKAN's authorization system - they aren't very big, but should provide for some forthcoming use cases including &lt;a class="closed ticket" href="http://localhost/ticket/787" title="task: Auth API (closed: fixed)"&gt;#787&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Two man reasons for the changes are:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We have a completely refactored architecture now which introduces a logic layer. These Auth changes are designed to better support the way we work with that layer.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Different CKAN extension apps may need radically different authentication/authorisation so we need to allow whatever we have to be override-able.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The first two changes revolve around the is_authorized method, which
+is called by the logic layer to ask whether a particular user (e.g.
+Bob) is allowed to do a certain action (e.g. edit) on a certain object (e.g. Package).
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;The first thing the is_authorized method is a hook to a plugin
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+which *overrides* the current call with its own implementation (note: in previous discussions we have considered allowing a chain of plugins, no longer!)
+&lt;/p&gt;
+&lt;p&gt;
+Reason: authorization can be completely delegated to another system
+(or partially)
+&lt;/p&gt;
+&lt;ol start="2"&gt;&lt;li&gt;is_authorized method currently takes (username, action, object)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+but for action=create_package, the object supplied is System, and for action=edit the object supplied is the package. Instead action should always be the string name of a function in the logic layer and object should always be the object passed to that function. This means our auth system is based around the actual actions we are performing (rather than a model them) and with the actual data that forms the action (rather than a related object). You never need a System object in this model.
+&lt;/p&gt;
+&lt;ol start="3"&gt;&lt;li&gt;Rename these two classes to better reflect what they are
+&lt;ul&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;AuthorizationGroup?&lt;/a&gt; -&amp;gt; &lt;a class="missing wiki"&gt;UserGroup?&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Group -&amp;gt; &lt;a class="missing wiki"&gt;PackageGroup?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;Rename the Editor role to &lt;a class="missing wiki"&gt;PriveledgeUser?&lt;/a&gt; since Editors sometimes can't edit.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Although this sounds a bit radical we already have auth extensions.
+&lt;/p&gt;
+&lt;h2 id="Read-onlyCKANWebUI"&gt;Read-only CKAN Web UI&lt;/h2&gt;
+&lt;p&gt;
+(Additional requirement from &lt;a class="closed ticket" href="http://localhost/ticket/764" title="enhancement: Read-only CKAN Web UI (closed: duplicate)"&gt;#764&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Whilse using CKAN web interface, you are not tempted to edit stuff:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;You know at all times this CKAN is read-only
+&lt;/li&gt;&lt;li&gt;All editing facilities are still seen but greyed-out with an indication why it is.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1094#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/358</link>
+        <guid isPermaLink="false">http://localhost/ticket/358</guid>
+        <title>#358: Resources in REST API</title>
+        <pubDate>Fri, 25 Jun 2010 16:28:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(spun out of &lt;a class="closed ticket" href="http://localhost/ticket/336" title="defect: Resource Search API (closed: fixed)"&gt;ticket:336&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Resource added to model API at:
+&lt;/p&gt;
+&lt;p&gt;
+api/rest/resource
+&lt;/p&gt;
+&lt;h3 id="Examplemodelrequest"&gt;Example model request&lt;/h3&gt;
+&lt;p&gt;
+GET to: /api/2/rest/resource/a3dd8f64-9078-4f04-845c-e3f047125028
+&lt;/p&gt;
+&lt;p&gt;
+returns:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt; [{"id": "a3dd8f64-9078-4f04-845c-e3f047125028",
+   "package_id": "b8a325c8-af2a-43f3-8245-9db7d73dfbfe",
+   "URL": "http://scraperwiki.com/lincolnshire-councillors",
+   "format": "CSV",
+   "Description": "Scrape of www.lincs.gov/councillors.pdf by ScraperWiki.",
+   "hash": "",
+   "position": 2
+ }]
+&lt;/pre&gt;&lt;h2 id="Authorization"&gt;Authorization&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;Have it generic (ie. not per resource) and use an action/role on system
+&lt;/li&gt;&lt;li&gt;Require all resources to attach to packages an inherit their permissions (i.e. read/write etc if and only read/write on associated packages)
+&lt;/li&gt;&lt;li&gt;Introduce Resource in authorization system (requires migration)
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Mixed model
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Create / Edit:
+if resource associated to package:
+    check_permissions(package, update)
+else:
+    check_system_permissions(c.user, model.Action.Resouce Create/Update, model.System)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/358#changelog</comments>
+    </item>
+ </channel>
+</rss>

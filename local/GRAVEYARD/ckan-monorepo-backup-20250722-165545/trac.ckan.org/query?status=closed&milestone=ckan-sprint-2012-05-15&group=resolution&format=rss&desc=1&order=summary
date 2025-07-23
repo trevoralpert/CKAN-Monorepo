@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-05-15&amp;group=resolution&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-05-15&amp;group=resolution&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2314</link>
+        <guid isPermaLink="false">http://localhost/ticket/2314</guid>
+        <title>#2314: parse_rfc_2822 tests failing in some timezones</title>
+        <pubDate>Wed, 18 Apr 2012 17:07:12 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+These two tests:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.tests.lib.test_helpers.&lt;a class="missing wiki"&gt;TestHelpers?&lt;/a&gt;.test_parse_rfc_2822_gmt_case
+&lt;/p&gt;
+&lt;p&gt;
+ckan.tests.lib.test_helpers.&lt;a class="missing wiki"&gt;TestHelpers?&lt;/a&gt;.test_parse_rfc_2822_with_offset
+&lt;/p&gt;
+&lt;p&gt;
+have been failing in certain timezones. In the UK they pass, if you're in Germany they'll fail.
+&lt;/p&gt;
+&lt;p&gt;
+The function being tested uses datetime.datetime.fromtimestamp() which uses the local time, but the tests compare the results against hardcoded strings, so the tests cannot work in different timezones.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2314#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2304</link>
+        <guid isPermaLink="false">http://localhost/ticket/2304</guid>
+        <title>#2304: Watching/following of dataset/users</title>
+        <pubDate>Mon, 16 Apr 2012 14:40:33 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+User story &lt;a class="closed ticket" href="http://localhost/ticket/37" title="enhancement: Purge a Revision (i.e. purge all changes associated with that revision) (closed: fixed)"&gt;#037&lt;/a&gt; here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/feature-1515-activity-streams-user-stories"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/feature-1515-activity-streams-user-stories&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Technical analysis here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2304#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2377</link>
+        <guid isPermaLink="false">http://localhost/ticket/2377</guid>
+        <title>#2377: Upgrade data.gov.sk to CKAN 1.7 and apply their new theme</title>
+        <pubDate>Wed, 09 May 2012 11:46:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2377#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2384</link>
+        <guid isPermaLink="false">http://localhost/ticket/2384</guid>
+        <title>#2384: Rights tool factored out</title>
+        <pubDate>Tue, 15 May 2012 11:19:54 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The command line tool 'rights' is quite handy but it is glued to the CLI. I'm going to factor out the bit which searches for objects etc so it can be used by &lt;a class="missing wiki"&gt;CreateTestData?&lt;/a&gt; etc and will be used by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2369</link>
+        <guid isPermaLink="false">http://localhost/ticket/2369</guid>
+        <title>#2369: Pull latest translations from Transifex into CKAN 1.7</title>
+        <pubDate>Wed, 02 May 2012 16:10:51 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2369#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2353</link>
+        <guid isPermaLink="false">http://localhost/ticket/2353</guid>
+        <title>#2353: Provisional user stories for CMS + Blogging</title>
+        <pubDate>Tue, 01 May 2012 15:05:00 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Provide some provisional user stories for the CMS/Blogging feature.  Should include some of the functionality from wordpresser but be more generic.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2353#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2330</link>
+        <guid isPermaLink="false">http://localhost/ticket/2330</guid>
+        <title>#2330: Make api read-actions GETable</title>
+        <pubDate>Thu, 26 Apr 2012 17:16:25 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Whitelist any GETable api actions, and optionally construct the query from url params rather than body.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2330#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2356</link>
+        <guid isPermaLink="false">http://localhost/ticket/2356</guid>
+        <title>#2356: Localise JavaScript strings</title>
+        <pubDate>Tue, 01 May 2012 15:28:12 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2356#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2364</link>
+        <guid isPermaLink="false">http://localhost/ticket/2364</guid>
+        <title>#2364: Investigation of payment gateways</title>
+        <pubDate>Tue, 01 May 2012 16:29:17 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Need to investigate alternative payment gateways
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2364#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2359</link>
+        <guid isPermaLink="false">http://localhost/ticket/2359</guid>
+        <title>#2359: Investigate pycsw integration</title>
+        <pubDate>Tue, 01 May 2012 15:48:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Tom Kralidis kindly told us on IRC &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; that the latest trunk of pycsw includes support for wsgi and different backends, which sounds like could be really useful for CKAN integration.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="http://irclogs.okfn.org/ckan/2012-04-25.txt"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://irclogs.okfn.org/ckan/2012-04-25.txt&lt;/a&gt; 17:16
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2359#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2361</link>
+        <guid isPermaLink="false">http://localhost/ticket/2361</guid>
+        <title>#2361: Install ckanext-googleanalytics and ckanext-stats on PDEU</title>
+        <pubDate>Tue, 01 May 2012 15:51:16 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+ditto
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2361#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2373</link>
+        <guid isPermaLink="false">http://localhost/ticket/2373</guid>
+        <title>#2373: Group autocomplete doesn't work with multiple words</title>
+        <pubDate>Fri, 04 May 2012 13:56:27 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. 'Cabinet Office' returns 0 results, whereas 'Cabinet' returns 'Cabinet Office'.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;/api/2/util/authorizationgroup/autocomplete?q=Cabinet%20Office
+&lt;/pre&gt;&lt;p&gt;
+This feature only seems to be used by DGU at the moment (I think)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2373#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2352</link>
+        <guid isPermaLink="false">http://localhost/ticket/2352</guid>
+        <title>#2352: Fix autodoc on CKAN's readthedocs</title>
+        <pubDate>Tue, 01 May 2012 14:53:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2352#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2368</link>
+        <guid isPermaLink="false">http://localhost/ticket/2368</guid>
+        <title>#2368: Fix OS X Lion install instructions on wiki</title>
+        <pubDate>Tue, 01 May 2012 17:35:19 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Solr install instructions install the wrong version
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2368#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2376</link>
+        <guid isPermaLink="false">http://localhost/ticket/2376</guid>
+        <title>#2376: Fix "no-sidebar" front page layout issue with CKAN 1.7 in some languages</title>
+        <pubDate>Wed, 09 May 2012 11:46:05 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This needs to be fixed in the CKAN templates ("no-sidebar" should not be marked for translation) but for 1.7 just fixed it in the translation files.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2376#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2358</link>
+        <guid isPermaLink="false">http://localhost/ticket/2358</guid>
+        <title>#2358: Finish off Release 1.7</title>
+        <pubDate>Tue, 01 May 2012 15:43:50 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Various stuff related with release 1.7:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Review patches sent to the release branch
+&lt;/li&gt;&lt;li&gt;Regularly update TDH with latest changes
+&lt;/li&gt;&lt;li&gt;write changelog, announce email, etc
+&lt;/li&gt;&lt;li&gt;...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2358#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2360</link>
+        <guid isPermaLink="false">http://localhost/ticket/2360</guid>
+        <title>#2360: Finish INSPIRE support proposal</title>
+        <pubDate>Tue, 01 May 2012 15:50:09 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+I've been writing a doc with different issues regarding INSPIRE support in CKAN. It is mostly done, except for some sections on CSW support. Depends on &lt;a class="closed ticket" href="http://localhost/ticket/2359" title="task: Investigate pycsw integration (closed: fixed)"&gt;#2359&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2360#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2346</link>
+        <guid isPermaLink="false">http://localhost/ticket/2346</guid>
+        <title>#2346: EC ODP Theme updates</title>
+        <pubDate>Tue, 01 May 2012 12:53:58 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;tidy up activity feed on home page or replace with search results (by modified date)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;move ckan menu to a left sidebar (see Sam's template)&lt;/del&gt; (not doing this now)
+&lt;/li&gt;&lt;li&gt;update templates with changes from master
+&lt;/li&gt;&lt;li&gt;use local image in language dropdown (ecportal.js)
+&lt;/li&gt;&lt;li&gt;update dataset read template
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+To discuss:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;should we rename 'organization' to 'publisher'? Requires updating all templates and the url mapping.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2346#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2339</link>
+        <guid isPermaLink="false">http://localhost/ticket/2339</guid>
+        <title>#2339: Demo install on RHEL/CentOS, and install instructions</title>
+        <pubDate>Tue, 01 May 2012 12:44:10 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2339#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2343</link>
+        <guid isPermaLink="false">http://localhost/ticket/2343</guid>
+        <title>#2343: Convert all non-free metadata fields to vocabulary fields</title>
+        <pubDate>Tue, 01 May 2012 12:49:22 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;convert non-free fields to vocab fields (eg: interoperability_level)
+&lt;/li&gt;&lt;li&gt;store values as JSON files in the ecportal repo
+&lt;/li&gt;&lt;li&gt;translate output on dataset view page
+&lt;/li&gt;&lt;li&gt;add tests
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2343#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2338</link>
+        <guid isPermaLink="false">http://localhost/ticket/2338</guid>
+        <title>#2338: Help with setup of new test instance for EC ODP (running on RedHat)</title>
+        <pubDate>Tue, 01 May 2012 12:39:15 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+I won't be needed for this during the current sprint, closing.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2338#changelog</comments>
+    </item>
+ </channel>
+</rss>

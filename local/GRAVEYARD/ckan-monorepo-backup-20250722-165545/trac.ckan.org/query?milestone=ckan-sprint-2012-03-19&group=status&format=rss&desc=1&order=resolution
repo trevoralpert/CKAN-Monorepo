@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2012-03-19&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2012-03-19&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2227</link>
+        <guid isPermaLink="false">http://localhost/ticket/2227</guid>
+        <title>#2227: Tests are slow and broken</title>
+        <pubDate>Mon, 12 Mar 2012 12:49:30 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+not all tests run and they take too long :(
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2227#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2207</link>
+        <guid isPermaLink="false">http://localhost/ticket/2207</guid>
+        <title>#2207: Fix recently changed datasets activity stream on exportal site</title>
+        <pubDate>Mon, 05 Mar 2012 15:35:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Apparently it's working when developers run it locally but not on the demo site.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2207#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1649</link>
+        <guid isPermaLink="false">http://localhost/ticket/1649</guid>
+        <title>#1649: Verify RDF Extension (ckanext-rdf) works</title>
+        <pubDate>Mon, 16 Jan 2012 10:18:16 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Make sure that the extension works as it should and isn't broken on current releases [3d]
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Make it work with the EC schema, including extras [2d]
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1649#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1703</link>
+        <guid isPermaLink="false">http://localhost/ticket/1703</guid>
+        <title>#1703: Make custom fields for ecportal form based on prototype metamodel</title>
+        <pubDate>Tue, 24 Jan 2012 15:42:07 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The prototype portal gave us a list of classifiers that are expected for the initial launch.  Add then to ckanext-ecportal.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1703#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1711</link>
+        <guid isPermaLink="false">http://localhost/ticket/1711</guid>
+        <title>#1711: Resource validation page</title>
+        <pubDate>Thu, 26 Jan 2012 14:55:59 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;On the resources tab, there's a "Check Resources" button which, when clicked makes an ajax request
+with the list of URLs entered by the user.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The server checka each link for errors and header information about the linked resource.  (Using
+ckanext/archiver/tasks.py:link_checker()).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The server returns a list of dicts (json), containing information about the linked resource, and
+the client uses that to:
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;populate the format field of each resource
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The (guessed) 'file_extension' populates the '&lt;span class="underline"&gt;format' field.  If it's 'htm' or 'html',
+then we assume it's a listing page, and so don't populate the format field with 'htm' or
+'html'.
+&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;provide feedback if a URL appears to be invalid
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+If the URL doesn't appear to be a URL at all, or returns a HTTP error, or times-out, then
+URL field is highlighted in red to indicate it's a bad URL.  A tooltip shows the
+error message to the user.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[Optional] provide feedback if a URL appears to point to "Additional Information" - ie the
+Resource should be entered under "Additional Resources", rather than "Timeseries" or
+"Individual" datasets.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Analysis and further description on etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/dgu-package-form"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/dgu-package-form&lt;/a&gt;? [Section I]
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1711#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1731</link>
+        <guid isPermaLink="false">http://localhost/ticket/1731</guid>
+        <title>#1731: Publisher support for harvesting</title>
+        <pubDate>Tue, 31 Jan 2012 11:05:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate: 4-5d
+&lt;/p&gt;
+&lt;p&gt;
+Only sysadmins can manage harvest sources right now, we need to allow publishers to handle their own sources.
+&lt;/p&gt;
+&lt;p&gt;
+We need to decide if there will be two different profiles on ckanext-harvest, the current one with only sysadmins allowed to manage the harvesting and a new one supporting publishers (ckan core can be configured to not use the publisher model)
+&lt;/p&gt;
+&lt;p&gt;
+Tasks include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Auth checks on the different controller actions (and the command line interface?)
+&lt;/li&gt;&lt;li&gt;Modify the index page to just show sources the logged user has permissions on.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(Talk with Ross about the specific functions to use)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create/edit form to show a dropdown with the user available publishers.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1731#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1742</link>
+        <guid isPermaLink="false">http://localhost/ticket/1742</guid>
+        <title>#1742: Naming of a new package/group can clash with a route</title>
+        <pubDate>Wed, 01 Feb 2012 17:11:57 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+It is possible to create a group or a dataset called new, or edit, which will then be inaccessible as it is blocked by the existing routes with those names.
+&lt;/p&gt;
+&lt;p&gt;
+We should maintain a list of invalid names in the verification that happens behind the scenes in the UI.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1742#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1803</link>
+        <guid isPermaLink="false">http://localhost/ticket/1803</guid>
+        <title>#1803: clean up routes</title>
+        <pubDate>Fri, 17 Feb 2012 12:58:17 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1803#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1808</link>
+        <guid isPermaLink="false">http://localhost/ticket/1808</guid>
+        <title>#1808: Translation of content on dataset view pages</title>
+        <pubDate>Mon, 20 Feb 2012 12:55:30 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+All data is that is translatable should be translated when viewed.
+&lt;/p&gt;
+&lt;p&gt;
+This includes tag names will be  ID codes. When viewing a dataset page, look up the current language of the interface (ckan_lang or something in the environs) and display the string for the tag in that language.
+&lt;/p&gt;
+&lt;p&gt;
+Related to the dataset view extension points for translation, recently added by kindly/=.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1808#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1814</link>
+        <guid isPermaLink="false">http://localhost/ticket/1814</guid>
+        <title>#1814: Check publicadata.eu harvesters</title>
+        <pubDate>Mon, 20 Feb 2012 17:03:28 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2d
+&lt;/p&gt;
+&lt;p&gt;
+Once ckanext-pdeu is running on CKAN 1.6, upgrade ckanext-harvest to be able to update the CKAN harvesters (default tags and extras).
+&lt;/p&gt;
+&lt;p&gt;
+Also check non-CKAN harvesters (specially scrappers) to see if they are still working.
+&lt;/p&gt;
+&lt;p&gt;
+Make a list of current harvesters with status and potential ones.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1814#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1816</link>
+        <guid isPermaLink="false">http://localhost/ticket/1816</guid>
+        <title>#1816: Update ckanext-apps to work with CKAN 1.5.1 - 1.6</title>
+        <pubDate>Mon, 20 Feb 2012 17:11:04 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate [2-3d]
+&lt;/p&gt;
+&lt;p&gt;
+If possible, it should work with both 1.5.1 and 1.6.
+&lt;/p&gt;
+&lt;p&gt;
+Needed for PDEU, also at some point for IATI
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1816#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1820</link>
+        <guid isPermaLink="false">http://localhost/ticket/1820</guid>
+        <title>#1820: Index multilingual data when mulilingual extension is added.</title>
+        <pubDate>Mon, 20 Feb 2012 20:48:23 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+All translated fields and vocabularies need to be added to search index in the correct fields.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1820#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2199</link>
+        <guid isPermaLink="false">http://localhost/ticket/2199</guid>
+        <title>#2199: Translation of content on dataset search pages</title>
+        <pubDate>Tue, 28 Feb 2012 14:41:47 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2199#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2205</link>
+        <guid isPermaLink="false">http://localhost/ticket/2205</guid>
+        <title>#2205: Document Tag Vocab schema/form setup</title>
+        <pubDate>Mon, 05 Mar 2012 09:51:07 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2205#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2206</link>
+        <guid isPermaLink="false">http://localhost/ticket/2206</guid>
+        <title>#2206: Change site header to match latest ODP template</title>
+        <pubDate>Mon, 05 Mar 2012 14:34:55 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2206#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2209</link>
+        <guid isPermaLink="false">http://localhost/ticket/2209</guid>
+        <title>#2209: Object-&gt;RDF mapping</title>
+        <pubDate>Tue, 06 Mar 2012 09:47:57 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super is &lt;a class="missing changeset" title="No default repository defined"&gt;[1649]&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We need to provide customisable mappings between CKAN models and RDF. This needs to be easily configurable for different clients and should take into account objects related to the model being mapped.
+&lt;/p&gt;
+&lt;p&gt;
+Current contenders for impl are:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;ordf.org's Object Description Mapper (which uses OWL)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;RDFAlchemy, although this looks like it may result in fixed mappings
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;A custom scheme with a simple json file
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;A template based approach using Genshi templates?
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Approach is to get a mapping complete of the attributes directly in the package class, and then provide mappings for related objects (tags/resources etc).
+&lt;/p&gt;
+&lt;p&gt;
+We'll then need to be able to publish the RDF to a triplestore.
+&lt;/p&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="http://ckan.okfnpad.org/rdfmapping"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/rdfmapping&lt;/a&gt; for further analysis.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2209#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2210</link>
+        <guid isPermaLink="false">http://localhost/ticket/2210</guid>
+        <title>#2210: Add method to group for adding members</title>
+        <pubDate>Tue, 06 Mar 2012 10:07:50 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+It is necessary to add a helper method to Group for adding members to that group so that
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;nobody needs to work with the Member model
+&lt;/li&gt;&lt;li&gt;It handles existing membership and existing membership with a different capacity
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2210#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2211</link>
+        <guid isPermaLink="false">http://localhost/ticket/2211</guid>
+        <title>#2211: Logic layer access to publisher functionality</title>
+        <pubDate>Tue, 06 Mar 2012 10:12:31 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Most of the get_group/add_member style calls should be handled, or at least provided via logic layer.
+&lt;/p&gt;
+&lt;p&gt;
+Don't need to break existing code, but do need to provide access via logic layer
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2211#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2212</link>
+        <guid isPermaLink="false">http://localhost/ticket/2212</guid>
+        <title>#2212: Import latest data into demo site</title>
+        <pubDate>Tue, 06 Mar 2012 15:22:13 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2212#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2214</link>
+        <guid isPermaLink="false">http://localhost/ticket/2214</guid>
+        <title>#2214: Translation of content on group view pages</title>
+        <pubDate>Wed, 07 Mar 2012 19:01:04 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2214#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2215</link>
+        <guid isPermaLink="false">http://localhost/ticket/2215</guid>
+        <title>#2215: Translation of content on group list page</title>
+        <pubDate>Wed, 07 Mar 2012 19:29:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2215#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2217</link>
+        <guid isPermaLink="false">http://localhost/ticket/2217</guid>
+        <title>#2217: Translation of content on tag list page</title>
+        <pubDate>Wed, 07 Mar 2012 19:31:44 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2217#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2218</link>
+        <guid isPermaLink="false">http://localhost/ticket/2218</guid>
+        <title>#2218: Translation of content on tag pages</title>
+        <pubDate>Wed, 07 Mar 2012 19:32:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2218#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2219</link>
+        <guid isPermaLink="false">http://localhost/ticket/2219</guid>
+        <title>#2219: Translation of datasets and tags on user pages</title>
+        <pubDate>Wed, 07 Mar 2012 19:34:55 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+User names and descriptions are not translated.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2219#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2220</link>
+        <guid isPermaLink="false">http://localhost/ticket/2220</guid>
+        <title>#2220: make ckan cacheable</title>
+        <pubDate>Thu, 08 Mar 2012 17:44:03 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to sort cookies etc
+&lt;/p&gt;
+&lt;p&gt;
+should work with nginx and varnish
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2220#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2223</link>
+        <guid isPermaLink="false">http://localhost/ticket/2223</guid>
+        <title>#2223: Switch to bootstrap from blueprint</title>
+        <pubDate>Sat, 10 Mar 2012 13:09:34 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Why?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We already use quite a bit of boostrap
+&lt;/li&gt;&lt;li&gt;We already plan to use bootstrap JS
+&lt;/li&gt;&lt;li&gt;Bootstrap is excellent and pretty light
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2223#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2226</link>
+        <guid isPermaLink="false">http://localhost/ticket/2226</guid>
+        <title>#2226: [super] Refactor and improve documentation (v1.7)</title>
+        <pubDate>Sun, 11 Mar 2012 16:06:05 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Documentation is key to the success of projects!
+&lt;/p&gt;
+&lt;h1 id="Movematerialintomaindocsfromwiki"&gt;Move material into main docs from wiki&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.ckan.org/Writing_asynchronous_tasks"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Writing_asynchronous_tasks&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.ckan.org/Domain_Model"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Domain_Model&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://wiki.ckan.org/Deployment"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Deployment&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="CreateaUserGuide"&gt;Create a User Guide&lt;/h1&gt;
+&lt;p&gt;
+Basic step-by-step on getting started with CKAN (See start on set of slides here e.g. &lt;a class="ext-link" href="http://blog.thedatahub.org/2012/03/02/tutorial-publish-data-with-the-datahub/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://blog.thedatahub.org/2012/03/02/tutorial-publish-data-with-the-datahub/&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Publishing data
+&lt;/li&gt;&lt;li&gt;Authorization and workflows
+&lt;ul&gt;&lt;li&gt;Publisher Profile (Workflow)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="Breakintosections"&gt;Break into sections&lt;/h1&gt;
+&lt;p&gt;
+Suggest something like:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;# General
+* Intro
+* Conceptual Overview
+* What CKAN helps you do (http://ckan.org/)
+* FAQ ? (or point to the wiki)
+# For Administrators
+* Installation and Setup
+  * Configuration options
+* Customization - Theming etc
+* Authorization and Workflows
+* Storage
+# For Users (Publishers, Data Wranglers, etc etc)
+* Walkthrough of publishing a dataset
+* Storage
+* API (see Developers section)
+# CKAN Developers
+* Domain Model
+* API
+* Extensions
+* i18n
+CKAN Developers
+* Buildbot
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2226#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2228</link>
+        <guid isPermaLink="false">http://localhost/ticket/2228</guid>
+        <title>#2228: IGroupForm should allow overriding of non-edit templates</title>
+        <pubDate>Tue, 13 Mar 2012 11:23:23 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+IGroupForm should allow overriding of non-edit templates so that it can specify the index +/or search +/or view.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2228#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2229</link>
+        <guid isPermaLink="false">http://localhost/ticket/2229</guid>
+        <title>#2229: Cleanup plugin system after some test failed to run.</title>
+        <pubDate>Wed, 14 Mar 2012 10:40:11 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The logic test did not have &lt;span class="underline"&gt;init&lt;/span&gt;. This caused lots of tests to fail because there were mock extensions that ran automatically in them. Fix plugin system so this can work.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2229#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2233</link>
+        <guid isPermaLink="false">http://localhost/ticket/2233</guid>
+        <title>#2233: Make package show, use custom json schema</title>
+        <pubDate>Fri, 16 Mar 2012 02:35:49 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+There is a disrepency between what we put in and get out when using a custom form/api. Narrow this gap by making sure package_show shows the correct serilization.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2233#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2236</link>
+        <guid isPermaLink="false">http://localhost/ticket/2236</guid>
+        <title>#2236: Updates to Recline and integrate them</title>
+        <pubDate>Fri, 16 Mar 2012 15:06:21 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;(Recline) Better graphing (multiple graph types etc)
+&lt;/li&gt;&lt;li&gt;(Recline) Bootstrapify
+&lt;/li&gt;&lt;li&gt;Integrate
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2236#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2237</link>
+        <guid isPermaLink="false">http://localhost/ticket/2237</guid>
+        <title>#2237: Make way to split up tests and run tests with different db.</title>
+        <pubDate>Fri, 16 Mar 2012 22:54:56 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2237#changelog</comments>
+    </item>
+ </channel>
+</rss>

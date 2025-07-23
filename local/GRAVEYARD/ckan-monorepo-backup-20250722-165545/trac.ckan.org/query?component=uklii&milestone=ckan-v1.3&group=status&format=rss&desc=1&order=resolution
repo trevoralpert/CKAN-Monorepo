@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=uklii&amp;milestone=ckan-v1.3&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=uklii&amp;milestone=ckan-v1.3&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/665</link>
+        <guid isPermaLink="false">http://localhost/ticket/665</guid>
+        <title>#665: The system shall support withdrawing a harvested dataset or service from publication</title>
+        <pubDate>Mon, 27 Sep 2010 11:50:50 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion between John and Peter:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;p&gt;
+Given we can identify a document, does the disappearance of a document
+from a registered source imply the disappearance of the metadata (such
+that we delete packages once the documents disappear from the registered
+source)?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+I would expect a more explicit 'delete'. The UKLP Use Case Library describes this as "withdraw a dataset or service from publication" (part of UCD03 Maintain resources).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/665#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/757</link>
+        <guid isPermaLink="false">http://localhost/ticket/757</guid>
+        <title>#757: Create migration script to add harvest source filter attribute to existing tables</title>
+        <pubDate>Mon, 25 Oct 2010 21:03:04 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/757#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/766</link>
+        <guid isPermaLink="false">http://localhost/ticket/766</guid>
+        <title>#766: The system shall support harvesting metadata from ArcGIS</title>
+        <pubDate>Wed, 27 Oct 2010 11:12:13 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Perhaps 80% of the users of the UKLII may be using
+ArcGIS.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/766#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/786</link>
+        <guid isPermaLink="false">http://localhost/ticket/786</guid>
+        <title>#786: The system shall support deleting a registered harvest source</title>
+        <pubDate>Mon, 08 Nov 2010 10:09:42 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/789</link>
+        <guid isPermaLink="false">http://localhost/ticket/789</guid>
+        <title>#789: The harvest source form shall validate location field by positive identification of source type</title>
+        <pubDate>Mon, 08 Nov 2010 10:28:26 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/789#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/795</link>
+        <guid isPermaLink="false">http://localhost/ticket/795</guid>
+        <title>#795: "Match up" GEMINI2 "metadata point of contact" with registered entities</title>
+        <pubDate>Mon, 08 Nov 2010 14:53:45 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+TM wants to know how this will be "matched up". I don't know whether this always the data provider, or sometimes the publisher.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/795#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/564</link>
+        <guid isPermaLink="false">http://localhost/ticket/564</guid>
+        <title>#564: The system shall support location based search</title>
+        <pubDate>Thu, 09 Sep 2010 12:03:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/770</link>
+        <guid isPermaLink="false">http://localhost/ticket/770</guid>
+        <title>#770: Improve the paster harvester help command</title>
+        <pubDate>Wed, 27 Oct 2010 14:37:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Issue 1. Help command without arguments fails:
+&lt;/p&gt;
+&lt;p&gt;
+$paster help --plugin ckan --config development.ini
+&lt;/p&gt;
+&lt;p&gt;
+gives:
+&lt;/p&gt;
+&lt;p&gt;
+EITHER
+&lt;/p&gt;
+&lt;p&gt;
+Command help not recognized
+&lt;/p&gt;
+&lt;p&gt;
+OR
+&lt;/p&gt;
+&lt;p&gt;
+paster help: error: no such option: --plugin
+&lt;/p&gt;
+&lt;p&gt;
+Issue 2: Harvester command with arguments fails.
+&lt;/p&gt;
+&lt;p&gt;
+$ paster harvester
+Traceback (most recent call last):
+...
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+cmd = self.args&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;IndexError?&lt;/a&gt;: list index out of range
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/770#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/565</link>
+        <guid isPermaLink="false">http://localhost/ticket/565</guid>
+        <title>#565: The system shall support UKLP code lists</title>
+        <pubDate>Thu, 09 Sep 2010 12:04:24 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/565#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/566</link>
+        <guid isPermaLink="false">http://localhost/ticket/566</guid>
+        <title>#566: The system shall support harvesting remote metadata</title>
+        <pubDate>Thu, 09 Sep 2010 13:40:19 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/566#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/711</link>
+        <guid isPermaLink="false">http://localhost/ticket/711</guid>
+        <title>#711: Packages shall support both UK government and location information with a common set of attributes</title>
+        <pubDate>Wed, 20 Oct 2010 13:21:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Previously, a package type attribute was intended to distinguish between package data that came from government depts. and publishers location information (GEMINI). Now there is an intention use a common set of attributes to support data from either source.
+&lt;/p&gt;
+&lt;p&gt;
+Hence, there currently a v.3 of the government attributes, a document about extracting the attributes from Gemini document using XPath, and a comparison documents mapping between governemtn attributes and Gemini attributes.
+&lt;/p&gt;
+&lt;p&gt;
+That means there are potentially four different list of attributes. I'm not sure how to go about reviewing the lists and converging any differences.
+&lt;/p&gt;
+&lt;p&gt;
+But we do want to end up with a list of names, a description of their purpose, and then perhaps the XPath which would reveal the value from a Gemini doc?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/711#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/739</link>
+        <guid isPermaLink="false">http://localhost/ticket/739</guid>
+        <title>#739: The system shall support retrieving a copy of the harvested metadata for a given package</title>
+        <pubDate>Fri, 22 Oct 2010 20:35:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+...obviously, not all packages will have a harvested metadata document.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/739#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/804</link>
+        <guid isPermaLink="false">http://localhost/ticket/804</guid>
+        <title>#804: Rework analysis for publisher/provider in UKLP</title>
+        <pubDate>Mon, 15 Nov 2010 10:14:14 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+We need an incremental plan that connects with current state of DGU and reflects what is actually required by UKLP.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/804#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/884</link>
+        <guid isPermaLink="false">http://localhost/ticket/884</guid>
+        <title>#884: harvest job delete operation</title>
+        <pubDate>Sat, 25 Dec 2010 11:50:00 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+implement paster subcommand to delete harvest jobs
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/884#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/885</link>
+        <guid isPermaLink="false">http://localhost/ticket/885</guid>
+        <title>#885: reimplement csw module to use owslib</title>
+        <pubDate>Sat, 25 Dec 2010 11:54:59 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/885#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-sprint-2012-01-23&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-sprint-2012-01-23&amp;group=resolution&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1527</link>
+        <guid isPermaLink="false">http://localhost/ticket/1527</guid>
+        <title>#1527: Break DGU package edit form into sections</title>
+        <pubDate>Tue, 06 Dec 2011 12:33:49 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;use javascript to selectively hide/show parts of the form
+&lt;/li&gt;&lt;li&gt;there's no validation between steps at this stage.  It's still a
+"big save button at the end".
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1527#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1645</link>
+        <guid isPermaLink="false">http://localhost/ticket/1645</guid>
+        <title>#1645: Update and test existing DGU package form : Apply a simple theme</title>
+        <pubDate>Thu, 12 Jan 2012 18:57:02 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Theme the DGU form.
+&lt;/p&gt;
+&lt;p&gt;
+Doesn't need to be an exact replica of DGU, but just enough to show it's possible.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1645#changelog</comments>
+    </item>
+ </channel>
+</rss>

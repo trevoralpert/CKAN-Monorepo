@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=vdm&amp;milestone=vdm-0.8&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=vdm&amp;milestone=vdm-0.8&amp;group=status&amp;desc=1&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/916</link>
+        <guid isPermaLink="false">http://localhost/ticket/916</guid>
+        <title>#916: Port new vdm to Mongodb</title>
+        <pubDate>Mon, 17 Jan 2011 15:10:11 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We should create a port of VDM 0.9 for MongoDB to support user editing in WDMMG.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/916#changelog</comments>
+    </item>
+ </channel>
+</rss>

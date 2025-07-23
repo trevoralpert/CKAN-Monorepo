@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~seanh&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~seanh&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1286</link>
+        <guid isPermaLink="false">http://localhost/ticket/1286</guid>
+        <title>#1286: Remove remaining formalchemy stuff</title>
+        <pubDate>Tue, 23 Aug 2011 16:29:56 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Stuff I've spotted:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;forms/*
+&lt;/li&gt;&lt;li&gt;template/group/edit_form.html
+&lt;/li&gt;&lt;li&gt;template/package/edit_form.html
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This can go once new DGU form is in.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1286#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2485</link>
+        <guid isPermaLink="false">http://localhost/ticket/2485</guid>
+        <title>#2485: Encourage leak containment by limiting the number of requests a CKAN process serves</title>
+        <pubDate>Fri, 01 Jun 2012 11:47:09 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN has &lt;a class="closed ticket" href="http://localhost/ticket/1345" title="enhancement: Investigate possible memory leak (closed: fixed)"&gt;memory leaks&lt;/a&gt;. They can be contained by limiting the time-to-live of a ckan process. An easy way to achieve this is to limit the number of requests a ckan server process can serve before it gets killed and replaced.
+&lt;/p&gt;
+&lt;p&gt;
+One should ...
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;research ways to limit requests-per-process with the different web servers (see below for a start);
+&lt;/li&gt;&lt;li&gt;explain these safeguards in the CKAN documentation and encourage users to apply them;
+&lt;/li&gt;&lt;li&gt;consider the helper script &lt;strong&gt;&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/bin/ckan-create-instance"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-create-instance&lt;/a&gt;&lt;/strong&gt; to generate Apache configs with &lt;strong&gt;WSGIDaemonProcess ... maximum-requests=XY&lt;/strong&gt; being active instead of &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/lib/ckan/common.sh#L262"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;commented out&lt;/a&gt;. Or at least let it warn the user to use &lt;strong&gt;MaxRequestsPerChild&lt;/strong&gt;;
+&lt;/li&gt;&lt;li&gt;Investigate current CKAN deployments whether they suffer from mem leaks, and if so contain them.
+&lt;/li&gt;&lt;/ul&gt;&lt;hr /&gt;
+&lt;p&gt;
+How to limit requests-per-process
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Apache:
+&lt;ul&gt;&lt;li&gt;Use &lt;strong&gt;WSGIDaemonProcess&lt;/strong&gt; with &lt;strong&gt;maximum-requests=50&lt;/strong&gt; or whatever limit is appropriate. We did this sucessfully on &lt;a class="ext-link" href="http://trac.okfn.org/ticket/904"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;datahub.io&lt;/a&gt; and the &lt;a class="ext-link" href="http://trac.okfn.org/ticket/1245"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan farm&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(This need to be verified) Without WSGIDaemonProcess, &lt;strong&gt;MaxRequestsPerChild 50&lt;/strong&gt; should achieve the same.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;nginx/supervisord: to be researched.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2485#changelog</comments>
+    </item>
+ </channel>
+</rss>

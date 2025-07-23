@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;cc=~rgrp&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;cc=~rgrp&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2573</link>
+        <guid isPermaLink="false">http://localhost/ticket/2573</guid>
+        <title>#2573: package_search does not allow solr's per-field facet parameters</title>
+        <pubDate>Tue, 19 Jun 2012 13:27:19 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Solr allows its facet parameters to be specified on a per-field basis, eg. &lt;tt&gt;facet.limit&lt;/tt&gt; applies to &lt;em&gt;all&lt;/em&gt; facet fields, but solr allows it to be overriden for a specific field, eg. &lt;tt&gt;facet.tags.limit&lt;/tt&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+We don't support this at the moment because we have a whitelist of valid solr query parameters that we accept.  See &lt;tt&gt;ckan.lib.search.query.VALID_SOLR_PARAMETERS&lt;/tt&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2573#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2543</link>
+        <guid isPermaLink="false">http://localhost/ticket/2543</guid>
+        <title>#2543: facet.sort is not available in the package_search action</title>
+        <pubDate>Mon, 18 Jun 2012 09:55:35 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Not all solr facet parameters are available through the pcakage_search action.  In particular, &lt;tt&gt;facet.sort&lt;/tt&gt; has been asked for; but this ticket should check to see if there are other parameters that would be easy to add too.
+&lt;/p&gt;
+&lt;p&gt;
+See: &lt;a class="ext-link" href="http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.apache.org/solr/SimpleFacetParameters#facet.sort&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2543#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2412</link>
+        <guid isPermaLink="false">http://localhost/ticket/2412</guid>
+        <title>#2412: More than one resource invalidatiing breaks dataset edit form</title>
+        <pubDate>Tue, 22 May 2012 20:05:48 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When attempting to add more than one resource at once, if more than one resource invalidates, this results in a js error, leaving the form in an inconsistent state.
+&lt;/p&gt;
+&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to /dataset/new
+&lt;/li&gt;&lt;li&gt;Add a new resource.  Fill in one of the fields with an invalid value. eg - last_modified, or size...
+&lt;/li&gt;&lt;li&gt;Add another resource, doing the same thing: make one of the fields invalid.
+&lt;/li&gt;&lt;li&gt;Try to save the dataset.
+&lt;/li&gt;&lt;li&gt;The entered resource information will be lost, and a js error "Uncaught Error: Can't add the same model to a set twice,: backbone.js:586" will be thrown.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2405</link>
+        <guid isPermaLink="false">http://localhost/ticket/2405</guid>
+        <title>#2405: Improvements to data viewer embed</title>
+        <pubDate>Mon, 21 May 2012 06:59:25 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Decent powered by icon for the Embed for the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt;? (make this text customizable and allow html ...)
+&lt;ul&gt;&lt;li&gt;Current icon and text looks really bad
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Embed link uses uuid rather than dataset name (this goes to perma-url question ...)
+&lt;/li&gt;&lt;li&gt;Data viewer embed url includes all the resource info (not needed -- just url and backend info ...)
+&lt;/li&gt;&lt;li&gt;Embed extension urls do not respect original domain but instead use site_url (I'm guessing). E.g. datahub.io domain ends up with links to embed on thedatahub.org
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2405#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2277</link>
+        <guid isPermaLink="false">http://localhost/ticket/2277</guid>
+        <title>#2277: Use the new atom feeds in IATI</title>
+        <pubDate>Mon, 02 Apr 2012 17:10:28 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Atom feeds have been implemented in core in &lt;a class="closed ticket" href="http://localhost/ticket/1593" title="enhancement: [super] Create feeds from search results (closed: fixed)"&gt;#1593&lt;/a&gt;.  The IATI-specific implementation can now be removed when IATI move to CKAN &amp;gt;= 1.6.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1596</link>
+        <guid isPermaLink="false">http://localhost/ticket/1596</guid>
+        <title>#1596: Refactor authz roles</title>
+        <pubDate>Thu, 22 Dec 2011 10:31:28 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Suggestions from rgrp:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Get rid of Roles, and replace them with direct assignment of actions, even though there are many actions, and extensions can add arbitrary ones.
+&lt;/li&gt;&lt;li&gt;Debatable whether we should cut the number of actions to correspond to the three roles defined by the base system.
+&lt;/li&gt;&lt;li&gt;Have a method of finding roles (or, in future, actions) relevant to a given protection object (e.g. FILE-UPLOAD(ER) not relevant to Packages)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(This ticket is split off from &lt;a class="closed ticket" href="http://localhost/ticket/1065" title="enhancement: [super] Change Authorization System (closed: fixed)"&gt;#1065&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1596#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1581</link>
+        <guid isPermaLink="false">http://localhost/ticket/1581</guid>
+        <title>#1581: Blog post about Google Analytics extension for CKAN</title>
+        <pubDate>Tue, 20 Dec 2011 17:40:00 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+The CKAN Google Analytics extension has been updated to work with the latest version of CKAN, could make for a nice blog post.
+&lt;/p&gt;
+&lt;p&gt;
+Can ping John Glover in January for any details required.
+&lt;/p&gt;
+&lt;p&gt;
+Key link is: &lt;a class="ext-link" href="http://thedatahub.org/analytics/dataset/top"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/analytics/dataset/top&lt;/a&gt; though this should probably move to be under stats (e.g. &lt;a class="ext-link" href="http://thedatahub.org/stats/usage"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/stats/usage&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1581#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1535</link>
+        <guid isPermaLink="false">http://localhost/ticket/1535</guid>
+        <title>#1535: Plump for auth header of: X-CKAN-API-KEY</title>
+        <pubDate>Wed, 07 Dec 2011 17:31:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When using the API, the apikey needs to be supplied in a header called 'Authorization'. Because some proxys / deployments use this header for other things, a configurable header was provided as an alternative, with default "X-CKAN-API-KEY".
+&lt;/p&gt;
+&lt;p&gt;
+Rufus suggests having *one* way for this.
+a) making this not configurable any more
+b) making X-CKAN-API-KEY the default
+&lt;/p&gt;
+&lt;p&gt;
+(keep Authorization allowed, but not documented, for backwards compatibility)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1535#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=milestone1&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=milestone1&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1</link>
+        <guid isPermaLink="false">http://localhost/ticket/1</guid>
+        <title>#1: Visitor visits service</title>
+        <pubDate>Mon, 10 Jul 2006 16:36:57 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Title"&gt;Title&lt;/h2&gt;
+&lt;p&gt;
+Visitor visits service
+&lt;/p&gt;
+&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor (general web user)
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Visit the website of the service (frontpage)
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;See the front page and discover information about the service
+&lt;/li&gt;&lt;li&gt;Perform various activities related to the service such as registering and finding packages, registering as a user and logging in
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/6</link>
+        <guid isPermaLink="false">http://localhost/ticket/6</guid>
+        <title>#6: View a package</title>
+        <pubDate>Mon, 10 Jul 2006 16:46:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+View the details of an individual package
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I know more about the package. Attributes available are detailed in updating a package (../UseCase12)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/6#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/9</link>
+        <guid isPermaLink="false">http://localhost/ticket/9</guid>
+        <title>#9: Register new package</title>
+        <pubDate>Mon, 10 Jul 2006 16:49:31 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Authenticated User
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Create/register a package
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+The package will be listed in the system and visible to users
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Full package registration process may be broken down into:
+&lt;ol&gt;&lt;li&gt;Creating a package by provision of minimal attributes:
+&lt;ol&gt;&lt;li&gt;name: unique and web-usable
+&lt;/li&gt;&lt;li&gt;auto-generation of default values such as:
+&lt;ol&gt;&lt;li&gt;date-registered (today's date)
+&lt;/li&gt;&lt;li&gt;first owner (one owner should be created corresponding to the authenticated user performing this action)
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;(?) auto-generate a default release
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;updating the created package -&amp;gt; ../UseCase12
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/9#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2</link>
+        <guid isPermaLink="false">http://localhost/ticket/2</guid>
+        <title>#2: Register as user on the service</title>
+        <pubDate>Mon, 10 Jul 2006 16:40:35 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Be able to register as a user on the service
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+One can login and be an authenticated user and perform the actions that only authenticated users can perform
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Registration involves the provisional of a minimal set of user details, namely:
+&lt;ol&gt;&lt;li&gt;username (unique in lifetime of the service)
+&lt;/li&gt;&lt;li&gt;fullname
+&lt;/li&gt;&lt;li&gt;email
+&lt;/li&gt;&lt;li&gt;password
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3</link>
+        <guid isPermaLink="false">http://localhost/ticket/3</guid>
+        <title>#3: Login to the service</title>
+        <pubDate>Mon, 10 Jul 2006 16:41:57 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+Visitor
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+Login to the service
+&lt;/p&gt;
+&lt;h2 id="Sothat"&gt;So that&lt;/h2&gt;
+&lt;p&gt;
+I am now an authenticated user and may perform the actions that only authenticated users may perform
+&lt;/p&gt;
+&lt;h2 id="Notes"&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Login by providing username and password
+&lt;/li&gt;&lt;li&gt;Login screen should also include a link or information about registration
+&lt;/li&gt;&lt;li&gt;If username do not match (or the username does not exist) a login failure is noted and the visitor is re-presented with the login screen as well as information on how to register
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3#changelog</comments>
+    </item>
+ </channel>
+</rss>

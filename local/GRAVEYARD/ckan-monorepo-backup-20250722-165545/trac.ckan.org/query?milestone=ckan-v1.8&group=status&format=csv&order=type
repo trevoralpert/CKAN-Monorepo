@@ -1,0 +1,85 @@
+id,summary,owner,type,priority,component,resolution
+1387,Not specifying a protocol in dataset url causes broken link to be served on dataset view page,toby,defect,awaiting merge,ckan,fixed
+1512,Modifying user name makes you semi-log-out,ross,defect,minor,ckan,fixed
+2289,Flash messages are not being translated?,toby,defect,awaiting merge,ckan,fixed
+2290,Mark facet titles in search pages for translation,seanh,defect,awaiting triage,ckan,fixed
+2389,More robust handling of DataExplorer errors,amercader,defect,major,ckan,fixed
+2399,Model cleanup in CKAN core has broken ckanext-spatial,amercader,defect,awaiting triage,ckan,fixed
+2434,Fix autodoc on readthedocs again,seanh,defect,major,ckan,fixed
+2435,ckanext-qa doesn't work with CKAN 1.7+,seanh,defect,awaiting triage,ckan,worksforme
+2439,tag_search and tag_autocomplete not fully available via GET request,icmurray,defect,awaiting merge,ckan,fixed
+2467,Fix stats extension frontend,amercader,defect,minor,ckan,fixed
+2500,get_action should raise an exception if the action requested doesn't exist,ross,defect,awaiting merge,ckan,fixed
+2533,ckanext-harvest is broken with ckan 1.8b,seanh,defect,awaiting triage,ckan,fixed
+2534,ckanext-spatial is broken with CKAN 1.8b,amercader,defect,awaiting triage,ckan,duplicate
+2600,"Replace broken ""Login to Add an Organization"" button",seanh,defect,awaiting triage,ckan,fixed
+2627,IDatasetForm.form_to_db_schema() is not called,seanh,defect,awaiting triage,ckan,fixed
+2670,model.Group.get_children_groups returns deleted groups,ross,defect,awaiting merge,ckan,fixed
+2682,"CKAN's internal tracking counts each view twice, needs unit tests",seanh,defect,awaiting merge,ckan,fixed
+2770,Some strings potentially not marked for translation,seanh,defect,blocker,ckan,fixed
+2811,Author doesn't show on dataset read page,,defect,awaiting triage,ckan,fixed
+2843,Adding existing datasets to organizations is broken,seanh,defect,awaiting merge,ckan,fixed
+2845,Editing an organization removes all datasets from the organization,seanh,defect,awaiting merge,ckan,fixed
+2872,Non-open licenses are marked as open,,defect,major,ckan,fixed
+2937,GroupController.history() missing extras_as_string,,defect,awaiting triage,ckan,fixed
+1279,Refactor or deprecate Authorization Groups,ross,enhancement,awaiting triage,ckan,duplicate
+1434,Add i18n strings from extensions,seanh,enhancement,awaiting merge,ckan,fixed
+1471,Be compatible with new ubuntu release in April,seanh,enhancement,awaiting triage,ckan,fixed
+1678,Make synchronous search the default behaviour,amercader,enhancement,awaiting merge,ckan,fixed
+1732,Update CKAN's search for taxonomies,johnglover,enhancement,awaiting triage,ckan,fixed
+1737,Expose solr-based search API,icmurray,enhancement,major,ckan,fixed
+2273,Review publisher organisations code with Ross,seanh,enhancement,minor,ckan,duplicate
+2283,[super] Data Previewer / Viewer v3,,enhancement,awaiting triage,ckan,wontfix
+2305,User dashboard with private consolidated activity stream,seanh,enhancement,minor,ckan,fixed
+2309,Organizations review with SH,,enhancement,awaiting triage,ckan,wontfix
+2313,Deprecate old facet data structures and related functions.,icmurray,enhancement,awaiting merge,ckan,fixed
+2319,Better auto-complete for groups on dataset edit page,,enhancement,awaiting triage,ckan,wontfix
+2340,Get Jenkins to automatically run core extensions tests,seanh,enhancement,minor,ckan,fixed
+2344,Get jenkins install script into CKAN core,seanh,enhancement,minor,ckan,duplicate
+2347,Related stuff dashboard and changes,icmurray,enhancement,awaiting merge,ckan,fixed
+2374,tag search paging,ross,enhancement,major,ckan,worksforme
+2381,Related item count on ALL dataset pages,ross,enhancement,awaiting triage,ckan,fixed
+2388,"Update ""out of the box"" settings for CKAN",amercader,enhancement,awaiting merge,ckan,fixed
+2428,Reduce/sort out CKAN's dependencies,seanh,enhancement,awaiting merge,ckan,fixed
+2438,resource_search action not accessible via GET request,icmurray,enhancement,awaiting merge,ckan,fixed
+2472,clean up datastore controller to get rid of datastore_url enables checks,amercader,enhancement,minor,ckan,fixed
+2484,move follower functionality into helper functions,toby,enhancement,awaiting merge,ckan,fixed
+2495,Stats page has lost styling ...,,enhancement,awaiting triage,ckan,duplicate
+2591,postgres unicode problems postgres v9.1.4,toby,enhancement,critical,ckan,fixed
+2592,Update and simplify source install instructions,seanh,enhancement,awaiting triage,ckan,fixed
+2604,Add Requests as requirement for tests,amercader,enhancement,minor,ckan,fixed
+2605,Problem with user.get_groups,ross,enhancement,awaiting triage,ckan,fixed
+2615,Add activity stream activity when a user starts to follow something,seanh,enhancement,awaiting triage,ckan,fixed
+2624,Organizations breaks dataset tag editing,ross,enhancement,major,ckan,fixed
+2630,UPdate docs after IDatasetForm schema change,seanh,enhancement,awaiting triage,ckan,duplicate
+2634,change log - helper function limited in 1.8,toby,enhancement,awaiting merge,ckan,fixed
+2638,add a get from request param helper function,toby,enhancement,awaiting merge,ckan,fixed
+2639,Update recline version for 1.8 release,amercader,enhancement,awaiting merge,ckan,fixed
+2649,Description on resources not rendered as markdown,ross,enhancement,awaiting triage,ckan,fixed
+2650,Description on resources not rendered as markdown,ross,enhancement,awaiting triage,ckan,fixed
+2651,Check support for TSV which doesn't appear to work well.,icmurray,enhancement,awaiting triage,ckan,fixed
+2672,Session.is_modified should use passive=True,icmurray,enhancement,awaiting triage,ckan,fixed
+2693,License is out of date,seanh,enhancement,awaiting triage,ckan,fixed
+2756,Fix handling of extras in group read,seanh,enhancement,awaiting merge,ckan,fixed
+2757,Write documentation for upgrading a CKAN install from an older to a newer version of CKAN,Adria,enhancement,awaiting merge,ckan,fixed
+2772,Update transifex for 1.8 translations,seanh,enhancement,major,ckan,fixed
+2816,DomainObjectOperation not in model,toby,enhancement,awaiting merge,ckan,fixed
+2839,Specifying sort order breaks search results on group page,,enhancement,awaiting triage,ckan,fixed
+2842,Allow sort ordering of dataset listings on group pages,,enhancement,awaiting triage,ckan,fixed
+2608,Uploading a file to a resource hangs,,refactor,awaiting triage,ckan,wontfix
+2437,Add coding standards to CKAN docs,icmurray,task,awaiting merge,ckan,fixed
+2433,API uses name not id for some version 3 calls,toby,defect,minor,ckan,
+2762,test_related.py crashes,,defect,awaiting triage,ckan,
+2859,Fix the build,icmurray,defect,blocker,ckan,
+2919,Remove IController from docs,,defect,awaiting triage,ckan,
+2936,Updating a group via the API clears its packages,,defect,awaiting triage,ckan,
+2958,Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8,,defect,awaiting triage,ckan,
+2963,Timeout on tag pages with lots of datasets,,defect,major,ckan,
+2965,Stats extension broken on 1.8,,defect,awaiting triage,ckan,
+3002,API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string,,defect,minor,ckan,
+2279,Write tutorial for our DataStore API / Data Explorer,rgrp,enhancement,major,ckan,
+2363,Documentation of best caching practice.,toby,enhancement,major,ckan,
+2499,Documentation for the internal analytics,toby,enhancement,awaiting triage,ckan,
+2761,"Document all the errors you can get when setting up filestore, and how to fix them",,enhancement,awaiting triage,ckan,
+2771,Documentation and examples for IDatasetForm and IGroupForm,seanh,enhancement,awaiting triage,ckan,
+3003,New pg databases should be created with UTF8 encoding rather than system default,,enhancement,awaiting triage,ckan,

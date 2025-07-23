@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-v1.4-sprint-1&amp;group=status&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-v1.4-sprint-1&amp;group=status&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/682</link>
+        <guid isPermaLink="false">http://localhost/ticket/682</guid>
+        <title>#682: Add ckanclient tests to buildbot</title>
+        <pubDate>Wed, 06 Oct 2010 17:39:29 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Some work done on this to make tests run independently.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/682#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/953</link>
+        <guid isPermaLink="false">http://localhost/ticket/953</guid>
+        <title>#953: Add tagline/description to template and set in configuration</title>
+        <pubDate>Fri, 04 Feb 2011 08:56:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Have a tagline / description are under main title and set if from ckan.site_description config variable.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/953#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/943</link>
+        <guid isPermaLink="false">http://localhost/ticket/943</guid>
+        <title>#943: Create CKAN Wiki</title>
+        <pubDate>Mon, 31 Jan 2011 10:25:47 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Set up a Mediawiki to contain info on CKAN.net (community) conventions etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/943#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/48</link>
+        <guid isPermaLink="false">http://localhost/ticket/48</guid>
+        <title>#48: Create favicon</title>
+        <pubDate>Thu, 24 Jan 2008 19:26:29 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Because CKAN's worth it!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/48#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/973</link>
+        <guid isPermaLink="false">http://localhost/ticket/973</guid>
+        <title>#973: Document license configuration and license system.</title>
+        <pubDate>Thu, 10 Feb 2011 10:15:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Document how license system works and specifically how licenses can be configured.
+&lt;/p&gt;
+&lt;p&gt;
+Cost: 2h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/973#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/928</link>
+        <guid isPermaLink="false">http://localhost/ticket/928</guid>
+        <title>#928: Documentation - CKAN credits / contributors page</title>
+        <pubDate>Mon, 24 Jan 2011 12:37:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Remove contributors list from about page (out-of-date and does not belong there)
+&lt;ul&gt;&lt;li&gt;A "Powered by CKAN" link in footer is enough
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Add contributors / team / credits page to ckan.org
+&lt;ul&gt;&lt;li&gt;May want to separate credits (e.g. software use), from contributors (also is team different from contributors)
+&lt;/li&gt;&lt;li&gt;(perhaps with photos!) so that people can see who is part of it and from which organisations. (this is medium-term, not really part of this ticket)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;? CREDITS.txt file to the source repository and add a link to it on bitbucket for more detailed credits info.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/928#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/942</link>
+        <guid isPermaLink="false">http://localhost/ticket/942</guid>
+        <title>#942: Fix SERP pager argument passing</title>
+        <pubDate>Mon, 31 Jan 2011 10:24:50 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+It only passes "q", but the whole query must be serialized.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/942#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/980</link>
+        <guid isPermaLink="false">http://localhost/ticket/980</guid>
+        <title>#980: Fixes to HR Infoshare</title>
+        <pubDate>Fri, 11 Feb 2011 13:28:38 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We've fixed a few things in CKAN that were discovered and tracked by HRI in their own issue tacker. This includes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;add authz checks to package edit links (cset:0752316cd2fe)
+&lt;/li&gt;&lt;li&gt;replace gettext with _ in controllers, to support unicode error msgs (cset:822340e6077e)
+&lt;/li&gt;&lt;li&gt;handle broken html in notes field without crashing on package read (cset:4b6be037dda0)
+&lt;/li&gt;&lt;li&gt;update i18n (cset:37d57dc3c492, cset:ea03173f5e77, cset:f16f4ee40fe7)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/980#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/949</link>
+        <guid isPermaLink="false">http://localhost/ticket/949</guid>
+        <title>#949: Generic username/password login</title>
+        <pubDate>Wed, 02 Feb 2011 14:48:46 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+based on repoze.who-friendlyForms
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/949#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/908</link>
+        <guid isPermaLink="false">http://localhost/ticket/908</guid>
+        <title>#908: Issues deploying extensions with modwsgi / uwsgi</title>
+        <pubDate>Mon, 17 Jan 2011 11:43:44 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Some extensions import pylons features (such as request) at root.
+&lt;/p&gt;
+&lt;p&gt;
+Have encountered following issues:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;You need to import ckanext before any ckan stuff in your wsgi script (extension stats and dataapi)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Running under wsgi daemon mode (normal mode is fine!) the front page (front page only) will not work (does not occur with disqus or synchronous_search but does with stats and dataapi extensions). You get errors like this in the log:
+&lt;/li&gt;&lt;/ol&gt;&lt;pre class="wiki"&gt;[Mon Jan 17 09:01:19 2011] [error] Exception KeyError: KeyError(-1218594160,) in &amp;lt;module 'threading' from '/usr/lib/python2.6/threading.pyc'&amp;gt; ignored
+[Mon Jan 17 09:01:20 2011] [error] Exception AttributeError: "'NoneType' object has no attribute 'clearing'" in &amp;lt;bound method PluginEnvironment.__del__ of  Services for Environment '&amp;lt;default&amp;gt;'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/908#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/938</link>
+        <guid isPermaLink="false">http://localhost/ticket/938</guid>
+        <title>#938: Message flashing / notification in WUI</title>
+        <pubDate>Sun, 30 Jan 2011 14:48:40 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Good user interfaces provide feedback to users. We should provide more feedback about the success / failure of actions using message flashing (see &lt;a class="ext-link" href="http://flask.pocoo.org/docs/patterns/flashing/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://flask.pocoo.org/docs/patterns/flashing/&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+We already do some of this (slightly poorly), e.g. on adding an authorization the app says: "X authorization added".
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Standardize this process and add section to html for this purpose.
+&lt;/li&gt;&lt;li&gt;Already done in other OKFN apps e.g. yourtopia.net, wheredoesmymoneygo and commentonit
+&lt;/li&gt;&lt;li&gt;Testing: suggest keeping this very simple
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Estimate"&gt;Estimate&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Cost: 0.5h (html etc) + 1h to do some integration
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/938#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/963</link>
+        <guid isPermaLink="false">http://localhost/ticket/963</guid>
+        <title>#963: Package CKAN as a debian package</title>
+        <pubDate>Mon, 07 Feb 2011 10:59:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Package CKAN as a debian package so it is easier to install.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/963#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/902</link>
+        <guid isPermaLink="false">http://localhost/ticket/902</guid>
+        <title>#902: Package buttons not clickable / Improve submenu tabs</title>
+        <pubDate>Tue, 11 Jan 2011 14:41:38 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On a package page there are three buttons to the right - View, Edit, History. Each of these buttons contain an icon and the text, but you can only activate the button by clicking on the icon. When you click on the part of the button where the text is (about 50% of the button) then nothing happens.
+&lt;/p&gt;
+&lt;p&gt;
+Using: Chrome, Firefox
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/902#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/926</link>
+        <guid isPermaLink="false">http://localhost/ticket/926</guid>
+        <title>#926: Pick a simpler form framework</title>
+        <pubDate>Mon, 24 Jan 2011 11:37:36 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+The current formalchemy setup conflates view, controller and model code in a way that makes it hard to debug and customise.
+&lt;/p&gt;
+&lt;p&gt;
+Review existing (and potentially non-existing) frameworks with a view to porting forms over to something more explicit and lightweight.
+&lt;/p&gt;
+&lt;p&gt;
+Implement the current Package forms as an example of how this would work.
+&lt;/p&gt;
+&lt;p&gt;
+Document and circulate.
+&lt;/p&gt;
+&lt;p&gt;
+Sub-ticket of &lt;a class="closed ticket" href="http://localhost/ticket/961" title="enhancement: [super] Refactoring of forms, validation and model synchronization (closed: fixed)"&gt;#961&lt;/a&gt; (form, validation, model sync meta-ticket)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/926#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/975</link>
+        <guid isPermaLink="false">http://localhost/ticket/975</guid>
+        <title>#975: Placeholder attribute not displayed in some browsers leading to poor UX</title>
+        <pubDate>Thu, 10 Feb 2011 13:15:55 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Currently placeholder text like 'Search ...' is not shown in some browsers (e.g. FF and IE).
+&lt;/p&gt;
+&lt;p&gt;
+This leads to poor UX, for example in top bar search where it unclear whether that box is for login or search.
+&lt;/p&gt;
+&lt;p&gt;
+We should fix this by finding a way to display placeholder attribute in all browsers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/975#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/826</link>
+        <guid isPermaLink="false">http://localhost/ticket/826</guid>
+        <title>#826: Resource 'extra' fields</title>
+        <pubDate>Wed, 24 Nov 2010 15:18:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+There are a number of extra properties we want to store in a resource:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;resource size (in bytes, no. triples etc.) - &lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/673"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/673&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;resource hash is 'static' (default) or 'changeable' - &lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/674"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/674&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;alternative link (e.g. TNA Web Archive) to use the link is broken - &lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/173"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/173&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+i.e. this is a much needed enhancement
+&lt;/p&gt;
+&lt;p&gt;
+Need to be able to read/write these values in web interface and API.
+&lt;/p&gt;
+&lt;p&gt;
+(At some point we may wish to have custom form widgets for these new fields in the resource table, but let's leave this for the future.)
+&lt;/p&gt;
+&lt;h1 id="Implementation"&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;
+I suggest these are arbitrary key/value pairs, just like package extras, reusing &lt;a class="missing wiki"&gt;PackageExtra?&lt;/a&gt; code as much as possible.
+(Other much more radical alternative is to move model to RDF.)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/826#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/875</link>
+        <guid isPermaLink="false">http://localhost/ticket/875</guid>
+        <title>#875: Search backend supports solr interface and query API mimics solr</title>
+        <pubDate>Mon, 20 Dec 2010 11:35:57 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Consolidate search API interface (and backend) on solr (solrpy) type interface.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Support for standard query structure
+&lt;/li&gt;&lt;li&gt;Support for facet options
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Do &lt;strong&gt;not&lt;/strong&gt; need to change response formats. (Or do we?)
+&lt;/p&gt;
+&lt;p&gt;
+2 options here for advanced features like facets in non-solr:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Disable (happens automatically)
+&lt;/li&gt;&lt;li&gt;Implement - suggest using group by etc
+&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="Extras"&gt;Extras&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Front-page tag cloud: change this to use facets
+&lt;ul&gt;&lt;li&gt;Accept this means that if facets not functional in backend we have no tag cloud
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/875#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/931</link>
+        <guid isPermaLink="false">http://localhost/ticket/931</guid>
+        <title>#931: Search results generator hides paging functionality</title>
+        <pubDate>Thu, 27 Jan 2011 16:56:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+ckanclient's search results list only packages up to the 'limit'. It would be good to return a generator instead of a list. When the limit is reached on the generator then another 'page' is loaded automatically.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/931#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/960</link>
+        <guid isPermaLink="false">http://localhost/ticket/960</guid>
+        <title>#960: Support non-ascii character in internal error messages</title>
+        <pubDate>Mon, 07 Feb 2011 09:08:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Just saw an error like the following which looks like it is to do with having a user object with non-ascii characters in it. Either get rid of 'cast' to str type here or do it in a unicode aware way.
+&lt;/p&gt;
+&lt;p&gt;
+Should do this not just here but everywhere we can find in the code base.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.package:302 in edit
+&amp;lt;&amp;lt;          am_authz = self.authorizer.am_authorized(c, model.Action.EDIT, pkg)
+               if not am_authz:
+                   abort(401, str(gettext('User %r not authorized to edit %s') % (c.user, id)))
+               auth_for_change_state = self.authorizer.am_authorized(c, model.Action.CHANGE_STATE, pkg)
+&amp;gt;&amp;gt;  abort(401, str(gettext('User %r not authorized to edit %s') % (c.user, id)))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 1: ordinal not in range(128)
+&lt;/pre&gt;&lt;h2 id="Estimate"&gt;Estimate&lt;/h2&gt;
+&lt;p&gt;
+Cost: 1h
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/960#changelog</comments>
+    </item>
+ </channel>
+</rss>

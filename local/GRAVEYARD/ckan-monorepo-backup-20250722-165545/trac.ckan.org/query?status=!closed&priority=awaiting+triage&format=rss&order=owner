@@ -1,0 +1,3406 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;priority=awaiting+triage&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;priority=awaiting+triage&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1562</link>
+        <guid isPermaLink="false">http://localhost/ticket/1562</guid>
+        <title>#1562: Finish Geo Spatial</title>
+        <pubDate>Mon, 19 Dec 2011 10:56:33 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimated 4 weeks of Adria's time. I guess this will need to be broken down into more tickets. This feature is being requested by a number of potential customers and we have some ideas of requirements between Rufus and Jilly for this. This is the most popular new feature we talk about to new clients.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1562#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1557</link>
+        <guid isPermaLink="false">http://localhost/ticket/1557</guid>
+        <title>#1557: Complete Webstore Preview Extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:40:53 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Finish any work out standing on web store preview extension to be able to package and release.
+&lt;/p&gt;
+&lt;p&gt;
+Ref James and I going through existing features and trying to mention any polishing that needed doing to get exiting features ready for release with projects such as CKAN hosted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1557#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1558</link>
+        <guid isPermaLink="false">http://localhost/ticket/1558</guid>
+        <title>#1558: Publisher Tools</title>
+        <pubDate>Mon, 19 Dec 2011 10:46:13 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Summarise final set of requirements for this and finish development and test. Estimated 10 working days.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1558#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1560</link>
+        <guid isPermaLink="false">http://localhost/ticket/1560</guid>
+        <title>#1560: Follow extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:51:19 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2 days to finish dev and test.
+&lt;/p&gt;
+&lt;p&gt;
+David can you add any info needed here?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1560#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1561</link>
+        <guid isPermaLink="false">http://localhost/ticket/1561</guid>
+        <title>#1561: To do extension</title>
+        <pubDate>Mon, 19 Dec 2011 10:52:52 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Can we finish this ready for release on data hub and CKAN Hosted.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1561#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1564</link>
+        <guid isPermaLink="false">http://localhost/ticket/1564</guid>
+        <title>#1564: Structured Data (Data API)</title>
+        <pubDate>Mon, 19 Dec 2011 11:07:14 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Basic websotre exists but this may be not what is described yet.
+&lt;/p&gt;
+&lt;p&gt;
+CKAN provides a rich API for the data itself, allowing users to query retrieve and use data instantly from datasets in CKAN without needing to download or process it first.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1567</link>
+        <guid isPermaLink="false">http://localhost/ticket/1567</guid>
+        <title>#1567: Finish QA extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:19:59 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Requires change to celeryd. Estimated 4 weeks.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1567#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1569</link>
+        <guid isPermaLink="false">http://localhost/ticket/1569</guid>
+        <title>#1569: Wordpressser</title>
+        <pubDate>Mon, 19 Dec 2011 11:27:36 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+How much effort will this be to be ready to use?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1569#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1572</link>
+        <guid isPermaLink="false">http://localhost/ticket/1572</guid>
+        <title>#1572: Meta data Harvester</title>
+        <pubDate>Mon, 19 Dec 2011 11:35:09 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Need to write custom harvesters for each client. Is it worth having one for data hub?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1572#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1573</link>
+        <guid isPermaLink="false">http://localhost/ticket/1573</guid>
+        <title>#1573: Apps and Ideas</title>
+        <pubDate>Mon, 19 Dec 2011 11:36:33 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate 2 weeks for someone to finish and test.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1573#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1565</link>
+        <guid isPermaLink="false">http://localhost/ticket/1565</guid>
+        <title>#1565: Admin dashboard finished?</title>
+        <pubDate>Mon, 19 Dec 2011 11:11:32 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+Is testing complete and ready for release?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1565#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2938</link>
+        <guid isPermaLink="false">http://localhost/ticket/2938</guid>
+        <title>#2938: Explain bundling in doc/resources.rst</title>
+        <pubDate>Mon, 24 Sep 2012 12:13:55 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since it makes sense to bundle resources into one js file that are commonly used together, there should be some explanations on how separate js scripts are merged into one file for production.
+&lt;/p&gt;
+&lt;p&gt;
+Explanations could include how groups are handled or different resource files.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2938#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1815</link>
+        <guid isPermaLink="false">http://localhost/ticket/1815</guid>
+        <title>#1815: Reenable Sparql endpoint on publicdata.eu</title>
+        <pubDate>Mon, 20 Feb 2012 17:08:43 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Estimate: ?
+&lt;/p&gt;
+&lt;p&gt;
+The 4store Sparql endpoint has been down for a long time.
+It needs to be reenabled and we need to check that the necessary informtion is pushed when creating /editing a dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2382</link>
+        <guid isPermaLink="false">http://localhost/ticket/2382</guid>
+        <title>#2382: Investigate options for basic geocoding</title>
+        <pubDate>Mon, 14 May 2012 17:39:20 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+A simple way for geocoding place names would be very useful, e.g in the spatial search, defining a geometry for a dataset (on the form or bulk)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2382#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2407</link>
+        <guid isPermaLink="false">http://localhost/ticket/2407</guid>
+        <title>#2407: 'Access denied' message is unhelpful</title>
+        <pubDate>Mon, 21 May 2012 15:01:40 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+This chap tried to use the API to add a dataset to a group and got the uninformative message 'Access denied':
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002229.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The problem was he didn't have access to the group. A message like 'You don't have access to the group "LODcloud"' would have been clearer.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2407#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2788</link>
+        <guid isPermaLink="false">http://localhost/ticket/2788</guid>
+        <title>#2788: Speed improvements on creating/updating and indexing</title>
+        <pubDate>Wed, 01 Aug 2012 14:56:32 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Specially needed when importing large numbers of datasets.
+&lt;/p&gt;
+&lt;p&gt;
+Profiling the import command from the harvesting extension has shown some areas where improvements could be made.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2788#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3023</link>
+        <guid isPermaLink="false">http://localhost/ticket/3023</guid>
+        <title>#3023: New methods on IPackageController to provide access to the data_dict</title>
+        <pubDate>Thu, 22 Nov 2012 17:00:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Extension hooking into the edit and create methods of the IPackageController interface receive the package object. This may not include all the fields that came from the form. The new extension points will pass the validated data_dict so extensions can have access to it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3023#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3025</link>
+        <guid isPermaLink="false">http://localhost/ticket/3025</guid>
+        <title>#3025: Add requests to core requirements</title>
+        <pubDate>Tue, 27 Nov 2012 21:35:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Because yes please
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3025#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2961</link>
+        <guid isPermaLink="false">http://localhost/ticket/2961</guid>
+        <title>#2961: Preview plugin endpoint</title>
+        <pubDate>Mon, 08 Oct 2012 11:39:27 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Users could write ckan extensions that offer previews for a certain datatype.
+&lt;/p&gt;
+&lt;p&gt;
+Advantages:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We can say that you can add your own previews
+&lt;/li&gt;&lt;li&gt;Every preview would have to define it's own dependencies
+&lt;/li&gt;&lt;li&gt;External development (community creates new extensions?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Questions to answer:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Specification of the interface
+&lt;/li&gt;&lt;li&gt;Precedence of previews for the same data types
+&lt;/li&gt;&lt;li&gt;Plugins only define the datatype that they are responsible for or do we call a function that returns whether the extension is responsible.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+As far as I can see, this should be fairly easy to implement by following these instructions: &lt;a class="ext-link" href="http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/writing-extensions.html#writing-a-plugin-interface&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2961#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3013</link>
+        <guid isPermaLink="false">http://localhost/ticket/3013</guid>
+        <title>#3013: common-error-messages is unreadable</title>
+        <pubDate>Sat, 10 Nov 2012 13:18:25 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+Since the update of the doc theme, the page became unreadable.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/common-error-messages.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/common-error-messages.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3013#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/250</link>
+        <guid isPermaLink="false">http://localhost/ticket/250</guid>
+        <title>#250: RDF link in Atom feed</title>
+        <pubDate>Thu, 18 Feb 2010 15:41:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Add link to RDF representation of a package in our Atom feed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/250#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2485</link>
+        <guid isPermaLink="false">http://localhost/ticket/2485</guid>
+        <title>#2485: Encourage leak containment by limiting the number of requests a CKAN process serves</title>
+        <pubDate>Fri, 01 Jun 2012 11:47:09 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN has &lt;a class="closed ticket" href="http://localhost/ticket/1345" title="enhancement: Investigate possible memory leak (closed: fixed)"&gt;memory leaks&lt;/a&gt;. They can be contained by limiting the time-to-live of a ckan process. An easy way to achieve this is to limit the number of requests a ckan server process can serve before it gets killed and replaced.
+&lt;/p&gt;
+&lt;p&gt;
+One should ...
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;research ways to limit requests-per-process with the different web servers (see below for a start);
+&lt;/li&gt;&lt;li&gt;explain these safeguards in the CKAN documentation and encourage users to apply them;
+&lt;/li&gt;&lt;li&gt;consider the helper script &lt;strong&gt;&lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/bin/ckan-create-instance"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-create-instance&lt;/a&gt;&lt;/strong&gt; to generate Apache configs with &lt;strong&gt;WSGIDaemonProcess ... maximum-requests=XY&lt;/strong&gt; being active instead of &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan_deb/usr/lib/ckan/common.sh#L262"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;commented out&lt;/a&gt;. Or at least let it warn the user to use &lt;strong&gt;MaxRequestsPerChild&lt;/strong&gt;;
+&lt;/li&gt;&lt;li&gt;Investigate current CKAN deployments whether they suffer from mem leaks, and if so contain them.
+&lt;/li&gt;&lt;/ul&gt;&lt;hr /&gt;
+&lt;p&gt;
+How to limit requests-per-process
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Apache:
+&lt;ul&gt;&lt;li&gt;Use &lt;strong&gt;WSGIDaemonProcess&lt;/strong&gt; with &lt;strong&gt;maximum-requests=50&lt;/strong&gt; or whatever limit is appropriate. We did this sucessfully on &lt;a class="ext-link" href="http://trac.okfn.org/ticket/904"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;datahub.io&lt;/a&gt; and the &lt;a class="ext-link" href="http://trac.okfn.org/ticket/1245"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan farm&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(This need to be verified) Without WSGIDaemonProcess, &lt;strong&gt;MaxRequestsPerChild 50&lt;/strong&gt; should achieve the same.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;nginx/supervisord: to be researched.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2485#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2709</link>
+        <guid isPermaLink="false">http://localhost/ticket/2709</guid>
+        <title>#2709: Atom feeds are undocumented</title>
+        <pubDate>Wed, 18 Jul 2012 15:11:50 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+There doesn't seem to be any documentation yet for Atom feeds.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2709#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2784</link>
+        <guid isPermaLink="false">http://localhost/ticket/2784</guid>
+        <title>#2784: model dictize sensitive data</title>
+        <pubDate>Wed, 01 Aug 2012 09:51:25 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+The model dictize layer doesn't consistently remove sensitive data from the dictized models.  It should use the current context to decide whether to include sensitive data or not.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2784#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1203</link>
+        <guid isPermaLink="false">http://localhost/ticket/1203</guid>
+        <title>#1203: Moderated edits: html code shows as "changed" although it is not</title>
+        <pubDate>Tue, 28 Jun 2011 15:29:30 GMT</pubDate>
+        
+        <dc:creator>rolf</dc:creator>
+
+        <description>&lt;p&gt;
+I've installed the Moderated Edits extension (ckanext-moderatededits) and am editing a package imported from IATIregistry.org, with an extra field which contains a bit of HTML.
+&lt;/p&gt;
+&lt;p&gt;
+The editor indicates the field has changed, although the content hasn't (see screenshot). All I can find so far is a minor difference: in the field content, there is a code &amp;amp;#8212 and in the rendered table that is an &amp;amp;mdash;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1203#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2829</link>
+        <guid isPermaLink="false">http://localhost/ticket/2829</guid>
+        <title>#2829: Archiver fails on 403 http response</title>
+        <pubDate>Thu, 09 Aug 2012 10:34:44 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Had this issue with the archiver on my local machine need to be logged in (I am admin) to see via web front end
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;$ paster archiver update -c ../ckan/development.ini
+2012-08-09 11:01:37,636 INFO  [ckanext.archiver.commands] Archival of dataset resource data added to celery queue: opencontext-chogha-mish-fauna (1 resources)
+2012-08-09 11:01:37,671 INFO  [ckanext.archiver.commands] Getting dataset metadata: south-african-national-gov-budget-2012-13
+2012-08-09 11:01:37,900 INFO  [ckan.lib.base]  /api/action/package_show render time 0.043 seconds
+Traceback (most recent call last):
+  File "/home/toby/okfn/pyenv/bin/paster", line 8, in &amp;lt;module&amp;gt;
+    load_entry_point('PasteScript==1.7.5', 'console_scripts', 'paster')()
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 104, in run
+    invoke(command, command_name, options, args[1:])
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 143, in invoke
+    exit_code = runner.run(args)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/script/command.py", line 238, in run
+    result = self.command()
+  File "/home/toby/okfn/pyenv/src/ckanext-archiver/ckanext/archiver/commands.py", line 98, in command
+    response = app.post(api_url + '/package_show', data)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 262, in post
+    expect_errors=expect_errors)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 243, in _gen_request
+    return self.do_request(req, status=status)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 406, in do_request
+    self._check_status(status, res)
+  File "/home/toby/okfn/pyenv/lib/python2.7/site-packages/paste/fixture.py", line 439, in _check_status
+    res.body))
+paste.fixture.AppError: Bad response: 403 Forbidden (not 200 OK or 3xx redirect for /api/action/package_show)
+{"help": "Return the metadata of a dataset (package) and its resources.\n\n    :param id: the id or name of the dataset\n    :type id: string\n\n    :rtype: dictionary\n\n    ", "success": false, "error": {"message": "Access denied", "__type": "Authorization Error"}}
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2829#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2697</link>
+        <guid isPermaLink="false">http://localhost/ticket/2697</guid>
+        <title>#2697: create dataset validation</title>
+        <pubDate>Wed, 18 Jul 2012 14:00:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Includes: missing fields, existing field checks (i.e. whether a name/dataset already exists with that name) during input (i.e. no need to submit form to check)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2697#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2917</link>
+        <guid isPermaLink="false">http://localhost/ticket/2917</guid>
+        <title>#2917: Organization admins can delete themselves</title>
+        <pubDate>Wed, 12 Sep 2012 12:10:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Organization administrators can delete themselves from the user management pages.  We should disable this on the front-end as well as the back-end.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2917#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3016</link>
+        <guid isPermaLink="false">http://localhost/ticket/3016</guid>
+        <title>#3016: CKAN 2.0 template tweaks</title>
+        <pubDate>Tue, 13 Nov 2012 13:30:17 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Just a ticket to keep track of a few suggested template changes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3016#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3018</link>
+        <guid isPermaLink="false">http://localhost/ticket/3018</guid>
+        <title>#3018: Load more in activity streams</title>
+        <pubDate>Wed, 14 Nov 2012 13:34:11 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Activity streams should be able to load more than 15 items within them. Suggest the default amount of loading is around 30 and then click to load more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3021</link>
+        <guid isPermaLink="false">http://localhost/ticket/3021</guid>
+        <title>#3021: Logout doesn't work without JS</title>
+        <pubDate>Tue, 20 Nov 2012 11:19:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially, the functionality should be as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add logout link that has &lt;tt&gt;.js-hide&lt;/tt&gt; attached to it within the header that isn't hidden within a dropdown
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+See &lt;a class="ext-link" href="http://plus.google.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://plus.google.com/&lt;/a&gt; (when logged in) with and without JS to see an example of the actual sign-out working without JS
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3021#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/979</link>
+        <guid isPermaLink="false">http://localhost/ticket/979</guid>
+        <title>#979: Edit Resource extras in the API</title>
+        <pubDate>Fri, 11 Feb 2011 13:09:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt;. We can now edit resource extras in the WUI (to some extent - see &lt;a class="closed ticket" href="http://localhost/ticket/978" title="enhancement: Edit Resource including Extras in Web UI (closed: fixed)"&gt;#978&lt;/a&gt; for remaining issues) and we can view resource extras in the API, but we can't yet edit them in the API.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/979#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1077</link>
+        <guid isPermaLink="false">http://localhost/ticket/1077</guid>
+        <title>#1077: Move to simpler vdm system</title>
+        <pubDate>Fri, 08 Apr 2011 23:14:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="Option1:ChangesetModel"&gt;Option 1: 'Changeset' Model&lt;/h2&gt;
+&lt;p&gt;
+See &lt;a class="assigned ticket" href="http://localhost/ticket/1135" title="enhancement: Changeset model for vdm (assigned)"&gt;ticket:1135&lt;/a&gt; for vdm ticket. This would involve a) moving to changeset in vdm b) doing the migration in ckan to support this.
+&lt;/p&gt;
+&lt;p&gt;
+Have developed a new "changeset" based model for revisioning in vdm.
+&lt;/p&gt;
+&lt;h3 id="Implementation"&gt;Implementation&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The main challenge with this change is schema and data migration
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Every revisioned object has a revision_id and revision attribute.
+&lt;/p&gt;
+&lt;p&gt;
+Approximate algorithm:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Revision -&amp;gt; Changeset
+for revtype in [PackageRevision, ...]:
+    for pkgrev in package_revision:
+        changeset = lookupchangeset(package_revision)
+        ChangeObject(cset, (table, id), dictize(pkgrev))
+&lt;/pre&gt;&lt;p&gt;
+Question:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;does pkg include tags attributes or not? or we have to dictize, pkgrev, pkg2tagrev, and tag. Probably the latter.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Option2:SimplifyRevisionObjectModel"&gt;Option 2: Simplify Revision Object Model&lt;/h2&gt;
+&lt;p&gt;
+Just use a simpler vdm, see &lt;a class="assigned ticket" href="http://localhost/ticket/1136" title="enhancement: Move to SessionExtension in vdm (assigned)"&gt;ticket:1136&lt;/a&gt; (move to SessionExtension) and &lt;a class="assigned ticket" href="http://localhost/ticket/1137" title="enhancement: Remove need for statefulness in vdm (assigned)"&gt;ticket:1137&lt;/a&gt; (remove need for statefulness in vdm).
+&lt;/p&gt;
+&lt;h2 id="Discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;
+Advantage of Option 1 versus 2:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Easier support for pending state and similar behaviour
+&lt;/li&gt;&lt;li&gt;No need to introduce new tables (and hence migrations) when making something revisioned (or not).
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Disadvantages"&gt;Disadvantages&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Migration is required
+&lt;/li&gt;&lt;li&gt;More difficult to query revision history.
+&lt;ul&gt;&lt;li&gt;Could be addressed by having ChangeObject have separate cols for table name and id but would likely be more difficult.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Performance (?)
+&lt;ul&gt;&lt;li&gt;Have one big ChangeObject table to query when looking at changed objects rather than many revision tables.
+&lt;ul&gt;&lt;li&gt;Not sure this is a biggie as even with Revision model biggest revision object tables are probably on the order of the ChangeObject table
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;
+Implement Option 2 and leave Option 1 for present.
+&lt;/p&gt;
+&lt;p&gt;
+Option 1 includes Option 2 so it seems that that is required in either case (so we may as well with Option 2).
+&lt;/p&gt;
+&lt;p&gt;
+Option 1 requires significant effort (esp migration) so leave for present and then review the situation at some later date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1077#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1240</link>
+        <guid isPermaLink="false">http://localhost/ticket/1240</guid>
+        <title>#1240: [super] API v4</title>
+        <pubDate>Sun, 24 Jul 2011 16:41:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+(Just creating this ticket as somewhere to keep notes)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Decide on REST api versus action API
+&lt;ul&gt;&lt;li&gt;Do we want to support both?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Tidying
+&lt;ul&gt;&lt;li&gt;Unify on /api/v{version num}/... structure (do we want a default option that points to current default? e.g. /api/default/ ...)
+&lt;/li&gt;&lt;li&gt;extras merged into normal field list in package
+&lt;/li&gt;&lt;li&gt;Get rid of /rest/ so just have api/v1/package
+&lt;/li&gt;&lt;li&gt;Get rid of separation of search api from 'rest' api
+&lt;ul&gt;&lt;li&gt;Propose that GET on REST index is search e.g. /package/?q=...
+&lt;ul&gt;&lt;li&gt;This is also resolves issue whereby GET at root returns whole package set (a *bad* idea) as this would now become the matchall search query (with a default limit on items returned)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Resource read/write in API (separate from package)
+&lt;ul&gt;&lt;li&gt;Does this need authorization work?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;user/account API - read/write
+&lt;/li&gt;&lt;li&gt;Remove autocomplete -- can just use search
+&lt;ul&gt;&lt;li&gt;Do not worry about backwards compat as should only be used in our js (if others using it too bad!)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1240#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1255</link>
+        <guid isPermaLink="false">http://localhost/ticket/1255</guid>
+        <title>#1255: Drupal consistancy checks.</title>
+        <pubDate>Mon, 01 Aug 2011 17:32:48 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make a robust way to make sure the drupal database is consistent with the ckan data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1255#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1341</link>
+        <guid isPermaLink="false">http://localhost/ticket/1341</guid>
+        <title>#1341: Delete spam users from ckan</title>
+        <pubDate>Wed, 14 Sep 2011 10:10:34 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Spam users where added to thedatahub and we need to clean them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1341#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1652</link>
+        <guid isPermaLink="false">http://localhost/ticket/1652</guid>
+        <title>#1652: How we intergrate with Drupal Multiligual?</title>
+        <pubDate>Mon, 16 Jan 2012 10:31:34 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Analysis of how/where we can integrate with Drupal Multilingual
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Is it likely to access CKAN via /en/data/... or /data/en/... (not sure, probably former) and we need to make sure that it ends up at /en/...
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check with Ian for other issues.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1652#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2291</link>
+        <guid isPermaLink="false">http://localhost/ticket/2291</guid>
+        <title>#2291: DataStorer incorrectly attempts to store JSON in DataStore</title>
+        <pubDate>Sat, 14 Apr 2012 19:19:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="ext-link" href="http://thedatahub.org/dataset/ecb13156-cf11-4e91-b51c-f287d154276e/resource/5db67915-40cb-467e-9d72-194ea4973670"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/ecb13156-cf11-4e91-b51c-f287d154276e/resource/5db67915-40cb-467e-9d72-194ea4973670&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This was marked as json format (and is JSON) but appears to have been imported as a quasi-CSV. Either this hsould not be imported at all or it should be imported as JSON ... (which is straightforward to do).
+&lt;/p&gt;
+&lt;p&gt;
+Assigning to David for triage and review.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2291#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2334</link>
+        <guid isPermaLink="false">http://localhost/ticket/2334</guid>
+        <title>#2334: Improved data import</title>
+        <pubDate>Sat, 28 Apr 2012 22:21:02 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Placeholder for thinking about this ...
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow users to configure info for CSV import (e.g. separators, quotes etc)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2334#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2406</link>
+        <guid isPermaLink="false">http://localhost/ticket/2406</guid>
+        <title>#2406: Errors in source install doc</title>
+        <pubDate>Mon, 21 May 2012 10:11:33 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+There are a few errors or unclarities in the source install doc - see
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002203.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002203.html&lt;/a&gt;
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-May/002204.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-May/002204.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2406#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2415</link>
+        <guid isPermaLink="false">http://localhost/ticket/2415</guid>
+        <title>#2415: Confusing message on attempting to register new account with upper case</title>
+        <pubDate>Wed, 23 May 2012 13:19:49 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+On registering a new account, if you try to use a capital letter in your 'Login', you get the unhelpful error message:
+&lt;/p&gt;
+&lt;p&gt;
+"The form contains invalid entries: Name: Url must be purely lowercase alphanumeric (ascii) characters and these symbols: -_"
+&lt;/p&gt;
+&lt;p&gt;
+What does 'Name' or 'Url' have to do with anything? It means 'Login must be ...'
+&lt;/p&gt;
+&lt;p&gt;
+But even better would be to make the login case-insensitive and allow capitals to be entered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2415#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2426</link>
+        <guid isPermaLink="false">http://localhost/ticket/2426</guid>
+        <title>#2426: Get rid of CKAN's formalchemy dependency</title>
+        <pubDate>Fri, 25 May 2012 11:47:42 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2426#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2427</link>
+        <guid isPermaLink="false">http://localhost/ticket/2427</guid>
+        <title>#2427: Reduce cruft installed into CKAN's virtualenv due to Pylons</title>
+        <pubDate>Fri, 25 May 2012 11:48:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2427#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2473</link>
+        <guid isPermaLink="false">http://localhost/ticket/2473</guid>
+        <title>#2473: Make datstorer store field ordering in _meta field</title>
+        <pubDate>Tue, 29 May 2012 12:11:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Recline views should have a default table order, being the same as the csv that was imported.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2473#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2524</link>
+        <guid isPermaLink="false">http://localhost/ticket/2524</guid>
+        <title>#2524: If there are no translation files for selected language fall back to default lang.</title>
+        <pubDate>Wed, 13 Jun 2012 17:37:28 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+If a user selects a language there are no mo files for then an error is raised.  Revert to default language instead.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2524#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2548</link>
+        <guid isPermaLink="false">http://localhost/ticket/2548</guid>
+        <title>#2548: Object ownership for groups/package</title>
+        <pubDate>Mon, 18 Jun 2012 11:02:11 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+We need to be able to easily determine who the owner of a dataset or group is.  Datasets and Groups should have an Owner, who may change over time but is a specific user within the CKAN instance.  It should be easy for CKAN components to determine the user and for the initial version we should ignore the can of worms labelled 'ownership transfer'.
+&lt;/p&gt;
+&lt;p&gt;
+At this point migration is likely to be the biggest issue, and would suggest that it is acceptable that the last user to edit a dataset be set as the current owner.
+&lt;/p&gt;
+&lt;p&gt;
+More tickets should arise as a result of this work where we may be able to optimise some queries to use the new feature.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Analysis/Clarification?&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Tests
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Migration
+&lt;/p&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Code/Schema?&lt;/a&gt; changes
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2548#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2708</link>
+        <guid isPermaLink="false">http://localhost/ticket/2708</guid>
+        <title>#2708: limit extra data for package/group show</title>
+        <pubDate>Wed, 18 Jul 2012 14:40:20 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;blockquote&gt;
+&lt;p&gt;
+context&lt;a class="missing wiki"&gt;package_limits?&lt;/a&gt; = { 'tags': 5,     &amp;lt;- get first 5
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+'extras': 0,   &amp;lt;- get all
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+only get what you ask for have to be explicit
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+context&lt;a class="missing wiki"&gt;group_limits?&lt;/a&gt; = {}   only main item
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+start with datasets/groups expand if we like it
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2708#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2729</link>
+        <guid isPermaLink="false">http://localhost/ticket/2729</guid>
+        <title>#2729: searching for tags:[tag] works but tag:[tag] doesn't</title>
+        <pubDate>Sun, 22 Jul 2012 09:58:29 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+which is confusing since you can only search for one tag like this at a time. I.e.
+tags:economics,cvs or tags:economics, csv or tags:economics+CSV doesn't work for example; therefore tag:economics, should also work!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2729#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2877</link>
+        <guid isPermaLink="false">http://localhost/ticket/2877</guid>
+        <title>#2877: Bugs with datastore v2</title>
+        <pubDate>Sat, 18 Aug 2012 00:33:22 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+In progress
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;&lt;del&gt;[major] q does not seem to work reliably. e.g. using the setup from this gist &lt;a class="ext-link" href="https://gist.github.com/1930806"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://gist.github.com/1930806&lt;/a&gt; and doing a ?q=DE yields no results (does not work with "q=de" either)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;q=second does work ...&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[major] q does not work with 2 values (see below)
+&lt;/li&gt;&lt;li&gt;Query on search with limit 0 results in total of 0 (should either be null or correct total). Queries with other limits yield correct total AFAICT
+&lt;ul&gt;&lt;li&gt;Also weird fact that limit is returned but as as as string - should it not be an integer
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Types on fields: could these not be canonical and as per recline (or is it important to allow exact sql types ...)
+&lt;/li&gt;&lt;/ol&gt;&lt;h3 id="Multiplequeryvalues"&gt;Multiple query values&lt;/h3&gt;
+&lt;p&gt;
+Try a query such as: "second UK" and you will get 500 error:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/api/3/action/datastore_search?resource_id=4f1299ab-a100-4e5f-ba81-e6d234a2f3bd&amp;amp;q=second%20UK"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/api/3/action/datastore_search?resource_id=4f1299ab-a100-4e5f-ba81-e6d234a2f3bd&amp;amp;q=second%20UK&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ProgrammingError: (ProgrammingError) syntax error in tsquery: "second UK" 'select "_id", "id", "date", "x", "y", "z", "country", "title", "lat", "lon", count(*) over() as "_full_count"\n from "4f1299ab-a100-4e5f-ba81-e6d234a2f3bd" where _full_text @@ to_tsquery(%s) limit 100 offset 0' (u'second UK',)
+&lt;/pre&gt;&lt;h3 id="Suggestions"&gt;Suggestions&lt;/h3&gt;
+&lt;p&gt;
+Filter support: should think in more detail about this (may want to follow recline style)
+&lt;/p&gt;
+&lt;p&gt;
+Simple filters in query parameters would be nice too ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2877#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3027</link>
+        <guid isPermaLink="false">http://localhost/ticket/3027</guid>
+        <title>#3027: solr for 2.0</title>
+        <pubDate>Tue, 04 Dec 2012 02:22:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+change mm
+support solr 3 and 4
+add *_date field
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3027#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2796</link>
+        <guid isPermaLink="false">http://localhost/ticket/2796</guid>
+        <title>#2796: Need a datahub one-pager</title>
+        <pubDate>Thu, 02 Aug 2012 16:28:36 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+A one-pager explaining what the datahub is and with howto/examples for new users. This would make it much easier to explain the value in using the datahub for storing data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2796#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2773</link>
+        <guid isPermaLink="false">http://localhost/ticket/2773</guid>
+        <title>#2773: About page needs improving</title>
+        <pubDate>Mon, 30 Jul 2012 11:13:15 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The about page for the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt; (thedatahub.org/about) could be improved. More importantly the default about page for a generic CKAN instance should be completely different - focus more on Open Data rather than the community hub idea (as this is more relevant for most installations) and remove specific references to tdh.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2773#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1009</link>
+        <guid isPermaLink="false">http://localhost/ticket/1009</guid>
+        <title>#1009: Improvements to user accounts sytem</title>
+        <pubDate>Fri, 25 Feb 2011 12:13:11 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Forgot password (email a new password)
+&lt;/li&gt;&lt;li&gt;Confirm email
+&lt;/li&gt;&lt;li&gt;Do not show register page if you are logged in (redirect to home page)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1010" title="enhancement: List CKAN users in WUI (closed: fixed)"&gt;ticket:1010&lt;/a&gt; - listing of users.
+&lt;ul&gt;&lt;li&gt;Do not use /user for general user account home page (either user normal user page /user/{id} or /user/myaccount)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1009#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1384</link>
+        <guid isPermaLink="false">http://localhost/ticket/1384</guid>
+        <title>#1384: CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages</title>
+        <pubDate>Wed, 12 Oct 2011 10:07:57 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Most articles still refer and link to ckan.net, wiki.ckan.net and to packages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1384#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1429</link>
+        <guid isPermaLink="false">http://localhost/ticket/1429</guid>
+        <title>#1429: Provide DOIs for datasets in a CKAN instance</title>
+        <pubDate>Sun, 30 Oct 2011 12:21:45 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+DOI = digital object identifier = &lt;a class="ext-link" href="http://www.doi.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.doi.org/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+As a Publisher I want a DOI for my dataset so that it can be cited by and linked to by others in a standard and easy way.
+&lt;/p&gt;
+&lt;h2 id="Details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Probably implement as extension rather than core
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1458</link>
+        <guid isPermaLink="false">http://localhost/ticket/1458</guid>
+        <title>#1458: Support previewing kml files in data viewer</title>
+        <pubDate>Thu, 10 Nov 2011 14:48:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1151" title="enhancement: Preview for geographic data should be a map (closed: wontfix)"&gt;#1151&lt;/a&gt; (viewing geo data)
+&lt;/p&gt;
+&lt;p&gt;
+E.g. preview of &lt;a class="ext-link" href="http://thedatahub.org/dataset/louisvillecrime"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/louisvillecrime&lt;/a&gt; should bring up a map
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1458#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1459</link>
+        <guid isPermaLink="false">http://localhost/ticket/1459</guid>
+        <title>#1459: Featured Dataset feature</title>
+        <pubDate>Sat, 12 Nov 2011 15:50:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Provide way to mark a dataset as featured. Featured database show up on the front page.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: detail this more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1459#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1571</link>
+        <guid isPermaLink="false">http://localhost/ticket/1571</guid>
+        <title>#1571: [super] Issues Extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:30:25 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;p&gt;
+"Proper" issues extension.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/issues&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Code: &lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Overview
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This would be an extension and improvement of existing todo extension - &lt;a class="closed ticket" href="http://localhost/ticket/842" title="enhancement: Todo list CKAN extension (closed: fixed)"&gt;#842&lt;/a&gt; (&lt;a class="ext-link" href="https://github.com/okfn/ckanext-issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-issues&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Current extension does work but lacks polish
+&lt;/li&gt;&lt;li&gt;Should we polish or do significant improvements?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Functionality - see etherpad
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Steps"&gt;Steps&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Rename todo(s) -&amp;gt; issue(s) in existing extension)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1571#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2874</link>
+        <guid isPermaLink="false">http://localhost/ticket/2874</guid>
+        <title>#2874: Clean up bin directory</title>
+        <pubDate>Fri, 17 Aug 2012 08:01:48 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Full of obsolete material
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2874#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1096</link>
+        <guid isPermaLink="false">http://localhost/ticket/1096</guid>
+        <title>#1096: [super] CKAN Hosted</title>
+        <pubDate>Tue, 19 Apr 2011 17:44:22 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Many users of CKAN want to have their own instance without much effort. Setting these up in separate places is a maintenance nightmare, we should much rather have some tenant separation in core CKAN. Some ideas:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;introduce model.Site and c.site
+&lt;ul&gt;&lt;li&gt;site has: custom CSS, extra_template_path, title, languages list, package_form, group_form (all configured via web UI)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Subdomain detector to activate sites.
+&lt;/li&gt;&lt;li&gt;use site in Authorizer instead of System, have a &lt;a class="missing wiki"&gt;NullSite?&lt;/a&gt; for global things
+&lt;/li&gt;&lt;li&gt;allow cross-site search
+&lt;/li&gt;&lt;li&gt;packages are in a list of sites, m:n rather than 1:n
+&lt;ul&gt;&lt;li&gt;list of sites is string-based, can contain sites not in site table to express harvested external material which is not editable locally.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1096#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1635</link>
+        <guid isPermaLink="false">http://localhost/ticket/1635</guid>
+        <title>#1635: Email notifications (e.g. for activity streams)</title>
+        <pubDate>Wed, 11 Jan 2012 17:56:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should be able to send email notifications to users.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe have a notifications table in the db, and a server-side job that runs periodically and consumes rows from this table, mailing them to the users.
+&lt;/p&gt;
+&lt;p&gt;
+One thing that we may want to send users notifications of is activity stream events. So the activity streams code would have to add rows to the notifications table for the mailer job to consume. But remember that email notifications feature is separate from activity streams - we may want to send notifications of other things as well.
+&lt;/p&gt;
+&lt;p&gt;
+Need to implement (at least some of) &lt;a class="closed ticket" href="http://localhost/ticket/1634" title="enhancement: Allow users to follow/unfollow activity streams of other users, datasets ... (closed: duplicate)"&gt;#1634&lt;/a&gt; before this can be implemented, in order to have something to send notifications about.
+&lt;/p&gt;
+&lt;p&gt;
+Analysis here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1635#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1667</link>
+        <guid isPermaLink="false">http://localhost/ticket/1667</guid>
+        <title>#1667: Add an extension point for rendering activity streams</title>
+        <pubDate>Tue, 17 Jan 2012 10:29:11 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently rendering of activity stream events to HTML works by looking up a rendering function in a dictionary that maps activity types ('new package', 'changed group', etc.) to rendering functions that take an activity stream event and return the rendered HTML.
+&lt;/p&gt;
+&lt;p&gt;
+There needs to be an extension point where extensions can register their own rendering functions for particular activity types.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1667#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1748</link>
+        <guid isPermaLink="false">http://localhost/ticket/1748</guid>
+        <title>#1748: Make activity streams conform to http://activitystrea.ms/ standard</title>
+        <pubDate>Sun, 05 Feb 2012 14:06:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+At the very least we should make our JSON output conform to their spec:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://activitystrea.ms/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://activitystrea.ms/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1748#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1778</link>
+        <guid isPermaLink="false">http://localhost/ticket/1778</guid>
+        <title>#1778: Replace classmethod's with module-level functions</title>
+        <pubDate>Mon, 06 Feb 2012 15:53:34 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+In many places we have @classmethods where simple module-level functions would do (and would be more idiomatic in Python), e.g. the &lt;tt&gt;get()&lt;/tt&gt; classmethods in the model/ classes.
+&lt;/p&gt;
+&lt;p&gt;
+Doing it with module functions lets us type module.function() instead of module.Class.method().
+&lt;/p&gt;
+&lt;p&gt;
+In many cases we're importing classes directly with &lt;tt&gt;from module import Class&lt;/tt&gt; and then doing &lt;tt&gt;Class.method()&lt;/tt&gt;, but &lt;tt&gt;from module import foo&lt;/tt&gt; is bad style: &lt;a class="ext-link" href="http://docs.python.org/dev/howto/doanddont.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.python.org/dev/howto/doanddont.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1778#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1785</link>
+        <guid isPermaLink="false">http://localhost/ticket/1785</guid>
+        <title>#1785: Replace 'Revisions' page with site-wide activity stream</title>
+        <pubDate>Tue, 07 Feb 2012 16:34:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Replace the /revision page with a /activity page showing a site-wide activity stream of all activities in the site. Or perhaps the site-wide activity stream can go somewhere on the front page of the site instead?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2200</link>
+        <guid isPermaLink="false">http://localhost/ticket/2200</guid>
+        <title>#2200: Add vocabulary_id option to tag_show() logic action function</title>
+        <pubDate>Wed, 29 Feb 2012 16:41:18 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Currently tag_show() only works with free tags, it's not possible to get a tag_show for a vocabulary tag.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2200#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2335</link>
+        <guid isPermaLink="false">http://localhost/ticket/2335</guid>
+        <title>#2335: Unicode characters don't work in CKAN ini files</title>
+        <pubDate>Mon, 30 Apr 2012 12:42:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+You get a &lt;a class="missing wiki"&gt;UnicodeDecodeError?&lt;/a&gt;, looks like it tries to decode the ini file as ascii. This is a problem because someone might try to set their site description to something with an umlaut in it, for example.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2335#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2337</link>
+        <guid isPermaLink="false">http://localhost/ticket/2337</guid>
+        <title>#2337: Sort out ini file confusion in docs</title>
+        <pubDate>Mon, 30 Apr 2012 14:57:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+For example if you follow the source install instructions then you have development.ini, then when you go onto Post-Installation Setup it talks about std.ini. People don't realise that these files are the same.
+&lt;/p&gt;
+&lt;p&gt;
+Either fix the docs or fix CKAN to use same ini file names in package and source installs/
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2337#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2370</link>
+        <guid isPermaLink="false">http://localhost/ticket/2370</guid>
+        <title>#2370: Add examples of all config settings in default config file</title>
+        <pubDate>Thu, 03 May 2012 10:50:37 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The default config file should contains examples (maybe commented out) for all config variables. Makes it easier to edit the config. For example openid_enabled is not in there.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2370#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2475</link>
+        <guid isPermaLink="false">http://localhost/ticket/2475</guid>
+        <title>#2475: Upgrade trac.ckan.org to trac 0.12.3</title>
+        <pubDate>Tue, 29 May 2012 18:46:16 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This is not trivial, requires a database upgrade. But 0.12.3 has some nice new features (multiple vcs repository support, ticket comment editing and nicer preview) and the latest spam filter plugin requires 0.12.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://trac.edgewall.org/wiki/ChangeLog"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.edgewall.org/wiki/ChangeLog&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2475#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2477</link>
+        <guid isPermaLink="false">http://localhost/ticket/2477</guid>
+        <title>#2477: Add extensions section to readthedocs</title>
+        <pubDate>Wed, 30 May 2012 15:54:04 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Need a central up to date place for currently supported extensions (closest we have is &lt;a class="ext-link" href="http://wiki.ckan.org/List_of_Extensions"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/List_of_Extensions&lt;/a&gt;) &amp;amp; their documentation. I suggest this gets added to  a dedicated section of docs.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2477#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2478</link>
+        <guid isPermaLink="false">http://localhost/ticket/2478</guid>
+        <title>#2478: Get NeverNotifyUpdaterPlugin installed on trac.ckan.org</title>
+        <pubDate>Wed, 30 May 2012 16:52:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2478#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2516</link>
+        <guid isPermaLink="false">http://localhost/ticket/2516</guid>
+        <title>#2516: Make 'Assign to:' field on trac.ckan.org into a dropdown list</title>
+        <pubDate>Wed, 13 Jun 2012 09:07:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+there's a setting for this
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2516#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2520</link>
+        <guid isPermaLink="false">http://localhost/ticket/2520</guid>
+        <title>#2520: Document undocumented config options</title>
+        <pubDate>Wed, 13 Jun 2012 11:52:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are 21 undocumented config options in CKAN, some of which are not mentioned in the config file template either:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.admin.name
+ckan.admin.email
+ckan.default.group_type
+ckan.page_cache_enabled
+ckan.cache_enabled
+ckan.cache_expires
+ckan.extra_resource_fields
+ckan.extra_resource_group_fields
+ckan.storage.key_prefix
+ckan.storage.max_content_length
+ckan.feeds.authority_name *
+ckan.feeds.date *
+ckan.feeds.author_name *
+ckan.feeds.author_link *
+ckan.mail_from
+ckan.gravatar_default *
+ckan.plugins
+ckan.api_url
+ckan.auth.profile
+ckan.datastore.enabled
+ckan.tracking_enabled
+&lt;/p&gt;
+&lt;p&gt;
+There are also some options that are in the default deployment.ini even though they're deprecated:
+&lt;/p&gt;
+&lt;p&gt;
+ckan.async_notifier
+carrot_messaging_library
+ckan.build_search_index_synchronously
+&lt;/p&gt;
+&lt;p&gt;
+See email to ckan-dev from David Read: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2012-June/002447.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+It'd be best if the docs could be automatically pulled from the source into sphinx using autodoc, see &lt;a class="assigned ticket" href="http://localhost/ticket/1358" title="enhancement: Generate configuration documentation automatically from the ... (assigned)"&gt;#1358&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2520#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2537</link>
+        <guid isPermaLink="false">http://localhost/ticket/2537</guid>
+        <title>#2537: Test and document ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:48:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanbuild"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanbuild&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Verify that what's there so far still works, write a README explaining how it works
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2537#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2538</link>
+        <guid isPermaLink="false">http://localhost/ticket/2538</guid>
+        <title>#2538: Add multiple-instance support to ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:51:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Probably use ansible to do this. To create an instance, create a dir at /etc/ckan/MYSITE, and put MYSITE.wsgi, MYSITE.ini and who.ini files in it. Also put a MYSITE file in /etc/apache2/sites-available. See the example files already present in ckanbuild. Booting a new site should be a single command.
+&lt;/p&gt;
+&lt;p&gt;
+May not handle the postgres/solr/elastic-search side of things yet, could just require the user to set these up herself first and then pass them as args to the create-instance command.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2538#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2539</link>
+        <guid isPermaLink="false">http://localhost/ticket/2539</guid>
+        <title>#2539: Investigate the existing ckan debian package for ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:54:21 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Do we want to build on top of the existing debian packaging code? Or throw it away and start fresh?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2539#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2540</link>
+        <guid isPermaLink="false">http://localhost/ticket/2540</guid>
+        <title>#2540: Implement a way of upgrading ckan sites using ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:55:40 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When there are multiple ckan sites installed on a single server via ckanbuild, there needs to be some way of upgrading them all to a new ckan version at once.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2540#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2541</link>
+        <guid isPermaLink="false">http://localhost/ticket/2541</guid>
+        <title>#2541: Add non-core extensions to ckanbuild</title>
+        <pubDate>Fri, 15 Jun 2012 15:57:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want some extensions from outside of CKAN core to be included in ckanbuild. These would be pip installed into the virtualenv before packaging the debian package. Decide which extensions to include.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2541#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2542</link>
+        <guid isPermaLink="false">http://localhost/ticket/2542</guid>
+        <title>#2542: Create jenkins job to run ckanbuild, and run tests</title>
+        <pubDate>Fri, 15 Jun 2012 15:58:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+It should run the script to create the debian package, boot a VM, install the debian package on the VM, boot a CKAN instance, then run the tests.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2542#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2619</link>
+        <guid isPermaLink="false">http://localhost/ticket/2619</guid>
+        <title>#2619: Omit private datasets from public activity streams</title>
+        <pubDate>Thu, 28 Jun 2012 11:49:00 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Activities about private datasets should not appear in public activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to actually purge the activities from the db, because you might still want them to appear in private activity streams.
+&lt;/p&gt;
+&lt;p&gt;
+I do think that when a dataset goes private all its past activity should go private, because I imagine that users are going to want to hide everything about the dataset and not have any past activities 'leaking out'
+&lt;/p&gt;
+&lt;p&gt;
+I don't think you want to consider whether the dataset was private when the activity happened, rather if a dataset is private now then all its past activities are private (and the simplest thing would be to say that if a dataset is public now then all its past activities become public as well, but is that a privacy concern?)
+&lt;/p&gt;
+&lt;p&gt;
+The easiest way to implement this is going to be by modifying the *_activity_list() action functions in get.py, after they pull their activity lists out of the db they should pass them through a function that filters out stuff about private datasets.
+&lt;/p&gt;
+&lt;p&gt;
+An activity about a private dataset is one whose object_type is 'dataset' and whose object_id matches the id of a private dataset. You should also check the object_type and object_id of all of the activity object's activity detail objects, if any of those match a private dataset then mark the whole activity as private.
+&lt;/p&gt;
+&lt;p&gt;
+Currently all activity streams are public so should have all private datasets filtered out from them, except for the dashboard activity stream which is private to the individual user. In this case private datasets that the user has permission to see should not be filtered.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2619#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2771</link>
+        <guid isPermaLink="false">http://localhost/ticket/2771</guid>
+        <title>#2771: Documentation and examples for IDatasetForm and IGroupForm</title>
+        <pubDate>Fri, 27 Jul 2012 12:30:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add minimal, working IDatasetForm and IGroupForm example extensions to core, with tests.
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm example should use tag vocabularies (two birds with one stone)
+&lt;/p&gt;
+&lt;p&gt;
+The IDatasetForm and IGroupForm docs are not very good (and are somewhat spread around different doc chapters), fix them up, and reference the new working examples.
+&lt;/p&gt;
+&lt;p&gt;
+Tab Vocabularies docs should reference IDatasetForm example.
+&lt;/p&gt;
+&lt;p&gt;
+When using convert_to/from_extras() you have to remove any free extras from the form or it won't work, this needs to be documented (in the docstring maybe)
+&lt;/p&gt;
+&lt;p&gt;
+There have been recent changes to the schemas that IDatasetForm and IGroupForm use, make sure the docs are up to date.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2771#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2815</link>
+        <guid isPermaLink="false">http://localhost/ticket/2815</guid>
+        <title>#2815: db_to_form_package_schema() strips tracking summary, isopen</title>
+        <pubDate>Wed, 08 Aug 2012 16:47:07 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+If an IDatasetForm plugin with a db_to_form_schema() based on db_to_form_package_schema() (which is in turn based on default_package_schema()) is in use then the 'tracking_summary' dict and the 'isopen' bool get stripped from package dicts during validation, e.g. during package_show(), and these values are then not available to templates.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2815#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2870</link>
+        <guid isPermaLink="false">http://localhost/ticket/2870</guid>
+        <title>#2870: 1.8 tag_list not defined</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Thu, Aug 16, 2012 at 3:20 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'genshi.template.eval.&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;'&amp;gt;: "tag_list" not defined
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/dataset/uk-postboxes"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/dataset/uk-postboxes&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.package:322 in read
+&amp;lt;&amp;lt;          template = template[:template.index('.') + 1] + format
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def comments(self, id):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:153 in render
+&amp;lt;&amp;lt;      try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return cached_template(template_name, render_template,
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except ckan.exceptions.&lt;a class="missing wiki"&gt;CkanUrlException?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.templating:249 in cached_template
+&amp;lt;&amp;lt;          return content
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:102 in render_template
+&amp;lt;&amp;lt;          if loader_class == &lt;a class="missing wiki"&gt;NewTextTemplate?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding=None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method=method, encoding=None,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding =None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:183 in render
+&amp;lt;&amp;lt;              method = self.serializer or 'xml'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+generator = self.serialize(method=method, &lt;strong&gt;kwargs)
+return encode(generator, method=method, encoding=encoding, out=out)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def select(self, path, namespaces=None, variables=None):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return encode(generator, method=method, encoding=encoding, out =out)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:57 in encode
+&amp;lt;&amp;lt;          _encode = lambda string: string
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if out is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+for chunk in iterator:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+out.write(_encode(chunk))
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:569 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;      def &lt;span class="underline"&gt;call&lt;/span&gt;(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+strip_markup = self.strip_markup
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is TEXT:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+data = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckanext.googleanalytics.plugin:93 in download_adder
+&amp;lt;&amp;lt;                  [downloaded %s times]&amp;lt;/span&amp;gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+count = None
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark and kind == START:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href = data&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.get('href')
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1175 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          """
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+callable_value = hasattr(self.value, '&lt;span class="underline"&gt;call&lt;/span&gt;')
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if callable_value:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:605 in _include
+&amp;lt;&amp;lt;          from genshi.template.loader import &lt;a class="missing wiki"&gt;TemplateNotFound?&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is INCLUDE:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href, cls, fallback = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:565 in _flatten
+&amp;lt;&amp;lt;                  elif kind is EXPR:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+if result is not None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# First check for a string, otherwise the iterable test
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:277 in _eval_expr
+&amp;lt;&amp;lt;      if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.push(vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.pop()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:178 in evaluate
+&amp;lt;&amp;lt;          &lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+_globals = self._globals(data)
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/em&gt;&lt;/blockquote&gt;
+&lt;p&gt;
+Module ?:51 in &amp;lt;Expression u"tag_list(c.pkg_dict.get('tags', &lt;em&gt;))"&amp;gt;
+&amp;lt;&amp;lt;      &amp;lt;li py:if=&amp;#34;c.pkg_dict.get('tags')" class="sidebar-section"&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;h3&amp;gt;Tags&amp;lt;/h3&amp;gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;/li&amp;gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:309 in lookup_name
+&amp;lt;&amp;lt;              val = BUILTINS.get(name, val)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if val is UNDEFINED:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return val
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:410 in undefined
+&amp;lt;&amp;lt;          """Raise an &lt;tt&gt;&lt;/tt&gt;&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;&lt;tt&gt;&lt;/tt&gt; immediately."""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = True
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;: "tag_list" not defined
+CGI Variables
+CKAN_CURRENT_URL        '/dataset/uk-postboxes'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CKAN_PAGE_CACHABLE        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        'text/html,text/plain,text/xml'
+HTTP_ACCEPT_CHARSET        'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+HTTP_ACCEPT_ENCODING        'gzip'
+HTTP_ACCEPT_LANGUAGE        'vi,en-us;q=0.7,en;q=0.3'
+HTTP_CONNECTION        'close'
+HTTP_HOST        'ckan.net'
+HTTP_USER_AGENT        'coccoc/1.0 ()'
+PATH_INFO        '/dataset/uk-postboxes'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/dataset/uk-postboxes'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '47065'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/dataset/uk-postboxes'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345083636.079552, '_creation_time': 1345083636.079552}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f52e47477d0&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt;.read of &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52e477be90&amp;gt;
+pylons.routes_dict        {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f5312955a50&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f5308983a80&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;, {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2870#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3005</link>
+        <guid isPermaLink="false">http://localhost/ticket/3005</guid>
+        <title>#3005: Add following/unfollowing of groups: model, API, frontend, tests</title>
+        <pubDate>Tue, 23 Oct 2012 17:35:44 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3005#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3028</link>
+        <guid isPermaLink="false">http://localhost/ticket/3028</guid>
+        <title>#3028: Feature: dashboard activity stream filtering</title>
+        <pubDate>Mon, 10 Dec 2012 12:07:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckanext-pdeu/issues/13"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-pdeu/issues/13&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3028#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3029</link>
+        <guid isPermaLink="false">http://localhost/ticket/3029</guid>
+        <title>#3029: JSONP parameter scuppers Search in API</title>
+        <pubDate>Tue, 11 Dec 2012 15:00:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;tt&gt;http://datahub.io/api/2/search/package?jsonp=jsonpcallback&amp;amp;q=canada&lt;/tt&gt; returns
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"count": 0, "results": []}
+&lt;/pre&gt;&lt;p&gt;
+I believe this worked in CKAN 1.4 or 1.5, but it is broken on 1.7.1, 1.8 and whatever demo.ckan.org is running. I suspect the jsonpcallback parameter is getting sent to SOLR.
+&lt;/p&gt;
+&lt;p&gt;
+This bug prevents using javascript on another site to search CKAN (although hopefully the action API would work).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3029#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2547</link>
+        <guid isPermaLink="false">http://localhost/ticket/2547</guid>
+        <title>#2547: ODS Initial data sets</title>
+        <pubDate>Mon, 18 Jun 2012 10:55:06 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+The ODS demo site will need data adding, initially as fixtures but it would also be useful if we started evaluating datasets that we can ship with ODS installations (at least in the UK) from places such as DGU and ONS.
+&lt;/p&gt;
+&lt;p&gt;
+May wish to create a ticket for making sure the datasets within the system are reset every X hours. Perhaps.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a new system administrator for an ODS instance, I don't want to have a site devoid of any data. Geographically relevant datasets would be welcomed.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a bizdev person I would like to be able to demonstrate how ODS works with real datasets.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Identify relevant sources for datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Pick datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Set them up for import
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2547#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2590</link>
+        <guid isPermaLink="false">http://localhost/ticket/2590</guid>
+        <title>#2590: Publisher dashboard</title>
+        <pubDate>Mon, 25 Jun 2012 10:03:37 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Need proper user stories but ...
+&lt;/p&gt;
+&lt;p&gt;
+Publisher admins/editors may need a more useful group read page showing things like:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The current search
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Recent activity
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;People within the group
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Followers
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Others?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2590#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2699</link>
+        <guid isPermaLink="false">http://localhost/ticket/2699</guid>
+        <title>#2699: workflow for associating datasets with groups</title>
+        <pubDate>Wed, 18 Jul 2012 14:02:56 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+needs review &amp;amp; speccing out
+e.g. datasets created by a user who belongs to a certain publisher (group) get auto added to this group
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2699#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2702</link>
+        <guid isPermaLink="false">http://localhost/ticket/2702</guid>
+        <title>#2702: Future Javascript wishlist for demo</title>
+        <pubDate>Wed, 18 Jul 2012 14:07:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tooltip on popular datasets with number of views
+facets to update automatically
+creating a dataset without reloading page between steps
+hover on licences information
+autocomplete on search terms
+group filtering
+social share buttons in lightboxes
+dataset counts on homepage
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2814</link>
+        <guid isPermaLink="false">http://localhost/ticket/2814</guid>
+        <title>#2814: Demo: upload file behaves oddly</title>
+        <pubDate>Wed, 08 Aug 2012 10:06:00 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;ol start="3"&gt;&lt;li&gt;Uploading a file behaves counter-intuitively (I would suggest wrongly).
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+When adding a new resource by uploading a file, I select a file called
+say create-group.png. I expect the following to happen:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the pathname of that file is filled in the box;
+&lt;/li&gt;&lt;li&gt;nothing is actually uploaded till I hit 'add' (confirming that I've got the right file etc).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Instead of this,
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;the file is immediately and, seemingly, irrevocably uploaded;
+&lt;/li&gt;&lt;li&gt;the box is filled with a mysterious URL (&lt;a class="ext-link" href="https://commondatastorage.googleapis.com/ckan-demo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://commondatastorage.googleapis.com/ckan-demo&lt;/a&gt; ...)
+&lt;/li&gt;&lt;li&gt;the mysterious URL is so long I can't even see the final element, which is my file name.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2814#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2956</link>
+        <guid isPermaLink="false">http://localhost/ticket/2956</guid>
+        <title>#2956: Allow for resource editing in CKAN 2.0</title>
+        <pubDate>Wed, 03 Oct 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the edit dataset page... there needs to be a way for users to be able to see all the resources associated to the dataset and edit them individually.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2956#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1287</link>
+        <guid isPermaLink="false">http://localhost/ticket/1287</guid>
+        <title>#1287: NAVL validation errors - Junk fields should be listed explicitly</title>
+        <pubDate>Wed, 24 Aug 2011 16:25:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package, but specify a key that is not allowed (e.g. 'relationships') then you get error message:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"__junk": ["The input field __junk was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+It should mention the actual key which is not expected. e.g.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{"relationships": ["The input field 'relationships' was not expected."]}
+&lt;/pre&gt;&lt;p&gt;
+Kindly said that James' version of NAVL was better in this respect, so this might be best solved by moving to that.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1287#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/235</link>
+        <guid isPermaLink="false">http://localhost/ticket/235</guid>
+        <title>#235: Resource format normalization and detection</title>
+        <pubDate>Mon, 18 Jan 2010 15:13:24 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Try to gather proper MIME  information for all package resources in CKAN. This is a shared ticket with dcat-tools (&lt;a class="ext-link" href="https://bitbucket.org/pudo/dcat-tools"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/pudo/dcat-tools&lt;/a&gt;), i.e. opendatasearch.org. This can then also be used by ckanrdf, the CKAN RDF conversion service.
+&lt;/p&gt;
+&lt;p&gt;
+Sub-tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create a Google Spreadsheet with two Worksheets: "MIME-Mappings", i.e. "CSV" -&amp;gt; "text/csv" and "Name mappings", i.e. "text/csv" -&amp;gt; "Comma-Separated Spreadsheet".
+&lt;/li&gt;&lt;li&gt;Collect and map surface forms from all CKANs
+&lt;/li&gt;&lt;li&gt;Access this via Swiss and apply, store as a &lt;a class="missing wiki"&gt;PackageResource?&lt;/a&gt; extra field pending &lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt; (Resource extras).
+&lt;/li&gt;&lt;li&gt;Add heuristics for format auto-detections:
+&lt;ul&gt;&lt;li&gt;Map well-known file extensions
+&lt;/li&gt;&lt;li&gt;Recognize obvious magic (Zip, Tar)
+&lt;/li&gt;&lt;li&gt;Peek into &lt;a class="missing wiki"&gt;Zipfile/Tarfiles?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Define a convention for generic data types (many CKAN packages have only "Spreadsheet" defined, either detect specific type or set MIME to */tabular-data or similar)
+&lt;/li&gt;&lt;li&gt;See also: &lt;a class="closed ticket" href="http://localhost/ticket/816" title="enhancement: Autocomplete for the resource format field (closed: fixed)"&gt;#816&lt;/a&gt; (Autocomplete for the resource format field)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/235#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1069</link>
+        <guid isPermaLink="false">http://localhost/ticket/1069</guid>
+        <title>#1069: Stub datasets (request for datasets)</title>
+        <pubDate>Fri, 01 Apr 2011 14:08:39 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Idea is to have stubs for datasets that someone wants but don't yet exist (or haven't been discovered) in the way one has stub pages on a wiki.
+&lt;/p&gt;
+&lt;p&gt;
+We could do this within the existing model by a slight 'abuse' - create a dataset and mark it with a special tag e.g. todo.does-not-yet-exist or similar ...
+&lt;/p&gt;
+&lt;p&gt;
+(Just as we have datasets listed that exist but aren't available ...)
+&lt;/p&gt;
+&lt;p&gt;
+Alternative would be to have a request for datasets subsystem.
+&lt;/p&gt;
+&lt;p&gt;
+I prefer the stub dataset model because it's simpler, provides a simple workflow (as a dataset is found or comes into existence), and the package page provides a natural space in which to accumulate information about what is wanted and what exists.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Agree a new dedicated tag. e.g. todo.does-not-exist
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Related"&gt;Related&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;This ticket has clear links to &lt;a class="ext-link" href="http://getthedata.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://getthedata.org/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1069#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2244</link>
+        <guid isPermaLink="false">http://localhost/ticket/2244</guid>
+        <title>#2244: clean up auth</title>
+        <pubDate>Mon, 19 Mar 2012 17:22:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;cache admins etc
+&lt;/li&gt;&lt;li&gt;aim to move check_access so independent of logic function
+&lt;/li&gt;&lt;li&gt;general spruce up
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2244#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2257</link>
+        <guid isPermaLink="false">http://localhost/ticket/2257</guid>
+        <title>#2257: cleanup template vars</title>
+        <pubDate>Fri, 23 Mar 2012 14:35:07 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+look at reducing what is pulled into templates eg ckan.lib.helpers
+ensure that these changes don't break existing extensions etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2257#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2282</link>
+        <guid isPermaLink="false">http://localhost/ticket/2282</guid>
+        <title>#2282: log api calls for users</title>
+        <pubDate>Tue, 10 Apr 2012 16:18:45 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This was part of &lt;a class="closed ticket" href="http://localhost/ticket/2251" title="enhancement: Internal analytics for ckan. (closed: fixed)"&gt;#2251&lt;/a&gt; but is now it's own ticket.
+&lt;/p&gt;
+&lt;p&gt;
+we need clarity on this.  The use cases so far have been possible limiting api calls for users.
+&lt;/p&gt;
+&lt;p&gt;
+so we want to monitor the user or ip address
+&lt;/p&gt;
+&lt;p&gt;
+what about the api calls?
+&lt;/p&gt;
+&lt;p&gt;
+do we want to record all calls or just some?  do we want to record the type of call and to what level of detail?
+&lt;/p&gt;
+&lt;p&gt;
+recording the url just seems to specific to me.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2282#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2411</link>
+        <guid isPermaLink="false">http://localhost/ticket/2411</guid>
+        <title>#2411: .ini file is a mess</title>
+        <pubDate>Tue, 22 May 2012 11:41:40 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+The .ini file needs cleaning up in assorted ways which Toby will expand upon.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2411#changelog</comments>
+    </item>
+ </channel>
+</rss>

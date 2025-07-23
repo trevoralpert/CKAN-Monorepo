@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=timmcnamara&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=timmcnamara&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1185</link>
+        <guid isPermaLink="false">http://localhost/ticket/1185</guid>
+        <title>#1185: Administrators can't delete packages from web UI</title>
+        <pubDate>Wed, 15 Jun 2011 04:23:38 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Administrators have "View", "Edit" and "History" tabs. However, I can't see a way to delete a package from the web UI.
+&lt;/p&gt;
+&lt;p&gt;
+Version: CKAN.net as of today
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1185#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1182</link>
+        <guid isPermaLink="false">http://localhost/ticket/1182</guid>
+        <title>#1182: Comments from deleted packages appear in "Recent Comments" feed</title>
+        <pubDate>Thu, 09 Jun 2011 22:24:11 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+When a package has been deleted, say for spam moderation, comments still appear in the recent comments section.
+&lt;/p&gt;
+&lt;p&gt;
+This is a problem because non-admin users will be shown a warning that they're not authorised to view the package if they click on the link.
+&lt;/p&gt;
+&lt;p&gt;
+At CKAN.net currently, this affects the most recent comment.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1182#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1227</link>
+        <guid isPermaLink="false">http://localhost/ticket/1227</guid>
+        <title>#1227: Display packages' tags in search results</title>
+        <pubDate>Tue, 19 Jul 2011 00:11:02 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+In when displaying search results, it would be useful to also display the tags of a package. Sometimes it's difficult to infer the scope of what the package does from the title and the first sentence of the description. Tags are quite concise way to display rich information.
+&lt;/p&gt;
+&lt;p&gt;
+ENV=datacatalos.org, with CKAN 1.4.2a
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1227#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1144</link>
+        <guid isPermaLink="false">http://localhost/ticket/1144</guid>
+        <title>#1144: Support DSPL</title>
+        <pubDate>Thu, 19 May 2011 00:06:49 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+DSPL, the Dataset Publishing Language, is being promoted by Google for its "Google Public Data Explorer" system. It is an XML format with metadata.
+&lt;/p&gt;
+&lt;p&gt;
+The format is described on the &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/developer_guide.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;developer docs ofthe Google Code site&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Google provides a &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/dsplgen.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Python script which reads CSV data and generates DSPL&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Sample from &lt;a class="ext-link" href="http://code.google.com/apis/publicdata/docs/dspl_sample.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://code.google.com/apis/publicdata/docs/dspl_sample.html&lt;/a&gt;:
+&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre&gt;
+&lt;span class="cp"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;dspl&lt;/span&gt; &lt;span class="na"&gt;xmlns=&lt;/span&gt;&lt;span class="s"&gt;"http://schemas.google.com/dspl/2010"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:geo=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:geo_usa=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo/us"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:time=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/time"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:quantity=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/quantity"&lt;/span&gt;
+    &lt;span class="na"&gt;xmlns:entity=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/entity"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/time"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/quantity"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/entity"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;import&lt;/span&gt; &lt;span class="na"&gt;namespace=&lt;/span&gt;&lt;span class="s"&gt;"http://www.google.com/publicdata/dataset/google/geo"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;My statistics&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Some very interesting statistics about countries&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.stats-bureau.com/mystats/info.html&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;provider&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Bureau of Statistics&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.stats-bureau.com&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/provider&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;topics&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"geography"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Geography&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"social_indicators"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Social indicators&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population_indicators"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Population indicators&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"poverty_and_income"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Poverty &lt;span class="err"&gt;&amp;amp;&lt;/span&gt; income&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"health"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Health&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/topic&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/topics&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;concepts&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- As noted in the tutorial, this concept should extend quantity:amount.--&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Population&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Size of the resident population.&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"population_indicators"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- This country concept is defined for educational purposes only. A country
+    concept exists in the Google geo dataset. See:
+    http://code.google.com/apis/publicdata/docs/canonical/geo.html --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"geo:location"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Country&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;My list of countries&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;property&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&amp;lt;value&lt;/span&gt; &lt;span class="na"&gt;xml:lang=&lt;/span&gt;&lt;span class="s"&gt;"en"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Country name&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;lt;value&lt;/span&gt; &lt;span class="na"&gt;xml:lang=&lt;/span&gt;&lt;span class="s"&gt;"en"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;The official name of the country&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- This US state concept is defined for educational purposes only. A US state
+      concept exists in the Google geo US dataset. See:
+      http://code.google.com/apis/publicdata/docs/canonical/geo.us.html --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"geo:location"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;State&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;US states&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;property&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;isParent=&lt;/span&gt;&lt;span class="s"&gt;"true"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"states_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"entity:entity"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Gender&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;Gender, Male or Female&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;pluralName&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Genders&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/pluralName&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;totalName&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;Both genders&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/totalName&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"genders_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;concept&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt; &lt;span class="na"&gt;extends=&lt;/span&gt;&lt;span class="s"&gt;"quantity:rate"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;info&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;name&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;unemployment rate&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;description&amp;gt;&lt;/span&gt;
+          &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;The percent of the labor force that is unemployed, not seasonally
+            adjusted.&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;url&amp;gt;&amp;lt;value&amp;gt;&lt;/span&gt;http://www.bls.gov/cps/cps_htgm.htm&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&amp;lt;/url&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/info&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;topic&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"social_indicators"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;attribute&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"is_percentage"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;type&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"boolean"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;true&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/attribute&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/concept&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/concepts&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;slices&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"states_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;slice&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;dimension&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"time:year"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;metric&lt;/span&gt; &lt;span class="na"&gt;concept=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;ref=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/slice&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/slices&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;tables&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"latitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"longitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;countries.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;country_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;value&amp;gt;&lt;/span&gt;US&lt;span class="nt"&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"latitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"longitude"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;states.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"states_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"state"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"unemployment_rate"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"float"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;state_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"genders_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"name"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;genders.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;table&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"countries_gender_slice_table"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"country"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"gender"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"string"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"year"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"date"&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"yyyy"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;column&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"population"&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;"integer"&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;data&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;file&lt;/span&gt; &lt;span class="na"&gt;format=&lt;/span&gt;&lt;span class="s"&gt;"csv"&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;"utf-8"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;gender_country_slice.csv&lt;span class="nt"&gt;&amp;lt;/file&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/tables&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/dspl&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1144#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1184</link>
+        <guid isPermaLink="false">http://localhost/ticket/1184</guid>
+        <title>#1184: Support Wuala as CKAN storage option</title>
+        <pubDate>Tue, 14 Jun 2011 06:59:11 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Most of CKANs storage options are tied to the USA. This brings concerns of data security for some organisations who may wish to adopt the system. &lt;a class="ext-link" href="http://wua.la"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Wuala&lt;/a&gt; is a distributed file system that stores data in a peer-to-peer manner. The company behind it, &lt;a class="missing wiki"&gt;LaCie?&lt;/a&gt; sells storage for a fee. However, they also enable clients to have 'free' storage space when machines act as a storage node.
+&lt;/p&gt;
+&lt;p&gt;
+In order to be a storage node, a machine needs to be online for more than 14% of the time - roughly 4h per day. Most CKAN servers are likely to have a far greater uptime than this.
+&lt;/p&gt;
+&lt;p&gt;
+Supporting Wuala would go some way to enabling CKAN to be used in a secure manner. That is, CKAN could be promoted for organisational use where there is lots of data to be stored and large geographic distances to be managed. There is a &lt;a class="ext-link" href="http://www.wuala.com/Wuala%20API/Sample%20Clients/Python/wualaAPI/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Python client available&lt;/a&gt; and a fairly &lt;a class="ext-link" href="http://www.youtube.com/watch?v=3xKZ4KGkQY8"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;long Google Tech Talk&lt;/a&gt; that overviews the system.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1184#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1179</link>
+        <guid isPermaLink="false">http://localhost/ticket/1179</guid>
+        <title>#1179: Support tag aliases</title>
+        <pubDate>Tue, 07 Jun 2011 06:47:01 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+A small number of tags are near-duplicates of each other.
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps we could support word stemming from NLTK and/or manual tag aliases:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+statistics
+statistik
+...
+survey
+surveying
+surveys
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1179#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1145</link>
+        <guid isPermaLink="false">http://localhost/ticket/1145</guid>
+        <title>#1145: Support the Handle System</title>
+        <pubDate>Thu, 19 May 2011 00:26:15 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+The Handle System is an initiative to provide persistent references for resources. That is, it's basically a proxy system for preventing link rot.
+&lt;/p&gt;
+&lt;p&gt;
+Its documentation is here: &lt;a class="ext-link" href="http://www.handle.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.handle.net/&lt;/a&gt;. Servers running CKAN could host a "Local Handle Service", which redirects a hash of a resource to an actual URL.
+&lt;/p&gt;
+&lt;p&gt;
+Some suggested use cases:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Researcher would like to cite where data came from
+&lt;/li&gt;&lt;li&gt;Agencies would like to have a way to prevent vendor
+lock-in from CKAN if they decide to move to another
+platform
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1145#changelog</comments>
+    </item>
+ </channel>
+</rss>

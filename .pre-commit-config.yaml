@@ -1,0 +1,136 @@
+# CKAN Pre-commit Configuration
+# This file configures automated checks that run before each commit
+# to prevent security issues, code quality problems, and secret exposure
+
+repos:
+  # Detect secrets and sensitive information
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        name: Detect secrets
+        description: Detect secrets in code
+        args: ['--baseline', '.secrets.baseline']
+        exclude: |
+          (?x)^(
+              .*\.lock$|
+              .*\.min\.js$|
+              .*\.min\.css$|
+              .*-lock\.json$|
+              .*\.svg$|
+              .*\.png$|
+              .*\.jpg$|
+              .*\.jpeg$|
+              .*\.gif$|
+              .*\.ico$|
+              .*\.woff$|
+              .*\.woff2$|
+              .*\.ttf$|
+              .*\.eot$|
+              .*\.map$|
+              CHANGELOG.*|
+              .*\.md$|
+              LICENSE.*
+          )$
+
+  # Additional secret scanning
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.63.2-rc
+    hooks:
+      - id: trufflehog
+        name: TruffleHog OSS
+        description: Detect secrets in code
+        entry: bash -c 'trufflehog git file://$(pwd) --since-commit HEAD --only-verified --fail'
+        language: system
+        stages: ["commit", "push"]
+
+  # Prevent large files and common mistakes
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: Fix end of files
+      - id: check-yaml
+        name: Check YAML syntax
+        args: ['--multi']
+      - id: check-json
+        name: Check JSON syntax
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+      - id: check-added-large-files
+        name: Check for large files
+        args: ['--maxkb=500']
+      - id: debug-statements
+        name: Debug statement (Python)
+      - id: check-executables-have-shebangs
+        name: Check shell scripts have shebangs
+      - id: check-shebang-scripts-are-executable
+        name: Check shell scripts are executable
+      - id: fix-byte-order-marker
+        name: Fix UTF-8 byte order marker
+
+  # Prevent committing sensitive files
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-private-key
+        name: Check for private keys
+      - id: forbid-new-submodules
+        name: Forbid new submodules
+
+  # Python code quality
+  - repo: https://github.com/psf/black
+    rev: 23.9.1
+    hooks:
+      - id: black
+        name: Black (Python formatter)
+        language_version: python3
+        exclude: |
+          (?x)^(
+              migrations/.*|
+              .*/__pycache__/.*|
+              .*/build/.*|
+              .*/dist/.*
+          )$
+
+  # Security-specific checks for common vulnerabilities
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.5
+    hooks:
+      - id: bandit
+        name: Bandit (Python security)
+        args: ['-r', '.', '-f', 'json', '-o', 'bandit-report.json']
+        exclude: |
+          (?x)^(
+              .*/tests/.*|
+              .*/test_.*\.py$|
+              .*/conftest\.py$
+          )$
+
+  # Environment variable and secret pattern detection
+  - repo: local
+    hooks:
+      - id: check-env-vars
+        name: Check for hardcoded environment variables
+        entry: bash -c 'if grep -r --include="*.py" --include="*.ini" --include="*.cfg" --include="*.yaml" --include="*.yml" -E "(SECRET_KEY|API_KEY|PASSWORD|TOKEN)\s*[=:]\s*[\"'"'"'][^\"'"'"']{8,}[\"'"'"']" . --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=__pycache__ --exclude="*.example" --exclude="*.template"; then echo "Found hardcoded secrets! Use environment variables instead."; exit 1; fi'
+        language: system
+        pass_filenames: false
+
+      - id: check-database-urls
+        name: Check for hardcoded database URLs
+        entry: bash -c 'if grep -r --include="*.py" --include="*.ini" --include="*.cfg" -E "(postgresql|mysql|sqlite)://[^@]+:[^@]+@" . --exclude-dir=.git --exclude-dir=node_modules --exclude="*.example" --exclude="*.template"; then echo "Found hardcoded database credentials! Use environment variables instead."; exit 1; fi'
+        language: system
+        pass_filenames: false
+
+      - id: check-aws-keys
+        name: Check for AWS keys
+        entry: bash -c 'if grep -r --include="*.py" --include="*.ini" --include="*.cfg" --include="*.yaml" --include="*.yml" -E "(AKIA[0-9A-Z]{16}|aws_access_key_id|aws_secret_access_key)" . --exclude-dir=.git --exclude-dir=node_modules --exclude="*.example" --exclude="*.template"; then echo "Found AWS credentials! Use environment variables or IAM roles instead."; exit 1; fi'
+        language: system 
+        pass_filenames: false
+
+# Configuration
+default_stages: [commit]
+fail_fast: false
+minimum_pre_commit_version: 2.20.0 

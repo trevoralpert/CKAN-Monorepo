@@ -1,0 +1,2677 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=ross&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=ross&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2550</link>
+        <guid isPermaLink="false">http://localhost/ticket/2550</guid>
+        <title>#2550: User types</title>
+        <pubDate>Mon, 18 Jun 2012 11:06:30 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+In the data hub plugin we require the ability to differentiate users between those that have paid for a service, and those that haven't. The distinction isn't boolean as there may be levels of service for paid users, so it may be that we need a 'type' of user where there are various grades of 'paid' which are likely to be strings (specific to the data hub).
+&lt;/p&gt;
+&lt;h2 id="Requiredinterface"&gt;Required interface&lt;/h2&gt;
+&lt;p&gt;
+Once changes have been made to the user schema, for a given user we want to be able to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;determine if they have a paid or a free account, and
+&lt;/li&gt;&lt;li&gt;get a string name of the type of paid account.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Care should be taken to ensure that the 'paid' status of the user cannot be set through the API and only by the datahub plugin.
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+User stories related to the management, setting and changing of a user's payment level, as well as historical information on payments should be done as part of the work that includes actually allowing purchases.  For now it is adequate that we can manually control these things through paster commands.
+&lt;/p&gt;
+&lt;p&gt;
+Payments types should be linear as I don't believe for this type of service a pick-and-mix modular model would work well. Organizations will inherit the payment level of their owner, so currently there is no requirement for it to affect organizations at all.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to use a paster command to
+manually set a user's payment level, or remove it entirely.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to run a paster command to
+view a list of users who have a payment plan, grouped by the plan
+that they have.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a sysadmin I would like to be able to use the API to change the
+payment status of a specific user through user_create and user_update.
+This shouldn't be available to anybody else.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a user, and only if I have one, I'd like to see my current payment
+level on my user profile page.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[x] Tests
+&lt;/p&gt;
+&lt;p&gt;
+[x] Plugin based migration
+&lt;/p&gt;
+&lt;p&gt;
+[x] Code
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[x] Model
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[x] API
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[x] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2550#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2917</link>
+        <guid isPermaLink="false">http://localhost/ticket/2917</guid>
+        <title>#2917: Organization admins can delete themselves</title>
+        <pubDate>Wed, 12 Sep 2012 12:10:43 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Organization administrators can delete themselves from the user management pages.  We should disable this on the front-end as well as the back-end.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2917#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1652</link>
+        <guid isPermaLink="false">http://localhost/ticket/1652</guid>
+        <title>#1652: How we intergrate with Drupal Multiligual?</title>
+        <pubDate>Mon, 16 Jan 2012 10:31:34 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Analysis of how/where we can integrate with Drupal Multilingual
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Is it likely to access CKAN via /en/data/... or /data/en/... (not sure, probably former) and we need to make sure that it ends up at /en/...
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Check with Ian for other issues.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1652#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2548</link>
+        <guid isPermaLink="false">http://localhost/ticket/2548</guid>
+        <title>#2548: Object ownership for groups/package</title>
+        <pubDate>Mon, 18 Jun 2012 11:02:11 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+We need to be able to easily determine who the owner of a dataset or group is.  Datasets and Groups should have an Owner, who may change over time but is a specific user within the CKAN instance.  It should be easy for CKAN components to determine the user and for the initial version we should ignore the can of worms labelled 'ownership transfer'.
+&lt;/p&gt;
+&lt;p&gt;
+At this point migration is likely to be the biggest issue, and would suggest that it is acceptable that the last user to edit a dataset be set as the current owner.
+&lt;/p&gt;
+&lt;p&gt;
+More tickets should arise as a result of this work where we may be able to optimise some queries to use the new feature.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Analysis/Clarification?&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Tests
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Migration
+&lt;/p&gt;
+&lt;p&gt;
+[ ] &lt;a class="missing wiki"&gt;Code/Schema?&lt;/a&gt; changes
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2548#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2796</link>
+        <guid isPermaLink="false">http://localhost/ticket/2796</guid>
+        <title>#2796: Need a datahub one-pager</title>
+        <pubDate>Thu, 02 Aug 2012 16:28:36 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+A one-pager explaining what the datahub is and with howto/examples for new users. This would make it much easier to explain the value in using the datahub for storing data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2796#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2870</link>
+        <guid isPermaLink="false">http://localhost/ticket/2870</guid>
+        <title>#2870: 1.8 tag_list not defined</title>
+        <pubDate>Thu, 16 Aug 2012 10:58:52 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Thu, Aug 16, 2012 at 3:20 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'genshi.template.eval.&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;'&amp;gt;: "tag_list" not defined
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/dataset/uk-postboxes"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/dataset/uk-postboxes&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.package:322 in read
+&amp;lt;&amp;lt;          template = template[:template.index('.') + 1] + format
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def comments(self, id):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render(template, loader_class=loader)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:153 in render
+&amp;lt;&amp;lt;      try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return cached_template(template_name, render_template,
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except ckan.exceptions.&lt;a class="missing wiki"&gt;CkanUrlException?&lt;/a&gt;, e:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+loader_class=loader_class)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.templating:249 in cached_template
+&amp;lt;&amp;lt;          return content
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return render_func()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:102 in render_template
+&amp;lt;&amp;lt;          if loader_class == &lt;a class="missing wiki"&gt;NewTextTemplate?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding=None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method=method, encoding=None,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return literal(stream.render(method="text", encoding =None))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:183 in render
+&amp;lt;&amp;lt;              method = self.serializer or 'xml'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+generator = self.serialize(method=method, &lt;strong&gt;kwargs)
+return encode(generator, method=method, encoding=encoding, out=out)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def select(self, path, namespaces=None, variables=None):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return encode(generator, method=method, encoding=encoding, out =out)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:57 in encode
+&amp;lt;&amp;lt;          _encode = lambda string: string
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if out is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+for chunk in iterator:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+out.write(_encode(chunk))
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _encode(&lt;em&gt;.join(list(iterator)))
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.output:569 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;      def &lt;span class="underline"&gt;call&lt;/span&gt;(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+strip_markup = self.strip_markup
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is TEXT:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+data = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckanext.googleanalytics.plugin:93 in download_adder
+&amp;lt;&amp;lt;                  [downloaded %s times]&amp;lt;/span&amp;gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+count = None
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark and kind == START:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href = data&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;.get('href')
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1175 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          """
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+callable_value = hasattr(self.value, '&lt;span class="underline"&gt;call&lt;/span&gt;')
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if callable_value:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, (kind, data, pos) in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.core:288 in _ensure
+&amp;lt;&amp;lt;      # unchanged
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:686 in _unmark
+&amp;lt;&amp;lt;      def _unmark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kind = event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt;
+if not (kind is None or kind is ATTR or kind is BREAK):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:1145 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          :param stream: The marked event stream to filter
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"""
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+if mark is ENTER:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:714 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          stream = iter(stream)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+next = stream.next
+for mark, event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if mark is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield mark, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for mark, event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.filters.transform:682 in _mark
+&amp;lt;&amp;lt;      def _mark(self, stream):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+yield OUTSIDE, event
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:605 in _include
+&amp;lt;&amp;lt;          from genshi.template.loader import &lt;a class="missing wiki"&gt;TemplateNotFound?&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if event&lt;a class="missing changeset" title="No default repository defined"&gt;[0]&lt;/a&gt; is INCLUDE:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+href, cls, fallback = event&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+for event in stream:
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:565 in _flatten
+&amp;lt;&amp;lt;                  elif kind is EXPR:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+if result is not None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# First check for a string, otherwise the iterable test
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = _eval_expr(data, ctxt, vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.base:277 in _eval_expr
+&amp;lt;&amp;lt;      if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.push(vars)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+if vars:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+ctxt.pop()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+retval = expr.evaluate(ctxt)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:178 in evaluate
+&amp;lt;&amp;lt;          &lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+_globals = self._globals(data)
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return eval(self.code, _globals, {'&lt;span class="underline"&gt;data&lt;/span&gt;': data})
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/em&gt;&lt;/blockquote&gt;
+&lt;p&gt;
+Module ?:51 in &amp;lt;Expression u"tag_list(c.pkg_dict.get('tags', &lt;em&gt;))"&amp;gt;
+&amp;lt;&amp;lt;      &amp;lt;li py:if=&amp;#34;c.pkg_dict.get('tags')" class="sidebar-section"&amp;gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;h3&amp;gt;Tags&amp;lt;/h3&amp;gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&amp;lt;/li&amp;gt;
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+${tag_list(c.pkg_dict.get('tags', &lt;em&gt;))}
+&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:309 in lookup_name
+&amp;lt;&amp;lt;              val = BUILTINS.get(name, val)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if val is UNDEFINED:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return val
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+val = cls.undefined(name)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module genshi.template.eval:410 in undefined
+&amp;lt;&amp;lt;          """Raise an &lt;tt&gt;&lt;/tt&gt;&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;&lt;tt&gt;&lt;/tt&gt; immediately."""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = True
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;(key, owner=owner)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;UndefinedError?&lt;/a&gt;: "tag_list" not defined
+CGI Variables
+CKAN_CURRENT_URL        '/dataset/uk-postboxes'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CKAN_PAGE_CACHABLE        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        'text/html,text/plain,text/xml'
+HTTP_ACCEPT_CHARSET        'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+HTTP_ACCEPT_ENCODING        'gzip'
+HTTP_ACCEPT_LANGUAGE        'vi,en-us;q=0.7,en;q=0.3'
+HTTP_CONNECTION        'close'
+HTTP_HOST        'ckan.net'
+HTTP_USER_AGENT        'coccoc/1.0 ()'
+PATH_INFO        '/dataset/uk-postboxes'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/dataset/uk-postboxes'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '47065'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/dataset/uk-postboxes'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345083636.079552, '_creation_time': 1345083636.079552}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f52e47477d0&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt;.read of &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.package.&lt;a class="missing wiki"&gt;PackageController?&lt;/a&gt; object at 0x7f52e477b810&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52e477be90&amp;gt;
+pylons.routes_dict        {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f5312955a50&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f5308983a80&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52eb8c9090&amp;gt;, {'action': u'read', 'controller': u'package', 'id': u'uk-postboxes'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2870#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2547</link>
+        <guid isPermaLink="false">http://localhost/ticket/2547</guid>
+        <title>#2547: ODS Initial data sets</title>
+        <pubDate>Mon, 18 Jun 2012 10:55:06 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+The ODS demo site will need data adding, initially as fixtures but it would also be useful if we started evaluating datasets that we can ship with ODS installations (at least in the UK) from places such as DGU and ONS.
+&lt;/p&gt;
+&lt;p&gt;
+May wish to create a ticket for making sure the datasets within the system are reset every X hours. Perhaps.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a new system administrator for an ODS instance, I don't want to have a site devoid of any data. Geographically relevant datasets would be welcomed.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a bizdev person I would like to be able to demonstrate how ODS works with real datasets.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Identify relevant sources for datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Pick datasets
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Set them up for import
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2547#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2590</link>
+        <guid isPermaLink="false">http://localhost/ticket/2590</guid>
+        <title>#2590: Publisher dashboard</title>
+        <pubDate>Mon, 25 Jun 2012 10:03:37 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Need proper user stories but ...
+&lt;/p&gt;
+&lt;p&gt;
+Publisher admins/editors may need a more useful group read page showing things like:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The current search
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Recent activity
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;People within the group
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Followers
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Others?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2590#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1550</link>
+        <guid isPermaLink="false">http://localhost/ticket/1550</guid>
+        <title>#1550: Allow simple auth via the API</title>
+        <pubDate>Fri, 16 Dec 2011 15:29:29 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+It should be possible to pass userid/username and api key and obtain a response from CKAN for external services that use CKAN auth. Those services shouldn't be talking to the DB directly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1550#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1684</link>
+        <guid isPermaLink="false">http://localhost/ticket/1684</guid>
+        <title>#1684: Remove all config from ckanext-archiver</title>
+        <pubDate>Thu, 19 Jan 2012 14:37:01 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+ckanext-archiver currently has a settings file (and a default) and it should be passed in all relevant information from the context.
+&lt;/p&gt;
+&lt;p&gt;
+Remove all settings (ARCHIVE_DIR and MAX_CONTENT_LENGTH and others) and pass them in from CKAN.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1684#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1831</link>
+        <guid isPermaLink="false">http://localhost/ticket/1831</guid>
+        <title>#1831: Login with email address</title>
+        <pubDate>Fri, 24 Feb 2012 08:58:26 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Users should be able to log in using either their username, or their email address, both of which are unique.
+&lt;/p&gt;
+&lt;p&gt;
+Will require a change to &lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; in ckan.lib.authenticator.py and possible a useful User.by_email in the user model if it doesn't already exist.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1831#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2284</link>
+        <guid isPermaLink="false">http://localhost/ticket/2284</guid>
+        <title>#2284: Local queries/views/viz in Related stuff.</title>
+        <pubDate>Thu, 12 Apr 2012 08:18:20 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From &lt;a class="closed ticket" href="http://localhost/ticket/2204" title="enhancement: [super] Related (Stuff) Extension (closed: fixed)"&gt;#2204&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+not sure how much we have thought through using this for storing queries / views / visualizations coming from our data viewer. In particular, wonder if this necessitates some kind of support for arbitrary json data ...
+&lt;/p&gt;
+&lt;p&gt;
+### Comments
+&lt;/p&gt;
+&lt;p&gt;
+In the simplest form, right now all I need to store is store the url to the resource plus hashbang config for recline. That would be super easy ...
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2284#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2348</link>
+        <guid isPermaLink="false">http://localhost/ticket/2348</guid>
+        <title>#2348: Java client library for CKAN</title>
+        <pubDate>Tue, 01 May 2012 13:46:20 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Start a Java library for interacting with the CKAN Action API.
+&lt;/p&gt;
+&lt;p&gt;
+Currently requires support for Groups, Tags, Resources,  and Search.
+&lt;/p&gt;
+&lt;p&gt;
+An example app would be very useful.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2348#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2378</link>
+        <guid isPermaLink="false">http://localhost/ticket/2378</guid>
+        <title>#2378: Extract metadata directly from resources that contain it.</title>
+        <pubDate>Thu, 10 May 2012 11:58:08 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Some files that might be uploaded as resources on a dataset, such as some image formats, already contain metadata.  For example some jpeg files might contain Exif ( &lt;a class="ext-link" href="http://en.wikipedia.org/wiki/Exchangeable_image_file_format"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://en.wikipedia.org/wiki/Exchangeable_image_file_format&lt;/a&gt; ) data.
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Obtain list of embedded metadata 'standards'
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Where the metadata is available it  should be added as extra fields on the resource that is uploaded.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] HTML?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] Image formats (exif/gif etc)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] PDF
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[ ] Eventually consider ...
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] MS Office documents
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2378#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2513</link>
+        <guid isPermaLink="false">http://localhost/ticket/2513</guid>
+        <title>#2513: Dataproxy should not default to utf8</title>
+        <pubDate>Wed, 13 Jun 2012 08:23:40 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Unless explicitly told by the source web server the dataproxy should not assume that the content it has can be encoded as UTF-8.  Even though the chars from 128 - 255 overlap an attempt to decode some byte array as utf8 will fail whenever a latin1 char whose bitpattern has the MSB set.
+&lt;/p&gt;
+&lt;p&gt;
+This will mean that the UTF8Recoder can be more rigid in its acceptance of data, Postel aside.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2513#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2546</link>
+        <guid isPermaLink="false">http://localhost/ticket/2546</guid>
+        <title>#2546: ODS Managing homepage content</title>
+        <pubDate>Mon, 18 Jun 2012 10:54:02 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+Require the ability for users to control some level of content that is visible on the home page of their ODS installation.  This may be through RSS/Atom feeds (see &lt;a class="assigned ticket" href="http://localhost/ticket/2234" title="enhancement: Write a CKAN extension for pulling items from RSS/Atom feeds into CKAN ... (assigned)"&gt;#2234&lt;/a&gt;) or another mechanism but should result in admins being able to change blocks of text on their homepage.
+&lt;/p&gt;
+&lt;p&gt;
+This should not be configuration, but accessible through WUI.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+None
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a system administrator I want to have control over content displayed on the front page beyond featured/popular items.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;As a system administrator I don't want to manage content through having to write an extension.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Analysis
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2546#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2552</link>
+        <guid isPermaLink="false">http://localhost/ticket/2552</guid>
+        <title>#2552: Controlling access to features</title>
+        <pubDate>Mon, 18 Jun 2012 11:26:10 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;h2 id="Requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;
+To provide a freemium service it is necessary to be able to provide differing &lt;span class="underline"&gt;levels&lt;/span&gt; of functionality based on the &lt;strong&gt;type&lt;/strong&gt; of user (see &lt;a class="assigned ticket" href="http://localhost/ticket/2550" title="enhancement: User types (assigned)"&gt;#2550&lt;/a&gt;). These levels can be specific to the data hub but may require overriding functionality from core to provide these checks.
+&lt;/p&gt;
+&lt;p&gt;
+Initial implementation should focus on limiting access to datastore disk space.
+&lt;/p&gt;
+&lt;h2 id="Interface"&gt;Interface&lt;/h2&gt;
+&lt;p&gt;
+These changes are currently only for the data hub and should be kept as much as possible within the data hub extension.
+&lt;/p&gt;
+&lt;h2 id="UserStories"&gt;User Stories&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;As a system component I want to find out if the current user has access to a feature (i.e. storage) and if so to what extent (xMb, xGb or unlimited).
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;As a system administrator I don't expect to need to manage the levels of users &lt;strong&gt;or&lt;/strong&gt; the features that this applies to.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+[ ] Clarification of requirements/analysis
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Tests
+&lt;/p&gt;
+&lt;p&gt;
+[ ] Code
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] Model
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] API
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[ ] UI
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+[ ] Documentation
+&lt;/p&gt;
+&lt;h2 id="Estimates"&gt;Estimates&lt;/h2&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2552#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2554</link>
+        <guid isPermaLink="false">http://localhost/ticket/2554</guid>
+        <title>#2554: Research Virtuoso cartridges</title>
+        <pubDate>Mon, 18 Jun 2012 13:37:25 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Look into writing a cartridge for importing CKAN data into a Virtuoso quadstore
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSponger#How"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VirtSponger#How&lt;/a&gt; Does It Work?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2554#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2654</link>
+        <guid isPermaLink="false">http://localhost/ticket/2654</guid>
+        <title>#2654: UI support for ordering groups on group_read page</title>
+        <pubDate>Tue, 10 Jul 2012 18:11:31 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The group_index page has no support in WUI for ordering the groups displayed. Should allow sorting by name
+&lt;/p&gt;
+&lt;p&gt;
+Add support for this for datahub now, and discuss for new 1.9 UI
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2654#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2688</link>
+        <guid isPermaLink="false">http://localhost/ticket/2688</guid>
+        <title>#2688: Allow ordering of groups in WUI</title>
+        <pubDate>Tue, 17 Jul 2012 10:27:55 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the group_index page just shows the entire list of groups, forcing the ordering to be by name.  It would be better if it could be sortable by name (or reversed) or by package_count (or reversed)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2688#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2732</link>
+        <guid isPermaLink="false">http://localhost/ticket/2732</guid>
+        <title>#2732: New file upload functionality</title>
+        <pubDate>Mon, 23 Jul 2012 15:53:09 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+We should simplify upload and storage of files, initially only to local storage with archiver eventually being fixed to archive data externally. WIP pad is &lt;a class="ext-link" href="http://ckan.okfnpad.org/uploads"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/uploads&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Simplifying uploads&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Currently uploads are too painful/difficult/fiddly to use and/or configure.  We want to simplify uploads so that they are done directly to the CKAN server, without support for remote services (S3 etc) and/or the dependencies it introduces.
+&lt;/p&gt;
+&lt;p&gt;
+We want to fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;File uploads themselves
+&lt;/li&gt;&lt;li&gt;Storage of uploaded files
+&lt;/li&gt;&lt;li&gt;Notification of the upload to other components
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;strong&gt;File uploads&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Things file upload should do:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow sysadmin to disable
+&lt;/li&gt;&lt;li&gt;Allow auth'ed users to upload
+&lt;/li&gt;&lt;li&gt;Store whatever they send on disk, and store DB entry linking the file to the person
+&lt;/li&gt;&lt;li&gt;When creating the resource, the user should be able to choose from all of the files
+they have uploaded but not yet associated with a resource. This will allow for bulk
+upload and then a delayed association.  Whenver a user creates a resource they
+either upload a file now, or see previously uploaded files.
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;Can we do the upload asynchronously and then associate the
+uploaded key with the resource before the save ? What happens
+if the user tries to submit before asymc upload finishes ? Should
+we delay them?
+&lt;/pre&gt;&lt;p&gt;
+The upload workflow should look like...
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;File upload should be a straightforward file upload with normal auth checks and normal processing of the posted data.
+&lt;/li&gt;&lt;li&gt;
+&lt;ol class="loweralpha"&gt;&lt;li&gt;When called via ajax then the ID of the newly created file should be returned,
+&lt;/li&gt;&lt;li&gt;When called via WUI then it should also be given the url to redirect to after the file upload has been handled - the id will be passed as a query param.
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;The resource save should check whether it has a file id and in that case updates the file object to point to the resource.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+This should enable:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Separate file upload into a user's temporary store, either individually or as a batch.
+&lt;/li&gt;&lt;li&gt;Creating resources and simply choosing from previously uploaded, unassigned files
+&lt;/li&gt;&lt;li&gt;Adding files/data to a resource after the fact.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;File storage&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+File storage should be local to the CKAN install, and not a remote service.  Any archiving to remove storage providers should be outside of the main request.
+&lt;/p&gt;
+&lt;p&gt;
+File storage should:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;allow moving data, a sysadmin should be able to move the storage root and change configuration and  have the system continue running (i.e. don't store absolute paths).
+&lt;/li&gt;&lt;li&gt;provide maintainability, it should be easy to determine which old files are not associated with resources  and thus can be cleaned up.
+&lt;/li&gt;&lt;li&gt;allow for collection of information (i.e. estimate of storate space used)
+&lt;/li&gt;&lt;li&gt;check whether there is enough space and handling the conequences cleanly
+&lt;/li&gt;&lt;li&gt;ensure files to be written only underneath its own root folder, checks should be made after any path generation that the file begins with the location of the file storage.
+&lt;/li&gt;&lt;li&gt;Have a configurable maximum accepted blob size during upload.
+&lt;/li&gt;&lt;li&gt;Should store what meta-data was provided with the upload, such as mimetype.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Somewhere in the DB we should store ...
+&lt;/p&gt;
+&lt;table class="wiki"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Column&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Notes&lt;/strong&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;id&lt;/td&gt;&lt;td&gt;An identifier
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;owner&lt;/td&gt;&lt;td&gt;The owning user, who uploaded the file
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;path&lt;/td&gt;&lt;td&gt;The path (from the 'storage root') to the file
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;size&lt;/td&gt;&lt;td&gt;The size in bytes of the file on disk
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mimetype&lt;/td&gt;&lt;td&gt;The mimetype of the file, as provided by the uploader
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;upload_date&lt;/td&gt;&lt;td&gt;When the data was uploaded
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;resource&lt;/td&gt;&lt;td&gt;The ID of the resource it belongs to. A unidirectional relationship.
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;archived_url&lt;/td&gt;&lt;td&gt;The URL where this file has been archived
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;
+Generating paths should try and separate the files, perhaps based on username of the owner, or some other mechanism to avoid a single folder full of files.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Notifications&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We need to make sure that it is possible to notify other components within the system that an upload has taken place, or at least make it easy for them to be notified.  The primary use case for this is to notify the component that will translate/upload certain formats to the data store.
+&lt;/p&gt;
+&lt;p&gt;
+We could do this based on the post-upload update to the file model (i.e. when we record the total received size of the file).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2732#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2851</link>
+        <guid isPermaLink="false">http://localhost/ticket/2851</guid>
+        <title>#2851: Preview of PDF tries to connect to datastore</title>
+        <pubDate>Wed, 15 Aug 2012 12:12:46 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://datahub.io/dataset/ccc-gistemp/resource/80ebdbd6-d91b-4fef-9db4-d3dfbd7e868e"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/dataset/ccc-gistemp/resource/80ebdbd6-d91b-4fef-9db4-d3dfbd7e868e&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+CKAN attempts to render the PDF as a datastore tabular date even though the mimetype of the PDF is correctly specified.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2851#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2867</link>
+        <guid isPermaLink="false">http://localhost/ticket/2867</guid>
+        <title>#2867: 1.8 url_for error</title>
+        <pubDate>Thu, 16 Aug 2012 10:57:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+From: &amp;lt;thedatahub.org@…&amp;gt;
+Date: Thu, Aug 16, 2012 at 10:30 AM
+Subject: &lt;a class="missing wiki"&gt;WebApp?&lt;/a&gt; Error: &amp;lt;class 'routes.util.&lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;'&amp;gt;: url_for can only return a string, got unicode instead: &lt;a class="ext-link" href="https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6&lt;/a&gt;
+To: ckan-sysadmin@…, kindly@…
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:155 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:131 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                               r'\1', oldpath)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:239 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+res = WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.storage:190 in file
+&amp;lt;&amp;lt;              return fapp(request.environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+h.redirect_to(file_url)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+h.redirect_to(file_url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.helpers:57 in redirect_to
+&amp;lt;&amp;lt;      if are_there_flash_messages():
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kw&lt;a class="missing wiki"&gt;__no_cache__?&lt;/a&gt; = True
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _redirect_to(url_for(*args, &lt;strong&gt;kw))
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def url(*args, &lt;strong&gt;kw):
+&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _redirect_to(url_for(*args, &lt;strong&gt;kw))
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.helpers:79 in url_for
+&amp;lt;&amp;lt;          # fix ver to include the slash
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+kw&lt;a class="missing wiki"&gt;ver?&lt;/a&gt; = '/%s' % ver
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+my_url = _routes_default_url_for(*args, &lt;strong&gt;kw)
+kw&lt;a class="missing wiki"&gt;__ckan_no_root?&lt;/a&gt; = no_root
+return _add_i18n_to_url(my_url, locale=locale, &lt;/strong&gt;kw)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+my_url = _routes_default_url_for(*args, &lt;strong&gt;kw)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.util:265 in url_for
+&amp;lt;&amp;lt;      if not isinstance(url, str) and url is not None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;("url_for can only return a string, got "
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"unicode instead: %s" % url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if url is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise &lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;(
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+"unicode instead: %s" % url)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt;GenerationException?&lt;/a&gt;: url_for can only return a string, got unicode instead: &lt;a class="ext-link" href="https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://ckannet-storage.commondatastorage.googleapis.com/file/fd3e00d9-eb0d-479b-8303-38909e5400ca?Signature=cmuU3CzRHQ86F3aZ0gljxv%2B3IqQ%3D&amp;amp;Expires=1345109432&amp;amp;AWSAccessKeyId=GOOGC6OU3AYPNY47B66M&amp;amp;x-goog-meta-uploaded-by=d5c8ed25-70de-4035-b29d-ddbe363913c6&lt;/a&gt;
+CGI Variables
+CKAN_CURRENT_URL        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+CKAN_LANG        'en'
+CKAN_LANG_IS_DEFAULT        True
+CONTENT_TYPE        '; charset=utf-8'
+DOCUMENT_ROOT        '/etc/apache2/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        '*/*'
+HTTP_ACCEPT_CHARSET        'utf-8;q=0.7,iso-8859-1;q=0.2,*;q=0.1'
+HTTP_CONNECTION        'close'
+HTTP_HOST        'ckan.net'
+HTTP_USER_AGENT        'Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@…)'
+PATH_INFO        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+PATH_TRANSLATED        '/etc/ckan/datahub/apache.wsgi/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+REMOTE_ADDR        '127.0.0.1'
+REMOTE_PORT        '37236'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/storage/f/file/fd3e00d9-eb0d-479b-8303-38909e5400ca'
+SCRIPT_FILENAME        '/etc/ckan/datahub/apache.wsgi'
+SERVER_ADDR        '127.0.0.1'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.0'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.22 (Ubuntu) Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.22 (Ubuntu)'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0x7f5312a51650&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0x7f5312a51790&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0x7f5312a516d0&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1345109433.273328, '_creation_time': 1345109433.273328}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.handler_script        &lt;em&gt;
+mod_wsgi.input_chunked        '0'
+mod_wsgi.listener_host        &lt;/em&gt;
+mod_wsgi.listener_port        '8080'
+mod_wsgi.process_group        'datahub'
+mod_wsgi.request_handler        'wsgi-script'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (3, 3)
+paste.cookies        (&amp;lt;SimpleCookie: &amp;gt;, &lt;em&gt;)
+paste.registry        &amp;lt;paste.registry.Registry object at 0x7f5303b05610&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt;.file of &amp;lt;ckan.controllers.storage.&lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt; object at 0x7f530891fa10&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.storage.&lt;a class="missing wiki"&gt;StorageController?&lt;/a&gt; object at 0x7f530891fa10&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0x7f52f864f850&amp;gt;
+pylons.routes_dict        {'action': u'file', 'controller': u'ckan.controllers.storage:StorageController', 'label': u'file/fd3e00d9-eb0d-479b-8303-38909e5400ca'}
+repoze.who.logger        &amp;lt;logging.Logger object at 0x7f53127b2b50&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 139994769488336&amp;gt;, 'friendlyform': &amp;lt;&lt;a class="missing wiki"&gt;FriendlyFormPlugin?&lt;/a&gt; 139994769488528&amp;gt;, 'ckan.lib.authenticator:UsernamePasswordAuthenticator': &amp;lt;ckan.lib.authenticator.&lt;a class="missing wiki"&gt;UsernamePasswordAuthenticator?&lt;/a&gt; object at 0x7f5312d893d0&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 139994771858704&amp;gt;, 'ckan.lib.authenticator:OpenIDAuthenticator': &amp;lt;ckan.lib.authenticator.OpenIDAuthenticator object at 0x7f5312d89350&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0x7f531296e690&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x7f52f82cd450&amp;gt;
+webob._parsed_query_vars        (GET([]), &lt;/em&gt;)
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x7f52f5870cd8&amp;gt;
+wsgi.version        (1, 1)
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x7f52f82cd450&amp;gt;, {'action': u'file', 'controller': u'ckan.controllers.storage:StorageController', 'label': u'file/fd3e00d9-eb0d-479b-8303-38909e5400ca'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2867#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2886</link>
+        <guid isPermaLink="false">http://localhost/ticket/2886</guid>
+        <title>#2886: Configurable related items</title>
+        <pubDate>Wed, 22 Aug 2012 08:55:18 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Related items (Apps &amp;amp; Ideas) have a collection of types, which are currently fixed.  Some of these types are ambiguous, such as ideas in that they may not have a link - and if they do it is likely to be to a blog post - another existing type.
+&lt;/p&gt;
+&lt;p&gt;
+Whilst the URL is required, and we think this should stay required, we should also allow users to change the types found in Apps &amp;amp; Ideas to a shortened list that suits their requirements.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2886#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2902</link>
+        <guid isPermaLink="false">http://localhost/ticket/2902</guid>
+        <title>#2902: genshi is used in Group controller</title>
+        <pubDate>Tue, 04 Sep 2012 18:10:30 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+The Group controller uses the genshi module where it may be better for it to use Markup() in the template.
+&lt;/p&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="https://github.com/okfn/ckan/pull/117/files#r1524863"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/pull/117/files#r1524863&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2902#changelog</comments>
+    </item>
+ </channel>
+</rss>

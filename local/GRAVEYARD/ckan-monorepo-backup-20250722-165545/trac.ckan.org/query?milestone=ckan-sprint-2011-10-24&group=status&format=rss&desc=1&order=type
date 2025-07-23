@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2011-10-24&amp;group=status&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2011-10-24&amp;group=status&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1372</link>
+        <guid isPermaLink="false">http://localhost/ticket/1372</guid>
+        <title>#1372: Refactor archiver to work as a celery task</title>
+        <pubDate>Wed, 05 Oct 2011 10:02:50 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Take the resource archiver (currently part of ckanext-qa) and make it into a standalone extension that works as a celery task.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1372#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1229</link>
+        <guid isPermaLink="false">http://localhost/ticket/1229</guid>
+        <title>#1229: Refactor all database code out of the controllers and into the logic layer</title>
+        <pubDate>Tue, 19 Jul 2011 16:45:24 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Progress can be tracked in this document:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdFQzRnVoUHV6ckoyblI5TUdEcnJLVlE&amp;amp;hl=en_US#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdFQzRnVoUHV6ckoyblI5TUdEcnJLVlE&amp;amp;hl=en_US#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1229#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1319</link>
+        <guid isPermaLink="false">http://localhost/ticket/1319</guid>
+        <title>#1319: Require an email address on User registration</title>
+        <pubDate>Wed, 07 Sep 2011 17:18:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Superticket: &lt;a class="new ticket" href="http://localhost/ticket/1343" title="enhancement: [super] User related improvements (login, user pages etc) (new)"&gt;#1343&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This avoids difficulties when they forget their password.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;(?) Email validation (navl does not have one!)
+&lt;/li&gt;&lt;li&gt;Require email confirmation to be activated (?) (Answer: no, not at present -- see discussion below)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1319#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1368</link>
+        <guid isPermaLink="false">http://localhost/ticket/1368</guid>
+        <title>#1368: UX polishing and bugfixes</title>
+        <pubDate>Fri, 30 Sep 2011 14:12:40 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+From Ira:
+PDF of bugs and suggestions is attached.
+&lt;/p&gt;
+&lt;p&gt;
+This ticket is included in release v1.5. Post-v1.5 UX improvements are collected in &lt;a class="closed ticket" href="http://localhost/ticket/1404" title="enhancement: Search Page UI improvements (closed: wontfix)"&gt;#1404&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing wiki"&gt; DONE ?&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[dataset/edit]: Deletions are confirmed with a dialog box
+&lt;/li&gt;&lt;li&gt;[dataset/edit]: Long URLs break the edit resources tab. Show name (&amp;amp; 'no name') with a pencil icon.
+&lt;/li&gt;&lt;li&gt;[dataset/edit]: Rearrange the delete resources mechanism;
+&lt;ul&gt;&lt;li&gt;Use a little minus icon on the far left, followed by a pencil icon for editing.
+&lt;/li&gt;&lt;li&gt;The 'delete resource' button can become 'hide'
+&lt;/li&gt;&lt;li&gt;Deletions are confirmed with a dialog box
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[dataset/edit]: Rearrange the 'you have unsaved changes' warning;
+&lt;ul&gt;&lt;li&gt;Delete the little green plus sign on the right;
+&lt;/li&gt;&lt;li&gt;Try a flash banner instead (more general purpose &amp;amp; beautiful)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[dataset/edit]: Try a pencil icon (+'hide' button) rather than the +/- buttons which look a bit like you're adding a dataset.
+&lt;/li&gt;&lt;li&gt;[dataset/view]: Subscribe button (&amp;amp; subscribe to history) doesn't work as expected. Modal dialog carrying instructions?
+&lt;/li&gt;&lt;li&gt;[dataset/view]: Drop the 'add to a group&amp;gt;&amp;gt;' and 'add tag&amp;gt;&amp;gt;'. Needs inline tag-adder.
+&lt;/li&gt;&lt;li&gt;[markdown editor]: Tab colours confuse the user. Inactive button appears to be greyed out.
+&lt;/li&gt;&lt;li&gt;[dataset/edit]: The upload file UI mutates and breaks across lines; make it a little more rigid. Verify at different zoom levels.
+&lt;/li&gt;&lt;li&gt;[groups/add]: Hide unimportant fields
+&lt;/li&gt;&lt;li&gt;[navigation] Add 3D bevel (@see github) to current tab highlight.
+&lt;/li&gt;&lt;li&gt;[dataset/create and groups/create]: Slug generator can be tidied. Default: Not editable. @see &lt;a class="ext-link" href="http://groupspaces.com/a/group/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://groupspaces.com/a/group/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;[groups/view]: Show description and owner. To match dataset section.
+&lt;/li&gt;&lt;li&gt;[groups/authz]: Tidy to match admin/authz (pretty buttons &amp;amp; spacing). Add navigation bar.
+&lt;/li&gt;&lt;li&gt;[groups]: Entire section to use pretty buttons please.
+&lt;/li&gt;&lt;li&gt;[about]: Get the about page working on test.ckan.org. (Works locally and on live).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="missing wiki"&gt; WONTFIX ?&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;[dataset/edit]: Make 'tags' a top level form section; it is too important to go below the fold.&lt;/del&gt; (wontfix)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;[groups]: Clicking a column heading should sort by that column. Default should be 'size', not 'name'.&lt;/del&gt; (ticket &lt;a class="new ticket" href="http://localhost/ticket/1403" title="enhancement: Refactor groups index page (new)"&gt;#1403&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;([groups]: (Investigate) Is it easy to implement a little search-groups feature?)&lt;/del&gt; (ticket &lt;a class="new ticket" href="http://localhost/ticket/1403" title="enhancement: Refactor groups index page (new)"&gt;#1403&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;[*/authz]: Add tooltips to explain column headers. (Not required if mechanism is about to be refactored...)&lt;/del&gt; (wontfix: we need to rethink this mechanism; authorization refactor is coming)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;[general]: 'Authorization' refactor to 'Permissions' on nav-bars.&lt;/del&gt; (wontfix, further discussion. authorization might be less techy...)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;[search]: (Investigate) Can we quickly &amp;amp; easily reintegrate the faceted search-by-license but present it in the sidebar like the other facets?&lt;/del&gt; (wontfix: high cost and maintenance overhead; need compelling user story)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1368#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1378</link>
+        <guid isPermaLink="false">http://localhost/ticket/1378</guid>
+        <title>#1378: New to TheDataHub? - StackOverflow style banner</title>
+        <pubDate>Mon, 10 Oct 2011 11:48:49 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Implement a banner across the top of the screen giving newbies a link to the about page, and making them feel welcome. See stackoverflow for reference?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1378#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1381</link>
+        <guid isPermaLink="false">http://localhost/ticket/1381</guid>
+        <title>#1381: Managing groups via package entity API</title>
+        <pubDate>Mon, 10 Oct 2011 17:11:46 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+It is not currently possible to assign or remove groups by adding or removing their group name from the "groups" list on the REST API. This should be allowed, as it is easier than first adding a package and then editing each group it must belong to.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1381#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1383</link>
+        <guid isPermaLink="false">http://localhost/ticket/1383</guid>
+        <title>#1383: Add IResourceChange IResourceUrlChange Interfaces.</title>
+        <pubDate>Tue, 11 Oct 2011 14:09:13 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to add way for extensions to trigger based on resource change and just resource url change.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1383#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1386</link>
+        <guid isPermaLink="false">http://localhost/ticket/1386</guid>
+        <title>#1386: Disallow account creation via openid</title>
+        <pubDate>Wed, 12 Oct 2011 13:18:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Superticket: &lt;a class="new ticket" href="http://localhost/ticket/1343" title="enhancement: [super] User related improvements (login, user pages etc) (new)"&gt;#1343&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Creation of accounts from OpenID causes large number of problems:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;No guarantee of other profile info
+&lt;/li&gt;&lt;li&gt;Poor username (just from openid)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+We therefore will:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Require creation of user account via register (no auto-creation of accounts via openid)
+&lt;ul&gt;&lt;li&gt;sidebar of register page should point to login page rather than openid signin
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ol start="2"&gt;&lt;li&gt;Permit association of an openid with an account ...
+&lt;ul&gt;&lt;li&gt;How: paste in your openid url (requires change to edit form to have this)
+&lt;ul&gt;&lt;li&gt;won't work for google with their weird openid urls
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[future] Nicer way is to have login via openid while logged in (which association then happening in background)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Migration (for 1+2):
+&lt;ul&gt;&lt;li&gt;(?) Generate decent usernames for all existing accounts
+&lt;/li&gt;&lt;li&gt;As this is nontrivial suggest instead we allow editing of usernames (by account owner and sysadmins). This is useful in its own right and is a reasonable 80/20 solution.
+&lt;ul&gt;&lt;li&gt;This does present the problem of re-associating commits with the new username. Best solution to this would be to switch revisions to point to userid rather than username. See &lt;a class="new ticket" href="http://localhost/ticket/1534" title="enhancement: Change revisions to record userid rather than username (new)"&gt;#1534&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;[optional] Change display_name to always be username
+&lt;ul&gt;&lt;li&gt;Change My Account to Username at top right of all pages (once we know
+usernames are short ...)
+&lt;ul&gt;&lt;li&gt;could do this straight away by truncating long usernames (e.g. truncate
+at 20 chars ...)
+&lt;/li&gt;&lt;li&gt;Also should we lose the icon?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1386#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1390</link>
+        <guid isPermaLink="false">http://localhost/ticket/1390</guid>
+        <title>#1390: Update ckanext-moderatededits for ckan 1.5 on datacatalogs.org</title>
+        <pubDate>Thu, 13 Oct 2011 09:11:39 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1390#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1391</link>
+        <guid isPermaLink="false">http://localhost/ticket/1391</guid>
+        <title>#1391: Update datacatalogs.org to ckan 1.5</title>
+        <pubDate>Thu, 13 Oct 2011 09:13:06 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1391#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1399</link>
+        <guid isPermaLink="false">http://localhost/ticket/1399</guid>
+        <title>#1399: Generate archiving request on resource url change</title>
+        <pubDate>Fri, 14 Oct 2011 13:48:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Superticket: &lt;a class="closed ticket" href="http://localhost/ticket/1397" title="enhancement: [super] Resource archiving (closed: fixed)"&gt;#1397&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Generate archiving request on resource url change by implementing IResourceUrlChange and sending tasks to celery. [0.25d][0.25d]
+&lt;/p&gt;
+&lt;p&gt;
+Will be part of of ckanext-archiver extension.
+&lt;/p&gt;
+&lt;p&gt;
+Process:
+&lt;/p&gt;
+&lt;ol class="arabiczero"&gt;&lt;li&gt;A resource is added to CKAN
+&lt;/li&gt;&lt;li&gt;IResourceCreate event generated
+&lt;/li&gt;&lt;li&gt;IF: resource url points to ckan storage or falls within some other set of exclusion conditions then END else continue
+&lt;/li&gt;&lt;li&gt;Generate a Archiver.Update task with resource.id
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1399#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1408</link>
+        <guid isPermaLink="false">http://localhost/ticket/1408</guid>
+        <title>#1408: Make site user, so tasks can post information back to ckan.</title>
+        <pubDate>Wed, 19 Oct 2011 10:20:26 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Give site user system administrative rights.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1408#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1321</link>
+        <guid isPermaLink="false">http://localhost/ticket/1321</guid>
+        <title>#1321: Flash message deferred</title>
+        <pubDate>Thu, 08 Sep 2011 09:37:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you reset a password, the flash message saying "check your email" sometimes doesn't display on the next page. You then click on the link in your email and it displays on that page (i.e. too late).
+&lt;/p&gt;
+&lt;p&gt;
+Seen this on thedatahub.org. To do with the proxy caching?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1321#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1374</link>
+        <guid isPermaLink="false">http://localhost/ticket/1374</guid>
+        <title>#1374: Can't switch to English if default is non-English</title>
+        <pubDate>Thu, 06 Oct 2011 09:39:35 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. cz.ckan.net defaults to Czech (config option lang=cs_CZ) but it fails when you try to switch to English.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1374#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1389</link>
+        <guid isPermaLink="false">http://localhost/ticket/1389</guid>
+        <title>#1389: Update ckanext-datacatalogs for ckan 1.5</title>
+        <pubDate>Thu, 13 Oct 2011 09:10:52 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1389#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1417</link>
+        <guid isPermaLink="false">http://localhost/ticket/1417</guid>
+        <title>#1417: Browser language detection doesn't work</title>
+        <pubDate>Tue, 25 Oct 2011 10:36:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+In Firefox:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Edit | Preferences | Content | Languages - put 'de' at top language
+&lt;/li&gt;&lt;li&gt;Clear cookies
+&lt;/li&gt;&lt;li&gt;Load thedatahub.org
+&lt;/li&gt;&lt;li&gt;it should be in German, but it's in the default language - English.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1417#changelog</comments>
+    </item>
+ </channel>
+</rss>

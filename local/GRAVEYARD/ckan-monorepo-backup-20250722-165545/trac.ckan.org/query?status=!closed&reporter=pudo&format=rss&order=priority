@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=pudo&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=pudo&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/989</link>
+        <guid isPermaLink="false">http://localhost/ticket/989</guid>
+        <title>#989: Extending the model from plugins</title>
+        <pubDate>Mon, 14 Feb 2011 13:22:04 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+We need to support extending the model from plugins. This could involve:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Adding a plugin hook to extend the mapper
+&lt;/li&gt;&lt;li&gt;Adding an upgrade hook for plugin schema migrations
+&lt;/li&gt;&lt;li&gt;Documenting how this is to be done
+&lt;/li&gt;&lt;li&gt;Find a way to avoid conflicts
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/989#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1262</link>
+        <guid isPermaLink="false">http://localhost/ticket/1262</guid>
+        <title>#1262: Enforce "create-user" permission</title>
+        <pubDate>Wed, 03 Aug 2011 12:41:36 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+This does not seem to have any implications at the moment, it should lock down registration and remove all related links.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1262#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1259</link>
+        <guid isPermaLink="false">http://localhost/ticket/1259</guid>
+        <title>#1259: "Add a row" for Extras on Package form</title>
+        <pubDate>Tue, 02 Aug 2011 16:31:33 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+The default package form offers 4 empty extras fields. Like the resource section, it should have an "add more" button to add another row.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1259#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1260</link>
+        <guid isPermaLink="false">http://localhost/ticket/1260</guid>
+        <title>#1260: Remove duplicate functions from _util.html</title>
+        <pubDate>Wed, 03 Aug 2011 10:17:32 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+There seems to be both a list view for dictized and non dictized data structures for all entities in _util.html at the moment. Probably in the back of someone's mind already, but cleanup here would be nice.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1260#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1261</link>
+        <guid isPermaLink="false">http://localhost/ticket/1261</guid>
+        <title>#1261: Investigate dots in extras search</title>
+        <pubDate>Wed, 03 Aug 2011 10:19:28 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+It seems that searching for extras_foo:value works with solr, but extras_foo.bar:value doesn't. No theory on why.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1261#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/909</link>
+        <guid isPermaLink="false">http://localhost/ticket/909</guid>
+        <title>#909: DCat importer for CKAN</title>
+        <pubDate>Mon, 17 Jan 2011 12:05:58 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Write an importer that supports most well known variants of DCat in importing the data as CKAN packages. In particular, the following sources should be supported:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKANrdf generated exports
+&lt;/li&gt;&lt;li&gt;opengov.se RDF (not really DCat)
+&lt;/li&gt;&lt;li&gt;Sunlight Nationdatacatalog as harvested by dcat-tools.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/909#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1096</link>
+        <guid isPermaLink="false">http://localhost/ticket/1096</guid>
+        <title>#1096: [super] CKAN Hosted</title>
+        <pubDate>Tue, 19 Apr 2011 17:44:22 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Many users of CKAN want to have their own instance without much effort. Setting these up in separate places is a maintenance nightmare, we should much rather have some tenant separation in core CKAN. Some ideas:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;introduce model.Site and c.site
+&lt;ul&gt;&lt;li&gt;site has: custom CSS, extra_template_path, title, languages list, package_form, group_form (all configured via web UI)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Subdomain detector to activate sites.
+&lt;/li&gt;&lt;li&gt;use site in Authorizer instead of System, have a &lt;a class="missing wiki"&gt;NullSite?&lt;/a&gt; for global things
+&lt;/li&gt;&lt;li&gt;allow cross-site search
+&lt;/li&gt;&lt;li&gt;packages are in a list of sites, m:n rather than 1:n
+&lt;ul&gt;&lt;li&gt;list of sites is string-based, can contain sites not in site table to express harvested external material which is not editable locally.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1096#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1642</link>
+        <guid isPermaLink="false">http://localhost/ticket/1642</guid>
+        <title>#1642: Extra link generators generate garbled HTML</title>
+        <pubDate>Thu, 12 Jan 2012 15:29:31 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+I had a package descriptions with URLs that contain "group:foo". This produces garbled output as the system tries to generate two sets of links: the outer link and an inner link.
+&lt;/p&gt;
+&lt;p&gt;
+Need to fix the parser.
+&lt;/p&gt;
+&lt;p&gt;
+Text:
+&lt;/p&gt;
+&lt;p&gt;
+Webdienst basierende Bereitstellung von Geobasisdaten der Freien und Hansestadt Hamburg. Folgende Geobasisdaten werden als &lt;a class="missing wiki"&gt;WebMapTileService?&lt;/a&gt; (WMT-S) für die Dauer des Wettbewerbs netzbasiert unter der Creative Commons Lizenz zur Verfügung gestellt: Digitale Orthophotos 40 cm Auflösung (Layer: apps4d_DOP40), Digitale Stadtkarte (Layer: apps4d_DISK), Digitale Regionalkarte (Layer: apps4d_DIRK), Digitale Karte 1:5000 (Layer: apps4d_DK5).
+&lt;/p&gt;
+&lt;p&gt;
+Metadateneinträge zu den Daten im PortalU:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[apps4d_DOP40](&lt;a class="ext-link" href="http://www.portalu.de/trefferanzeige?docuuid=D6082285-6CAC-49C5-B7ED-B5A72BC17DEC&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.portalu.de/trefferanzeige?docuuid=D6082285-6CAC-49C5-B7ED-B5A72BC17DEC&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;[apps4d_DISK](&lt;a class="ext-link" href="http://www.portalu.de/trefferanzeige?docuuid=D2DA3359-3DC9-4CA4-AE9B-7C63D53B220F&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.portalu.de/trefferanzeige?docuuid=D2DA3359-3DC9-4CA4-AE9B-7C63D53B220F&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;[apps4d_DIRK](&lt;a class="ext-link" href="http://www.portalu.de/trefferanzeige?docuuid=B7DDD599-F677-4C80-BED5-F11D82D5D1DD&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.portalu.de/trefferanzeige?docuuid=B7DDD599-F677-4C80-BED5-F11D82D5D1DD&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;[apps4d_DK5](&lt;a class="ext-link" href="http://www.portalu.de/trefferanzeige?docuuid=2AE6D23E-48A5-4D85-BC0A-160737E0C8D2&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.portalu.de/trefferanzeige?docuuid=2AE6D23E-48A5-4D85-BC0A-160737E0C8D2&amp;amp;plugid=/kug-group:kug-iplug-udk-db_hh&lt;/a&gt;)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+One fix is quoting the URLs
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1642#changelog</comments>
+    </item>
+ </channel>
+</rss>

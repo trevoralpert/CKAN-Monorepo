@@ -1,0 +1,819 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2012-03-05&amp;group=resolution&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1788</link>
+        <guid isPermaLink="false">http://localhost/ticket/1788</guid>
+        <title>#1788: IE7 compatibility problems</title>
+        <pubDate>Thu, 09 Feb 2012 14:54:10 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+From Antonia Acuno, via Ira:
+&lt;/p&gt;
+&lt;p&gt;
+It appears that the current layout for the datahub does not work in
+IE7, which would mean a problem for us as most gov uses it and is one
+of those we have to support...any views?
+&lt;/p&gt;
+&lt;p&gt;
+Tested in several gov departments computers, so a common enough issue.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://imgur.com/ip4xa"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://imgur.com/ip4xa&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Rufus:
+We haven't officially supported IE7 so far but can put engineering
+effort into this if absolutely needed. I note that IE 7 is now 3y out
+of date and is likely a security risk. Obviously this is something to
+ask Antonio about.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1788#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1799</link>
+        <guid isPermaLink="false">http://localhost/ticket/1799</guid>
+        <title>#1799: To login as a different user or register, you need to logout first</title>
+        <pubDate>Thu, 16 Feb 2012 14:33:40 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you are logged in, you cannot login as a different user before first logging out. (This is a restricting in repoze.who, which gives priority to an existing recognised identity over another one you supply.)
+&lt;/p&gt;
+&lt;p&gt;
+Yet, the CKAN login form appears when you try to do something you're not allowed to, even if you are logged in already. You login with a different identity and nothing happens - you remain as the first identity - this is incorrect.
+&lt;/p&gt;
+&lt;p&gt;
+(It is also a little confusing to be sent to the log-in page, although we do have a flash message explaining, and you might want to relogin as a superuser if you can.)
+&lt;/p&gt;
+&lt;p&gt;
+Whilst in this area, it would be worth fixing the problem for developers where you are logged in, do "paster db clean" and then try to log in - &lt;a class="missing wiki"&gt;AuthTkt?&lt;/a&gt; recognises your old cookie but the User object doesn't exist, so you get an error logging in. In this instance we should tell people to log-out.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1799#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1804</link>
+        <guid isPermaLink="false">http://localhost/ticket/1804</guid>
+        <title>#1804: CKAN mounted at URL - changing language problem</title>
+        <pubDate>Fri, 17 Feb 2012 13:22:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://189.9.137.65/dados/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://189.9.137.65/dados/&lt;/a&gt; clicking on Deutsch link is &lt;tt&gt;http://189.9.137.65/dados/locale?locale=de&amp;amp;return_to=%2Fdados%2F&amp;amp;hash=1dc17c315c419df850da0dd3599eefa9da76fbeb&lt;/tt&gt; and redirect goes to &lt;tt&gt;http://189.9.137.65/dados/dados/?__cache=97995106&lt;/tt&gt; so /dados/dados/ when it should be /dados.
+&lt;/p&gt;
+&lt;p&gt;
+Affects CKAN 1.6b only (not yet released).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1804#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1829</link>
+        <guid isPermaLink="false">http://localhost/ticket/1829</guid>
+        <title>#1829: Changing back to English prints the flash message in the previous non-English language</title>
+        <pubDate>Thu, 23 Feb 2012 12:37:40 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On the homepage click "francais" and then "English". The flash message reads "Le langage a été fixé à: français" when it should say "The language is now: English".
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1829#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/906</link>
+        <guid isPermaLink="false">http://localhost/ticket/906</guid>
+        <title>#906: Ability to search without accents for accented words</title>
+        <pubDate>Thu, 13 Jan 2011 17:26:28 GMT</pubDate>
+        
+        <dc:creator>Stiivi</dc:creator>
+
+        <description>&lt;p&gt;
+In Slovakia users are expecting from sites to be able to search without typing accents, for example if they do not have SK keyboard, just US. For example searching for: 'Obyvateľstvo' and 'obyvatelstvo' (population) or 'štatistika' and 'statistika' (statistics) should yield same results.
+&lt;/p&gt;
+&lt;p&gt;
+This should work the other way around as well, as some people might enter entries without accents into CKAN instance and others might search with accents.
+&lt;/p&gt;
+&lt;p&gt;
+For SK language simple ASCII transliteration for searched term and indexed words is sufficient (iconv ASCII&lt;em&gt;TRANSLIT).
+&lt;/em&gt;&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/906#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/978</link>
+        <guid isPermaLink="false">http://localhost/ticket/978</guid>
+        <title>#978: Edit Resource including Extras in Web UI</title>
+        <pubDate>Fri, 11 Feb 2011 13:06:59 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Part of super-ticket &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/826" title="enhancement: Resource 'extra' fields (closed: fixed)"&gt;#826&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+We can configure some extra fields in resources and can edit them in the Web UI, but we can't create new columns in the Web UI. Update the WUI to handle tis.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/978#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1400</link>
+        <guid isPermaLink="false">http://localhost/ticket/1400</guid>
+        <title>#1400: Document Archiver Extension</title>
+        <pubDate>Fri, 14 Oct 2011 13:58:25 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create page on &lt;a class="ext-link" href="http://wiki.ckan.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/&lt;/a&gt; about setting up a queue (this will merge into core docs when this is stable) - having a queue will now become a generic requirement for a bunch of extensions
+&lt;/li&gt;&lt;li&gt;README with install instructions in ckanext-archiver
+&lt;/li&gt;&lt;li&gt;Create an entry in &lt;a class="ext-link" href="http://wiki.ckan.org/Extensions"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Extensions&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Write a blog post
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1400#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1469</link>
+        <guid isPermaLink="false">http://localhost/ticket/1469</guid>
+        <title>#1469: Geo-spatial search on the front end</title>
+        <pubDate>Tue, 15 Nov 2011 16:58:44 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Now that we have a geospatial search API, we should build a front-end that integrates with the existing search for displaying results.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1469#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1506</link>
+        <guid isPermaLink="false">http://localhost/ticket/1506</guid>
+        <title>#1506: [super] UX improvements to dataset edit, create and search + group + user page (Dec 2011)</title>
+        <pubDate>Mon, 05 Dec 2011 12:31:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;h2 id="HistoricalParentTickets"&gt;Historical Parent Tickets&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Parent-ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1450" title="enhancement: Simplify dataset view page (closed: fixed)"&gt;#1450&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Parent-ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1032" title="enhancement: [super] Resources in WUI (closed: fixed)"&gt;#1032&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="StepZero"&gt;Step Zero&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;COMPLETELY REDESIGN resource edit process&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DatasetEdit-Resources"&gt;Dataset Edit-Resources&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Force format field to be lowercase&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Modify backend to serve it up in that format&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Subticket &lt;a class="closed ticket" href="http://localhost/ticket/978" title="enhancement: Edit Resource including Extras in Web UI (closed: fixed)"&gt;#978&lt;/a&gt;: Add extra fields to resources in Web UI&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix display of large datasets (&lt;a class="ext-link" href="http://test.ckan.net/dataset/europeana-lod"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/dataset/europeana-lod&lt;/a&gt;)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;When submitting forms with errors, open the correct resource pane.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;No hint is given that the time format for a resource is in ISO, eg 2005-01-01T10:10:10&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Resource description field to become the markdown editor we use everywhere else.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DatasetSettings"&gt;Dataset Settings&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Subticket &lt;a class="closed ticket" href="http://localhost/ticket/1648" title="enhancement: Clarify that additional info = extra fields + add guidance (closed: fixed)"&gt;#1648&lt;/a&gt;: Clarify edit terminology&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Merge Groups and Tags into main Settings section (no point having them on their own and most people will miss this).&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix (i.e. allow / show) name editing on dataset edit.&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Fix the slugify so it does not overwrite if i change title after fixing name.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Make slugify encourage people to use shorter names. Either by cutting off (not so good) or showing a warning and saying something like 'hey you may want to cut this down. Hit edit to customize the dataset name now'&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Autocomplete the author/maintainer box (requires API extension?)&lt;/del&gt; [WONTFIX what? it's not like that field is linked to users of the site or anything]
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DatasetView"&gt;Dataset View&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Fix animation glitch in expanding description&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Can we make the list of files look more like a table? Lose space between files? Lose rounded corners?&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Verify that there are no more (none) placeholder &amp;lt;td&amp;gt; objects (i believe they've been refactored out)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="DatasetCreate"&gt;Dataset Create&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;"Upload or link data files, APIs and other materials related to your dataset."&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Include the description markdown editor again (keep it small)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Licence should maybe be restored&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;"(Don't worry if you don't know what your licence is)"&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Show the log message field&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Beautify&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Pre-populate the log message field?&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;? Show Home Page field when creating dataset&lt;/del&gt; [WONTFIX don't push it]
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;?  Do some Guerilla UX to see whether we need to Redirect to Resources directly after dataset creation?&lt;/del&gt; [WONTFIX doesnt make sense with new resource editor awesomeness]
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Userpages"&gt;User pages&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Improvements to user page UX - 1d - &lt;a class="closed ticket" href="http://localhost/ticket/1396" title="enhancement: Improvements to user page UX - 1d (closed: fixed)"&gt;#1396&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Broken links for non-Gravatar use icons - 0.25d - &lt;a class="closed ticket" href="http://localhost/ticket/1719" title="defect: Broken links for non-Gravatar use icons - 0.25d (closed: fixed)"&gt;#1719&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Etc"&gt;Etc&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Take before and after screenshots
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1506#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1526</link>
+        <guid isPermaLink="false">http://localhost/ticket/1526</guid>
+        <title>#1526: [super] Update and test existing DGU package form</title>
+        <pubDate>Tue, 06 Dec 2011 12:08:33 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Re-create behaviour of old form without using form-alchemy.  And unit test.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[X] write high-level functional tests for the form.  Creation / edition / validation.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 6 days (3 days x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] write the html
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days (1 day x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 1.3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] modify the existing validation schema
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days (1 day x 2)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 1.3 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] split resources into types: individual, time-series, and additional.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 2.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] contact information is derived from Publisher, but can be altered for each dataset. &lt;a class="closed ticket" href="http://localhost/ticket/1526#1617" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1617&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 4 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 4 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] foi contact information is derived from user, but can be altered for each dataset. &lt;a class="closed ticket" href="http://localhost/ticket/1526#1617" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1617&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 1 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] provide stubs for the theme and sub-themes &lt;a class="closed ticket" href="http://localhost/ticket/1526#1618" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1618&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 1 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] provide stubs for the publisher hierarchy &lt;a class="closed ticket" href="http://localhost/ticket/1526#1619" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1619&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 2 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 1.5 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Note - the groups refactor is essentially ready to be used. And this would be a good test case for it.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] don't allow package-type selection when editing a package
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Can't change a dataset from containing time-series resources to one containing individual resources or visa-versa. (&lt;a class="closed ticket" href="http://localhost/ticket/1620" title="enhancement: Update and test existing DGU package form : don't allow package-type ... (closed: fixed)"&gt;#1620&lt;/a&gt;)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 0.5 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1526#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1653</link>
+        <guid isPermaLink="false">http://localhost/ticket/1653</guid>
+        <title>#1653: Change URLs for multilingual site</title>
+        <pubDate>Mon, 16 Jan 2012 10:43:10 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+To support multiple languages we should have an easy way to specify the language as part of the URL, so that URLs are both specific and we also reduce the dependency on the session.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Analysis [1d] - Find the best way of implementing this and how everyone else does their language URLs.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Write Middleware + update url_for to take account of the language. [2d]
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Document the language setup, and how to replicate it. [1d]
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1653#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1670</link>
+        <guid isPermaLink="false">http://localhost/ticket/1670</guid>
+        <title>#1670: Publisher profile documentation</title>
+        <pubDate>Tue, 17 Jan 2012 12:15:49 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Analysis of all permissions for users given their publishers to ensure that we have covered all of the bases and haven't missed any use-cases.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1670#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1744</link>
+        <guid isPermaLink="false">http://localhost/ticket/1744</guid>
+        <title>#1744: UX improvements to dataset edit as of Dec 2011</title>
+        <pubDate>Thu, 02 Feb 2012 23:17:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Show edit summary form again, at least on edit pages (and prefill it for create to something sensible like: Creating dataset {title} {name})&lt;/del&gt; [Done &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;]
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix drop down for resource types in resource add/edit to limit to fixed set of options (as per &lt;a class="ext-link" href="http://wiki.ckan.org/Domain_Model/Resource"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Domain_Model/Resource&lt;/a&gt;)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;See also &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-December/001860.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-December/001860.html&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Allow reordering of resources (or: and this is somewhat more complex but possibly simpler: allow editing of a resource_order field and we use that to sort resources (this is more like wordpress page_order -- these two options could become the same if we just hijack the existing position field on the join table and get rid of ordereredlist extension))&lt;/del&gt; [DONE &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;]
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Radically simplify set of licenses&lt;/del&gt; [DONE &lt;a class="closed ticket" href="http://localhost/ticket/1359" title="enhancement: Radically simplify standard list of licenses (closed: fixed)"&gt;#1359&lt;/a&gt;]
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;"Unsaved changes" warning briefly when you click "Save" &lt;a class="closed ticket" href="http://localhost/ticket/1735" title="enhancement: &amp;#34;Unsaved changes&amp;#34; warning briefly when you click &amp;#34;Save&amp;#34; (closed: wontfix)"&gt;#1735&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;"Unsaved changed" typo on dataset edit page&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1744#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1753</link>
+        <guid isPermaLink="false">http://localhost/ticket/1753</guid>
+        <title>#1753: Last fixes of Webstorer + Deploy on the DataHub</title>
+        <pubDate>Mon, 06 Feb 2012 11:32:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Upgrade to new &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; system
+&lt;/li&gt;&lt;li&gt;Better support for unicode etc
+&lt;/li&gt;&lt;li&gt;? Rename to &lt;a class="missing wiki"&gt;DataStorer?&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Deploy
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1753#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1757</link>
+        <guid isPermaLink="false">http://localhost/ticket/1757</guid>
+        <title>#1757: DGU Hide administrators from public view</title>
+        <pubDate>Mon, 06 Feb 2012 12:19:35 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+On publisher view page - hide administrators from public view - only logged in admins of group should see them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1757#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1775</link>
+        <guid isPermaLink="false">http://localhost/ticket/1775</guid>
+        <title>#1775: Enable adding many tags at once to controlled vocabularies via API</title>
+        <pubDate>Mon, 06 Feb 2012 15:10:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We already have API calls for adding one tag or removing one tag at a time to/from a vocab. Want more convenient ways to add or remove many in one call, or just pass in a list of tags to completely replace a vocab's current list.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add tags_create() function that calls the existing tag_create() many times?
+&lt;/li&gt;&lt;li&gt;Also tags_delete()?
+&lt;/li&gt;&lt;li&gt;Or just let tag_create() and tag_delete() accept a list?
+&lt;/li&gt;&lt;li&gt;Add tags argument to vocabulary_update() to pass in a list of tags to replace the vocab's current tags? (But it should still be possible to simply rename a vocab without changing its tags and without having to pass in the tag list.)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1775#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1792</link>
+        <guid isPermaLink="false">http://localhost/ticket/1792</guid>
+        <title>#1792: [super] api to use same validation and logic as wui forms.</title>
+        <pubDate>Mon, 13 Feb 2012 15:21:27 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The api currently uses the default validation schemas regardless of the form you specified on the front end.  There should be a way to post through the api using the same validation rules.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1792#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1797</link>
+        <guid isPermaLink="false">http://localhost/ticket/1797</guid>
+        <title>#1797: [super] Webstore v2 - Integrated and based on ElasticSearch</title>
+        <pubDate>Wed, 15 Feb 2012 11:43:05 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Main tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integrated seamlessly into CKAN (authorization etc)
+&lt;/li&gt;&lt;li&gt;Based off &lt;a class="missing wiki"&gt;ElasticSearch?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/webstore"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/webstore&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="Tasks"&gt;Tasks&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;New API point (config + controller) [0.75d]&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;/api/data/{resource-id}
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Authorization [0.5d]&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Documentation [0.25d]&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Upgrade data viewer to use ES [0.5d]&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Convert webstorer to new setup - &lt;a class="ext-link" href="http://github.com/okfn/ckanext-webstorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://github.com/okfn/ckanext-webstorer&lt;/a&gt; [1d] - &lt;a class="closed ticket" href="http://localhost/ticket/1753" title="enhancement: Last fixes of Webstorer + Deploy on the DataHub (closed: fixed)"&gt;#1753&lt;/a&gt;&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;See below
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;"Create &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; Resource" in Resource creation (??)
+&lt;ul&gt;&lt;li&gt;Just creates a resource with blank url and datastore enabled (webstore_url non null)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Tick box to enable &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; in Resource edit form (for time being would just set webstore_url to any non-null/non-empty value)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;Also need to use this info in &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; extension?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Create nice instructions on Resource page about using the &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Rename webstore -&amp;gt; datastore&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Deploy [0.5d]&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="Details"&gt;Details&lt;/h1&gt;
+&lt;h2 id="LayoutonES"&gt;Layout on ES&lt;/h2&gt;
+&lt;pre class="wiki"&gt;elasticsearch/{index}/{type-id}
+index = ckan-{ckan-id}
+type-id = resource-id (1)
+&lt;/pre&gt;&lt;h2 id="Requestpath"&gt;Request path&lt;/h2&gt;
+&lt;p&gt;
+Req =&amp;gt; Nginx =&amp;gt; CKAN App (authz) =&amp;gt; req to elasticsearch and returns results
+&lt;/p&gt;
+&lt;p&gt;
+See as an example: &lt;a class="ext-link" href="https://github.com/okfn/elastic-proxy"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/elastic-proxy&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Questions"&gt;Questions&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;How do we decide what to use in the viewer e.g. Webstore data versus &lt;a class="missing wiki"&gt;DataProxy?&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Check for existence of webstore_url on Resource (should really be webstore_enabled boolean or similar, however we stick with url for the time being because it exists and we avoid migration). If exists use Webstore o/w don't.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How do we decide when webstore is activated
+&lt;ul&gt;&lt;li&gt;Ans: see previous.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Do we (and how do we) allow for resources which are just for webstores
+&lt;ul&gt;&lt;li&gt;Ans: we have to set webstore_url = True ... on save. Or add a big button saying: "Create Blank Resource" ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How does webstorer work ...
+&lt;ul&gt;&lt;li&gt;CSV import - NS: make sure we add e.g. rownum or &lt;span class="underline"&gt;id&lt;/span&gt; = rownum ...
+&lt;/li&gt;&lt;li&gt;Separate mini-service (webstorer.thedatahub.org ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How do we selectively disable recline where not appropriate (e.g. query support makes no sense for &lt;a class="missing wiki"&gt;DataProxy?&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Ans: do not bother at present. Focus on Webstore route.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Where does geodata support come in (in Recline or separately)
+&lt;ul&gt;&lt;li&gt;This is a separate issue
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="UserStory1"&gt;User Story 1&lt;/h2&gt;
+&lt;p&gt;
+User -&amp;gt; CKAN instance -&amp;gt; Add Dataset -&amp;gt; Adds a Resource via uploading a CSV file -&amp;gt; Save
+&lt;/p&gt;
+&lt;p&gt;
+=&amp;gt; Result = New Dataset + Resource + Data API to resource and nice Preview of the data
+&lt;/p&gt;
+&lt;p&gt;
+Solution:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Allow normal upload process
+&lt;/li&gt;&lt;li&gt;Webstorer queue task which should get triggered by new resource. Check the resource and if it can convert into the associated resource webstore database.
+&lt;/li&gt;&lt;li&gt;Update the resource in some way (set webstore_url)
+&lt;/li&gt;&lt;/ol&gt;&lt;h1 id="UserStories"&gt;User Stories&lt;/h1&gt;
+&lt;h2 id="UserStory2"&gt;User Story 2&lt;/h2&gt;
+&lt;p&gt;
+User -&amp;gt; CKAN instance -&amp;gt; Add Dataset -&amp;gt; Adds a Resource via linking to some remote file (CSV or otherwise) or uploading some data (CSV or otherwise)
+&lt;/p&gt;
+&lt;p&gt;
+=&amp;gt; Result = New Dataset + Resource + nice Preview of the data (wherever possible)
+&lt;/p&gt;
+&lt;h2 id="UserStory3"&gt;User Story 3&lt;/h2&gt;
+&lt;p&gt;
+User -&amp;gt; CKAN instance -&amp;gt; Add Dataset -&amp;gt; Adds a Resource which will be webstore database in CKAN -&amp;gt; User saves data to this data store.
+&lt;/p&gt;
+&lt;p&gt;
+=&amp;gt; Result = New Dataset + Resource (Webstore resource) which can now be written to or read from by the user
+&lt;/p&gt;
+&lt;p&gt;
+Solution: just create a resource with blank url (or better, have a new option to create webstore resource ...)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1797#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1802</link>
+        <guid isPermaLink="false">http://localhost/ticket/1802</guid>
+        <title>#1802: Investigate CKAN deployment on Windows</title>
+        <pubDate>Thu, 16 Feb 2012 16:25:12 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+See how possible it is to run CKAN on a Windows server.
+&lt;/p&gt;
+&lt;p&gt;
+Plan:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Get CKAN code and dependencies installed on Windows
+&lt;ul&gt;&lt;li&gt;ideally as similar to standard package install as possible
+&lt;/li&gt;&lt;li&gt;virtualenv/pip should work
+&lt;/li&gt;&lt;li&gt;try Cygwin to help
+&lt;/li&gt;&lt;li&gt;SOLR and Postgres could potentially run on other servers if necessary.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Try to run on Apache
+&lt;/li&gt;&lt;li&gt;See if there are any issues
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1802#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1807</link>
+        <guid isPermaLink="false">http://localhost/ticket/1807</guid>
+        <title>#1807: Recently added/updated datasets for EC portal</title>
+        <pubDate>Mon, 20 Feb 2012 12:52:06 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+For EC Portal need a page (or HTML snippet embedded in the front page?) listing recently added or updated datasets.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Could be generated from the activity streams
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Should it list datasets only, or other activities as well?
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;May be related to &lt;a class="accepted ticket" href="http://localhost/ticket/1785" title="enhancement: Replace 'Revisions' page with site-wide activity stream (accepted)"&gt;#1785&lt;/a&gt; (Replace 'Revisions' page with site-wide activity stream)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1807#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1809</link>
+        <guid isPermaLink="false">http://localhost/ticket/1809</guid>
+        <title>#1809: Catch request exceptions in archiver link_checker task</title>
+        <pubDate>Mon, 20 Feb 2012 13:57:47 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Some request exceptions are currently not being caught (see the celery log on thedatahub for examples)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1809#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1817</link>
+        <guid isPermaLink="false">http://localhost/ticket/1817</guid>
+        <title>#1817: Importer for EC publisher info</title>
+        <pubDate>Mon, 20 Feb 2012 18:24:50 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;write importer for publisher info (currently in JSON format), add to ckanext-ecportal
+&lt;/li&gt;&lt;li&gt;add group translations to translations table
+&lt;/li&gt;&lt;li&gt;run on test server
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1817#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1821</link>
+        <guid isPermaLink="false">http://localhost/ticket/1821</guid>
+        <title>#1821: create internal multilingual extension that brings together all multilingual features</title>
+        <pubDate>Mon, 20 Feb 2012 20:54:27 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This extension point needs to combine.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt; Making sure the correct data get put in search index.
+&lt;/li&gt;&lt;li&gt; Make the search queries are modified to weight multilingual search correctly.
+&lt;/li&gt;&lt;li&gt; View pages, including search results are translated.
+&lt;/li&gt;&lt;li&gt; Bring together all search schema modifications.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1821#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1822</link>
+        <guid isPermaLink="false">http://localhost/ticket/1822</guid>
+        <title>#1822: Weight mulilingual searches correctly</title>
+        <pubDate>Mon, 20 Feb 2012 21:08:00 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Dismax query across languages. Titles and selected languages, weighted more highly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1822#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1825</link>
+        <guid isPermaLink="false">http://localhost/ticket/1825</guid>
+        <title>#1825: Write docs for vocabularies API</title>
+        <pubDate>Tue, 21 Feb 2012 17:25:22 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Done on branch feature-1698-tag-taxonomies
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1825#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1826</link>
+        <guid isPermaLink="false">http://localhost/ticket/1826</guid>
+        <title>#1826: weight queries so that title is more important than rest of body</title>
+        <pubDate>Wed, 22 Feb 2012 15:24:20 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Currently everything is considered equally when doing a normal search. Use dismax when there is not a fielded search to get round this. This is part of the work for &lt;a class="closed ticket" href="http://localhost/ticket/1822" title="enhancement: Weight mulilingual searches correctly (closed: fixed)"&gt;#1822&lt;/a&gt; as the dismax option is needed for multilingual search.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1826#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1828</link>
+        <guid isPermaLink="false">http://localhost/ticket/1828</guid>
+        <title>#1828: Upgrade to Recline v0.3</title>
+        <pubDate>Wed, 22 Feb 2012 20:41:44 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Recline v0.3 has introduced some breaking changes in API and usage. Upgrade to use it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1828#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1830</link>
+        <guid isPermaLink="false">http://localhost/ticket/1830</guid>
+        <title>#1830: OpenID disablable</title>
+        <pubDate>Thu, 23 Feb 2012 13:02:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Allow OpenID to be disabled as a login option.
+&lt;/p&gt;
+&lt;p&gt;
+Currently (CKAN 1.6) there is a config option openid_enabled which stops the login option being displayed, but:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;In the User edit form you can still add your OpenID
+&lt;/li&gt;&lt;li&gt;The repoze.who.openid middleware is still required - can it be avoided?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1830#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1806</link>
+        <guid isPermaLink="false">http://localhost/ticket/1806</guid>
+        <title>#1806: make drop down language selector</title>
+        <pubDate>Mon, 20 Feb 2012 12:36:33 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+language chooser should look like the ec one
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1806#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1813</link>
+        <guid isPermaLink="false">http://localhost/ticket/1813</guid>
+        <title>#1813: Upadate ckanext-pdeu to work with CKAN 1.6</title>
+        <pubDate>Mon, 20 Feb 2012 16:58:48 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Tasks include:
+&lt;/p&gt;
+&lt;p&gt;
+Estimate 4d
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Update requirements (git)
+&lt;/li&gt;&lt;li&gt;Search facets error
+&lt;/li&gt;&lt;li&gt;Error on dataset read (extras in context)
+&lt;/li&gt;&lt;li&gt;Url generator for rdf
+&lt;/li&gt;&lt;li&gt;Make templates work with latest theme
+&lt;/li&gt;&lt;li&gt;Use dicts in templates (isopen())
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1813#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1151</link>
+        <guid isPermaLink="false">http://localhost/ticket/1151</guid>
+        <title>#1151: Preview for geographic data should be a map</title>
+        <pubDate>Sun, 22 May 2011 05:46:57 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Data viewer / previewer for a resource that has a KML file, or others, such as GeoRSS and GeoJSON, we should provide a map.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Support for KML files: &lt;a class="assigned ticket" href="http://localhost/ticket/1458" title="enhancement: Support previewing kml files in data viewer (assigned)"&gt;#1458&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This is non-trivial for external files as we need a way to jsonify. For files stored locally this is more of a recline issue (and will require a bit of work to either guess columns or allow user to specify them).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1151#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=dgu&amp;milestone=ckan-sprint-2011-09-12&amp;group=status&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=dgu&amp;milestone=ckan-sprint-2011-09-12&amp;group=status&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/787</link>
+        <guid isPermaLink="false">http://localhost/ticket/787</guid>
+        <title>#787: Auth API</title>
+        <pubDate>Mon, 08 Nov 2010 10:10:35 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Auth Proposal
+&lt;/p&gt;
+&lt;p&gt;
+Use case: We'd like an authenticated and authorized Drupal user to be able to
+edit/delete packages using the API
+&lt;/p&gt;
+&lt;p&gt;
+To do this a user would need a CKAN API key so we need some way of Drupal
+telling CKAN who a user is so that they can get their API key.
+&lt;/p&gt;
+&lt;p&gt;
+Proposed Implementation
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+A user visits the CKAN API key page to get their key. Because CKAN is at
+catalogue.data.gov.uk (a subdomain of the Drupal site) it can read Drupal
+cookies.
+&lt;/p&gt;
+&lt;p&gt;
+If there is no &lt;tt&gt;&lt;/tt&gt;DRXtrArgs&lt;tt&gt;&lt;/tt&gt; or &lt;tt&gt;&lt;/tt&gt;DRXtrArgs2&lt;tt&gt;&lt;/tt&gt; cookie, we know the user isn't
+signed in so we redirect them to Drupal to sign in.
+&lt;/p&gt;
+&lt;p&gt;
+WISHLIST: It would be really nice if we could pass the URL to redirect back to
+Drupal so tha Druapl can send them back to the CKAN API key page
+&lt;/p&gt;
+&lt;p&gt;
+Either way, they get back to CKAN and now the cookies exist. When the first
+HTTP request header is sent, CKAN will read the Drupal session ID and then call
+a Drupal API, server to server.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: Implement an API on the drupal server which accepts a Drupal session ID
+as an argument and returns the username and credentials, but only if the
+request if from the CKAN server (perhaps we specify an API key in the request)
+&lt;/p&gt;
+&lt;p&gt;
+If the session is valid CKAN will set its own auth cookie and show them the
+page with the API key. CKAN only considers a user signed in if both the CKAN
+cookie *and* Drupal session ID are present. If at any time they sign out of
+Drupal the Drupal session disappears so they will be signed out of CKAN too.
+&lt;/p&gt;
+&lt;p&gt;
+Now the user has an API key they can use the standard CKAN command line API
+tools.
+&lt;/p&gt;
+&lt;p&gt;
+The API key is the only thing the user will need to use the CKAN API. This
+poses a problem. What if a user is removed from Drupal but still has a CKAN API
+key?
+&lt;/p&gt;
+&lt;p&gt;
+Two solutions:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;API keys will be set to only be valid for the length of a Drupal session so
+that a user will only be able to use the write API for a little time after
+credentials are revoked
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;CKAN provides an API to allow Drupal to revoke keys
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Option 1. seems easier to me. If we choose this we will write a &lt;tt&gt;&lt;/tt&gt;get_api_key&lt;tt&gt;&lt;/tt&gt;
+command line tool so that Drupal user can write things like this:
+&lt;/p&gt;
+&lt;p&gt;
+::
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+datapkg list_packages --api_key &lt;tt&gt;get_api_key&lt;/tt&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The &lt;tt&gt;&lt;/tt&gt;get_api_key&lt;tt&gt;&lt;/tt&gt; function will prompt for username and password and then
+perform the steps necessary to get an API key.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/787#changelog</comments>
+    </item>
+ </channel>
+</rss>

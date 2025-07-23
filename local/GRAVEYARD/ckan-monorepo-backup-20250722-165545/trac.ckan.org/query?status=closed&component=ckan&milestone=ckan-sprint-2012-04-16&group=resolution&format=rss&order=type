@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-04-16&amp;group=resolution&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-sprint-2012-04-16&amp;group=resolution&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2252</link>
+        <guid isPermaLink="false">http://localhost/ticket/2252</guid>
+        <title>#2252: UKLP harvesters returning errors when importing due to schema changes</title>
+        <pubDate>Wed, 21 Mar 2012 12:45:07 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+See trace below.
+&lt;/p&gt;
+&lt;p&gt;
+As in &lt;a class="closed ticket" href="http://localhost/ticket/2231" title="defect: Base harvester broken on 1.6.1 (closed: fixed)"&gt;#2231&lt;/a&gt;, the schema passed with the context is no longer used on the logic layer (in this case the one used on the DGU form is used). This can be fixed allowing a schema to be passed with the context.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;  File "/var/lib/ckan/std/pyenv/src/ckanext-inspire/ckanext/inspire/harvesters.py", line 139, in import_stage
+    self.import_gemini_object(harvest_object.content)
+  File "/var/lib/ckan/std/pyenv/src/ckanext-inspire/ckanext/inspire/harvesters.py", line 163, in import_gemini_object
+    package = self.write_package_from_gemini_string(unicode_gemini_string)
+  File "/var/lib/ckan/std/pyenv/src/ckanext-inspire/ckanext/inspire/harvesters.py", line 386, in write_package_from_gemin
+    package = self._create_package_from_data(package_dict, package = package)
+  File "/var/lib/ckan/std/pyenv/src/ckanext-inspire/ckanext/inspire/harvesters.py", line 486, in _create_package_from_dat
+    package_dict = action_function(context, package_dict)
+  File "/usr/lib/pymodules/python2.6/ckan/logic/action/update.py", line 169, in package_update
+    data, errors = validate(data_dict, schema, context)
+  File "/usr/lib/pymodules/python2.6/ckan/lib/navl/dictization_functions.py", line 216, in validate
+    converted_data, errors = _validate(flattened, schema, context)
+  File "/usr/lib/pymodules/python2.6/ckan/lib/navl/dictization_functions.py", line 289, in _validate
+    convert(converter, key, converted_data, errors, context)
+  File "/usr/lib/pymodules/python2.6/ckan/lib/navl/dictization_functions.py", line 179, in convert
+    converter(key, converted_data, errors, context)
+  File "/var/lib/ckan/std/pyenv/src/ckanext-dgu/ckanext/dgu/validators.py", line 81, in validate_license
+    if data[('license_id',)]== '__extra__':
+KeyError: ('access_constraints',)
+2012-03-19 10:47:41,736 ERROR [ckanext.inspire.harvesters] Error importing Gemini document: ('access_constraints',)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2252#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2278</link>
+        <guid isPermaLink="false">http://localhost/ticket/2278</guid>
+        <title>#2278: DataStore enabled is disabled by default but is needed for DataStorer to run</title>
+        <pubDate>Tue, 03 Apr 2012 08:17:28 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Major UX gotcha reported by several people is that &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; is disabled by default and must be enabled for &lt;a class="missing wiki"&gt;DataStorer?&lt;/a&gt; to run and import data.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest switch to enable datastore by default for file and file.upload types (disable for API). People can always disable if they want.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2278#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1593</link>
+        <guid isPermaLink="false">http://localhost/ticket/1593</guid>
+        <title>#1593: [super] Create feeds from search results</title>
+        <pubDate>Wed, 21 Dec 2011 17:38:35 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Recent changes (see &lt;a class="closed ticket" href="http://localhost/ticket/191" title="enhancement: Searching by modification date (closed: fixed)"&gt;#191&lt;/a&gt; and &lt;a class="closed ticket" href="http://localhost/ticket/1498" title="enhancement: Support multiple SOLR schema versions (closed: fixed)"&gt;#1498&lt;/a&gt;) have made really easy to get search results ordered chronologically, and creating RSS or Atom feeds from them is relatively easy.
+&lt;/p&gt;
+&lt;p&gt;
+Feeds are extremely popular and there are several tools for consuming them, so it would be a great way to allow users to follow datasets related with their topics of interest.
+&lt;/p&gt;
+&lt;p&gt;
+Apart from the general feed with changes on the whole instance, other different "pre-set" feed endpoints could be implemented. The most obvious choices for custom feeds could be groups and tags:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://&amp;lt;ckan_server&amp;gt;/feed/group/{id}.{format:rss|atom}
+http://&amp;lt;ckan_server&amp;gt;/feed/tag/{id}.{format:rss|atom}
+&lt;/pre&gt;&lt;p&gt;
+These could be shown on the group/tag page, both on the &amp;lt;head&amp;gt; section, so browsers can autodiscover them, and on the UI, with a message like "Subscribe to this group/tag".
+&lt;/p&gt;
+&lt;p&gt;
+Another powerful option is to have a custom feed builder that accepts the same parameters as the search page, so users can subscribe to whatever query they are interested on
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://&amp;lt;ckan_server&amp;gt;/feed/custom.{format:rss|atom}?res_format=api%2Fsparql
+http://&amp;lt;ckan_server&amp;gt;/feed/custom.{format:rss|atom}?q=tags:animal*
+&lt;/pre&gt;&lt;p&gt;
+On this case a message "Subscribe to these search results" would appear.
+&lt;/p&gt;
+&lt;p&gt;
+Note that a lot of work on this front needs to be done for the IATI registry project (see &lt;a class="closed ticket" href="http://localhost/ticket/1590" title="enhancement: Create customized feeds for the IATI Registry (closed: fixed)"&gt;#1590&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Other tickets related:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1592" title="enhancement: Add metadata_modified and metadata_created to package_dictize output (closed: fixed)"&gt;#1592&lt;/a&gt;: metadata_modified and metadata_created are not included in the search results, so an extra query for each package is needed right now.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1593#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2264</link>
+        <guid isPermaLink="false">http://localhost/ticket/2264</guid>
+        <title>#2264: Do an audit of string translations in CKAN core and ckanext-ecportal</title>
+        <pubDate>Tue, 27 Mar 2012 16:08:32 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Check to see that all the strings are getting translated, i.e. that all user-visible strings are being passed to gettext. Fix any strings that are not getting translated.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2264#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2270</link>
+        <guid isPermaLink="false">http://localhost/ticket/2270</guid>
+        <title>#2270: DataExplorer overview</title>
+        <pubDate>Mon, 02 Apr 2012 13:45:39 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;get up to speed with &lt;a class="missing wiki"&gt;DataExplorer?&lt;/a&gt; code (and dependencies like Backbone)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2270#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2272</link>
+        <guid isPermaLink="false">http://localhost/ticket/2272</guid>
+        <title>#2272: Setup jenkins on the new dev server</title>
+        <pubDate>Mon, 02 Apr 2012 14:04:40 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2272#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2275</link>
+        <guid isPermaLink="false">http://localhost/ticket/2275</guid>
+        <title>#2275: Implement group logos</title>
+        <pubDate>Mon, 02 Apr 2012 14:14:36 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Groups should be able to specify a URL to an image file for a group logo, the image will be shown on the group page.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;del&gt;Actually uploading an image file (rather than giving a URL) and cropping and resizing the file will be done later, for now just give a URL.&lt;/del&gt; (later ticket)
+&lt;/p&gt;
+&lt;p&gt;
+&lt;del&gt;Further customisation of group pages (CSS, templates) also for later.&lt;/del&gt; (not sure if we really want this, but in a later ticket if so)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2275#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2276</link>
+        <guid isPermaLink="false">http://localhost/ticket/2276</guid>
+        <title>#2276: Upgrade Slovakia CKAN instance</title>
+        <pubDate>Mon, 02 Apr 2012 14:20:35 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2276#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2281</link>
+        <guid isPermaLink="false">http://localhost/ticket/2281</guid>
+        <title>#2281: Pagination styling converted to Bootstrap</title>
+        <pubDate>Mon, 09 Apr 2012 10:31:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Make the search results pagination styled by Bootstrap.
+&lt;/p&gt;
+&lt;p&gt;
+Needs putting into a &amp;lt;ul&amp;gt; structure. Current page and '..' need become links that are styled disabled.
+&lt;/p&gt;
+&lt;p&gt;
+Wanted by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2281#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2286</link>
+        <guid isPermaLink="false">http://localhost/ticket/2286</guid>
+        <title>#2286: Upgrade to boostrap v2.0.2</title>
+        <pubDate>Thu, 12 Apr 2012 17:30:18 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+I minified bootstrap and apparently downgraded the version. This breaks things in Recline, and creates weird discrepancies (DGU uses 2.0.2 and had some problems importing HTML from &lt;a class="missing wiki"&gt;TheDataHub?&lt;/a&gt; core, for example.)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Switch to the latest minifed CSS + JS
+&lt;/li&gt;&lt;li&gt;QA-sweep the site, especially dataset/edit
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2286#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2295</link>
+        <guid isPermaLink="false">http://localhost/ticket/2295</guid>
+        <title>#2295: Migrate CKAN packaging and apt.ckan.org from dgu-buildbot</title>
+        <pubDate>Mon, 16 Apr 2012 09:02:56 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create Jenkins task for packaging CKAN
+&lt;/li&gt;&lt;li&gt;... and publishing to s3://apt.ckan.org
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2295#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2296</link>
+        <guid isPermaLink="false">http://localhost/ticket/2296</guid>
+        <title>#2296: Initial analysis of moderated edits</title>
+        <pubDate>Mon, 16 Apr 2012 09:04:37 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+What needs doing, and how long will it take?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2296#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2297</link>
+        <guid isPermaLink="false">http://localhost/ticket/2297</guid>
+        <title>#2297: Initial analysis of follow support</title>
+        <pubDate>Mon, 16 Apr 2012 09:07:03 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2297#changelog</comments>
+    </item>
+ </channel>
+</rss>

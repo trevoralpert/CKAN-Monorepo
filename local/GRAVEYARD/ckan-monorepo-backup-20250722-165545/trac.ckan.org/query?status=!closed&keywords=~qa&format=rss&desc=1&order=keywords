@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~qa&amp;desc=1&amp;order=keywords</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~qa&amp;desc=1&amp;order=keywords</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1584</link>
+        <guid isPermaLink="false">http://localhost/ticket/1584</guid>
+        <title>#1584: QA report improvements - 2.5d</title>
+        <pubDate>Wed, 21 Dec 2011 09:23:53 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;qa/{username}
+&lt;/li&gt;&lt;li&gt;qa/{groupname}
+&lt;/li&gt;&lt;li&gt;paginate QA results
+&lt;/li&gt;&lt;li&gt;search / filter QA results
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;list organisation report by default, but can disable via config option&lt;/del&gt; (done)
+&lt;/li&gt;&lt;li&gt;UX tidy up of report pages - hide border if no sidebar, etc
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1584#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1588</link>
+        <guid isPermaLink="false">http://localhost/ticket/1588</guid>
+        <title>#1588: QA - Give SPARQL endpoints a 4 star rating</title>
+        <pubDate>Wed, 21 Dec 2011 15:13:25 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Richard Cyganiak on the CKAN Discuss list:
+&lt;/p&gt;
+&lt;p&gt;
+Besides considering the media type of resources, it would also make sense to check for the presence of a SPARQL endpoint. SPARQL endpoints are recorded for more than 300 datasets on the Data Hub using the pseudo-type "api/sparql". A few more are recorded with the format "SPARQL". I suggest that datasets with such resources should also be considered for the fourth star.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1588#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1589</link>
+        <guid isPermaLink="false">http://localhost/ticket/1589</guid>
+        <title>#1589: QA - Give 5 star rating to datasets with link metadata</title>
+        <pubDate>Wed, 21 Dec 2011 15:16:40 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Super: &lt;a class="closed ticket" href="http://localhost/ticket/1594" title="enhancement: [super] QA Improvements (closed: wontfix)"&gt;#1594&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+From Richard Cyganiak on the CKAN Discuss list:
+&lt;/p&gt;
+&lt;p&gt;
+Regarding the fifth star (is the dataset linked to others?). This cannot be automatically determined just by looking at the format. It either requires inspection of the actual data, or information about links in the metadata. As you're probably aware, we've established conventions for recording information on data links in CKAN &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt;, as part of the work of the lodcloud group on the Data Hub. Link information is captured for hundreds of datasets. I would claim that we have the majority of four-star datasets covered there, and hence you can determine if they should get the fifth star by checking for the presence of a links:xxx field.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1589#changelog</comments>
+    </item>
+ </channel>
+</rss>

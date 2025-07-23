@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2011-10-10&amp;group=status&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2011-10-10&amp;group=status&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1264</link>
+        <guid isPermaLink="false">http://localhost/ticket/1264</guid>
+        <title>#1264: Merge ckanext-admin into core</title>
+        <pubDate>Thu, 04 Aug 2011 17:59:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This extension should be in core now -- functionality is basic and very useful.
+&lt;/p&gt;
+&lt;p&gt;
+Copy across from here: &lt;a class="ext-link" href="http://bitbucket.org/okfn/ckanext-admin"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/okfn/ckanext-admin&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Suggest this no longer even be an extension.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1264#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1268</link>
+        <guid isPermaLink="false">http://localhost/ticket/1268</guid>
+        <title>#1268: Speed up listing users by revisions by adding db index</title>
+        <pubDate>Tue, 09 Aug 2011 16:16:32 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment this appears to be slow (kindly suggests because missing index in db). Page is /user on a ckan instance.
+&lt;/p&gt;
+&lt;p&gt;
+Would this also speed up user page where we recent changes?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1268#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1272</link>
+        <guid isPermaLink="false">http://localhost/ticket/1272</guid>
+        <title>#1272: Store spatial extents provided in the package form</title>
+        <pubDate>Mon, 15 Aug 2011 12:36:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Consolidate the extra &lt;tt&gt;spatial&lt;/tt&gt; as the field for providing information about the geographic extent of the package. This will integrate automatically with the spatial search and give developers a single point to develop geospatial features.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1272#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1320</link>
+        <guid isPermaLink="false">http://localhost/ticket/1320</guid>
+        <title>#1320: Extend basic markdown to support normal http / https links</title>
+        <pubDate>Wed, 07 Sep 2011 19:00:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+It is very annoying that you have to wrap links in &amp;lt;...&amp;gt; and most people don't bother. Extend h.markdown in code and markdown in js to fix this.
+&lt;/p&gt;
+&lt;p&gt;
+(We should also support 'package' links etc in javascript?)
+&lt;/p&gt;
+&lt;p&gt;
+*ADDITIONAL*
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Note that CKAN flavoured markdown will not currently recognise dataset:my_data links (still uses package).
+&lt;/li&gt;&lt;li&gt;Move the markdown api to /util/markdown
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1320#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1342</link>
+        <guid isPermaLink="false">http://localhost/ticket/1342</guid>
+        <title>#1342: Home controller does not capture SearchError exceptions</title>
+        <pubDate>Wed, 14 Sep 2011 11:53:47 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+If there is a problem with the SOLR connection,the home page just shows a 500 Server error, instead of a notice (the package controller shows a notice when visiting &lt;a class="ext-link" href="http://localhost:5000/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+Steps to reproduce:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Change the solr_url parameter in the ini file to something non-existant
+&lt;/li&gt;&lt;li&gt;Visit &lt;a class="ext-link" href="http://localhost:5000"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1342#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1344</link>
+        <guid isPermaLink="false">http://localhost/ticket/1344</guid>
+        <title>#1344: datetime error json conversion on search</title>
+        <pubDate>Wed, 14 Sep 2011 17:09:55 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Json decoding error on search, due to date in resources.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1344#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1356</link>
+        <guid isPermaLink="false">http://localhost/ticket/1356</guid>
+        <title>#1356: Can not recreate a deleted extra</title>
+        <pubDate>Mon, 26 Sep 2011 10:49:40 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+If you delete an extra and later on change your mind, you can not recreate it with the same value (Different value works fine).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1356#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1357</link>
+        <guid isPermaLink="false">http://localhost/ticket/1357</guid>
+        <title>#1357: Integrate new version of data preview</title>
+        <pubDate>Mon, 26 Sep 2011 22:27:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We have an all new and much improved data preview system developed as part of QA in July. Need to integrate this.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Is pure javascript
+&lt;/li&gt;&lt;li&gt;Will have this in CKAN core but considered to be a plugin (so need datapreview in ckan.plugins list to work -- will enable this by default)
+&lt;/li&gt;&lt;li&gt;Will depend on the &lt;a class="ext-link" href="http://wiki.ckan.org/DataExplorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/DataExplorer&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1357#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1362</link>
+        <guid isPermaLink="false">http://localhost/ticket/1362</guid>
+        <title>#1362: Clearing the database should also clear the search index</title>
+        <pubDate>Tue, 27 Sep 2011 11:11:01 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+When paster db clean is run, the search index should also be cleared.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1362#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1363</link>
+        <guid isPermaLink="false">http://localhost/ticket/1363</guid>
+        <title>#1363: Add task_status table to store qa/archiever/webstore information that does not need to be versioned.</title>
+        <pubDate>Wed, 28 Sep 2011 14:20:17 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;pre class="wiki"&gt;table: task_status
+id
+entity_id
+entity_type
+task_type
+key
+value
+last_updated
+state
+unique(entity_id, task_type, key)
+example keys:
+last_task_id
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1363#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1364</link>
+        <guid isPermaLink="false">http://localhost/ticket/1364</guid>
+        <title>#1364: If package in index that is not in ckan error is caused.</title>
+        <pubDate>Wed, 28 Sep 2011 15:03:26 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+We should ignore these but log the packages that are causing this to investigate.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1364#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1369</link>
+        <guid isPermaLink="false">http://localhost/ticket/1369</guid>
+        <title>#1369: Remove showdown.js from the page download</title>
+        <pubDate>Fri, 30 Sep 2011 14:21:56 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+ckan.js can be rearchitected to avoid instantiating showdown.js in the root namespace. That way, layout_base.html doesn't need to import the script (because we don't use the showdown-dependant parts of ckan.js).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1369#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1371</link>
+        <guid isPermaLink="false">http://localhost/ticket/1371</guid>
+        <title>#1371: Make logic layer functions for working with task_status table</title>
+        <pubDate>Wed, 05 Oct 2011 09:59:36 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+The background tasks will use the logic API to access the task_status table so new logic layer functions are needed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1371#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1375</link>
+        <guid isPermaLink="false">http://localhost/ticket/1375</guid>
+        <title>#1375: Define new package id before sending it to the IPackageController plugins</title>
+        <pubDate>Thu, 06 Oct 2011 14:14:01 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+When creating a package, the package_create logic function sends the newly created package object to all plugins implementing the IPackageController interface
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/93194933ea75/ckan/logic/action/create.py#cl-64"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/93194933ea75/ckan/logic/action/create.py#cl-64&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+At this point, the changes have not yet been commited and the id of the package is not set (It has a default value of make_uuid, which is set when commited). For this reason, plugins have no way of knowing the package id. E.g. the spatial query plugin needs to know this id to link the package extent to the actual package.
+&lt;/p&gt;
+&lt;p&gt;
+One possible solution would be to set the package id in the data dict received by package_create (if it's not defined):
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;from ckan.model.types import make_uuid
+if not 'id' in data or not data['id']:
+   data['id'] = make_uuid()
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1375#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1376</link>
+        <guid isPermaLink="false">http://localhost/ticket/1376</guid>
+        <title>#1376: 404 raised when approving package</title>
+        <pubDate>Sat, 08 Oct 2011 15:43:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Regression found by updating datacatalogs.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1376#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1377</link>
+        <guid isPermaLink="false">http://localhost/ticket/1377</guid>
+        <title>#1377: Ckan admin repair</title>
+        <pubDate>Mon, 10 Oct 2011 09:46:58 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Integrating ckanext-admin into core has thrown up a number of problems:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Look &amp;amp; feel does not match the rest of the site
+&lt;/li&gt;&lt;li&gt;Tests are not passing
+&lt;/li&gt;&lt;li&gt;On the trash page, clicking 'undelete' triggers a purge
+&lt;/li&gt;&lt;li&gt;Using the purge functionality is dangerous; deleting and purging the latest revision will corrupt a dataset (&amp;amp; several corrupt datasets have been found on thedatahub.org)
+&lt;/li&gt;&lt;li&gt;Trash page can contain nested form tags in certain cases (breaking test harness &amp;amp; form redirection)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1377#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1166</link>
+        <guid isPermaLink="false">http://localhost/ticket/1166</guid>
+        <title>#1166: Less stringent filters for displaying the WMS preview</title>
+        <pubDate>Thu, 26 May 2011 15:10:46 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now, for the "View available WMS layers" link to be displayed, the package needs to have an "INSPIRE=True" extra, a "resource-type=service" extra and a resource of type "WMS".
+&lt;/p&gt;
+&lt;p&gt;
+This is due to DGU (the project this was developed for) related reasons, but for a generic support, the resource type should probably be enough.
+&lt;/p&gt;
+&lt;p&gt;
+(The repository for this is ckanext-spatial, but it's not on the list)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1166#changelog</comments>
+    </item>
+ </channel>
+</rss>

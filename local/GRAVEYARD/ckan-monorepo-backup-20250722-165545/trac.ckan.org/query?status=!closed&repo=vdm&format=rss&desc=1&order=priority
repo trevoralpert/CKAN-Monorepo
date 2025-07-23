@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;repo=vdm&amp;desc=1&amp;order=priority</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;repo=vdm&amp;desc=1&amp;order=priority</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1135</link>
+        <guid isPermaLink="false">http://localhost/ticket/1135</guid>
+        <title>#1135: Changeset model for vdm</title>
+        <pubDate>Thu, 12 May 2011 14:19:46 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Move to Changeset model for vdm.
+&lt;/p&gt;
+&lt;p&gt;
+A changeset model is like an Audit-Log model in which we just record Changesets with Change-Objects rather than have Revision-Objects for each Object that is revisioned.
+&lt;/p&gt;
+&lt;p&gt;
+This change would also incorporate significant simplication of vdm.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1135#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1137</link>
+        <guid isPermaLink="false">http://localhost/ticket/1137</guid>
+        <title>#1137: Remove need for statefulness in vdm</title>
+        <pubDate>Thu, 12 May 2011 14:47:08 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Statefulness, especially statefulness for relation (esp m2m) is cause of most of the complexity in vdm. It is &lt;em&gt;required&lt;/em&gt; because, atm, revision objects have FKs to continuity objects.
+&lt;/p&gt;
+&lt;p&gt;
+This ticket proposes the following changes:
+&lt;/p&gt;
+&lt;p&gt;
+NB: this could be limited just to case of join tables (leaving state stuff on other tables)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Remove FKs from revision to continuity (or allow for them to be nullable).
+&lt;ul&gt;&lt;li&gt;We could just limit this to m2m stuff
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Delete of an object leads to:
+&lt;ul&gt;&lt;li&gt;Deletion of continuity object
+&lt;/li&gt;&lt;li&gt;Adding an entry in revision table with state set to deleted (we retain state on revision table)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+If this is done we will no longer need to worry about filtering on state on relationships as join table will only contain "active" relationships.
+&lt;/p&gt;
+&lt;p&gt;
+If we do this on all tables we remove need for any state awareness in client (e.g. no need to filter tables on active state).
+&lt;/p&gt;
+&lt;p&gt;
+The only disadvantage of this change is that undeletion becomes more problematic (we have to recreate some continuity objects).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1137#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1136</link>
+        <guid isPermaLink="false">http://localhost/ticket/1136</guid>
+        <title>#1136: Move to SessionExtension in vdm</title>
+        <pubDate>Thu, 12 May 2011 14:34:15 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When vdm was created there was no SessionExtension so we use MapperExtension for doing revisioning. Now that &lt;a class="missing wiki"&gt;SessionExtension?&lt;/a&gt; exists we should use it. We can also follow the existing SQLAlchemy recipe: &amp;lt;&lt;a class="ext-link" href="http://www.sqlalchemy.org/docs/orm/examples.html?highlight=versioning#versioned-objects"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.sqlalchemy.org/docs/orm/examples.html?highlight=versioning#versioned-objects&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1136#changelog</comments>
+    </item>
+ </channel>
+</rss>

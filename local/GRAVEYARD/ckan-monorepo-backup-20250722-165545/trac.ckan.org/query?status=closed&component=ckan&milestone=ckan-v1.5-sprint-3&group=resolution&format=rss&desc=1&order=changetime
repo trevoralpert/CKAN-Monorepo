@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.5-sprint-3&amp;group=resolution&amp;desc=1&amp;order=changetime</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.5-sprint-3&amp;group=resolution&amp;desc=1&amp;order=changetime</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1196</link>
+        <guid isPermaLink="false">http://localhost/ticket/1196</guid>
+        <title>#1196: Markdown logging ignores config settings</title>
+        <pubDate>Wed, 22 Jun 2011 11:51:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Markdown produces Debug logging, even when the pylons logging config is set to level of Info or Warning. This clogs up the logfile.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1196#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1191</link>
+        <guid isPermaLink="false">http://localhost/ticket/1191</guid>
+        <title>#1191: Unicode in user password gives 500 error on user registration</title>
+        <pubDate>Fri, 17 Jun 2011 12:14:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Create/register a user with a unicode character in the password. It creates the user, but the redirect to the user page doesn't work and results in 500 error.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1191#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1187</link>
+        <guid isPermaLink="false">http://localhost/ticket/1187</guid>
+        <title>#1187: Stop spam users with links in the 'about' field</title>
+        <pubDate>Wed, 15 Jun 2011 13:03:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you edit a user, you should be stopped from putting links in the 'about' field, because this is a common tactic by spammers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1187#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1180</link>
+        <guid isPermaLink="false">http://localhost/ticket/1180</guid>
+        <title>#1180: Links in markdown can be badly formed</title>
+        <pubDate>Tue, 07 Jun 2011 17:50:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+User can insert bad anchor tags into the User-About and Package-Notes fields and when you view them (web interface) it causes a 500 error.
+&lt;/p&gt;
+&lt;p&gt;
+Need to improve filtering for anchors in markdown.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;a href="http://xxxsex.com&amp;gt;nasty/website
+&lt;/pre&gt;&lt;p&gt;
+Also check this related exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.user:59 in read
+&amp;lt;&amp;lt;          c.is_myself = user.name == c.user
+               c.api_key = user.apikey
+               c.about_formatted = self._format_about(user.about)
+               revisions_q = model.Session.query(model.Revision
+                       ).filter_by(author=user.name)
+&amp;gt;&amp;gt;  c.about_formatted = self._format_about(user.about)
+Module ckan.controllers.user:167 in _format_about
+&amp;lt;&amp;lt;      def _format_about(self, about):
+               about_formatted = ckan.misc.MarkdownFormat().to_html(about)
+               return genshi.HTML(about_formatted)
+           def _get_form_password(self):
+&amp;gt;&amp;gt;  return genshi.HTML(about_formatted)
+WebApp Error: &amp;lt;class 'genshi.input.ParseError'&amp;gt;: junk characters in start tag: u'\u201dhttp://www.settingu': line 1, column 3
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1180#changelog</comments>
+    </item>
+ </channel>
+</rss>

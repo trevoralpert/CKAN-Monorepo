@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-v1.7&amp;group=status&amp;order=resolution</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-v1.7&amp;group=status&amp;order=resolution</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1397</link>
+        <guid isPermaLink="false">http://localhost/ticket/1397</guid>
+        <title>#1397: [super] Resource archiving</title>
+        <pubDate>Thu, 13 Oct 2011 18:13:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We want to cache/archive data associated to a resource so it is available if the resource url disappears (and in order to support other processing we may wish to do e.g. webstorer ...)
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/queue"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/queue&lt;/a&gt; (most relevant parts inlined here)
+&lt;/p&gt;
+&lt;h2 id="Preliminaries"&gt;Preliminaries&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Add task_status table to store qa/archiever/webstore information that does not need to be versioned. - &lt;a class="closed ticket" href="http://localhost/ticket/1363" title="enhancement: Add task_status table to store qa/archiever/webstore information that does ... (closed: fixed)"&gt;#1363&lt;/a&gt; (and &lt;a class="closed ticket" href="http://localhost/ticket/1371" title="enhancement: Make logic layer functions for working with task_status table (closed: fixed)"&gt;#1371&lt;/a&gt; - related logic functions)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Configurationsetupfordaemons"&gt;Configuration setup for daemons&lt;/h3&gt;
+&lt;p&gt;
+Pass config through to workers i.e site_url, user, api_key.
+Need to make site user account. &lt;a class="closed ticket" href="http://localhost/ticket/1408" title="enhancement: Make site user, so tasks can post information back to ckan. (closed: fixed)"&gt;#1408&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+celeryd config:
+&lt;/p&gt;
+&lt;p&gt;
+All providers of tasks will add an item to the following entry point:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;[ckan.tasks]
+name = ckanext.{name}.tasks:....
+&lt;/pre&gt;&lt;p&gt;
+celeryconfig.py
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;from pkg_resources import iter_entry_points
+for entry in iter_entry_points:
+     celeryimports.appen(....)
+CELERY_IMPORTS = celeryimports
+&lt;/pre&gt;&lt;h2 id="WorkItems"&gt;Work Items&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Resource change notifications in core - Make an IResourceChange and IResourceUrlChange. [1d] [0.75d] -  &lt;a class="closed ticket" href="http://localhost/ticket/1383" title="enhancement: Add IResourceChange IResourceUrlChange Interfaces. (closed: fixed)"&gt;#1383&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Generate archiving request on resource url change [0.25d][0.25d] - &lt;a class="closed ticket" href="http://localhost/ticket/1399" title="enhancement: Generate archiving request on resource url change (closed: fixed)"&gt;#1399&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Make site user account.
+&lt;/li&gt;&lt;li&gt;Make entry point system for celery config
+&lt;/li&gt;&lt;li&gt;Archiver daemon &lt;a class="closed ticket" href="http://localhost/ticket/891" title="task: Resource download worker daemon (closed: fixed)"&gt;#891&lt;/a&gt;
+&lt;ol&gt;&lt;li&gt;implement link-check function and task (point 2 from Archiver.update above) [1d] [0.5d]
+&lt;/li&gt;&lt;li&gt;Rewrite archiver to use external storage. (decide how!)[3d][~2d]
+&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Write to resource and task status table.[1d][0.75d]
+&lt;/li&gt;&lt;li&gt;[Required?] Make archived data available in WUI - &lt;a class="closed ticket" href="http://localhost/ticket/892" title="enhancement: Make stored data available in WUI - 0.5d (closed: fixed)"&gt;#892&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Documentation - &lt;a class="closed ticket" href="http://localhost/ticket/1400" title="enhancement: Document Archiver Extension (closed: fixed)"&gt;#1400&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1397#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1465</link>
+        <guid isPermaLink="false">http://localhost/ticket/1465</guid>
+        <title>#1465: Upgrade the harvester to support publishers properly</title>
+        <pubDate>Tue, 15 Nov 2011 16:52:03 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment most of the harvesting functionality is only available to sysadmins. This is fine for most cases but going forward we will need to grant each publisher access to their own sources, harvest objects and harvest object errors. This will probably be done based on the groups refactor.
+&lt;/p&gt;
+&lt;p&gt;
+One more pressing concern is giving DGU publishers the ability to make calls to /harvest/object/id. We want them to be able to see documents that faild validation and also to see *all* errors in each document.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1465#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1496</link>
+        <guid isPermaLink="false">http://localhost/ticket/1496</guid>
+        <title>#1496: Render a user's activity stream on her user page</title>
+        <pubDate>Mon, 28 Nov 2011 15:53:08 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1496#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1515</link>
+        <guid isPermaLink="false">http://localhost/ticket/1515</guid>
+        <title>#1515: [super] Activity Streams</title>
+        <pubDate>Mon, 05 Dec 2011 17:10:48 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+We want to add "activity streams" (chronological lists of activities) to CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+Activity streams standard: &lt;a class="ext-link" href="http://activitystrea.ms/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://activitystrea.ms/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Super branch where the feature was initially developed (this has now been merged into master): &lt;a class="ext-link" href="https://github.com/okfn/ckan/tree/feature-1515-activity-streams"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/tree/feature-1515-activity-streams&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/notifications"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/notifications&lt;/a&gt; (most relevant parts inlined here)
+&lt;/p&gt;
+&lt;p&gt;
+Friedrich's mockup: &lt;a class="ext-link" href="http://datahub.pudo.org/pudo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.pudo.org/pudo&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="Tasks"&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;
+&lt;del&gt;Strikethrough&lt;/del&gt; means the task is done.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;New domain objects Activity and &lt;a class="missing wiki"&gt;ActivityStream?&lt;/a&gt; [2d] &lt;a class="closed ticket" href="http://localhost/ticket/1298" title="enhancement: Generate activites to be put into activities table. (closed: fixed)"&gt;#1298&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Migrate existing data into activity streams model [3.5d] &lt;a class="closed ticket" href="http://localhost/ticket/1510" title="enhancement: Migrate existing data into activity streams database tables (closed: wontfix)"&gt;#1510&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Generate activities when objects are saved [4d] &lt;a class="closed ticket" href="http://localhost/ticket/1298" title="enhancement: Generate activites to be put into activities table. (closed: fixed)"&gt;#1298&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Get the activity stream for a given user as a JSONifiable list of dictionaries [1d] &lt;a class="closed ticket" href="http://localhost/ticket/1511" title="enhancement: Logic function for getting a user's public activity stream (closed: fixed)"&gt;#1511&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;API call for getting a user's public activity stream as JSON [0.5d] &lt;a class="closed ticket" href="http://localhost/ticket/1495" title="enhancement: API call for getting a user's public activity stream (closed: fixed)"&gt;#1495&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;API call for getting a user's public activity stream as rendered text, HTML, etc. [5d] &lt;a class="closed ticket" href="http://localhost/ticket/1494" title="enhancement: API call for getting a user's public activity stream as rendered rtext (closed: wontfix)"&gt;#1494&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Render a user's activity stream on her user page [3d] &lt;a class="closed ticket" href="http://localhost/ticket/1496" title="enhancement: Render a user's activity stream on her user page (closed: fixed)"&gt;#1496&lt;/a&gt;&lt;/del&gt; (needs review/page design work)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Generate activities for other types of objects besides users (e.g. packages, groups, tags, extras, and save them in the database.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Logic functions for getting activity streams for packages, groups, and users.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;API calls for getting activity streams of packages, groups, and users&lt;/del&gt; as JSON.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;Rendering activity streams for packages and groups etc. into their pages.&lt;/del&gt; (done but disabled pending page design work)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;&lt;del&gt;API calls for inserting events into activity streams.&lt;/del&gt; (Still need to handle activity details in the API, ticketed).
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Conform to activitystrea.ms standard
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Enable users to subscribe to and unsubscribe from activity streams, see an aggregated activity stream on their dashboard page.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Generate aggregated activity streams for arbitrary sets of multiple activity sources/streams
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Email notifications
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Extension point for extensions to register themselves as renderers for different types of activity
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Deploy to UAT [0.5d]
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Docs and announce [1d]
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1515#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1525</link>
+        <guid isPermaLink="false">http://localhost/ticket/1525</guid>
+        <title>#1525: [super] DGU package form refactor</title>
+        <pubDate>Tue, 06 Dec 2011 12:00:39 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Form refactor. New create/edit package form wizard for DGU.
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/dgu-package-form"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/dgu-package-form&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt; : Simple one-page form.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1527" title="enhancement: Break DGU package edit form into sections (closed: fixed)"&gt;#1527&lt;/a&gt; : Tab-ify the form using JS.  No validation between steps.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1541" title="task: Setup server for the DGU form-refactor. (closed: fixed)"&gt;#1541&lt;/a&gt; : Setup server for the DGU form-refactor.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1537" title="enhancement: Package create form wizard (closed: fixed)"&gt;#1537&lt;/a&gt; : Package create form wizard
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1538" title="enhancement: Store partially-filled in package form data as a draft. (closed: wontfix)"&gt;#1538&lt;/a&gt; : &lt;del&gt;Store partially-filled in package form data as a draft.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1539" title="enhancement: Package forms auto-save (closed: wontfix)"&gt;#1539&lt;/a&gt; : &lt;del&gt;Package forms auto-save&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+How the rest of the work is carried out is up for discussion, as it depends on the approach taken.  Whether to continue with validation using AJAX queries, or whether to break the form down into multi pages.  &lt;a class="ext-link" href="https://docs.google.com/spreadsheet/ccc?key=0Av2RfDDpj67zdGpSdFlKVjNrQmFXV3lHbGM3ZFlDdnc&amp;amp;hl=en_US#gid=1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Google doc outlining design(s)&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1525#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1530</link>
+        <guid isPermaLink="false">http://localhost/ticket/1530</guid>
+        <title>#1530: URL field help text in wrong place</title>
+        <pubDate>Wed, 07 Dec 2011 12:46:24 GMT</pubDate>
+        
+        <dc:creator>lucychambers</dc:creator>
+
+        <description>&lt;p&gt;
+Confusion between entering values in the title and name/url fields in datacatalogs.org.
+&lt;/p&gt;
+&lt;p&gt;
+The help text "Url must be purely lowercase alphanumeric (ascii) characters and these symbols: -_" applies to the name/url field, yet in Lucy's browser the text that is actually hovering over the title field in my browser.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1530#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1537</link>
+        <guid isPermaLink="false">http://localhost/ticket/1537</guid>
+        <title>#1537: Package create form wizard</title>
+        <pubDate>Thu, 08 Dec 2011 15:34:11 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Create the form wizard for the package-new form.
+&lt;/p&gt;
+&lt;p&gt;
+Each section of the form will be a separate page as this was decided to be simpler than the alternative of making AJAX calls for validation at each stage. (*)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;separate pages for each section of the form
+&lt;/li&gt;&lt;li&gt;validation carried out at each stage against the whole schema.  Each section/page declares a list of schema keys that need to validate for that section to validate, and thus move onto the next section.
+&lt;/li&gt;&lt;li&gt;no draft saving to be performed in this ticket.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(*) - although the javascript alternative will probably provide better UX (each step would require a page-load in the wizard approach), it was decided that:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;with the javascript approach it would be harder to test the workflow.
+&lt;/li&gt;&lt;li&gt;with the javascript approach there would be additional work displaying validation correctly.  Although not that complicated, it was felt to add another point of failure.
+&lt;/li&gt;&lt;li&gt;the multi-page wizard is quicker and easier to implement, and if it provided poor UX, then the javascript approach would be used instead.
+&lt;/li&gt;&lt;li&gt;the multi-page wizard wouldn't preclude a javascript-tabbing create-form for other cases (where the wizard workflow wasn't such a good match, eg on the hedatahub.org)
+&lt;/li&gt;&lt;li&gt;the multi-page wizard wouldn't preclude a javascript-tabbing edit-form.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1537#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1566</link>
+        <guid isPermaLink="false">http://localhost/ticket/1566</guid>
+        <title>#1566: [super] Finalize Google analytics extension</title>
+        <pubDate>Mon, 19 Dec 2011 11:12:48 GMT</pubDate>
+        
+        <dc:creator>jilly mathews</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Deploy it)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Integrate with stats plugin (now that is in core) - &lt;a class="new ticket" href="http://localhost/ticket/1101" title="enhancement: Integrate googlanalytics into site nav (new)"&gt;#1101&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Blog about it &lt;a class="new ticket" href="http://localhost/ticket/1581" title="enhancement: Blog post about Google Analytics extension for CKAN (new)"&gt;#1581&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;(Other tickets re upgrading for v1.5.1 - done but where are tickets?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1566#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1574</link>
+        <guid isPermaLink="false">http://localhost/ticket/1574</guid>
+        <title>#1574: [super] Storage changes including automated save to Webstore</title>
+        <pubDate>Mon, 19 Dec 2011 17:27:13 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Allow uploading of files to push the data into webstore.  Initially we were going to suggest changes to ckanext-storage but after further analysis we arrived at the conclusion that this should be implemented by ckanext-archiver as it already handles archiving of data from various sources and would be the best place to 'archive' to webstore.
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;A user wants to upload a file to CKAN, and so chooses the file upload option as they do currently with ckanext-storage. The file upload itself should be handled by this code internal to core (see &lt;a class="closed ticket" href="http://localhost/ticket/1608" title="enhancement: Merge storage into Core (closed: fixed)"&gt;#1608&lt;/a&gt;) but still using ofs [5d]
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;The user is provided the link to the file as currently.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;The archiver's update task will check configuration to determine if it should upload some mime-types (tabular formats) to webstore. Configuration should also determine where webstore is. (see &lt;a class="closed ticket" href="http://localhost/ticket/1609" title="enhancement: Celery task for ckanext-archiver to write to webstore. (closed: fixed)"&gt;#1609&lt;/a&gt;) [5d] - took 6
+&lt;/li&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;It should be stored in webstore using {username}/{resource-id} where {username} is the name of the user uploading the original file.
+&lt;/li&gt;&lt;/ul&gt;&lt;ol start="4"&gt;&lt;li&gt;The archiver will continue to move the file into permanent storage as per current practice.
+&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="Tickets"&gt;Tickets&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1608" title="enhancement: Merge storage into Core (closed: fixed)"&gt;#1608&lt;/a&gt; Merge storage into Core [5d]
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1609" title="enhancement: Celery task for ckanext-archiver to write to webstore. (closed: fixed)"&gt;#1609&lt;/a&gt; Celery task for ckanext-archiver to write to webstore. [5d] (took 6)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1687" title="enhancement: Deploy new storage changes from master to datahub (closed: invalid)"&gt;#1687&lt;/a&gt;: Deploy to datahub [1d]
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1681" title="enhancement: Core storage document (closed: fixed)"&gt;#1681&lt;/a&gt;: Core storage documentation [1d?]
+&lt;ul&gt;&lt;li&gt;Internal (perhaps in README somewhere or wiki): how does process work, where does data end up and in what order etc
+&lt;/li&gt;&lt;li&gt;External: here's how to configure it and here's what you get ... (goes in main sphinx docs)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1574#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1601</link>
+        <guid isPermaLink="false">http://localhost/ticket/1601</guid>
+        <title>#1601: [super] Well integrated Geo-spatial support including search</title>
+        <pubDate>Fri, 30 Dec 2011 15:43:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Need thoughts from Adria and James. RP thoughts
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integration into WUI search: &lt;a class="closed ticket" href="http://localhost/ticket/1469" title="enhancement: Geo-spatial search on the front end (closed: fixed)"&gt;#1469&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;JS Editor for adding/editing spatial attribute: &lt;a class="new ticket" href="http://localhost/ticket/1818" title="enhancement: Spatial metadata editor (new)"&gt;#1818&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Theme/template hook for adding the map e.g. on dataset page (or elsewhere)
+&lt;/li&gt;&lt;li&gt;Clear Documentation
+&lt;/li&gt;&lt;li&gt;Deployment
+&lt;/li&gt;&lt;li&gt;Announce post
+&lt;/li&gt;&lt;li&gt;(?) Map page for stats section showing location of datasets
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Extras (probably separate):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;csw support ...
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1601#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1605</link>
+        <guid isPermaLink="false">http://localhost/ticket/1605</guid>
+        <title>#1605: [super] Multilingual support in CKAN</title>
+        <pubDate>Mon, 02 Jan 2012 03:02:47 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Multi-language:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;dataset and resource metadata (and other objects such as groups?)
+&lt;ul&gt;&lt;li&gt;Options for implementation in &lt;a class="ext-link" href="http://ckan.okfnpad.org/multilingual"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/multilingual&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Field values in taxonomy (e.g. country names - Eurovoc)
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1665" title="task: Begin doing research into eurovoc (closed: fixed)"&gt;#1665&lt;/a&gt; Research into Eurovoc
+&lt;/li&gt;&lt;li&gt;Display Taxonomy in different languages
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Field values not in taxonomy (e.g. title &amp;amp; description)
+&lt;ul&gt;&lt;li&gt;Use extra fields e.g. _i18n_title_fr = Le data.
+&lt;/li&gt;&lt;li&gt;(If lots of fields would need translating then would consider having a new package for each language, linked together with &lt;a class="missing wiki"&gt;PackageRelationships?&lt;/a&gt;. But I think it is just title and description (resource description etc. are so minor, not worth translating?), so using extra field better.)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;EC extension (templates, form)
+&lt;ul&gt;&lt;li&gt;Currently the pot file is just for CKAN core. New pot file for CKAN core and this extension? Or separate ones for extensions?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1605#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1607</link>
+        <guid isPermaLink="false">http://localhost/ticket/1607</guid>
+        <title>#1607: [super] Data.gov.uk Maintenance Refactor and UKLP Development Support</title>
+        <pubDate>Mon, 02 Jan 2012 11:22:28 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+A ticket to collect all of the changes needed for CKAN to become the 'data' tab on DGU.
+&lt;/p&gt;
+&lt;p&gt;
+Design doc: &lt;a class="ext-link" href="https://docs.google.com/document/d/19h9bA1G4cQkv031m8jNCu6FEB3a8qpXUmdPAguM-Ofs/edit?hl=en_GB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://docs.google.com/document/d/19h9bA1G4cQkv031m8jNCu6FEB3a8qpXUmdPAguM-Ofs/edit?hl=en_GB&lt;/a&gt;  The design doc is the authoritative source of tasks.  This ticket acts as a synopsis.
+&lt;/p&gt;
+&lt;p&gt;
+Current sprint (2012-02-20):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;7a. &lt;del&gt;Public Publisher Dashboard (including QA Work and notifications) MUST PHASE 1&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;6. &lt;del&gt;Publisher Registration Improvements MUST PHASE 1&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;3. &lt;del&gt;&lt;a class="missing wiki"&gt;Themes/Taxonomy?&lt;/a&gt; as well as tags WONT PHASE 2&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;32. &lt;del&gt;Browse by Tags PHASE 1 MUST&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;12. &lt;del&gt;&lt;a class="missing wiki"&gt;Edit/Delete?&lt;/a&gt; for Harvested Datasets MUST URGENT PHASE 1&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;13. &lt;del&gt;Provider labelling MUST PHASE 1 [UKLP &lt;a class="closed ticket" href="http://localhost/ticket/14" title="enhancement: Update a release (closed: invalid)"&gt;#14&lt;/a&gt; MUST]&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;17. &lt;del&gt;Filter “UK Location Records” MUST PHASE 1 [UKLP &lt;a class="closed ticket" href="http://localhost/ticket/21" title="enhancement: Undelete a package (closed: fixed)"&gt;#21&lt;/a&gt; SHOULD]&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;22. &lt;del&gt;Mixed Licenses MUST PHASE 2&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Plus, brought forward from last sprint:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Publisher hierarchy support&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Improved dataset creation tools (form) - &lt;a class="closed ticket" href="http://localhost/ticket/1525" title="enhancement: [super] DGU package form refactor (closed: fixed)"&gt;#1525&lt;/a&gt;&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Edit/delete for harvested datasets&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Overview of tasks: see the design doc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1607#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1617</link>
+        <guid isPermaLink="false">http://localhost/ticket/1617</guid>
+        <title>#1617: Update and test existing DGU package form : publisher / foi information</title>
+        <pubDate>Mon, 09 Jan 2012 10:03:04 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Contact/FOI information is derived from &lt;a class="missing wiki"&gt;Publisher/User?&lt;/a&gt;, but can be altered for each dataset.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 4 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 4 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1617#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1618</link>
+        <guid isPermaLink="false">http://localhost/ticket/1618</guid>
+        <title>#1618: Update and test existing DGU package form : provide stubs for the theme and sub-themes</title>
+        <pubDate>Mon, 09 Jan 2012 10:05:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Provide the interface for the themes and subthemes hierarchy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1618#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1619</link>
+        <guid isPermaLink="false">http://localhost/ticket/1619</guid>
+        <title>#1619: Update and test existing DGU package form : provide stubs for the publisher hierarchy</title>
+        <pubDate>Mon, 09 Jan 2012 10:07:52 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Create the interface used to retrieve publisher and authz information from the publisher hierarchy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1619#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1654</link>
+        <guid isPermaLink="false">http://localhost/ticket/1654</guid>
+        <title>#1654: [super] Update Publicdata.eu to the latest CKAN stable version</title>
+        <pubDate>Mon, 16 Jan 2012 10:44:07 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Tasks include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1813" title="task: Upadate ckanext-pdeu to work with CKAN 1.6 (closed: fixed)"&gt;#1813&lt;/a&gt; Update ckanext-pdeu (4d)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1814" title="enhancement: Check publicadata.eu harvesters (closed: fixed)"&gt;#1814&lt;/a&gt; Update harvesters (2d)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1649" title="enhancement: Verify RDF Extension (ckanext-rdf) works (closed: fixed)"&gt;#1649&lt;/a&gt; Verify ckanext-rdf works with latest CKAN (3d)
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1815" title="task: Reenable Sparql endpoint on publicdata.eu (new)"&gt;#1815&lt;/a&gt; Reenable Sparql endpoint (?)
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1816" title="enhancement: Update ckanext-apps to work with CKAN 1.5.1 - 1.6 (closed: fixed)"&gt;#1816&lt;/a&gt; Update ckanext-apps (2-3d)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1654#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1669</link>
+        <guid isPermaLink="false">http://localhost/ticket/1669</guid>
+        <title>#1669: [super] Publisher profile</title>
+        <pubDate>Tue, 17 Jan 2012 12:14:33 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Implement the necessary backend changes to build profile for publishers using the group refactor.
+&lt;/p&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="http://ckan.okfnpad.org/publisherprofiles"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/publisherprofiles&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Subtickets are at:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Publisher profile analysis &lt;a class="closed ticket" href="http://localhost/ticket/1670" title="enhancement: Publisher profile documentation (closed: fixed)"&gt;#1670&lt;/a&gt; [2d]
+&lt;/li&gt;&lt;li&gt;Publisher profile sysadmin authz &lt;a class="closed ticket" href="http://localhost/ticket/1671" title="enhancement: Publisher profile sysadmin authz (closed: fixed)"&gt;#1671&lt;/a&gt; [1d]
+&lt;/li&gt;&lt;li&gt;Publisher profile user authz &lt;a class="closed ticket" href="http://localhost/ticket/1672" title="enhancement: Publisher profile user authz (closed: fixed)"&gt;#1672&lt;/a&gt; [1d]
+&lt;/li&gt;&lt;li&gt;Test auth logic hooks for publisher profile &lt;a class="closed ticket" href="http://localhost/ticket/1674" title="enhancement: Test auth logic hooks for publisher profile (closed: fixed)"&gt;#1674&lt;/a&gt; [3d]
+&lt;/li&gt;&lt;li&gt;Publisher admin authz &lt;a class="closed ticket" href="http://localhost/ticket/1675" title="enhancement: Publisher admin authz (closed: fixed)"&gt;#1675&lt;/a&gt; [3d]
+&lt;/li&gt;&lt;li&gt;Publisher editor authz &lt;a class="closed ticket" href="http://localhost/ticket/1676" title="enhancement: Publisher editor authz (closed: fixed)"&gt;#1676&lt;/a&gt; [2d]
+&lt;/li&gt;&lt;li&gt;Add approval status field to groups &lt;a class="closed ticket" href="http://localhost/ticket/1673" title="enhancement: Add approval status field to groups (closed: fixed)"&gt;#1673&lt;/a&gt; [1d]
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1669#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1698</link>
+        <guid isPermaLink="false">http://localhost/ticket/1698</guid>
+        <title>#1698: [super] Tag Taxonomies</title>
+        <pubDate>Tue, 24 Jan 2012 14:35:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add drupal-like "taxonomies" to CKAN.
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad with user stories, feature list, design and implementation discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.okfnpad.org/22"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/22&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Branch where this is being developed is feature-1698-tag-taxonomies:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/compare/master...feature-1698-tag-taxonomies"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/compare/master...feature-1698-tag-taxonomies&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tickets related to this have &lt;a class="ext-link" href="http://trac.ckan.org/query?status=accepted&amp;amp;status=assigned&amp;amp;status=closed&amp;amp;status=new&amp;amp;status=reopened&amp;amp;group=owner&amp;amp;max=1000&amp;amp;order=milestone&amp;amp;col=id&amp;amp;col=summary&amp;amp;col=status&amp;amp;col=owner&amp;amp;col=milestone&amp;amp;col=keywords&amp;amp;keywords=~taxonomies"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;keyword taxonomies&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1698#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1734</link>
+        <guid isPermaLink="false">http://localhost/ticket/1734</guid>
+        <title>#1734: [super] Updates on harvesting for UKLP</title>
+        <pubDate>Tue, 31 Jan 2012 11:14:34 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Some changes are needed in ckanext-harvest to support the new piece of work in the UKLP harvesters, mainly related to the deletion of existing sources.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1726" title="enhancement: Update harvesting model (closed: fixed)"&gt;#1726&lt;/a&gt; Update harvesting model
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1727" title="enhancement: Add &amp;#34;current&amp;#34; property to harvest objects (closed: fixed)"&gt;#1727&lt;/a&gt; Add "current" field to harvesting objects
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1728" title="enhancement: Update UKLP harvesters (closed: fixed)"&gt;#1728&lt;/a&gt; Update UKLP harvesters
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1733" title="enhancement: Delete (inactivate) harvest sources (closed: fixed)"&gt;#1733&lt;/a&gt; Delete (inactivate) harvest sources
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+At some point we also want to support a publisher model for the harvesting:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1731" title="enhancement: Publisher support for harvesting (closed: fixed)"&gt;#1731&lt;/a&gt; Publisher support for harvesting
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1734#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1736</link>
+        <guid isPermaLink="false">http://localhost/ticket/1736</guid>
+        <title>#1736: [Super] Multilingual Metadata</title>
+        <pubDate>Tue, 31 Jan 2012 12:24:57 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Translate all areas of metatdata to selected language. This includes finding datasets in all languages.
+&lt;/p&gt;
+&lt;p&gt;
+Multilingal Metadata:
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add translation table. 2d
+&lt;/li&gt;&lt;li&gt;Api to add translation 3d
+&lt;/li&gt;&lt;li&gt;Add extention point to dataset view. 3d
+&lt;/li&gt;&lt;li&gt;Add extension point to search index to add translations. 2d.
+&lt;/li&gt;&lt;li&gt;Add all eurovoc data to translations. 1d.
+&lt;/li&gt;&lt;li&gt;Make multilingual solr schema 2d &lt;a class="closed ticket" href="http://localhost/ticket/1715" title="enhancement: Search index multilingual (closed: fixed)"&gt;#1715&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1736#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1768</link>
+        <guid isPermaLink="false">http://localhost/ticket/1768</guid>
+        <title>#1768: DGU: 7a. Public Publisher Dashboard (including QA Work and notifications) MUST PHASE 1</title>
+        <pubDate>Mon, 06 Feb 2012 14:49:00 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1768#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2230</link>
+        <guid isPermaLink="false">http://localhost/ticket/2230</guid>
+        <title>#2230: Tidy up of search facets code duplication</title>
+        <pubDate>Wed, 14 Mar 2012 16:54:45 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Because of a clash between two development branches there is some duplication of code to do with code facets (note: at the time of writing the code duplication exists only on the feature-1821-multilingual-extension branch, but this will be merged into master at some point):
+&lt;/p&gt;
+&lt;p&gt;
+The package_search() function is adding the search facets to the search results twice with two different data structures, with keys "facets" and "new_facets". It should be reduced to just the new facets (with the key changed to "facets").
+&lt;/p&gt;
+&lt;p&gt;
+Also the group and package controllers are adding both facets and new_facets to the context, should be new_facets only (but renamed to facets).
+&lt;/p&gt;
+&lt;p&gt;
+The facet_items() function in helpers.py should be removed, it uses the old facets structure and shouldn't be needed anymore with the new facets structure.
+&lt;/p&gt;
+&lt;p&gt;
+In facets.html, facet_sidebar() should be removed as it uses the old facets structure and facet_div() implements the same functionality but uses the new facets.
+&lt;/p&gt;
+&lt;p&gt;
+In facets.html, facet_list_items() will have to be updated to not use the facet_items() helper and to use the new facets structure instead.
+&lt;/p&gt;
+&lt;p&gt;
+Anywhere that "new_facets" appears it will have to be changed to "facets" (e.g. in the ckanext/multilingual/plugin.py.
+&lt;/p&gt;
+&lt;p&gt;
+This is the merge commit that introduced the duplication: &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/1153aa876f54c22289e460aeececea22d1d4d51d"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/1153aa876f54c22289e460aeececea22d1d4d51d&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This is the earlier commit where the search facets were refactored: &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/3970e52008b75933fda1be1d488bed2578d98c9c"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/3970e52008b75933fda1be1d488bed2578d98c9c&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2230#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2332</link>
+        <guid isPermaLink="false">http://localhost/ticket/2332</guid>
+        <title>#2332: Fixes for v1.7 release</title>
+        <pubDate>Sat, 28 Apr 2012 20:15:16 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A place to list crucial fixes for v1.7 release:
+&lt;/p&gt;
+&lt;p&gt;
+Related extension:
+&lt;/p&gt;
+&lt;p&gt;
+All not complete now moved to &lt;a class="closed ticket" href="http://localhost/ticket/2347" title="enhancement: Related stuff dashboard and changes (closed: fixed)"&gt;#2347&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Related Item has comments on index page (they should not show up here -- why is this happening!)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Related item should be to left of history (history could in fact move to RHS)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;What about losing icons since we duplicate for related item
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Related item plus sign is very poorly aligned within box
+&lt;ul&gt;&lt;li&gt;Add related items should be in drop down like for resources (?) to make it easy to add items
+&lt;/li&gt;&lt;li&gt;Hover should show a title that gives some information about what related are (not at all clear)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Related item only includes App, Idea, Visualization but not API  | Post | Paper | News Article options as in original ticket &lt;a class="closed ticket" href="http://localhost/ticket/2204" title="enhancement: [super] Related (Stuff) Extension (closed: fixed)"&gt;#2204&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Search results:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="reopened ticket" href="http://localhost/ticket/2331" title="defect: Search should AND terms not OR terms (reopened)"&gt;#2331&lt;/a&gt; - search should add not or
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Search results should be similar across group pages and normal search results (suggest adopting group page style)&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;Search results resource link should link to resource page rather than url for that resource
+&lt;/li&gt;&lt;li&gt;Suggest we could tidy this a bit (e.g. have resources in mini-sidebar of search result ...?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Data viewer:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Merge updates to Recline (that did go in before deadline but do not seem to have made v1.7 branch) &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/146a5c1130cc77cb2ad2c6ef6b3a53074908bf07"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/146a5c1130cc77cb2ad2c6ef6b3a53074908bf07&lt;/a&gt;&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;Ensure still using read-only (this seems to have been lost in upgrade)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Do not show failed preview with red-bar (esp when just empty datastore ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+a) Data Viewer checks if datastore is empty nad falls back to ther options if emtpy
+b) &lt;a class="missing wiki"&gt;DataStore?&lt;/a&gt; enabled is off by default and only turned on either explicitly by user or by &lt;a class="missing wiki"&gt;DataStorer?&lt;/a&gt; on successful store ...
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;(? not really a fix) Give out a link as well as embed instructions (I often want to link to the explorer in a given state)
+&lt;ul&gt;&lt;li&gt;Should this link to the resource page or to a dedicated viewer page - cf # 2322 (resource sub-urls like /download, /api ...)
+&lt;/li&gt;&lt;li&gt;Do &lt;a class="closed ticket" href="http://localhost/ticket/2322" title="enhancement: Convenience offset on end of resource urls: /raw, /api, /viewer (closed: fixed)"&gt;#2322&lt;/a&gt; ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Decent powered by icon for the Embed for the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt; (make this text customizable and allow html ...)
+&lt;/li&gt;&lt;li&gt;Embed link uses uuid rather than dataset name (this goes to perma-url question ...)
+&lt;/li&gt;&lt;li&gt;Data viewer embed url includes all the resource info
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Dataset page:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Put home page link somewhere more prominent (e.g. the top of the sidebar)
+&lt;/li&gt;&lt;li&gt;Put author more prominent (at top right)
+&lt;/li&gt;&lt;li&gt;(? - new work) List CKAN owners at top right in sidebar
+&lt;/li&gt;&lt;li&gt;Make resources stand out more
+&lt;/li&gt;&lt;li&gt;Rename resources tab and heading to Data &amp;amp; Resources
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Dataset edit and create:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Corrections to dataset creation form for v1.7 - &lt;a class="closed ticket" href="http://localhost/ticket/2317" title="enhancement: Corrections to dataset creation form for v1.7 (closed: wontfix)"&gt;#2317&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Better auto-complete for groups on dataset edit/new page - &lt;a class="closed ticket" href="http://localhost/ticket/2319" title="enhancement: Better auto-complete for groups on dataset edit page (closed: wontfix)"&gt;#2319&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Remove groups box and replace with tags on the new page (or is this needed for organizations stuff?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Description / notes text area is not wide enough.
+&lt;ul&gt;&lt;li&gt;Should also be larger on edit page
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Problem with date instructions on add/edit resource: "Dates are in ISO Format — eg. 2012-12-25 or %c2010-05-31T14:30%d."
+&lt;/li&gt;&lt;li&gt;Add/edit resource: new code to auto-check urls being added is great but from UX point of view has draw back that (esp on low speed connections) page just seems to hang for a long time with nothing happening. I wonder if either
+&lt;ul&gt;&lt;li&gt;A) this could happen after resource created on form (e.g. it creates, and then an overlay comes up saying: checking url and gathering url information or similar)
+&lt;/li&gt;&lt;li&gt;Or B) we still do this before creating new resource form on page but we still should show something like a spinner and some info like "checking url and gathering url info ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Resource view:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Do not show no description in no description (just show dataset info)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Theme:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Fix spacing above page title (i.e. dataset title etc)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Bootstrap 2.0.2 (@zephod was *supposed* to have done this) - should be trivial and gives important bugfixes for data viewer&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix subnav width on resources pages (does not extend all the way to the right like it should)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix spacing of top menu and search box (do not look right)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Group pages:
+&lt;ul&gt;&lt;li&gt;view page: image / logo is really poorly locate and sized, see e.g. &lt;a class="ext-link" href="http://datahub.io/group/wikimedia"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.io/group/wikimedia&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;view page: admin heading on RHS sidebar is wrongly indented&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Miscellaneous:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Ensure that we out-of-the-box config for CKAN has (&lt;a class="closed ticket" href="http://localhost/ticket/2388" title="enhancement: Update &amp;#34;out of the box&amp;#34; settings for CKAN (closed: fixed)"&gt;#2388&lt;/a&gt;):
+&lt;ul&gt;&lt;li&gt;Only logged in users able to create
+&lt;/li&gt;&lt;li&gt;Creation permissions have only creators able to update a dataset
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Deployments (without deployment we cannot know these are working):
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Social extension&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Analytics&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2332#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1404</link>
+        <guid isPermaLink="false">http://localhost/ticket/1404</guid>
+        <title>#1404: Search Page UI improvements</title>
+        <pubDate>Mon, 17 Oct 2011 10:36:58 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+[Refactored] :: Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt; UX changes.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Declutter the sidebar. No yellow box.
+&lt;/li&gt;&lt;li&gt;Facets to go on the left, rather than the right. More logical flow.
+&lt;/li&gt;&lt;li&gt;Did you know you can search by author? Probably not. Find a nice way of presenting extended search options.
+&lt;/li&gt;&lt;li&gt;Make Datasets in the search page look more like Datasets on the groups pages (ie. like awesome sexy search results).
+&lt;ul&gt;&lt;li&gt;Update that look-and-feel to include the new resource icons created in &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1404#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1510</link>
+        <guid isPermaLink="false">http://localhost/ticket/1510</guid>
+        <title>#1510: Migrate existing data into activity streams database tables</title>
+        <pubDate>Mon, 05 Dec 2011 14:05:01 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+See '### Task 2' in this etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/notifications"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/notifications&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I have no idea yet about how to do this or how long it might take me.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1510#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1538</link>
+        <guid isPermaLink="false">http://localhost/ticket/1538</guid>
+        <title>#1538: Store partially-filled in package form data as a draft.</title>
+        <pubDate>Thu, 08 Dec 2011 15:47:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Allow a user to save a partially-complete and probably invalid package-create form in order to come back to it later.
+&lt;/p&gt;
+&lt;p&gt;
+We decided on blob storage over a state field on the package:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;prevents a history of the drafts being stored in the revision history.  This is a particular problem if we start auto-saving, say every 20s.
+&lt;/li&gt;&lt;li&gt;the blob can store arbitrary extra data, such as how far through the wizard we are.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1538#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1539</link>
+        <guid isPermaLink="false">http://localhost/ticket/1539</guid>
+        <title>#1539: Package forms auto-save</title>
+        <pubDate>Thu, 08 Dec 2011 15:49:45 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Using the saved-draft feature, we enable auto-save for the package-new and package-edit forms.
+&lt;/p&gt;
+&lt;p&gt;
+An AJAX call is made every N seconds, and the auto-saved blob is updated.
+&lt;/p&gt;
+&lt;p&gt;
+note - we don't want to overwrite a previously save draft, but we will want to overwrite the last autosave.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1539#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1594</link>
+        <guid isPermaLink="false">http://localhost/ticket/1594</guid>
+        <title>#1594: [super] QA Improvements</title>
+        <pubDate>Wed, 21 Dec 2011 17:47:00 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Now that QA has been updated for Celery and CKAN 1.5.1, there are a number of improvements that we should probably implement.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Integrate QA into frontend - 1d - &lt;a class="closed ticket" href="http://localhost/ticket/1583" title="enhancement: Integrate QA into frontend - 1d (closed: fixed)"&gt;#1583&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;QA report improvements - 2.5d - &lt;a class="new ticket" href="http://localhost/ticket/1584" title="enhancement: QA report improvements - 2.5d (new)"&gt;#1584&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;QA - Check license as part of 5 star rating - &lt;a class="closed ticket" href="http://localhost/ticket/1587" title="enhancement: QA - Check license as part of 5 star rating (closed: fixed)"&gt;#1587&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;QA - Give SPARQL endpoints a 4 star rating - &lt;a class="new ticket" href="http://localhost/ticket/1588" title="enhancement: QA - Give SPARQL endpoints a 4 star rating (new)"&gt;#1588&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;QA - Give 5 star rating to datasets with link metadata - &lt;a class="new ticket" href="http://localhost/ticket/1589" title="enhancement: QA - Give 5 star rating to datasets with link metadata (new)"&gt;#1589&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Main pad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/qa"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/qa&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Some QA discussion (relating to Celery in particular) at &lt;a class="ext-link" href="http://ckan.okfnpad.org/queue"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/queue&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1594#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1595</link>
+        <guid isPermaLink="false">http://localhost/ticket/1595</guid>
+        <title>#1595: Editing of a Group leads to recording a change against all associated datasets</title>
+        <pubDate>Wed, 21 Dec 2011 22:01:15 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Or at least it appears that way from revision log which displays all Group datasets against the changelog, see &lt;a class="ext-link" href="http://thedatahub.org/revision/4cdeeb42-3281-4f53-a29d-c694e1fd9217"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/revision/4cdeeb42-3281-4f53-a29d-c694e1fd9217&lt;/a&gt; -- not apparent from that page but see my user page: &lt;a class="ext-link" href="http://thedatahub.org/user/rufuspollock"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/user/rufuspollock&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This may turn out to be a UX bug rather than a real bug ...
+&lt;/p&gt;
+&lt;p&gt;
+Assigning to kindly for review and comment.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1595#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1600</link>
+        <guid isPermaLink="false">http://localhost/ticket/1600</guid>
+        <title>#1600: [super] User guide with integrated help in the WUI</title>
+        <pubDate>Fri, 30 Dec 2011 15:10:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Provide help to users in the WUI, with this linking to a detailed user guide.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;User guide (suggest at help.thedatahub.org (or possibly help.ckan.org)
+&lt;/li&gt;&lt;li&gt;Snippets in the WUI with links to full user guide.
+&lt;ul&gt;&lt;li&gt;Provide helper methods for creating these links with config options for setting path to user guide so that the link location can vary on install by install basis
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;General info about publishing/working with/etc data (where we don't duplicate elsewhere)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est: (?) 5-10d
+&lt;/p&gt;
+&lt;h2 id="Topics"&gt;Topics&lt;/h2&gt;
+&lt;p&gt;
+See &lt;a class="ext-link" href="http://ckan.okfnpad.org/datahub-help"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/datahub-help&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Step-by-step for adding a dataset including tips
+&lt;ul&gt;&lt;li&gt;Reuse: &lt;a class="ext-link" href="http://datapatterns.org/datahub.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datapatterns.org/datahub.html&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Quick overview of relevant parts of domain model (dataset and resource)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;API (perhaps link to main docs)
+&lt;/li&gt;&lt;li&gt;Command line interface and dpm
+&lt;/li&gt;&lt;li&gt;Using groups
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Whydothis"&gt;Why do this&lt;/h2&gt;
+&lt;p&gt;
+We already have wiki.ckan.org and docs.ckan.org. Why do this?
+&lt;/p&gt;
+&lt;p&gt;
+Answer for docs:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;This is administrative guide and focused on general CKAN software.
+&lt;/li&gt;&lt;li&gt;Hard to provide completely generic help.
+&lt;/li&gt;&lt;li&gt;Integratable with the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt; site
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Answer for wiki:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;No spam
+&lt;/li&gt;&lt;li&gt;General feeling that wikis are a little bit loose and untidy. We want this to be smart, clean and useful.
+&lt;/li&gt;&lt;li&gt;Integratable with the &lt;a class="missing wiki"&gt;DataHub?&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1600#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1632</link>
+        <guid isPermaLink="false">http://localhost/ticket/1632</guid>
+        <title>#1632: Render a group's activity stream on its' page</title>
+        <pubDate>Wed, 11 Jan 2012 17:49:59 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add logic functions for getting the activity stream for a group in JSON and rendered HTML formats, add HTML activity stream into group page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1632#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1633</link>
+        <guid isPermaLink="false">http://localhost/ticket/1633</guid>
+        <title>#1633: Render a dataset's activity stream on its' page</title>
+        <pubDate>Wed, 11 Jan 2012 17:51:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Add logic functions for getting the activity stream for a dataset in JSON and rendered HTML formats, add HTML activity stream into dataset page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1633#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1636</link>
+        <guid isPermaLink="false">http://localhost/ticket/1636</guid>
+        <title>#1636: Purge items from activity streams when object (package etc.) purged from CKAN</title>
+        <pubDate>Wed, 11 Jan 2012 17:59:14 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1636#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1692</link>
+        <guid isPermaLink="false">http://localhost/ticket/1692</guid>
+        <title>#1692: Add image attribute to Dataset and Group</title>
+        <pubDate>Sat, 21 Jan 2012 01:19:21 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add image attribute for Dataset and Group which would be shown in prominent place.
+&lt;/p&gt;
+&lt;p&gt;
+For dataset this could be a relevant image and for Group this would be more of a logo.
+&lt;/p&gt;
+&lt;p&gt;
+I think this has very high value from a UX point of view.
+&lt;/p&gt;
+&lt;h2 id="Issues"&gt;Issues&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Do we need to support uploading and storing the image (or do users store elsewhere)
+&lt;ul&gt;&lt;li&gt;Could use something like transloadit service
+&lt;/li&gt;&lt;li&gt;Use our own storage facility with a reserved directory
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Do we need to do resizing etc?
+&lt;ul&gt;&lt;li&gt;Maybe. Perhaps can prefer this in reasonably small size and then just size down in css for thumbnails etc.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1692#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1763</link>
+        <guid isPermaLink="false">http://localhost/ticket/1763</guid>
+        <title>#1763: Add some simple model-level tests for activity streams</title>
+        <pubDate>Mon, 06 Feb 2012 13:51:25 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1763#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1764</link>
+        <guid isPermaLink="false">http://localhost/ticket/1764</guid>
+        <title>#1764: Move activity streams API tests into tests/logic</title>
+        <pubDate>Mon, 06 Feb 2012 13:54:59 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Which is where the other API tests have now been moved.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1764#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1784</link>
+        <guid isPermaLink="false">http://localhost/ticket/1784</guid>
+        <title>#1784: Links to renamed objects break</title>
+        <pubDate>Tue, 07 Feb 2012 11:19:15 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The HTML templates for some activity stream activities link to objects (packages, resources, etc.) by their names, e.g. /dataset/foo, but if the object has since been renamed then the link will be broken.
+&lt;/p&gt;
+&lt;p&gt;
+Possible solutions are to use the object ID to find its current name at rendering time and link to that, or link to the object by ID rather than by name.
+&lt;/p&gt;
+&lt;p&gt;
+Linking by ID is both simpler to implement and better. Links by ID are ugly, but they are permanent and don't break when an object is renamed. We should be using links by ID everywhere on CKAN, so that when third-party sites copy-paste our URLs and link to us, their links don't break later.
+&lt;/p&gt;
+&lt;p&gt;
+Fixing this means fixing the dataset_link(), resource_link(), group_link() etc. functions in ckan/lib/helpers.py which will change the links everywhere in CKAN where those functions are used to link to objects (which should be everywhere where we link to an object).
+&lt;/p&gt;
+&lt;p&gt;
+If we want to have nice looking by-name URLs and what them to be permanent, then we need to change CKAN so that objects cannot be renamed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1784#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2288</link>
+        <guid isPermaLink="false">http://localhost/ticket/2288</guid>
+        <title>#2288: Fix i18n of strings on auth group add/edit pages</title>
+        <pubDate>Thu, 12 Apr 2012 18:23:23 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+There are a couple of strings on the authorization group add/edit form that are not being translated:
+&lt;/p&gt;
+&lt;p&gt;
+"Name: Please enter a value" (error message when you try to add an auth group with no name)
+&lt;/p&gt;
+&lt;p&gt;
+"User name"
+&lt;/p&gt;
+&lt;p&gt;
+"Save" button
+&lt;/p&gt;
+&lt;p&gt;
+The form seems to be built using &lt;a class="missing wiki"&gt;FormBuilder?&lt;/a&gt;. See ckan/forms/authorizationgroup.py, builder.set_displayed_fields()
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2288#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2317</link>
+        <guid isPermaLink="false">http://localhost/ticket/2317</guid>
+        <title>#2317: Corrections to dataset creation form for v1.7</title>
+        <pubDate>Sat, 21 Apr 2012 15:27:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Add home page url
+&lt;/li&gt;&lt;li&gt;Remove group option (seen it confuse several users) - perhaps replace with tags (?)
+&lt;/li&gt;&lt;li&gt;Check form looks ok in portugese (seems to be a problem with css)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2317#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1586</link>
+        <guid isPermaLink="false">http://localhost/ticket/1586</guid>
+        <title>#1586: 'Sort by' field for package search</title>
+        <pubDate>Wed, 21 Dec 2011 14:59:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We default to sort packages search results by "search rank", but we can change it to be "name", "title", "metadata_modified" date, "metadata_created" date. It works in the API now, so let's have (say) a drop-down in the Web UI for this.
+&lt;/p&gt;
+&lt;p&gt;
+Follows on from &lt;a class="closed ticket" href="http://localhost/ticket/191" title="enhancement: Searching by modification date (closed: fixed)"&gt;#191&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1586#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1603</link>
+        <guid isPermaLink="false">http://localhost/ticket/1603</guid>
+        <title>#1603: Search query builder</title>
+        <pubDate>Fri, 30 Dec 2011 18:06:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="new ticket" href="http://localhost/ticket/1745" title="enhancement: Dataset search UX improvements as of Jan 2012 (new)"&gt;#1745&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Ability to build up search query using a nice javascript-y interface.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add facets by selecting attribute and adding -&amp;gt; search facet options in dropdown -&amp;gt; added to search (with 'x' to remove -- as we currently do).
+&lt;ul&gt;&lt;li&gt;(a bit like the data.hri.fi)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Some improvements to css
+&lt;ul&gt;&lt;li&gt;See &lt;a class="ext-link" href="http://eutr.ep.io/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://eutr.ep.io/&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Improvements to faceting
+&lt;ul&gt;&lt;li&gt;Ability to configure faceting and number of items to show (?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Pure JS search implementation to make it easy to reuse across site
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1603#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1634</link>
+        <guid isPermaLink="false">http://localhost/ticket/1634</guid>
+        <title>#1634: Allow users to follow/unfollow activity streams of other users, datasets and groups</title>
+        <pubDate>Wed, 11 Jan 2012 17:55:42 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This is a fairly big feature to add. Analysis: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This ticket is related to &lt;a class="new ticket" href="http://localhost/ticket/1635" title="enhancement: Email notifications (e.g. for activity streams) (new)"&gt;#1635&lt;/a&gt; (email notifications for activity streams) which is about managing a list of activity streams for which the user receives email notifications. There are decisions to be made about how the two will work together.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1634#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2201</link>
+        <guid isPermaLink="false">http://localhost/ticket/2201</guid>
+        <title>#2201: Add citation info to Dataset and Resource page</title>
+        <pubDate>Sat, 03 Mar 2012 08:58:00 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Suggest:
+&lt;/p&gt;
+&lt;p&gt;
+%title. %author. Retrieved %date. %site_title.
+&lt;/p&gt;
+&lt;p&gt;
+For resource: %title = %dataset_title. %resource_name.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2201#changelog</comments>
+    </item>
+ </channel>
+</rss>

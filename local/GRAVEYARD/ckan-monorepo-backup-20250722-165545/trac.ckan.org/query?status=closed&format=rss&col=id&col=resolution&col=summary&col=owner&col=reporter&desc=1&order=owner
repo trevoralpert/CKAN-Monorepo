@@ -1,0 +1,2281 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/182</link>
+        <guid isPermaLink="false">http://localhost/ticket/182</guid>
+        <title>#182: Improve openness icons</title>
+        <pubDate>Fri, 06 Nov 2009 19:09:50 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Tick and cross aren't clear enough. Propose:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Icon for downloadability (nothing if absent ...(?))
+&lt;/li&gt;&lt;li&gt;Icon for open license? (Need something if closed ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Cost: 2h (?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/182#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/333</link>
+        <guid isPermaLink="false">http://localhost/ticket/333</guid>
+        <title>#333: CKAN front end requirements for package notifications</title>
+        <pubDate>Mon, 31 May 2010 16:40:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Usecase:newpackage"&gt;Use case: new package&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;An external front-end system provides a web page with a list of packages. Each package has the option to edit it or and there is also a button to create a new package.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;User: clicks 'new package'.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;CKAN presents the package/new form to the user.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;(After a couple of previews) User: clicks 'commit'.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;Notification message goes from CKAN to the front-end detailing the new package.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="6"&gt;&lt;li&gt;The user is redirected back to the front-end web page displaying the list of packages, which contains the new one.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+The notification message (step 5) has to get through to the front-end that the new package is created before the redirect (step 6). This suggests that the message sending needs to be *synchronous*, i.e. acknowledged by the front-end, before CKAN redirects the user to the front-end package listing page (step 6).
+&lt;/p&gt;
+&lt;p&gt;
+In addition, this use case suggests the front-end listens for package notifications, to save another call to CKAN to get the package details, before the displaying the list of packages. If this isn't possible (see next use case) and it must listen for revision notifications instead, then perhaps it is worth including the full package details in the payload for the revision notification message. Would there be a problem with such a large message in the next use case, with 100 packages?
+&lt;/p&gt;
+&lt;h2 id="Usecase:CKANimportspackages"&gt;Use case: CKAN imports packages&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt;CKAN administrator runs a script that adds 100 new packages into CKAN.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;CKAN sends notification message to front-end to report the new packages/revisions.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Knowing there are new revisions, the front-end queries the CKAN revision interface to get the list of new packages.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;The front-end queries CKAN for each new package one-by-one.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;A new user request to the front-end will include the info about the new packages.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+The package addition could be achieved in 1 revision, 100 revisions or some compromise:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;If it is 1 revision then potentially there are problems displaying the long list of packages in the 'recent changes'.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;If it is 100 revisions, then the notification webhook would be called 100 times, which creates unnecessary load on the front-end. Suppose each Webhook call-back (step 2) triggers the front-end to make a call to CKAN to get the latest revisions (step3), in this case it would make 100 calls, most of them fruitless, causing unnecessary load on CKAN.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This use case suggests a bulk import of packages should go into one revision, and therefore generate one revision notification message and 100 package notification messages. The front-end client should listen to only revision messages.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/333#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/339</link>
+        <guid isPermaLink="false">http://localhost/ticket/339</guid>
+        <title>#339: Remove download_url from package data format in API Version 2, but maintain the old data format in the old version of the interface (API Version 1)</title>
+        <pubDate>Mon, 07 Jun 2010 09:04:59 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/339#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/341</link>
+        <guid isPermaLink="false">http://localhost/ticket/341</guid>
+        <title>#341: Web UI accepts package IDs in URLs</title>
+        <pubDate>Thu, 10 Jun 2010 09:33:20 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(in the same way that we can refer to packages in the API by ID as well as name.)
+&lt;/p&gt;
+&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+client of CKAN
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+link to a package page in the UI, referring to it by ID
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/341#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/344</link>
+        <guid isPermaLink="false">http://localhost/ticket/344</guid>
+        <title>#344: REST Create package with incorrect format gives 500 error</title>
+        <pubDate>Sat, 12 Jun 2010 11:12:52 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+PUT to /rest/api/package of &lt;tt&gt; {"name": "name", "resources": ["someurl.com/data"] } &lt;/tt&gt; (i.e. resource is a string, not a dictionary) gives 500 error, when it should give a 400 error and helpful error message.
+&lt;/p&gt;
+&lt;p&gt;
+Exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.rest:154 in create
+&amp;lt;&amp;lt;              if register == 'package' and not subregister:
+                       fs = ckan.forms.get_standard_fieldset()
+                       request_fa_dict = ckan.forms.edit_package_dict(ckan.forms.get_package_dict(fs=fs), request_data)
+                       fs = fs.bind(model.Package, data=request_fa_dict, session=model.Session)
+                   elif register == 'package' and subregister in model.PackageRelationship.get_all_types():
+&amp;gt;&amp;gt;  request_fa_dict = ckan.forms.edit_package_dict(ckan.forms.get_package_dict(fs=fs), request_data)
+Module ckan.forms.package_dict:88 in edit_package_dict
+&amp;lt;&amp;lt;                      for res_dict in value:
+                               res_dict_str = {}
+                               for key, value in res_dict.items():
+                                   res_dict_str[str(key)] = value
+                               resources.append(res_dict_str)
+&amp;gt;&amp;gt;  for key, value in res_dict.items():
+AttributeError: 'unicode' object has no attribute 'items'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/344#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/353</link>
+        <guid isPermaLink="false">http://localhost/ticket/353</guid>
+        <title>#353: SOLR search indexing</title>
+        <pubDate>Mon, 21 Jun 2010 12:31:20 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+SOLR instance
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+keep my search index of CKAN packages up-to-date
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Using asynchronous event notifications
+&lt;/li&gt;&lt;li&gt;Running in a separate process to CKAN
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/353#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/356</link>
+        <guid isPermaLink="false">http://localhost/ticket/356</guid>
+        <title>#356: Search box in at top of page (UI)</title>
+        <pubDate>Tue, 22 Jun 2010 19:36:51 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+A small but useful ui improvement would be to have a search box at top right on every page.
+&lt;/p&gt;
+&lt;p&gt;
+As an example see the one here on trac or on github.com or bitbucket.org.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It would be particularly good to include a small advanced search link that took you to the full search page. Need to keep it small because screen real-estate here is limited (see how github.com does this for inspiration).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/356#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/364</link>
+        <guid isPermaLink="false">http://localhost/ticket/364</guid>
+        <title>#364: Search for 'statistic' returns nothing</title>
+        <pubDate>Mon, 12 Jul 2010 15:47:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On ckan.net there are plenty of packages (and indeed their tags) with the word 'statistic' in them, but no packages turn up when you search for it:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://ckan.net/package/search?q=statistic&amp;amp;search=Search+Packages+%C2%BB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/search?q=statistic&amp;amp;search=Search+Packages+%C2%BB&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+(Using Postgres full text search)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/364#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/368</link>
+        <guid isPermaLink="false">http://localhost/ticket/368</guid>
+        <title>#368: 500 Server error when creating package</title>
+        <pubDate>Tue, 20 Jul 2010 10:41:02 GMT</pubDate>
+        
+        <dc:creator>anonymous</dc:creator>
+
+        <description>&lt;p&gt;
+I've just started writing the importer from cap.open.org.nz and was running an initial import of just the package name and titles. The packages were created however I received a 500 error in response:
+&lt;/p&gt;
+&lt;p&gt;
+"publish: New Zealand Coastline (new-zealand-coastline)"
+opening connection to nz.ckan.net...
+opened
+&amp;lt;- "POST /api/rest/package HTTP/1.1\r\nContent-Type: application/x-www-form-urlencoded\r\nConnection: close\r\nAuthorization: 81179ade-fa4a-4632-9b89-3d0c98bfc8b8\r\nContent-Length: 64\r\nHost: nz.ckan.net\r\n\r\n"
+&amp;lt;- "{\"name\":\"new-zealand-coastline\",\"title\":\"New Zealand Coastline\"}"
+-&amp;gt; "HTTP/1.1 500 Internal Server Error\r\n"
+-&amp;gt; "Date: Tue, 20 Jul 2010 10:20:35 GMT\r\n"
+-&amp;gt; "Server: Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2\r\n"
+-&amp;gt; "Vary: Accept-Encoding\r\n"
+-&amp;gt; "Content-Type: text/html; charset=iso-8859-1\r\n"
+-&amp;gt; "Cache-Control: proxy-revalidate\r\n"
+-&amp;gt; "Content-Length: 640\r\n"
+-&amp;gt; "Connection: close\r\n"
+-&amp;gt; "\r\n"
+reading 640 bytes...
+-&amp;gt; "&amp;lt;!DOCTYPE HTML PUBLIC \"-&lt;em&gt;IETF&lt;/em&gt;DTD HTML 2.0&lt;em&gt;EN\"&amp;gt;\n&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;\n&amp;lt;title&amp;gt;500 Internal Server Error&amp;lt;/title&amp;gt;\n&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;\n&amp;lt;h1&amp;gt;Internal Server Error&amp;lt;/h1&amp;gt;\n&amp;lt;p&amp;gt;The server encountered an internal error or\nmisconfiguration and was unable to complete\nyour request.&amp;lt;/p&amp;gt;\n&amp;lt;p&amp;gt;Please contact the server administrator,\n [no address given] and inform them of the time the error occurred,\nand anything you might have done that may have\ncaused the error.&amp;lt;/p&amp;gt;\n&amp;lt;p&amp;gt;More information about this error may be available\nin the server error log.&amp;lt;/p&amp;gt;\n&amp;lt;hr&amp;gt;\n&amp;lt;address&amp;gt;Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2 Server at nz.ckan.net Port 80&amp;lt;/address&amp;gt;\n&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;\n"
+read 640 bytes
+Conn close
+&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+The server should not respond with a 500 error if the package was created.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/368#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/377</link>
+        <guid isPermaLink="false">http://localhost/ticket/377</guid>
+        <title>#377: API Should return JSON in all cases</title>
+        <pubDate>Tue, 27 Jul 2010 22:02:38 GMT</pubDate>
+        
+        <dc:creator>glen@…</dc:creator>
+
+        <description>&lt;p&gt;
+When the API returns any response it should always retunr JSON. For example a 404 response should return something like
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': 404, 'message': 'package somename not found'}
+&lt;/pre&gt;&lt;p&gt;
+When errors are encountered when creating a package:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': nnn, 'message': 'Validation Errors', 'errors':['description':'name cannot be
+blank', 'description':'license code must be an integer']}
+&lt;/pre&gt;&lt;p&gt;
+Not authorised:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;{'status': 503, 'message': 'You are not authorised to create this package.'}
+&lt;/pre&gt;&lt;p&gt;
+The reason being that screeds of html coming back in the response just makes it harder to debug and understand. Having the proper error codes/messages means that you can see why your package was not created.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/377#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/381</link>
+        <guid isPermaLink="false">http://localhost/ticket/381</guid>
+        <title>#381: Test defect</title>
+        <pubDate>Wed, 28 Jul 2010 19:38:57 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+please ignore
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/381#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/395</link>
+        <guid isPermaLink="false">http://localhost/ticket/395</guid>
+        <title>#395: Set up profiling to analyze performance issues</title>
+        <pubDate>Tue, 03 Aug 2010 08:38:59 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment, some pages within CKAN tend to load slowly. We should create a profiling setup in which we can measure response times for complete requests and individual methods calls.
+&lt;/p&gt;
+&lt;p&gt;
+This could be used to identify bottlenecks and find an appropriate caching or tuning strategy to improve CKAN performance.
+&lt;/p&gt;
+&lt;p&gt;
+NB: We should also agree on a maximum request latency.
+&lt;/p&gt;
+&lt;p&gt;
+TODO: Read up on all those QoS tickets to avoid overlapping efforts.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/395#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/403</link>
+        <guid isPermaLink="false">http://localhost/ticket/403</guid>
+        <title>#403: Create web service for OFS storage</title>
+        <pubDate>Mon, 09 Aug 2010 09:28:30 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Create a thin web service that will allow users to upload files to OFS on S3 without knowing S3 credentials. This could also provide static urls for all stored resources.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;relates to &lt;a class="closed ticket" href="http://localhost/ticket/307" title="defect: datapkg upload command (closed: fixed)"&gt;#307&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/403#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/407</link>
+        <guid isPermaLink="false">http://localhost/ticket/407</guid>
+        <title>#407: Link to Scraperwiki</title>
+        <pubDate>Mon, 09 Aug 2010 10:06:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Asa"&gt;As a&lt;/h2&gt;
+&lt;p&gt;
+user browsing a CKAN package which has a resource in a bad format
+&lt;/p&gt;
+&lt;h2 id="Iwantto"&gt;I want to&lt;/h2&gt;
+&lt;p&gt;
+be alerted to the possibility of scraping it on scraperwiki
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;
+This should be done in a CKAN extension. It should appear in a side-bar on the package read page.
+&lt;/p&gt;
+&lt;p&gt;
+If the package does not have a resource with scraperwiki.com in the url, then it displays this message:
+&lt;/p&gt;
+&lt;p&gt;
+Title: Scrape it&lt;br /&gt;
+Image: (Scraperwiki dumper truck)&lt;br /&gt;
+Body text: Could this data be in a better format? Why not use Scraperwiki to extract data from tables, Excel or PDF for everyone's benefit? You can &lt;a class="ext-link" href="http://scraperwiki.com/market/request/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;request&lt;/a&gt; this data is scraped or even &lt;a class="ext-link" href="http://scraperwiki.com/editor/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;write the scraper&lt;/a&gt; yourself.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/407#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/412</link>
+        <guid isPermaLink="false">http://localhost/ticket/412</guid>
+        <title>#412: Data format for package importing shall be documented</title>
+        <pubDate>Tue, 10 Aug 2010 09:00:09 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Requirements:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cater naturally for multiple packages with multiple resources
+&lt;/li&gt;&lt;li&gt;international encoding
+&lt;/li&gt;&lt;li&gt;large number of packages
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/415</link>
+        <guid isPermaLink="false">http://localhost/ticket/415</guid>
+        <title>#415: Chase Talis about loading RDF from CKAN.</title>
+        <pubDate>Tue, 10 Aug 2010 09:14:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/415#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/418</link>
+        <guid isPermaLink="false">http://localhost/ticket/418</guid>
+        <title>#418: With COI, get SOLR working</title>
+        <pubDate>Tue, 10 Aug 2010 09:14:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/418#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/422</link>
+        <guid isPermaLink="false">http://localhost/ticket/422</guid>
+        <title>#422: Administrator imports meta-data into CKAN</title>
+        <pubDate>Tue, 10 Aug 2010 09:44:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Requirements:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;cater naturally for multiple packages with multiple resources
+&lt;/li&gt;&lt;li&gt;international encoding
+&lt;/li&gt;&lt;li&gt;large number of packages
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/422#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/428</link>
+        <guid isPermaLink="false">http://localhost/ticket/428</guid>
+        <title>#428: Daily dump of DGU CKAN available</title>
+        <pubDate>Fri, 13 Aug 2010 12:40:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+End users want to get hold of a JSON &amp;amp; CSV dump of the DGU data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/428#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/429</link>
+        <guid isPermaLink="false">http://localhost/ticket/429</guid>
+        <title>#429: ONS data is imported daily to DGU</title>
+        <pubDate>Fri, 13 Aug 2010 12:41:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/433</link>
+        <guid isPermaLink="false">http://localhost/ticket/433</guid>
+        <title>#433: Data package metadata in the Egg</title>
+        <pubDate>Tue, 17 Aug 2010 20:57:40 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+Still not sure if we shouldn't use the existing setuptools machinery to manage this -- there is already a way to get at the metadata. In any event, I've just made an addition to datapkg that makes it possible to put datapkg_sources as a dictionary in your package's setup.py. Afterwards it is possible to pull the metadata out of the egg. Of course this could easily be changed to save the information in whatever form, indeed if you pass it a string instead of a dictionary it will just write whatever you gave it into the datapkg_sources.spec. The point is, I think that the egg is a good place to stuff this information.
+&lt;/p&gt;
+&lt;p&gt;
+For non-python users, it is always possible to simply put up the datapkg_sources.spec somewhere on the web so they can directly retrieve the data files.
+&lt;/p&gt;
+&lt;p&gt;
+From the docstring::
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    This is the implementation for an [egg_info.writers] entrypoint.
+    Datapkg adds an argument to setuptools's setup() function called
+    datapkg_sources. The argument should be a dictionary of the form:
+    .. code-block:: python
+        setup(
+            ...,
+            datapkg_sources = {
+                "cra2009" : "http://www.hm-treasury.gov.uk/d/cra_2009_db.csv"
+            }
+        )
+    The result of this is that there will be a file in the egg called
+    datapkg_sources.spec that looks like this::
+        [sources]
+        cra2009=http://www.hm-treasury.gov.uk/d/cra_2009_db.csv
+    How do you get at this data? Simple::
+    .. code-block:: python
+        import pkg_resources
+        dist = pkg_resources.get_distribution("ukgov_treasury_cra")
+        spec = dist.get_metadata("datapkg_sources.spec")
+    and 'spec' will be the contents of the file as a string.
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/433#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/434</link>
+        <guid isPermaLink="false">http://localhost/ticket/434</guid>
+        <title>#434: Logged in user to si.ckan.net causes genshi exception</title>
+        <pubDate>Wed, 18 Aug 2010 11:21:55 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Here's the trace:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197] Error - &amp;lt;type 'exceptions.IndexError'&amp;gt;: list index out of range
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197] mod_wsgi (pid=6195): Exception occurred processing WSGI script '/home/okfn/var/srvc/si.ckan.net/py
+env/bin/si.ckan.net.py'.
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197] Traceback (most recent call last):
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/paste/cascade.py", line
+130, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return self.apps[-1](environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/paste/registry.py", line
+ 375, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     app_iter = self.application(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/repoze/who/middleware.py
+", line 107, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     app_iter = app(environ, wrapper.wrap_start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/middleware.py", l
+ine 214, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     self.app, new_environ, catch_exc_info=True)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/util.py", line 94
+, in call_wsgi_application
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     app_iter = application(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/weberror/errormiddleware
+.py", line 156, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return self.application(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/beaker/middleware.py", l
+ine 73, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return self.app(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/beaker/middleware.py", l
+ine 152, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return self.wrap_app(environ, session_start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/routes/middleware.py", l
+ine 130, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     response = self.app(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/wsgiapp.py", line
+ 125, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     response = self.dispatch(controller, environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/wsgiapp.py", line
+ 324, in dispatch
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return controller(environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/src/ckan/ckan/lib/base.py", line 73, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return WSGIController.__call__(self, environ, start_response)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/controllers/core.
+py", line 221, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     response = self._dispatch_call()
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/controllers/core.
+py", line 172, in _dispatch_call
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     response = self._inspect_call(func)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/controllers/core.
+py", line 107, in _inspect_call
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     result = self._perform_call(func, args)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/pylons/controllers/core.
+py", line 60, in _perform_call
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return func(**args)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/src/ckan/ckan/controllers/error.py", line 32, in doc
+ument
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     ckan_template = render('error_document_template.html')
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/src/ckan/ckan/lib/base.py", line 38, in render
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return render_template()
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/src/ckan/ckan/lib/base.py", line 36, in render_templ
+ate
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return literal(stream.render(method=method, encoding=None))
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/core.py", line 18
+3, in render
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return encode(generator, method=method, encoding=encoding, out=out)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/output.py", line
+57, in encode
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     return _encode(''.join(list(iterator)))
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/output.py", line 339, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for kind, data, pos in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/output.py", line 670, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for kind, data, pos in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/output.py", line 771, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for kind, data, pos in chain(stream, [(None, None, None)]):
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/output.py", line 586, in __call__
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for ev in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/core.py", line 288, in _ensure
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/template/base.py", line 618, in _include
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in tmpl.generate(ctxt, **vars):
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/template/base.py", line 618, in _include
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in tmpl.generate(ctxt, **vars):
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/template/base.py", line 605, in _include
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/template/markup.py", line 327, in _match
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/template/base.py", line 545, in _flatten
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for kind, data, pos in stream:
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/filters/i18n.py", line 177, in _generate
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     for event in msgbuf.translate(gettext(msgbuf.format())):
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/filters/i18n.py", line 1029, in translate
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     parts = parse_msg(string)
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]   File "/home/okfn/var/srvc/si.ckan.net/pyenv/lib/python2.5/site-packages/genshi/filters/i18n.py", line 1143, in parse_msg
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197]     parts.append((stack[-1], string))
+[Wed Aug 18 11:10:19 2010] [error] [client 89.212.104.197] IndexError: list index out of range
+&lt;/pre&gt;&lt;p&gt;
+ckan: 1e403927f2bb (metastable)
+genshi: 0.6
+lang: slovenian
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/434#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/436</link>
+        <guid isPermaLink="false">http://localhost/ticket/436</guid>
+        <title>#436: Investigate exception: resource search JSON</title>
+        <pubDate>Thu, 19 Aug 2010 08:35:59 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Here's the dump from 22:10 last night:
+&lt;/p&gt;
+&lt;p&gt;
+URL: &lt;a class="ext-link" href="http://ckan.net/api/search/resource?all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class="&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/search/resource?all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class=&lt;/a&gt;
+Module weberror.errormiddleware:162 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;              &lt;span class="underline"&gt;traceback_supplement&lt;/span&gt; = Supplement, self, environ
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+sr_checker = &lt;a class="missing wiki"&gt;ResponseStartChecker?&lt;/a&gt;(start_response)
+app_iter = self.application(environ, sr_checker)
+return self.make_catching_iter(app_iter, environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+app_iter = self.application(environ, sr_checker)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+environ[self.environ_key] = self.cache_manager
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module beaker.middleware:152 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return start_response(status, headers, exc_info)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _get_session(self):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return self.wrap_app(environ, session_start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module routes.middleware:130 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  environ&lt;a class="missing wiki"&gt;SCRIPT_NAME?&lt;/a&gt; = environ&lt;a class="missing wiki"&gt;SCRIPT_NAME?&lt;/a&gt;[:-1]
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+# Wrapped in try as in rare cases the attribute will be gone already
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.app(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:125 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+controller = self.resolve(environ, start_response)
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if 'paste.testing_variables' in environ and hasattr(response,
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self.dispatch(controller, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+log.debug("Calling controller class with WSGI interface")
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def load_test_env(self, environ):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return controller(environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.lib.base:73 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;          # available in environ&lt;a class="missing wiki"&gt;pylons.routes_dict?&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+finally:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+model.Session.remove()
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return WSGIController.&lt;span class="underline"&gt;call&lt;/span&gt;(self, environ, start_response)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:221 in &lt;span class="underline"&gt;call&lt;/span&gt;
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+if not start_response_called:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+self.start_response = start_response
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._dispatch_call()
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ&lt;a class="missing wiki"&gt;pylons.action_method?&lt;/a&gt; = func
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+else:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+response = self._inspect_call(func)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.&lt;span class="underline"&gt;name&lt;/span&gt;, args)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+try:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+except HTTPException, httpe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if log_debug:
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+result = self._perform_call(func, args)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;span class="underline"&gt;traceback_hide&lt;/span&gt; = 'before_and_this'
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+def _inspect_call(self, func):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return func(&lt;strong&gt;args)
+&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module ckan.controllers.rest:400 in search
+&amp;lt;&amp;lt;                      response.status_int = 400
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return gettext('Blank qjson parameter')
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+params = json.loads(request.params&lt;a class="missing wiki"&gt;qjson?&lt;/a&gt;)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+elif request.params.values() and request.params.values() != [u&lt;em&gt;] and request.params.values() != [u'1']:
+&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+params = request.params
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+params = json.loads(request.params&lt;a class="missing wiki"&gt;qjson?&lt;/a&gt;)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module simplejson:384 in loads
+&amp;lt;&amp;lt;              parse_constant is None and object_pairs_hook is None
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+and not use_decimal and not kw):
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _default_decoder.decode(s)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if cls is None:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+cls = JSONDecoder
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+return _default_decoder.decode(s)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module simplejson.decoder:402 in decode
+&amp;lt;&amp;lt;          """
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+end = _w(s, end).end()
+if end != len(s):
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Module simplejson.decoder:420 in raw_decode
+&amp;lt;&amp;lt;              obj, end = self.scan_once(s, idx)
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+except &lt;a class="missing wiki"&gt;StopIteration?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise JSONDecodeError("No JSON object could be decoded", s, idx)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+return obj, end
+&lt;/p&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote class="citation"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+raise JSONDecodeError("No JSON object could be decoded", s, idx)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+JSONDecodeError: No JSON object could be decoded: line 1 column 0 (char 0)
+CGI Variables
+DOCUMENT_ROOT        '/htdocs'
+GATEWAY_INTERFACE        'CGI/1.1'
+HTTP_ACCEPT        'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8, application/json'
+HTTP_ACCEPT_CHARSET        'ISO-8859-1,utf-8;q=0.7,*;q=0.7'
+HTTP_ACCEPT_ENCODING        'gzip,deflate'
+HTTP_ACCEPT_LANGUAGE        'en-us,en;q=0.5'
+HTTP_CONNECTION        'keep-alive'
+HTTP_COOKIE        '&lt;span class="underline"&gt;utma=27730403.1245320310.1281386803.1281386803.1282164955.2; &lt;/span&gt;utmz=27730403.1282164955.2.2.utmcsr=jira|utmccn=(referral)|utmcmd=referral|utmcct=/browse/PLATFORM-892; &lt;span class="underline"&gt;utmb=27730403.3.10.1282164955; &lt;/span&gt;utmc=27730403'
+HTTP_HOST        'ckan.net'
+HTTP_KEEP_ALIVE        '300'
+HTTP_REFERER        '&lt;a class="ext-link" href="http://jira/browse/PLATFORM-892"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://jira/browse/PLATFORM-892&lt;/a&gt;'
+HTTP_USER_AGENT        'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7'
+PATH        '/usr/local/bin:/usr/bin:/bin'
+PATH_INFO        '/api/search/resource'
+PATH_TRANSLATED        '/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py/api/search/resource'
+QUERY_STRING        'all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class='
+REMOTE_ADDR        '64.235.97.218'
+REMOTE_PORT        '20720'
+REQUEST_METHOD        'GET'
+REQUEST_URI        '/api/search/resource?all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class='
+SCRIPT_FILENAME        '/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py'
+SCRIPT_URI        '&lt;a class="ext-link" href="http://ckan.net/api/search/resource"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/api/search/resource&lt;/a&gt;'
+SCRIPT_URL        '/api/search/resource'
+SERVER_ADDR        '10.226.226.118'
+SERVER_ADMIN        '[no address given]'
+SERVER_NAME        'ckan.net'
+SERVER_PORT        '80'
+SERVER_PROTOCOL        'HTTP/1.1'
+SERVER_SIGNATURE        '&amp;lt;address&amp;gt;Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2 Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE        'Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2'
+WSGI Variables
+application        &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;CacheMiddleware?&lt;/a&gt; object at 0xa1c13ec&amp;gt;
+beaker.cache        &amp;lt;beaker.cache.&lt;a class="missing wiki"&gt;CacheManager?&lt;/a&gt; object at 0xa1c142c&amp;gt;
+beaker.get_session        &amp;lt;bound method &lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt;._get_session of &amp;lt;beaker.middleware.&lt;a class="missing wiki"&gt;SessionMiddleware?&lt;/a&gt; object at 0xa1c12ac&amp;gt;&amp;gt;
+beaker.session        {'_accessed_time': 1282165818.0880959, '_creation_time': 1282165818.0880959}
+mod_wsgi.application_group        'ckan.net|'
+mod_wsgi.callable_object        'application'
+mod_wsgi.listener_host        &lt;em&gt;
+mod_wsgi.listener_port        '80'
+mod_wsgi.process_group        &lt;/em&gt;
+mod_wsgi.reload_mechanism        '0'
+mod_wsgi.script_reloading        '1'
+mod_wsgi.version        (2, 5)
+paste.cookies        (&amp;lt;SimpleCookie: __utma='27730403.1245320310.1281386803.1281386803.1282164955.2' __utmb='27730403.3.10.1282164955' __utmc='27730403' __utmz='27730403.1282164955.2.2.utmcsr=jira|utmccn=(referral)|utmcmd=referral|utmcct=/browse/PLATFORM-892'&amp;gt;, '&lt;span class="underline"&gt;utma=27730403.1245320310.1281386803.1281386803.1282164955.2; &lt;/span&gt;utmz=27730403.1282164955.2.2.utmcsr=jira|utmccn=(referral)|utmcmd=referral|utmcct=/browse/PLATFORM-892; &lt;span class="underline"&gt;utmb=27730403.3.10.1282164955; &lt;/span&gt;utmc=27730403')
+paste.parsed_querystring        ([('all_fields', '1'), ('offset', '0'), ('limit', '20'), ('qjson', '&amp;lt;span class=')], 'all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class=')
+paste.registry        &amp;lt;paste.registry.Registry object at 0x130ed84c&amp;gt;
+paste.throw_errors        True
+pylons.action_method        &amp;lt;bound method &lt;a class="missing wiki"&gt;RestController?&lt;/a&gt;.search of &amp;lt;ckan.controllers.rest.&lt;a class="missing wiki"&gt;RestController?&lt;/a&gt; object at 0xe9bbe0c&amp;gt;&amp;gt;
+pylons.controller        &amp;lt;ckan.controllers.rest.&lt;a class="missing wiki"&gt;RestController?&lt;/a&gt; object at 0xe9bbe0c&amp;gt;
+pylons.environ_config        {'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons        &amp;lt;pylons.util.&lt;a class="missing wiki"&gt;PylonsContext?&lt;/a&gt; object at 0xe9bbe8c&amp;gt;
+pylons.routes_dict        {'action': u'search', 'controller': u'rest', 'register': u'resource'}
+repoze.who.logger        &amp;lt;logging.Logger instance at 0xa3cb0cc&amp;gt;
+repoze.who.plugins        {'openid': &amp;lt;&lt;a class="missing wiki"&gt;OpenIdIdentificationPlugin?&lt;/a&gt; 170067148&amp;gt;, 'auth_tkt': &amp;lt;&lt;a class="missing wiki"&gt;AuthTktCookiePlugin?&lt;/a&gt; 171739788&amp;gt;}
+routes.route        &amp;lt;routes.route.Route object at 0xa102fac&amp;gt;
+routes.url        &amp;lt;routes.util.URLGenerator object at 0x13a5a3cc&amp;gt;
+webob._parsed_query_vars        (GET([('all_fields', '1'), ('offset', '0'), ('limit', '20'), ('qjson', '&amp;lt;span class=')]), 'all_fields=1&amp;amp;offset=0&amp;amp;limit=20&amp;amp;qjson=%3Cspan%20class=')
+webob.adhoc_attrs        {'language': 'en-us'}
+wsgi process        'Multi process AND threads (?)'
+wsgi.file_wrapper        &amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x12f53530&amp;gt;
+wsgiorg.routing_args        (&amp;lt;routes.util.URLGenerator object at 0x13a5a3cc&amp;gt;, {'action': u'search', 'controller': u'rest', 'register': u'resource'})
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/436#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/437</link>
+        <guid isPermaLink="false">http://localhost/ticket/437</guid>
+        <title>#437: Buildbot test failures - ascii codec</title>
+        <pubDate>Thu, 19 Aug 2010 13:14:00 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+On today's buildbot: &lt;a class="ext-link" href="http://buildbot.okfn.org/builders/buildbot-test/builds/201"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://buildbot.okfn.org/builders/buildbot-test/builds/201&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+2 failures about ascii (ignore other 2)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/437#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/439</link>
+        <guid isPermaLink="false">http://localhost/ticket/439</guid>
+        <title>#439: Plan server requirements for DGU</title>
+        <pubDate>Thu, 19 Aug 2010 13:27:32 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Using use cases for security etc.
+Draw diagram to satisfy use cases.
+Communicate to Paul and therefore TSO.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/439#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/444</link>
+        <guid isPermaLink="false">http://localhost/ticket/444</guid>
+        <title>#444: Discuss package relationships ideas with JF</title>
+        <pubDate>Fri, 20 Aug 2010 10:13:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Create test data on visible ckan
+&lt;/li&gt;&lt;li&gt;Discuss with JF
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/444#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/446</link>
+        <guid isPermaLink="false">http://localhost/ticket/446</guid>
+        <title>#446: Server configuration query (?)</title>
+        <pubDate>Fri, 20 Aug 2010 10:16:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Ensure use case is in design - "an admin writes to the CKAN API" (and see JB notes on paper)
+&lt;/li&gt;&lt;li&gt;Communicate how this is planned to be achieved in design to JF
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/446#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/450</link>
+        <guid isPermaLink="false">http://localhost/ticket/450</guid>
+        <title>#450: Assist with proxying of static media for forms</title>
+        <pubDate>Fri, 20 Aug 2010 10:19:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+John did this a while ago.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/450#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/452</link>
+        <guid isPermaLink="false">http://localhost/ticket/452</guid>
+        <title>#452: Assist with using package update error form</title>
+        <pubDate>Fri, 20 Aug 2010 10:20:47 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/452#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/455</link>
+        <guid isPermaLink="false">http://localhost/ticket/455</guid>
+        <title>#455: SOLR - suggest 1 pager about how system would work</title>
+        <pubDate>Fri, 20 Aug 2010 10:25:13 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Either CKAN writes to SOLR and Drupal reads from SOLR, or CKAN writes to SOLR and Drupal reads SOLR via CKAN API (so search resource locations are unaffected).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/455#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/459</link>
+        <guid isPermaLink="false">http://localhost/ticket/459</guid>
+        <title>#459: Versions on branches are broken</title>
+        <pubDate>Fri, 20 Aug 2010 10:26:13 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/459#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/463</link>
+        <guid isPermaLink="false">http://localhost/ticket/463</guid>
+        <title>#463: package diff exception</title>
+        <pubDate>Fri, 20 Aug 2010 12:07:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Investigate exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;
+URL: http://ckan.net/revision/diff/dbtune-audioscrobbler?diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c
+Module weberror.errormiddleware:162 in __call__
+&amp;lt;&amp;lt;              __traceback_supplement__ = Supplement, self, environ
+                   sr_checker = ResponseStartChecker(start_response)
+                   app_iter = self.application(environ, sr_checker)
+                   return self.make_catching_iter(app_iter, environ, sr_checker)
+               except:
+&amp;gt;&amp;gt;  app_iter = self.application(environ, sr_checker)
+Module beaker.middleware:73 in __call__
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+               environ[self.environ_key] = self.cache_manager
+               return self.app(environ, start_response)
+&amp;gt;&amp;gt;  return self.app(environ, start_response)
+Module beaker.middleware:152 in __call__
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+                   return start_response(status, headers, exc_info)
+               return self.wrap_app(environ, session_start_response)
+           def _get_session(self):
+&amp;gt;&amp;gt;  return self.wrap_app(environ, session_start_response)
+Module routes.middleware:130 in __call__
+&amp;lt;&amp;lt;                  environ['SCRIPT_NAME'] = environ['SCRIPT_NAME'][:-1]
+               response = self.app(environ, start_response)
+               # Wrapped in try as in rare cases the attribute will be gone already
+&amp;gt;&amp;gt;  response = self.app(environ, start_response)
+Module pylons.wsgiapp:125 in __call__
+&amp;lt;&amp;lt;
+               controller = self.resolve(environ, start_response)
+               response = self.dispatch(controller, environ, start_response)
+               if 'paste.testing_variables' in environ and hasattr(response,
+&amp;gt;&amp;gt;  response = self.dispatch(controller, environ, start_response)
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           def load_test_env(self, environ):
+&amp;gt;&amp;gt;  return controller(environ, start_response)
+Module ckan.lib.base:73 in __call__
+&amp;lt;&amp;lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&amp;gt;&amp;gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&amp;gt;&amp;gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ['pylons.action_method'] = func
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&amp;gt;&amp;gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&amp;gt;&amp;gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckan.controllers.revision:119 in diff
+&amp;lt;&amp;lt;          c.revision_to = model.Session.query(model.Revision).get(
+                   request.params.getone('diff'))
+               diff = pkg.diff(c.revision_to, c.revision_from)
+               c.diff = diff.items()
+               c.diff.sort()
+&amp;gt;&amp;gt;  diff = pkg.diff(c.revision_to, c.revision_from)
+Module ckan.model.package:340 in diff
+&amp;lt;&amp;lt;                              display_id = to_obj_rev.tag.name
+                               elif obj_class.__name__ == 'PackageExtra':
+                                   display_id = to_obj_rev.key
+                               else:
+                                   display_id = related_obj_id[:4]
+&amp;gt;&amp;gt;  display_id = to_obj_rev.key
+AttributeError: 'NoneType' object has no attribute 'key'
+CGI Variables
+AUTH_TYPE	'cookie'
+DOCUMENT_ROOT	'/htdocs'
+GATEWAY_INTERFACE	'CGI/1.1'
+HTTP_ACCEPT	'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5'
+HTTP_ACCEPT_CHARSET	'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
+HTTP_ACCEPT_ENCODING	'gzip'
+HTTP_ACCEPT_LANGUAGE	'en-US,en;q=0.8'
+HTTP_CACHE_CONTROL	'max-age=0'
+HTTP_COOKIE	'__utmz=27730403.1281000628.1.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=ckan; auth_tkt="e919c7bb40f890a0184ed7be95465e1a4c6d130bhttp://pudo.org/!"; auth_tkt="e919c7bb40f890a0184ed7be95465e1a4c6d130bhttp://pudo.org/!"; __utma=27730403.1381387877.1281962773.1282248244.1282250173.11; __utmc=27730403; __utmb=27730403.6.10.1282250173'
+HTTP_HOST	'ckan.net'
+HTTP_REFERER	'http://ckan.net/package/history/dbtune-audioscrobbler'
+HTTP_USER_AGENT	'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.6 (KHTML, like Gecko) Chrome/6.0.490.1 Safari/534.6'
+PATH	'/usr/local/bin:/usr/bin:/bin'
+PATH_INFO	'/revision/diff/dbtune-audioscrobbler'
+PATH_TRANSLATED	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py/revision/diff/dbtune-audioscrobbler'
+QUERY_STRING	'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c'
+REMOTE_ADDR	'92.226.62.168'
+REMOTE_PORT	'55102'
+REMOTE_USER	'http://pudo.org/'
+REMOTE_USER_TOKENS	['']
+REQUEST_METHOD	'GET'
+REQUEST_URI	'/revision/diff/dbtune-audioscrobbler?diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c'
+SCRIPT_FILENAME	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py'
+SCRIPT_URI	'http://ckan.net/revision/diff/dbtune-audioscrobbler'
+SCRIPT_URL	'/revision/diff/dbtune-audioscrobbler'
+SERVER_ADDR	'10.226.226.118'
+SERVER_ADMIN	'[no address given]'
+SERVER_NAME	'ckan.net'
+SERVER_PORT	'80'
+SERVER_PROTOCOL	'HTTP/1.1'
+SERVER_SIGNATURE	'&amp;lt;address&amp;gt;Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2 Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE	'Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2'
+WSGI Variables
+application	&amp;lt;beaker.middleware.CacheMiddleware object at 0xbb528cc&amp;gt;
+beaker.cache	&amp;lt;beaker.cache.CacheManager object at 0xbb528ec&amp;gt;
+beaker.get_session	&amp;lt;bound method SessionMiddleware._get_session of &amp;lt;beaker.middleware.SessionMiddleware object at 0xbb5286c&amp;gt;&amp;gt;
+beaker.session	{'_accessed_time': 1282252047.603267, '_creation_time': 1282252047.603267}
+mod_wsgi.application_group	'ckan.net|'
+mod_wsgi.callable_object	'application'
+mod_wsgi.listener_host	''
+mod_wsgi.listener_port	'80'
+mod_wsgi.process_group	''
+mod_wsgi.reload_mechanism	'0'
+mod_wsgi.script_reloading	'1'
+mod_wsgi.version	(2, 5)
+paste.cookies	(&amp;lt;SimpleCookie: __utma='27730403.1381387877.1281962773.1282248244.1282250173.11' __utmb='27730403.6.10.1282250173' __utmc='27730403' __utmz='27730403.1281000628.1.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=ckan' auth_tkt='e919c7bb40f890a0184ed7be95465e1a4c6d130bhttp://pudo.org/!'&amp;gt;, '__utmz=27730403.1281000628.1.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=ckan; auth_tkt="e919c7bb40f890a0184ed7be95465e1a4c6d130bhttp://pudo.org/!"; auth_tkt="e919c7bb40f890a0184ed7be95465e1a4c6d130bhttp://pudo.org/!"; __utma=27730403.1381387877.1281962773.1282248244.1282250173.11; __utmc=27730403; __utmb=27730403.6.10.1282250173')
+paste.parsed_querystring	([('diff', '66a47b9e-232a-4838-8674-66fa1a5c76e1'), ('oldid', 'a99c98be-767a-4e49-9025-2472b2d18b9c')], 'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c')
+paste.registry	&amp;lt;paste.registry.Registry object at 0xf702aec&amp;gt;
+paste.throw_errors	True
+pylons.action_method	&amp;lt;bound method RevisionController.diff of &amp;lt;ckan.controllers.revision.RevisionController object at 0xf6eaf0c&amp;gt;&amp;gt;
+pylons.controller	&amp;lt;ckan.controllers.revision.RevisionController object at 0xf6eaf0c&amp;gt;
+pylons.environ_config	{'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons	&amp;lt;pylons.util.PylonsContext object at 0xf6eaa8c&amp;gt;
+pylons.routes_dict	{'action': u'diff', 'controller': u'revision', 'id': u'dbtune-audioscrobbler'}
+repoze.who.identity	&amp;lt;repoze.who identity (hidden, dict-like) at 280815340&amp;gt;
+repoze.who.logger	&amp;lt;logging.Logger instance at 0xbcdfccc&amp;gt;
+repoze.who.plugins	{'openid': &amp;lt;OpenIdIdentificationPlugin 196612236&amp;gt;, 'auth_tkt': &amp;lt;AuthTktCookiePlugin 198048140&amp;gt;}
+routes.route	&amp;lt;routes.route.Route object at 0xbbc44cc&amp;gt;
+routes.url	&amp;lt;routes.util.URLGenerator object at 0xf5e55ec&amp;gt;
+webob._parsed_query_vars	(GET([('diff', '66a47b9e-232a-4838-8674-66fa1a5c76e1'), ('oldid', 'a99c98be-767a-4e49-9025-2472b2d18b9c')]), 'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c')
+webob.adhoc_attrs	{'language': 'en-us'}
+wsgi process	'Multi process AND threads (?)'
+wsgi.file_wrapper	&amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0xfe0b0b0&amp;gt;
+wsgiorg.routing_args	(&amp;lt;routes.util.URLGenerator object at 0xf5e55ec&amp;gt;, {'action': u'diff', 'controller': u'revision', 'id': u'dbtune-audioscrobbler'})
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/463#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/465</link>
+        <guid isPermaLink="false">http://localhost/ticket/465</guid>
+        <title>#465: Require API key for all API requests.</title>
+        <pubDate>Fri, 20 Aug 2010 12:55:04 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/465#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/467</link>
+        <guid isPermaLink="false">http://localhost/ticket/467</guid>
+        <title>#467: Admin configures CKAN to expect API key in named HTTP header</title>
+        <pubDate>Fri, 20 Aug 2010 13:22:42 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/467#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/469</link>
+        <guid isPermaLink="false">http://localhost/ticket/469</guid>
+        <title>#469: Unit test to check API key in correctly named HTTP header is accepted by server</title>
+        <pubDate>Fri, 20 Aug 2010 13:26:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/469#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/471</link>
+        <guid isPermaLink="false">http://localhost/ticket/471</guid>
+        <title>#471: API user sends API key in correctly named header</title>
+        <pubDate>Fri, 20 Aug 2010 13:48:08 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/471#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/472</link>
+        <guid isPermaLink="false">http://localhost/ticket/472</guid>
+        <title>#472: API user sends API key in incorrectly named header</title>
+        <pubDate>Fri, 20 Aug 2010 13:48:28 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/472#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/473</link>
+        <guid isPermaLink="false">http://localhost/ticket/473</guid>
+        <title>#473: API user discovers correct header for sending API key</title>
+        <pubDate>Fri, 20 Aug 2010 13:50:03 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/473#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/475</link>
+        <guid isPermaLink="false">http://localhost/ticket/475</guid>
+        <title>#475: Unit test to check API key in incorrectly named HTTP header is not accepted by server</title>
+        <pubDate>Fri, 20 Aug 2010 14:00:02 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/475#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/476</link>
+        <guid isPermaLink="false">http://localhost/ticket/476</guid>
+        <title>#476: Daily database dumps shall be discoverable and downloadable</title>
+        <pubDate>Fri, 20 Aug 2010 14:10:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/476#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/477</link>
+        <guid isPermaLink="false">http://localhost/ticket/477</guid>
+        <title>#477: Discover location of the daily database dumps</title>
+        <pubDate>Fri, 20 Aug 2010 14:16:28 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/477#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/478</link>
+        <guid isPermaLink="false">http://localhost/ticket/478</guid>
+        <title>#478: Unit test for "interface resource" in API</title>
+        <pubDate>Fri, 20 Aug 2010 14:37:47 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+We don't want /api to be an HTML page, but rather provide information about the API in a JSON structure.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/478#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/481</link>
+        <guid isPermaLink="false">http://localhost/ticket/481</guid>
+        <title>#481: Unrestricted total read-only access to catalogue API</title>
+        <pubDate>Sat, 21 Aug 2010 20:31:37 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/481#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/483</link>
+        <guid isPermaLink="false">http://localhost/ticket/483</guid>
+        <title>#483: Restricted total read-write access to catalogue Web UI</title>
+        <pubDate>Sat, 21 Aug 2010 20:33:21 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/483#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/484</link>
+        <guid isPermaLink="false">http://localhost/ticket/484</guid>
+        <title>#484: Restricted partial read-write access to catalogue Web UI</title>
+        <pubDate>Sat, 21 Aug 2010 20:34:18 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/484#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/485</link>
+        <guid isPermaLink="false">http://localhost/ticket/485</guid>
+        <title>#485: Performance beats QoS criteria</title>
+        <pubDate>Sat, 21 Aug 2010 21:13:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/485#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/486</link>
+        <guid isPermaLink="false">http://localhost/ticket/486</guid>
+        <title>#486: Catalogue service shall notify and query SOLR service</title>
+        <pubDate>Sat, 21 Aug 2010 21:23:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/486#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/487</link>
+        <guid isPermaLink="false">http://localhost/ticket/487</guid>
+        <title>#487: Notify SOLR service of model events</title>
+        <pubDate>Sat, 21 Aug 2010 21:25:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/487#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/488</link>
+        <guid isPermaLink="false">http://localhost/ticket/488</guid>
+        <title>#488: Catalogue service shall notify RDF service</title>
+        <pubDate>Sat, 21 Aug 2010 21:27:01 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/488#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/490</link>
+        <guid isPermaLink="false">http://localhost/ticket/490</guid>
+        <title>#490: The system shall support registering a harvest source via the CKAN API</title>
+        <pubDate>Sat, 21 Aug 2010 21:41:15 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/490#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/491</link>
+        <guid isPermaLink="false">http://localhost/ticket/491</guid>
+        <title>#491: Get form for creating harvest source entity</title>
+        <pubDate>Sat, 21 Aug 2010 21:43:28 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/491#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/492</link>
+        <guid isPermaLink="false">http://localhost/ticket/492</guid>
+        <title>#492: Submit harvest source create form response to the API</title>
+        <pubDate>Sat, 21 Aug 2010 21:44:02 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/492#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/493</link>
+        <guid isPermaLink="false">http://localhost/ticket/493</guid>
+        <title>#493: Get harvest source entity</title>
+        <pubDate>Sat, 21 Aug 2010 21:44:43 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/493#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/494</link>
+        <guid isPermaLink="false">http://localhost/ticket/494</guid>
+        <title>#494: Get form for updating remote metadata entity</title>
+        <pubDate>Sat, 21 Aug 2010 21:45:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/494#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/495</link>
+        <guid isPermaLink="false">http://localhost/ticket/495</guid>
+        <title>#495: Put form for updating remote metadata entity</title>
+        <pubDate>Sat, 21 Aug 2010 21:45:50 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/495#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/498</link>
+        <guid isPermaLink="false">http://localhost/ticket/498</guid>
+        <title>#498: Search packages within location "bounding box"</title>
+        <pubDate>Sat, 21 Aug 2010 21:50:12 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/498#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/500</link>
+        <guid isPermaLink="false">http://localhost/ticket/500</guid>
+        <title>#500: Exception from diff</title>
+        <pubDate>Mon, 23 Aug 2010 08:43:53 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Investigate exception occured occasionally in last couple of days on ckan.net:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;WebApp Error: &amp;lt;type 'exceptions.AttributeError'&amp;gt;: 'NoneType' object has no attribute 'key'
+URL: http://ckan.net/revision/diff/dbtune-audioscrobbler?diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c
+Module weberror.errormiddleware:162 in __call__
+&amp;lt;&amp;lt;              __traceback_supplement__ = Supplement, self, environ
+                   sr_checker = ResponseStartChecker(start_response)
+                   app_iter = self.application(environ, sr_checker)
+                   return self.make_catching_iter(app_iter, environ, sr_checker)
+               except:
+&amp;gt;&amp;gt;  app_iter = self.application(environ, sr_checker)
+Module beaker.middleware:73 in __call__
+&amp;lt;&amp;lt;                                                     self.cache_manager)
+               environ[self.environ_key] = self.cache_manager
+               return self.app(environ, start_response)
+&amp;gt;&amp;gt;  return self.app(environ, start_response)
+Module beaker.middleware:152 in __call__
+&amp;lt;&amp;lt;                          headers.append(('Set-cookie', cookie))
+                   return start_response(status, headers, exc_info)
+               return self.wrap_app(environ, session_start_response)
+           def _get_session(self):
+&amp;gt;&amp;gt;  return self.wrap_app(environ, session_start_response)
+Module routes.middleware:130 in __call__
+&amp;lt;&amp;lt;                  environ['SCRIPT_NAME'] = environ['SCRIPT_NAME'][:-1]
+               response = self.app(environ, start_response)
+               # Wrapped in try as in rare cases the attribute will be gone already
+&amp;gt;&amp;gt;  response = self.app(environ, start_response)
+Module pylons.wsgiapp:125 in __call__
+&amp;lt;&amp;lt;
+               controller = self.resolve(environ, start_response)
+               response = self.dispatch(controller, environ, start_response)
+               if 'paste.testing_variables' in environ and hasattr(response,
+&amp;gt;&amp;gt;  response = self.dispatch(controller, environ, start_response)
+Module pylons.wsgiapp:324 in dispatch
+&amp;lt;&amp;lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           def load_test_env(self, environ):
+&amp;gt;&amp;gt;  return controller(environ, start_response)
+Module ckan.lib.base:73 in __call__
+&amp;lt;&amp;lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&amp;gt;&amp;gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&amp;lt;&amp;lt;                  return response(environ, self.start_response)
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&amp;gt;&amp;gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&amp;lt;&amp;lt;              req.environ['pylons.action_method'] = func
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&amp;gt;&amp;gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&amp;lt;&amp;lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&amp;gt;&amp;gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&amp;lt;&amp;lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           def _inspect_call(self, func):
+&amp;gt;&amp;gt;  return func(**args)
+Module ckan.controllers.revision:119 in diff
+&amp;lt;&amp;lt;          c.revision_to = model.Session.query(model.Revision).get(
+                   request.params.getone('diff'))
+               diff = pkg.diff(c.revision_to, c.revision_from)
+               c.diff = diff.items()
+               c.diff.sort()
+&amp;gt;&amp;gt;  diff = pkg.diff(c.revision_to, c.revision_from)
+Module ckan.model.package:340 in diff
+&amp;lt;&amp;lt;                              display_id = to_obj_rev.tag.name
+                               elif obj_class.__name__ == 'PackageExtra':
+                                   display_id = to_obj_rev.key
+                               else:
+                                   display_id = related_obj_id[:4]
+&amp;gt;&amp;gt;  display_id = to_obj_rev.key
+AttributeError: 'NoneType' object has no attribute 'key'
+CGI Variables
+DOCUMENT_ROOT	'/htdocs'
+GATEWAY_INTERFACE	'CGI/1.1'
+HTTP_ACCEPT	'*/*'
+HTTP_ACCEPT_ENCODING	'gzip'
+HTTP_ACCEPT_LANGUAGE	'zh-cn,zh-tw'
+HTTP_CONNECTION	'close'
+HTTP_HOST	'ckan.net'
+HTTP_USER_AGENT	'Baiduspider+(+http://www.baidu.com/search/spider.htm)'
+PATH	'/usr/local/bin:/usr/bin:/bin'
+PATH_INFO	'/revision/diff/dbtune-audioscrobbler'
+PATH_TRANSLATED	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py/revision/diff/dbtune-audioscrobbler'
+QUERY_STRING	'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c'
+REMOTE_ADDR	'123.125.66.32'
+REMOTE_PORT	'63767'
+REQUEST_METHOD	'GET'
+REQUEST_URI	'/revision/diff/dbtune-audioscrobbler?diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c'
+SCRIPT_FILENAME	'/home/okfn/var/srvc/ckan.net/pyenv/bin/ckan.net.py'
+SCRIPT_URI	'http://ckan.net/revision/diff/dbtune-audioscrobbler'
+SCRIPT_URL	'/revision/diff/dbtune-audioscrobbler'
+SERVER_ADDR	'10.226.226.118'
+SERVER_ADMIN	'[no address given]'
+SERVER_NAME	'ckan.net'
+SERVER_PORT	'80'
+SERVER_PROTOCOL	'HTTP/1.1'
+SERVER_SIGNATURE	'&amp;lt;address&amp;gt;Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2 Server at ckan.net Port 80&amp;lt;/address&amp;gt;\n'
+SERVER_SOFTWARE	'Apache/2.2.9 (Debian) mod_wsgi/2.5 Python/2.5.2'
+WSGI Variables
+application	&amp;lt;beaker.middleware.CacheMiddleware object at 0x9f603ec&amp;gt;
+beaker.cache	&amp;lt;beaker.cache.CacheManager object at 0x9f6042c&amp;gt;
+beaker.get_session	&amp;lt;bound method SessionMiddleware._get_session of &amp;lt;beaker.middleware.SessionMiddleware object at 0x9f602ac&amp;gt;&amp;gt;
+beaker.session	{'_accessed_time': 1282385101.4243281, '_creation_time': 1282385101.4243281}
+mod_wsgi.application_group	'ckan.net|'
+mod_wsgi.callable_object	'application'
+mod_wsgi.listener_host	''
+mod_wsgi.listener_port	'80'
+mod_wsgi.process_group	''
+mod_wsgi.reload_mechanism	'0'
+mod_wsgi.script_reloading	'1'
+mod_wsgi.version	(2, 5)
+paste.cookies	(&amp;lt;SimpleCookie: &amp;gt;, '')
+paste.parsed_querystring	([('diff', '66a47b9e-232a-4838-8674-66fa1a5c76e1'), ('oldid', 'a99c98be-767a-4e49-9025-2472b2d18b9c')], 'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c')
+paste.registry	&amp;lt;paste.registry.Registry object at 0x104552ec&amp;gt;
+paste.throw_errors	True
+pylons.action_method	&amp;lt;bound method RevisionController.diff of &amp;lt;ckan.controllers.revision.RevisionController object at 0xfb17aec&amp;gt;&amp;gt;
+pylons.controller	&amp;lt;ckan.controllers.revision.RevisionController object at 0xfb17aec&amp;gt;
+pylons.environ_config	{'session': 'beaker.session', 'cache': 'beaker.cache'}
+pylons.pylons	&amp;lt;pylons.util.PylonsContext object at 0x10286d4c&amp;gt;
+pylons.routes_dict	{'action': u'diff', 'controller': u'revision', 'id': u'dbtune-audioscrobbler'}
+repoze.who.logger	&amp;lt;logging.Logger instance at 0xa16e0cc&amp;gt;
+repoze.who.plugins	{'openid': &amp;lt;OpenIdIdentificationPlugin 167584972&amp;gt;, 'auth_tkt': &amp;lt;AuthTktCookiePlugin 169253516&amp;gt;}
+routes.route	&amp;lt;routes.route.Route object at 0x9f3690c&amp;gt;
+routes.url	&amp;lt;routes.util.URLGenerator object at 0xfd8d7cc&amp;gt;
+webob._parsed_query_vars	(GET([('diff', '66a47b9e-232a-4838-8674-66fa1a5c76e1'), ('oldid', 'a99c98be-767a-4e49-9025-2472b2d18b9c')]), 'diff=66a47b9e-232a-4838-8674-66fa1a5c76e1&amp;amp;oldid=a99c98be-767a-4e49-9025-2472b2d18b9c')
+webob.adhoc_attrs	{'language': 'en-us'}
+wsgi process	'Multi process AND threads (?)'
+wsgi.file_wrapper	&amp;lt;built-in method file_wrapper of mod_wsgi.Adapter object at 0x103a5bf0&amp;gt;
+wsgiorg.routing_args	(&amp;lt;routes.util.URLGenerator object at 0xfd8d7cc&amp;gt;, {'action': u'diff', 'controller': u'revision', 'id': u'dbtune-audioscrobbler'})
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/500#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/501</link>
+        <guid isPermaLink="false">http://localhost/ticket/501</guid>
+        <title>#501: Read-only maintenance mode</title>
+        <pubDate>Mon, 23 Aug 2010 09:10:17 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should have a read-only maintenance mode with a nice little banner on all pages, appropriate REST messages etc. Bonus points if this is triggered via an environment variable and thus can be triggered by the surrounding apache.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/501#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/507</link>
+        <guid isPermaLink="false">http://localhost/ticket/507</guid>
+        <title>#507: Upgrade a CKAN service</title>
+        <pubDate>Tue, 24 Aug 2010 14:54:06 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/511</link>
+        <guid isPermaLink="false">http://localhost/ticket/511</guid>
+        <title>#511: Better warnings and errors when using API</title>
+        <pubDate>Wed, 25 Aug 2010 16:44:37 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/511#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/512</link>
+        <guid isPermaLink="false">http://localhost/ticket/512</guid>
+        <title>#512: User creates package via API with incorrect core fields specified</title>
+        <pubDate>Wed, 25 Aug 2010 16:45:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/512#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/513</link>
+        <guid isPermaLink="false">http://localhost/ticket/513</guid>
+        <title>#513: Creating a package with API should warn if there are incorrect fields</title>
+        <pubDate>Wed, 25 Aug 2010 16:46:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package using the API, you might get a core field name wrong e.g. 'title' mispelt as 'titel' or 'groups' (which can't be specified in package creation). Currently that field will be ignored by the API. It should warn or give an error, rather than give 200 OK.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/513#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/514</link>
+        <guid isPermaLink="false">http://localhost/ticket/514</guid>
+        <title>#514: Inconsistent use of 'location' header in API</title>
+        <pubDate>Wed, 25 Aug 2010 17:29:17 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you create a package then the 'location' header gets set. This doesn't happen for any other domain objects. I think this should be consistent - either none or all.
+&lt;/p&gt;
+&lt;p&gt;
+I've removed the info about the header in the docs in the meantime.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/514#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/516</link>
+        <guid isPermaLink="false">http://localhost/ticket/516</guid>
+        <title>#516: Double-escaped text visible - revision page</title>
+        <pubDate>Thu, 26 Aug 2010 13:32:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+At: &lt;a class="ext-link" href="http://ckan.net/revision"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/revision&lt;/a&gt;
+you can see:
+"Next &amp;amp;raquo;" on pager
+This doesn't seem to be a problem with earlier (1.0.1) version.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/516#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/533</link>
+        <guid isPermaLink="false">http://localhost/ticket/533</guid>
+        <title>#533: The performance of CKAN shall scale</title>
+        <pubDate>Fri, 27 Aug 2010 12:01:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN uses a database. We can put the database on another machine and then clone the CKAN machine. Then there are two machines calling the database and converting SQL results into HTTP responses.
+&lt;/p&gt;
+&lt;p&gt;
+How many machines can you have before the database becomes the bottleneck? At that point, what QoS can be obtained with normal hardware?
+&lt;/p&gt;
+&lt;p&gt;
+Afterwards, can CKAN be made to scale further than this with a little development? Can its Postgres database be mirrored in realtime? Or can we change SQL writes (create/updates) to write to many databases?
+&lt;/p&gt;
+&lt;p&gt;
+Are there any other options for scaling the persistence mechanism?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/533#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/535</link>
+        <guid isPermaLink="false">http://localhost/ticket/535</guid>
+        <title>#535: genshi error when logged into sl.ckan.net</title>
+        <pubDate>Mon, 30 Aug 2010 10:56:14 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Genshi exception when rendering the page whilst logged in to sl.ckan.net.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/535#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/544</link>
+        <guid isPermaLink="false">http://localhost/ticket/544</guid>
+        <title>#544: Backport facet browsing to CKAN 1.2</title>
+        <pubDate>Tue, 31 Aug 2010 15:08:12 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+This is in IATI, would be nice to have in generic CKAN.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://bitbucket.org/okfn/iati/changeset/378431974c76"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://bitbucket.org/okfn/iati/changeset/378431974c76&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/544#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/557</link>
+        <guid isPermaLink="false">http://localhost/ticket/557</guid>
+        <title>#557: Remove siblings from link_to/from relationship display</title>
+        <pubDate>Fri, 03 Sep 2010 19:36:35 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Displaying siblings is not needed for link_to/from.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/557#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/558</link>
+        <guid isPermaLink="false">http://localhost/ticket/558</guid>
+        <title>#558: Sort extras, relationships by key/object alphabetically</title>
+        <pubDate>Fri, 03 Sep 2010 19:38:00 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/558#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/561</link>
+        <guid isPermaLink="false">http://localhost/ticket/561</guid>
+        <title>#561: Deleted packages are returned in the API</title>
+        <pubDate>Mon, 06 Sep 2010 12:19:38 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Anja is reporting this, severe bug, I think.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/561#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/562</link>
+        <guid isPermaLink="false">http://localhost/ticket/562</guid>
+        <title>#562: OpenID Login fails using Yahoo and Google</title>
+        <pubDate>Wed, 08 Sep 2010 10:18:39 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+reported by LOD folks.
+&lt;/p&gt;
+&lt;p&gt;
+subsidary bug: error messages from OpenID providers are not shown on the form return page.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/562#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/564</link>
+        <guid isPermaLink="false">http://localhost/ticket/564</guid>
+        <title>#564: The system shall support location based search</title>
+        <pubDate>Thu, 09 Sep 2010 12:03:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/567</link>
+        <guid isPermaLink="false">http://localhost/ticket/567</guid>
+        <title>#567: Post new harvest job for given harvest source</title>
+        <pubDate>Thu, 09 Sep 2010 13:45:43 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/567#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/573</link>
+        <guid isPermaLink="false">http://localhost/ticket/573</guid>
+        <title>#573: Add metadata entity to harvesting queue</title>
+        <pubDate>Thu, 09 Sep 2010 15:15:53 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/573#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/574</link>
+        <guid isPermaLink="false">http://localhost/ticket/574</guid>
+        <title>#574: Create UKLII package with attributes from remote metadata record</title>
+        <pubDate>Thu, 09 Sep 2010 15:23:25 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/574#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/575</link>
+        <guid isPermaLink="false">http://localhost/ticket/575</guid>
+        <title>#575: The system shall notify remote metadata harvesting errors</title>
+        <pubDate>Thu, 09 Sep 2010 15:59:19 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/575#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/577</link>
+        <guid isPermaLink="false">http://localhost/ticket/577</guid>
+        <title>#577: Get remote metadata harvest job errors</title>
+        <pubDate>Sat, 11 Sep 2010 12:49:41 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/577#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/578</link>
+        <guid isPermaLink="false">http://localhost/ticket/578</guid>
+        <title>#578: Get remote metadata harvest job</title>
+        <pubDate>Sat, 11 Sep 2010 12:50:07 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/578#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/579</link>
+        <guid isPermaLink="false">http://localhost/ticket/579</guid>
+        <title>#579: Delete remote metadata harvest job</title>
+        <pubDate>Sat, 11 Sep 2010 12:50:40 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/579#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/580</link>
+        <guid isPermaLink="false">http://localhost/ticket/580</guid>
+        <title>#580: Write (create or update) CKAN package for metadata document</title>
+        <pubDate>Sat, 11 Sep 2010 13:12:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/580#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/582</link>
+        <guid isPermaLink="false">http://localhost/ticket/582</guid>
+        <title>#582: Domain object class for harvest source</title>
+        <pubDate>Sat, 11 Sep 2010 13:18:24 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/582#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/583</link>
+        <guid isPermaLink="false">http://localhost/ticket/583</guid>
+        <title>#583: Define fieldset object for harvest source forms</title>
+        <pubDate>Sat, 11 Sep 2010 13:19:29 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/583#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/584</link>
+        <guid isPermaLink="false">http://localhost/ticket/584</guid>
+        <title>#584: Migration script to add harvest source table</title>
+        <pubDate>Sat, 11 Sep 2010 13:20:04 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/584#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/585</link>
+        <guid isPermaLink="false">http://localhost/ticket/585</guid>
+        <title>#585: Method on API controller to return harvest source create form</title>
+        <pubDate>Sat, 11 Sep 2010 13:21:42 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/585#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/586</link>
+        <guid isPermaLink="false">http://localhost/ticket/586</guid>
+        <title>#586: Routing configuration for harvest source create form API resource</title>
+        <pubDate>Sat, 11 Sep 2010 13:22:16 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/586#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/587</link>
+        <guid isPermaLink="false">http://localhost/ticket/587</guid>
+        <title>#587: Documentation for getting harvest source create form from API</title>
+        <pubDate>Sat, 11 Sep 2010 13:22:44 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/587#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/588</link>
+        <guid isPermaLink="false">http://localhost/ticket/588</guid>
+        <title>#588: Method on API controller to accept valid harvest source create form submission</title>
+        <pubDate>Sat, 11 Sep 2010 13:26:15 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/588#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/589</link>
+        <guid isPermaLink="false">http://localhost/ticket/589</guid>
+        <title>#589: Method on API controller to reject invalid harvest source create form submission</title>
+        <pubDate>Sat, 11 Sep 2010 13:27:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/589#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/590</link>
+        <guid isPermaLink="false">http://localhost/ticket/590</guid>
+        <title>#590: Documentation for submitting harvest source create form submission to API</title>
+        <pubDate>Sat, 11 Sep 2010 13:27:39 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/590#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/591</link>
+        <guid isPermaLink="false">http://localhost/ticket/591</guid>
+        <title>#591: Routing configuration for harvest source entity API resource</title>
+        <pubDate>Sat, 11 Sep 2010 13:34:42 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/591#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/592</link>
+        <guid isPermaLink="false">http://localhost/ticket/592</guid>
+        <title>#592: Methods to return harvest source entity as JSON</title>
+        <pubDate>Sat, 11 Sep 2010 13:38:58 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/592#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/593</link>
+        <guid isPermaLink="false">http://localhost/ticket/593</guid>
+        <title>#593: Method on API controller to return remote metadata edit form</title>
+        <pubDate>Sat, 11 Sep 2010 13:41:38 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/593#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/594</link>
+        <guid isPermaLink="false">http://localhost/ticket/594</guid>
+        <title>#594: Routing configuration for remote metadata edit form API resource</title>
+        <pubDate>Sat, 11 Sep 2010 13:42:12 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/594#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/595</link>
+        <guid isPermaLink="false">http://localhost/ticket/595</guid>
+        <title>#595: Documentation for getting remote metadata edit form from API</title>
+        <pubDate>Sat, 11 Sep 2010 13:42:52 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/595#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/596</link>
+        <guid isPermaLink="false">http://localhost/ticket/596</guid>
+        <title>#596: Method on API controller to accept valid remote metadata edit form submission</title>
+        <pubDate>Sat, 11 Sep 2010 13:44:22 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/596#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/597</link>
+        <guid isPermaLink="false">http://localhost/ticket/597</guid>
+        <title>#597: Method on API controller to reject invalid remote metadata edit form submission</title>
+        <pubDate>Sat, 11 Sep 2010 13:44:49 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/597#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/598</link>
+        <guid isPermaLink="false">http://localhost/ticket/598</guid>
+        <title>#598: List remote metadata entities for given publisher</title>
+        <pubDate>Sat, 11 Sep 2010 14:02:10 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/598#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/599</link>
+        <guid isPermaLink="false">http://localhost/ticket/599</guid>
+        <title>#599: Routing configuration for listing remote metadata entities for a given publisher</title>
+        <pubDate>Sat, 11 Sep 2010 14:03:34 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/599#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/600</link>
+        <guid isPermaLink="false">http://localhost/ticket/600</guid>
+        <title>#600: Method on API controller for listing remote metadata entities for a given publisher</title>
+        <pubDate>Sat, 11 Sep 2010 14:04:14 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/600#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/601</link>
+        <guid isPermaLink="false">http://localhost/ticket/601</guid>
+        <title>#601: Documentation for listing remote metadata entities for a given publisher via API</title>
+        <pubDate>Sat, 11 Sep 2010 14:05:28 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/601#changelog</comments>
+    </item>
+ </channel>
+</rss>

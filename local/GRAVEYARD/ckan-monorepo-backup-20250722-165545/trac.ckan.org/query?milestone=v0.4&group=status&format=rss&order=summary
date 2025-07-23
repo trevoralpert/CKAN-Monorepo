@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=v0.4&amp;group=status&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=v0.4&amp;group=status&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/36</link>
+        <guid isPermaLink="false">http://localhost/ticket/36</guid>
+        <title>#36: Edit package page should support previews</title>
+        <pubDate>Thu, 19 Apr 2007 18:25:12 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When editing a package one would like to be able to preview one's changes before saving.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/36#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/35</link>
+        <guid isPermaLink="false">http://localhost/ticket/35</guid>
+        <title>#35: IP Address for non-logged in users is always 127.0.0.1 when deployed behind a proxy (e.g. on ckan.net)</title>
+        <pubDate>Thu, 19 Apr 2007 18:17:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When IP address is used to identify non-logged in users (for example on create and editing of packages) it is always 127.0.0.1 when using a reverse proxy (standard deployment configuration on a production machine and used e.g. on &lt;a class="ext-link" href="http://www.ckan.net"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.ckan.net&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+This could be corrected by using HTTP_X_FORWARDED_FOR when available.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/35#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=johnmartin&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=johnmartin&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2909</link>
+        <guid isPermaLink="false">http://localhost/ticket/2909</guid>
+        <title>#2909: User profile headers are a bit weird</title>
+        <pubDate>Thu, 06 Sep 2012 11:35:48 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+They seem to be not exactly well thought out. Needs some thought on better display of the information that they contain.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2909#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2910</link>
+        <guid isPermaLink="false">http://localhost/ticket/2910</guid>
+        <title>#2910: User listings are not very compelling</title>
+        <pubDate>Thu, 06 Sep 2012 11:39:47 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+They are currently are just a small image / name. They should be: Larger image, Full name (username), description, edits/dataset
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2910#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2899</link>
+        <guid isPermaLink="false">http://localhost/ticket/2899</guid>
+        <title>#2899: Step 2 &gt; Save &amp; add another bug</title>
+        <pubDate>Thu, 30 Aug 2012 13:15:19 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Goto:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Add dataset
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Get to step 2
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Click "Save &amp;amp; add another" without adding any data
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;Ends on step 3
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Should: fail to validate and remain on step 2
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2899#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2904</link>
+        <guid isPermaLink="false">http://localhost/ticket/2904</guid>
+        <title>#2904: Show more formats/groups/tags shouldn't display if there aren't more</title>
+        <pubDate>Wed, 05 Sep 2012 14:14:04 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the search results page when there are no more formats, groups or tags to display it should not display the show more links.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2904#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2898</link>
+        <guid isPermaLink="false">http://localhost/ticket/2898</guid>
+        <title>#2898: Looses data entered on step 1 of create dataset after login</title>
+        <pubDate>Thu, 30 Aug 2012 13:08:14 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+To reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Enter details for new dataset without being logged in
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Hit login page for just before step 2
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Once logged in you end up back at the empty add dataset form (instead of expected 2nd step of dataset edit)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2898#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3021</link>
+        <guid isPermaLink="false">http://localhost/ticket/3021</guid>
+        <title>#3021: Logout doesn't work without JS</title>
+        <pubDate>Tue, 20 Nov 2012 11:19:10 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Essentially, the functionality should be as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add logout link that has &lt;tt&gt;.js-hide&lt;/tt&gt; attached to it within the header that isn't hidden within a dropdown
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+See &lt;a class="ext-link" href="http://plus.google.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://plus.google.com/&lt;/a&gt; (when logged in) with and without JS to see an example of the actual sign-out working without JS
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3021#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3018</link>
+        <guid isPermaLink="false">http://localhost/ticket/3018</guid>
+        <title>#3018: Load more in activity streams</title>
+        <pubDate>Wed, 14 Nov 2012 13:34:11 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Activity streams should be able to load more than 15 items within them. Suggest the default amount of loading is around 30 and then click to load more.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3018#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2901</link>
+        <guid isPermaLink="false">http://localhost/ticket/2901</guid>
+        <title>#2901: Language Dropdown bug in footer with IE7</title>
+        <pubDate>Tue, 04 Sep 2012 10:31:14 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+The language dropdown in Internet Explorer 7 behaves oddly. Essentially I think the problem is with the way that the dropdown decides to go into "drop-up mode" (e.g there aint enough screen space below the initial state so it has to drop up).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2901#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2992</link>
+        <guid isPermaLink="false">http://localhost/ticket/2992</guid>
+        <title>#2992: Delete resource should send me back to edit dataset page</title>
+        <pubDate>Tue, 16 Oct 2012 17:19:16 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2992#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2908</link>
+        <guid isPermaLink="false">http://localhost/ticket/2908</guid>
+        <title>#2908: Dataset related with image should retain aspect ratio</title>
+        <pubDate>Thu, 06 Sep 2012 11:32:42 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment if you have an related item with an image associated to a dataset that appears in the side column it's resized but doesn't keep it's original aspect ratio.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2908#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/3016</link>
+        <guid isPermaLink="false">http://localhost/ticket/3016</guid>
+        <title>#3016: CKAN 2.0 template tweaks</title>
+        <pubDate>Tue, 13 Nov 2012 13:30:17 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Just a ticket to keep track of a few suggested template changes.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/3016#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2956</link>
+        <guid isPermaLink="false">http://localhost/ticket/2956</guid>
+        <title>#2956: Allow for resource editing in CKAN 2.0</title>
+        <pubDate>Wed, 03 Oct 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the edit dataset page... there needs to be a way for users to be able to see all the resources associated to the dataset and edit them individually.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2956#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2905</link>
+        <guid isPermaLink="false">http://localhost/ticket/2905</guid>
+        <title>#2905: Add dataset URL key behaviour</title>
+        <pubDate>Wed, 05 Sep 2012 14:28:03 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On step 1 for adding a dataset can we add a ajax ping that checks if the URL that is generated by the JS is taken? Behaviour should be as follows:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;User types title in box (as current)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;URL key is regexed by JS (as current)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;The JS does a ajax call to check if the generated URL key is valid. The ajax callback returns a JSON dump which contains what the URL key should be (e.g. if 'test' was taken it returns 'test-1')
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;If the URL key returned in the ajax is different than the one generated by the JS then:
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+4a. If the user hasn't clicked the edit button then: it automatically updates the URL key field with the URL key supplied in the ajax
+&lt;/p&gt;
+&lt;p&gt;
+4b. If the user has clicked the edit button then: a form error next to the input appears saying that the URL key is taken and within that error is suggests the URL key returned by the ajax as alternative (the user can click said URL key within the error to automatically choose that one)
+&lt;/p&gt;
+&lt;p&gt;
+The URL key isn't reserved by the ajax and upon form submission the usual validation should still apply.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2905#changelog</comments>
+    </item>
+ </channel>
+</rss>

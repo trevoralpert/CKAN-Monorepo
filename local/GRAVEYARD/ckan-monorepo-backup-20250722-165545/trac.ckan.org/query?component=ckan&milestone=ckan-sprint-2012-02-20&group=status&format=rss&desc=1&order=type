@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-02-20&amp;group=status&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-02-20&amp;group=status&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1359</link>
+        <guid isPermaLink="false">http://localhost/ticket/1359</guid>
+        <title>#1359: Radically simplify standard list of licenses</title>
+        <pubDate>Mon, 26 Sep 2011 22:57:35 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Major UX grip and incredibly simple to do. May also want to have basic autocomplete support within the list (trivial to do as well I believe).
+&lt;/p&gt;
+&lt;p&gt;
+(Talk to RP about this re how we define lists of licenses).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1359#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1675</link>
+        <guid isPermaLink="false">http://localhost/ticket/1675</guid>
+        <title>#1675: Publisher admin authz</title>
+        <pubDate>Tue, 17 Jan 2012 12:22:03 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Authz for the publisher admin (who has permission to administer the publisher group themselves).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1675#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1728</link>
+        <guid isPermaLink="false">http://localhost/ticket/1728</guid>
+        <title>#1728: Update UKLP harvesters</title>
+        <pubDate>Tue, 31 Jan 2012 11:00:10 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Three small changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Set Resource type to None instead of 'Undefined'
+&lt;/li&gt;&lt;li&gt;Set extra 'UKLP' = True instead of 'INSPIRE' = True
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+These two changes will require manual update of the database.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow datasets to be updated if the old source is inactive, even if the metadata date hasn't changed:
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;    if last_harvested_object.metadata_modified_date is None \
+       or last_harvested_object.metadata_modified_date &amp;lt; self.obj.metadata_modified_date \
+       or self.force_import \
+       or last_harvested_object.metadata_modified_date == self.obj.metadata_modified_date and last_harvested_object.source.active is False:
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1728#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1733</link>
+        <guid isPermaLink="false">http://localhost/ticket/1733</guid>
+        <title>#1733: Delete (inactivate) harvest sources</title>
+        <pubDate>Tue, 31 Jan 2012 11:11:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now harvest sources can be inactivated (only via the cli), but we need to make sure:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Expose this on the web interface (only for sysadmins, see &lt;a class="closed ticket" href="http://localhost/ticket/1731" title="enhancement: Publisher support for harvesting (closed: fixed)"&gt;#1731&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Inactive sources are not shown in the web interface
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also for deleted packages:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+a) Deleted packages get state="deleted" (not actually purged) so they are hidden on front end
+ACTION: need a button on the front end for "Delete" for sysamdins
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Done in &lt;a class="closed ticket" href="http://localhost/ticket/1425" title="enhancement: Dataset delete button (closed: fixed)"&gt;#1425&lt;/a&gt;. Not sure if the button is only shown to sysadmins.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+b) No undelete: If you reharvest a deleted package, it remains deleted
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Publisher should create a new record with new identifier and same/different content as applicable.
+&lt;/li&gt;&lt;li&gt;If publisher reharvests, a deleted document they get a error and are told to create new identifier for their updated.
+&lt;/li&gt;&lt;li&gt;You won't get the state where a package is updated in its deleted state
+&lt;/li&gt;&lt;li&gt;If they change the ID and reharvest, a new record appears on DGU.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+c) Update CSW interface so that export doesn't export deleted packages
+d) Check geospatial search doesn't search deleted pacakges
+e) Check deleted packages don't appear in harvest source details, or in the counts or anywhere in the harvest interface or API.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1733#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1735</link>
+        <guid isPermaLink="false">http://localhost/ticket/1735</guid>
+        <title>#1735: "Unsaved changes" warning briefly when you click "Save"</title>
+        <pubDate>Tue, 31 Jan 2012 11:30:20 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket &lt;a class="closed ticket" href="http://localhost/ticket/1744" title="enhancement: UX improvements to dataset edit as of Dec 2011 (closed: fixed)"&gt;#1744&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+If you edit a dataset, simply add a tag and click on "Save" then you get the message "You have unsaved changed. Make sure to click 'Save Changes' below before leaving this page." inserted whilst the submission takes place. (This is because the click moves focus away from the tag field). This (reasonably common) edge-case could usefully be squashed.
+&lt;/p&gt;
+&lt;p&gt;
+Also note typo: "unsaved changed"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1735#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1786</link>
+        <guid isPermaLink="false">http://localhost/ticket/1786</guid>
+        <title>#1786: Relationships lost when editing package</title>
+        <pubDate>Tue, 07 Feb 2012 17:20:26 GMT</pubDate>
+        
+        <dc:creator>mirko.spasic@…</dc:creator>
+
+        <description>&lt;p&gt;
+If I have a relationship between two packages, and then I edit any property of one of them (Author email, for example), the relationship will automatically be lost.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1783</link>
+        <guid isPermaLink="false">http://localhost/ticket/1783</guid>
+        <title>#1783: Locale change exception when unicode in URL</title>
+        <pubDate>Tue, 07 Feb 2012 10:44:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If the current page URL has unicode in it (e.g. &lt;tt&gt;u'/tag/biocombust\xedveis'&lt;/tt&gt;) then I'm not sure how why it isn't more encoded, but we are seeing links such as &lt;tt&gt;http://beta.dados.gov.br/dados/locale?locale=hu&amp;amp;return_to=/dados/tag/biocombust%C3%ADveis&amp;amp;hash=7fd941b5ba1a28bc84406c4191bf07b45a42a251&lt;/tt&gt; which cause an exception when the foreign character is passed to ckan.lib.hash.get_message_hash().
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1783#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1791</link>
+        <guid isPermaLink="false">http://localhost/ticket/1791</guid>
+        <title>#1791: Changing locale on /dataset/new causes exception</title>
+        <pubDate>Mon, 13 Feb 2012 12:02:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you are on the /dataset/new page and you try and change locale then you get a 500 error.
+&lt;/p&gt;
+&lt;p&gt;
+This is because it adds the '&lt;span class="underline"&gt;cache' parameter, to ensure any proxy cache in the chain does not just send the cached page.
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;
+e.g.
+&lt;a class="ext-link" href="http://127.0.0.1:5000/dataset/new?__cache=37713707"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://127.0.0.1:5000/dataset/new?__cache=37713707&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1791#changelog</comments>
+    </item>
+ </channel>
+</rss>

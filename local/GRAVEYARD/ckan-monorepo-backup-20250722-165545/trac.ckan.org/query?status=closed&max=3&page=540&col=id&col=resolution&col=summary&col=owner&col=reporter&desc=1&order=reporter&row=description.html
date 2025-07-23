@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      Custom Query – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="query%3Fstatus=closed&amp;format=rss&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="query%3Fstatus=closed&amp;format=csv&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="query%3Fstatus=closed&amp;format=tab&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" />
+        <link rel="next" href="query%3Fstatus=closed&amp;max=3&amp;page=541&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Next Page" />
+        <link rel="start" href="wiki.1.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/report.css" type="text/css" />
+        <link rel="prev" href="query%3Fstatus=closed&amp;max=3&amp;page=539&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Previous Page" />
+        <link rel="shortcut icon" href="chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search CKAN" />
+    <script type="text/javascript">
+      var properties={"cc":{"label":"Cc","type":"text"},"changetime":{"label":"Modified","type":"time"},"component":{"label":"Component","options":["ckan","ckan hosted","contrib","datacatalogs","dgu","dpm","ecportal","iati","lod2","pdeu","uklii","vdm"],"type":"select"},"description":{"label":"Description","type":"textarea"},"id":{"label":"Ticket","type":"id"},"keywords":{"label":"Keywords","type":"text"},"milestone":{"label":"Milestone","options":["milestone15","milestone1","milestone16","milestone17","milestone18","v0.3","v0.4","v0.5","v0.6","v0.7","v0.8","v0.9","v0.10","v0.11","vdm-0.6","vdm-0.7","v1.0","v1.1","iati-1","iati-2","ckan-v1.2","datapkg-0.7","iati-3","ckan-v1.3-sprint-2","ckan-v1.3-sprint-1","ckan-v1.3-sprint-3","ckan-v1.3","datapkg-0.8","ckan-v1.4-sprint-1","ckan-sprint-2011-12-19","ckan-v1.4-sprint-2","ckan-v1.4-sprint-3","ckan-v1.4-sprint-4","ckan-v1.4-sprint-5","ckan-v1.4-sprint-6","ckan-v1.4","ckan-v1.4-sprint-7","ckan-v1.5-sprint-1","ckan-v1.5-sprint-2","pdeu-1","vdm-0.8","ckan-v1.5-sprint-3","ckan-v1.5-sprint-4","ckan-sprint-2011-09-12","iati-4","ckan-sprint-2011-09-26","ckan-sprint-2011-10-10","ckan-sprint-2011-10-24","ckan-sprint-2011-10-28","ckan-v1.5","ckan-sprint-2011-11-07","ckan-sprint-2011-11-21","ckan-sprint-2011-12-05","ckan-sprint-2012-01-09","ckan-sprint-2012-01-23","ckan-sprint-2012-02-06","ckan-sprint-2012-02-20","ckan-v1.6","ckan-sprint-2012-03-05","ckan-sprint-2012-03-19","ckan-sprint-2012-04-02","ckan-sprint-2012-04-16","ckan-sprint-2012-04-30","ckan-sprint-2012-05-15","ckan-sprint-2012-05-29","ckan-v1.7","demo phase 1","demo phase 2","demo phase 3","ckan-v1.8","ckan-sprint-2012-06-25","opendatasuite 1","ckanbuild","datahub-july","datahub-oct","opendatasuite 2","ckan-v1.9","ckan 2.0","ckan-backlog","ckan-ecportal","ckan-future","ckan-v1.8.1","demo phase 4","demo phase 5"],"type":"select"},"owner":{"label":"Owner","type":"text"},"priority":{"label":"Priority","options":["blocker","critical","major","minor","trivial","awaiting triage","awaiting merge"],"type":"select"},"repo":{"label":"Repository","options":["ckan","ckanclient","ckanext","ckanext-admin","ckanext-community","ckanext-csw","ckanext-dataapi","ckanext-no","ckanext-datapreview","ckanext-deliverance","ckanext-dgu","ckanext-geo","ckanext-harvest","ckanext-iati","ckanext-importlib","ckanext-qa","ckanext-queue","ckanext-solr","ckanext-stats","ckanext-storage","ckanext-upload","ckanext-webhooks","datapkg","vdm"],"type":"select"},"reporter":{"label":"Reporter","type":"text"},"resolution":{"label":"Resolution","options":["fixed","invalid","wontfix","duplicate","worksforme"],"type":"radio"},"status":{"label":"Status","options":["accepted","assigned","closed","new","reopened"],"type":"radio"},"summary":{"label":"Summary","type":"text"},"theme":{"label":"Theme","options":["deployment","notifications","migrations","harvesting","dictization","qa","entities","none"],"type":"select"},"time":{"label":"Created","type":"time"},"type":{"label":"Type","options":["defect","enhancement","refactor","task","requirement","CREP"],"type":"select"}};
+      var modes={"id":[{"name":"is","value":""},{"name":"is not","value":"!"}],"select":[{"name":"is","value":""},{"name":"is not","value":"!"}],"text":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"},{"name":"begins with","value":"^"},{"name":"ends with","value":"$"},{"name":"is","value":""},{"name":"is not","value":"!"}],"textarea":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"}]};
+    </script>
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/query.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="chrome/common/js/folding.js"></script>
+    <script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        initializeFilters();
+        $("#group").change(function() {
+          $("#groupdesc").enable(this.selectedIndex != 0)
+        }).change();
+        $("fieldset legend.foldable").enableFolding(false);
+        /* Hide the filters for saved queries. */
+        if (window.location.href.search(/[?&]report=[0-9]+/) != -1)
+          $("#filters").toggleClass("collapsed");
+        /* Hide the columns by default. */
+        $("#columns").toggleClass("collapsed");
+      });
+    /*]]>*/</script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="prefs.html">Preferences</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li class="active"><a href="report.html">View Tickets</a></li><li><a href="search.html">Search</a></li><li class="last"><a href="wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="report.html">Available Reports</a></li><li class="last">Custom Query</li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="query">
+      <h1>Custom Query <span class="numrows">(2152 matches)</span></h1>
+      <form id="query" method="post" action="query.html"><div><input type="hidden" name="__FORM_TOKEN" value="93d81ccf9a7bb1c456462f62" /></div>
+        <fieldset id="filters">
+          <legend class="foldable">Filters</legend>
+          <table summary="Query filters">
+            <tbody>
+              <tr style="display: none">
+                <td>
+		  <div class="trac-clause-lsep"> <hr /></div>
+		  <div class="trac-clause-msep">Or</div>
+		  <div class="trac-clause-rsep"> <hr /></div>
+		</td>
+              </tr>
+              <tr><td class="trac-clause">
+                <table class="trac-clause">
+                  <tbody>
+                    <tr class="status">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_status_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_status">Status</label></th>
+                      <td class="filter" colspan="2">
+                            <input type="checkbox" id="_0_status_accepted" name="0_status" value="accepted" />
+                            <label for="_0_status_accepted" class="control">accepted</label>
+                            <input type="checkbox" id="_0_status_assigned" name="0_status" value="assigned" />
+                            <label for="_0_status_assigned" class="control">assigned</label>
+                            <input type="checkbox" id="_0_status_closed" name="0_status" value="closed" checked="checked" />
+                            <label for="_0_status_closed" class="control">closed</label>
+                            <input type="checkbox" id="_0_status_new" name="0_status" value="new" />
+                            <label for="_0_status_new" class="control">new</label>
+                            <input type="checkbox" id="_0_status_reopened" name="0_status" value="reopened" />
+                            <label for="_0_status_reopened" class="control">reopened</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="actions">
+                      <td class="and" colspan="2">
+                         <label for="add_filter_0">And</label> 
+                        <select name="add_filter_0" id="add_filter_0">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status" disabled="disabled">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_0" value="+" />
+                        </div>
+                      </td>
+                      <td class="or" colspan="2">
+                        <label for="add_clause">Or</label> 
+                        <select name="add_clause_1" id="add_clause">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_1" value="+" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset id="columns">
+          <legend class="foldable">Columns</legend>
+          <div>
+              <label>
+                <input type="checkbox" name="col" value="summary" checked="checked" />
+                Summary
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="status" />
+                Status
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="owner" checked="checked" />
+                Owner
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="type" />
+                Type
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="priority" />
+                Priority
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="milestone" />
+                Milestone
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="component" />
+                Component
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="resolution" checked="checked" />
+                Resolution
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="time" />
+                Created
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="changetime" />
+                Modified
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="repo" />
+                Repository
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="theme" />
+                Theme
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="reporter" checked="checked" />
+                Reporter
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="keywords" />
+                Keywords
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="cc" />
+                Cc
+              </label>
+          </div>
+        </fieldset>
+        <p class="option">
+          <label for="group">Group results by</label>
+          <select name="group" id="group">
+            <option></option>
+              <option value="component">Component</option>
+              <option value="milestone">Milestone</option>
+              <option value="owner">Owner</option>
+              <option value="priority">Priority</option>
+              <option value="reporter">Reporter</option>
+              <option value="repo">Repository</option>
+              <option value="resolution">Resolution</option>
+              <option value="status">Status</option>
+              <option value="theme">Theme</option>
+              <option value="type">Type</option>
+          </select>
+          <input type="checkbox" name="groupdesc" id="groupdesc" />
+          <label for="groupdesc">descending</label>
+        </p>
+        <p class="option">
+          Show under each result:
+            <label><input type="checkbox" name="row" value="description" checked="checked" />
+            Description</label>
+        </p>
+        <p class="option">
+          <label for="max">Max items per page</label>
+          <input type="text" name="max" id="max" size="10" value="3" />
+        </p>
+        <div class="buttons">
+          <input type="hidden" name="order" value="reporter" />
+          <input type="hidden" name="desc" value="1" />
+          <input type="submit" name="update" value="Update" />
+        </div>
+        <hr />
+      </form>
+      <div>
+  <h2 class="report-result">
+    Results <span class="numresults">(1618 - 1620 of 2152)</span>
+  </h2>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=539&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=530&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 530">530</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=531&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 531">531</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=532&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 532">532</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=533&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 533">533</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=534&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 534">534</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=535&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 535">535</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=536&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 536">536</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=537&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 537">537</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=538&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 538">538</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=539&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 539">539</a>
+      </span>
+      <span>
+        <span class="current">540</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=541&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 541">541</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=542&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 542">542</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=543&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 543">543</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=544&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 544">544</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=545&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 545">545</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=546&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 546">546</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=547&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 547">547</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=548&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 548">548</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=549&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 549">549</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=550&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 550">550</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=541&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Next Page">→</a>
+    </span>
+</div>
+  <table class="listing tickets">
+    <thead>
+    <tr class="trac-columns">
+      <th class="id">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=id&amp;row=description.html">Ticket</a>
+      </th><th class="resolution">
+        <a title="Sort by Resolution (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=resolution&amp;row=description.html">Resolution</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=summary&amp;row=description.html">Summary</a>
+      </th><th class="owner">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=owner&amp;row=description.html">Owner</a>
+      </th><th class="reporter desc">
+        <a title="Sort by Reporter (ascending)" href="query%3Fstatus=closed&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;order=reporter&amp;row=description.html">Reporter</a>
+      </th>
+    </tr>
+    </thead>
+      <tbody>
+              <tr class="even prio2">
+                    <td class="id"><a href="ticket/313.html" title="View ticket" class="closed">#313</a></td>
+                    <td class="resolution">
+                      fixed
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/313.html" title="View ticket">Allow packages to be specified by IDs in REST interface</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="reporter">
+                      dread
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>dread</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2010-05-11T19:30:48Z&amp;precision=second.html" title="2010-05-11T19:30:48Z in Timeline">4 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+If a package name changes, a simple CKAN client may not be aware of this (not monitoring the push notifications, revisions or feed), so it is preferable to refer to the package by its (invariant) ID.
+</p>
+<p>
+It is still useful to refer to a package by its name though, so both should be valid arguments in the REST interface.
+</p>
+
+                    </td>
+                  </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/316.html" title="View ticket" class="closed">#316</a></td>
+                    <td class="resolution">
+                      fixed
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/316.html" title="View ticket">Search URL escaping</a>
+                    </td>
+                    <td class="owner">
+                      rgrp
+                    </td>
+                    <td class="reporter">
+                      dread
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>dread</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2010-05-19T10:45:28Z&amp;precision=second.html" title="2010-05-19T10:45:28Z in Timeline">4 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+If you search for unescaped characters such as '`' (backtick) in the URL in Chrome then you get a 500 error.
+</p>
+<p>
+e.g.
+<a class="ext-link" href="http://www.ckan.net/package/search?q=fjdkf2B%C2%B4gfhgfkgf{gpk"><span class="icon">​</span>http://www.ckan.net/package/search?q=fjdkf2B%C2%B4gfhgfkgf{gpk</a>
+fjdkf2B´gfhgfkgf{gpk
+</p>
+<p>
+returns this exception:
+</p>
+<pre class="wiki">URL: http://www.ckan.net/package/search?q=fjdkf%2B%C2%B4gfhgfkgf%7Bg%C2%B4pk&amp;search=Search+Packages+%C2%BB
+Module weberror.errormiddleware:162 in __call__
+&lt;&lt;              __traceback_supplement__ = Supplement, self, environ
+                   sr_checker = ResponseStartChecker(start_response)
+                   app_iter = self.application(environ, sr_checker)
+                   return self.make_catching_iter(app_iter, environ, sr_checker)
+               except:
+&gt;&gt;  app_iter = self.application(environ, sr_checker)
+Module repoze.who.middleware:107 in __call__
+&lt;&lt;          wrapper = StartResponseWrapper(start_response)
+               app_iter = app(environ, wrapper.wrap_start_response)
+       
+               # The challenge decider almost(?) always needs information from the
+&gt;&gt;  app_iter = app(environ, wrapper.wrap_start_response)
+Module beaker.middleware:73 in __call__
+&lt;&lt;                                                     self.cache_manager)
+               environ[self.environ_key] = self.cache_manager
+               return self.app(environ, start_response)
+&gt;&gt;  return self.app(environ, start_response)
+Module beaker.middleware:152 in __call__
+&lt;&lt;                          headers.append(('Set-cookie', cookie))
+                   return start_response(status, headers, exc_info)
+               return self.wrap_app(environ, session_start_response)
+           
+           def _get_session(self):
+&gt;&gt;  return self.wrap_app(environ, session_start_response)
+Module routes.middleware:130 in __call__
+&lt;&lt;                  environ['SCRIPT_NAME'] = environ['SCRIPT_NAME'][:-1]
+               
+               response = self.app(environ, start_response)
+               
+               # Wrapped in try as in rare cases the attribute will be gone already
+&gt;&gt;  response = self.app(environ, start_response)
+Module pylons.wsgiapp:125 in __call__
+&lt;&lt;          
+               controller = self.resolve(environ, start_response)
+               response = self.dispatch(controller, environ, start_response)
+               
+               if 'paste.testing_variables' in environ and hasattr(response,
+&gt;&gt;  response = self.dispatch(controller, environ, start_response)
+Module pylons.wsgiapp:324 in dispatch
+&lt;&lt;          if log_debug:
+                   log.debug("Calling controller class with WSGI interface")
+               return controller(environ, start_response)
+           
+           def load_test_env(self, environ):
+&gt;&gt;  return controller(environ, start_response)
+Module ckan.lib.base:50 in __call__
+&lt;&lt;          # available in environ['pylons.routes_dict']
+               try:
+                   return WSGIController.__call__(self, environ, start_response)
+               finally:
+                   model.Session.remove()
+&gt;&gt;  return WSGIController.__call__(self, environ, start_response)
+Module pylons.controllers.core:221 in __call__
+&lt;&lt;                  return response(environ, self.start_response)
+               
+               response = self._dispatch_call()
+               if not start_response_called:
+                   self.start_response = start_response
+&gt;&gt;  response = self._dispatch_call()
+Module pylons.controllers.core:172 in _dispatch_call
+&lt;&lt;              req.environ['pylons.action_method'] = func
+                   
+                   response = self._inspect_call(func)
+               else:
+                   if log_debug:
+&gt;&gt;  response = self._inspect_call(func)
+Module pylons.controllers.core:107 in _inspect_call
+&lt;&lt;                        func.__name__, args)
+               try:
+                   result = self._perform_call(func, args)
+               except HTTPException, httpe:
+                   if log_debug:
+&gt;&gt;  result = self._perform_call(func, args)
+Module pylons.controllers.core:60 in _perform_call
+&lt;&lt;          """Hide the traceback for everything above this method"""
+               __traceback_hide__ = 'before_and_this'
+               return func(**args)
+           
+           def _inspect_call(self, func):
+&gt;&gt;  return func(**args)
+Module ckan.controllers.package:52 in search
+&lt;&lt;                  collection=query,
+                       page=request.params.get('page', 1),
+                       items_per_page=50
+                   )
+                   # filter out ranks from the query result
+&gt;&gt;  items_per_page=50
+Module webhelpers.paginate:333 in __init__
+&lt;&lt;              self.item_count = item_count
+               else:
+                   self.item_count = len(self.collection)
+       
+               # Compute the number of the first and last available page
+&gt;&gt;  self.item_count = len(self.collection)
+Module webhelpers.paginate:204 in __len__
+&lt;&lt;      def __len__(self):
+               return self.obj.count()
+       
+       # Since the items on a page are mainly a list we subclass the "list" type
+&gt;&gt;  return self.obj.count()
+Module sqlalchemy.orm.query:1094 in count
+&lt;&lt;              q = q.params(params)
+               q = q._legacy_select_kwargs(**kwargs)
+               return q._count()
+       
+           def _count(self):
+&gt;&gt;  return q._count()
+Module sqlalchemy.orm.query:1103 in _count
+&lt;&lt;          """
+               return self._col_aggregate(sql.literal_column('1'), sql.func.count, nested_cols=list(self.mapper.primary_key))
+       
+           def _col_aggregate(self, col, func, nested_cols=None):
+&gt;&gt;  return self._col_aggregate(sql.literal_column('1'), sql.func.count, nested_cols=list(self.mapper.primary_key))
+Module sqlalchemy.orm.query:1125 in _col_aggregate
+&lt;&lt;          if self._autoflush and not self._populate_existing:
+                   self.session._autoflush()
+               return self.session.scalar(s, params=self._params, mapper=self.mapper)
+       
+           def compile(self):
+&gt;&gt;  return self.session.scalar(s, params=self._params, mapper=self.mapper)
+Module sqlalchemy.orm.session:635 in scalar
+&lt;&lt;          engine = self.get_bind(mapper, clause=clause, instance=instance)
+       
+               return self.__connection(engine, close_with_result=True).scalar(clause, params or {})
+       
+           def close(self):
+&gt;&gt;  return self.__connection(engine, close_with_result=True).scalar(clause, params or {})
+Module sqlalchemy.engine.base:834 in scalar
+&lt;&lt;          """
+       
+               return self.execute(object, *multiparams, **params).scalar()
+       
+           def statement_compiler(self, statement, **kwargs):
+&gt;&gt;  return self.execute(object, *multiparams, **params).scalar()
+Module sqlalchemy.engine.base:844 in execute
+&lt;&lt;          for c in type(object).__mro__:
+                   if c in Connection.executors:
+                       return Connection.executors[c](self, object, multiparams, params)
+               else:
+                   raise exceptions.InvalidRequestError("Unexecutable object type: " + str(type(object)))
+&gt;&gt;  return Connection.executors[c](self, object, multiparams, params)
+Module sqlalchemy.engine.base:895 in execute_clauseelement
+&lt;&lt;          else:
+                   keys = None
+               return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) &gt; 1), distilled_params=params)
+       
+           def _execute_compiled(self, compiled, multiparams=None, params=None, distilled_params=None):
+&gt;&gt;  return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) &gt; 1), distilled_params=params)
+Module sqlalchemy.engine.base:907 in _execute_compiled
+&lt;&lt;          context.pre_execution()
+               self.__execute_raw(context)
+               context.post_execution()
+               self._autocommit(context)
+&gt;&gt;  self.__execute_raw(context)
+Module sqlalchemy.engine.base:916 in __execute_raw
+&lt;&lt;              self._cursor_executemany(context.cursor, context.statement, context.parameters, context=context)
+               else:
+                   self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)
+       
+           def _execute_ddl(self, ddl, params, multiparams):
+&gt;&gt;  self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)
+Module sqlalchemy.engine.base:958 in _cursor_execute
+&lt;&lt;              self.engine.logger.info(repr(parameters))
+               try:
+                   self.dialect.do_execute(cursor, statement, parameters, context=context)
+               except Exception, e:
+                   self._handle_dbapi_exception(e, statement, parameters, cursor)
+&gt;&gt;  self.dialect.do_execute(cursor, statement, parameters, context=context)
+Module sqlalchemy.engine.default:133 in do_execute
+&lt;&lt;      def do_execute(self, cursor, statement, parameters, context=None):
+               cursor.execute(statement, parameters)
+       
+           def is_disconnect(self, e):
+&gt;&gt;  cursor.execute(statement, parameters)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xb4' in position 6: ordinal not in range(128)
+</pre>
+                    </td>
+                  </tr>
+              <tr class="even prio1">
+                    <td class="id"><a href="ticket/319.html" title="View ticket" class="closed">#319</a></td>
+                    <td class="resolution">
+                      fixed
+                    </td>
+                    <td class="summary">
+                      <a href="ticket/319.html" title="View ticket">Local Authority license misnamed in migration script 18</a>
+                    </td>
+                    <td class="owner">
+                      dread
+                    </td>
+                    <td class="reporter">
+                      dread
+                    </td>
+              </tr>
+                <tr class="fullrow">
+                  <td colspan="5">
+                    <p class="meta">Reported by <strong>dread</strong>,
+                      <a class="timeline" href="timeline%3Ffrom=2010-05-20T10:01:54Z&amp;precision=second.html" title="2010-05-20T10:01:54Z in Timeline">4 years</a> ago.</p>
+                  </td>
+                </tr>
+                  <tr class="fullrow">
+                    <th class="meta">Description</th>
+                    <td colspan="4">
+                      <p>
+Migration script 18 converts license "OKD Compliant::Local Authority Copyright with data.gov.uk rights" into "uklocalauthority-withrights" when it should be "localauth-withrights", according to the license service SoS 2. This causes clients difficulties looking it up.
+</p>
+
+                    </td>
+                  </tr>
+      </tbody>
+  </table>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=539&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=530&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 530">530</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=531&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 531">531</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=532&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 532">532</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=533&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 533">533</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=534&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 534">534</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=535&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 535">535</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=536&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 536">536</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=537&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 537">537</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=538&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 538">538</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=539&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 539">539</a>
+      </span>
+      <span>
+        <span class="current">540</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=541&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 541">541</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=542&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 542">542</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=543&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 543">543</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=544&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 544">544</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=545&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 545">545</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=546&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 546">546</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=547&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 547">547</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=548&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 548">548</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=549&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 549">549</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=closed&amp;max=3&amp;page=550&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Page 550">550</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=closed&amp;max=3&amp;page=541&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description.html" title="Next Page">→</a>
+    </span>
+</div>
+</div>
+      <div class="buttons">
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="wiki/TracQuery.html">TracQuery</a>
+        for help on using queries.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=rss&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" class="rss">RSS Feed</a>
+        </li><li>
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=csv&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" class="csv">Comma-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="query%3Fstatus=closed&amp;format=tab&amp;max=3&amp;page=540&amp;col=id&amp;col=resolution&amp;col=summary&amp;col=owner&amp;col=reporter&amp;desc=1&amp;order=reporter&amp;row=description" class="tab">Tab-delimited Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

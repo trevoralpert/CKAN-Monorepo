@@ -1,0 +1,17 @@
+id,summary,owner,type,priority,resolution,time
+1264,Merge ckanext-admin into core,zephod,enhancement,major,fixed,08/04/11 17:59:43
+1268,Speed up listing users by revisions by adding db index,kindly,enhancement,major,fixed,08/09/11 16:16:32
+1272,Store spatial extents provided in the package form,,enhancement,awaiting triage,fixed,08/15/11 12:36:27
+1320,Extend basic markdown to support normal http / https links,zephod,enhancement,major,fixed,09/07/11 19:00:00
+1342,Home controller does not capture SearchError exceptions,johnglover,defect,critical,fixed,09/14/11 11:53:47
+1344,datetime error json conversion on search,kindly,enhancement,awaiting triage,fixed,09/14/11 17:09:55
+1356,Can not recreate a deleted extra,kindly,enhancement,awaiting triage,fixed,09/26/11 10:49:40
+1357,Integrate new version of data preview,rgrp,enhancement,critical,fixed,09/26/11 22:27:24
+1362,Clearing the database should also clear the search index,johnglover,defect,minor,fixed,09/27/11 11:11:01
+1363,Add task_status table to store qa/archiever/webstore information that does not need to be versioned.,johnglover,enhancement,major,fixed,09/28/11 14:20:17
+1364,If package in index that is not in ckan error is caused.,kindly,enhancement,awaiting triage,fixed,09/28/11 15:03:26
+1369,Remove showdown.js from the page download,zephod,enhancement,awaiting triage,fixed,09/30/11 14:21:56
+1371,Make logic layer functions for working with task_status table,johnglover,enhancement,major,fixed,10/05/11 09:59:36
+1375,Define new package id before sending it to the IPackageController plugins,amercader,enhancement,awaiting triage,fixed,10/06/11 14:14:01
+1376,404 raised when approving package,kindly,enhancement,awaiting triage,fixed,10/08/11 15:43:09
+1377,Ckan admin repair,zephod,defect,awaiting triage,fixed,10/10/11 09:46:58

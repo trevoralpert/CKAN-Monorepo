@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~ux&amp;desc=1&amp;order=keywords</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~ux&amp;desc=1&amp;order=keywords</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1643</link>
+        <guid isPermaLink="false">http://localhost/ticket/1643</guid>
+        <title>#1643: Add fixed tags to thedatahub for better browsing</title>
+        <pubDate>Thu, 12 Jan 2012 18:34:53 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Similar to publicdata.eu, want to have themed areas such as finance, environment, census, etc and country tags
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1643#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1507</link>
+        <guid isPermaLink="false">http://localhost/ticket/1507</guid>
+        <title>#1507: Minor fixes to dataset add on Group edit form - 0.5d</title>
+        <pubDate>Mon, 05 Dec 2011 12:33:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Group edit dataset add form needs some work
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Dataset name is not cleared when you add
+&lt;/li&gt;&lt;li&gt;No way to remove item from list of datasets to be added if I make a mistake
+&lt;/li&gt;&lt;li&gt;(2nd Apr 2012) It now seems that option to add multiple datasets at once has disappeared (perhaps during the CSS/HTML refactor ...)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/737</link>
+        <guid isPermaLink="false">http://localhost/ticket/737</guid>
+        <title>#737: Markdown syntax summary page</title>
+        <pubDate>Fri, 22 Oct 2010 16:59:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I suggest we produce a quick Markdown cheat-sheet page, showing the key runes: e.g. create a title and quote some text. This page can link to the full Markdown docs for advanced users.
+&lt;/p&gt;
+&lt;p&gt;
+A user going to the Markdown docs that we link will have to read a couple of pages of the raison-d'etre of Markdown before he gets to the syntax. And it's not very easy to read, and being white on black it looks like proper geek stuff.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/737#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/811</link>
+        <guid isPermaLink="false">http://localhost/ticket/811</guid>
+        <title>#811: Extra field editing form layout breaks when there are long field names</title>
+        <pubDate>Wed, 17 Nov 2010 11:53:32 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The layout of the editing section for extra fields breaks when a field name is slightly too long. Field names jump over to the right. See &lt;a class="ext-link" href="http://ckan.net/package/edit/dbpedia"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/edit/dbpedia&lt;/a&gt; for examples.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/811#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/924</link>
+        <guid isPermaLink="false">http://localhost/ticket/924</guid>
+        <title>#924: Search box has no search button</title>
+        <pubDate>Mon, 24 Jan 2011 11:12:13 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The search box at the top-right of CKAN's page doesn't have a 'go' button. I feel that a larger percentage of users expect a 'go' or 'search' button on the right-hand side of the box to press to start searching. Techies tend to know the keyboard shortcut of pressing 'carriage-return' but it might be better to follow standard practise on this.
+&lt;/p&gt;
+&lt;p&gt;
+Examples with 'search' button: Internet Explorer, Firefox, Google, Amazon, trac
+Examples without: ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/924#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1644</link>
+        <guid isPermaLink="false">http://localhost/ticket/1644</guid>
+        <title>#1644: Order default dataset page by most downloaded resources on thedatahub</title>
+        <pubDate>Thu, 12 Jan 2012 18:39:02 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Instead of alphabetically as we do currently, alternatively by most viewed datasets
+&lt;/p&gt;
+&lt;p&gt;
+for &lt;a class="ext-link" href="http://thedatahub.org/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1644#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1647</link>
+        <guid isPermaLink="false">http://localhost/ticket/1647</guid>
+        <title>#1647: add links to ckan discuss &amp; dev to thedatahub</title>
+        <pubDate>Mon, 16 Jan 2012 00:30:52 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+In the footer as well as more clearly &amp;amp; directly on the About page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1647#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1717</link>
+        <guid isPermaLink="false">http://localhost/ticket/1717</guid>
+        <title>#1717: [super] Search UX improvements</title>
+        <pubDate>Thu, 26 Jan 2012 18:53:01 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Make it possible to search by tag (e.g. by typing tag:csv into the search bar and clicking enter, it should add the 'csv' tag facet to the search)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Rename and standardise the list of format tags, on search page this should also be called 'Format' instead of 'res_format' (in the right hand side bar on search page).
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Make it possible to view full list of tags, formats and groups by clicking on the name. From here you should be table to click on a classification and go back to a search page faceted by that classification. E.g. from search page, click on 'tags', on tag page click on 'london' or whatever, and be navigated back to search page with search within 'london' tag only.  Or y'know, a better way of doing it.
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;More standard classifications, such as 'Location' and 'Theme' - like on publicdata.eu
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="5"&gt;&lt;li&gt;Blue search button should be displayed in line with the search bar, not underneath
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="6"&gt;&lt;li&gt;Datasets should be displayed in order of most viewed or downloaded instead of alphabetically. For alphabetic search we could consider adding a way to facet by first letter of dataset name
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1717#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1790</link>
+        <guid isPermaLink="false">http://localhost/ticket/1790</guid>
+        <title>#1790: Click to delete tags, rather than have all existing tags in the tag text box</title>
+        <pubDate>Fri, 10 Feb 2012 15:44:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+From Pablo:
+&lt;/p&gt;
+&lt;p&gt;
+Editing the tags field is clumsy when there are too many tags. Could
+show existing effectively as tags (like delicious), then allow clicks
+to delete. New tags added via text box.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1790#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2729</link>
+        <guid isPermaLink="false">http://localhost/ticket/2729</guid>
+        <title>#2729: searching for tags:[tag] works but tag:[tag] doesn't</title>
+        <pubDate>Sun, 22 Jul 2012 09:58:29 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+which is confusing since you can only search for one tag like this at a time. I.e.
+tags:economics,cvs or tags:economics, csv or tags:economics+CSV doesn't work for example; therefore tag:economics, should also work!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset?q=tags%3Aeconomics&amp;amp;sort=relevance+asc&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2729#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2748</link>
+        <guid isPermaLink="false">http://localhost/ticket/2748</guid>
+        <title>#2748: add 'add new resource' button to sidebar</title>
+        <pubDate>Wed, 25 Jul 2012 10:41:18 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+When editing a resource you see the current and any other existing resources in sidebar
+&lt;/p&gt;
+&lt;p&gt;
+(e.g. see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Would be good to have a pretty 'add new' slightly transparent resource folder/pointer undearneath - letting you add resources from the end resource page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2748#changelog</comments>
+    </item>
+ </channel>
+</rss>

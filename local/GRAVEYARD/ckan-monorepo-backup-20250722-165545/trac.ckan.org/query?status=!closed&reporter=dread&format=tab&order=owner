@@ -1,0 +1,57 @@
+id	summary	status	owner	type	priority	milestone
+250	RDF link in Atom feed	assigned	icmurray	enhancement	awaiting triage	ckan-v1.9
+1336	License fudge	new	johnglover	defect	minor	ckan-backlog
+1393	Don't skip search tests	assigned	johnglover	enhancement	minor	ckan-backlog
+979	Edit Resource extras in the API	assigned	kindly	enhancement	awaiting triage	ckan-backlog
+1447	disk space leakage	assigned	kindly	defect	major	ckan-backlog
+1689	List deleted datasets in API	assigned	kindly	enhancement	major	
+1171	Citation instructions on dataset and resource view pages	assigned	mark.wainwright	enhancement	minor	ckan 2.0
+1577	Can't upload file with foreign chars in filename	new	rgrp	defect	major	ckan-backlog
+2656	Feed with few results has bad paging link, causing exception	new	seanh	defect	trivial	
+3029	JSONP parameter scuppers Search in API	assigned	seanh	defect	awaiting triage	
+143	Most active users listed on homepage	assigned	thejimmyg	enhancement	minor	ckan-backlog
+1168	Test system for deb packaging	assigned	thejimmyg	enhancement	major	ckan-backlog
+1287	NAVL validation errors - Junk fields should be listed explicitly	assigned	thejimmyg	enhancement	awaiting triage	ckan-backlog
+235	Resource format normalization and detection	assigned	tobes	enhancement	awaiting triage	ckan-v1.9
+277	Set some config options / settings in WUI (extension)	assigned	zephod	enhancement	awaiting triage	ckan-backlog
+253	Package relationships	assigned		enhancement	awaiting triage	ckan-backlog
+256	Package relationships - 3. Edit in WUI	assigned		requirement	major	ckan-backlog
+350	Search engine optimisation	reopened		enhancement	awaiting triage	ckan-backlog
+351	Homepage: list new, updated and 'hot' packages	new		enhancement	awaiting triage	ckan-backlog
+653	Trackback links for packages	new		requirement	awaiting triage	ckan-backlog
+737	Markdown syntax summary page	new		enhancement	awaiting triage	ckan-backlog
+763	Read-only mode - Setup	assigned		enhancement	minor	ckan-future
+765	Read-only mode - API usage	assigned		enhancement	awaiting triage	ckan-backlog
+924	Search box has no search button	new		enhancement	minor	ckan-backlog
+948	Highlight (to a sysadmin) which packages are deleted	assigned		enhancement	minor	ckan-future
+1198	Publisher hierarchy	new		enhancement	critical	ckan-backlog
+1244	Notes field carriage-returns converted to CRLF	assigned		enhancement	major	
+1257	Anti-Spam tools	new		enhancement	major	ckan-backlog
+1285	Errors cause emails	assigned		enhancement	minor	ckan-future
+1288	Package edit/creation can't include 'relationships' field	new		defect	minor	ckan-backlog
+1314	ckanclient search - generator improvements	assigned		enhancement	minor	ckan-backlog
+1317	password reset - improve user search	assigned		defect	trivial	ckan-backlog
+1322	Action API improvements	assigned		enhancement	major	
+1366	Search inside extra fields	assigned		defect	major	ckan-future
+1424	Openness notice should be clearer	new		enhancement	minor	ckan-backlog
+1438	Action API - parameter discovery/checking	new		enhancement	major	ckan-future
+1439	Action API discoverablility	new		enhancement	major	ckan-backlog
+1489	Updating example theme/extension	assigned		enhancement	major	ckan-backlog
+1509	Mis-dated old revisions of datasets	assigned		defect	minor	
+1535	Plump for auth header of: X-CKAN-API-KEY	new		enhancement	awaiting triage	ckan-backlog
+1542	Buttons to purge spam datasets and groups	new		enhancement	major	ckan-backlog
+1544	delete old git branches	new		task	minor	ckan-backlog
+1596	Refactor authz roles	new		enhancement	awaiting triage	ckan-future
+1604	Get ckanext-moderatededits working with CKAN 1.5+ templates	new		enhancement	awaiting triage	ckan-backlog
+1606	metadata license config option	new		enhancement	awaiting triage	ckan-backlog
+1661	Wrong Routes version installed by CKAN package	assigned		defect	major	ckan-backlog
+1668	repoze version discrepency	new		defect	awaiting triage	ckan-backlog
+1679	Default roles problem	new		enhancement	awaiting triage	ckan-backlog
+1787	[super] Improve RESTful API	new		enhancement	awaiting triage	ckan-future
+1790	Click to delete tags, rather than have all existing tags in the tag text box	new		enhancement	awaiting triage	ckan-future
+1827	'Register' link should be hidden if you not allowed to register	new		enhancement	major	ckan-backlog
+1832	dataset purge API	assigned		enhancement	critical	ckan-backlog
+2265	'More Like This' for a dataset	new		enhancement	awaiting triage	ckan-future
+2395	paster db clean/init don't work when spatial extension enabled	new		defect	minor	ckan-backlog
+2635	Non-destructive SOLR reindex	new		enhancement	major	
+2719	Feeds controller does not catch NotAuthorized exception	new		defect	minor	

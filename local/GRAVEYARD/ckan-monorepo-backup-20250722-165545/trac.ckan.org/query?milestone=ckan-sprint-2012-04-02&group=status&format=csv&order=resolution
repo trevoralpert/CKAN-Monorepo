@@ -1,0 +1,21 @@
+id,summary,owner,type,priority,component,resolution
+1559,Comments Extension / Disqus,rgrp,enhancement,major,ckan,fixed
+1616,Catch exceptions when rebuilding the search index,amercader,defect,major,ckan,fixed
+1819,change search index code to use package_dictize instead of obj.to_dict,kindly,enhancement,awaiting triage,ecportal,fixed
+2213,Update geographical coverage tags,johnglover,enhancement,major,ecportal,fixed
+2216,Translation of selected facets on search pages,seanh,enhancement,awaiting triage,ckan,fixed
+2231,Base harvester broken on 1.6.1,amercader,defect,critical,ckan,fixed
+2232,Unicode Exception when rebuilding the search index,amercader,defect,major,ckan,fixed
+2240,Document CityData ideas,ross,enhancement,awaiting triage,ckan,fixed
+2241,Look into making test_activity.py faster,seanh,refactor,awaiting triage,ckan,fixed
+2242,Research buildbot possibilities for CKAN,seanh,enhancement,awaiting triage,ckan,fixed
+2245,Update documentation for writing CKAN extensions,johnglover,enhancement,minor,ckan,fixed
+2246,Change published_by metadata field to reference group instead of a custom extra,johnglover,enhancement,major,ecportal,fixed
+2248,Update docs for creating custom forms,johnglover,enhancement,minor,ckan,fixed
+2249,Fix google spreadsheet to work with DataStore.,kindly,enhancement,awaiting triage,ckan,fixed
+2250,Setup nginx and datastore on ecportal,kindly,enhancement,awaiting triage,ecportal,fixed
+2259,Update ecportal theme for master changes (bootstrap),johnglover,enhancement,major,ecportal,fixed
+2261,All links need to option to change where language is placed in url.,toby,enhancement,awaiting triage,ecportal,fixed
+2262,Update ecportal form and dataset style/ux to match CKAN master,johnglover,enhancement,major,ecportal,fixed
+2266,Can't delete all of a package's resources over REST API,dread,defect,critical,ckan,fixed
+2224,Simplify javascript and css dependencies and add minified version,rgrp,enhancement,major,ckan,wontfix

@@ -1,0 +1,139 @@
+id	summary	owner	type	priority	component	time
+2732	New file upload functionality		enhancement	awaiting triage	ckan	07/23/12 15:53:09
+2686	enabling datastore & data API breaks recline		defect	critical	ckan	07/17/12 09:06:51
+2607	'Upload a file' appears on resource form when storage not enabled		defect	awaiting triage	ckan	06/27/12 13:30:08
+2590	Publisher dashboard	shevski	enhancement	awaiting triage	ckan	06/25/12 10:03:37
+2554	Research Virtuoso cartridges		enhancement	awaiting triage	ckan	06/18/12 13:37:25
+2546	ODS Managing homepage content		requirement	awaiting triage	ckan	06/18/12 10:54:02
+2513	Dataproxy should not default to utf8		enhancement	awaiting triage	ckan	06/13/12 08:23:40
+2284	Local queries/views/viz in Related stuff.		enhancement	awaiting triage	ckan	04/12/12 08:18:20
+2197	Storage Metadata API: add/update not working with local file storage (Pairtree)		defect	awaiting triage	ckan	02/28/12 09:29:37
+1832	dataset purge API		enhancement	critical	ckan	02/24/12 10:02:25
+1831	Login with email address		enhancement	awaiting triage	ckan	02/24/12 08:58:26
+1684	Remove all config from ckanext-archiver		enhancement	awaiting triage	ckan	01/19/12 14:37:01
+1661	Wrong Routes version installed by CKAN package		defect	major	ckan	01/16/12 12:47:41
+1652	How we intergrate with Drupal Multiligual?	kindly	enhancement	awaiting triage	ckan	01/16/12 10:31:34
+1571	[super] Issues Extension	rgrp	enhancement	awaiting triage	ckan	12/19/11 11:30:25
+1550	Allow simple auth via the API		enhancement	awaiting triage	ckan	12/16/11 15:29:29
+1507	Minor fixes to dataset add on Group edit form - 0.5d	zephod	enhancement	awaiting triage	ckan	12/05/11 12:33:49
+1489	Updating example theme/extension		enhancement	major	ckan	11/24/11 12:32:00
+1447	disk space leakage	kindly	defect	major	ckan	11/07/11 11:54:03
+1393	Don't skip search tests	johnglover	enhancement	minor	ckan	10/13/11 11:30:53
+1358	Generate configuration documentation automatically from the deployment_ini_tmpl file	zephod	enhancement	awaiting triage	ckan	09/26/11 22:32:30
+1317	password reset - improve user search		defect	trivial	ckan	09/07/11 17:12:19
+1314	ckanclient search - generator improvements		enhancement	minor	ckan	09/07/11 11:36:50
+1287	NAVL validation errors - Junk fields should be listed explicitly	thejimmyg	enhancement	awaiting triage	ckan	08/24/11 16:25:02
+1255	Drupal consistancy checks.	kindly	enhancement	awaiting triage	ckan	08/01/11 17:32:48
+1240	[super] API v4	kindly	enhancement	awaiting triage	ckan	07/24/11 16:41:00
+1168	Test system for deb packaging	thejimmyg	enhancement	major	ckan	05/26/11 20:33:14
+1062	Data preview encoding error	johnglover	defect	minor	ckan	03/29/11 10:55:43
+1041	Start Using the CKAN Wiki for Tutorial-style documentation	thejimmyg	enhancement	major	ckan	03/16/11 14:11:55
+979	Edit Resource extras in the API	kindly	enhancement	awaiting triage	ckan	02/11/11 13:09:37
+909	DCat importer for CKAN		enhancement	awaiting triage	lod2	01/17/11 12:05:58
+794	Investigate reconciling UKLP Publisher and Provider with DGU	amercader	requirement	major	uklii	11/08/10 14:50:11
+765	Read-only mode - API usage		enhancement	awaiting triage	ckan	10/26/10 11:18:17
+728	CSW Harvesting shall be optimised in respect of reharvesting only records that have changed	amercader	requirement	major	uklii	10/21/10 15:35:40
+277	Set some config options / settings in WUI (extension)	zephod	enhancement	awaiting triage	ckan	03/22/10 16:21:01
+256	Package relationships - 3. Edit in WUI		requirement	major	ckan	02/23/10 12:36:01
+253	Package relationships		enhancement	awaiting triage	ckan	02/22/10 16:05:21
+143	Most active users listed on homepage	thejimmyg	enhancement	minor	ckan	10/08/09 13:59:33
+2962	Search across multiple ckan instances		enhancement	awaiting triage	ckan	10/08/12 22:50:22
+2960	Private datasets are not private		task	awaiting triage	ckan	10/08/12 11:04:15
+2729	searching for tags:[tag] works but tag:[tag] doesn't	kindly	enhancement	awaiting triage	ckan	07/22/12 09:58:29
+2531	New state option: archived / deprecated		enhancement	awaiting triage	ckan	06/15/12 08:59:47
+2508	Make it possible to run CKAN tests for each language		enhancement	awaiting triage	ckan	06/11/12 10:42:15
+2486	Should be able to use . in dataset names		defect	awaiting triage	ckan	06/02/12 16:46:23
+2395	paster db clean/init don't work when spatial extension enabled		defect	minor	ckan	05/16/12 09:16:33
+2310	Refactor the search-query construction in feeds.py	icmurray	enhancement	minor	ckan	04/16/12 16:01:31
+2277	Use the new atom feeds in IATI	icmurray	refactor	minor	ckan	04/02/12 17:10:28
+2268	UKLP Use same schema as form for harvested records	thejimmyg	enhancement	major	uklii	03/30/12 11:56:46
+2247	Resource preview glitch in some browsers		enhancement	minor	ckan	03/20/12 12:30:14
+1827	'Register' link should be hidden if you not allowed to register		enhancement	major	ckan	02/22/12 15:35:39
+1823	Spring clean bin directory		enhancement	trivial	ckan	02/20/12 21:28:51
+1789	Implement a tag_update() logic action function		enhancement	awaiting triage	ecportal	02/09/12 16:36:53
+1750	Move ckan/lib/activity.py into the model		enhancement	awaiting triage	ckan	02/05/12 18:18:08
+1747	Expire old activities		enhancement	awaiting triage	ckan	02/05/12 12:56:29
+1717	[super] Search UX improvements		enhancement	awaiting triage	ckan	01/26/12 18:53:01
+1697	A Configurable list of states for a Dataset		enhancement	awaiting triage	ckan	01/24/12 10:23:50
+1679	Default roles problem		enhancement	awaiting triage	ckan	01/17/12 17:57:22
+1668	repoze version discrepency		defect	awaiting triage	ckan	01/17/12 12:02:26
+1647	add links to ckan discuss & dev to thedatahub		enhancement	trivial	ckan	01/16/12 00:30:52
+1644	Order default dataset page by most downloaded resources on thedatahub		enhancement	awaiting triage	ckan	01/12/12 18:39:02
+1643	Add fixed tags to thedatahub for better browsing		enhancement	awaiting triage	ckan	01/12/12 18:34:53
+1642	Extra link generators generate garbled HTML		defect	awaiting triage	ckan	01/12/12 15:29:31
+1635	Email notifications (e.g. for activity streams)	seanh	enhancement	awaiting triage	ckan	01/11/12 17:56:27
+1606	metadata license config option		enhancement	awaiting triage	ckan	01/02/12 10:45:30
+1604	Get ckanext-moderatededits working with CKAN 1.5+ templates		enhancement	awaiting triage	ckan	12/31/11 17:27:09
+1598	Reinstate Ratings		enhancement	awaiting triage	ckan	12/29/11 16:52:04
+1589	QA - Give 5 star rating to datasets with link metadata	johnglover	enhancement	major	ckan	12/21/11 15:16:40
+1588	QA - Give SPARQL endpoints a 4 star rating	johnglover	enhancement	major	ckan	12/21/11 15:13:25
+1584	QA report improvements - 2.5d	johnglover	enhancement	major	ckan	12/21/11 09:23:53
+1578	[super] Re-enable and refactor ratings		enhancement	awaiting triage	ckan	12/19/11 19:20:43
+1577	Can't upload file with foreign chars in filename	rgrp	defect	major	ckan	12/19/11 18:00:59
+1544	delete old git branches		task	minor	ckan	12/12/11 15:10:10
+1542	Buttons to purge spam datasets and groups		enhancement	major	ckan	12/08/11 17:22:10
+1535	Plump for auth header of: X-CKAN-API-KEY		enhancement	awaiting triage	ckan	12/07/11 17:31:22
+1534	Change revisions to record userid rather than username		enhancement	major	ckan	12/07/11 17:26:30
+1466	Need to support https login for multiple instances as part of the CKAN package install		enhancement	critical	ckan	11/15/11 16:52:58
+1459	Featured Dataset feature	rgrp	enhancement	awaiting triage	ckan	11/12/11 15:50:12
+1439	Action API discoverablility		enhancement	major	ckan	11/01/11 15:39:30
+1432	[super] Data processing system for CKAN and Webstore		enhancement	awaiting triage	ckan	11/01/11 10:19:07
+1429	Provide DOIs for datasets in a CKAN instance	rgrp	enhancement	awaiting triage	ckan	10/30/11 12:21:45
+1424	Openness notice should be clearer		enhancement	minor	ckan	10/26/11 16:54:49
+1423	Edit resources suggestions		enhancement	awaiting triage	ckan	10/26/11 15:11:46
+1414	track user log-ins on thedatahub.org		enhancement	awaiting triage	ckan	10/24/11 11:13:02
+1411	Force resource format to be lower case (also mimetype)	zephod	enhancement	awaiting triage	ckan	10/22/11 21:40:04
+1406	Re-enable RSS subscriptions		enhancement	awaiting triage	ckan	10/17/11 14:22:07
+1403	Refactor groups index page	zephod	enhancement	awaiting triage	ckan	10/17/11 10:31:52
+1384	CKAN wiki needs updating to refer to thedatahub.org instead of ckan.net and datasets instead of packages	rgrp	task	awaiting triage	ckan	10/12/11 10:07:57
+1382	Deleted resources are present for harvested package	thejimmyg	defect	minor	uklii	10/11/11 12:58:09
+1355	Package extras property does not include the newly created ones		defect	awaiting triage	ckan	09/26/11 10:48:46
+1352	Use logic functions instead of as_dict when indexing entities		enhancement	major	ckan	09/21/11 14:29:57
+1343	[super] User related improvements (login, user pages etc)	rgrp	enhancement	major	ckan	09/14/11 16:18:18
+1336	License fudge	johnglover	defect	minor	ckan	09/13/11 11:07:37
+1326	Write a set of auth plugin functions to integrate with Druapl		enhancement	minor	ckan	09/12/11 09:51:24
+1311	Modal user register and login form	rgrp	enhancement	major	ckan	09/06/11 08:20:27
+1288	Package edit/creation can't include 'relationships' field		defect	minor	ckan	08/24/11 16:34:55
+1286	Remove remaining formalchemy stuff		enhancement	major	ckan	08/23/11 16:29:56
+1278	Refactor authorized_query calls		enhancement	awaiting triage	ckan	08/15/11 13:32:57
+1273	Create docs for API v3		requirement	awaiting triage	ckan	08/15/11 12:41:23
+1262	"Enforce ""create-user"" permission"		enhancement	major	ckan	08/03/11 12:41:36
+1261	Investigate dots in extras search		defect	trivial	ckan	08/03/11 10:19:28
+1260	Remove duplicate functions from _util.html		enhancement	trivial	ckan	08/03/11 10:17:32
+1259	"""Add a row"" for Extras on Package form"	johnglover	enhancement	minor	ckan	08/02/11 16:31:33
+1257	Anti-Spam tools		enhancement	major	ckan	08/02/11 11:12:45
+1233	[super] Improve wiki-style functionality for history		enhancement	awaiting triage	ckan	07/20/11 16:29:52
+1232	[super] Interface improvements		enhancement	awaiting triage	ckan	07/20/11 16:11:36
+1227	Display packages' tags in search results		enhancement	awaiting triage	ckan	07/19/11 00:11:02
+1203	"Moderated edits: html code shows as ""changed"" although it is not"	johnglover	defect	awaiting triage	ckan	06/28/11 15:29:30
+1201	seperate out logic in atom feeds to logic layer.		enhancement	awaiting triage	ckan	06/24/11 15:21:32
+1198	Publisher hierarchy		enhancement	critical	ckan	06/23/11 09:16:32
+1188	Allow diffing against initial (blank) package version		enhancement	awaiting triage	ckan	06/15/11 15:52:40
+1185	Administrators can't delete packages from web UI		defect	awaiting triage	ckan	06/15/11 04:23:38
+1184	Support Wuala as CKAN storage option		enhancement	awaiting triage	ckan	06/14/11 06:59:11
+1182	"Comments from deleted packages appear in ""Recent Comments"" feed"		defect	awaiting triage	ckan	06/09/11 22:24:11
+1179	Support tag aliases		enhancement	awaiting triage	ckan	06/07/11 06:47:01
+1163	Improvements to Storage Extension	rgrp	enhancement	major	ckan	05/26/11 11:19:38
+1152	True support for generic CSW servers	amercader	enhancement	major	uklii	05/23/11 09:02:14
+1145	Support the Handle System		enhancement	awaiting triage	ckan	05/19/11 00:26:15
+1144	Support DSPL		enhancement	awaiting triage	ckan	05/19/11 00:06:49
+1134	CREP0003: Description and Configuration of Harvesters		CREP	major	ckan	05/11/11 10:14:28
+1120	Atom feeds of each tag		enhancement	awaiting triage	ckan	05/02/11 04:08:05
+1101	Integrate googlanalytics into site nav		enhancement	awaiting triage	ckan	04/21/11 13:52:06
+1077	Move to simpler vdm system	kindly	enhancement	awaiting triage	ckan	04/08/11 23:14:24
+1009	Improvements to user accounts sytem	pudo	enhancement	awaiting triage	ckan	02/25/11 12:13:11
+924	Search box has no search button		enhancement	minor	ckan	01/24/11 11:12:13
+895	Add version number (or simular) to css/js includes query string		defect	awaiting triage	ckan	01/06/11 19:49:42
+837	CKAN integration with freebase gridworks / google refine		enhancement	awaiting triage	ckan	11/30/10 18:10:09
+818	Rethinking the author and maintainer fields		requirement	awaiting triage	ckan	11/17/10 14:18:44
+812	Package edit form only allows three extra fields		defect	awaiting triage	ckan	11/17/10 11:56:50
+811	Extra field editing form layout breaks when there are long field names		defect	awaiting triage	ckan	11/17/10 11:53:32
+737	Markdown syntax summary page		enhancement	awaiting triage	ckan	10/22/10 16:59:09
+653	Trackback links for packages		requirement	awaiting triage	ckan	09/21/10 09:40:25
+370	Use better email encryption for author_email and maintainer_email		enhancement	awaiting triage	ckan	07/22/10 18:03:39
+369	"""Package Listing Key"" should appear on Tag results"		enhancement	awaiting triage	ckan	07/22/10 18:00:34
+351	Homepage: list new, updated and 'hot' packages		enhancement	awaiting triage	ckan	06/15/10 09:56:56
+331	Timezone of CKAN timestamps should be configurable		enhancement	awaiting triage	ckan	05/31/10 10:40:40
+140	News section on front page		enhancement	awaiting triage	ckan	10/07/09 08:02:21
+1341	Delete spam users from ckan	kindly	enhancement	awaiting triage	ckan	09/14/11 10:10:34
+350	Search engine optimisation		enhancement	awaiting triage	ckan	06/15/10 09:35:41

@@ -1,0 +1,45 @@
+id	summary	owner	type	priority	time	changetime
+1587	QA - Check license as part of 5 star rating	johnglover	enhancement	major	12/21/11 15:10:08	06/11/12 16:48:16
+2208	Export strings from ckan and ckanext-ecportal to combined pot file	seanh	enhancement	minor	03/05/12 15:36:46	06/13/12 14:06:11
+2349	Make sure semantic.datahub.io gets created	ross	enhancement	awaiting triage	05/01/12 13:53:32	06/22/12 09:17:09
+2365	Investigation of multisite	ross	enhancement	awaiting triage	05/01/12 16:31:51	06/21/12 08:22:44
+2366	Remove Authorization Groups	ross	enhancement	awaiting merge	05/01/12 17:16:03	08/30/12 08:45:22
+2379	RDF output, api/sparql	ross	enhancement	awaiting triage	05/11/12 11:32:27	06/18/12 15:23:46
+2414	Remove LXML as a dependency on core CKAN	ross	enhancement	awaiting merge	05/23/12 08:19:52	05/31/12 13:36:14
+2425	Get rid of CKAN's flup dependency	kindly	enhancement	awaiting triage	05/25/12 11:47:01	06/19/12 14:52:41
+2429	Get track to send notifications when tickets get assigned to peopel	seanh	enhancement	major	05/25/12 11:57:23	05/30/12 10:40:47
+2432	Draft new trac methodology	seanh	enhancement	major	05/25/12 12:02:07	05/29/12 20:58:40
+2441	Create demo search page	aron.carroll	enhancement	major	05/28/12 13:02:35	06/14/12 10:35:18
+2442	Create demo dataset overview	aron.carroll	enhancement	major	05/28/12 13:04:09	06/14/12 10:43:32
+2443	Create demo dataset data (resource) page	aron.carroll	enhancement	major	05/28/12 13:06:22	07/09/12 09:04:23
+2444	Create demo dataset related page	aron.carroll	enhancement	major	05/28/12 13:09:19	06/14/12 10:37:12
+2445	Create demo dataset add related page	toby	enhancement	major	05/28/12 13:10:52	06/06/12 11:39:14
+2448	Create demo groups overview page	aron.carroll	enhancement	major	05/28/12 13:16:00	06/14/12 10:27:58
+2449	Create demo group page	aron.carroll	enhancement	major	05/28/12 13:17:40	06/14/12 10:34:01
+2450	Create demo add group form	aron.carroll	enhancement	major	05/28/12 13:18:56	06/14/12 10:49:57
+2455	Create demo register page	aron.carroll	enhancement	major	05/28/12 13:25:41	06/06/12 15:56:54
+2456	Create demo forgot password page	aron.carroll	enhancement	major	05/28/12 13:26:44	06/14/12 10:34:40
+2468	Finish off SlickGrid based Recline view	amercader	enhancement	major	05/28/12 13:56:15	06/15/12 10:58:54
+2474	Trial Jinja 2 as templating system	aron.carroll	enhancement	major	05/29/12 16:02:06	06/06/12 11:39:40
+2481	Move Coding_Standards.rst into Sphinx	seanh	enhancement	awaiting triage	05/31/12 12:31:13	05/31/12 17:18:16
+2491	Demo related page is missing breadcrumb	toby	enhancement	major	06/06/12 10:13:54	06/06/12 10:46:54
+2492	Demo create related form has broken error output	toby	enhancement	major	06/06/12 10:17:54	06/06/12 11:37:58
+2502	Create Jinja block for common helpers	toby	enhancement	minor	06/07/12 16:02:16	06/12/12 09:54:13
+2503	Look into allowing theme extensions to extend base templates	toby	enhancement	minor	06/07/12 16:04:56	06/13/12 09:44:35
+2504	Remove all Genshi templates from demo theme	aron.carroll	enhancement	major	06/08/12 11:56:17	06/11/12 10:16:16
+2505	Docs improvements for 1.7.1	amercader	enhancement	major	06/08/12 14:42:13	06/18/12 11:26:10
+2506	Pull latest translations from Transifex into CKAN 1.7.1	seanh	enhancement	major	06/08/12 17:19:17	06/13/12 14:05:52
+2507	Search button on dataset search page wraps onto next line	seanh	enhancement	minor	06/11/12 10:10:32	06/13/12 14:06:39
+2510	Demo tag lists should link to the search page	aron.carroll	enhancement	major	06/12/12 15:00:17	06/14/12 10:42:00
+2512	Bad link on demo site.	toby	enhancement	trivial	06/12/12 16:29:57	06/13/12 08:40:09
+2568	Crop/shorten titles in breadcrumb headings	aron.carroll	enhancement	minor	06/18/12 17:12:14	06/19/12 12:15:32
+2570	add 'back to dataset' button to resource pages	aron.carroll	enhancement	minor	06/18/12 17:14:40	06/19/12 12:10:41
+2293	Rename of Group results in disappearance of associated datasets from group page	ross	defect	awaiting merge	04/14/12 19:34:38	06/21/12 08:23:02
+2490	Dataset term translation isn't working on user pages, ckanext/multilingual test failing	seanh	defect	awaiting triage	06/04/12 15:09:37	06/04/12 15:34:07
+2509	UI style broken on organization read page	johnglover	defect	major	06/11/12 11:11:24	06/11/12 13:04:27
+2521	synchronous_search plugin missing from deployment.ini_tmpl	seanh	defect	awaiting triage	06/13/12 13:49:21	06/13/12 13:51:09
+2494	Demo site has server error for a 404	toby	enhancement	minor	06/06/12 13:21:53	06/06/12 15:01:30
+2391	Fix cz.ckan.org theme and customisations	seanh	task	awaiting triage	05/16/12 08:55:53	05/30/12 17:13:02
+2527	Implement a method of loading templates into the demo site	aron.carroll	enhancement	major	06/14/12 14:08:04	06/19/12 14:28:50
+2476	Check that translating lists of strings is being tested in multilingual tests	seanh	defect	awaiting triage	05/30/12 11:41:18	06/08/12 10:29:56
+2488	Group update via API fails validation with organization and publisher profile enabled	johnglover	defect	major	06/04/12 10:39:34	06/11/12 11:02:18

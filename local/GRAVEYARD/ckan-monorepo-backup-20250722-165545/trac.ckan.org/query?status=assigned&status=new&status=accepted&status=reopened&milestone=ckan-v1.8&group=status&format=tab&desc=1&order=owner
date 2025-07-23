@@ -1,0 +1,16 @@
+id	summary	owner	type	priority	component	time
+2761	Document all the errors you can get when setting up filestore, and how to fix them		enhancement	awaiting triage	ckan	07/26/12 11:36:06
+2762	test_related.py crashes		defect	awaiting triage	ckan	07/26/12 11:55:53
+2919	Remove IController from docs		defect	awaiting triage	ckan	09/12/12 14:47:33
+2936	Updating a group via the API clears its packages		defect	awaiting triage	ckan	09/19/12 09:47:46
+2958	Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8		defect	awaiting triage	ckan	10/04/12 09:29:36
+2963	Timeout on tag pages with lots of datasets		defect	major	ckan	10/15/12 10:13:19
+2965	Stats extension broken on 1.8		defect	awaiting triage	ckan	10/15/12 10:15:41
+3002	API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string		defect	minor	ckan	10/19/12 09:32:22
+3003	New pg databases should be created with UTF8 encoding rather than system default		enhancement	awaiting triage	ckan	10/19/12 09:33:19
+2363	Documentation of best caching practice.	toby	enhancement	major	ckan	05/01/12 16:16:57
+2433	API uses name not id for some version 3 calls	toby	defect	minor	ckan	05/25/12 14:54:08
+2499	Documentation for the internal analytics	toby	enhancement	awaiting triage	ckan	06/07/12 11:58:17
+2771	Documentation and examples for IDatasetForm and IGroupForm	seanh	enhancement	awaiting triage	ckan	07/27/12 12:30:38
+2279	Write tutorial for our DataStore API / Data Explorer	rgrp	enhancement	major	ckan	04/03/12 19:44:23
+2859	Fix the build	icmurray	defect	blocker	ckan	08/16/12 09:26:57

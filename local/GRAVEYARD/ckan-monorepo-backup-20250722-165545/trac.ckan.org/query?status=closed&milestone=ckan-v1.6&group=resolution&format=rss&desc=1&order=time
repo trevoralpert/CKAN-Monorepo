@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.6&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.6&amp;group=resolution&amp;desc=1&amp;order=time</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1637</link>
+        <guid isPermaLink="false">http://localhost/ticket/1637</guid>
+        <title>#1637: API call for getting the list of activity detail items for a given activty stream item</title>
+        <pubDate>Wed, 11 Jan 2012 18:00:17 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+(and add test cases for it)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1637#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1602</link>
+        <guid isPermaLink="false">http://localhost/ticket/1602</guid>
+        <title>#1602: [super] Data Previewer / Viewer v2</title>
+        <pubDate>Fri, 30 Dec 2011 17:52:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+We already have first pass of Data Preview that was done as part of &lt;a class="closed ticket" href="http://localhost/ticket/1357" title="enhancement: Integrate new version of data preview (closed: fixed)"&gt;#1357&lt;/a&gt;. This is about v2 of this. Two main components:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;A new version of the separate Data Explorer library (now called Recline Data Explorer) - &lt;a class="closed ticket" href="http://localhost/ticket/1446" title="enhancement: Data Explorer v2 (closed: fixed)"&gt;#1446&lt;/a&gt; &lt;strong&gt;Est: 10-15d&lt;/strong&gt;
+&lt;ul&gt;&lt;li&gt;Why:
+&lt;ul&gt;&lt;li&gt;Cleaner, backbone based solution.
+&lt;/li&gt;&lt;li&gt;Provides editing support if wanted.
+&lt;/li&gt;&lt;li&gt;Collaboration with Max Ogden
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Integrate this into CKAN (into resource view page) - see &lt;a class="closed ticket" href="http://localhost/ticket/1630" title="enhancement: Integrate Data Explorer v2 into Data Viewer (closed: fixed)"&gt;#1630&lt;/a&gt; &lt;strong&gt;Est: 1d&lt;/strong&gt;
+&lt;/li&gt;&lt;li&gt;Improvements to Data Viewer / Previewer system in CKAN itself - &lt;strong&gt;Est: 2-3d&lt;/strong&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;(Update Data Preview-er (View-er) to support images ...)&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(WONTFIX here - (?) Update Data Preview-er to support geodata - &lt;a class="closed ticket" href="http://localhost/ticket/1151" title="enhancement: Preview for geographic data should be a map (closed: wontfix)"&gt;#1151&lt;/a&gt;)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1602#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1508</link>
+        <guid isPermaLink="false">http://localhost/ticket/1508</guid>
+        <title>#1508: [super] Finalize and deploy some of our major (new) features as of Dec 2011</title>
+        <pubDate>Mon, 05 Dec 2011 12:40:17 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This ticket is about finalizing, then deploying (to &lt;a class="ext-link" href="http://thedatahub.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/&lt;/a&gt;), and finally announcing some of recent major new features such as:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Deploy wordpresser extension for thedatahub (so we can start blogging) - &lt;a class="closed ticket" href="http://localhost/ticket/1533" title="defect: Make sure ckanext-wordpresser works on CKAN 1.5.1 (closed: wontfix)"&gt;#1533&lt;/a&gt; - WONTFIX
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(Deploy new Resource and Dataset pages (invite comments))&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;Get thedatahub geo-ified i.e. ckanext-spatial - &lt;a class="closed ticket" href="http://localhost/ticket/1601" title="enhancement: [super] Well integrated Geo-spatial support including search (closed: fixed)"&gt;#1601&lt;/a&gt; (?)
+&lt;ul&gt;&lt;li&gt;Any additional dev that needs to be done? (e.g. geo in search ...?)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;(Deploy / re-enable ckanext-googleanalytics on thedatahub - &lt;a class="closed ticket" href="http://localhost/ticket/1451" title="enhancement: Reintegrate download stats on dataset and resource view page - 0.5d (closed: fixed)"&gt;#1451&lt;/a&gt; (more stuff &lt;a class="closed ticket" href="http://localhost/ticket/1566" title="enhancement: [super] Finalize Google analytics extension (closed: fixed)"&gt;#1566&lt;/a&gt;))&lt;/del&gt;
+&lt;ul&gt;&lt;li&gt;Rename the extension to ckanext-analytics?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Custom forms (and use of 'dataset types') - Ticket (??)
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;(Get QA deployed and running - &lt;a class="closed ticket" href="http://localhost/ticket/1582" title="enhancement: Deploy QA for thedatahub - 0.5d (closed: fixed)"&gt;#1582&lt;/a&gt;)&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+It would be best if this was done by someone *unfamiliar* with the extensions so feedback could be provided on quality of install docs etc etc.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1508#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1477</link>
+        <guid isPermaLink="false">http://localhost/ticket/1477</guid>
+        <title>#1477: [Super] Group refactor</title>
+        <pubDate>Tue, 22 Nov 2011 10:55:20 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This is the implementation of the final draft in
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://wiki.ckan.org/Groups_Refactor"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Groups_Refactor&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Steps to complete this will follow (somewhat) in the following order.
+&lt;/p&gt;
+&lt;p&gt;
+Change package_group table to membership. (&lt;a class="closed ticket" href="http://localhost/ticket/1478" title="enhancement: change package_group to members table (closed: fixed)"&gt;#1478&lt;/a&gt;) 3d
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;model migration. (done)
+&lt;/li&gt;&lt;li&gt;simplify revisioning  (done)
+&lt;/li&gt;&lt;li&gt;Remove any sqlalchemy releations from groups. (done)
+&lt;/li&gt;&lt;li&gt;change logic functions (done)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Single type per group (&lt;a class="closed ticket" href="http://localhost/ticket/1531" title="enhancement: Update group create/update so you can add capacities and group types. (closed: fixed)"&gt;#1531&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;migration add type to group table. (done) 1d
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Add capacity table (&lt;a class="closed ticket" href="http://localhost/ticket/1522" title="enhancement: Add capacity to member table. (closed: fixed)"&gt;#1522&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;model migration. (done)
+&lt;/li&gt;&lt;li&gt;add to logic functions.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Allow other objects to be added to groups. (&lt;a class="closed ticket" href="http://localhost/ticket/1531" title="enhancement: Update group create/update so you can add capacities and group types. (closed: fixed)"&gt;#1531&lt;/a&gt;)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;change logic functions (done)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Adapt thedatahub.org to use new model.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;move auth groups over to groups/members
+&lt;/li&gt;&lt;li&gt;change user_object roles to use groups? keep user object roles for time being.
+&lt;/li&gt;&lt;li&gt;make create update package/group put the correct items in the group/members/capacity tables.
+&lt;/li&gt;&lt;li&gt;work out how ui works.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+--not doing the below as part of this super ticker now &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Create model for dgu.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;adapt auth functions to use auth.
+&lt;/li&gt;&lt;li&gt;adapt package_create/update group_create/update to fill in the correct capacties/members.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Adapt Iati, and potentially other custom instances.
+&lt;/p&gt;
+&lt;p&gt;
+Sub-tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1279" title="enhancement: Refactor or deprecate Authorization Groups (closed: duplicate)"&gt;#1279&lt;/a&gt; Deprecate Authorization Groups
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1198" title="enhancement: Publisher hierarchy (new)"&gt;#1198&lt;/a&gt; Publisher hierarchy
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1477#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1402</link>
+        <guid isPermaLink="false">http://localhost/ticket/1402</guid>
+        <title>#1402: Migrate repository from mercurial to git</title>
+        <pubDate>Mon, 17 Oct 2011 00:34:11 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Plan to migrate from mercurial git
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Convert from mercurial to git
+&lt;ul&gt;&lt;li&gt;Map named branches to normal branches
+&lt;/li&gt;&lt;li&gt;Also, if possible map usernames for RP: rgrp &amp;lt;&lt;a class="ext-link" href="http://rufuspollock.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://rufuspollock.org/&lt;/a&gt;&amp;gt; (mercurial) -&amp;gt; rgrp &amp;lt;rufus.pollock@…&amp;gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Place at &lt;a class="ext-link" href="http://github.com/okfn/ckan"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://github.com/okfn/ckan&lt;/a&gt; (can delete current repo there as an out of date mirror)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Process:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Do trial run
+&lt;/li&gt;&lt;li&gt;Announce conversion date / time
+&lt;/li&gt;&lt;li&gt;Require everyone to have pushed &lt;strong&gt;all&lt;/strong&gt; outstanding changes at that time
+&lt;/li&gt;&lt;li&gt;Do conversion
+&lt;/li&gt;&lt;li&gt;Test
+&lt;/li&gt;&lt;li&gt;Announce on list and ckan.org/
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1402#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1065</link>
+        <guid isPermaLink="false">http://localhost/ticket/1065</guid>
+        <title>#1065: [super] Change Authorization System</title>
+        <pubDate>Wed, 30 Mar 2011 18:05:31 GMT</pubDate>
+        
+        <dc:creator>johnlawrenceaspden</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1198" title="enhancement: Publisher hierarchy (new)"&gt;#1198&lt;/a&gt; Publisher hierarchy
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1050" title="enhancement: Authz lib improvement and refactor of ckan/lib/authztool.py (closed: invalid)"&gt;#1050&lt;/a&gt; Authz lib improvement and refactor of ckan/lib/authztool.py
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1004" title="defect: Group creation instructions missing (closed: fixed)"&gt;#1004&lt;/a&gt; Group creation instructions missing
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1099" title="defect: strange interactions between two browsers while playing with authz groups (closed: wontfix)"&gt;#1099&lt;/a&gt; Strange interactions between two browsers while playing with authz groups
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1115" title="defect: can have two authzgroups with the same name (closed: wontfix)"&gt;#1115&lt;/a&gt; can have two authzgroups with the same name
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1133" title="defect: command line rights manipulation doesn't work (closed: worksforme)"&gt;#1133&lt;/a&gt; command line rights manipulation doesn't work
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1138" title="enhancement: minor navigations behave inconsistently (closed: invalid)"&gt;#1138&lt;/a&gt; minor navigations behave inconsistently
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Old ticket description:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Change name of &lt;a class="missing wiki"&gt;AuthzGroup?&lt;/a&gt; to &lt;a class="missing wiki"&gt;UserGroup?&lt;/a&gt; to reflect what it is for
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Get rid of Roles, and replace them with direct assignment of actions, even though there are many actions, and extensions can add arbitrary ones.
+&lt;ul&gt;&lt;li&gt;Debatable whether we should cut the number of actions to correspond to the three roles defined by the base system.
+&lt;/li&gt;&lt;li&gt;Have a method of finding roles (or, in future, actions) relevant to a given protection object (e.g. FILE-UPLOAD(ER) not relevant to Packages)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Change &lt;a class="missing wiki"&gt;UserGroups?&lt;/a&gt; so that they can have a hierarchical structure,
+&lt;/li&gt;&lt;/ol&gt;&lt;h2 id="MoreinfoonHierarchychange"&gt;More info on Hierarchy change&lt;/h2&gt;
+&lt;p&gt;
+e.g. &lt;a class="missing wiki"&gt;UserGroup?&lt;/a&gt; NHS contains the User nhsysadmin, as well as the
+&lt;a class="missing wiki"&gt;UserGroups?&lt;/a&gt; SURREY and BERKS, which themselves contain users.
+&lt;/p&gt;
+&lt;p&gt;
+One user in SURREY is Simon the Sysadmin, who has permissions on the whole system. His permissions should not leak out to other users or groups, and user permissions generally should not.
+&lt;/p&gt;
+&lt;p&gt;
+Each Group has permissions over various objects.
+&lt;/p&gt;
+&lt;p&gt;
+A user has permissions in his own right, and also has the permissions of his own group, and of all the groups contained in his group, and so on recursively.
+&lt;/p&gt;
+&lt;p&gt;
+Algorithm:
+&lt;/p&gt;
+&lt;p&gt;
+possible(user, action, package):
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+if user has permission for action on package
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+or any of have that permission
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+or any of his groups group-children (but not user-children), and so on recursively have the permission.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1065#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1032</link>
+        <guid isPermaLink="false">http://localhost/ticket/1032</guid>
+        <title>#1032: [super] Resources in WUI</title>
+        <pubDate>Thu, 10 Mar 2011 18:33:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add resources into Web User Interface.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Locate at: /dataset/{dataset}/resource/{id}
+&lt;/li&gt;&lt;li&gt;CRUD
+&lt;/li&gt;&lt;li&gt;Authorization
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Done:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;&lt;a class="closed ticket" href="http://localhost/ticket/945" title="enhancement: [super] Richer resources - Resource Groups, new fields, improved UI (closed: fixed)"&gt;#945&lt;/a&gt; - Richer resources - Resource Groups, new fields, improved UI&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1445" title="enhancement: Resource View page in WUI (closed: fixed)"&gt;#1445&lt;/a&gt; - Resource View page in WUI&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1450" title="enhancement: Simplify dataset view page (closed: fixed)"&gt;#1450&lt;/a&gt; - Dataset view pages to match&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Moved to superticket &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/978" title="enhancement: Edit Resource including Extras in Web UI (closed: fixed)"&gt;#978&lt;/a&gt; - Edit Resource Extras in Web UI
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1032#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/945</link>
+        <guid isPermaLink="false">http://localhost/ticket/945</guid>
+        <title>#945: [super] Richer resources - Resource Groups, new fields, improved UI</title>
+        <pubDate>Mon, 31 Jan 2011 12:01:23 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1032" title="enhancement: [super] Resources in WUI (closed: fixed)"&gt;#1032&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This is a meta ticket for changes that are going to happen in resources.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;New resource group table.  &lt;a class="closed ticket" href="http://localhost/ticket/956" title="enhancement: Add a resource group table. (closed: fixed)"&gt;#956&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;New kind field in resource.  &lt;a class="closed ticket" href="http://localhost/ticket/957" title="enhancement: new &amp;#34;kind &amp;#34; field added to resources (closed: wontfix)"&gt;#957&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;UI for new kind field. &lt;a class="closed ticket" href="http://localhost/ticket/958" title="enhancement: ui for new kind field (closed: duplicate)"&gt;#958&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Resources in REST API &lt;a class="closed ticket" href="http://localhost/ticket/358" title="enhancement: Resources in REST API (closed: duplicate)"&gt;ticket:358&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Resources in WUI &lt;a class="closed ticket" href="http://localhost/ticket/1445" title="enhancement: Resource View page in WUI (closed: fixed)"&gt;#1445&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Make Resources first class entity. &lt;a class="closed ticket" href="http://localhost/ticket/922" title="enhancement: Make Resources first class entity. (closed: duplicate)"&gt;#922&lt;/a&gt; (duplicate?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Background on this change can be found at:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://ckan.okfnpad.org/resources"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/resources&lt;/a&gt; - discussion etherpad
+&lt;ul&gt;&lt;li&gt;Contains commented version of James Gardner's main email: &lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-February/000887.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-February/000887.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="wiki" href="http://localhost/wiki/UseCasesResources"&gt;UseCasesResources&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/945#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/890</link>
+        <guid isPermaLink="false">http://localhost/ticket/890</guid>
+        <title>#890: Introduce timed actions into ckanext-queue</title>
+        <pubDate>Mon, 03 Jan 2011 10:32:49 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+The ckan queuing system should provide the option to subscribe to timed re-submissions of specific resources. This could look as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;routing_key: Package
+&lt;/li&gt;&lt;li&gt;operation: daily
+&lt;/li&gt;&lt;li&gt;payload: pkg.as_dict()
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Where operation is one of daily, weekly, monthly or any other interval.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/890#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1743</link>
+        <guid isPermaLink="false">http://localhost/ticket/1743</guid>
+        <title>#1743: Activity streams still link to deleted things</title>
+        <pubDate>Thu, 02 Feb 2012 19:46:56 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+For example, after deleting a dataset old activity stream events will still hyperlink to that dataset.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1743#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1464</link>
+        <guid isPermaLink="false">http://localhost/ticket/1464</guid>
+        <title>#1464: Replace RabbitMQ with Celeryd to support running multiple instances</title>
+        <pubDate>Tue, 15 Nov 2011 16:48:29 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+The current harvesting implementation can only have one instance per server.
+&lt;/p&gt;
+&lt;p&gt;
+We could either:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Accept this
+&lt;/li&gt;&lt;li&gt;Change the RabbitMQ code to support multiple instances
+&lt;/li&gt;&lt;li&gt;Switch the entire harvesting to use Celery
+&lt;/li&gt;&lt;li&gt;Wait for James's redis based live feedback based system
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1464#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1435</link>
+        <guid isPermaLink="false">http://localhost/ticket/1435</guid>
+        <title>#1435: Switch to continuous.io for buildbot (?)</title>
+        <pubDate>Tue, 01 Nov 2011 11:10:31 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1435#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1682</link>
+        <guid isPermaLink="false">http://localhost/ticket/1682</guid>
+        <title>#1682: [super] Translatability for EC</title>
+        <pubDate>Wed, 18 Jan 2012 18:38:19 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We need to be able to translate:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;EC extension (templates, form)
+&lt;ul&gt;&lt;li&gt;Currently the pot file is just for CKAN core. New pot file for CKAN core and this extension? Or separate ones for extensions?
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Field values in taxonomy (e.g. country names - Eurovoc)
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1665" title="task: Begin doing research into eurovoc (closed: fixed)"&gt;#1665&lt;/a&gt; Research into Eurovoc
+&lt;/li&gt;&lt;li&gt;Display Taxonomy in different languages
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Field values not in taxonomy (e.g. title &amp;amp; description)
+&lt;ul&gt;&lt;li&gt;Use extra fields e.g. _i18n_title_fr = Le data.
+&lt;/li&gt;&lt;li&gt;(If lots of fields would need translating then would consider having a new package for each language, linked together with &lt;a class="missing wiki"&gt;PackageRelationships?&lt;/a&gt;. But I think it is just title and description (resource description etc. are so minor, not worth translating?), so using extra field better.)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Timescale to complete this - &lt;a class="missing wiki"&gt;Mar/Apr?&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Related work to interface with:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Eurovoc - Sean
+&lt;/li&gt;&lt;li&gt;i18n in search index - Adria
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1682#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1677</link>
+        <guid isPermaLink="false">http://localhost/ticket/1677</guid>
+        <title>#1677: Make synchronous search the default behaviour</title>
+        <pubDate>Tue, 17 Jan 2012 13:40:04 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now you need to explicitly load the synchronous_search plugin in your ini file, when this is probably the behaviour that all users expect by default.
+We could keep a config flag to deactivate it, but synchronous search should be the default behaviour.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1677#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1514</link>
+        <guid isPermaLink="false">http://localhost/ticket/1514</guid>
+        <title>#1514: Modifying user name loses connection with revisions</title>
+        <pubDate>Mon, 05 Dec 2011 15:57:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If you edit your user name, the number of revisions you made returns to 0. This is because in the Revision object, the user's name is stored, rather than the user's ID.
+&lt;/p&gt;
+&lt;p&gt;
+rgrp:  We can reconnect that pretty easily (and have a
+longer term solution that involves not using the usernames but the
+userids in in the Revision objects so we don't hvae this problem in
+future!)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1514#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1327</link>
+        <guid isPermaLink="false">http://localhost/ticket/1327</guid>
+        <title>#1327: [super] Dataset Archiving</title>
+        <pubDate>Mon, 12 Sep 2011 09:58:10 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Split out of &lt;a class="closed ticket" href="http://localhost/ticket/852" title="enhancement: [super] Dataset upload and archiving (closed: fixed)"&gt;#852&lt;/a&gt;. Automated archiving of datasets (related to QA).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt; Automated archiving using worker process &lt;/strong&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/890" title="enhancement: Introduce timed actions into ckanext-queue (closed: invalid)"&gt;#890&lt;/a&gt; - Timed actions in ckanext-queue
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/891" title="task: Resource download worker daemon (closed: fixed)"&gt;#891&lt;/a&gt; - Resource download worker daemon
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/892" title="enhancement: Make stored data available in WUI - 0.5d (closed: fixed)"&gt;#892&lt;/a&gt; - Make stored data available in WUI
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1327#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1615</link>
+        <guid isPermaLink="false">http://localhost/ticket/1615</guid>
+        <title>#1615: CKAN Should work behind a proxy server</title>
+        <pubDate>Wed, 04 Jan 2012 14:37:21 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+This would allow deployment via Nginx or Apache using proxy to Paster, uWSGI. At the moment CKAN isn't aware of the proxy's IP address so when you perform an action which does a redirect (such as adding a package), CKAN redirects you to the *internal IP* not the external *proxy IP*.
+&lt;/p&gt;
+&lt;p&gt;
+We would like this work to facilitate testing within VMs as part of our new build infrastructure.
+&lt;/p&gt;
+&lt;p&gt;
+It would also be nice if CKAN worked when mounted at a path other than /. That could be dealt with in another ticket because it isn't a problem at the moment.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1615#changelog</comments>
+    </item>
+ </channel>
+</rss>

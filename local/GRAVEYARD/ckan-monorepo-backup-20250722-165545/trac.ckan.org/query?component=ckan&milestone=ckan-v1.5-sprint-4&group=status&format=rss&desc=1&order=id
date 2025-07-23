@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.5-sprint-4&amp;group=status&amp;desc=1&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-v1.5-sprint-4&amp;group=status&amp;desc=1&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1210</link>
+        <guid isPermaLink="false">http://localhost/ticket/1210</guid>
+        <title>#1210: POST application/json error handling with newer WebOb</title>
+        <pubDate>Wed, 06 Jul 2011 10:50:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="missing wiki"&gt;WebOb?&lt;/a&gt; from v1.0.7 has some interesting new behaviour with reading request data for different Content-Types:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It seems that looking at request.body mangles request.POST. See fix in ckan cset:e83bad9caa1b (problem with &lt;a class="missing wiki"&gt;WebOb?&lt;/a&gt; v1.0.7 but may go back to v1.0.4?)
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;A particular request caused an &lt;a class="missing wiki"&gt;AssertionError?&lt;/a&gt; during looking at request.body, so we need to enclose this in a try/except. I couldn't recreate it in a test unfortunately (problem with &lt;a class="missing wiki"&gt;WebOb?&lt;/a&gt; v1.0.7 but may go back to v1.0.2?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Example:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.api:206 in create
+&amp;lt;&amp;lt;          log.debug('create: %s' % (context))
+               try:
+                   request_data = self._get_request_data()
+               except ValueError, inst:
+                   response.status_int = 400
+&amp;gt;&amp;gt;  request_data = self._get_request_data()
+Module ckan.lib.base:149 in _get_request_data
+&amp;lt;&amp;lt;          cls.log.debug('Retrieving request params: %r' % request.params)
+               cls.log.debug('Retrieving request POST: %r' % request.POST)
+               cls.log.debug('Retrieving request POST body: %r' % request.body)
+               if request.POST:
+                   try:
+&amp;gt;&amp;gt;  cls.log.debug('Retrieving request POST body: %r' % request.body)
+Module paste.registry:137 in __getattr__
+&amp;lt;&amp;lt;
+           def __getattr__(self, attr):
+               return getattr(self._current_obj(), attr)
+           def __setattr__(self, attr, value):
+&amp;gt;&amp;gt;  return getattr(self._current_obj(), attr)
+Module webob.request:470 in _body__get
+&amp;lt;&amp;lt;          Return the content of the request body.
+               """
+               self.make_body_seekable() # we need this to have content_length
+               r = self.body_file.read(self.content_length)
+               self.body_file.seek(0)
+&amp;gt;&amp;gt;  self.make_body_seekable() # we need this to have content_length
+Module webob.request:697 in make_body_seekable
+&amp;lt;&amp;lt;              self.body_file_raw.seek(0)
+               else:
+                   self.copy_body()
+&amp;gt;&amp;gt;  self.copy_body()
+Module webob.request:714 in copy_body
+&amp;lt;&amp;lt;                  self.body = self.body_file_raw.read(length)
+               elif self.is_body_readable:
+                   self.body = self.body_file_raw.read()
+                   self._copy_body_tempfile()
+               else:
+&amp;gt;&amp;gt;  self.body = self.body_file_raw.read()
+Module webob.request:1190 in read
+&amp;lt;&amp;lt;      def read(self, size=-1):
+               body = self._get_body()
+               if size &amp;lt; 0:
+                   v = body[self.position:]
+&amp;gt;&amp;gt;  body = self._get_body()
+Module webob.request:1207 in _get_body
+&amp;lt;&amp;lt;                  self._body = _encode_multipart(self.vars, self.content_type)
+                   else:
+                       assert 0, ('Bad content type: %r' % self.content_type)
+               return self._body
+&amp;gt;&amp;gt;  assert 0, ('Bad content type: %r' % self.content_type)
+AssertionError: Bad content type: '; charset=utf-8'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1210#changelog</comments>
+    </item>
+ </channel>
+</rss>

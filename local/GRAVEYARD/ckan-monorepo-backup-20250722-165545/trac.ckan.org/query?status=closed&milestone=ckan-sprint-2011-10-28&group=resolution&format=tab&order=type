@@ -1,0 +1,50 @@
+id	summary	owner	type	priority	component	time
+318	Insufficient validation of resource URIs	johnglover	defect	major	ckan	05/19/10 20:58:43
+1150	Non-ASCII chars prevent data preview	johnglover	defect	awaiting triage	ckan	05/21/11 23:18:34
+1172	Remove all try: except: blocks that don't re-raise the original exception	dread	defect	major	ckan	06/01/11 11:00:49
+1176	unicode_body exception	thejimmyg	defect	trivial	ckan	06/06/11 09:12:42
+1183	"Downloads ""Preview"" button doesn't preview."	johnglover	defect	awaiting triage	ckan	06/10/11 10:27:49
+1195	Storage extension to handle incorrect routes better	rgrp	defect	minor	ckan	06/20/11 13:32:49
+1221	Password reset tidy up	dread	defect	minor	ckan	07/12/11 13:01:01
+1222	Mailer has no tests	dread	defect	major	ckan	07/12/11 13:58:56
+1239	Remove and re-add tag on package not working	rgrp	defect	critical	ckan	07/23/11 17:10:20
+1246	Search results on ckan.net are mistakenly all 'open'	pudo	defect	critical	ckan	07/28/11 14:29:13
+1256	fix modification extension for moderation	kindly	defect	awaiting triage	ckan	08/02/11 10:13:46
+1265	user/edit error conditions cause exceptions	dread	defect	minor	ckan	08/05/11 17:36:28
+1266	Timestamps without microseconds causing exception	dread	defect	critical	ckan	08/08/11 09:13:51
+1270	Default site www.ckan.net is a redirect and loses POSTs	dread	defect	minor	ckan	08/09/11 17:44:07
+1281	Locale change flash message in wrong language	pudo	defect	minor	ckan	08/22/11 14:00:56
+1318	'Register user' doesn't log you in	dread	defect	blocker	ckan	09/07/11 17:16:23
+1329	i18n poor in some templates - missing i18n tags	dread	defect	major	ckan	09/12/11 10:44:48
+1334	"""AttributeError: 'NoneType' object has no attribute 'name'"" exception when logging in"	amercader	defect	major	ckan	09/13/11 10:25:08
+1337	Group extras are JSON endoded in the REST API responses	amercader	defect	minor	ckan	09/13/11 14:38:47
+1338	Exception when trying to use a custom form schema from an extension	amercader	defect	major	ckan	09/13/11 14:46:57
+1340	Editing non-existent group causes Exception	dread	defect	minor	ckan	09/14/11 09:09:34
+1346	'get_authorization_group_dict not found' exception	dread	defect	minor	ckan	09/15/11 10:19:34
+1347	Exception caused by New Group form POST with bad formed parameter	dread	defect	minor	ckan	09/15/11 13:47:46
+1421	Tag cloud recipe broken	dread	defect	minor	ckan	10/26/11 14:16:15
+78	Extend login cookie lifetime	rgrp	enhancement	trivial	ckan	07/17/09 11:15:10
+816	Autocomplete for the resource format field	johnglover	enhancement	minor	ckan	11/17/10 12:22:54
+888	Improvements to the dataproxy and the data API	johnglover	enhancement	major	ckan	12/29/10 19:09:43
+1154	Make ckan robust against solr failure	johnglover	enhancement	major	ckan	05/24/11 16:27:52
+1208	Webstore: a datastore with web API	rgrp	enhancement	major	ckan	07/04/11 18:34:20
+1218	Colour the History tab icon	dread	enhancement	minor	ckan	07/11/11 09:16:08
+1225	Tool for mass tag changes	dread	enhancement	minor	ckan	07/14/11 11:16:01
+1228	Display OpenID login errors	dread	enhancement	minor	ckan	07/19/11 14:42:42
+1230	Make sure plugins tables work in tests.		enhancement	awaiting triage	ckan	07/19/11 18:40:11
+1234	Setting locale error conditions handled badly	dread	enhancement	minor	ckan	07/20/11 16:37:51
+1253	Authz refactor	amercader	enhancement	major	ckan	08/01/11 11:51:31
+1258	Bring purge revision into ckan repo from vdm	kindly	enhancement	awaiting triage	ckan	08/02/11 12:52:19
+1271	CORS support	rgrp	enhancement	major	ckan	08/13/11 13:23:59
+1274	Testing solr search	johnglover	enhancement	major	ckan	08/15/11 13:00:02
+1323	GET /authorizationgroup causes Exception when logged in	dread	enhancement	critical	ckan	09/08/11 09:54:45
+1333	Move form converters to ckan core	amercader	enhancement	minor	ckan	09/13/11 10:21:08
+1427	Tags validation needs to limit length to 100 characters	dread	enhancement	trivial	ckan	10/27/11 09:44:58
+1128	Upload Scotland gov data	dread	task	major	ckan	05/06/11 20:04:53
+1192	Convert CKAN Sphinx docs into admin/reference manual	annapowellsmith	task	major	ckan	06/17/11 15:29:53
+1247	Put docs on ReadTheDocs	rgrp	task	minor	ckan	07/29/11 12:19:08
+1254	Feature sheet	dread	task	major	ckan	08/01/11 15:18:45
+1238	Viewing a package @date misses non-PackageRevisions	kindly	defect	major	ckan	07/22/11 16:15:03
+1426	Validation errors cause 409 not 400 response	dread	defect	minor	ckan	10/27/11 09:43:39
+1312	Particular characters in JSON cause exception creating package on API	dread	enhancement	minor	ckan	09/06/11 14:21:03
+1418	If default language is not 'en' then you can't switch language to 'en'	dread	defect	major	ckan	10/25/11 10:39:06

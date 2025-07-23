@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.2&amp;group=resolution&amp;order=changetime</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-v1.2&amp;group=resolution&amp;order=changetime</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/408</link>
+        <guid isPermaLink="false">http://localhost/ticket/408</guid>
+        <title>#408: Integrate CMS via proxying</title>
+        <pubDate>Mon, 09 Aug 2010 10:09:41 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;As sysadmin/user of CKAN I want to integrate a CMS to support easy addition of additional content ...
+&lt;/li&gt;&lt;li&gt;I want to integrate with navigation
+&lt;/li&gt;&lt;li&gt;As a minimum I want to be able to add content pages (more stuff would be e.g. comments, sidebars, main menu ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Why: CMS are great at creating content and have very good editors and theme support ...
+&lt;/p&gt;
+&lt;h3 id="Previouswork"&gt;Previous work&lt;/h3&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://groups.google.com/group/pylons-discuss/browse_thread/thread/f8969e28b0a007c7"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://groups.google.com/group/pylons-discuss/browse_thread/thread/f8969e28b0a007c7&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;deliverance: retheming on the fly
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://knowledgeforge.net/shakespeare/hg/file/677eef9402e6/shakespeare/controllers/template.py"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://knowledgeforge.net/shakespeare/hg/file/677eef9402e6/shakespeare/controllers/template.py&lt;/a&gt;
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Rewrite urls for proxying
+&lt;/li&gt;&lt;li&gt;You need a theme to substitute into
+&lt;/li&gt;&lt;li&gt;pylons
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Extreme version:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;2 sources -&amp;gt; pylons/ckan app, cms
+&lt;/li&gt;&lt;li&gt;1 theme source: ckan or cms
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+1 frontend/proxy app which re-themes everything
+&lt;/p&gt;
+&lt;p&gt;
+Owned by CKAN:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;package/
+&lt;/li&gt;&lt;li&gt;tag/
+&lt;/li&gt;&lt;li&gt;group/
+&lt;/li&gt;&lt;li&gt;api/
+&lt;/li&gt;&lt;li&gt;/
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Everything else proxied.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/408#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/652</link>
+        <guid isPermaLink="false">http://localhost/ticket/652</guid>
+        <title>#652: Allow for addition and removal of groups on package/edit</title>
+        <pubDate>Mon, 20 Sep 2010 15:55:34 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Much more natural place to do this, even at the risk of overloading the package edit form.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/652#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/429</link>
+        <guid isPermaLink="false">http://localhost/ticket/429</guid>
+        <title>#429: ONS data is imported daily to DGU</title>
+        <pubDate>Fri, 13 Aug 2010 12:41:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/429#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/428</link>
+        <guid isPermaLink="false">http://localhost/ticket/428</guid>
+        <title>#428: Daily dump of DGU CKAN available</title>
+        <pubDate>Fri, 13 Aug 2010 12:40:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+End users want to get hold of a JSON &amp;amp; CSV dump of the DGU data.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/428#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/693</link>
+        <guid isPermaLink="false">http://localhost/ticket/693</guid>
+        <title>#693: Support ETag in cache decorator</title>
+        <pubDate>Mon, 11 Oct 2010 21:04:11 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+... and make cache-control header optional
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/693#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/411</link>
+        <guid isPermaLink="false">http://localhost/ticket/411</guid>
+        <title>#411: Deploy and test Varnish on eu3</title>
+        <pubDate>Mon, 09 Aug 2010 10:21:15 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Need to figure out cache invalidation for CKAN
+&lt;/li&gt;&lt;li&gt;Evaluate against an internal cache (i.e. memcached)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/411#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/575</link>
+        <guid isPermaLink="false">http://localhost/ticket/575</guid>
+        <title>#575: The system shall notify remote metadata harvesting errors</title>
+        <pubDate>Thu, 09 Sep 2010 15:59:19 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/575#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/666</link>
+        <guid isPermaLink="false">http://localhost/ticket/666</guid>
+        <title>#666: The system shall support updating packages from new versions of previously harvested dataset or service metadata</title>
+        <pubDate>Mon, 27 Sep 2010 12:26:14 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/666#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/741</link>
+        <guid isPermaLink="false">http://localhost/ticket/741</guid>
+        <title>#741: Extension / Plugin system for CKAN</title>
+        <pubDate>Mon, 25 Oct 2010 08:54:50 GMT</pubDate>
+        
+        <dc:creator>ollyc</dc:creator>
+
+        <description>&lt;p&gt;
+Create plugin system using
+&amp;lt;&lt;a class="ext-link" href="http://pypi.python.org/pypi/pyutilib.component.core/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://pypi.python.org/pypi/pyutilib.component.core/&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+&lt;p&gt;
+Specification in CEP-003 (&lt;a class="source" href="http://localhost/browser/doc/cep/cep-003.txt"&gt;browser:doc/cep/cep-003.txt&lt;/a&gt;) and &amp;lt;&lt;a class="ext-link" href="http://okfnpad.org/ckan-plugins"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://okfnpad.org/ckan-plugins&lt;/a&gt;&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/741#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/349</link>
+        <guid isPermaLink="false">http://localhost/ticket/349</guid>
+        <title>#349: The system shall support authorised users to edit packages on data.gov.uk</title>
+        <pubDate>Mon, 14 Jun 2010 13:57:31 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/349#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/690</link>
+        <guid isPermaLink="false">http://localhost/ticket/690</guid>
+        <title>#690: The system shall support Gemini2 service records</title>
+        <pubDate>Mon, 11 Oct 2010 18:43:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Wish to fold service records into package resources. Trouble is that service records don't necessarily refer to a data record, so should this be a new package?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/690#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/501</link>
+        <guid isPermaLink="false">http://localhost/ticket/501</guid>
+        <title>#501: Read-only maintenance mode</title>
+        <pubDate>Mon, 23 Aug 2010 09:10:17 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should have a read-only maintenance mode with a nice little banner on all pages, appropriate REST messages etc. Bonus points if this is triggered via an environment variable and thus can be triggered by the surrounding apache.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/501#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/702</link>
+        <guid isPermaLink="false">http://localhost/ticket/702</guid>
+        <title>#702: The system shall support changing package groups when editing a package</title>
+        <pubDate>Mon, 18 Oct 2010 12:09:38 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/372</link>
+        <guid isPermaLink="false">http://localhost/ticket/372</guid>
+        <title>#372: Fix system limits on CKAN for DGU</title>
+        <pubDate>Fri, 23 Jul 2010 11:49:12 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+Set limits in /etc/security/limits.conf so that we can always ssh in at least.  Requested by DGU.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/372#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/545</link>
+        <guid isPermaLink="false">http://localhost/ticket/545</guid>
+        <title>#545: The system shall support creating packages via the Form API</title>
+        <pubDate>Wed, 01 Sep 2010 11:08:30 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/545#changelog</comments>
+    </item>
+ </channel>
+</rss>

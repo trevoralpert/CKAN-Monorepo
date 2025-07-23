@@ -1,0 +1,15 @@
+id,summary,owner,type,priority,component,resolution
+841,Caching docs (as a whole),kindly,enhancement,minor,ckan,duplicate
+1001,API should use normal user credentials if available,rgrp,enhancement,critical,ckan,fixed
+1006,Deprecate stable branch,kindly,enhancement,major,ckan,fixed
+1031,User lookup API,johnlawrenceaspden,enhancement,critical,ckan,fixed
+1036,Add tests for three functions in ckan/model/user.py,johnlawrenceaspden,defect,minor,ckan,fixed
+1045,Group identified by ID in API,dread,defect,major,ckan,fixed
+1047,Package edit form claims you're not logged in at the end when you are,sebbacon,defect,minor,ckan,fixed
+1048,Complete making groups versioned,dread,enhancement,minor,ckan,fixed
+1051,Ability to set custom favicon,sebbacon,defect,awaiting triage,ckan,fixed
+1052,Authz holes,dread,defect,minor,ckan,fixed
+1054,Ordering of resources,kindly,defect,major,ckan,fixed
+1055,@search_related tests not running,dread,defect,blocker,ckan,fixed
+1058,Give 400 error (not 500) for invalid locale or package_form,dread,defect,trivial,ckan,fixed
+738,Store revisions of harvested documents,kindly,requirement,major,uklii,fixed

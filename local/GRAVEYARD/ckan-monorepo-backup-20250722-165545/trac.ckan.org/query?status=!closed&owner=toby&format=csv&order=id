@@ -1,0 +1,41 @@
+id,summary,status,type,priority,milestone,component
+2244,clean up auth,new,enhancement,awaiting triage,ckan-future,ckan
+2257,cleanup template vars,new,enhancement,awaiting triage,ckan-v1.9,ckan
+2282,log api calls for users,new,enhancement,awaiting triage,ckan-future,ckan
+2326,dataset permalinks,new,enhancement,minor,ckan-future,ckan
+2362,"Improve plugin documentaion, including examples.",accepted,enhancement,awaiting merge,ckan-v1.9,ckan
+2363,Documentation of best caching practice.,new,enhancement,major,ckan-v1.8,ckan
+2411,.ini file is a mess,new,enhancement,awaiting triage,ckan-future,ckan
+2416,Normalise resource/data types,accepted,enhancement,minor,demo phase 5,ckan
+2433,API uses name not id for some version 3 calls,new,defect,minor,ckan-v1.8,ckan
+2461,Create demo revisions page,assigned,enhancement,minor,demo phase 4,ckan
+2499,Documentation for the internal analytics,new,enhancement,awaiting triage,ckan-v1.8,ckan
+2555,Demo site needs a breadcrumb helper,new,enhancement,minor,demo phase 5,ckan
+2572,clean up stats plugin,new,enhancement,awaiting triage,ckan-v1.9,ckan
+2579,move sort_by functions into lib.helpers,new,enhancement,awaiting triage,ckan-v1.9,ckan
+2583,make sure that we implement authentication where needed,new,enhancement,awaiting triage,demo phase 5,ckan
+2663,h.resource_display_name needs love,new,enhancement,awaiting triage,ckan-v1.9,ckan
+2698,markdown preview,assigned,enhancement,minor,demo phase 4,ckan
+2718,can't add dataset to more than one group,new,enhancement,awaiting triage,demo phase 4,ckan
+2721,deleted groups should not show on 'Add to Groups' dropdown,new,defect,awaiting triage,demo phase 4,ckan
+2725,Case sensitivity on tags,new,enhancement,awaiting triage,demo phase 5,ckan
+2726,confusing logic on data preview formats,new,enhancement,awaiting triage,demo phase 5,ckan
+2728,deleted group shows on search index - for admins,new,defect,awaiting triage,demo phase 4,ckan
+2735,Dataset order on user page,assigned,enhancement,awaiting triage,demo phase 5,ckan
+2751,check translations for full demo site,new,enhancement,critical,demo phase 5,ckan
+2758,file storage gives error if config not available but no useful user information,new,enhancement,awaiting triage,ckan-v1.9,ckan
+2768,normalise excel to xls,new,enhancement,awaiting triage,demo phase 5,ckan
+2775,Add bin/less to paster serve command,new,enhancement,minor,demo phase 4,ckan
+2780,way for admins to undelete datasets,new,enhancement,awaiting triage,demo phase 4,ckan
+2813,Confusing sidebar on demo dataset page,new,enhancement,awaiting triage,demo phase 5,ckan
+2822,Resource additional info titles format/i18n,new,enhancement,minor,demo phase 4,ckan
+2823,resource additional info title order,new,enhancement,minor,demo phase 5,ckan
+2828,Draft datasets are confusing - tickets need creating,new,enhancement,awaiting triage,demo phase 4,ckan
+2830,Need method to undelete groups,new,enhancement,awaiting triage,demo phase 4,ckan
+2857,no UI to follow another user although option on dashboard,new,defect,awaiting triage,demo phase 4,ckan
+2861,Add qa breadcrumb,new,enhancement,awaiting triage,demo phase 4,ckan
+2862,Revised revised groups description,new,enhancement,awaiting triage,demo phase 4,ckan
+2863,non-admin users can edit other's draft datasets,new,defect,awaiting triage,demo phase 4,ckan
+2873,ckanext-qa: dataset summary incorrect,assigned,defect,awaiting triage,demo phase 4,ckan
+2939,Orgs are groups,new,enhancement,awaiting triage,,ckan
+3012,data.gov auth,new,enhancement,awaiting triage,,ckan

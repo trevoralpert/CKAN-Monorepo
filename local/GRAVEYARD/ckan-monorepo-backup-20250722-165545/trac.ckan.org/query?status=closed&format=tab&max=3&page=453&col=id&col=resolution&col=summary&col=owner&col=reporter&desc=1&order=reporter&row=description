@@ -1,0 +1,4 @@
+id	resolution	summary	owner	reporter
+655		Return status code 404 when harvest source is not found		johnbywater
+656		Return status code 404 when harvesting job is not found		johnbywater
+657	fixed	Fix harvesting job entity get method to default to returning 'None' rather than raising an exception		johnbywater

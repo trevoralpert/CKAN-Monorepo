@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=uklii&amp;milestone=ckan-v1.4-sprint-6&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=uklii&amp;milestone=ckan-v1.4-sprint-6&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1037</link>
+        <guid isPermaLink="false">http://localhost/ticket/1037</guid>
+        <title>#1037: More Robust Harvesting for DGU</title>
+        <pubDate>Tue, 15 Mar 2011 14:00:02 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN's harvesting facility is now live on DGU but there are some major improvements that could be made to make it more robust and better fit the generic CKAN harvesting framework proposed in &lt;a class="closed ticket" href="http://localhost/ticket/987" title="defect: Common harvesting framework (closed: duplicate)"&gt;#987&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Some of the key issues:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Error reports do not currently contain the ID or title of the document with the error.
+&lt;/li&gt;&lt;li&gt;We only have "added" and "error" logging on jobs when we really need a report of "added", "updated", "not changed" and "errors" with the items in each referencing a real metadata document for which harvesting was attempted
+&lt;/li&gt;&lt;li&gt;We need deletion and editing of sources, without deleting the harvested documents or packages
+&lt;/li&gt;&lt;li&gt;We need a more robust harvesting mechanism than a cron job or we need to deal with the case of multiple cron jobs running at once.
+&lt;/li&gt;&lt;li&gt;We need to know the last time a list of documents was scheduled for harvest and the last time each one was fetched.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1037#changelog</comments>
+    </item>
+ </channel>
+</rss>

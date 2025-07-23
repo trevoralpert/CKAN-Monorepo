@@ -1,0 +1,1163 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=demo+phase+5&amp;group=status&amp;desc=1&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=demo+phase+5&amp;group=status&amp;desc=1&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2416</link>
+        <guid isPermaLink="false">http://localhost/ticket/2416</guid>
+        <title>#2416: Normalise resource/data types</title>
+        <pubDate>Wed, 23 May 2012 17:09:06 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently we have far too many types that are essentially the same format. The new demo theme is using icons for common types. So we need to normalise the common formats into pretty strings. e.g. application/json, JSON, .json and json all should be output as “json”
+&lt;/p&gt;
+&lt;p&gt;
+See the following Basecamp thread for UI examples and discussion.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments#comment_179681056"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61906351/comments#comment_179681056&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2416#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2493</link>
+        <guid isPermaLink="false">http://localhost/ticket/2493</guid>
+        <title>#2493: Demo site 404 needs some love</title>
+        <pubDate>Wed, 06 Jun 2012 12:34:41 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+templates/error_document_template.html
+&lt;/p&gt;
+&lt;p&gt;
+I've converted the 404 page to the new style but we probably want to serve this as a 'full page' ie content is 100% page width not sidebar and primary content
+&lt;/p&gt;
+&lt;p&gt;
+just go to a non-existant url to see
+&lt;/p&gt;
+&lt;p&gt;
+Discusion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63374042/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/63374042/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/404"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/404&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2493#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2357</link>
+        <guid isPermaLink="false">http://localhost/ticket/2357</guid>
+        <title>#2357: Create build script for front-end resources</title>
+        <pubDate>Tue, 01 May 2012 15:29:41 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Should minify and concatenate &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; and CSS as part of &lt;a class="closed ticket" href="http://localhost/ticket/2354" title="enhancement: Front end performance improvements [super] (closed: wontfix)"&gt;#2354&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2357#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2699</link>
+        <guid isPermaLink="false">http://localhost/ticket/2699</guid>
+        <title>#2699: workflow for associating datasets with groups</title>
+        <pubDate>Wed, 18 Jul 2012 14:02:56 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+needs review &amp;amp; speccing out
+e.g. datasets created by a user who belongs to a certain publisher (group) get auto added to this group
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2699#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2644</link>
+        <guid isPermaLink="false">http://localhost/ticket/2644</guid>
+        <title>#2644: user dashboard for demo theme</title>
+        <pubDate>Tue, 10 Jul 2012 09:00:21 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we now have a user dashboard that needs theming not sure if we need sam to look at it
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/user/dashboard"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/user/dashboard&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2644#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2697</link>
+        <guid isPermaLink="false">http://localhost/ticket/2697</guid>
+        <title>#2697: create dataset validation</title>
+        <pubDate>Wed, 18 Jul 2012 14:00:35 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Includes: missing fields, existing field checks (i.e. whether a name/dataset already exists with that name) during input (i.e. no need to submit form to check)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2697#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2702</link>
+        <guid isPermaLink="false">http://localhost/ticket/2702</guid>
+        <title>#2702: Future Javascript wishlist for demo</title>
+        <pubDate>Wed, 18 Jul 2012 14:07:55 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+tooltip on popular datasets with number of views
+facets to update automatically
+creating a dataset without reloading page between steps
+hover on licences information
+autocomplete on search terms
+group filtering
+social share buttons in lightboxes
+dataset counts on homepage
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2735</link>
+        <guid isPermaLink="false">http://localhost/ticket/2735</guid>
+        <title>#2735: Dataset order on user page</title>
+        <pubDate>Mon, 23 Jul 2012 17:01:17 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+I think the datasets on user pages &lt;a class="ext-link" href="http://s031.okserver.org:2375/user/me"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/me&lt;/a&gt;
+should be ordered by latest updated (with most recent at the top) instead of in alphabetical order.
+&lt;/p&gt;
+&lt;p&gt;
+What do you think?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2735#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2674</link>
+        <guid isPermaLink="false">http://localhost/ticket/2674</guid>
+        <title>#2674: Data preview not loading on s031</title>
+        <pubDate>Mon, 16 Jul 2012 10:38:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Not loading for all resources as far as I can tell; e.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/afghanistan-election-data/resource/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Fine on demo.ckan.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2674#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2451</link>
+        <guid isPermaLink="false">http://localhost/ticket/2451</guid>
+        <title>#2451: Create demo user list page</title>
+        <pubDate>Mon, 28 May 2012 13:20:13 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2451#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2785</link>
+        <guid isPermaLink="false">http://localhost/ticket/2785</guid>
+        <title>#2785: Allow resources to be re-ordered</title>
+        <pubDate>Wed, 01 Aug 2012 10:22:03 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Not sure where this functionality should be added, possibly in one of the sidebar widgets when editing a resource?
+&lt;/p&gt;
+&lt;p&gt;
+Ira, what are your thoughts?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2785#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2641</link>
+        <guid isPermaLink="false">http://localhost/ticket/2641</guid>
+        <title>#2641: Adapt spatial widgets to new theme</title>
+        <pubDate>Mon, 09 Jul 2012 15:02:27 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Dataset extent map and spatial filter need to adapted to the new theme, as they are not showing up now
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2641#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2800</link>
+        <guid isPermaLink="false">http://localhost/ticket/2800</guid>
+        <title>#2800: tooltip on popular datasets with number of views</title>
+        <pubDate>Mon, 06 Aug 2012 09:05:25 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+be good to do this in phase 3
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2800#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2669</link>
+        <guid isPermaLink="false">http://localhost/ticket/2669</guid>
+        <title>#2669: style [Draft]</title>
+        <pubDate>Fri, 13 Jul 2012 10:08:30 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I've added [Draft] to partial completed datasets in the package list and read  commit 6a8e74d0
+&lt;/p&gt;
+&lt;p&gt;
+templates/snippets/package_list.html
+&lt;/p&gt;
+&lt;p&gt;
+templates/package/read.html
+&lt;/p&gt;
+&lt;p&gt;
+do you want to style them in some way?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2669#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2749</link>
+        <guid isPermaLink="false">http://localhost/ticket/2749</guid>
+        <title>#2749: page title issue with super() super()</title>
+        <pubDate>Wed, 25 Jul 2012 11:30:28 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+title broken for
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/new_resource/gold-prices"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/new_resource/gold-prices&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+we have inherited the title from the extended page not from the base
+&lt;/p&gt;
+&lt;p&gt;
+should be 'add data - ckan' not 'add data - create dataset - ckan'
+&lt;/p&gt;
+&lt;p&gt;
+any idea how we fix this?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2749#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2676</link>
+        <guid isPermaLink="false">http://localhost/ticket/2676</guid>
+        <title>#2676: no way to browse through related items on dataset page</title>
+        <pubDate>Mon, 16 Jul 2012 10:47:58 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Need to add JS (presumably?) to the related app box on dataset page: &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/gold-prices"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/gold-prices&lt;/a&gt; to allow user to scroll through when multiple related items exist
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2676#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2711</link>
+        <guid isPermaLink="false">http://localhost/ticket/2711</guid>
+        <title>#2711: bin/less dies for toby</title>
+        <pubDate>Wed, 18 Jul 2012 17:11:48 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+it would be nice if this didn't fall over when the dir is removed maybe a linux only issue?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2711#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2647</link>
+        <guid isPermaLink="false">http://localhost/ticket/2647</guid>
+        <title>#2647: api bullshit button</title>
+        <pubDate>Tue, 10 Jul 2012 11:42:10 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+make it as a snippet calling thing like aron would love
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2647#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2742</link>
+        <guid isPermaLink="false">http://localhost/ticket/2742</guid>
+        <title>#2742: admin authz styling</title>
+        <pubDate>Tue, 24 Jul 2012 10:07:03 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/ckan-admin/authz"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/ckan-admin/authz&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+you need to be an admin
+&lt;/p&gt;
+&lt;p&gt;
+paster sysadmin add &amp;lt;username&amp;gt; -c dev.ini
+&lt;/p&gt;
+&lt;p&gt;
+like &lt;a class="closed ticket" href="http://localhost/ticket/2741" title="enhancement: admin index styling (closed: fixed)"&gt;#2741&lt;/a&gt; we need other admin links
+&lt;/p&gt;
+&lt;p&gt;
+you may want to make the inputs use your form macros - I've just done a basic port
+&lt;/p&gt;
+&lt;p&gt;
+also we will need to get all the tables done but looks like we need to get auth groups working for that
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2742#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2704</link>
+        <guid isPermaLink="false">http://localhost/ticket/2704</guid>
+        <title>#2704: add list of resources to edit dataset page sidebar</title>
+        <pubDate>Wed, 18 Jul 2012 14:16:26 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+when editing a dataset (e.g. here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/edit/afghanistan-election-data"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/edit/afghanistan-election-data&lt;/a&gt;) add sidebar list of resources for user to click &amp;amp; browse through taking you to the relevant resource edit pages
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2704#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2705</link>
+        <guid isPermaLink="false">http://localhost/ticket/2705</guid>
+        <title>#2705: add link to edit dataset page from edit review page</title>
+        <pubDate>Wed, 18 Jul 2012 14:18:42 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. on &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/afghanistan-election-data/resource_edit/f6331f99-51f6-44d9-95b9-b20f3b74f360"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/afghanistan-election-data/resource_edit/f6331f99-51f6-44d9-95b9-b20f3b74f360&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&amp;amp; ensure consistant with sidebar of edit dataset page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2705#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2714</link>
+        <guid isPermaLink="false">http://localhost/ticket/2714</guid>
+        <title>#2714: XLS preview not working</title>
+        <pubDate>Thu, 19 Jul 2012 14:00:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+see &lt;a class="ext-link" href="http://demo.ckan.org/dataset/vif-2012-population-totals/resource/e7b8401a-c410-4902-9e5a-6dbd78834873"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://demo.ckan.org/dataset/vif-2012-population-totals/resource/e7b8401a-c410-4902-9e5a-6dbd78834873&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+what XLS previews do we support?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2714#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1553</link>
+        <guid isPermaLink="false">http://localhost/ticket/1553</guid>
+        <title>#1553: Upload handles non-logged in user badly</title>
+        <pubDate>Fri, 16 Dec 2011 17:26:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you install ckanext-store (Storage extension) then CKAN displays 'Upload a file' button in the dataset/resource edit tab.
+&lt;/p&gt;
+&lt;p&gt;
+If you are not logged in, then this feature doesn't work, but there is nothing to indicate this. The button should be disabled.
+&lt;/p&gt;
+&lt;p&gt;
+Furthermore, it lets you think you are starting the upload process, the spinner spins, it says 'Uploading...' and stays like that for a long while.
+&lt;/p&gt;
+&lt;p&gt;
+This is a problem CKAN 1.4.3(ish) - 1.5.1 (current version) when you install the current ckanext-storage.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1553#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2903</link>
+        <guid isPermaLink="false">http://localhost/ticket/2903</guid>
+        <title>#2903: Two search boxes</title>
+        <pubDate>Wed, 05 Sep 2012 14:01:52 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+I think the architecture on the search page is a bit odd. Not sure I like that there is a doubling up of the search box (e.g. one in the header and one in the body of the search results page)
+&lt;/p&gt;
+&lt;p&gt;
+Needs some thought
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2903#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2631</link>
+        <guid isPermaLink="false">http://localhost/ticket/2631</guid>
+        <title>#2631: Style activity stream in user profile</title>
+        <pubDate>Mon, 09 Jul 2012 09:32:22 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2631#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2819</link>
+        <guid isPermaLink="false">http://localhost/ticket/2819</guid>
+        <title>#2819: Related Item Summary of Descriptions Markdown Issue</title>
+        <pubDate>Thu, 09 Aug 2012 09:25:21 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item it mentions that you can use markdown in the description, however markdown doesn't render in apps page nor in related items page.
+Expected: Make shortened descriptions (on apps page &amp;amp; related items page) render markdown
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2819#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2658</link>
+        <guid isPermaLink="false">http://localhost/ticket/2658</guid>
+        <title>#2658: On Demo change 'Groups' to 'Publishers' everywhere</title>
+        <pubDate>Wed, 11 Jul 2012 12:08:15 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Can we do this as a localisation?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2658#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2825</link>
+        <guid isPermaLink="false">http://localhost/ticket/2825</guid>
+        <title>#2825: Loss of URL encoding on language change on apps page</title>
+        <pubDate>Thu, 09 Aug 2012 09:41:57 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: On /apps page if you start in one language, filter the data, and then change languages it loses the correct format for the HTTP Get Parameters (and therefore loses the filters). Example, start in English language, change filter settings to to Application and Newest, change language to German.
+Expected: Retain correct format for HTTP Get Parameters so that the filter settings are retained. Solution will involve not turning "=" into "%3D" in the URL, i.e. turn off URL encoding.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2825#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2817</link>
+        <guid isPermaLink="false">http://localhost/ticket/2817</guid>
+        <title>#2817: Item Type Reverts on Invalid URL</title>
+        <pubDate>Thu, 09 Aug 2012 09:21:16 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: When creating a related item, if you put in a invalid URL it loses the choice of Item Type (e.g. Visualisation, Application) and reverts to the first time (API).
+Expected: It remembers which one was chosen
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2817#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2616</link>
+        <guid isPermaLink="false">http://localhost/ticket/2616</guid>
+        <title>#2616: Improve display of split stages in demo</title>
+        <pubDate>Thu, 28 Jun 2012 09:18:28 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently stages of the same colour blur together, these could do with a nice divider.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2616#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2354</link>
+        <guid isPermaLink="false">http://localhost/ticket/2354</guid>
+        <title>#2354: Front end performance improvements [super]</title>
+        <pubDate>Tue, 01 May 2012 15:10:42 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Try and increase the page load times for the front end.
+&lt;/p&gt;
+&lt;h1 id="Now"&gt;Now&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;Always include scripts at the bottom
+&lt;/li&gt;&lt;li&gt;Include CSS at the top
+&lt;/li&gt;&lt;li&gt;Load fonts with JS
+&lt;/li&gt;&lt;li&gt;Concatenate and minify &lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; files
+&lt;/li&gt;&lt;li&gt;Create a build script to load dependancies seperately
+&lt;/li&gt;&lt;li&gt;Enable Gzip compression on resources
+&lt;/li&gt;&lt;li&gt;Enable future cache headers on resources
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="Next"&gt;Next&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;Support serving assets from a CDN
+&lt;/li&gt;&lt;li&gt;Look into optimising the CSS - Remove large portions of unused CSS
+&lt;/li&gt;&lt;li&gt;Remove extreaneous libraries, can jQuery UI be replaced with bootstrap?
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="Tools"&gt;Tools&lt;/h1&gt;
+&lt;ul&gt;&lt;li&gt;Webkit Inspector Audits
+&lt;/li&gt;&lt;li&gt;YSlow Firebug Plugin - &lt;a class="ext-link" href="http://yslow.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://yslow.org/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Speed Tracer -  &lt;a class="ext-link" href="https://chrome.google.com/webstore/detail/ognampngfcbddbfemdapefohjiobgbdl"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://chrome.google.com/webstore/detail/ognampngfcbddbfemdapefohjiobgbdl&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h1 id="ContinuousIntegration"&gt;Continuous Integration&lt;/h1&gt;
+&lt;p&gt;
+YSlow can be hooked up to Jenkins via Phantom JS
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2354#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2787</link>
+        <guid isPermaLink="false">http://localhost/ticket/2787</guid>
+        <title>#2787: Ensure templates_legacy directory is loaded for extensions</title>
+        <pubDate>Wed, 01 Aug 2012 13:29:42 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Currently the stats plugin has a template and templates_legacy directory. We need to ensure that the templates in templates_legacy are loaded.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2787#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2562</link>
+        <guid isPermaLink="false">http://localhost/ticket/2562</guid>
+        <title>#2562: Demo theme tag improvements</title>
+        <pubDate>Mon, 18 Jun 2012 16:08:34 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Tags should be implemented in two sections.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Custom predefined tags using vocabularies
+&lt;/li&gt;&lt;li&gt;Provide suggestions, auto completion then fallback to free text
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2562#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2526</link>
+        <guid isPermaLink="false">http://localhost/ticket/2526</guid>
+        <title>#2526: Demo theme new custom form fields should be created when needed</title>
+        <pubDate>Thu, 14 Jun 2012 13:21:45 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_metadata"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_metadata&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2526#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2907</link>
+        <guid isPermaLink="false">http://localhost/ticket/2907</guid>
+        <title>#2907: Demo header</title>
+        <pubDate>Thu, 06 Sep 2012 11:28:45 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+The user login / avatar with in the header really should be within another topbar, as it goes against convention to have the user information within the normal header.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2907#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2375</link>
+        <guid isPermaLink="false">http://localhost/ticket/2375</guid>
+        <title>#2375: Create new base theme</title>
+        <pubDate>Tue, 08 May 2012 09:23:29 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+As designed by Sam Smith -&amp;gt; &lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/&lt;/a&gt;
+Also to be used as the demo theme although I think they will diverge at some point. At the moment they should be implemented as one and the same.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2375#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2452</link>
+        <guid isPermaLink="false">http://localhost/ticket/2452</guid>
+        <title>#2452: Create demo user profile page</title>
+        <pubDate>Mon, 28 May 2012 13:21:35 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user/aron"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/aron&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2452#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2454</link>
+        <guid isPermaLink="false">http://localhost/ticket/2454</guid>
+        <title>#2454: Create demo login page</title>
+        <pubDate>Mon, 28 May 2012 13:23:40 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62935295/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62935295/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/en/user/login"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/user/login&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2454#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2453</link>
+        <guid isPermaLink="false">http://localhost/ticket/2453</guid>
+        <title>#2453: Create demo edit user profile page</title>
+        <pubDate>Mon, 28 May 2012 13:22:31 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62268474/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/user/edit"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/user/edit&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2453#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2447</link>
+        <guid isPermaLink="false">http://localhost/ticket/2447</guid>
+        <title>#2447: Create demo add dataset page</title>
+        <pubDate>Mon, 28 May 2012 13:13:55 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62234769/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/62234769/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new&lt;/a&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new_resource"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new_resource&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2447#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2267</link>
+        <guid isPermaLink="false">http://localhost/ticket/2267</guid>
+        <title>#2267: Add generator=ckan tag in head</title>
+        <pubDate>Thu, 29 Mar 2012 16:53:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Add generator=ckan tag in head of templates to identify site as generated by CKAN
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2267#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2786</link>
+        <guid isPermaLink="false">http://localhost/ticket/2786</guid>
+        <title>#2786: target blank HTML downloads</title>
+        <pubDate>Wed, 01 Aug 2012 11:16:54 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. if I click on download here: &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/example-dataset/resource/d8797e51-b497-46ca-a274-8675533d110b&lt;/a&gt; can it take me to a new tab instead of navigating away from ckan?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2786#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2823</link>
+        <guid isPermaLink="false">http://localhost/ticket/2823</guid>
+        <title>#2823: resource additional info title order</title>
+        <pubDate>Thu, 09 Aug 2012 09:32:53 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Order the items so that none user fields are first from ticket &lt;a class="closed ticket" href="http://localhost/ticket/2707" title="enhancement: Tidy up additional info boxes on dataset and resource pages (closed: fixed)"&gt;#2707&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2823#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2768</link>
+        <guid isPermaLink="false">http://localhost/ticket/2768</guid>
+        <title>#2768: normalise excel to xls</title>
+        <pubDate>Thu, 26 Jul 2012 16:16:22 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+so that data proxy works
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2768#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2854</link>
+        <guid isPermaLink="false">http://localhost/ticket/2854</guid>
+        <title>#2854: no way to see which dataset an app is related to on /apps page</title>
+        <pubDate>Wed, 15 Aug 2012 16:38:48 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. from &lt;a class="ext-link" href="http://s031.okserver.org:2375/apps?page=1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/apps?page=1&lt;/a&gt; you cannot edit a related item as an admin or view what dataset the item is related to
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2854#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2583</link>
+        <guid isPermaLink="false">http://localhost/ticket/2583</guid>
+        <title>#2583: make sure that we implement authentication where needed</title>
+        <pubDate>Fri, 22 Jun 2012 10:04:38 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+in development many auth checks may have been lost we need to check they are still working etc
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2583#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2726</link>
+        <guid isPermaLink="false">http://localhost/ticket/2726</guid>
+        <title>#2726: confusing logic on data preview formats</title>
+        <pubDate>Sun, 22 Jul 2012 09:38:47 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;If a user enters the wrong format on a file that can be previewed - it simply won't be previewed (e.g. a CSV or XML file that can be filled in with JSON in format will just not work or check this
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;If I incorrectly edit format to one that data preview will try to preview it will work even for a format that it doesn't accept (sometimes) e.g. this PDF file I changed the metadata to HTML &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset/resource/9d27a9d9-36ec-460e-9edb-6dff7ba4fc28&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2726#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2751</link>
+        <guid isPermaLink="false">http://localhost/ticket/2751</guid>
+        <title>#2751: check translations for full demo site</title>
+        <pubDate>Wed, 25 Jul 2012 11:40:43 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+need to check everything gets translated - sean did this before so will have info
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2751#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2748</link>
+        <guid isPermaLink="false">http://localhost/ticket/2748</guid>
+        <title>#2748: add 'add new resource' button to sidebar</title>
+        <pubDate>Wed, 25 Jul 2012 10:41:18 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+When editing a resource you see the current and any other existing resources in sidebar
+&lt;/p&gt;
+&lt;p&gt;
+(e.g. see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/format-error-test/resource_edit/d1eac556-c16f-44af-8148-5e3467b57cf8?inner_span=True&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+Would be good to have a pretty 'add new' slightly transparent resource folder/pointer undearneath - letting you add resources from the end resource page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2748#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2906</link>
+        <guid isPermaLink="false">http://localhost/ticket/2906</guid>
+        <title>#2906: Wrong flags in language dropdown</title>
+        <pubDate>Wed, 05 Sep 2012 16:05:44 GMT</pubDate>
+        
+        <dc:creator>dominik</dc:creator>
+
+        <description>&lt;p&gt;
+The flags in the dropdown on details pages are not right.
+&lt;/p&gt;
+&lt;p&gt;
+You can see the error on &lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/malawi-aid-projects/resource/b717c20e-2006-4ad4-82d2-59b57ebc1ab0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/malawi-aid-projects/resource/b717c20e-2006-4ad4-82d2-59b57ebc1ab0&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2906#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2909</link>
+        <guid isPermaLink="false">http://localhost/ticket/2909</guid>
+        <title>#2909: User profile headers are a bit weird</title>
+        <pubDate>Thu, 06 Sep 2012 11:35:48 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+They seem to be not exactly well thought out. Needs some thought on better display of the information that they contain.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2909#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2910</link>
+        <guid isPermaLink="false">http://localhost/ticket/2910</guid>
+        <title>#2910: User listings are not very compelling</title>
+        <pubDate>Thu, 06 Sep 2012 11:39:47 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+They are currently are just a small image / name. They should be: Larger image, Full name (username), description, edits/dataset
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2910#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2899</link>
+        <guid isPermaLink="false">http://localhost/ticket/2899</guid>
+        <title>#2899: Step 2 &gt; Save &amp; add another bug</title>
+        <pubDate>Thu, 30 Aug 2012 13:15:19 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+Goto:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Add dataset
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Get to step 2
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Click "Save &amp;amp; add another" without adding any data
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;Ends on step 3
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Should: fail to validate and remain on step 2
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2899#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2904</link>
+        <guid isPermaLink="false">http://localhost/ticket/2904</guid>
+        <title>#2904: Show more formats/groups/tags shouldn't display if there aren't more</title>
+        <pubDate>Wed, 05 Sep 2012 14:14:04 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On the search results page when there are no more formats, groups or tags to display it should not display the show more links.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2904#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2898</link>
+        <guid isPermaLink="false">http://localhost/ticket/2898</guid>
+        <title>#2898: Looses data entered on step 1 of create dataset after login</title>
+        <pubDate>Thu, 30 Aug 2012 13:08:14 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+To reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Enter details for new dataset without being logged in
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;Hit login page for just before step 2
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;Once logged in you end up back at the empty add dataset form (instead of expected 2nd step of dataset edit)
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2898#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2833</link>
+        <guid isPermaLink="false">http://localhost/ticket/2833</guid>
+        <title>#2833: Load module templates before calling .initialize()</title>
+        <pubDate>Thu, 09 Aug 2012 17:05:39 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+I think this would be a nice feature for remote loading templates if the options.template value ends in ".html".
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;ckan.module('my-module', {
+  options: {
+    template: 'my-template.html'
+  },
+  initialize: function () {
+    this.template // This is the loaded template.
+  }
+});
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2833#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2901</link>
+        <guid isPermaLink="false">http://localhost/ticket/2901</guid>
+        <title>#2901: Language Dropdown bug in footer with IE7</title>
+        <pubDate>Tue, 04 Sep 2012 10:31:14 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+The language dropdown in Internet Explorer 7 behaves oddly. Essentially I think the problem is with the way that the dropdown decides to go into "drop-up mode" (e.g there aint enough screen space below the initial state so it has to drop up).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2901#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2821</link>
+        <guid isPermaLink="false">http://localhost/ticket/2821</guid>
+        <title>#2821: Featured Items on Filter</title>
+        <pubDate>Thu, 09 Aug 2012 09:28:24 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: On /apps page in the Filter Results box there is a "Only show featured items" checkbox, on selection it comes up with 0 solutions.
+Expected: Presumably an admin can create "featured items" so that they can be randomly selected on front page (is this correct)? If there are no "featured items" in the whole database can this check box be hidden?
+Bug is: no UI or obvious way to create featured items. Also the
+checkbox looks un-styled
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2821#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2820</link>
+        <guid isPermaLink="false">http://localhost/ticket/2820</guid>
+        <title>#2820: English Language: Visualization -&gt; Visualisation</title>
+        <pubDate>Thu, 09 Aug 2012 09:27:35 GMT</pubDate>
+        
+        <dc:creator>danieljohnlewis</dc:creator>
+
+        <description>&lt;p&gt;
+Problem: In the English version (which has a UK flag, indicating British English), the word "Visualization" is used. For an example see the "Filter by type" drop down on the /apps page.
+Expected: This should be "Visualisation" in British English. Any instances of "Visualize" should be changed to "Visualise" too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2820#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2555</link>
+        <guid isPermaLink="false">http://localhost/ticket/2555</guid>
+        <title>#2555: Demo site needs a breadcrumb helper</title>
+        <pubDate>Mon, 18 Jun 2012 13:43:03 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Something to make building breadcrumbs a bit nicer
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2555#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2908</link>
+        <guid isPermaLink="false">http://localhost/ticket/2908</guid>
+        <title>#2908: Dataset related with image should retain aspect ratio</title>
+        <pubDate>Thu, 06 Sep 2012 11:32:42 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment if you have an related item with an image associated to a dataset that appears in the side column it's resized but doesn't keep it's original aspect ratio.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2908#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2813</link>
+        <guid isPermaLink="false">http://localhost/ticket/2813</guid>
+        <title>#2813: Confusing sidebar on demo dataset page</title>
+        <pubDate>Wed, 08 Aug 2012 10:03:26 GMT</pubDate>
+        
+        <dc:creator>markw</dc:creator>
+
+        <description>&lt;p&gt;
+On a dataset page on demo.ckan.org, the left sidebar is confusing.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;It starts with some random links. Actually they are links to groups which the dataset is in, but this isn't clear.
+&lt;/li&gt;&lt;li&gt;The sidebar elements that are actually part of the dataset are 'Datset extent' and 'License', so these should be right at the top (if they belong in the sidebar at all), instead of which they are right at the bottom in the junk part of the page (i.e. probably lower than the bottom of the main page, and hence lower than anyone will scroll).
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2813#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2835</link>
+        <guid isPermaLink="false">http://localhost/ticket/2835</guid>
+        <title>#2835: Client module needs a template loading method</title>
+        <pubDate>Thu, 09 Aug 2012 17:10:33 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;pre class="wiki"&gt;Client#getTemplate(name, params, success, error);
+&lt;/pre&gt;&lt;p&gt;
+Where params, success and error are optional arguments. test/index.html already has an implementation called loadFixture().
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2835#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2795</link>
+        <guid isPermaLink="false">http://localhost/ticket/2795</guid>
+        <title>#2795: Check validation of HTML, CSS, JS</title>
+        <pubDate>Thu, 02 Aug 2012 10:25:28 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+Ensure that we are being standards compliant
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2795#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2725</link>
+        <guid isPermaLink="false">http://localhost/ticket/2725</guid>
+        <title>#2725: Case sensitivity on tags</title>
+        <pubDate>Sun, 22 Jul 2012 09:34:27 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+My feeling is that 'country-US' and 'country-us' should be the same tag. However currently tags with caps are treated differently
+&lt;/p&gt;
+&lt;p&gt;
+see &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/test-dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/test-dataset&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+with TEST and test - there also get indexed twice in the search page
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2725#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2905</link>
+        <guid isPermaLink="false">http://localhost/ticket/2905</guid>
+        <title>#2905: Add dataset URL key behaviour</title>
+        <pubDate>Wed, 05 Sep 2012 14:28:03 GMT</pubDate>
+        
+        <dc:creator>johnmartin</dc:creator>
+
+        <description>&lt;p&gt;
+On step 1 for adding a dataset can we add a ajax ping that checks if the URL that is generated by the JS is taken? Behaviour should be as follows:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;User types title in box (as current)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="2"&gt;&lt;li&gt;URL key is regexed by JS (as current)
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="3"&gt;&lt;li&gt;The JS does a ajax call to check if the generated URL key is valid. The ajax callback returns a JSON dump which contains what the URL key should be (e.g. if 'test' was taken it returns 'test-1')
+&lt;/li&gt;&lt;/ol&gt;&lt;ol start="4"&gt;&lt;li&gt;If the URL key returned in the ajax is different than the one generated by the JS then:
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+4a. If the user hasn't clicked the edit button then: it automatically updates the URL key field with the URL key supplied in the ajax
+&lt;/p&gt;
+&lt;p&gt;
+4b. If the user has clicked the edit button then: a form error next to the input appears saying that the URL key is taken and within that error is suggests the URL key returned by the ajax as alternative (the user can click said URL key within the error to automatically choose that one)
+&lt;/p&gt;
+&lt;p&gt;
+The URL key isn't reserved by the ajax and upon form submission the usual validation should still apply.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2905#changelog</comments>
+    </item>
+ </channel>
+</rss>

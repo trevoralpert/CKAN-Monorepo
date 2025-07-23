@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-v1.4-sprint-5&amp;group=status&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-v1.4-sprint-5&amp;group=status&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/754</link>
+        <guid isPermaLink="false">http://localhost/ticket/754</guid>
+        <title>#754: Filtering for harvesting sysem</title>
+        <pubDate>Mon, 25 Oct 2010 21:01:09 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+This has once again been ruled out for UKLP for the timebeing.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/754#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/937</link>
+        <guid isPermaLink="false">http://localhost/ticket/937</guid>
+        <title>#937: Record download stats for resources (extension)</title>
+        <pubDate>Sat, 29 Jan 2011 22:31:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+As a User (especially as a Package &lt;a class="missing wiki"&gt;Owner/Maintainer?&lt;/a&gt;) I want to know how many times a resource has been downloaded (and when).
+&lt;/p&gt;
+&lt;p&gt;
+So let's record download stats (as in clicks on the link for a resource).
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Use the existing support for this feature in google analytics or piwiki
+&lt;/li&gt;&lt;li&gt;For google analytics see:
+&lt;ul&gt;&lt;li&gt;Integrate to record: &lt;a class="ext-link" href="http://www.google.com/support/analytics/bin/answer.py?answer=55529"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.google.com/support/analytics/bin/answer.py?answer=55529&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Accessing analytics data via API (for showing download counts): &lt;a class="ext-link" href="http://code.google.com/apis/analytics/docs/gdata/gdataDeveloperGuide.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://code.google.com/apis/analytics/docs/gdata/gdataDeveloperGuide.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Limitations only record downloads by browsers with js turned on.
+&lt;ul&gt;&lt;li&gt;This is OK I think (in any case machine download via e.g. datapkg does not get downloaded)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="OldSpecdoitinCKAN"&gt;Old Spec (do it in CKAN)&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Record info of form: resource id (or url?), timestamp
+&lt;/li&gt;&lt;li&gt;Do this via javascript capturing of onclick event talking to an api
+&lt;/li&gt;&lt;li&gt;API: /api/resource/{id}/download
+&lt;ul&gt;&lt;li&gt;POST to increment (how do we stop spamming -- could use a nonce setup with a random string set on each page load for the js)
+&lt;/li&gt;&lt;li&gt;GET to get data back { total: X, day_count: [ [yyyy-mm-dd, count], ... ] }
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Questions"&gt;Questions&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Do we record ip addresses (to handle de-botting etc)?
+&lt;/li&gt;&lt;li&gt;Do we count preview clicks as well?
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/937#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/962</link>
+        <guid isPermaLink="false">http://localhost/ticket/962</guid>
+        <title>#962: Improvements to data preview extension</title>
+        <pubDate>Mon, 07 Feb 2011 09:55:24 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Basic implementation done (and deployed):
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckanext-datapreview"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckanext-datapreview&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+However plenty to improve, e.g.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Support more formats (use external systems for preview?)
+&lt;ul&gt;&lt;li&gt;json (!)
+&lt;/li&gt;&lt;li&gt;html (trivial!)
+&lt;/li&gt;&lt;li&gt;sparql
+&lt;/li&gt;&lt;li&gt;...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Do not display preview if no preview
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Also suggest reworking to use external services rather than doing preview 'in house' (doing in house places heavy reliance on data proxy service and on converting data to a standard format).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/962#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1013</link>
+        <guid isPermaLink="false">http://localhost/ticket/1013</guid>
+        <title>#1013: Refactor &amp; write tests for Wordpresser extension</title>
+        <pubDate>Mon, 28 Feb 2011 10:03:12 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+The Wordpresser extension seems to be working well for DataGM, but needs caching and tests.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1013#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1046</link>
+        <guid isPermaLink="false">http://localhost/ticket/1046</guid>
+        <title>#1046: Dictization and the new logic layer</title>
+        <pubDate>Thu, 17 Mar 2011 12:24:54 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+The stages involved with doing this.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Convert model objects to standard dict format (DONE)
+&lt;/li&gt;&lt;li&gt;Convert standard dicts to current api formats (DONE)
+&lt;/li&gt;&lt;li&gt;Make standard dicts savable (DONE)
+&lt;/li&gt;&lt;li&gt;Validate standard dict format. (DONE)
+&lt;/li&gt;&lt;li&gt;Authorize actions
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1046#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1059</link>
+        <guid isPermaLink="false">http://localhost/ticket/1059</guid>
+        <title>#1059: Loader coping better with poor search indexing</title>
+        <pubDate>Mon, 28 Mar 2011 11:09:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Loader currently checks for same name, but also should check for name_, name&lt;span class="underline"&gt; etc.
+&lt;/span&gt;&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1059#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1060</link>
+        <guid isPermaLink="false">http://localhost/ticket/1060</guid>
+        <title>#1060: Spreadsheet importer tries to import readonly keys</title>
+        <pubDate>Mon, 28 Mar 2011 11:36:50 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. we just added notes_rendered and that is read in as an extra field.
+Tests failing in ckanext-importlib
+&lt;/p&gt;
+&lt;p&gt;
+Also related: we are missing lost metadata_created and metadata_modified in the dumps.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1060#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1061</link>
+        <guid isPermaLink="false">http://localhost/ticket/1061</guid>
+        <title>#1061: Orphaned home/license page</title>
+        <pubDate>Tue, 29 Mar 2011 10:02:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+No links to home/license and it contains out of date references to knowledgeforge. Remove it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1061#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1066</link>
+        <guid isPermaLink="false">http://localhost/ticket/1066</guid>
+        <title>#1066: Default reader role too permissive</title>
+        <pubDate>Fri, 01 Apr 2011 08:07:30 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The definition of the 'reader' role includes creating packages, which is too permissive for some CKAN instances (e.g. DGU). 'Reader' suggests only reading, so I think this role should avoid creating and editing.
+&lt;/p&gt;
+&lt;p&gt;
+All projects so far want all roles to be able to create users, so this stays as a Reader action for now, as a convenience.
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Action.PACKAGE_CREATE removed from reader's default_role_actions
+&lt;/li&gt;&lt;li&gt;Visitor has a new default role, called 'anon_editor' which can edit packages, but not groups / auth groups - you have to log in for that.
+&lt;/li&gt;&lt;li&gt;Migration script not needed?
+&lt;/li&gt;&lt;li&gt;Code comments written, to make clear the suggested policy
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1066#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1067</link>
+        <guid isPermaLink="false">http://localhost/ticket/1067</guid>
+        <title>#1067: CLI for loading/dumping complete databases</title>
+        <pubDate>Fri, 01 Apr 2011 08:11:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Use 'db dump' and 'db load' for 'pg_dump' and 'psql -f' of a database. Use pylons config to find out database options.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1067#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1068</link>
+        <guid isPermaLink="false">http://localhost/ticket/1068</guid>
+        <title>#1068: metadata_modified problem</title>
+        <pubDate>Fri, 01 Apr 2011 10:01:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This test has been failing since the clocks changed:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;======================================================================
+FAIL: ckan.tests.models.test_package.TestPackageRevisions.test_02_metadata_created_and_modified
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dread/hgroot/pyenv-ckan2/lib/python2.6/site-packages/nose-0.11.3-py2.6.egg/nose/case.py", line 186, in runTest
+    self.test(*self.arg)
+  File "/home/dread/hgroot/ckan2/ckan/tests/models/test_package.py", line 283, in test_02_metadata_created_and_modified
+    assert out == exp, (out, exp)
+AssertionError: (datetime.datetime(2011, 4, 1, 10, 45, 50, 875509), datetime.datetime(2011, 4, 1, 9, 45, 50, 875509))
+----------------------------------------------------------------------
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1068#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1071</link>
+        <guid isPermaLink="false">http://localhost/ticket/1071</guid>
+        <title>#1071: Package history API moved to /api/rest/package/revisions</title>
+        <pubDate>Mon, 04 Apr 2011 17:24:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+api/rest/package_history is not RESTful or follow API naming conventions. Therefore move it to /api/rest/package/revisions
+&lt;/p&gt;
+&lt;p&gt;
+Also, API docs incomplete.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1071#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1072</link>
+        <guid isPermaLink="false">http://localhost/ticket/1072</guid>
+        <title>#1072: Add filters to authztool</title>
+        <pubDate>Wed, 06 Apr 2011 16:11:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+It takes several minutes to print the 'rights' on DGU, which is annoying when you only want to grep for a few lines. Much quicker than grepping is to filter in the query.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1072#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1073</link>
+        <guid isPermaLink="false">http://localhost/ticket/1073</guid>
+        <title>#1073: Search index checker</title>
+        <pubDate>Thu, 07 Apr 2011 14:10:44 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Tool that checks which packages have not been indexed.
+&lt;/p&gt;
+&lt;p&gt;
+Required for DGU: &lt;a class="ext-link" href="https://trac.dataco.coi.gov.uk/projects/datagov/ticket/940"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://trac.dataco.coi.gov.uk/projects/datagov/ticket/940&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1073#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1079</link>
+        <guid isPermaLink="false">http://localhost/ticket/1079</guid>
+        <title>#1079: Refactor API to use new logic layer and dictization</title>
+        <pubDate>Mon, 11 Apr 2011 08:12:10 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Convert current api saves to the new standard dict format.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1079#changelog</comments>
+    </item>
+ </channel>
+</rss>

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;reporter=thejimmyg&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;reporter=thejimmyg&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1041</link>
+        <guid isPermaLink="false">http://localhost/ticket/1041</guid>
+        <title>#1041: Start Using the CKAN Wiki for Tutorial-style documentation</title>
+        <pubDate>Wed, 16 Mar 2011 14:11:55 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+For example, I will document the following:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;A specific guide on using mercurial when working with our branching and merging policy
+&lt;ul&gt;&lt;li&gt;DONE - &lt;a class="ext-link" href="http://wiki.ckan.net/Becoming_a_CKAN_Developer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Becoming_a_CKAN_Developer&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Policy document on how we use tickets, plan sprints and make releases
+&lt;ul&gt;&lt;li&gt;DONE - &lt;a class="ext-link" href="http://wiki.ckan.net/Becoming_a_CKAN_Developer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Becoming_a_CKAN_Developer&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How to package software as .deb file for project deployment
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I'd love if someone else would write:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;An authorisation tutorial covering the core model, the command line tools and examples of every possible way of using the system
+&lt;/li&gt;&lt;li&gt;A HOWTO guide with screenshots for adding a package
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1041#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1382</link>
+        <guid isPermaLink="false">http://localhost/ticket/1382</guid>
+        <title>#1382: Deleted resources are present for harvested package</title>
+        <pubDate>Tue, 11 Oct 2011 12:58:09 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Perhaps the importer deletes them before re-importing. We shouldn't have deleted resources, so let's investigate.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1382#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1232</link>
+        <guid isPermaLink="false">http://localhost/ticket/1232</guid>
+        <title>#1232: [super] Interface improvements</title>
+        <pubDate>Wed, 20 Jul 2011 16:11:36 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1194" title="defect: &amp;#34;Welcome back&amp;#34; message for newly registered user (closed: fixed)"&gt;#1194&lt;/a&gt; "Welcome back" message for newly registered user
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1202" title="enhancement: Links to datapkg utility don't lead to info about it (closed: invalid)"&gt;#1202&lt;/a&gt; Links to datapkg utility don't lead to info about it
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/925" title="defect: Change the search box icon to remove the down arrow (closed: fixed)"&gt;#925&lt;/a&gt; Change the search box icon to remove the down arrow
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/923" title="defect: Search box doesn't work in leaderboard page (closed: worksforme)"&gt;#923&lt;/a&gt; Search box doesn't work in leaderboard page in stats extension
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1034" title="defect: Flash message cached (closed: duplicate)"&gt;#1034&lt;/a&gt; Flash message cached
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/737" title="enhancement: Markdown syntax summary page (new)"&gt;#737&lt;/a&gt; Markdown syntax summary page
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/811" title="defect: Extra field editing form layout breaks when there are long field names (new)"&gt;#811&lt;/a&gt; Extra field editing form layout breaks when there are long field names
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1232#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1233</link>
+        <guid isPermaLink="false">http://localhost/ticket/1233</guid>
+        <title>#1233: [super] Improve wiki-style functionality for history</title>
+        <pubDate>Wed, 20 Jul 2011 16:29:52 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment we have a good revisioning system but a poor history interface. We need to improve this in a number of areas:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/191" title="enhancement: Searching by modification date (closed: fixed)"&gt;#191&lt;/a&gt; Searching by modification date
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/193" title="enhancement: Searching by time-related field (closed: wontfix)"&gt;#193&lt;/a&gt; Searching by time-related field
+&lt;/li&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/301" title="enhancement: Package discussion pages (assigned)"&gt;#301&lt;/a&gt; Package discussion pages
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1236" title="enhancement: View a package at a given revision (closed: fixed)"&gt;#1236&lt;/a&gt; Package history page should provide links to pages at particular revisions, similar to the wikipedia pages
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1236" title="enhancement: View a package at a given revision (closed: fixed)"&gt;#1236&lt;/a&gt; Viewing old revisions or unmoderated changes should have a message at the top of the package page
+&lt;/li&gt;&lt;li&gt;Other improvements as per my word doc.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1233#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1235</link>
+        <guid isPermaLink="false">http://localhost/ticket/1235</guid>
+        <title>#1235: [super] Search Improvements</title>
+        <pubDate>Wed, 20 Jul 2011 17:24:01 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Child tickets:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/234" title="enhancement: UI Review - Autocomplete package names &amp;amp; tags in search (closed: wontfix)"&gt;#234&lt;/a&gt; UI Review - Autocomplete package names &amp;amp; tags in search
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/193" title="enhancement: Searching by time-related field (closed: wontfix)"&gt;#193&lt;/a&gt;        Searching by time-related field
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/191" title="enhancement: Searching by modification date (closed: fixed)"&gt;#191&lt;/a&gt;        Searching by modification date
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/905" title="defect: Unable to search with accented characters in package names (closed: worksforme)"&gt;#905&lt;/a&gt; Unable to search with accented characters in package names
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/906" title="enhancement: Ability to search without accents for accented words (closed: fixed)"&gt;#906&lt;/a&gt; Ability to search without accents for accented words
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/924" title="enhancement: Search box has no search button (new)"&gt;#924&lt;/a&gt; Search box has no search button
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Broadly speaking though we need to choose PostgreSQL, Solr or something else. We don't want to invest our time maintaining two search backends with a limited abstraction layer between the two.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1235#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1326</link>
+        <guid isPermaLink="false">http://localhost/ticket/1326</guid>
+        <title>#1326: Write a set of auth plugin functions to integrate with Druapl</title>
+        <pubDate>Mon, 12 Sep 2011 09:51:24 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Ticket &lt;a class="closed ticket" href="http://localhost/ticket/787" title="task: Auth API (closed: fixed)"&gt;#787&lt;/a&gt; described join auth between CKAN and Drupal. The authentication part is live and implemented. This ticket is a placeholder for work that will be needed in the new auth system to link authorization functions to Drupal. It is dependent on the groups refactor.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1326#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1466</link>
+        <guid isPermaLink="false">http://localhost/ticket/1466</guid>
+        <title>#1466: Need to support https login for multiple instances as part of the CKAN package install</title>
+        <pubDate>Tue, 15 Nov 2011 16:52:58 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1466#changelog</comments>
+    </item>
+ </channel>
+</rss>

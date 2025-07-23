@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ecportal&amp;milestone=ckan-sprint-2012-02-06&amp;group=status&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ecportal&amp;milestone=ckan-sprint-2012-02-06&amp;group=status&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1700</link>
+        <guid isPermaLink="false">http://localhost/ticket/1700</guid>
+        <title>#1700: Document server setup for ckan server.</title>
+        <pubDate>Tue, 24 Jan 2012 15:12:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Document deployment on tenforce test server.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1700#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1701</link>
+        <guid isPermaLink="false">http://localhost/ticket/1701</guid>
+        <title>#1701: Normalize character encoding for ckan search.</title>
+        <pubDate>Tue, 24 Jan 2012 15:30:50 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make sure accented characters are normalized when indexed and when searched for.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1701#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1704</link>
+        <guid isPermaLink="false">http://localhost/ticket/1704</guid>
+        <title>#1704: Import test datasets from prototype into ckan.</title>
+        <pubDate>Tue, 24 Jan 2012 15:52:35 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Eurostat datasets mainly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1704#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1706</link>
+        <guid isPermaLink="false">http://localhost/ticket/1706</guid>
+        <title>#1706: Tag taxonomies package schema</title>
+        <pubDate>Tue, 24 Jan 2012 17:58:58 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Enable ckanext's to add new vocabularies to default_package_schema(), use the new vocabularies in templates for dataset view, create, edit pages, helper function for extensions to create a vocabulary schema for a given vocabulary name (must match a vocab already in the db) and add it to default package schema.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1706#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1738</link>
+        <guid isPermaLink="false">http://localhost/ticket/1738</guid>
+        <title>#1738: Add extension point to search index, so can modify dataset dict before index.</title>
+        <pubDate>Tue, 31 Jan 2012 17:39:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+It is useful for extensions to add or change items that go into the search index. Add an extension point for this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1738#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1699</link>
+        <guid isPermaLink="false">http://localhost/ticket/1699</guid>
+        <title>#1699: Setup Ckan on tenforce test server</title>
+        <pubDate>Tue, 24 Jan 2012 15:10:59 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to setup server in tenforce test server.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1699#changelog</comments>
+    </item>
+ </channel>
+</rss>

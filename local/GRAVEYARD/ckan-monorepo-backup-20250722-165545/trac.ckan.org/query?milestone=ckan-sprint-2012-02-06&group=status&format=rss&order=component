@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?milestone=ckan-sprint-2012-02-06&amp;group=status&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?milestone=ckan-sprint-2012-02-06&amp;group=status&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/905</link>
+        <guid isPermaLink="false">http://localhost/ticket/905</guid>
+        <title>#905: Unable to search with accented characters in package names</title>
+        <pubDate>Thu, 13 Jan 2011 17:18:40 GMT</pubDate>
+        
+        <dc:creator>Stiivi</dc:creator>
+
+        <description>&lt;p&gt;
+I have a package with name: "Štatistické prehľady agendy cestovných pasov" and when I try to search for "Štatistické" there are no results.
+&lt;/p&gt;
+&lt;p&gt;
+CKAN setup:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;psql DB with UTF-8 tables
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;psql search backend
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;ckan version: 1.3.1b
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Example:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://verejnedata.sk/package/agenda-cestovnch-pasov"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://verejnedata.sk/package/agenda-cestovnch-pasov&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+try to search for the first word in the package name.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/905#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1396</link>
+        <guid isPermaLink="false">http://localhost/ticket/1396</guid>
+        <title>#1396: Improvements to user page UX - 1d</title>
+        <pubDate>Thu, 13 Oct 2011 17:46:07 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Show member since
+&lt;/li&gt;&lt;li&gt;Display email (in obfuscated form)
+&lt;/li&gt;&lt;li&gt;List all owned datasets (in standard manner)
+&lt;ul&gt;&lt;li&gt;Will need change to logic layer to show datasets on user dict (this is useful for the API as well ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;(Re)move list of changes
+&lt;ul&gt;&lt;li&gt;Should have activity (once activity available)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+WONTFIX:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;?? Allow users to provide a home page, organization (requires migration)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1396#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1412</link>
+        <guid isPermaLink="false">http://localhost/ticket/1412</guid>
+        <title>#1412: application.js crashes when viewing a dataset with no resources</title>
+        <pubDate>Mon, 24 Oct 2011 10:03:45 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Create a new dataset, don't add any resources to the dataset yet, view the dataset in ckan, if you have firebug enabled you'll see the error "resource is undefined" at line 699 of application.js.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1513</link>
+        <guid isPermaLink="false">http://localhost/ticket/1513</guid>
+        <title>#1513: Logged in/out problems</title>
+        <pubDate>Mon, 05 Dec 2011 15:52:33 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Richard Cyganiak: I often see a problem where half the system thinks that I'm logged in, while the other half insists I'm not. Logout then login again may fix it.
+&lt;/p&gt;
+&lt;p&gt;
+David Read: I think I've seen it several times that the "My Account" link is given (suggesting you're logged in) but when you click it it asks you to log in, which means you weren't.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1513#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1583</link>
+        <guid isPermaLink="false">http://localhost/ticket/1583</guid>
+        <title>#1583: Integrate QA into frontend - 1d</title>
+        <pubDate>Wed, 21 Dec 2011 09:22:07 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;On dataset view page, add star rating after each resource view url. Probably similar to current format label after url.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Add star rating to resource view page, along with a way of displaying the reason for the rating and tips to improve. Should be unobtrusive.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Fix the table at &lt;a class="ext-link" href="http://thedatahub.org/qa/dataset/broken_resource_links"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/qa/dataset/broken_resource_links&lt;/a&gt; - URLs should be truncated to a fixed not-too-long length and the other fields line up (eg by using a table)~
+&lt;/del&gt;&lt;/li&gt;&lt;li&gt;&lt;del&gt;Handle 404s by showing that 'we think this resource is 404ing'.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Handle the absence of QA data on a resource (currently nothing is displayed. Maybe that's fine.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Do we need to integrate the 'reason for rating' string into the UI?&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Next Steps:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;del&gt;Use db dump of thedatahub.org for final testing.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1583#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1628</link>
+        <guid isPermaLink="false">http://localhost/ticket/1628</guid>
+        <title>#1628: get ckanext-dgu working with ckan 1.5.1</title>
+        <pubDate>Tue, 10 Jan 2012 16:59:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+johnglover said: I can confirm that even with the mapping fix, the ckanext-dgu dgu_form plugin template does not work properly with 1.5.1, so should probably not be installed at present. The edit page is ugly but should work (eg: &lt;a class="ext-link" href="http://dgu-os.okfn.org/dataset/edit/abandoned-vehicles"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://dgu-os.okfn.org/dataset/edit/abandoned-vehicles&lt;/a&gt;), but the 'add a dataset' page is broken (eg: &lt;a class="ext-link" href="http://dgu-os.okfn.org/dataset/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://dgu-os.okfn.org/dataset/new&lt;/a&gt;)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1628#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1630</link>
+        <guid isPermaLink="false">http://localhost/ticket/1630</guid>
+        <title>#1630: Integrate Data Explorer v2 into Data Viewer</title>
+        <pubDate>Wed, 11 Jan 2012 10:51:38 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1602" title="enhancement: [super] Data Previewer / Viewer v2 (closed: fixed)"&gt;#1602&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Steps:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Include (or git submodule) data explorer into vendor
+&lt;/li&gt;&lt;li&gt;Update existing js integration code
+&lt;/li&gt;&lt;li&gt;Fix css and any bugs
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est: 1d
+&lt;/p&gt;
+&lt;p&gt;
+Actual: 1d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1630#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1639</link>
+        <guid isPermaLink="false">http://localhost/ticket/1639</guid>
+        <title>#1639: Move activity streams CSS into external file</title>
+        <pubDate>Wed, 11 Jan 2012 18:03:39 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The HTML and CSS for the activity streams templates needs to be tidied up. Currently the CSS is inlined in the templates themselves, and there is much unnecessary repetition of CSS.
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps put this one in hold until there has been some design discussion about how the activity streams and the user, dataset and group pages with activity streams should look?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1639#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1660</link>
+        <guid isPermaLink="false">http://localhost/ticket/1660</guid>
+        <title>#1660: CSV preview broken - OpenSpending</title>
+        <pubDate>Mon, 16 Jan 2012 12:44:06 GMT</pubDate>
+        
+        <dc:creator>lucychambers</dc:creator>
+
+        <description>&lt;p&gt;
+This CSV resource used to preview but now the format appears to be unsupported: "We are unable to preview this type of resource: x-osdata-csv"
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://thedatahub.org/dataset/lbhf-spending-2010/resource/9661abbd-2816-4d58-8b20-3cb0eb770c69"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset/lbhf-spending-2010/resource/9661abbd-2816-4d58-8b20-3cb0eb770c69&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This is used as an example by the &lt;a class="missing wiki"&gt;OpenSpending?&lt;/a&gt; team all the time.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1660#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1663</link>
+        <guid isPermaLink="false">http://localhost/ticket/1663</guid>
+        <title>#1663: API call for creating an activity streams event</title>
+        <pubDate>Tue, 17 Jan 2012 10:07:24 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The create_activity() logic function already exists, but validation and authorization need to be added before it's hooked up to an API call.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1663#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1666</link>
+        <guid isPermaLink="false">http://localhost/ticket/1666</guid>
+        <title>#1666: Add activity stream events for tags</title>
+        <pubDate>Tue, 17 Jan 2012 10:26:25 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+...and show them on the tag pages.
+&lt;/p&gt;
+&lt;p&gt;
+This means adding tag_activity_list() and tag_activity_list_html() logic functions, adding the templating to render tags as HTML, and adding the tag HTML into the tag pages.
+&lt;/p&gt;
+&lt;p&gt;
+What exactly should go into a tag's activity stream? As with datasets we may want a more complex SQL query, where events from objects related to the tag (datasets, users, etc.) appear in the tag's stream.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1666#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1671</link>
+        <guid isPermaLink="false">http://localhost/ticket/1671</guid>
+        <title>#1671: Publisher profile sysadmin authz</title>
+        <pubDate>Tue, 17 Jan 2012 12:16:47 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implement authz for sysadmins in publisher profile
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1671#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1672</link>
+        <guid isPermaLink="false">http://localhost/ticket/1672</guid>
+        <title>#1672: Publisher profile user authz</title>
+        <pubDate>Tue, 17 Jan 2012 12:18:00 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Authz for normal users in publisher profile as per sysadmin
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1672#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1673</link>
+        <guid isPermaLink="false">http://localhost/ticket/1673</guid>
+        <title>#1673: Add approval status field to groups</title>
+        <pubDate>Tue, 17 Jan 2012 12:19:13 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+As groups need to be authorised in some cases, particularly publisher profiles, we need a field to denote how this is managed.
+&lt;/p&gt;
+&lt;p&gt;
+We should add an 'approval_status' field that will be used to denote its status.  By default this will be "approved" but this will allow us to override it with a "pending" or "denied" status.  The latter should also change the main status of the Group.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1673#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1674</link>
+        <guid isPermaLink="false">http://localhost/ticket/1674</guid>
+        <title>#1674: Test auth logic hooks for publisher profile</title>
+        <pubDate>Tue, 17 Jan 2012 12:20:41 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Test all of the new auth logic hooks for publisher profile to make sure they work as expected. Also make sure that we have a test to compare the naming of the core auth funcs with the profile hooks (so we can see what may have changed in one but not the other).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1674#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1676</link>
+        <guid isPermaLink="false">http://localhost/ticket/1676</guid>
+        <title>#1676: Publisher editor authz</title>
+        <pubDate>Tue, 17 Jan 2012 12:22:51 GMT</pubDate>
+        
+        <dc:creator>ross</dc:creator>
+
+        <description>&lt;p&gt;
+Super &lt;a class="closed ticket" href="http://localhost/ticket/1669" title="enhancement: [super] Publisher profile (closed: fixed)"&gt;#1669&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Editor authz for publisher groups need to be implemented and tested.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1676#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1686</link>
+        <guid isPermaLink="false">http://localhost/ticket/1686</guid>
+        <title>#1686: Add activity events for when a dataset is added to or removed from a group</title>
+        <pubDate>Thu, 19 Jan 2012 17:21:32 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1686#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1688</link>
+        <guid isPermaLink="false">http://localhost/ticket/1688</guid>
+        <title>#1688: API for changing the permissions on an object</title>
+        <pubDate>Fri, 20 Jan 2012 12:16:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We need an API for changing the authorization (permissions) on a model object.
+&lt;/p&gt;
+&lt;p&gt;
+This was neglected in &lt;a class="closed ticket" href="http://localhost/ticket/1253" title="enhancement: Authz refactor (closed: fixed)"&gt;#1253&lt;/a&gt; because of various changes to authz were looming. But six months later it still hasn't been done.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest this is just moving _add_user_object_role from ckan/lib/base.py to the logic layer, but no doubt it will be more complicated.
+&lt;/p&gt;
+&lt;p&gt;
+Estimate: 3 days
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1688#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1694</link>
+        <guid isPermaLink="false">http://localhost/ticket/1694</guid>
+        <title>#1694: Add quick functional test(s) for activity streams HTML rendering</title>
+        <pubDate>Mon, 23 Jan 2012 12:37:28 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+The activity streams feature is already thoroughly tested via the logic layer and API calls, but there needs to be a quick test of the rendering code, e.g. fetch a user's page (thus testing that ckan doesn't crash while rendering it) and then assert that the expected activity streams HTML is in the fetched HTML.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1694#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1696</link>
+        <guid isPermaLink="false">http://localhost/ticket/1696</guid>
+        <title>#1696: Maintain backwards compatibility with older way of creating custom forms</title>
+        <pubDate>Mon, 23 Jan 2012 13:44:03 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+To maintain backwards compatibility, the package controller (new/edit) should check to see if the controller has a package_form variable defined, and if so render the form pointed to by this variable before calling the new self._package_form() function.
+&lt;/p&gt;
+&lt;p&gt;
+This behaviour is now deprecated however.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1696#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1702</link>
+        <guid isPermaLink="false">http://localhost/ticket/1702</guid>
+        <title>#1702: Normalize character encoding for ckan search.</title>
+        <pubDate>Tue, 24 Jan 2012 15:36:09 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make sure accented characters are normalized when indexed and when searched for.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1702#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1707</link>
+        <guid isPermaLink="false">http://localhost/ticket/1707</guid>
+        <title>#1707: Over-long URLs in QA ext broken links list</title>
+        <pubDate>Wed, 25 Jan 2012 10:53:13 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+From Mark on the ckan-dev list:
+&lt;/p&gt;
+&lt;p&gt;
+In the table of broken links at
+&amp;lt;&lt;a class="ext-link" href="http://thedatahub.org/qa/dataset/broken_resource_links"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/qa/dataset/broken_resource_links&lt;/a&gt;&amp;gt;, the links as
+printed should be abridged to a fixed length (but link to the full
+URL). Otherwise the 'reason' column vanishes off the screen. Also a
+table would probably be better since as things stand the 'reasons' are
+not lined up
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1707#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1708</link>
+        <guid isPermaLink="false">http://localhost/ticket/1708</guid>
+        <title>#1708: SOLR configuration lost</title>
+        <pubDate>Wed, 25 Jan 2012 12:10:28 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The SOLR url, user and password defined in the CKAN config file are ignored and the default SOLR url is used.
+&lt;/p&gt;
+&lt;p&gt;
+This causes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;"0 datasets" displayed on the home page
+&lt;/li&gt;&lt;li&gt;Dataset searches result in 0 results and a small message "There was an error while searching". (Nothing about it in the logs)
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Toreproduce"&gt;To reproduce&lt;/h2&gt;
+&lt;p&gt;
+This bug is only visible if your SOLR instance is not at the default place. To quickly reproduce this problem, setup your machine as a SOLR multicore instance and run: "paster db clean &amp;amp;&amp;amp; paster create-test-data &amp;amp;&amp;amp; paster serve development.ini". It quits with the error: "solr.core.&lt;a class="missing wiki"&gt;SolrException?&lt;/a&gt;: HTTP code=400, reason=Missing solr core name in path"
+&lt;/p&gt;
+&lt;h2 id="Codeaffected"&gt;Code affected&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Does not affect any released versions (1.5.1 is clean).
+&lt;/li&gt;&lt;li&gt;Introduced to master: &lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/627382e6ff575146da221efc50321a41152d8b0f"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/627382e6ff575146da221efc50321a41152d8b0f&lt;/a&gt; by Ross
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1708#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1710</link>
+        <guid isPermaLink="false">http://localhost/ticket/1710</guid>
+        <title>#1710: 'Announce' email list for thedatahub</title>
+        <pubDate>Thu, 26 Jan 2012 12:00:59 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We want to make email announcements to users of thedatahub.org.
+&lt;/p&gt;
+&lt;p&gt;
+The most simple way to do this is to get a dump of the email addresses and subscribe/invite them to a mailman list.
+&lt;/p&gt;
+&lt;p&gt;
+Different ways to do it:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;'paster dump-users-csv' creates a CSV file. Apache serves up the directory using password protection. Is this secure enough?
+&lt;/li&gt;&lt;li&gt;CKAN admin pages provides a button to produce the CSV and download it. A config option may be necessary to enable this (disabled by default).
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Something more advanced in the future could be:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;CKAN tells mailman about new subscribers using the mailman web interface. Could be brittle.
+&lt;/li&gt;&lt;li&gt;Mailman doesn't have an Internet API, but it does have a python interface. So CKAN could tell mailman about new subscribers using a python proxy. There may be one out there, or maybe easy to do. But annoying to have to maintain another process running on machine.
+&lt;/li&gt;&lt;li&gt;CKAN sends out the emails itself. A sysadmin is given a form. Users have an opt in/out option in their account. But receiving emails is a sensitive thing so it would need to be right first time, and there are several risks to this approach.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1710#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1716</link>
+        <guid isPermaLink="false">http://localhost/ticket/1716</guid>
+        <title>#1716: move or change save warning on edit dataset page [a:0.1d]</title>
+        <pubDate>Thu, 26 Jan 2012 17:44:53 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+To allow navigation between sections to still work, also potentially rephrase to avoid confusion that you have to save every time to add a tag or resource and can't say add description, tag and resource in one go
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1716#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1719</link>
+        <guid isPermaLink="false">http://localhost/ticket/1719</guid>
+        <title>#1719: Broken links for non-Gravatar use icons - 0.25d</title>
+        <pubDate>Mon, 30 Jan 2012 15:53:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1506" title="enhancement: [super] UX improvements to dataset edit, create and search + group + user ... (closed: fixed)"&gt;#1506&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://thedatahub.org/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/user&lt;/a&gt; The users with Gravatar have their nice user icons, but the majority of users (without Gravatars) have 'broken link' symbols. Same problem wherever users are shown, such as the dataset history pages.
+&lt;/p&gt;
+&lt;p&gt;
+Broken on 1.5.2b - currently on thedatahub.org.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1719#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1725</link>
+        <guid isPermaLink="false">http://localhost/ticket/1725</guid>
+        <title>#1725: Tag autocompletion and commas don't mix</title>
+        <pubDate>Tue, 31 Jan 2012 10:45:09 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+If you use tag autocompletion, it automatically adds a comma after the tag. This is fine if you are going to add another tag, but not fine if it is the last one. If you don't manually remove the final comma than you get form validation error "Tag string: Tag "" length is less than minimum 2"
+&lt;/p&gt;
+&lt;p&gt;
+Affects only version 1.5.2a.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1725#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1726</link>
+        <guid isPermaLink="false">http://localhost/ticket/1726</guid>
+        <title>#1726: Update harvesting model</title>
+        <pubDate>Tue, 31 Jan 2012 10:52:07 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+We need:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;"current" column in harvest_object
+&lt;/li&gt;&lt;li&gt;"harvest_source_id" column in harvest_object, foreign key to harvest_source
+&lt;/li&gt;&lt;li&gt;"title" column in harvest_source
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The extension should check on startup if the db needs updating and run the necessary scripts.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1726#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1727</link>
+        <guid isPermaLink="false">http://localhost/ticket/1727</guid>
+        <title>#1727: Add "current" property to harvest objects</title>
+        <pubDate>Tue, 31 Jan 2012 10:54:14 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now is quite difficult to get the most current version of a package via the harvest objects, and the queries involved are prone to errors.
+A new "current" field will be added which will identify unequivocally the most recent harvested object.
+Unfortunately this will involve some major changes:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Model update (See &lt;a class="closed ticket" href="http://localhost/ticket/1726" title="enhancement: Update harvesting model (closed: fixed)"&gt;#1726&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;Update queries for getting harvest sources' datasets
+&lt;/li&gt;&lt;li&gt;Update ckanext-csw queries for getting the objects
+&lt;/li&gt;&lt;li&gt;Update inspire and ckan harvesters
+&lt;/li&gt;&lt;li&gt;Document new field
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1727#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1739</link>
+        <guid isPermaLink="false">http://localhost/ticket/1739</guid>
+        <title>#1739: Fix issues where tests where not run.</title>
+        <pubDate>Tue, 31 Jan 2012 21:58:49 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Test failures in master due to tom and rufus not running tests. 0.3d.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1739#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1754</link>
+        <guid isPermaLink="false">http://localhost/ticket/1754</guid>
+        <title>#1754: Add activities for extras</title>
+        <pubDate>Mon, 06 Feb 2012 11:38:38 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+When an extra is added to or removed from a dataset or is updated, an activity should go in the dataset's and user's activity streams.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1754#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1620</link>
+        <guid isPermaLink="false">http://localhost/ticket/1620</guid>
+        <title>#1620: Update and test existing DGU package form : don't allow package-type selection when editing a package</title>
+        <pubDate>Mon, 09 Jan 2012 10:10:37 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Can't change a dataset from containing time-series resources to one containing individual resources or visa-versa.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1620#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1712</link>
+        <guid isPermaLink="false">http://localhost/ticket/1712</guid>
+        <title>#1712: DGU /data page</title>
+        <pubDate>Thu, 26 Jan 2012 15:08:47 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN provides the /data page page of data.gov.uk
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown of tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[x] Analysis / refinement of spec.
+&lt;/li&gt;&lt;li&gt;[x] Log-in / register as publisher
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+(Waiting on publisher form)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[x] Population of "browse by publisher"
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+list groups ordered by most datasets
+(Waiting on publisher integration)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[ ] &lt;del&gt;Browse by nation&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Featured datasets&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Now a possible integration point with drupal
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] Tag cloud
+&lt;/li&gt;&lt;li&gt;[X] Developers section
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1712#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1713</link>
+        <guid isPermaLink="false">http://localhost/ticket/1713</guid>
+        <title>#1713: DGU dataset search page</title>
+        <pubDate>Thu, 26 Jan 2012 15:11:40 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Search results page of DGU.
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown:
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+[X] ensure faceting by group (publisher) works
+[X] allow faceting by UKLP dataset type
+[X] allow faceting by INSPIRE
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1713#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1714</link>
+        <guid isPermaLink="false">http://localhost/ticket/1714</guid>
+        <title>#1714: DGU dataset view page</title>
+        <pubDate>Thu, 26 Jan 2012 15:18:10 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Dataset read page for DGU
+&lt;/p&gt;
+&lt;p&gt;
+Breakdown:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[X] Fix missing title
+&lt;/li&gt;&lt;li&gt;[X] Links to the social media stuff
+&lt;ul&gt;&lt;li&gt;"Share your app"
+&lt;/li&gt;&lt;li&gt;"Share your idea"
+&lt;/li&gt;&lt;li&gt;"Request new data"
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Presentation of additional information should be broken into sections&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Content is there.  Don't do anything until theming/design work is undertaken.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[ ] &lt;del&gt;"More like this": links to similar datasets.&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Dropping
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[N] &lt;del&gt;Stars&lt;/del&gt; (I think these are being removed)
+&lt;/li&gt;&lt;li&gt;[ ] &lt;del&gt;Comments&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Possible integration point with Drupal.  Needs it own ticket.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;[X] Give feedback to department
+&lt;/li&gt;&lt;li&gt;[X] Tidy up the QA stars
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1714#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1769</link>
+        <guid isPermaLink="false">http://localhost/ticket/1769</guid>
+        <title>#1769: 6. Publisher Registration Improvements MUST PHASE 1</title>
+        <pubDate>Mon, 06 Feb 2012 14:49:49 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1769#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1770</link>
+        <guid isPermaLink="false">http://localhost/ticket/1770</guid>
+        <title>#1770: 3. Themes/Taxonomy as well as tags WONT PHASE 2</title>
+        <pubDate>Mon, 06 Feb 2012 14:50:34 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1770#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1772</link>
+        <guid isPermaLink="false">http://localhost/ticket/1772</guid>
+        <title>#1772: 13. Provider labelling MUST PHASE 1 [UKLP #14 MUST]</title>
+        <pubDate>Mon, 06 Feb 2012 14:51:42 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1772#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1699</link>
+        <guid isPermaLink="false">http://localhost/ticket/1699</guid>
+        <title>#1699: Setup Ckan on tenforce test server</title>
+        <pubDate>Tue, 24 Jan 2012 15:10:59 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Need to setup server in tenforce test server.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1699#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1700</link>
+        <guid isPermaLink="false">http://localhost/ticket/1700</guid>
+        <title>#1700: Document server setup for ckan server.</title>
+        <pubDate>Tue, 24 Jan 2012 15:12:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Document deployment on tenforce test server.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1700#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1701</link>
+        <guid isPermaLink="false">http://localhost/ticket/1701</guid>
+        <title>#1701: Normalize character encoding for ckan search.</title>
+        <pubDate>Tue, 24 Jan 2012 15:30:50 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Make sure accented characters are normalized when indexed and when searched for.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1701#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1704</link>
+        <guid isPermaLink="false">http://localhost/ticket/1704</guid>
+        <title>#1704: Import test datasets from prototype into ckan.</title>
+        <pubDate>Tue, 24 Jan 2012 15:52:35 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Eurostat datasets mainly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1704#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1706</link>
+        <guid isPermaLink="false">http://localhost/ticket/1706</guid>
+        <title>#1706: Tag taxonomies package schema</title>
+        <pubDate>Tue, 24 Jan 2012 17:58:58 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+Enable ckanext's to add new vocabularies to default_package_schema(), use the new vocabularies in templates for dataset view, create, edit pages, helper function for extensions to create a vocabulary schema for a given vocabulary name (must match a vocab already in the db) and add it to default package schema.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1706#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1738</link>
+        <guid isPermaLink="false">http://localhost/ticket/1738</guid>
+        <title>#1738: Add extension point to search index, so can modify dataset dict before index.</title>
+        <pubDate>Tue, 31 Jan 2012 17:39:32 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+It is useful for extensions to add or change items that go into the search index. Add an extension point for this.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1738#changelog</comments>
+    </item>
+ </channel>
+</rss>

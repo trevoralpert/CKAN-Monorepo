@@ -1,0 +1,57 @@
+id,summary,owner,type,priority,component,resolution
+88,Download (link) metadata,rgrp,enhancement,awaiting triage,ckan,fixed
+144,Most popular packages listed on homepage,rgrp,enhancement,awaiting triage,ckan,duplicate
+180,Tag cloud as way to view CKAN tags,rgrp,enhancement,awaiting triage,ckan,duplicate
+194,Check star ratings aren't influenced by search engine crawlers,rgrp,defect,awaiting triage,ckan,fixed
+154,Package form guidance,rgrp,enhancement,minor,ckan,wontfix
+21,Undelete a package,somebody,enhancement,major,ckan,fixed
+112,Test db schema created via migration scripts,rgrp,enhancement,major,ckan,wontfix
+113,Simple script to test data migration on a production db,dread,enhancement,major,ckan,fixed
+134,admin interface is only available to sysadmins,rgrp,defect,major,ckan,fixed
+139,Ensure you cannot add same tag twice to a package,rgrp,defect,major,ckan,worksforme
+145,Group shows its administrators,rgrp,enhancement,major,ckan,fixed
+147,Parser and loader for esw.org data,dread,enhancement,major,ckan,duplicate
+148,Parser and loader for esw.org data,dread,enhancement,major,ckan,fixed
+149,Loader for esw data recognises existing packages,dread,enhancement,major,ckan,fixed
+150,Loader for esw data uses REST API,dread,enhancement,major,ckan,fixed
+152,Package has editable 'Extra' fields,dread,enhancement,major,ckan,fixed
+157,Log message not persisted through preview,dread,enhancement,major,ckan,fixed
+158,Add 'extras' to REST API,dread,enhancement,major,ckan,fixed
+162,Tags should be automatially lowere-cased if not already,dread,enhancement,major,ckan,fixed
+163,Regularly put CKAN RDF on Talis CC,rgrp,enhancement,major,ckan,fixed
+166,Add extras editing to ckanclient,dread,enhancement,major,ckan,fixed
+167,REST interface you can't update multiple tags,dread,defect,major,ckan,fixed
+170,Paginate search results,rgrp,enhancement,major,ckan,fixed
+174,Packages search broken for 'only openly licensed',rgrp,defect,major,ckan,fixed
+203,show package counts for groups in WUI,dread,enhancement,major,ckan,fixed
+208,Obfuscate author email and maintainer email field,dread,enhancement,major,ckan,fixed
+213,Automate CKAN deployment,dread,enhancement,major,ckan,fixed
+229,Resource hashes,dread,enhancement,major,ckan,fixed
+77,Rate packages,dread,enhancement,critical,ckan,fixed
+136,User has publicly viewable page,rgrp,enhancement,critical,ckan,fixed
+141,Search api docs,dread,task,critical,ckan,fixed
+151,User object should have a created attribute,dread,enhancement,critical,ckan,duplicate
+159,Searching for tags:... resulting in lots of tags being found,dread,defect,critical,ckan,fixed
+160,Implement internal links in CKAN notes markup,dread,enhancement,critical,ckan,fixed
+172,Build ckan documentation using sphinx and upload,rgrp,enhancement,critical,ckan,fixed
+178,Excel package importer,rgrp,enhancement,critical,ckan,fixed
+187,Full-text search,rgrp,enhancement,critical,ckan,fixed
+188,Improve package listing views,rgrp,enhancement,critical,ckan,duplicate
+189,Multiple download urls,dread,enhancement,critical,ckan,fixed
+195,Association listings should be alphabetically sorted (e.g. a group's packages),rgrp,enhancement,critical,ckan,fixed
+202,Internationalization (i18n) try-out,tonfa,enhancement,critical,ckan,fixed
+212,"Switch to using m.okfn.org ""kforge"" media (css and behaviour)",rgrp,enhancement,critical,ckan,fixed
+214,UI Review - General template,nickstenning,enhancement,critical,ckan,fixed
+217,UI Review - Search results,nickstenning,enhancement,critical,ckan,fixed
+218,UI Review - Package listing,nickstenning,enhancement,critical,ckan,fixed
+220,UI Review - Package read,nickstenning,enhancement,critical,ckan,fixed
+224,UI Review - Groups,nickstenning,enhancement,critical,ckan,fixed
+90,Link to RDF versions of CKAN data,nickstenning,enhancement,blocker,ckan,fixed
+128,Add ckan_url attribute to REST JSON representation of a Package,dread,enhancement,blocker,ckan,fixed
+135,sysadmins defined in the db,rgrp,enhancement,blocker,ckan,fixed
+153,Group's packages listed alphabetically,dread,enhancement,blocker,ckan,duplicate
+161,Tag listing is incorrect,dread,defect,blocker,ckan,fixed
+173,Diffing WUI,rgrp,enhancement,blocker,ckan,fixed
+175,Creation date,rgrp,enhancement,blocker,ckan,fixed
+197,Simple dumper,dread,enhancement,blocker,ckan,fixed
+204,Custom package input form,dread,enhancement,blocker,ckan,fixed

@@ -1,0 +1,69 @@
+id	summary	component	owner	type	priority	milestone
+2833	Load module templates before calling .initialize()	ckan		enhancement	minor	demo phase 5
+2835	Client module needs a template loading method	ckan		enhancement	minor	demo phase 5
+2854	no way to see which dataset an app is related to on /apps page	ckan		enhancement	awaiting triage	demo phase 5
+2898	Looses data entered on step 1 of create dataset after login	ckan		defect	awaiting triage	demo phase 5
+2899	Step 2 > Save & add another bug	ckan		enhancement	awaiting triage	demo phase 5
+2901	Language Dropdown bug in footer with IE7	ckan		enhancement	minor	demo phase 5
+2904	Show more formats/groups/tags shouldn't display if there aren't more	ckan		enhancement	awaiting triage	demo phase 5
+2905	Add dataset URL key behaviour	ckan		enhancement	awaiting triage	demo phase 5
+2906	Wrong flags in language dropdown	ckan		defect	minor	demo phase 5
+2908	Dataset related with image should retain aspect ratio	ckan		enhancement	awaiting triage	demo phase 5
+2909	User profile headers are a bit weird	ckan		enhancement	awaiting triage	demo phase 5
+2910	User listings are not very compelling	ckan		enhancement	awaiting triage	demo phase 5
+285	Paginate list of packages on tag read page	ckan		enhancement	awaiting triage	
+301	Package discussion pages	ckan		enhancement	awaiting triage	
+1069	Stub datasets (request for datasets)	ckan	tobes	enhancement	awaiting triage	
+1130	First time users	ckan		enhancement	awaiting triage	
+1135	Changeset model for vdm	vdm	kindly	enhancement	major	
+1136	Move to SessionExtension in vdm	vdm	kindly	enhancement	critical	
+1137	Remove need for statefulness in vdm	vdm	kindly	enhancement	major	
+1244	Notes field carriage-returns converted to CRLF	ckan		enhancement	major	
+1322	Action API improvements	ckan		enhancement	major	
+1328	Unicode & paster commands	ckan		defect	minor	
+1460	Improve extensions documentation	ckan		enhancement	major	
+1509	Mis-dated old revisions of datasets	ckan		defect	minor	
+1689	List deleted datasets in API	ckan	kindly	enhancement	major	
+2535	SSL certificate for DataHub + https by default	ckan		enhancement	awaiting triage	
+2622	Login fails in Opera 12	ckan		defect	awaiting triage	
+2635	Non-destructive SOLR reindex	ckan		enhancement	major	
+2656	Feed with few results has bad paging link, causing exception	ckan	seanh	defect	trivial	
+2673	simplify set of options for resources	ckan		enhancement	minor	
+2683	Add no-cache header to _tracking API call's response to make sure it doesn't get cached	ckan		enhancement	awaiting triage	
+2688	Allow ordering of groups in WUI	ckan		enhancement	awaiting triage	
+2709	Atom feeds are undocumented	ckan	icmurray	enhancement	awaiting triage	
+2719	Feeds controller does not catch NotAuthorized exception	ckan		defect	minor	
+2731	Some sites permanently 'down for maintenance'	ckan		enhancement	awaiting triage	
+2777	bug: user attributes	ckan		enhancement	awaiting triage	
+2784	model dictize sensitive data	ckan	icmurray	defect	awaiting triage	
+2796	Need a datahub one-pager	ckan	mark.wainwright	enhancement	awaiting triage	
+2814	Demo: upload file behaves oddly	ckan	shevski	enhancement	awaiting triage	
+2844	SQL-only (no solr) version of CKAN	ckan		enhancement	awaiting triage	
+2851	Preview of PDF tries to connect to datastore	ckan		enhancement	awaiting triage	
+2867	1.8 url_for error	ckan		enhancement	awaiting merge	
+2870	1.8 tag_list not defined	ckan	seanh	enhancement	awaiting triage	
+2874	Clean up bin directory	ckan	rgrp	enhancement	awaiting triage	
+2877	Bugs with datastore v2	ckan	kindly	enhancement	awaiting triage	
+2888	Datapreview in Iframe	ckan		enhancement	awaiting triage	
+2895	QA pages (e.g. broken resource links) are not paginated	ckan		enhancement	awaiting triage	
+2911	Internal documentation of Organization Groups	ckan		enhancement	awaiting triage	
+2934	Webtests for CKAN	ckan		enhancement	awaiting triage	
+2938	Explain bundling in doc/resources.rst	ckan	Toby	enhancement	awaiting triage	
+2939	Orgs are groups	ckan	toby	enhancement	awaiting triage	
+2943	Chrome does not resize preview	ckan		enhancement	awaiting triage	
+2944	Recline preview does not work in Opera	ckan		enhancement	awaiting triage	
+2945	Pdf preview does not load in IE	ckan		enhancement	awaiting triage	
+2947	Redirect to the resource page from /resource/{res-id}	ckan		enhancement	minor	
+2948	Negative range breaks datastore backend	ckan		enhancement	awaiting triage	
+2949	Reenable Data API button on the new theme	ckan	amercader	defect	major	
+2957	New datastore on postgres prior to 9.0	ckan		task	awaiting triage	
+2992	Delete resource should send me back to edit dataset page	ckan		enhancement	awaiting triage	
+3012	data.gov auth	ckan	toby	enhancement	awaiting triage	
+3013	common-error-messages is unreadable	ckan	dominik	defect	awaiting triage	
+3020	Update CKAN coding standards	ckan		enhancement	awaiting triage	
+3023	New methods on IPackageController to provide access to the data_dict	ckan	amercader	enhancement	awaiting triage	
+3025	Add requests to core requirements	ckan	amercader	enhancement	awaiting triage	
+3026	Support icons on  nav_named_link	ckan	amercader	enhancement	minor	
+3027	solr for 2.0	ckan	kindly	enhancement	awaiting triage	
+3029	JSONP parameter scuppers Search in API	ckan	seanh	defect	awaiting triage	
+3030	clean up helper functions	ckan		enhancement	awaiting triage	

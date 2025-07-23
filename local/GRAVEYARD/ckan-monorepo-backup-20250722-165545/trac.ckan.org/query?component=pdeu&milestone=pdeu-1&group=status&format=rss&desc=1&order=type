@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=pdeu&amp;milestone=pdeu-1&amp;group=status&amp;desc=1&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=pdeu&amp;milestone=pdeu-1&amp;group=status&amp;desc=1&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1161</link>
+        <guid isPermaLink="false">http://localhost/ticket/1161</guid>
+        <title>#1161: Build a simplified theme for PDEU</title>
+        <pubDate>Thu, 26 May 2011 11:03:55 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+We need to offer a strongly simplified version, read-only of CKAN under publicdata.eu, with a focus on its role as search engine instead of a data catalogue.
+&lt;/p&gt;
+&lt;p&gt;
+This ticket relates to work on the PDEU theme only!
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1161#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/985</link>
+        <guid isPermaLink="false">http://localhost/ticket/985</guid>
+        <title>#985: Harvest other data catalogues</title>
+        <pubDate>Mon, 14 Feb 2011 10:36:39 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;data.london.gov.uk (1d, ping DERI)
+&lt;/li&gt;&lt;li&gt;catalogues from Paris and Vienna (1d)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Others?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;digitaliser.dk (1d)
+&lt;/li&gt;&lt;li&gt;data-publica.com (2d)
+&lt;/li&gt;&lt;li&gt;data.suomi.fi (2d)
+&lt;/li&gt;&lt;li&gt;dati.piedmonte.it (1d)
+&lt;/li&gt;&lt;li&gt;portalu.de (2d)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/985#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1160</link>
+        <guid isPermaLink="false">http://localhost/ticket/1160</guid>
+        <title>#1160: Havest CSW servers on PDEU</title>
+        <pubDate>Thu, 26 May 2011 10:54:31 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+It could be interesting for the publicdata.eu project to add some CSW datasources. Thanks to the INSPIRE directive, there are quite a few national catalogs of geodata that could be worth harvesting.
+Work on this should include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Compose Endpoint List (1d)
+&lt;/li&gt;&lt;li&gt;Harvest on staging system and evaluate which sources have useful material (2d)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+First point is being performed in this GDoc:
+&lt;a class="ext-link" href="https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;authkey=CNu4hsEB&amp;amp;hl=en_US#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://spreadsheets.google.com/spreadsheet/ccc?key=0Atp3cZFjuIOAdDBVQWRINnlfN1d0b2lleHVEdjBSb2c&amp;amp;authkey=CNu4hsEB&amp;amp;hl=en_US#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1160#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1162</link>
+        <guid isPermaLink="false">http://localhost/ticket/1162</guid>
+        <title>#1162: Define a common extra for storing the geographic extent</title>
+        <pubDate>Thu, 26 May 2011 11:18:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+We need a common extra across the different harvested sources that defines the extent of the data. We will have mainly national level catalogues, but also at a lower level (region, city).
+&lt;/p&gt;
+&lt;p&gt;
+Relevant discussion:
+&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-discuss/2011-May/001245.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-discuss/2011-May/001245.html&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1162#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1164</link>
+        <guid isPermaLink="false">http://localhost/ticket/1164</guid>
+        <title>#1164: Cloropleth Map of European Data Availability for PDEU</title>
+        <pubDate>Thu, 26 May 2011 11:20:24 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+A nice map in the homepage showing the availability of data across Europe
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1164#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1173</link>
+        <guid isPermaLink="false">http://localhost/ticket/1173</guid>
+        <title>#1173: Offer a DCat representation for packages in the API</title>
+        <pubDate>Wed, 01 Jun 2011 14:47:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+/api/rest/package/foo.rdf should return a DCat representation of the package. To create it, we will use the functions in ckanext-rdf.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1173#changelog</comments>
+    </item>
+ </channel>
+</rss>

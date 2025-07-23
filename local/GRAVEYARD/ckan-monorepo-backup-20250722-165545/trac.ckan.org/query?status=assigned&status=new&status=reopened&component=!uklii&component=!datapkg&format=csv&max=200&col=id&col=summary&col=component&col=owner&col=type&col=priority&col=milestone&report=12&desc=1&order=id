@@ -1,0 +1,201 @@
+id,summary,component,owner,type,priority,milestone
+3030,clean up helper functions,ckan,,enhancement,awaiting triage,
+3029,JSONP parameter scuppers Search in API,ckan,seanh,defect,awaiting triage,
+3028,Feature: dashboard activity stream filtering,ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3027,solr for 2.0,ckan,kindly,enhancement,awaiting triage,
+3026,Support icons on  nav_named_link,ckan,amercader,enhancement,minor,
+3025,Add requests to core requirements,ckan,amercader,enhancement,awaiting triage,
+3023,New methods on IPackageController to provide access to the data_dict,ckan,amercader,enhancement,awaiting triage,
+3020,Update CKAN coding standards,ckan,,enhancement,awaiting triage,
+3019,Cannot delete dataset extras,ckan,,defect,major,ckan 2.0
+3018,Load more in activity streams,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3017,New stable branch for the demo server,ckan,johnglover,enhancement,major,ckan 2.0
+3016,CKAN 2.0 template tweaks,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+3014,Crash when deleting a non-empty vocabulary,ckan,,defect,awaiting triage,ckan 2.0
+3013,common-error-messages is unreadable,ckan,dominik,defect,awaiting triage,
+3012,data.gov auth,ckan,toby,enhancement,awaiting triage,
+3011,Recline fixes and updates for CKAN 2.0,ckan,johnglover,enhancement,major,ckan 2.0
+3010,Pin images don't appear in data explorer,ckan,,enhancement,awaiting triage,ckan 2.0
+3007,Adding a dataset creates multiple activities,ckan,,enhancement,awaiting triage,ckan 2.0
+3006,Update translations from Transifex,ckan,,enhancement,awaiting triage,ckan-v1.8.1
+3005,"Add following/unfollowing of groups: model, API, frontend, tests",ckan,seanh,enhancement,awaiting triage,ckan 2.0
+3003,New pg databases should be created with UTF8 encoding rather than system default,ckan,,enhancement,awaiting triage,ckan-v1.8
+3002,API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string,ckan,,defect,minor,ckan-v1.8
+3001,Multilingual plugin crashes CKAN on add dataset when some languages are default,ckan,,defect,awaiting triage,ckan 2.0
+3000,Add number of followers to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2999,Add activity streams to organization pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2998,Add activity streams to group pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2997,Add activity streams to dataset pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2996,Fix behaviour of View Profile button in user popover when already on user's profile,ckan,,enhancement,minor,ckan 2.0
+2995,"Popovers for resources, groups, organizations, tags...",ckan,,enhancement,awaiting triage,ckan 2.0
+2994,Add dataset and user popovers throughout the site,ckan,,enhancement,awaiting triage,ckan 2.0
+2993,"""logged_in"" and ""visitor"" show in user list at /users",ckan,,defect,awaiting triage,ckan 2.0
+2992,Delete resource should send me back to edit dataset page,ckan,,enhancement,awaiting triage,
+2991,Add blocks to header.html template,ckan,,enhancement,awaiting triage,ckan 2.0
+2990,Fix descriptions of groups and organizations on /groups and /organizations pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2989,"""Add dataset to organization"" should auto-select the organization",ckan,,enhancement,awaiting triage,ckan 2.0
+2988,UI functional tests for CKAN 2.0,ckan,,enhancement,awaiting triage,ckan 2.0
+2987,Remove all direct calls to logic action and auth functions,ckan,,refactor,awaiting triage,ckan 2.0
+2986,Make lib/base.py more like it was originally intended,ckan,,refactor,awaiting triage,ckan 2.0
+2985,Make lib/helpers.py more template-specific,ckan,,refactor,awaiting triage,ckan 2.0
+2984,"Auto-populate context with user, model, session, etc.",ckan,,refactor,awaiting triage,ckan 2.0
+2983,Refactor lib/base.py to remove circular import issues,ckan,,refactor,awaiting triage,ckan 2.0
+2982,Move functionality from controllers into template helpers,ckan,,refactor,awaiting triage,ckan 2.0
+2981,Remove config from jinja templates,ckan,,refactor,awaiting triage,ckan 2.0
+2979,Requesting membership to groups and organizations,ckan,,enhancement,awaiting triage,ckan 2.0
+2978,Tests for permissions for organizations and groups,ckan,,enhancement,awaiting triage,ckan 2.0
+2977,Fix user autocomplete on group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2976,Polish group and organization member pages,ckan,,enhancement,awaiting triage,ckan 2.0
+2975,Tests for auth functions and new actions,ckan,,enhancement,awaiting triage,ckan 2.0
+2974,General of all auth functions,ckan,,enhancement,awaiting triage,ckan 2.0
+2973,Move new_authz.py into logic/auth/__init__.py,ckan,,enhancement,awaiting triage,ckan 2.0
+2972,Remove any imports of authz.py and delete file,ckan,,enhancement,awaiting triage,ckan 2.0
+2971,"""Are ytou sure you want to delete this member?"" should say which member",ckan,,enhancement,awaiting triage,ckan 2.0
+2970,Organization and group member links use id not name,ckan,,defect,awaiting triage,ckan 2.0
+2969,Group members page 500s,ckan,,defect,awaiting triage,ckan 2.0
+2968,Anyone can access organization members page,ckan,,defect,awaiting triage,ckan 2.0
+2967,Organization members edit page reloads after demoting self,ckan,,defect,awaiting triage,ckan 2.0
+2966,'Add' button text is wrong when editing organization members,ckan,,enhancement,awaiting triage,ckan 2.0
+2965,Stats extension broken on 1.8,ckan,,defect,awaiting triage,ckan-v1.8
+2964,Last organization admin can remove herself,ckan,,defect,awaiting triage,ckan 2.0
+2963,Timeout on tag pages with lots of datasets,ckan,,defect,major,ckan-v1.8
+2962,Search across multiple ckan instances,ckan,,enhancement,awaiting triage,ckan-backlog
+2961,Preview plugin endpoint,ckan,dominik,enhancement,awaiting triage,ckan 2.0
+2960,Private datasets are not private,ckan,,task,awaiting triage,ckan-backlog
+2959,Changing a Group's name through the action api disassociates it from its datasets in the index,ckan,icmurray,defect,minor,ckan 2.0
+2958,Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8,ckan,,defect,awaiting triage,ckan-v1.8
+2957,New datastore on postgres prior to 9.0,ckan,,task,awaiting triage,
+2956,Allow for resource editing in CKAN 2.0,ckan,shevski,enhancement,awaiting triage,ckan 2.0
+2952,incorporate javascriopt translations into translations workflow,ckan,seanh,enhancement,minor,ckan 2.0
+2951,Paster command for building css from less,ckan,,enhancement,minor,ckan 2.0
+2949,Reenable Data API button on the new theme,ckan,amercader,defect,major,
+2948,Negative range breaks datastore backend,ckan,,enhancement,awaiting triage,
+2947,Redirect to the resource page from /resource/{res-id},ckan,,enhancement,minor,
+2945,Pdf preview does not load in IE,ckan,,enhancement,awaiting triage,
+2944,Recline preview does not work in Opera,ckan,,enhancement,awaiting triage,
+2943,Chrome does not resize preview,ckan,,enhancement,awaiting triage,
+2939,Orgs are groups,ckan,toby,enhancement,awaiting triage,
+2938,Explain bundling in doc/resources.rst,ckan,Toby,enhancement,awaiting triage,
+2936,Updating a group via the API clears its packages,ckan,,defect,awaiting triage,ckan-v1.8
+2934,Webtests for CKAN,ckan,,enhancement,awaiting triage,
+2933,Update theming docs,ckan,,enhancement,awaiting triage,ckan 2.0
+2932,Add docstring to system_info.py,ckan,,enhancement,awaiting triage,ckan 2.0
+2931,Better docstring for app_globals.py,ckan,,enhancement,awaiting triage,ckan 2.0
+2929,Remove is_fallback() from I*Form extension interfaces?,ckan,,enhancement,awaiting triage,ckan 2.0
+2928,Run CKAN tests with example_i*form extensions enabled,ckan,,enhancement,awaiting triage,ckan 2.0
+2927,Test new package/group/organization type URLs support,ckan,,enhancement,awaiting triage,ckan 2.0
+2926,I*Form tests for per-type templates,ckan,,enhancement,awaiting triage,ckan 2.0
+2925,Remove trans mangle paster command?,ckan,,defect,awaiting triage,ckan 2.0
+2924,"Better docs for trans js command, and add to release process",ckan,,defect,awaiting triage,ckan 2.0
+2923,Change regularise -> regularize,ckan,,defect,awaiting triage,ckan 2.0
+2922,Better docstring for CKANInternationalizationExtension,ckan,,defect,awaiting triage,ckan 2.0
+2921,Add docstring to top of lib/extract.py file,ckan,,defect,awaiting triage,ckan 2.0
+2920,Genshi text template message extractor no longer needed?,ckan,,defect,awaiting triage,ckan 2.0
+2919,Remove IController from docs,ckan,,defect,awaiting triage,ckan-v1.8
+2917,Organization admins can delete themselves,ckan,johnmartin,enhancement,awaiting triage,ckan 2.0
+2915,Refactor form_to_db_schema_options(),ckan,,refactor,awaiting triage,ckan 2.0
+2914,Add form_to_db_schema_options() to IDatasetForm and IGroupForm,ckan,,defect,awaiting triage,ckan-v1.8.1
+2913,IGroupForm has package_form() method,ckan,,defect,awaiting triage,ckan 2.0
+2912,ckanext/organizations: Neither public or private initially selected when adding dataset,ckan,,defect,awaiting triage,ckan-v1.8.1
+2911,Internal documentation of Organization Groups,ckan,,enhancement,awaiting triage,
+2910,User listings are not very compelling,ckan,,enhancement,awaiting triage,demo phase 5
+2909,User profile headers are a bit weird,ckan,,enhancement,awaiting triage,demo phase 5
+2908,Dataset related with image should retain aspect ratio,ckan,,enhancement,awaiting triage,demo phase 5
+2906,Wrong flags in language dropdown,ckan,,defect,minor,demo phase 5
+2905,Add dataset URL key behaviour,ckan,,enhancement,awaiting triage,demo phase 5
+2904,Show more formats/groups/tags shouldn't display if there aren't more,ckan,,enhancement,awaiting triage,demo phase 5
+2902,genshi is used in Group controller,ckan,,enhancement,awaiting triage,ckan 2.0
+2901,Language Dropdown bug in footer with IE7,ckan,,enhancement,minor,demo phase 5
+2900,snippets/package_list.html template crashes on dataset that has no 'notes',ckan,,defect,awaiting triage,ckan-v1.8.1
+2899,Step 2 > Save & add another bug,ckan,,enhancement,awaiting triage,demo phase 5
+2898,Looses data entered on step 1 of create dataset after login,ckan,,defect,awaiting triage,demo phase 5
+2897,db_to_form_package_schema() crashes historical dataset page,ckan,,defect,awaiting triage,ckan-v1.8.1
+2896,resource_create crashes on ValidationErrors with KeyError: 'resources',ckan,,defect,awaiting triage,ckan-v1.8.1
+2895,QA pages (e.g. broken resource links) are not paginated,ckan,,enhancement,awaiting triage,
+2894,Empty lists get stripped from package dicst in package_show(),ckan,,defect,awaiting triage,ckan-v1.8.1
+2893,Tags missing from form_to_db_package_schema(),ckan,,defect,awaiting triage,ckan-v1.8.1
+2892,IDatasetForm's form_to_db_schema() breaks API?,ckan,,defect,awaiting triage,ckan-v1.8.1
+2891,Update or remove DataStore google presentation,ckan,,defect,awaiting triage,ckan-v1.8.1
+2890,Collect data previews and data store docs in one chapter,ckan,,enhancement,awaiting triage,ckan-v1.8.1
+2889,"Support JSON values in extras, when returning JSON from API",ckan,,enhancement,awaiting triage,ckan-v1.9
+2888,Datapreview in Iframe,ckan,,enhancement,awaiting triage,
+2887,"""Welcome to CKAN!"" on front page is untranslatable",ckan,,defect,major,ckan-v1.8.1
+2886,Configurable related items,ckan,,enhancement,awaiting triage,ckan 2.0
+2885,"Labels (editor, admin) not translated in authorization pages for datasets or groups",ckan,,enhancement,awaiting triage,ckan-v1.9
+2884,Lock icon shown next to unknown licenses,ckan,,defect,awaiting triage,ckan-v1.8.1
+2883,Add high level dev overview to 'For CKAN Developers' section of docs,ckan,,enhancement,awaiting triage,ckan-v1.8.1
+2882,Remove User Stories Overview from docs?,ckan,,defect,awaiting triage,ckan-v1.8.1
+2881,Remove or improve 'Domain Model' docs page,ckan,,defect,awaiting triage,ckan-v1.8.1
+2877,Bugs with datastore v2,ckan,kindly,enhancement,awaiting triage,
+2874,Clean up bin directory,ckan,rgrp,enhancement,awaiting triage,
+2873,ckanext-qa: dataset summary incorrect,ckan,toby,defect,awaiting triage,demo phase 4
+2870,1.8 tag_list not defined,ckan,seanh,enhancement,awaiting triage,
+2869,user profile not linked on disqus until page refresh,ckan,,defect,awaiting triage,demo phase 4
+2867,1.8 url_for error,ckan,,enhancement,awaiting merge,
+2863,non-admin users can edit other's draft datasets,ckan,toby,defect,awaiting triage,demo phase 4
+2862,Revised revised groups description,ckan,toby,enhancement,awaiting triage,demo phase 4
+2861,Add qa breadcrumb,ckan,toby,enhancement,awaiting triage,demo phase 4
+2859,Fix the build,ckan,icmurray,defect,blocker,ckan-v1.8
+2857,no UI to follow another user although option on dashboard,ckan,toby,defect,awaiting triage,demo phase 4
+2854,no way to see which dataset an app is related to on /apps page,ckan,,enhancement,awaiting triage,demo phase 5
+2851,Preview of PDF tries to connect to datastore,ckan,,enhancement,awaiting triage,
+2850,Add JSON support for IE7,ckan,,enhancement,minor,demo phase 4
+2846,Organizations allows you to set an organization as the parent organization of itself,ckan,,defect,awaiting triage,ckan-v1.8.1
+2844,SQL-only (no solr) version of CKAN,ckan,,enhancement,awaiting triage,
+2838,Context variables accepted by action functions need to be documented,ckan,,enhancement,awaiting triage,ckan-v1.9
+2835,Client module needs a template loading method,ckan,,enhancement,minor,demo phase 5
+2834,Defer all publish calls until all modules have been initialised,ckan,,enhancement,minor,demo phase 4
+2833,Load module templates before calling .initialize(),ckan,,enhancement,minor,demo phase 5
+2831,Create a limited subset of markdown that's supported,ckan,,enhancement,minor,ckan 2.0
+2830,Need method to undelete groups,ckan,toby,enhancement,awaiting triage,demo phase 4
+2829,Archiver fails on 403 http response,ckan,johnglover,enhancement,awaiting triage,ckan-v1.9
+2828,Draft datasets are confusing - tickets need creating,ckan,toby,enhancement,awaiting triage,demo phase 4
+2823,resource additional info title order,ckan,toby,enhancement,minor,demo phase 5
+2822,Resource additional info titles format/i18n,ckan,toby,enhancement,minor,demo phase 4
+2821,Featured Items on Filter,ckan,,enhancement,awaiting triage,demo phase 5
+2820,English Language: Visualization -> Visualisation,ckan,,defect,awaiting triage,demo phase 5
+2818,Improve related item schema,ckan,seanh,defect,major,demo phase 4
+2815,"db_to_form_package_schema() strips tracking summary, isopen",ckan,seanh,defect,awaiting triage,ckan-v1.8.1
+2814,Demo: upload file behaves oddly,ckan,shevski,enhancement,awaiting triage,
+2813,Confusing sidebar on demo dataset page,ckan,toby,enhancement,awaiting triage,demo phase 5
+2810,heroku ckan support,ckan,,enhancement,awaiting triage,ckan-future
+2796,Need a datahub one-pager,ckan,mark.wainwright,enhancement,awaiting triage,
+2795,"Check validation of HTML, CSS, JS",ckan,,enhancement,awaiting triage,demo phase 5
+2790,logic.action.user_show is slow,ckan,kindly,enhancement,major,demo phase 4
+2788,Speed improvements on creating/updating and indexing,ckan,amercader,enhancement,awaiting triage,ckan-v1.9
+2786,target blank HTML downloads,ckan,,enhancement,awaiting triage,demo phase 5
+2785,Allow resources to be re-ordered,ckan,johnmartin,enhancement,minor,demo phase 5
+2784,model dictize sensitive data,ckan,icmurray,defect,awaiting triage,
+2780,way for admins to undelete datasets,ckan,toby,enhancement,awaiting triage,demo phase 4
+2777,bug: user attributes,ckan,,enhancement,awaiting triage,
+2775,Add bin/less to paster serve command,ckan,toby,enhancement,minor,demo phase 4
+2773,About page needs improving,ckan,markw,enhancement,awaiting triage,ckan-v1.9
+2771,Documentation and examples for IDatasetForm and IGroupForm,ckan,seanh,enhancement,awaiting triage,ckan-v1.8
+2768,normalise excel to xls,ckan,toby,enhancement,awaiting triage,demo phase 5
+2766,prevent draft datasets making it to activity stream,ckan,seanh,enhancement,blocker,demo phase 4
+2763,Multilingual tests failing,ckan,,defect,awaiting triage,ckan-v1.8.1
+2762,test_related.py crashes,ckan,,defect,awaiting triage,ckan-v1.8
+2761,"Document all the errors you can get when setting up filestore, and how to fix them",ckan,,enhancement,awaiting triage,ckan-v1.8
+2758,file storage gives error if config not available but no useful user information,ckan,toby,enhancement,awaiting triage,ckan-v1.9
+2751,check translations for full demo site,ckan,toby,enhancement,critical,demo phase 5
+2748,add 'add new resource' button to sidebar,ckan,,enhancement,awaiting triage,demo phase 5
+2745,Password reset returns an exception if the key parameter is missing,ckan,,defect,major,ckan-v1.9
+2735,Dataset order on user page,ckan,toby,enhancement,awaiting triage,demo phase 5
+2733,Datastore logic functions,ckan,johnglover,enhancement,major,ckan-v1.9
+2732,New file upload functionality,ckan,,enhancement,awaiting triage,ckan-backlog
+2731,Some sites permanently 'down for maintenance',ckan,,enhancement,awaiting triage,
+2729,searching for tags:[tag] works but tag:[tag] doesn't,ckan,kindly,enhancement,awaiting triage,ckan-backlog
+2728,deleted group shows on search index - for admins,ckan,toby,defect,awaiting triage,demo phase 4
+2726,confusing logic on data preview formats,ckan,toby,enhancement,awaiting triage,demo phase 5
+2725,Case sensitivity on tags,ckan,toby,enhancement,awaiting triage,demo phase 5
+2721,deleted groups should not show on 'Add to Groups' dropdown,ckan,toby,defect,awaiting triage,demo phase 4
+2719,Feeds controller does not catch NotAuthorized exception,ckan,,defect,minor,
+2718,can't add dataset to more than one group,ckan,toby,enhancement,awaiting triage,demo phase 4
+2709,Atom feeds are undocumented,ckan,icmurray,enhancement,awaiting triage,
+2708,limit extra data for package/group show,ckan,kindly,enhancement,awaiting triage,ckan-v1.9
+2702,Future Javascript wishlist for demo,ckan,shevski,enhancement,awaiting triage,demo phase 5
+2699,workflow for associating datasets with groups,ckan,shevski,enhancement,awaiting triage,demo phase 5
+2698,markdown preview,ckan,toby,enhancement,minor,demo phase 4
+2697,create dataset validation,ckan,johnmartin,enhancement,awaiting triage,demo phase 5
+2688,Allow ordering of groups in WUI,ckan,,enhancement,awaiting triage,
+2686,enabling datastore & data API breaks recline,ckan,,defect,critical,ckan-backlog

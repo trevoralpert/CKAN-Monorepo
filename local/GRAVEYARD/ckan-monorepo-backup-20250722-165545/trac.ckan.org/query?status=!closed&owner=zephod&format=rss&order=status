@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;owner=zephod&amp;order=status</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;owner=zephod&amp;order=status</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/277</link>
+        <guid isPermaLink="false">http://localhost/ticket/277</guid>
+        <title>#277: Set some config options / settings in WUI (extension)</title>
+        <pubDate>Mon, 22 Mar 2010 16:21:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Usecase"&gt;Use case&lt;/h2&gt;
+&lt;p&gt;
+As a ckan administrator I want to easily change options about the CKAN install.
+&lt;/p&gt;
+&lt;h2 id="Implementation"&gt;Implementation&lt;/h2&gt;
+&lt;h3 id="SettingstobeinDB"&gt;Settings to be in DB&lt;/h3&gt;
+&lt;p&gt;
+Suggested:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;## Title of site (using in several places including templates and &amp;lt;title&amp;gt; tag
+ckan.site_title = CKAN
+## Logo image to use (replaces site_title string on front page if defined)
+ckan.site_logo = http://assets.okfn.org/p/ckan/img/ckan_logo_box.png
+## Site tagline / description (used on front page)
+ckan.site_description =
+## Used in creating some absolute urls (such as rss feeds, css files) and
+## dump filenames
+ckan.site_url =
+## Favicon (default is the CKAN software favicon)
+ckan.favicon = http://assets.okfn.org/p/ckan/img/ckan.ico
+## An 'id' for the site (using, for example, when creating entries in a common search index)
+## If not specified derived from the site_url
+# ckan.site_id = ckan.net
+## API url to use (e.g. in AJAX callbacks)
+## Enable if the API is at a different domain
+# ckan.api_url = http://www.ckan.net
+## html content to be inserted just before &amp;lt;/body&amp;gt; tag (e.g. google analytics code)
+## NB: can use html e.g. &amp;lt;strong&amp;gt;blah&amp;lt;/strong&amp;gt;
+## NB: can have multiline strings just indent following lines
+# ckan.template_footer_end =
+&lt;/pre&gt;&lt;p&gt;
+NB: these will still need to be stored somewhere for loading on initialization. do this in db init function ...
+&lt;/p&gt;
+&lt;h3 id="SettingsOptionsKeyValuesTable"&gt;Settings / Options / &lt;a class="missing wiki"&gt;KeyValues?&lt;/a&gt; Table&lt;/h3&gt;
+&lt;p&gt;
+Columns:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;[namespace]: ? only if &lt;a class="missing wiki"&gt;KeyValues?&lt;/a&gt; (for settings this would then always be settings)
+&lt;/li&gt;&lt;li&gt;key
+&lt;/li&gt;&lt;li&gt;label
+&lt;/li&gt;&lt;li&gt;value (json)
+&lt;/li&gt;&lt;li&gt;type (e.g. date and to specify in advance what type should be)
+&lt;/li&gt;&lt;li&gt;description
+&lt;/li&gt;&lt;li&gt;tags: ?? (for grouping ...)
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="LoadingsettingsfromDB"&gt;Loading settings from DB&lt;/h3&gt;
+&lt;p&gt;
+Do this in ckan/config/environment.py
+&lt;/p&gt;
+&lt;h3 id="WUI"&gt;WUI&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;/ckan-admin/settings
+&lt;/li&gt;&lt;li&gt;Show label, plus description plus text field
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Depends"&gt;Depends&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Would be part of ckan-admin section and hence build on &lt;a class="closed ticket" href="http://localhost/ticket/833" title="enhancement: [super] Administrative dashboard extension (closed: fixed)"&gt;ticket:833&lt;/a&gt; (Administrative dashboard)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/277#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1358</link>
+        <guid isPermaLink="false">http://localhost/ticket/1358</guid>
+        <title>#1358: Generate configuration documentation automatically from the deployment_ini_tmpl file</title>
+        <pubDate>Mon, 26 Sep 2011 22:32:30 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+At the moment documentation of config options is duplicated between source (deployment_ini_tmpl in ckan/config which is used to generate user ini file) and the docs.
+&lt;/p&gt;
+&lt;p&gt;
+Suggest we write a script that automatedly generates reference documentation for the config from the source.
+&lt;/p&gt;
+&lt;p&gt;
+May be obsoleted by &lt;a class="assigned ticket" href="http://localhost/ticket/277" title="enhancement: Set some config options / settings in WUI (extension) (assigned)"&gt;#277&lt;/a&gt; (some config in db)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1358#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1507</link>
+        <guid isPermaLink="false">http://localhost/ticket/1507</guid>
+        <title>#1507: Minor fixes to dataset add on Group edit form - 0.5d</title>
+        <pubDate>Mon, 05 Dec 2011 12:33:49 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Group edit dataset add form needs some work
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Dataset name is not cleared when you add
+&lt;/li&gt;&lt;li&gt;No way to remove item from list of datasets to be added if I make a mistake
+&lt;/li&gt;&lt;li&gt;(2nd Apr 2012) It now seems that option to add multiple datasets at once has disappeared (perhaps during the CSS/HTML refactor ...)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1507#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2412</link>
+        <guid isPermaLink="false">http://localhost/ticket/2412</guid>
+        <title>#2412: More than one resource invalidatiing breaks dataset edit form</title>
+        <pubDate>Tue, 22 May 2012 20:05:48 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+When attempting to add more than one resource at once, if more than one resource invalidates, this results in a js error, leaving the form in an inconsistent state.
+&lt;/p&gt;
+&lt;p&gt;
+Repro:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to /dataset/new
+&lt;/li&gt;&lt;li&gt;Add a new resource.  Fill in one of the fields with an invalid value. eg - last_modified, or size...
+&lt;/li&gt;&lt;li&gt;Add another resource, doing the same thing: make one of the fields invalid.
+&lt;/li&gt;&lt;li&gt;Try to save the dataset.
+&lt;/li&gt;&lt;li&gt;The entered resource information will be lost, and a js error "Uncaught Error: Can't add the same model to a set twice,: backbone.js:586" will be thrown.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2412#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1403</link>
+        <guid isPermaLink="false">http://localhost/ticket/1403</guid>
+        <title>#1403: Refactor groups index page</title>
+        <pubDate>Mon, 17 Oct 2011 10:31:52 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Groups are listed alphabetically with paging - not an ideal user experience. We would like to list groups in order of 'popularity': The number of datasets they contain.
+&lt;/p&gt;
+&lt;p&gt;
+Following this chain of thought, then, it would be nice to rearrange the groups table by clicking on column headers and having it sort by that column.
+&lt;/p&gt;
+&lt;p&gt;
+Furthermore, then, we'd like to implement a full-fledged groups search feature (if this is at all feasible).
+&lt;/p&gt;
+&lt;p&gt;
+The forthcoming groups refactor will probably have some bearing on this task.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1403#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1411</link>
+        <guid isPermaLink="false">http://localhost/ticket/1411</guid>
+        <title>#1411: Force resource format to be lower case (also mimetype)</title>
+        <pubDate>Sat, 22 Oct 2011 21:40:04 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Format should be lowercase. Automatically lower case (for extra points have a bit of javascript to force lower case when entering).
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Even more points: do a update on thedatahub repo to make all format lower case (or script this as an update?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1411#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1782</link>
+        <guid isPermaLink="false">http://localhost/ticket/1782</guid>
+        <title>#1782: Improvements to datasets page UX (Feb 2012)</title>
+        <pubDate>Tue, 07 Feb 2012 10:10:41 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Relationships in sidebar [WONTFIX yet without some link to documentation or datastructure, something for me to render?]
+&lt;/li&gt;&lt;li&gt;&lt;del&gt;Icons for *types* of resources in resource list&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;List of 'Owners' (administrators) at top right of sidebar (a la group page)
+&lt;ul&gt;&lt;li&gt;Much prefer owner to administrator ...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1782#changelog</comments>
+    </item>
+ </channel>
+</rss>

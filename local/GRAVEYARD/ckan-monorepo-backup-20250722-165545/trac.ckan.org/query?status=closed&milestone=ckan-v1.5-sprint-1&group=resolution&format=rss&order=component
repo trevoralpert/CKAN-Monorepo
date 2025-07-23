@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.5-sprint-1&amp;group=resolution&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-v1.5-sprint-1&amp;group=resolution&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1083</link>
+        <guid isPermaLink="false">http://localhost/ticket/1083</guid>
+        <title>#1083: userobjectroles added twice can't be deleted</title>
+        <pubDate>Mon, 11 Apr 2011 19:37:40 GMT</pubDate>
+        
+        <dc:creator>johnlawrenceaspden</dc:creator>
+
+        <description>&lt;p&gt;
+the add_user_to_role/remove_user_from_role functions are asymmetrical
+in that the add function is happy to add the same role twice but the remove asserts that it's only in the table once and crashes if that's not true.
+&lt;/p&gt;
+&lt;p&gt;
+an attempt has been made to guard against this, but fails, I think because the add functions rely on the caller committing the change to the db.
+&lt;/p&gt;
+&lt;p&gt;
+same problem affects corresponding authorization_group functions
+&lt;/p&gt;
+&lt;p&gt;
+I'll try to sort this out. Making a note here.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1083#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1146</link>
+        <guid isPermaLink="false">http://localhost/ticket/1146</guid>
+        <title>#1146: make logic layer control its own state</title>
+        <pubDate>Thu, 19 May 2011 18:18:37 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Logic layer should not use any vdm defined state and should manage it itself.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1146#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1147</link>
+        <guid isPermaLink="false">http://localhost/ticket/1147</guid>
+        <title>#1147: Add expired_id to all revision tables.</title>
+        <pubDate>Thu, 19 May 2011 21:17:13 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Revision tables need expired_id to make querying history AND pending changes more efficient.
+&lt;/p&gt;
+&lt;p&gt;
+This involves making a session extension and a large table migration.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1147#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1148</link>
+        <guid isPermaLink="false">http://localhost/ticket/1148</guid>
+        <title>#1148: test speed improvements and cleanup</title>
+        <pubDate>Sat, 21 May 2011 09:13:43 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The tests have been running slower recently and need fixing.  They also could do with a bit more consistency to them.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1148#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1149</link>
+        <guid isPermaLink="false">http://localhost/ticket/1149</guid>
+        <title>#1149: Change domain object modification plugin to use Session extension.</title>
+        <pubDate>Sat, 21 May 2011 09:24:23 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This should make it more efficient as it currently does a lot of repeating work.  i.e if you change a package and a resource in the same commit it sends out 2 notifications and should only really send out 1.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1149#changelog</comments>
+    </item>
+ </channel>
+</rss>

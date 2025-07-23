@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?type=CREP&amp;col=id&amp;col=summary&amp;col=component&amp;col=owner&amp;col=type&amp;col=priority&amp;col=milestone&amp;report=14&amp;order=component</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?type=CREP&amp;col=id&amp;col=summary&amp;col=component&amp;col=owner&amp;col=type&amp;col=priority&amp;col=milestone&amp;report=14&amp;order=component</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1127</link>
+        <guid isPermaLink="false">http://localhost/ticket/1127</guid>
+        <title>#1127: CREP0001: Formalise new feature discussion and definition using CREPs</title>
+        <pubDate>Thu, 05 May 2011 13:15:13 GMT</pubDate>
+        
+        <dc:creator>sebbacon</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer:&lt;/strong&gt; Seb Bacon&lt;br /&gt;
+&lt;strong&gt;Seconder:&lt;/strong&gt; Rufus Pollock&lt;br /&gt;
+&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+When adding major new features to CKAN, a longer, more formal discussion
+will improve software design quality and documentation, better engage
+the wider community, and ensure the core team are up to date with
+latest developments.
+&lt;/p&gt;
+&lt;p&gt;
+I propose a formal process (CREP -- CKAN Revision and Enhancement Proposal) for making this happen.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+The current workflow for introducing major new features into CKAN is
+very informal, typically based around one person's great idea, which
+they've discussed with one or two other people in the team.  The
+originator of the idea is typically the only person with access to
+all the input they've had through such discussions.  Often, the only
+location of this information is  in that person's head.
+&lt;/p&gt;
+&lt;p&gt;
+However, there is a lot of experience embodied in the CKAN community
+which should be drawn on before making large design decisions.  This
+will lead to better software.  Additionally, building consensus in the
+community around a proposal before implementation ensures positive
+community engagement and buy-in to new features, making them more
+likely to be a success.
+&lt;/p&gt;
+&lt;p&gt;
+We aren't great at documenting new features.  Documentation after
+coding is complete is an unrewarding experience for most programmers.
+Requiring skeleton documentation before code is written is a good
+discipline that can form the basis of better documentation in the
+future (e.g. by a writer rather than a programmer).
+&lt;/p&gt;
+&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;p&gt;
+Minor features don't require a CREP, and can just be entered in the
+issue tracking system as a bug or feature.  As a rule of thumb, a
+feature is major if it will take more than a day to implement, or is
+likely to involve matters of opinion in its design.
+&lt;/p&gt;
+&lt;p&gt;
+A developer may decide that a CREP is too formal and long-winded. The
+decision to write a CREP is at at their discretion; however, new
+features MUST always be proposed via email, even if this is just a
+couple of sentences.
+&lt;/p&gt;
+&lt;p&gt;
+If a feature requires a CREP, the proposer should find a seconder
+for their idea.  This sanity check step happens before a CREP is
+written to ensure at least the possibility of consensus on the CREP.
+&lt;/p&gt;
+&lt;p&gt;
+Next the proposer should write a CREP, starting by copying and pasting
+the &lt;a class="ext-link" href="http://wiki.ckan.net/CKAN_Revision_and_Enhancement_Proposals"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;template on the wiki&lt;/a&gt; into a new Trac ticket.  This will be with a status of "new" and Type of "CREP".  The proposer should notify
+the &lt;a class="ext-link" href="http://lists.okfn.org/mailman/listinfo/ckan-dev"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-dev&lt;/a&gt; mailing
+list, and possibly the
+&lt;a class="ext-link" href="http://lists.okfn.org/mailman/listinfo/ckan-discuss"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;ckan-discuss&lt;/a&gt;
+list for less technical CREPs.
+&lt;/p&gt;
+&lt;p&gt;
+The draft can be discussed via email, verbally, or via the trac
+ticket.  In any case, it is the proposer's responsibility to keep the
+CREP updated to reflect the current consensus.
+&lt;/p&gt;
+&lt;p&gt;
+Once consensus has been reached, the ticket should be marked with the
+"accepted" status and assigned to a CKAN release milestone.
+&lt;/p&gt;
+&lt;p&gt;
+When an accepted CREP has been implemented, it should be resolved as
+"fixed".
+&lt;/p&gt;
+&lt;p&gt;
+If no consensus can be reached on a draft CREP, or for some reason an
+accepted CREP doesn't get completed, it should be marked as or "wontfix".
+&lt;/p&gt;
+&lt;p&gt;
+If a completed CREP becomes obsolete, it should be marked as "invalid",
+with a note pointing to the obsoleting ticket(s)
+&lt;/p&gt;
+&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;p&gt;
+Given the distributed nature of the core team plus other volunteers,
+some kind of written procedure is necessary to ensure a fully
+documented and discussed proposal.
+&lt;/p&gt;
+&lt;p&gt;
+The idea of "Enhancement Proposals" which can be semi-formally
+proposed and discussed prior to implementation is common in the Open
+Source world (&lt;a class="ext-link" href="http://www.python.org/dev/peps/pep-0001/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;PEPs&lt;/a&gt;,
+&lt;a class="ext-link" href="http://dep.debian.net/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;DEPs&lt;/a&gt;,
+&lt;a class="ext-link" href="http://plone.org/documentation/glossary/plip"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;PLIPs&lt;/a&gt;, to name three).
+&lt;/p&gt;
+&lt;p&gt;
+Existing historic proposals exist, called CEPs.  The proposed system
+is called CREP (CKAN revision or enhancement proposal) to disambiguate
+it from the legacy proposals, and from the delicious fungus &lt;em&gt;Boletus
+Edulis&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Giving a formal structure to the proposal is useful as it gives the
+community a means to identify a CREP that's not had sufficient thought
+or discussion.  An informal email thread can easily be lost and
+important questions (such as backwards compatibility) overlooked.  The
+use of the proposed template empowers any community member to ask the
+proposer to expand on rationale, deliverables, etc.
+&lt;/p&gt;
+&lt;p&gt;
+The structure chosen is somewhere between Debian's and Plone's.  It
+aims to give a structure to the debate, a clear start at
+documentation, and also prompt some thinking about implementation and
+timescales.
+&lt;/p&gt;
+&lt;p&gt;
+All this policy about structure should not be construed as mandatory.
+In particular, the later fields in the CREP template regarding
+Implementation Plan may be omitted if the author doesn't find them
+helpful.
+&lt;/p&gt;
+&lt;p&gt;
+Some projects (e.g. Debian) keep their enhancement proposals in a
+versioning repository; others (e.g. Plone) keep them in an issue
+tracking system.  Trac is proposed for CKAN because we already use it
+for small feature proposals and for team planning.  It seems unlikely
+that change tracking on an individual CREP will be useful; a CREP that
+changes sufficiently from its original form should probably be marked
+"obselete" and a new CREP started.  Using an issue tracking system also
+means we can easily track CREPs by state.
+&lt;/p&gt;
+&lt;h2 id="BackwardsCompatibility"&gt;Backwards Compatibility&lt;/h2&gt;
+&lt;p&gt;
+Some [&lt;a class="ext-link" href="https://bitbucket.org/okfn/ceps/src/76b274888bcf/cep/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ceps/src/76b274888bcf/cep/&lt;/a&gt; legacy
+enhancement proposals], called CEPs, have previously been started.
+&lt;/p&gt;
+&lt;p&gt;
+They are currently all marked as "active".  Any which require
+discussion should be altered by the proposer to match the new CREP
+specification and submitted to trac.  The original CEP should be
+updated with a banner at the top pointing a reader to the new CREP.
+&lt;/p&gt;
+&lt;p&gt;
+Any that are now obselete should be clearly marked as such in a banner
+at the top, pointing a reader to the trac for new CREPs.
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;This CREP, agreed
+&lt;/li&gt;&lt;li&gt;Support for proposed statuses in Trac
+&lt;/li&gt;&lt;li&gt;Canned reports for listing CREPs in Trac
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Risksandmitigations"&gt;Risks and mitigations&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;That this CREP is agreed, but rarely acted on.  This risk can be
+mitigated by nominating a CREP champion in the community or core
+team, whose job it is to say "where's the CREP for that?" and
+generally own the quality of CREPS
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+Seb Bacon: as current Documentation Czar (May 2011), responsible for
+ensuring CREPs are up to date.
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+This document is the entire proposal.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1127#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1129</link>
+        <guid isPermaLink="false">http://localhost/ticket/1129</guid>
+        <title>#1129: CREP0002: Moderated  Edits</title>
+        <pubDate>Sun, 08 May 2011 10:44:58 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer:&lt;/strong&gt; David Raznick&lt;br /&gt;
+&lt;/p&gt;
+&lt;h2 id="Abstract."&gt;Abstract.&lt;/h2&gt;
+&lt;p&gt;
+We are trying to achieve these goals.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;To get people involved with making edits to CKAN metadata.
+&lt;/li&gt;&lt;li&gt;To have an ownership model as to who can moderate and validate these changes
+&lt;/li&gt;&lt;li&gt;To not put too huge a burden on these owners.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+In order to achieve this, a feature which lets anyone edit a package but only let the moderator/owner accept it.  The moderator should be able to look at a list of changes and accept the ones that
+&lt;/p&gt;
+&lt;p&gt;
+This cep is not about 'if' we need such a feature, it is about 'how' we go about implementing it. Another cep may needed for the 'if' case.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+We need the following to be possible.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Storing revision of objects that are not the current active one.
+&lt;/li&gt;&lt;li&gt;A way of the user viewing past revisions.
+&lt;/li&gt;&lt;li&gt;Accessing not only the history of a particular object but also of related objects at that time. i.e If a resource related to a package changes we need a way to see this when looking at the package.
+&lt;/li&gt;&lt;li&gt;A robust way of doing this in the face of database schema changes.
+&lt;/li&gt;&lt;li&gt;Make sure database queries are quick.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Solutions."&gt;Solutions.&lt;/h2&gt;
+&lt;ol&gt;&lt;li&gt; Store the whole dictization of the package and all its related objects every time you change anything in its dictized representation and only save to the database proper if accepted.
+&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Pros
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Easy to implement, we already have a preview which makes the dictized form of a package without actually saving it.  This will just need to be persisted in some way.
+&lt;/li&gt;&lt;li&gt;Fast retrieval.
+&lt;/li&gt;&lt;li&gt;Potential to store a branching revision tree of changes.
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Cons
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;No easy way to remake the dictized packages historically or if there is an there a change in the way we represent packages, i.e schema changes.
+&lt;/li&gt;&lt;li&gt;Will only work for the particular objects we decide to store these changes for.
+&lt;/li&gt;&lt;li&gt;Stores a lot of repeated information
+&lt;/li&gt;&lt;/ul&gt;&lt;ol start="2"&gt;&lt;li&gt; Write specialized queries for every read of the database looking only at the revision tables.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+This method requires there to be a change in the way we use VDM, so that we manage statefulness ourselves. We will need to add other states such as 'waiting for approval'.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Pros
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;No specialized storage required
+&lt;/li&gt;&lt;li&gt;Only need to change queries when schema changes
+&lt;/li&gt;&lt;li&gt;Can be made to work easily for other objects
+&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;
+&lt;p&gt;
+Cons
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;&lt;li&gt;Slower query time on read, as even looking at the last active package will need to do a fairly complicated query.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Implementationdetails."&gt;Implementation details.&lt;/h2&gt;
+&lt;p&gt;
+1.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+A new table with columns  id, user, package_id, timestamp, revision_id, parent_id, dictized_package.
+revision_id should be null unless it is actually persisted to the database.  parent_id is the id that this package_dict was changed from.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+We could store only the diffs of the dictized_package as long as we assure that everything inside the json is stably sorted, this will make getting the historical data out slower.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Getting out the history of the dictized packages is an intensive task, as it will require replaying the whole history of all the changes and creating the dict for each change.  This re-caching will need to be redone for every change we make to dictized representation of a package.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+2.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Every normal packages read needs to look at the revision table to see the last accepted change in the dictized representation of the package.
+We also need to way to get what the dictized representation of the package was like at any point of its revision history.  This querying is non-trivial in sql.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+David Raznick to do it.
+&lt;/p&gt;
+&lt;h2 id="Progress."&gt;Progress.&lt;/h2&gt;
+&lt;p&gt;
+Decided to go with option 2. However we will change the revisioning system to be like the schema attached.
+This gets rid of difficult querying problems caused by querying the revision tables by adding an end date, meaning you can do range queries.
+&lt;/p&gt;
+&lt;p&gt;
+The better and more normalized version of a revisioning system is outlined &lt;a class="ext-link" href="https://docs.google.com/drawings/d/1Y7nMgVsrs081Pame2RdbZHlCAlV33ddTZ8VAsab1j-0/edit?hl=en_GB&amp;amp;authkey=CJfd8vsB"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://docs.google.com/drawings/d/1Y7nMgVsrs081Pame2RdbZHlCAlV33ddTZ8VAsab1j-0/edit?hl=en_GB&amp;amp;authkey=CJfd8vsB&lt;/a&gt;.
+We will be a step closer to that, with this change, but we will keep the current vdm more or less, intact.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1129#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1134</link>
+        <guid isPermaLink="false">http://localhost/ticket/1134</guid>
+        <title>#1134: CREP0003: Description and Configuration of Harvesters</title>
+        <pubDate>Wed, 11 May 2011 10:14:28 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer&lt;/strong&gt;: Adrià Mercader
+&lt;/p&gt;
+&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+The new harvester interface allows to create harvesters for different
+sources, but right now harvesters don't have many ways to describe and
+configure themselves. We need a way of allowing them to:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Expose their type and other details so they can be used internally
+and on the UI.
+&lt;/li&gt;&lt;li&gt;Define configuration settings for particular harvester instances.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+The current UI for adding and editing harvest sources is the same used
+in ckanext-dgu, and thus the 3 harvester types used in DGU to harvest
+various GEMINI realted sources are hardcoded in the form. The form will
+be migrated to a DGU-independent one, so we need the harvesters to
+provide all the necessary data. There is a current &lt;tt&gt;get_type&lt;/tt&gt; method
+that returns the harvester type, but for make it compatible with the DGU
+forms, it returns a machine-readable string (e.g. "CSW Server"), making
+it error prone.
+&lt;/p&gt;
+&lt;h3 id="Arbitraryconfiguration"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+In the current implementation, when the harvest process is started,
+ckanext-harvest looks for all the available plugins that implement the
+&lt;tt&gt;IHarvester&lt;/tt&gt; interface and calls the appropiate methods for the
+current stage (&lt;tt&gt;gather_stage&lt;/tt&gt;,&lt;tt&gt;fetch_stage&lt;/tt&gt;,&lt;tt&gt;import_stage&lt;/tt&gt;).
+At these stages, harvesters have no way of applying arbitrary
+configuration options, so all harvesters of the same type behave on the
+same way.
+For instance, the CKAN harvester needs a way to define the API version
+to use when harvesting remote instances (Right now, the version 2 is
+hardcoded on the code).
+&lt;/p&gt;
+&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription1"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+Harvesters will need to provide the following information so the UI form
+can be built:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;name: machine-readable name (e.g. "waf"). This will be the value
+stored in the database, and the one used by ckanext-harvest to
+call the appropiate harvester.
+&lt;/li&gt;&lt;li&gt;title: human-readable name (e.g. "Web Accessible Folder (WAF)").
+This will appear in the form's select box.
+&lt;/li&gt;&lt;li&gt;description: a description of what the harvester does (e.g. "A Web
+Accessible Folder (WAF) displaying a list of GEMINI 2.1
+documents"). This will appear on the form as a guidance to the
+user.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The way to provide it will be an &lt;tt&gt;info&lt;/tt&gt; method that all harvesters
+must implement, which will return a dictionary with the previous
+elements:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    {
+        'name': 'csw',
+        'title': 'CSW Server',
+        'description': 'A server that implements OGC's Catalog Service
+                        for the Web (CSW) standard'
+    }
+&lt;/pre&gt;&lt;h3 id="Arbitraryconfiguration1"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+As different harvesters will have very different needs, we need to
+provide a way to persist arbitrary configuration flags for each harvest
+source. The more flexible way given the current architecture in my
+opinion would be to store the configuration options as a JSON encoded
+object as a property of the harvest source (There already is an unused
+DB field called &lt;tt&gt;config&lt;/tt&gt; in the database) (Maybe using &lt;a class="missing wiki"&gt;JsonType?&lt;/a&gt;?).
+&lt;/p&gt;
+&lt;p&gt;
+This will mean adding an extra field in the harvest source form to allow
+entering the configuration. This could be just a simple text field where
+users enter the JSON encoded object or a more clever mechanism (i.e an
+"Add a configuration flag" link that adds two new text fields for the
+key and value for each flag, and a mechanism to later build the JSON
+object). In any case, this should probably be hidden in an "Advance
+options" section.
+&lt;/p&gt;
+&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;h3 id="Harvesterdescription2"&gt;Harvester description&lt;/h3&gt;
+&lt;p&gt;
+The &lt;tt&gt;info&lt;/tt&gt; method would provide a single point to get all the
+information related to the harvester, and future properties could be
+added to the dictionary returned without having to modify the interface.
+&lt;/p&gt;
+&lt;h3 id="Arbitraryconfiguration2"&gt;Arbitrary configuration&lt;/h3&gt;
+&lt;p&gt;
+There is an already existing &lt;tt&gt;config&lt;/tt&gt; field in the database, so we
+won't need to change the model.
+Harvesters could access the config object at any of the stages. Of
+course they could provide default values in their implementations so
+users don't need to enter them everytime.
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;h3 id="Risksandmitigations"&gt;Risks and mitigations&lt;/h3&gt;
+&lt;p&gt;
+The highest risk on the harvesters &lt;tt&gt;info&lt;/tt&gt; method side is that
+harvester implementation don't offer one of the necessary properties
+(namely name and title). This could fire a warning when showing the
+UI form or using the CLI.
+&lt;/p&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+Adrià Mercader to do it.
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+None yet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1134#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1141</link>
+        <guid isPermaLink="false">http://localhost/ticket/1141</guid>
+        <title>#1141: [super] Moderated Edits User Interface</title>
+        <pubDate>Wed, 18 May 2011 12:16:43 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;strong&gt;Proposer&lt;/strong&gt;: John Glover&lt;br /&gt;
+&lt;strong&gt;Seconder&lt;/strong&gt;: James Gardner
+&lt;/p&gt;
+&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+We are trying to achieve these goals:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;To get people involved with making edits to CKAN metadata.
+&lt;/li&gt;&lt;li&gt;To have an ownership model as to who can moderate and validate these changes
+&lt;/li&gt;&lt;li&gt;To not put too huge a burden on these owners.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+This feature allows anyone to edit a package and create a new revision, but requires an owner/moderator to approve a revision before it is are made "official".
+&lt;/p&gt;
+&lt;p&gt;
+There have been a lot of discussions around the revisioning system side of this ticket (CREP 0002) and I think these are now largely resolved. We now want to discuss the user interface.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+We require the following functionality:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Allow a group of changes to be stored as a new revision.
+&lt;/li&gt;&lt;li&gt;Allow a linear stack of "community" revisions.
+&lt;/li&gt;&lt;li&gt;Provide a way for the editor and moderator to compare previous revisions to the current one.
+&lt;/li&gt;&lt;li&gt;When a moderator approves a change it creates a new revision flagged "moderated" (this is analogous to a merge commit)
+&lt;/li&gt;&lt;li&gt;Provide a way for the editor and moderator comment on revisions if necessary.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Extra features:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Need a way to summarise the changes (as part of the preview perhaps)
+&lt;/li&gt;&lt;li&gt;Sysadmin needs to purge a revision completely
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;h3 id="UIUX"&gt;UI/UX&lt;/h3&gt;
+&lt;p&gt;
+UI Mockup:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a style="padding:0; border:none" href="http://localhost/attachment/ticket/1141/ModeratedEdits2.png"&gt;&lt;img src="http://localhost/raw-attachment/ticket/1141/ModeratedEdits2.png" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Revisions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Revisions are per package rather than per field.
+&lt;/li&gt;&lt;li&gt;Internally CKAN has separate revisions for resources, extras and package metadata.  From a user's point of view this could be confusing to expose, so everything that they see on a package form when they hit save is a single revision.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+On the Edit page:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We have a panel on the right, listing all the revisions with the current moderated one selected. Moderated revisions are highligted in some way (red and bold?).
+&lt;/li&gt;&lt;li&gt;The values displayed in the form are by default populated from the latest revision (whether community or moderated)
+&lt;/li&gt;&lt;li&gt;Under each field is a "shadow", showing the value of the field in the revision selected in the panel, if it is different from the value in the field. By default the shadow values are populated from the latest moderated revision which is the one selected in the revision panel by default too.
+&lt;/li&gt;&lt;li&gt;When you change the value of a field, a shadow may appear or disappear accordingly. If they disappear a box saying that they are the same replaces it
+&lt;/li&gt;&lt;li&gt;If you want to edit values from a previous revision, you first select that revision to get the shadows populated. There is a button named "Replace fields with values from this revision" under the revision list. You click this, a warning pops up and then you say "Yes". You then select the moderated revision again.
+&lt;/li&gt;&lt;li&gt;We also allow package comments the same way as the todo extension works at the moment. Additionally, we need to be able to differentiate between what the moderator wrote and what a community member wrote, and so we may need to make a small change to the todo extension to facilitate this.
+&lt;/li&gt;&lt;li&gt;In addition to package comments, each revision will have a revision log (analogous to a commit message).
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="TechnicalDetails"&gt;Technical Details&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;This CREP will result in a new CKAN extension.
+&lt;/li&gt;&lt;li&gt;It depends heavily on the new revisioning system (CREP0002), some of the details of which are yet to be finalised.
+&lt;/li&gt;&lt;li&gt;This CREP therefore requires working closely with David Raznick to come up with an API that the UI AJAX calls can use.
+&lt;/li&gt;&lt;li&gt;We will then use suitable test data to mimic these API calls until CREP0002 is ready.
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;p&gt;
+This hopefully provides a clear and consistent mechanism allowing both a community member to make new revisions and a moderator to view and approve revisions, with largely the same UI/UX.
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;p&gt;
+A new CKAN extension, consisting of:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Code: Python, HTML, CSS, Javascript
+&lt;/li&gt;&lt;li&gt;Unit tests
+&lt;/li&gt;&lt;li&gt;Localization
+&lt;/li&gt;&lt;li&gt;Documentation
+&lt;/li&gt;&lt;/ul&gt;&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+John Glover to do it.
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+John has implemented the bulk of this UI. Just some things to tidy up before it is complete:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Genshi stream filters to be updated with CKAN 1.5 / 1.5.1 templates
+&lt;/li&gt;&lt;li&gt;history_ajax / read_ajax to be replaced with calls to Action API (or Util REST API)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+I've split these two off into a new ticket &lt;a class="new ticket" href="http://localhost/ticket/1604" title="enhancement: Get ckanext-moderatededits working with CKAN 1.5+ templates (new)"&gt;#1604&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h3 id="RelatedProgress"&gt;Related Progress&lt;/h3&gt;
+&lt;p&gt;
+The Todo extension is written and available at: &lt;a class="ext-link" href="https://bitbucket.org/johnglover/ckanext-todo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/johnglover/ckanext-todo&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+In the section 'The Problem', under extra features, we mention a need for the sysadmin to be able to purge a revision already. This is already done.
+&lt;/p&gt;
+&lt;h3 id="Seealso"&gt;See also&lt;/h3&gt;
+&lt;p&gt;
+&lt;a class="closed ticket" href="http://localhost/ticket/1129" title="CREP: CREP0002: Moderated  Edits (closed: fixed)"&gt;#1129&lt;/a&gt; Backend work
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1141#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1289</link>
+        <guid isPermaLink="false">http://localhost/ticket/1289</guid>
+        <title>#1289: Remove 'relationships'</title>
+        <pubDate>Wed, 24 Aug 2011 17:21:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;h2 id="Abstract"&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;
+Package Relationships have not taken off in the 18 months we've had them in the API. There are some issues with them and we need to spend more time improving them or consider getting rid of them.
+&lt;/p&gt;
+&lt;h2 id="TheProblem"&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;
+Original use cases are expressed here: &lt;a class="assigned ticket" href="http://localhost/ticket/253" title="enhancement: Package relationships (assigned)"&gt;#253&lt;/a&gt; Here are comments about how we could handle these specific examples better:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;groups of packages - maybe better with a custom tag?
+&lt;/li&gt;&lt;li&gt;fragment resources - soon to be covered by 'kind' resource field &lt;a class="closed ticket" href="http://localhost/ticket/957" title="enhancement: new &amp;#34;kind &amp;#34; field added to resources (closed: wontfix)"&gt;#957&lt;/a&gt;
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+3&amp;amp;5. derived resource - better to have some sort of resource relationship perhaps?
+&lt;/p&gt;
+&lt;ol start="4"&gt;&lt;li&gt;linked resource - again better to have some sort of resource relationship perhaps?
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Outstanding issues needing serious effort to fix:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="assigned ticket" href="http://localhost/ticket/256" title="requirement: Package relationships - 3. Edit in WUI (assigned)"&gt;#256&lt;/a&gt; Editing them in Web UI (not done yet)
+&lt;/li&gt;&lt;li&gt;&lt;a class="new ticket" href="http://localhost/ticket/1288" title="defect: Package edit/creation can't include 'relationships' field (new)"&gt;#1288&lt;/a&gt; Package edit/creation can't include 'relationships' field
+&lt;/li&gt;&lt;/ul&gt;&lt;h2 id="Specification"&gt;Specification&lt;/h2&gt;
+&lt;p&gt;
+Remove relationships from model, API, tests, Web UI. Data migration to remove from db.
+&lt;/p&gt;
+&lt;h2 id="Whydoitthisway"&gt;Why do it this way&lt;/h2&gt;
+&lt;p&gt;
+Getting frustrated having problems with the code, when it's not used much. Often asked about what it's for, but rarely used. Seems an overly complicated design.
+&lt;/p&gt;
+&lt;h2 id="BackwardsCompatibility"&gt;Backwards Compatibility&lt;/h2&gt;
+&lt;p&gt;
+n/a
+&lt;/p&gt;
+&lt;h2 id="Implementationplan"&gt;Implementation plan&lt;/h2&gt;
+&lt;h3 id="Deliverables"&gt;Deliverables&lt;/h3&gt;
+&lt;p&gt;
+See Specification
+&lt;/p&gt;
+&lt;h3 id="Risksandmitigations"&gt;Risks and mitigations&lt;/h3&gt;
+&lt;p&gt;
+Risk: a customer suddenly wants this, and the new ways to relate resources are not in place yet.
+&lt;/p&gt;
+&lt;p&gt;
+Mitigation: discuss this decision thoroughly to make sure we are confident the use cases are not important. Discuss with team, ckan-discuss and specifically the LOD people who have some related packages on thedatahub.org.
+&lt;/p&gt;
+&lt;h3 id="Participants"&gt;Participants&lt;/h3&gt;
+&lt;p&gt;
+David Read
+&lt;/p&gt;
+&lt;h3 id="Progress"&gt;Progress&lt;/h3&gt;
+&lt;p&gt;
+Not yet.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1289#changelog</comments>
+    </item>
+ </channel>
+</rss>

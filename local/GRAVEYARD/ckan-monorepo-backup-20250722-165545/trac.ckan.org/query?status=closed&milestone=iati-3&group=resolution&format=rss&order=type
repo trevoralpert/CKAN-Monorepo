@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=iati-3&amp;group=resolution&amp;order=type</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=iati-3&amp;group=resolution&amp;order=type</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/700</link>
+        <guid isPermaLink="false">http://localhost/ticket/700</guid>
+        <title>#700: Groups in package form</title>
+        <pubDate>Mon, 18 Oct 2010 09:34:36 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Editing groups in forms doesn't work for me, with latest code from this morning:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Clean db
+&lt;/li&gt;&lt;li&gt;paster create-test-data
+&lt;/li&gt;&lt;li&gt;paster sysadmin create &lt;a class="ext-link" href="http://davidread.myopenid.com/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://davidread.myopenid.com/&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;paster serve development.ini
+&lt;/li&gt;&lt;li&gt;In browser, log in to CKAN
+&lt;/li&gt;&lt;li&gt;Create new package: name=abc group=Roger's books
+&lt;/li&gt;&lt;li&gt;[Preview] - yes group appears
+&lt;/li&gt;&lt;li&gt;[Save] - shows package and group hasn't appeared ERROR
+&lt;/li&gt;&lt;li&gt;Check &lt;a class="ext-link" href="http://127.0.0.1:5000/api/rest/package/abc"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://127.0.0.1:5000/api/rest/package/abc&lt;/a&gt; and reedit package it also doesn't appear here either.
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/700#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/697</link>
+        <guid isPermaLink="false">http://localhost/ticket/697</guid>
+        <title>#697: The system shall indicate which package groups can be removed when editing a package</title>
+        <pubDate>Thu, 14 Oct 2010 14:21:43 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description>&lt;p&gt;
+This seems to require doing something else with such a group's 'delete' button, such as showing it greyed, or perhaps not showing it at all.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/697#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/701</link>
+        <guid isPermaLink="false">http://localhost/ticket/701</guid>
+        <title>#701: The system shall support changing package groups when editing a package</title>
+        <pubDate>Mon, 18 Oct 2010 12:09:36 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/701#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/716</link>
+        <guid isPermaLink="false">http://localhost/ticket/716</guid>
+        <title>#716: Visual improvments to IATI CKAN</title>
+        <pubDate>Wed, 20 Oct 2010 14:09:01 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/716#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/724</link>
+        <guid isPermaLink="false">http://localhost/ticket/724</guid>
+        <title>#724: Improve publisher workflow</title>
+        <pubDate>Wed, 20 Oct 2010 14:22:28 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/724#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/703</link>
+        <guid isPermaLink="false">http://localhost/ticket/703</guid>
+        <title>#703: Add package to package group using the package form fieldset</title>
+        <pubDate>Mon, 18 Oct 2010 12:12:00 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/703#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/704</link>
+        <guid isPermaLink="false">http://localhost/ticket/704</guid>
+        <title>#704: Remove package from package group using the packge form fieldset</title>
+        <pubDate>Mon, 18 Oct 2010 12:12:41 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/704#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/705</link>
+        <guid isPermaLink="false">http://localhost/ticket/705</guid>
+        <title>#705: Show package groups on the package read page</title>
+        <pubDate>Mon, 18 Oct 2010 12:13:24 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/705#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/718</link>
+        <guid isPermaLink="false">http://localhost/ticket/718</guid>
+        <title>#718: Show recent activities on home page</title>
+        <pubDate>Wed, 20 Oct 2010 14:13:09 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/718#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/719</link>
+        <guid isPermaLink="false">http://localhost/ticket/719</guid>
+        <title>#719: Improve overall layout of IATI</title>
+        <pubDate>Wed, 20 Oct 2010 14:14:52 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+... probably by adapting aidtransparency.net
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/719#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/721</link>
+        <guid isPermaLink="false">http://localhost/ticket/721</guid>
+        <title>#721: Make the table preview a link to a new page.</title>
+        <pubDate>Wed, 20 Oct 2010 14:17:24 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/721#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/722</link>
+        <guid isPermaLink="false">http://localhost/ticket/722</guid>
+        <title>#722: Further adapt l10n for IATI</title>
+        <pubDate>Wed, 20 Oct 2010 14:18:34 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Change "Publishing Entity" to "Publisher"
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/722#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/723</link>
+        <guid isPermaLink="false">http://localhost/ticket/723</guid>
+        <title>#723: Hide action links pointing to unavailable actions (package create)</title>
+        <pubDate>Wed, 20 Oct 2010 14:20:48 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/723#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/725</link>
+        <guid isPermaLink="false">http://localhost/ticket/725</guid>
+        <title>#725: Change to allow anyone (logged in) to create a publisher</title>
+        <pubDate>Wed, 20 Oct 2010 14:23:50 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+With a pending state set ("unapproved")
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/725#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/726</link>
+        <guid isPermaLink="false">http://localhost/ticket/726</guid>
+        <title>#726: Send message to sysadmins to approve new publishers</title>
+        <pubDate>Wed, 20 Oct 2010 14:24:30 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/726#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/727</link>
+        <guid isPermaLink="false">http://localhost/ticket/727</guid>
+        <title>#727: Sysadmin can approve a publisher</title>
+        <pubDate>Wed, 20 Oct 2010 14:25:54 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/727#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/706</link>
+        <guid isPermaLink="false">http://localhost/ticket/706</guid>
+        <title>#706: Test for removing package from package group using the package form fieldset</title>
+        <pubDate>Mon, 18 Oct 2010 12:14:33 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/706#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/707</link>
+        <guid isPermaLink="false">http://localhost/ticket/707</guid>
+        <title>#707: Test for adding package to package group using the package form fieldset</title>
+        <pubDate>Mon, 18 Oct 2010 12:15:26 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/707#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/708</link>
+        <guid isPermaLink="false">http://localhost/ticket/708</guid>
+        <title>#708: Test for showing package groups on package read page</title>
+        <pubDate>Mon, 18 Oct 2010 12:16:09 GMT</pubDate>
+        
+        <dc:creator>johnbywater</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/708#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/720</link>
+        <guid isPermaLink="false">http://localhost/ticket/720</guid>
+        <title>#720: Include CMS pages in IATI registry</title>
+        <pubDate>Wed, 20 Oct 2010 14:16:29 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Perhaps using deliverance?
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Move About to the right of the nav tabs and make it an about IATI page
+&lt;/li&gt;&lt;li&gt;Make a Help / FAQ section linked of main menu
+&lt;/li&gt;&lt;li&gt;Front page more dynamic - latest data registered and news (microblog thing)
+&lt;/li&gt;&lt;li&gt;make the front page blurb noticable / shorter etc.
+&lt;/li&gt;&lt;li&gt;link to iatistandard.org from the front page blurb
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/720#changelog</comments>
+    </item>
+ </channel>
+</rss>

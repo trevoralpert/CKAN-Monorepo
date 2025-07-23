@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-01-09&amp;group=status&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?component=ckan&amp;milestone=ckan-sprint-2012-01-09&amp;group=status&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1545</link>
+        <guid isPermaLink="false">http://localhost/ticket/1545</guid>
+        <title>#1545: Remove external asset dependencies</title>
+        <pubDate>Mon, 12 Dec 2011 15:10:35 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN is pulling a number of resources from external locations. This causes problems when connectivity is limited and you have to work locally. Maybe some of them cold be moved to CKAN source to avoid external requests.
+&lt;/p&gt;
+&lt;p&gt;
+Quick search:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;
+./ckan/templates/layout_base.html:            &amp;lt;img src="http://assets.okfn.org/images/logo/okf_logo_white_and_green_tiny.png" id="footer-okf-logo" /&amp;gt;
+./ckan/templates/layout_base.html:            &amp;lt;a href="http://opendefinition.org/"&amp;gt;&amp;lt;img alt="This Content and Data is Open" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" style="border: none ; margin-bottom: -4px;"/&amp;gt;&amp;lt;/a&amp;gt;
+./ckan/templates/package/resource_read.html:                &amp;lt;img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" /&amp;gt;
+./ckan/templates/package/read.html:          &amp;lt;img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" /&amp;gt;&amp;lt;/a&amp;gt;
+./ckan/templates/_util.html:                    &amp;lt;img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" /&amp;gt;
+./ckan/templates/_util.html:                  &amp;lt;img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" /&amp;gt;
+./ckan/public/scripts/vendor/ckanjs/1.0.0/ckanjs.js:      this.$dialog.html('&amp;lt;h2&amp;gt;Loading results...&amp;lt;/h2&amp;gt;&amp;lt;img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" /&amp;gt;');
+./ckan/public/scripts/vendor/ckanjs/1.0.0/ckanjs.js:          self.setMessage('Uploading file ... &amp;lt;img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" class="spinner" /&amp;gt;');
+./ckan/public/scripts/vendor/ckanjs/1.0.0/ckanjs.js:      self.setMessage('Checking upload permissions ... &amp;lt;img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" class="spinner" /&amp;gt;');
+Binary file ./ckan/lib/app_globals.pyc matches
+./ckan/lib/app_globals.py:                                  'http://assets.okfn.org/p/ckan/img/ckan.ico')
+./ckan/config/deployment.ini_tmpl:ckan.favicon = http://assets.okfn.org/p/ckan/img/ckan.ico
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1545#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1467</link>
+        <guid isPermaLink="false">http://localhost/ticket/1467</guid>
+        <title>#1467: CKAN dumps dgu miss certain publisher information</title>
+        <pubDate>Tue, 15 Nov 2011 16:54:02 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+Pawel knows about this so David Read, Pawel and I need to find time to discuss it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1467#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1494</link>
+        <guid isPermaLink="false">http://localhost/ticket/1494</guid>
+        <title>#1494: API call for getting a user's public activity stream as rendered rtext</title>
+        <pubDate>Mon, 28 Nov 2011 15:50:47 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+This could be implemented as a separate API call, or the rendered text versions of the activities could be added into the JSON returned by the existing API call.
+&lt;/p&gt;
+&lt;p&gt;
+This requires setting up templates for rendering activity streams items and detail items as nice, human-readable text.
+&lt;/p&gt;
+&lt;p&gt;
+There are some open questions, e.g.: Do we want the entire activity stream rendered as a block of plain text? As HTML? Or do we want a list of JSON objects, where each object contains its textual and/or HTML representations as fields?
+&lt;/p&gt;
+&lt;p&gt;
+Activity stream items and their related detail items are separate objects that each have their own textual representations.
+&lt;/p&gt;
+&lt;p&gt;
+For a mockup of the kind of text messages we want, see:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://datahub.pudo.org/pudo"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://datahub.pudo.org/pudo&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+but note that this ticket is just for creating the text snippets themselves, not rendering then in an HTML page or RSS feed. Also the mockup only show activity items and not their detail items.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1494#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1446</link>
+        <guid isPermaLink="false">http://localhost/ticket/1446</guid>
+        <title>#1446: Data Explorer v2</title>
+        <pubDate>Mon, 07 Nov 2011 11:33:16 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1602" title="enhancement: [super] Data Previewer / Viewer v2 (closed: fixed)"&gt;#1602&lt;/a&gt; (Data Previewer v2)
+&lt;/p&gt;
+&lt;p&gt;
+We already have first pass of Data Explorer that was released as part of &lt;a class="closed ticket" href="http://localhost/ticket/1357" title="enhancement: Integrate new version of data preview (closed: fixed)"&gt;#1357&lt;/a&gt;.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Merging &lt;a class="ext-link" href="https://github.com/okfn/dataexplorer"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/dataexplorer&lt;/a&gt; with &lt;a class="ext-link" href="http://github.com/okfn/recline"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://github.com/okfn/recline&lt;/a&gt; and developing it
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="https://github.com/okfn/recline/issues"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Tickets include (* indicates improvement over current explorer)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Core Backbone Models representing Dataset and Tabular data: &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/10"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/10&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;New theme: &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/22"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/22&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Read-only mode: &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/17"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/17&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Introduce hash navigation / state support (*): &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/19"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/19&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Re-enable editing in &lt;a class="missing wiki"&gt;DataTable?&lt;/a&gt; (*): &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/13"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/13&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;[super] &lt;a class="missing wiki"&gt;DataTable?&lt;/a&gt; view (in Backbone) (*): &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/14"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/14&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;DataExplorer?&lt;/a&gt; parent view (*): &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/12"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/12&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Simple graph widget using flot: &lt;a class="ext-link" href="https://github.com/okfn/recline/issues/11"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/recline/issues/11&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est: 10-15d (should be broken down -- partly is in recline issues)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1446#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1576</link>
+        <guid isPermaLink="false">http://localhost/ticket/1576</guid>
+        <title>#1576: Move stats extension back into core - 0.5d</title>
+        <pubDate>Mon, 19 Dec 2011 17:55:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Move into core (keeping as an extension) and default enable
+&lt;/li&gt;&lt;li&gt;Do we need tests for controller? (No: already there)
+&lt;/li&gt;&lt;li&gt;Documentation (?) - e.g. of basic config options
+&lt;/li&gt;&lt;li&gt;Remove lib/stats.py which is still in core
+&lt;ul&gt;&lt;li&gt;dread moved it to extension in &lt;a class="ext-link" href="https://github.com/okfn/ckanext-stats/commit/293b2544737d8ab7610884bd5e999ee37f1ab813"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckanext-stats/commit/293b2544737d8ab7610884bd5e999ee37f1ab813&lt;/a&gt; but did not remove from core
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Deprecation notice on ckanext-stats repo and update extension registry
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Est: 0.5d.
+&lt;/p&gt;
+&lt;p&gt;
+Questions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Why do this?
+&lt;ul&gt;&lt;li&gt;tiny extension with few dependencies - and really nice to have out of the box
+&lt;/li&gt;&lt;li&gt;trial for doing this on larger scale
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Do we keep as extension (even if in core)?
+&lt;ul&gt;&lt;li&gt;Ans: Yes, keep as extension because:
+&lt;ul&gt;&lt;li&gt;Already set up that way
+&lt;/li&gt;&lt;li&gt;Cleaner
+&lt;/li&gt;&lt;li&gt;Easier to disable / enable
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;How do we integrate with main them (e.g. have stats link)
+&lt;ul&gt;&lt;li&gt;Ans: not sure (this is part of more general issue of how we update theme for varying changes elsewhere). Best answer is to have some widgetization in theme.
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Hide ratings section (at least until we reinstate ratings &lt;a class="new ticket" href="http://localhost/ticket/1598" title="enhancement: Reinstate Ratings (new)"&gt;#1598&lt;/a&gt;)
+&lt;ul&gt;&lt;li&gt;Ans: no, let's not bother (and having ratings there encourages us to do &lt;a class="new ticket" href="http://localhost/ticket/1598" title="enhancement: Reinstate Ratings (new)"&gt;#1598&lt;/a&gt; and/or find out whether people are interested in ratings)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1576#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1298</link>
+        <guid isPermaLink="false">http://localhost/ticket/1298</guid>
+        <title>#1298: Generate activites to be put into activities table.</title>
+        <pubDate>Tue, 30 Aug 2011 09:27:22 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This should be done from the logic layer or automatically from a session extension.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1298#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1531</link>
+        <guid isPermaLink="false">http://localhost/ticket/1531</guid>
+        <title>#1531: Update group create/update so you can add capacities and group types.</title>
+        <pubDate>Wed, 07 Dec 2011 15:41:40 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+The new members table needs a way so you can add arbitrary domain objects against them.
+&lt;/p&gt;
+&lt;p&gt;
+We need to extend the group schema to accept types, and instead of just being able to add packages to groups add members with their capacities that associated with different table rows.
+&lt;/p&gt;
+&lt;p&gt;
+4d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1531#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1612</link>
+        <guid isPermaLink="false">http://localhost/ticket/1612</guid>
+        <title>#1612: Group view page slow</title>
+        <pubDate>Tue, 03 Jan 2012 23:35:37 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Group show that lists packages is slow due to not using query in pagination.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1612#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1614</link>
+        <guid isPermaLink="false">http://localhost/ticket/1614</guid>
+        <title>#1614: remove po files from git diff</title>
+        <pubDate>Wed, 04 Jan 2012 14:17:19 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Its a pain to see the difference between branches as there are normally a lot of po file transaction. Make the default be see that they have changed without actually show the diffs themselves.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1614#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/892</link>
+        <guid isPermaLink="false">http://localhost/ticket/892</guid>
+        <title>#892: Make stored data available in WUI - 0.5d</title>
+        <pubDate>Mon, 03 Jan 2011 11:14:53 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+Once we have storage, make the data available in the following ways:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Now have a cached_url field can show in the frontend ...
+&lt;/li&gt;&lt;li&gt;Add a [&amp;lt;a href="${cached_url}"&amp;gt;cached&amp;lt;/a&amp;gt;] link to right of real url on resource listing on dataset page.
+&lt;/li&gt;&lt;li&gt;On resource page: will not add it yet.
+&lt;ul&gt;&lt;li&gt;At the moment no clear place to pu this given nice big download button (could put in list of items on left but that does not seem right and note that it will turn up in big list of info at bottom)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Add test (?)
+&lt;/li&gt;&lt;li&gt;Deploy
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/892#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1451</link>
+        <guid isPermaLink="false">http://localhost/ticket/1451</guid>
+        <title>#1451: Reintegrate download stats on dataset and resource view page - 0.5d</title>
+        <pubDate>Mon, 07 Nov 2011 14:57:39 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;css class: resource-url-analytics
+&lt;/li&gt;&lt;li&gt;Assign to the link tag (a) everywhere we want to count (dataset, resource view) - 0.25d
+&lt;/li&gt;&lt;li&gt;Display counts in same place ...
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+And deploy on &lt;a class="ext-link" href="http://thedatahub.org/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/&lt;/a&gt; - 0.25d
+&lt;/p&gt;
+&lt;p&gt;
+Possible: Also move analytics extension into core (decided not to).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1451#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1519</link>
+        <guid isPermaLink="false">http://localhost/ticket/1519</guid>
+        <title>#1519: combine stats and analytics extensions into one in UI as well as deployment</title>
+        <pubDate>Tue, 06 Dec 2011 10:57:13 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Makes more sense to only have one comprehensive stats/analytics extension, so when people are looking to add a stats extension they won't have to add two which may be confusing (is one an old version of the other? why do I have to add two? what's the difference? etc)
+&lt;/p&gt;
+&lt;p&gt;
+User-wise we need a way to display our stats with google analytics in the same place
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1519#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1543</link>
+        <guid isPermaLink="false">http://localhost/ticket/1543</guid>
+        <title>#1543: Pagination links in the dataset listings don't keep the current filters</title>
+        <pubDate>Fri, 09 Dec 2011 14:57:03 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+E.g.
+Pagination links on this page don't include groups=lodcloud
+&lt;a class="ext-link" href="http://thedatahub.org/dataset?groups=lodcloud"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/dataset?groups=lodcloud&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Not sure if related to &lt;a class="closed ticket" href="http://localhost/ticket/1501" title="defect: Pagination links broken (closed: fixed)"&gt;#1501&lt;/a&gt; (probably not)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1543#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1580</link>
+        <guid isPermaLink="false">http://localhost/ticket/1580</guid>
+        <title>#1580: Documenting TaskStatus table and QA changes - 0.5d</title>
+        <pubDate>Tue, 20 Dec 2011 16:47:44 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Write up: task status table in  &lt;a class="ext-link" href="http://wiki.ckan.org/Domain_Model"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Domain_Model&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Write up: &lt;a class="ext-link" href="http://wiki.ckan.org/Data_Quality"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Data_Quality&lt;/a&gt; to reflect current state of play (move all old material to "Discussion / Talk" page)
+&lt;/li&gt;&lt;li&gt;Ping ckan-discuss re new Data Quality page
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1580#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1582</link>
+        <guid isPermaLink="false">http://localhost/ticket/1582</guid>
+        <title>#1582: Deploy QA for thedatahub - 0.5d</title>
+        <pubDate>Wed, 21 Dec 2011 09:08:14 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;deploy celery
+&lt;/li&gt;&lt;li&gt;deploy QA and archiver tasks
+&lt;/li&gt;&lt;li&gt;write up a blog post announcing QA on thedatahub
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1582#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1394</link>
+        <guid isPermaLink="false">http://localhost/ticket/1394</guid>
+        <title>#1394: Resource validation error messages misleading</title>
+        <pubDate>Thu, 13 Oct 2011 14:14:22 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+(Editing a dataset) If the second resource contains any validation error then it says "Resources: Package resource(s) incomplete" and "Resource 1:".
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1394#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1540</link>
+        <guid isPermaLink="false">http://localhost/ticket/1540</guid>
+        <title>#1540: Search API returns an error if empty parameters are provided</title>
+        <pubDate>Thu, 08 Dec 2011 15:49:48 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Both in 1.5.1b:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://thedatahub.org/api/search/dataset?groups=lodcloud&amp;amp;title="&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://thedatahub.org/api/search/dataset?groups=lodcloud&amp;amp;title=&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+and 1.5.2a (current master):
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://test.ckan.net/api/search/dataset?groups=lodcloud&amp;amp;title="&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/api/search/dataset?groups=lodcloud&amp;amp;title=&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Although the error message in 1.5.2a is more verbose:
+&lt;/p&gt;
+&lt;p&gt;
+"Bad request - Bad search option: HTTP code=400, reason=org.apache.lucene.queryParser.&lt;a class="missing wiki"&gt;ParseException?&lt;/a&gt;: Cannot parse 'groups:lodcloud title:': Encountered \"&amp;lt;EOF&amp;gt;\" at line 1, column 22. Was expecting one of:     \"(\" ...     \"*\" ...     &amp;lt;QUOTED&amp;gt; ...     &amp;lt;TERM&amp;gt; ...     &amp;lt;PREFIXTERM&amp;gt; ...     &amp;lt;WILDTERM&amp;gt; ...     \"[\" ...     \"{\" ...     &amp;lt;NUMBER&amp;gt; ..."
+&lt;/p&gt;
+&lt;p&gt;
+Some parameter validation before sending it to Solr should do the trick
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1540#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1592</link>
+        <guid isPermaLink="false">http://localhost/ticket/1592</guid>
+        <title>#1592: Add metadata_modified and metadata_created to package_dictize output</title>
+        <pubDate>Wed, 21 Dec 2011 17:35:09 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+The dict returned by package_dictize does not include metadata_modified and metadata_created. These are really useful properties, so it's worth having them on the standard package dict representation, which is used in several places, like at the template level.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1592#changelog</comments>
+    </item>
+ </channel>
+</rss>

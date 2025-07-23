@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=!closed&amp;keywords=~9d&amp;order=id</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=!closed&amp;keywords=~9d&amp;order=id</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1635</link>
+        <guid isPermaLink="false">http://localhost/ticket/1635</guid>
+        <title>#1635: Email notifications (e.g. for activity streams)</title>
+        <pubDate>Wed, 11 Jan 2012 17:56:27 GMT</pubDate>
+        
+        <dc:creator>seanh</dc:creator>
+
+        <description>&lt;p&gt;
+CKAN should be able to send email notifications to users.
+&lt;/p&gt;
+&lt;p&gt;
+Maybe have a notifications table in the db, and a server-side job that runs periodically and consumes rows from this table, mailing them to the users.
+&lt;/p&gt;
+&lt;p&gt;
+One thing that we may want to send users notifications of is activity stream events. So the activity streams code would have to add rows to the notifications table for the mailer job to consume. But remember that email notifications feature is separate from activity streams - we may want to send notifications of other things as well.
+&lt;/p&gt;
+&lt;p&gt;
+Need to implement (at least some of) &lt;a class="closed ticket" href="http://localhost/ticket/1634" title="enhancement: Allow users to follow/unfollow activity streams of other users, datasets ... (closed: duplicate)"&gt;#1634&lt;/a&gt; before this can be implemented, in order to have something to send notifications about.
+&lt;/p&gt;
+&lt;p&gt;
+Analysis here: &lt;a class="ext-link" href="http://ckan.okfnpad.org/27"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/27&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1635#changelog</comments>
+    </item>
+ </channel>
+</rss>

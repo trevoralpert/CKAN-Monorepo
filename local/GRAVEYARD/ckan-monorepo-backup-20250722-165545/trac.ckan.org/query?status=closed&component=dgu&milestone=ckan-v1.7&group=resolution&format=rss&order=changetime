@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-v1.7&amp;group=resolution&amp;order=changetime</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=dgu&amp;milestone=ckan-v1.7&amp;group=resolution&amp;order=changetime</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1617</link>
+        <guid isPermaLink="false">http://localhost/ticket/1617</guid>
+        <title>#1617: Update and test existing DGU package form : publisher / foi information</title>
+        <pubDate>Mon, 09 Jan 2012 10:03:04 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Contact/FOI information is derived from &lt;a class="missing wiki"&gt;Publisher/User?&lt;/a&gt;, but can be altered for each dataset.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Original estimate: 4 days
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Time spent: 0 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Time remaining: 4 days
+&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1617#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1618</link>
+        <guid isPermaLink="false">http://localhost/ticket/1618</guid>
+        <title>#1618: Update and test existing DGU package form : provide stubs for the theme and sub-themes</title>
+        <pubDate>Mon, 09 Jan 2012 10:05:57 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Provide the interface for the themes and subthemes hierarchy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1618#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1619</link>
+        <guid isPermaLink="false">http://localhost/ticket/1619</guid>
+        <title>#1619: Update and test existing DGU package form : provide stubs for the publisher hierarchy</title>
+        <pubDate>Mon, 09 Jan 2012 10:07:52 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+[Child of &lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+Create the interface used to retrieve publisher and authz information from the publisher hierarchy.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1619#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1537</link>
+        <guid isPermaLink="false">http://localhost/ticket/1537</guid>
+        <title>#1537: Package create form wizard</title>
+        <pubDate>Thu, 08 Dec 2011 15:34:11 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Create the form wizard for the package-new form.
+&lt;/p&gt;
+&lt;p&gt;
+Each section of the form will be a separate page as this was decided to be simpler than the alternative of making AJAX calls for validation at each stage. (*)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;separate pages for each section of the form
+&lt;/li&gt;&lt;li&gt;validation carried out at each stage against the whole schema.  Each section/page declares a list of schema keys that need to validate for that section to validate, and thus move onto the next section.
+&lt;/li&gt;&lt;li&gt;no draft saving to be performed in this ticket.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(*) - although the javascript alternative will probably provide better UX (each step would require a page-load in the wizard approach), it was decided that:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;with the javascript approach it would be harder to test the workflow.
+&lt;/li&gt;&lt;li&gt;with the javascript approach there would be additional work displaying validation correctly.  Although not that complicated, it was felt to add another point of failure.
+&lt;/li&gt;&lt;li&gt;the multi-page wizard is quicker and easier to implement, and if it provided poor UX, then the javascript approach would be used instead.
+&lt;/li&gt;&lt;li&gt;the multi-page wizard wouldn't preclude a javascript-tabbing create-form for other cases (where the wizard workflow wasn't such a good match, eg on the hedatahub.org)
+&lt;/li&gt;&lt;li&gt;the multi-page wizard wouldn't preclude a javascript-tabbing edit-form.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1537#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1525</link>
+        <guid isPermaLink="false">http://localhost/ticket/1525</guid>
+        <title>#1525: [super] DGU package form refactor</title>
+        <pubDate>Tue, 06 Dec 2011 12:00:39 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Form refactor. New create/edit package form wizard for DGU.
+&lt;/p&gt;
+&lt;p&gt;
+Etherpad: &lt;a class="ext-link" href="http://ckan.okfnpad.org/dgu-package-form"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.okfnpad.org/dgu-package-form&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Tasks:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1526" title="enhancement: [super] Update and test existing DGU package form (closed: fixed)"&gt;#1526&lt;/a&gt; : Simple one-page form.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1527" title="enhancement: Break DGU package edit form into sections (closed: fixed)"&gt;#1527&lt;/a&gt; : Tab-ify the form using JS.  No validation between steps.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1541" title="task: Setup server for the DGU form-refactor. (closed: fixed)"&gt;#1541&lt;/a&gt; : Setup server for the DGU form-refactor.
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1537" title="enhancement: Package create form wizard (closed: fixed)"&gt;#1537&lt;/a&gt; : Package create form wizard
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1538" title="enhancement: Store partially-filled in package form data as a draft. (closed: wontfix)"&gt;#1538&lt;/a&gt; : &lt;del&gt;Store partially-filled in package form data as a draft.&lt;/del&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="closed ticket" href="http://localhost/ticket/1539" title="enhancement: Package forms auto-save (closed: wontfix)"&gt;#1539&lt;/a&gt; : &lt;del&gt;Package forms auto-save&lt;/del&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+How the rest of the work is carried out is up for discussion, as it depends on the approach taken.  Whether to continue with validation using AJAX queries, or whether to break the form down into multi pages.  &lt;a class="ext-link" href="https://docs.google.com/spreadsheet/ccc?key=0Av2RfDDpj67zdGpSdFlKVjNrQmFXV3lHbGM3ZFlDdnc&amp;amp;hl=en_US#gid=1"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;Google doc outlining design(s)&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1525#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1768</link>
+        <guid isPermaLink="false">http://localhost/ticket/1768</guid>
+        <title>#1768: DGU: 7a. Public Publisher Dashboard (including QA Work and notifications) MUST PHASE 1</title>
+        <pubDate>Mon, 06 Feb 2012 14:49:00 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1768#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1538</link>
+        <guid isPermaLink="false">http://localhost/ticket/1538</guid>
+        <title>#1538: Store partially-filled in package form data as a draft.</title>
+        <pubDate>Thu, 08 Dec 2011 15:47:01 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Allow a user to save a partially-complete and probably invalid package-create form in order to come back to it later.
+&lt;/p&gt;
+&lt;p&gt;
+We decided on blob storage over a state field on the package:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;prevents a history of the drafts being stored in the revision history.  This is a particular problem if we start auto-saving, say every 20s.
+&lt;/li&gt;&lt;li&gt;the blob can store arbitrary extra data, such as how far through the wizard we are.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1538#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1539</link>
+        <guid isPermaLink="false">http://localhost/ticket/1539</guid>
+        <title>#1539: Package forms auto-save</title>
+        <pubDate>Thu, 08 Dec 2011 15:49:45 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Using the saved-draft feature, we enable auto-save for the package-new and package-edit forms.
+&lt;/p&gt;
+&lt;p&gt;
+An AJAX call is made every N seconds, and the auto-saved blob is updated.
+&lt;/p&gt;
+&lt;p&gt;
+note - we don't want to overwrite a previously save draft, but we will want to overwrite the last autosave.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1539#changelog</comments>
+    </item>
+ </channel>
+</rss>

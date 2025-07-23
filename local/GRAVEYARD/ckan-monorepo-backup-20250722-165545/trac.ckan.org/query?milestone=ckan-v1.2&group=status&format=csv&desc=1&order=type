@@ -1,0 +1,148 @@
+id,summary,owner,type,priority,component,resolution
+390,Remove a package for SB,dread,task,,,fixed
+399,Import BIS data for SD,dread,task,,,fixed
+400,Configure DGU Public API with TSO,johnbywater,task,,,fixed
+414,Change the Apache and Varnish ports,johnbywater,task,,,fixed
+415,Chase Talis about loading RDF from CKAN.,,task,,,fixed
+416,Meet Evan at COI at 1 o'clock Tuesday 10th August 2010 (to progress Forms API),johnbywater,task,,,fixed
+419,Meet Paul at COI at 2 o'clock Tuesday 10th August 2010,johnbywater,task,,,fixed
+420,Release ckan 1.1,dread,task,,,fixed
+421,Upgrade test-hmg.ckan.net to latest ckan 1.1,dread,task,,,fixed
+424,Tell JF the format spec & examples,dread,task,,,fixed
+425,Document how licenses can be configured in CKAN,johnbywater,task,,,fixed
+426,Ask list for suggestions improving API docs,dread,task,,,fixed
+443,Get DGU daily dump working (local),dread,task,,,fixed
+445,Add dumps to DGU SLA,johnbywater,task,,,fixed
+461,Change ONS data importing to work via API,dread,task,,,fixed
+468,Default config file has commented out configuration variable,johnbywater,task,,,fixed
+469,Unit test to check API key in correctly named HTTP header is accepted by server,,task,,,fixed
+475,Unit test to check API key in incorrectly named HTTP header is not accepted by server,,task,,,fixed
+478,"Unit test for ""interface resource"" in API",,task,,,fixed
+479,Suggest DGU presents database dumps through front end,dread,task,,,fixed
+508,Create branch ultrastable,dread,task,,,fixed
+536,Extend base importer merging in resources,dread,task,,,fixed
+548,Functional test for getting package create form from the API,johnbywater,task,,,fixed
+549,Method on API controller to return package create form,johnbywater,task,,,fixed
+550,Routing configuration for package create form API resource,johnbywater,task,,,fixed
+551,Documentation for getting package create form from API,johnbywater,task,,,fixed
+552,Method on API controller to accept valid package create form submission,johnbywater,task,,,fixed
+553,"Functional test for submitting valid ""package create form"" response to the API",johnbywater,task,,,fixed
+554,"Functional test for submitting invalid ""package create form"" response to the API",johnbywater,task,,,fixed
+555,Documentation for submitting package create form submission to API,johnbywater,task,,,fixed
+556,Method on API controller to accept invalid package create form submission,johnbywater,task,,,fixed
+581,Determine package name from metadata document,rgrp,task,,,fixed
+582,Domain object class for harvest source,,task,,,fixed
+583,Define fieldset object for harvest source forms,,task,,,fixed
+584,Migration script to add harvest source table,,task,,,fixed
+585,Method on API controller to return harvest source create form,,task,,,fixed
+586,Routing configuration for harvest source create form API resource,,task,,,fixed
+587,Documentation for getting harvest source create form from API,,task,,,fixed
+588,Method on API controller to accept valid harvest source create form submission,,task,,,fixed
+589,Method on API controller to reject invalid harvest source create form submission,,task,,,fixed
+590,Documentation for submitting harvest source create form submission to API,,task,,,fixed
+591,Routing configuration for harvest source entity API resource,,task,,,fixed
+592,Methods to return harvest source entity as JSON,,task,,,fixed
+593,Method on API controller to return remote metadata edit form,,task,,,fixed
+594,Routing configuration for remote metadata edit form API resource,,task,,,fixed
+595,Documentation for getting remote metadata edit form from API,,task,,,fixed
+596,Method on API controller to accept valid remote metadata edit form submission,,task,,,fixed
+597,Method on API controller to reject invalid remote metadata edit form submission,,task,,,fixed
+599,Routing configuration for listing remote metadata entities for a given publisher,,task,,,fixed
+600,Method on API controller for listing remote metadata entities for a given publisher,,task,,,fixed
+601,Documentation for listing remote metadata entities for a given publisher via API,,task,,,fixed
+602,Method on API controller to accept valid harvest job,,task,,,fixed
+603,Method on API controller to reject invalid harvest job,,task,,,fixed
+604,Domain object class for harvest job,,task,,,fixed
+605,Routing configuration for harvest job register,,task,,,fixed
+606,Methods to return harvest job as JSON,,task,,,fixed
+607,Routing configuration for harvest job entity,,task,,,fixed
+608,Routing configuration for register of harvest jobs with error status,,task,,,fixed
+609,Methods to return harvest jobs with error status as JSON,,task,,,fixed
+610,Load local copy of metadata document,johnbywater,task,,,fixed
+618,Domain object class for metadata document,,task,,,fixed
+619,Get HTTP response for given resource locator,,task,,,fixed
+620,"Identify remote metadata entity as metadata document, WAF, or CSW",,task,,,fixed
+622,Metadata document identifiers extracted from CSW GetRecords responses,johnbywater,task,,,fixed
+623,CSW GetRecords request for all identifiers (with CSW authentication),johnbywater,task,,,fixed
+624,Read attribute 'title' from local copy of metadata document,,task,,,fixed
+625,Read attribute 'abstract' from local copy of metadata document,,task,,,fixed
+626,Read attribute 'point of contact' from local copy of metadata document,,task,,,fixed
+627,Read attribute 'guid' from local copy of metadata document,,task,,,fixed
+628,Read attribute 'bounding-box' from local copy of metadata document,,task,,,fixed
+629,Read attribute 'keywords' from local copy of metadata document,,task,,,fixed
+630,Read attribute 'use constraints' from local copy of metadata document,,task,,,fixed
+631,Read attribute 'resource-locator' from local copy of metadata document,,task,,,fixed
+632,Read attribute 'topic category' from local copy of metadata document,,task,,,fixed
+633,Read attribute '' from local copy of metadata document,,task,,,fixed
+634,Read attribute '' from local copy of metadata document,,task,,,fixed
+635,Read attribute '' from local copy of metadata document,,task,,,fixed
+636,Method on API controller to delete given harvest job,,task,,,fixed
+638,Documentation for getting harvest source entity from API,,task,,,fixed
+639,Documentation for posting harvest job to API,,task,,,fixed
+640,Documentation for getting harvest job entity from API,,task,,,fixed
+641,Documentation for getting harvest job errors from API,,task,,,fixed
+642,Migration script to add harvest job table,,task,,,fixed
+643,Migration script to add metadata document table,,task,,,fixed
+644,Documentation for deleting harvest job entity,,task,,,fixed
+645,Domain object and migration script to associate packages and harvester objects,johnbywater,task,,,fixed
+657,Fix harvesting job entity get method to default to returning 'None' rather than raising an exception,,task,,,fixed
+658,Fix harvest source entity get method to default to returning 'None' rather than raising an exception,,task,,,fixed
+678,Form for DGU metadata v3,dread,task,,,fixed
+687,Release ckanclient 0.4,dread,task,,,fixed
+688,Example GeoNetworks service for CSW development,johnbywater,task,,,
+696,Decoupled generation of package group choices from validation of package group selection,johnbywater,task,,,fixed
+709,Metadata document extracted from CSW GetRecordById response,johnbywater,task,,,fixed
+710,CSW GetRecordById request for given identifier,johnbywater,task,,,fixed
+454,Import ONS data via API,dread,story,,,fixed
+456,Daily dump,johnbywater,story,,,duplicate
+457,Dump database on a daily basis,dread,story,,,fixed
+462,Visitor downloads a daily database dump,dread,story,,,fixed
+471,API user sends API key in correctly named header,,story,,,
+472,API user sends API key in incorrectly named header,,story,,,
+473,API user discovers correct header for sending API key,,story,,,
+491,Get form for creating harvest source entity,,story,,,
+492,Submit harvest source create form response to the API,,story,,,
+493,Get harvest source entity,,story,,,
+494,Get form for updating remote metadata entity,,story,,,
+495,Put form for updating remote metadata entity,,story,,,
+546,Get the package create form from the API,johnbywater,story,,,
+547,Submit package create form response to the API,johnbywater,story,,,
+567,Post new harvest job for given harvest source,,story,,,
+577,Get remote metadata harvest job errors,,story,,,
+578,Get remote metadata harvest job,,story,,,
+579,Delete remote metadata harvest job,,story,,,
+598,List remote metadata entities for given publisher,,story,,,
+650,WUI editing for Authorization Groups,pudo,story,,,fixed
+655,Return status code 404 when harvest source is not found,,story,,,
+656,Return status code 404 when harvesting job is not found,,story,,,
+408,Integrate CMS via proxying,pudo,requirement,,ckan,fixed
+410,Latest comments widget on home page,pudo,requirement,,DGU,fixed
+411,Deploy and test Varnish on eu3,pudo,requirement,,ckan,fixed
+428,Daily dump of DGU CKAN available,,requirement,,ckan,fixed
+429,ONS data is imported daily to DGU,,requirement,,ckan,fixed
+501,Read-only maintenance mode,,requirement,,ckan,duplicate
+545,The system shall support creating packages via the Form API,johnbywater,requirement,,ckan,
+575,The system shall notify remote metadata harvesting errors,,requirement,,ckan,fixed
+652,Allow for addition and removal of groups on package/edit,,requirement,,ckan,fixed
+666,The system shall support updating packages from new versions of previously harvested dataset or service metadata,,requirement,,ckan,fixed
+690,The system shall support Gemini2 service records,johnbywater,requirement,,ckan,invalid
+693,Support ETag in cache decorator,,requirement,,ckan,fixed
+702,The system shall support changing package groups when editing a package,johnbywater,requirement,,ckan,duplicate
+741,Extension / Plugin system for CKAN,,enhancement,critical,ckan,fixed
+349,The system shall support authorised users to edit packages on data.gov.uk,johnbywater,defect,major,ckan,invalid
+432,Creating package over REST gives 500 error,dread,defect,blocker,,fixed
+434,Logged in user to si.ckan.net causes genshi exception,,defect,critical,,fixed
+500,Exception from diff,,defect,awaiting triage,,duplicate
+514,Inconsistent use of 'location' header in API,,defect,awaiting triage,,duplicate
+516,Double-escaped text visible - revision page,,defect,minor,,fixed
+532,Just a test - please ignore,johnbywater,defect,awaiting triage,,invalid
+534,buildbot config - database machine moved,johnbywater,defect,critical,,fixed
+535,genshi error when logged into sl.ckan.net,,defect,awaiting triage,,duplicate
+558,"Sort extras, relationships by key/object alphabetically",,defect,awaiting triage,,fixed
+561,Deleted packages are returned in the API,,defect,awaiting triage,,duplicate
+562,OpenID Login fails using Yahoo and Google,,defect,blocker,,fixed
+372,Fix system limits on CKAN for DGU,johnbywater,bug,critical,ckan,
+436,Investigate exception: resource search JSON,,bug,,,wontfix
+437,Buildbot test failures - ascii codec,,bug,,,fixed
+459,Versions on branches are broken,,bug,,,fixed
+654,Harvest sources and jobs should return 404 when missing (not 500),,bug,critical,,

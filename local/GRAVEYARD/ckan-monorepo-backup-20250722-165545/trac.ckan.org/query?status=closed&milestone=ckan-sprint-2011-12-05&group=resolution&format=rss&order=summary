@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2011-12-05&amp;group=resolution&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=ckan-sprint-2011-12-05&amp;group=resolution&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1493</link>
+        <guid isPermaLink="false">http://localhost/ticket/1493</guid>
+        <title>#1493: 'search-index rebuild/clear' doesn't work if no ckan.site_id</title>
+        <pubDate>Mon, 28 Nov 2011 12:47:02 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+You can't delete things from the SOLR search index if the ckan.site_id and ckan.site_url are blank.
+&lt;/p&gt;
+&lt;p&gt;
+Should assert that one of these are set up.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1493#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1517</link>
+        <guid isPermaLink="false">http://localhost/ticket/1517</guid>
+        <title>#1517: Accessing resource view sometimes auto-downloads the resource</title>
+        <pubDate>Mon, 05 Dec 2011 18:27:27 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Clicking any of the links to a resource page in the dataset viewer seems to load the page and immediately start downloading the resource file.
+&lt;/p&gt;
+&lt;p&gt;
+For example, being here: &lt;a class="ext-link" href="http://test.ckan.net/dataset/europeana-lod"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/dataset/europeana-lod&lt;/a&gt;
+and clicking on any of the links to the first resource.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1517#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1504</link>
+        <guid isPermaLink="false">http://localhost/ticket/1504</guid>
+        <title>#1504: Action API given blank data causes exception</title>
+        <pubDate>Thu, 01 Dec 2011 16:25:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This is what caused the exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;curl http://localhost:5000/api/action/package_search -d='{"q": "osm"}'
+&lt;/pre&gt;&lt;p&gt;
+The problem is the content-type is formencoding, the '=' is the first character of the request, and so internally the data_dict is set to ' ', which needs to be a dictionary.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1504#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1479</link>
+        <guid isPermaLink="false">http://localhost/ticket/1479</guid>
+        <title>#1479: Can't edit a user with a unicode email address</title>
+        <pubDate>Tue, 22 Nov 2011 11:14:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Register User with an email address with a unicode char (e.g. u'\u044e')
+&lt;/li&gt;&lt;li&gt;View the User in the UI (/user/) or with 'user_show' Action API
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Exception:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.user:98 in read
+&amp;lt;&amp;lt;          try:
+                   user_dict = get_action('user_show')(context,data_dict)
+               except NotFound:
+                   h.redirect_to(controller='user', action='login', id=None)
+&amp;gt;&amp;gt;  user_dict = get_action('user_show')(context,data_dict)
+Module ckan.logic.action.get:488 in user_show
+&amp;lt;&amp;lt;      check_access('user_show',context, data_dict)
+           user_dict = user_dictize(user_obj,context)
+           if not (Authorizer().is_sysadmin(unicode(user)) or user == user_obj.name):
+&amp;gt;&amp;gt;  user_dict = user_dictize(user_obj,context)
+Module ckan.lib.dictization.model_dictize:189 in user_dictize
+&amp;lt;&amp;lt;
+           result_dict['display_name'] = user.display_name
+           result_dict['email_hash'] = user.email_hash
+           result_dict['number_of_edits'] = user.number_of_edits()
+           result_dict['number_administered_packages'] = user.number_administered_packages()
+&amp;gt;&amp;gt;  result_dict['email_hash'] = user.email_hash
+Module ckan.model.user:59 in email_hash
+&amp;lt;&amp;lt;          if self.email:
+                   e = self.email.strip().lower()
+               return hashlib.md5(e).hexdigest()
+           def get_reference_preferred_for_uri(self):
+&amp;gt;&amp;gt;  return hashlib.md5(e).hexdigest()
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u044e' in position 17: ordinal not in range(128)
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1479#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1415</link>
+        <guid isPermaLink="false">http://localhost/ticket/1415</guid>
+        <title>#1415: Comments on current status of ckan deb packages</title>
+        <pubDate>Mon, 24 Oct 2011 11:51:09 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+This is a scratch pad ticket with some comments on the current status of our ckan deb packages. I know that some of it is the deb packaging roadmap anyway, please forgive me if i mention them here again.
+&lt;/p&gt;
+&lt;p&gt;
+Rufus and me re-deployed some community ckan instances onto s022 (see &lt;a class="ext-link" href="http://trac.okfn.org/ticket/926"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://trac.okfn.org/ticket/926&lt;/a&gt;). We followed the documentation
+&lt;a class="ext-link" href="http://docs.ckan.org/en/latest/install-from-package.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://docs.ckan.org/en/latest/install-from-package.html&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Deb package version number: the version of the deb package is "python-ckan 1309471251~149be76faabc+lucid-1", and it's hard to guess from there that it contains a ckan 1.4.2a
+&lt;/li&gt;&lt;li&gt;When is 1.4.3/1.5.x expected as deb package?
+&lt;/li&gt;&lt;li&gt;There was a bug in the DB upgrade script /usr/share/pyshared/ckan/migration/versions/029_version_groups.py (line 150) which looks like it was fixed 1.4.1==&amp;gt;1.4.2 but was nevertheless present in this deb package.
+&lt;/li&gt;&lt;li&gt;The current script /usr/bin/ckan-std-install
+&lt;ul&gt;&lt;li&gt;does not set the Apache &lt;a class="missing wiki"&gt;ServerName?&lt;/a&gt; according to the $INSTANCE variable
+&lt;/li&gt;&lt;li&gt;automatically configures a ckan extension named after $INSTANCE
+&lt;/li&gt;&lt;li&gt;depends on local postgres
+&lt;/li&gt;&lt;li&gt;could be replaced with "/usr/bin/ckan-deploy --name=ckan-std --domain=ckan-std.localhost (see next point)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;(i think this is exactly James' plan): have more generic deployment script /usr/bin/ckan-deploy as part of python-ckan which takes arguments like
+&lt;ul&gt;&lt;li&gt;--domain=cc.ckan.net
+&lt;/li&gt;&lt;li&gt;--aliases=$list-of-domains
+&lt;/li&gt;&lt;li&gt;--name=cc (defaults to "domain")
+&lt;/li&gt;&lt;li&gt;--no-db (does not configure a DB)
+&lt;/li&gt;&lt;li&gt;--sql-alchemy=$DB_CONFIG_STRING (also runs "paster --plugin ckan db upgrade --config")
+&lt;/li&gt;&lt;li&gt;--extension $list-of-extesions
+&lt;/li&gt;&lt;li&gt;...
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1415#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1484</link>
+        <guid isPermaLink="false">http://localhost/ticket/1484</guid>
+        <title>#1484: Creating package with duplicate tags causes exception</title>
+        <pubDate>Wed, 23 Nov 2011 12:40:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;curl http://localhost:5000/api/action/package_create -d '{"name":"test5", "tags":[{"name": "tag6"}, {"name": "tag6"}]}' -H 'Authorization:tester'
+&lt;/pre&gt;&lt;p&gt;
+Also broken in Web UI (adding a package).
+&lt;/p&gt;
+&lt;p&gt;
+Affects API and Web UI in 1.5 and I think all versions from 1.4.1
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1484#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1487</link>
+        <guid isPermaLink="false">http://localhost/ticket/1487</guid>
+        <title>#1487: Fix group ordering on homepage</title>
+        <pubDate>Thu, 24 Nov 2011 00:24:40 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+ordering on homepage by name instead of group count
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1487#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1453</link>
+        <guid isPermaLink="false">http://localhost/ticket/1453</guid>
+        <title>#1453: Flexible tag names</title>
+        <pubDate>Tue, 08 Nov 2011 17:04:10 GMT</pubDate>
+        
+        <dc:creator>icmurray</dc:creator>
+
+        <description>&lt;p&gt;
+Allowing more flexible tag names:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;allowing spaces
+&lt;/li&gt;&lt;li&gt;allow capital letters (search is case in-sensitive)
+&lt;/li&gt;&lt;li&gt;allow all punctuation except for commas and double-quotes '"'
+&lt;/li&gt;&lt;li&gt;allow unicode
+&lt;/li&gt;&lt;li&gt;commas delimit tag names in the package create/edit form
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Effects:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;package creation/edit form.
+&lt;/li&gt;&lt;li&gt;/tag/{tagname} uri
+&lt;/li&gt;&lt;li&gt;search action
+&lt;/li&gt;&lt;li&gt;api controller (search/package-create/edit)
+&lt;/li&gt;&lt;li&gt;web controller (search/package-create/edit)
+&lt;/li&gt;&lt;li&gt;search api documentation
+&lt;/li&gt;&lt;li&gt;autocomplete for tag names
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1453#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1502</link>
+        <guid isPermaLink="false">http://localhost/ticket/1502</guid>
+        <title>#1502: Group package list is ordered by revision timestamp instead of alphabetically</title>
+        <pubDate>Wed, 30 Nov 2011 19:11:52 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1502#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1481</link>
+        <guid isPermaLink="false">http://localhost/ticket/1481</guid>
+        <title>#1481: License not shown if no resources</title>
+        <pubDate>Tue, 22 Nov 2011 17:34:26 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The license is not displayed any more, unless there are
+resources e.g.
+&lt;a class="ext-link" href="http://test.ckan.net/dataset/dtest#section-basic-information"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/dataset/dtest#section-basic-information&lt;/a&gt; is OGL,
+but that's not shown.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1481#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1482</link>
+        <guid isPermaLink="false">http://localhost/ticket/1482</guid>
+        <title>#1482: Minor JS bugs</title>
+        <pubDate>Tue, 22 Nov 2011 19:44:51 GMT</pubDate>
+        
+        <dc:creator>zephod</dc:creator>
+
+        <description>&lt;p&gt;
+Three JS bugs have appeared:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The slug editor is not updating the text field again. [Fixed; commit:fadda17383]
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;The View Dataset page will stop executing javascript if there are no resources. [Fixed; commit:e54b089f6e]
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;The Add-Dataset and Add-Group URL editor shows the wrong URL for datasets and groups. Broken in this commit:
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/5a01e67"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/5a01e67&lt;/a&gt;
+by 'map.explicit=true'. JohnG: Can you look into this? [Fixed; commit:88e88380f6]
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1482#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1503</link>
+        <guid isPermaLink="false">http://localhost/ticket/1503</guid>
+        <title>#1503: Move from Bitbucket to Github</title>
+        <pubDate>Thu, 01 Dec 2011 13:11:24 GMT</pubDate>
+        
+        <dc:creator>markbrough</dc:creator>
+
+        <description>&lt;p&gt;
+Reasons: more people familiar with Git, bigger Open Source community on Github.
+&lt;/p&gt;
+&lt;p&gt;
+Keeping track of the move here: &lt;a class="ext-link" href="https://docs.google.com/spreadsheet/ccc?key=0AvCDqUH8jVN8dGNVNEpXLWk3UTlJZXhFMjBPbXVtRmc&amp;amp;hl=en_GB#gid=0"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://docs.google.com/spreadsheet/ccc?key=0AvCDqUH8jVN8dGNVNEpXLWk3UTlJZXhFMjBPbXVtRmc&amp;amp;hl=en_GB#gid=0&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1503#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1480</link>
+        <guid isPermaLink="false">http://localhost/ticket/1480</guid>
+        <title>#1480: Munge functions in util</title>
+        <pubDate>Tue, 22 Nov 2011 12:43:57 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+munge_title_to_name, munge_tag v. useful for client software importing things into CKAN. I want it for ONS.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1480#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1501</link>
+        <guid isPermaLink="false">http://localhost/ticket/1501</guid>
+        <title>#1501: Pagination links broken</title>
+        <pubDate>Wed, 30 Nov 2011 09:46:37 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Most of the different pagination links are broken and point to wrong locations. e.g:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Dataset listings in group page:
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://test.ckan.net/group/bibliographic"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/group/bibliographic&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Tag letters in tag listing:
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://test.ckan.net/tag"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/tag&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;User listing:
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://test.ckan.net/user"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/user&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Revision listing:
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+&lt;a class="ext-link" href="http://test.ckan.net/revision"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://test.ckan.net/revision&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This is most probably related with:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://github.com/okfn/ckan/commit/1772a5c"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/commit/1772a5c&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1501#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1002</link>
+        <guid isPermaLink="false">http://localhost/ticket/1002</guid>
+        <title>#1002: Remove changeset model code</title>
+        <pubDate>Wed, 23 Feb 2011 19:36:13 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+This code is unused and tests are disabled i belive. I suggest stripping this out (can always be re-added in an extension later). If we remove we should probably delete the relevant tables (and so a migration is needed).
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1002#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1445</link>
+        <guid isPermaLink="false">http://localhost/ticket/1445</guid>
+        <title>#1445: Resource View page in WUI</title>
+        <pubDate>Mon, 07 Nov 2011 11:24:09 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+Super ticket: &lt;a class="closed ticket" href="http://localhost/ticket/1032" title="enhancement: [super] Resources in WUI (closed: fixed)"&gt;#1032&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Locate at:  /dataset/{dataset}/resource/{id}
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+See: &lt;a class="ext-link" href="http://wiki.ckan.org/Dataset_View_Page"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Dataset_View_Page&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implemented in branch feature-1445-resource-view.
+&lt;/p&gt;
+&lt;p&gt;
+Still to do:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Add inline data explorer to page
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1445#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1455</link>
+        <guid isPermaLink="false">http://localhost/ticket/1455</guid>
+        <title>#1455: Search results when 'all_fields' don't include 'extra' fields</title>
+        <pubDate>Wed, 09 Nov 2011 17:04:25 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you do a search like this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://thedatahub.org/api/search/package?q=tauberer+census&amp;amp;all_fields=1
+&lt;/pre&gt;&lt;p&gt;
+the "extra" fields (e.g. "triples", "shortname") get missed off the results. The docs say it should be a "full record" and I don't see any reason why this is missed off.
+&lt;/p&gt;
+&lt;p&gt;
+This is a problem because search all_fields is the only way for clients and front-ends to get packages in bulk. They end up (like lodcloud) doing thousands of requests to get packages individually.
+&lt;/p&gt;
+&lt;p&gt;
+The full record is:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;http://thedatahub.org/api/rest/dataset/2000-us-census-rdf
+{"count": 1, "results": [{"res_description": ["Download", "XML Sitemap", "SPARQL enpdoint", "Example (RDF/XML)"], "name": "2000-us-census-rdf", "license": "Non-OKD Compliant::Creative Commons Non-Commercial (Any)", "author": "Joshua Tauberer", "author_email": "http://razor.occams.info/", "ckan_url": "http://thedatahub.org/dataset/2000-us-census-rdf", "notes": "2000 U.S. Census converted into over a billion RDF triples.\n\nPopulation statistics at various geographic levels, from the U.S. as a whole, down through states, counties, sub-counties (roughly, cities and incorporated towns)\n\nNotes: also found in the of SPARQL Endpoints.\n\nFrom home page:\n\n&amp;gt; * For the detailed Census statistics, you'll have to download the raw Census data files from the Census Bureau, my Perl script and the patch file below and run it yourself because the files are too big for me to offer as a download!\n&amp;gt; \n&amp;gt; * The data and scripts can be reused under Creative Commons Attribution-NonCommercial-ShareAlike.\n", "entity_type": "package", "site_id": "www.ckan.net", "download_url": "http://www.rdfabout.com/demo/census/", "indexed_ts": "2011-11-01T12:52:36.034Z", "url": "http://www.rdfabout.com/demo/census/", "state": "active", "title": "2000 U.S. Census in RDF (rdfabout.com)", "groups": ["lod", "lodcloud"], "res_format": ["", "meta/sitemap", "api/sparql", "example/rdf+xml"], "license_id": "cc-nc", "revision_id": "fcbad0de-79ea-41bd-8e01-eb832a05b732", "res_url": ["http://www.rdfabout.com/demo/census/", "http://www.rdfabout.com/sitemap.xml", "http://www.rdfabout.com/sparql", "http://www.rdfabout.com/rdf/usgov/geo/us/ny"], "id": "551ec435-f198-4d52-9b56-ec0b0be6aec9", "tags": ["census", "data", "demographics", "deref-vocab", "format-dc", "format-geonames", "format-politico", "format-rdf", "geographic", "linkeddata", "lod", "lodcloud.nolinks", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "population", "published-by-third-party", "rdf", "statistics", "us"]}]}
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1455#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1505</link>
+        <guid isPermaLink="false">http://localhost/ticket/1505</guid>
+        <title>#1505: SearchError and SearchQueryError cause exception in Action API</title>
+        <pubDate>Thu, 01 Dec 2011 17:02:48 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This query caused ckan to except because ckan/controllers/api.py doesn't catch &lt;a class="missing wiki"&gt;SearchError?&lt;/a&gt; and &lt;a class="missing wiki"&gt;SearchQueryError?&lt;/a&gt;:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;curl http://localhost:5000/api/action/package_search -d '{"sort": "metadata_modified"}'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1505#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1450</link>
+        <guid isPermaLink="false">http://localhost/ticket/1450</guid>
+        <title>#1450: Simplify dataset view page</title>
+        <pubDate>Mon, 07 Nov 2011 14:56:28 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+See &lt;a class="ext-link" href="http://wiki.ckan.org/Dataset_and_Resource_Pages_Proposal"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.org/Dataset_and_Resource_Pages_Proposal&lt;/a&gt;
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Create a collapsible section for the README
+&lt;/li&gt;&lt;li&gt;Reduce the number of things on the page
+&lt;/li&gt;&lt;li&gt;Tidy up groups and tags in the sidebar
+&lt;/li&gt;&lt;li&gt;Resource view becomes a list of search results
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+(additional)
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Resource navbar item links to first resource
+&lt;/li&gt;&lt;li&gt;Resource navbar has a dropdown menu of all resources in the dataset
+&lt;/li&gt;&lt;li&gt;Edit and Authz navbar items should be in a separate logical group to the right
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Very rough summary: create more info section and move stuff out (relayout page e.g. README, tags etc)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1450#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1500</link>
+        <guid isPermaLink="false">http://localhost/ticket/1500</guid>
+        <title>#1500: Slug API calls tidy up</title>
+        <pubDate>Tue, 29 Nov 2011 20:58:05 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;API call documented but don't exist any more: dataset create_slug
+&lt;/li&gt;&lt;li&gt;API call not documented but exists: is_slug_valid
+&lt;/li&gt;&lt;li&gt;API call not documented, badly sited in API and using custom code in controller (not logic layer): /package/autocomplete
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1500#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1490</link>
+        <guid isPermaLink="false">http://localhost/ticket/1490</guid>
+        <title>#1490: Standardize output from package listings coming from the logic layer</title>
+        <pubDate>Fri, 25 Nov 2011 12:47:19 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Right now, the two logic functions that return a list of packages (package_search &lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; and group_packages_list &lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt;)use custom functions to generate the output dict. That's suboptimal because:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The template function that renders the package listing (package_list_from_dict) could end up receiving different dicts.
+&lt;/li&gt;&lt;li&gt;Not all package properties are available at the template level (e.g extras, tags...). These can be really useful to customize the listing from an extension.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+In general only the functions present in lib/dictization/model_dictize.py should be used to build the output of a logic function, in that case package_dictize. If necessary, they can be modified to include missing properties, like on this particular case the "isopen" property, needed by the template renderer.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[1]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan/logic/action/get.py#L685"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/master/ckan/logic/action/get.py#L685&lt;/a&gt;
+&lt;a class="missing changeset" title="No default repository defined"&gt;[2]&lt;/a&gt; &lt;a class="ext-link" href="https://github.com/okfn/ckan/blob/master/ckan/logic/action/get.py#L442"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/ckan/blob/master/ckan/logic/action/get.py#L442&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1490#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1498</link>
+        <guid isPermaLink="false">http://localhost/ticket/1498</guid>
+        <title>#1498: Support multiple SOLR schema versions</title>
+        <pubDate>Tue, 29 Nov 2011 16:47:44 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+At some point the SOLR schema used by CKAN will need to be changed and the changes won't be always backward compatible, so we need a mechanism to support instances that use older versions of the schema.
+This process will involve:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Better documentation on how to deploy SOLR, as single instance or multicore
+&lt;/li&gt;&lt;li&gt;A convention on how to tag schema versions and SOLR endpoints to ensure that CKAN instances point to the correct SOLR URL.
+&lt;/li&gt;&lt;li&gt;(If possible) Checks in CKAN core that deal with different schema versions.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1498#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1497</link>
+        <guid isPermaLink="false">http://localhost/ticket/1497</guid>
+        <title>#1497: Suppress benign warnings</title>
+        <pubDate>Tue, 29 Nov 2011 12:27:20 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We really shouldn't have lots of benign stuff printed on stderr when we run every command. It confuses users and hides important stuff.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1497#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1468</link>
+        <guid isPermaLink="false">http://localhost/ticket/1468</guid>
+        <title>#1468: Update the search index for individual packages</title>
+        <pubDate>Tue, 15 Nov 2011 16:56:35 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+When I delete a package from the pylons shell I need to remove that package's entry from the Solr search index. That doesn't happen at the moment.
+&lt;/p&gt;
+&lt;p&gt;
+It would be useful if the search-index rebuild command could take a list of package IDs to rebuild.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1468#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1478</link>
+        <guid isPermaLink="false">http://localhost/ticket/1478</guid>
+        <title>#1478: change package_group to members table</title>
+        <pubDate>Tue, 22 Nov 2011 11:06:13 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+This will comprise of the following steps.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;model migration.
+&lt;/li&gt;&lt;li&gt;simplify revisioning
+&lt;/li&gt;&lt;li&gt;Remove any sqlalchemy relations from groups.
+&lt;/li&gt;&lt;li&gt;change logic functions
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+estimate 2d
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1478#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1499</link>
+        <guid isPermaLink="false">http://localhost/ticket/1499</guid>
+        <title>#1499: list/read/delete packages on the command-line</title>
+        <pubDate>Tue, 29 Nov 2011 18:34:16 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+It would be useful to be able to manipulate packages using the paster command-line interface. In particular listing, reading and deleting packages. Seeing which packages were deleted too.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1499#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1124</link>
+        <guid isPermaLink="false">http://localhost/ticket/1124</guid>
+        <title>#1124: push apt package python-ckanext-solr into our debian repository</title>
+        <pubDate>Wed, 04 May 2011 19:36:33 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+python-ckanext-solr is already available in &lt;a class="ext-link" href="http://apt-alpha.ckan.org/datanl-dev"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://apt-alpha.ckan.org/datanl-dev&lt;/a&gt;, but not yet in &lt;a class="ext-link" href="http://apt-alpha.ckan.org/debian"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://apt-alpha.ckan.org/debian&lt;/a&gt; (that is why we had to [pip-install it for DataGM). Please push into main repo.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1124#changelog</comments>
+    </item>
+ </channel>
+</rss>

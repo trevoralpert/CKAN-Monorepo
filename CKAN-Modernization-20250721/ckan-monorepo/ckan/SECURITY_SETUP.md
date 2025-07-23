@@ -43,7 +43,7 @@ services:
 
 Create a `.env` file (never commit this!):
 ```bash
-ENV_SECRET_KEY=tUcaKt0kEj9gT0rVZJW-Suzp-qgdbQ3VbJvIFo8K4Ro
+ENV_SECRET_KEY=your-generated-secret-key-here
 ```
 
 Add to `.gitignore`:

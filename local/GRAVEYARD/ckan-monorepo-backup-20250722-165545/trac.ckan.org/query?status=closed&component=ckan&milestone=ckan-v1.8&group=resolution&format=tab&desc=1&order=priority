@@ -1,0 +1,70 @@
+id	summary	owner	type	priority	time	changetime
+1387	Not specifying a protocol in dataset url causes broken link to be served on dataset view page	toby	defect	awaiting merge	10/12/11 14:14:53	07/23/12 11:18:31
+1434	Add i18n strings from extensions	seanh	enhancement	awaiting merge	11/01/11 11:07:28	07/02/12 16:18:09
+1678	Make synchronous search the default behaviour	amercader	enhancement	awaiting merge	01/17/12 13:40:04	07/04/12 12:42:29
+2289	Flash messages are not being translated?	toby	defect	awaiting merge	04/12/12 18:37:16	07/03/12 11:15:51
+2313	Deprecate old facet data structures and related functions.	icmurray	enhancement	awaiting merge	04/17/12 15:51:56	07/24/12 10:12:12
+2347	Related stuff dashboard and changes	icmurray	enhancement	awaiting merge	05/01/12 13:38:59	07/25/12 14:22:29
+2388	"Update ""out of the box"" settings for CKAN"	amercader	enhancement	awaiting merge	05/15/12 15:21:09	07/12/12 14:47:55
+2428	Reduce/sort out CKAN's dependencies	seanh	enhancement	awaiting merge	05/25/12 11:54:56	07/03/12 11:21:15
+2437	Add coding standards to CKAN docs	icmurray	task	awaiting merge	05/28/12 09:21:35	07/24/12 10:13:19
+2438	resource_search action not accessible via GET request	icmurray	enhancement	awaiting merge	05/28/12 09:28:25	07/04/12 12:46:45
+2439	tag_search and tag_autocomplete not fully available via GET request	icmurray	defect	awaiting merge	05/28/12 09:32:29	07/03/12 05:59:02
+2484	move follower functionality into helper functions	toby	enhancement	awaiting merge	06/01/12 10:49:30	06/21/12 13:39:24
+2500	get_action should raise an exception if the action requested doesn't exist	ross	defect	awaiting merge	06/07/12 12:36:20	06/21/12 15:47:16
+2634	change log - helper function limited in 1.8	toby	enhancement	awaiting merge	07/09/12 10:04:08	07/12/12 09:34:16
+2638	add a get from request param helper function	toby	enhancement	awaiting merge	07/09/12 14:36:37	07/12/12 17:06:12
+2639	Update recline version for 1.8 release	amercader	enhancement	awaiting merge	07/09/12 14:56:49	10/15/12 10:16:45
+2670	model.Group.get_children_groups returns deleted groups	ross	defect	awaiting merge	07/13/12 10:25:17	07/16/12 12:15:53
+2682	CKAN's internal tracking counts each view twice, needs unit tests	seanh	defect	awaiting merge	07/16/12 13:46:42	07/25/12 14:13:56
+2756	Fix handling of extras in group read	seanh	enhancement	awaiting merge	07/25/12 15:51:54	07/25/12 16:07:09
+2757	Write documentation for upgrading a CKAN install from an older to a newer version of CKAN	Adria	enhancement	awaiting merge	07/25/12 16:54:02	07/27/12 12:26:46
+2816	DomainObjectOperation not in model	toby	enhancement	awaiting merge	08/09/12 07:17:01	08/15/12 14:21:11
+2843	Adding existing datasets to organizations is broken	seanh	defect	awaiting merge	08/13/12 11:58:57	09/10/12 09:49:29
+2845	Editing an organization removes all datasets from the organization	seanh	defect	awaiting merge	08/13/12 12:01:26	09/10/12 09:58:30
+1471	Be compatible with new ubuntu release in April	seanh	enhancement	awaiting triage	11/17/11 17:52:25	06/27/12 15:17:50
+1732	Update CKAN's search for taxonomies	johnglover	enhancement	awaiting triage	01/31/12 11:09:29	07/02/12 10:19:17
+2290	Mark facet titles in search pages for translation	seanh	defect	awaiting triage	04/13/12 14:17:31	07/02/12 14:13:35
+2381	Related item count on ALL dataset pages	ross	enhancement	awaiting triage	05/14/12 15:25:33	05/14/12 16:02:07
+2399	Model cleanup in CKAN core has broken ckanext-spatial	amercader	defect	awaiting triage	05/16/12 13:04:30	06/26/12 10:31:42
+2533	ckanext-harvest is broken with ckan 1.8b	seanh	defect	awaiting triage	06/15/12 10:05:07	06/15/12 10:17:13
+2592	Update and simplify source install instructions	seanh	enhancement	awaiting triage	06/25/12 14:14:57	07/02/12 13:15:47
+2600	"Replace broken ""Login to Add an Organization"" button"	seanh	defect	awaiting triage	06/26/12 14:41:58	06/27/12 10:11:50
+2605	Problem with user.get_groups	ross	enhancement	awaiting triage	06/27/12 10:30:06	07/24/12 10:56:09
+2615	Add activity stream activity when a user starts to follow something	seanh	enhancement	awaiting triage	06/28/12 09:04:09	07/02/12 13:16:42
+2627	IDatasetForm.form_to_db_schema() is not called	seanh	defect	awaiting triage	07/06/12 12:08:28	07/24/12 10:20:13
+2649	Description on resources not rendered as markdown	ross	enhancement	awaiting triage	07/10/12 12:25:35	07/12/12 09:11:20
+2650	Description on resources not rendered as markdown	ross	enhancement	awaiting triage	07/10/12 12:25:37	07/10/12 18:08:36
+2651	Check support for TSV which doesn't appear to work well.	icmurray	enhancement	awaiting triage	07/10/12 12:28:38	07/25/12 09:49:44
+2672	Session.is_modified should use passive=True	icmurray	enhancement	awaiting triage	07/13/12 13:18:43	07/24/12 10:11:06
+2693	License is out of date	seanh	enhancement	awaiting triage	07/18/12 09:57:27	07/24/12 16:45:56
+2811	Author doesn't show on dataset read page		defect	awaiting triage	08/08/12 08:51:01	10/10/12 11:38:30
+2839	Specifying sort order breaks search results on group page		enhancement	awaiting triage	08/12/12 16:09:59	08/13/12 10:42:02
+2842	Allow sort ordering of dataset listings on group pages		enhancement	awaiting triage	08/13/12 11:01:35	08/13/12 11:04:12
+2937	GroupController.history() missing extras_as_string		defect	awaiting triage	09/20/12 15:42:10	09/21/12 14:47:55
+1512	Modifying user name makes you semi-log-out	ross	defect	minor	12/05/11 15:50:14	07/20/12 10:45:22
+2305	User dashboard with private consolidated activity stream	seanh	enhancement	minor	04/16/12 14:42:09	06/28/12 10:36:52
+2340	Get Jenkins to automatically run core extensions tests	seanh	enhancement	minor	05/01/12 12:44:49	06/18/12 17:26:06
+2467	Fix stats extension frontend	amercader	defect	minor	05/28/12 13:53:50	06/29/12 14:58:05
+2472	clean up datastore controller to get rid of datastore_url enables checks	amercader	enhancement	minor	05/29/12 12:10:07	07/02/12 09:43:15
+2604	Add Requests as requirement for tests	amercader	enhancement	minor	06/27/12 09:43:49	06/29/12 11:14:18
+1737	Expose solr-based search API	icmurray	enhancement	major	01/31/12 12:57:06	06/19/12 13:32:12
+2389	More robust handling of DataExplorer errors	amercader	defect	major	05/15/12 15:24:07	07/02/12 09:43:21
+2434	Fix autodoc on readthedocs again	seanh	defect	major	05/25/12 16:12:33	10/15/12 10:17:52
+2624	Organizations breaks dataset tag editing	ross	enhancement	major	07/02/12 10:53:31	07/09/12 11:01:56
+2772	Update transifex for 1.8 translations	seanh	enhancement	major	07/27/12 12:48:19	08/15/12 10:44:05
+2872	Non-open licenses are marked as open		defect	major	08/16/12 13:35:35	10/15/12 12:29:39
+2591	postgres unicode problems postgres v9.1.4	toby	enhancement	critical	06/25/12 12:36:16	06/27/12 16:06:01
+2770	Some strings potentially not marked for translation	seanh	defect	blocker	07/27/12 11:00:40	07/27/12 11:49:07
+2283	[super] Data Previewer / Viewer v3		enhancement	awaiting triage	04/11/12 09:59:01	06/25/12 11:30:43
+2309	Organizations review with SH		enhancement	awaiting triage	04/16/12 15:54:39	06/25/12 11:32:46
+2319	Better auto-complete for groups on dataset edit page		enhancement	awaiting triage	04/23/12 20:02:33	06/25/12 11:34:43
+2608	Uploading a file to a resource hangs		refactor	awaiting triage	06/27/12 14:19:48	07/24/12 10:23:20
+1279	Refactor or deprecate Authorization Groups	ross	enhancement	awaiting triage	08/15/11 13:36:07	05/28/12 13:33:48
+2495	Stats page has lost styling ...		enhancement	awaiting triage	06/07/12 08:15:32	06/25/12 11:48:25
+2534	ckanext-spatial is broken with CKAN 1.8b	amercader	defect	awaiting triage	06/15/12 10:06:02	06/25/12 13:32:04
+2630	UPdate docs after IDatasetForm schema change	seanh	enhancement	awaiting triage	07/06/12 14:57:05	07/27/12 12:33:31
+2273	Review publisher organisations code with Ross	seanh	enhancement	minor	04/02/12 14:08:43	06/25/12 14:49:48
+2344	Get jenkins install script into CKAN core	seanh	enhancement	minor	05/01/12 12:51:13	06/18/12 17:27:29
+2435	ckanext-qa doesn't work with CKAN 1.7+	seanh	defect	awaiting triage	05/25/12 16:27:08	06/27/12 15:17:37
+2374	tag search paging	ross	enhancement	major	05/04/12 17:53:45	06/21/12 14:12:56

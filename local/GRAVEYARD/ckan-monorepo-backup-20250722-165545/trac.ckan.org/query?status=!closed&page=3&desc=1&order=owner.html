@@ -1,0 +1,2352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      Custom Query – CKAN
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="query%3Fstatus=!closed&amp;format=rss&amp;desc=1&amp;order=owner" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="query%3Fstatus=!closed&amp;format=csv&amp;page=3&amp;desc=1&amp;order=owner" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="query%3Fstatus=!closed&amp;format=tab&amp;page=3&amp;desc=1&amp;order=owner" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" />
+        <link rel="next" href="query%3Fstatus=!closed&amp;page=4&amp;desc=1&amp;order=owner.html" title="Next Page" />
+        <link rel="start" href="wiki.1.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/report.css" type="text/css" />
+        <link rel="prev" href="query%3Fstatus=!closed&amp;page=2&amp;desc=1&amp;order=owner.html" title="Previous Page" />
+        <link rel="shortcut icon" href="chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="chrome/common/trac.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search CKAN" />
+    <script type="text/javascript">
+      var properties={"cc":{"label":"Cc","type":"text"},"changetime":{"label":"Modified","type":"time"},"component":{"label":"Component","options":["ckan","ckan hosted","contrib","datacatalogs","dgu","dpm","ecportal","iati","lod2","pdeu","uklii","vdm"],"type":"select"},"description":{"label":"Description","type":"textarea"},"id":{"label":"Ticket","type":"id"},"keywords":{"label":"Keywords","type":"text"},"milestone":{"label":"Milestone","options":["milestone15","milestone1","milestone16","milestone17","milestone18","v0.3","v0.4","v0.5","v0.6","v0.7","v0.8","v0.9","v0.10","v0.11","vdm-0.6","vdm-0.7","v1.0","v1.1","iati-1","iati-2","ckan-v1.2","datapkg-0.7","iati-3","ckan-v1.3-sprint-2","ckan-v1.3-sprint-1","ckan-v1.3-sprint-3","ckan-v1.3","datapkg-0.8","ckan-v1.4-sprint-1","ckan-sprint-2011-12-19","ckan-v1.4-sprint-2","ckan-v1.4-sprint-3","ckan-v1.4-sprint-4","ckan-v1.4-sprint-5","ckan-v1.4-sprint-6","ckan-v1.4","ckan-v1.4-sprint-7","ckan-v1.5-sprint-1","ckan-v1.5-sprint-2","pdeu-1","vdm-0.8","ckan-v1.5-sprint-3","ckan-v1.5-sprint-4","ckan-sprint-2011-09-12","iati-4","ckan-sprint-2011-09-26","ckan-sprint-2011-10-10","ckan-sprint-2011-10-24","ckan-sprint-2011-10-28","ckan-v1.5","ckan-sprint-2011-11-07","ckan-sprint-2011-11-21","ckan-sprint-2011-12-05","ckan-sprint-2012-01-09","ckan-sprint-2012-01-23","ckan-sprint-2012-02-06","ckan-sprint-2012-02-20","ckan-v1.6","ckan-sprint-2012-03-05","ckan-sprint-2012-03-19","ckan-sprint-2012-04-02","ckan-sprint-2012-04-16","ckan-sprint-2012-04-30","ckan-sprint-2012-05-15","ckan-sprint-2012-05-29","ckan-v1.7","demo phase 1","demo phase 2","demo phase 3","ckan-v1.8","ckan-sprint-2012-06-25","opendatasuite 1","ckanbuild","datahub-july","datahub-oct","opendatasuite 2","ckan-v1.9","ckan 2.0","ckan-backlog","ckan-ecportal","ckan-future","ckan-v1.8.1","demo phase 4","demo phase 5"],"type":"select"},"owner":{"label":"Owner","type":"text"},"priority":{"label":"Priority","options":["blocker","critical","major","minor","trivial","awaiting triage","awaiting merge"],"type":"select"},"repo":{"label":"Repository","options":["ckan","ckanclient","ckanext","ckanext-admin","ckanext-community","ckanext-csw","ckanext-dataapi","ckanext-no","ckanext-datapreview","ckanext-deliverance","ckanext-dgu","ckanext-geo","ckanext-harvest","ckanext-iati","ckanext-importlib","ckanext-qa","ckanext-queue","ckanext-solr","ckanext-stats","ckanext-storage","ckanext-upload","ckanext-webhooks","datapkg","vdm"],"type":"select"},"reporter":{"label":"Reporter","type":"text"},"resolution":{"label":"Resolution","options":["fixed","invalid","wontfix","duplicate","worksforme"],"type":"radio"},"status":{"label":"Status","options":["accepted","assigned","closed","new","reopened"],"type":"radio"},"summary":{"label":"Summary","type":"text"},"theme":{"label":"Theme","options":["deployment","notifications","migrations","harvesting","dictization","qa","entities","none"],"type":"select"},"time":{"label":"Created","type":"time"},"type":{"label":"Type","options":["defect","enhancement","refactor","task","requirement","CREP"],"type":"select"}};
+      var modes={"id":[{"name":"is","value":""},{"name":"is not","value":"!"}],"select":[{"name":"is","value":""},{"name":"is not","value":"!"}],"text":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"},{"name":"begins with","value":"^"},{"name":"ends with","value":"$"},{"name":"is","value":""},{"name":"is not","value":"!"}],"textarea":[{"name":"contains","value":"~"},{"name":"doesn't contain","value":"!~"}]};
+    </script>
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/query.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="chrome/common/js/folding.js"></script>
+    <script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        initializeFilters();
+        $("#group").change(function() {
+          $("#groupdesc").enable(this.selectedIndex != 0)
+        }).change();
+        $("fieldset legend.foldable").enableFolding(false);
+        /* Hide the filters for saved queries. */
+        if (window.location.href.search(/[?&]report=[0-9]+/) != -1)
+          $("#filters").toggleClass("collapsed");
+        /* Hide the columns by default. */
+        $("#columns").toggleClass("collapsed");
+      });
+    /*]]>*/</script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://ckan.org/"><img src="http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png" alt="CKAN Trac" height="70" /></a>
+      </div>
+      <form id="search" action="search.html" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="prefs.html">Preferences</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li class="active"><a href="report.html">View Tickets</a></li><li><a href="search.html">Search</a></li><li class="last"><a href="wiki.1.html">Wiki</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="report.html">Available Reports</a></li><li class="last">Custom Query</li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="query">
+      <h1>Custom Query <span class="numrows">(495 matches)</span></h1>
+      <form id="query" method="post" action="query.html"><div><input type="hidden" name="__FORM_TOKEN" value="93d81ccf9a7bb1c456462f62" /></div>
+        <fieldset id="filters">
+          <legend class="foldable">Filters</legend>
+          <table summary="Query filters">
+            <tbody>
+              <tr style="display: none">
+                <td>
+		  <div class="trac-clause-lsep"> <hr /></div>
+		  <div class="trac-clause-msep">Or</div>
+		  <div class="trac-clause-rsep"> <hr /></div>
+		</td>
+              </tr>
+              <tr><td class="trac-clause">
+                <table class="trac-clause">
+                  <tbody>
+                    <tr class="status">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_status_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_status">Status</label></th>
+                      <td class="filter" colspan="2">
+                            <input type="checkbox" id="_0_status_accepted" name="0_status" value="accepted" checked="checked" />
+                            <label for="_0_status_accepted" class="control">accepted</label>
+                            <input type="checkbox" id="_0_status_assigned" name="0_status" value="assigned" checked="checked" />
+                            <label for="_0_status_assigned" class="control">assigned</label>
+                            <input type="checkbox" id="_0_status_closed" name="0_status" value="closed" />
+                            <label for="_0_status_closed" class="control">closed</label>
+                            <input type="checkbox" id="_0_status_new" name="0_status" value="new" checked="checked" />
+                            <label for="_0_status_new" class="control">new</label>
+                            <input type="checkbox" id="_0_status_reopened" name="0_status" value="reopened" checked="checked" />
+                            <label for="_0_status_reopened" class="control">reopened</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="actions">
+                      <td class="and" colspan="2">
+                         <label for="add_filter_0">And</label> 
+                        <select name="add_filter_0" id="add_filter_0">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status" disabled="disabled">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_0" value="+" />
+                        </div>
+                      </td>
+                      <td class="or" colspan="2">
+                        <label for="add_clause">Or</label> 
+                        <select name="add_clause_1" id="add_clause">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="repo">Repository</option><option value="resolution">Resolution</option><option value="status">Status</option><option value="summary">Summary</option><option value="theme">Theme</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_1" value="+" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset id="columns">
+          <legend class="foldable">Columns</legend>
+          <div>
+              <label>
+                <input type="checkbox" name="col" value="summary" checked="checked" />
+                Summary
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="status" checked="checked" />
+                Status
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="owner" checked="checked" />
+                Owner
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="type" checked="checked" />
+                Type
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="priority" checked="checked" />
+                Priority
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="milestone" checked="checked" />
+                Milestone
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="component" />
+                Component
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="resolution" />
+                Resolution
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="time" />
+                Created
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="changetime" />
+                Modified
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="repo" />
+                Repository
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="theme" />
+                Theme
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="reporter" />
+                Reporter
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="keywords" />
+                Keywords
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="cc" />
+                Cc
+              </label>
+          </div>
+        </fieldset>
+        <p class="option">
+          <label for="group">Group results by</label>
+          <select name="group" id="group">
+            <option></option>
+              <option value="component">Component</option>
+              <option value="milestone">Milestone</option>
+              <option value="owner">Owner</option>
+              <option value="priority">Priority</option>
+              <option value="reporter">Reporter</option>
+              <option value="repo">Repository</option>
+              <option value="resolution">Resolution</option>
+              <option value="status">Status</option>
+              <option value="theme">Theme</option>
+              <option value="type">Type</option>
+          </select>
+          <input type="checkbox" name="groupdesc" id="groupdesc" />
+          <label for="groupdesc">descending</label>
+        </p>
+        <p class="option">
+          Show under each result:
+            <label><input type="checkbox" name="row" value="description" />
+            Description</label>
+        </p>
+        <p class="option">
+          <label for="max">Max items per page</label>
+          <input type="text" name="max" id="max" size="10" value="100" />
+        </p>
+        <div class="buttons">
+          <input type="hidden" name="order" value="owner" />
+          <input type="hidden" name="desc" value="1" />
+          <input type="submit" name="update" value="Update" />
+        </div>
+        <hr />
+      </form>
+      <div>
+  <h2 class="report-result">
+    Results <span class="numresults">(201 - 300 of 495)</span>
+  </h2>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=!closed&amp;page=2&amp;desc=1&amp;order=owner.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;desc=1&amp;order=owner.html" title="Page 1">1</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=2&amp;desc=1&amp;order=owner.html" title="Page 2">2</a>
+      </span>
+      <span>
+        <span class="current">3</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=4&amp;desc=1&amp;order=owner.html" title="Page 4">4</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=5&amp;desc=1&amp;order=owner.html" title="Page 5">5</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=!closed&amp;page=4&amp;desc=1&amp;order=owner.html" title="Next Page">→</a>
+    </span>
+</div>
+  <table class="listing tickets">
+    <thead>
+    <tr class="trac-columns">
+      <th class="id">
+        <a title="Sort by Ticket (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=id.html">Ticket</a>
+      </th><th class="summary">
+        <a title="Sort by Summary (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=summary.html">Summary</a>
+      </th><th class="status">
+        <a title="Sort by Status (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=status.html">Status</a>
+      </th><th class="owner desc">
+        <a title="Sort by Owner (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=owner.html">Owner</a>
+      </th><th class="type">
+        <a title="Sort by Type (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=type.html">Type</a>
+      </th><th class="priority">
+        <a title="Sort by Priority (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=priority.html">Priority</a>
+      </th><th class="milestone">
+        <a title="Sort by Milestone (ascending)" href="query%3Fstatus=!closed&amp;page=3&amp;order=milestone.html">Milestone</a>
+      </th>
+    </tr>
+    </thead>
+      <tbody>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2909.html" title="View ticket">#2909</a></td>
+                    <td class="summary">
+                      <a href="ticket/2909.html" title="View ticket">User profile headers are a bit weird</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/demo&#32;phase&#32;5.html">demo phase 5</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2910.html" title="View ticket">#2910</a></td>
+                    <td class="summary">
+                      <a href="ticket/2910.html" title="View ticket">User listings are not very compelling</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/demo&#32;phase&#32;5.html">demo phase 5</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2911.html" title="View ticket">#2911</a></td>
+                    <td class="summary">
+                      <a href="ticket/2911.html" title="View ticket">Internal documentation of Organization Groups</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2912.html" title="View ticket">#2912</a></td>
+                    <td class="summary">
+                      <a href="ticket/2912.html" title="View ticket">ckanext/organizations: Neither public or private initially selected when adding dataset</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.1.html">ckan-v1.8.1</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2913.html" title="View ticket">#2913</a></td>
+                    <td class="summary">
+                      <a href="ticket/2913.html" title="View ticket">IGroupForm has package_form() method</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2914.html" title="View ticket">#2914</a></td>
+                    <td class="summary">
+                      <a href="ticket/2914.html" title="View ticket">Add form_to_db_schema_options() to IDatasetForm and IGroupForm</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.1.html">ckan-v1.8.1</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2915.html" title="View ticket">#2915</a></td>
+                    <td class="summary">
+                      <a href="ticket/2915.html" title="View ticket">Refactor form_to_db_schema_options()</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2919.html" title="View ticket">#2919</a></td>
+                    <td class="summary">
+                      <a href="ticket/2919.html" title="View ticket">Remove IController from docs</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2920.html" title="View ticket">#2920</a></td>
+                    <td class="summary">
+                      <a href="ticket/2920.html" title="View ticket">Genshi text template message extractor no longer needed?</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2921.html" title="View ticket">#2921</a></td>
+                    <td class="summary">
+                      <a href="ticket/2921.html" title="View ticket">Add docstring to top of lib/extract.py file</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2922.html" title="View ticket">#2922</a></td>
+                    <td class="summary">
+                      <a href="ticket/2922.html" title="View ticket">Better docstring for CKANInternationalizationExtension</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2923.html" title="View ticket">#2923</a></td>
+                    <td class="summary">
+                      <a href="ticket/2923.html" title="View ticket">Change regularise -&gt; regularize</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2924.html" title="View ticket">#2924</a></td>
+                    <td class="summary">
+                      <a href="ticket/2924.html" title="View ticket">Better docs for trans js command, and add to release process</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2925.html" title="View ticket">#2925</a></td>
+                    <td class="summary">
+                      <a href="ticket/2925.html" title="View ticket">Remove trans mangle paster command?</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2926.html" title="View ticket">#2926</a></td>
+                    <td class="summary">
+                      <a href="ticket/2926.html" title="View ticket">I*Form tests for per-type templates</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2927.html" title="View ticket">#2927</a></td>
+                    <td class="summary">
+                      <a href="ticket/2927.html" title="View ticket">Test new package/group/organization type URLs support</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2928.html" title="View ticket">#2928</a></td>
+                    <td class="summary">
+                      <a href="ticket/2928.html" title="View ticket">Run CKAN tests with example_i*form extensions enabled</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2929.html" title="View ticket">#2929</a></td>
+                    <td class="summary">
+                      <a href="ticket/2929.html" title="View ticket">Remove is_fallback() from I*Form extension interfaces?</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2931.html" title="View ticket">#2931</a></td>
+                    <td class="summary">
+                      <a href="ticket/2931.html" title="View ticket">Better docstring for app_globals.py</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2932.html" title="View ticket">#2932</a></td>
+                    <td class="summary">
+                      <a href="ticket/2932.html" title="View ticket">Add docstring to system_info.py</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2933.html" title="View ticket">#2933</a></td>
+                    <td class="summary">
+                      <a href="ticket/2933.html" title="View ticket">Update theming docs</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2934.html" title="View ticket">#2934</a></td>
+                    <td class="summary">
+                      <a href="ticket/2934.html" title="View ticket">Webtests for CKAN</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2936.html" title="View ticket">#2936</a></td>
+                    <td class="summary">
+                      <a href="ticket/2936.html" title="View ticket">Updating a group via the API clears its packages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2943.html" title="View ticket">#2943</a></td>
+                    <td class="summary">
+                      <a href="ticket/2943.html" title="View ticket">Chrome does not resize preview</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2944.html" title="View ticket">#2944</a></td>
+                    <td class="summary">
+                      <a href="ticket/2944.html" title="View ticket">Recline preview does not work in Opera</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2945.html" title="View ticket">#2945</a></td>
+                    <td class="summary">
+                      <a href="ticket/2945.html" title="View ticket">Pdf preview does not load in IE</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2947.html" title="View ticket">#2947</a></td>
+                    <td class="summary">
+                      <a href="ticket/2947.html" title="View ticket">Redirect to the resource page from /resource/{res-id}</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2948.html" title="View ticket">#2948</a></td>
+                    <td class="summary">
+                      <a href="ticket/2948.html" title="View ticket">Negative range breaks datastore backend</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2951.html" title="View ticket">#2951</a></td>
+                    <td class="summary">
+                      <a href="ticket/2951.html" title="View ticket">Paster command for building css from less</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2957.html" title="View ticket">#2957</a></td>
+                    <td class="summary">
+                      <a href="ticket/2957.html" title="View ticket">New datastore on postgres prior to 9.0</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2958.html" title="View ticket">#2958</a></td>
+                    <td class="summary">
+                      <a href="ticket/2958.html" title="View ticket">Uploading files with unicode characters in filename fails in CKAN 1.7 and 1.8</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2960.html" title="View ticket">#2960</a></td>
+                    <td class="summary">
+                      <a href="ticket/2960.html" title="View ticket">Private datasets are not private</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2962.html" title="View ticket">#2962</a></td>
+                    <td class="summary">
+                      <a href="ticket/2962.html" title="View ticket">Search across multiple ckan instances</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/2963.html" title="View ticket">#2963</a></td>
+                    <td class="summary">
+                      <a href="ticket/2963.html" title="View ticket">Timeout on tag pages with lots of datasets</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2964.html" title="View ticket">#2964</a></td>
+                    <td class="summary">
+                      <a href="ticket/2964.html" title="View ticket">Last organization admin can remove herself</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2965.html" title="View ticket">#2965</a></td>
+                    <td class="summary">
+                      <a href="ticket/2965.html" title="View ticket">Stats extension broken on 1.8</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2966.html" title="View ticket">#2966</a></td>
+                    <td class="summary">
+                      <a href="ticket/2966.html" title="View ticket">'Add' button text is wrong when editing organization members</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2967.html" title="View ticket">#2967</a></td>
+                    <td class="summary">
+                      <a href="ticket/2967.html" title="View ticket">Organization members edit page reloads after demoting self</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2968.html" title="View ticket">#2968</a></td>
+                    <td class="summary">
+                      <a href="ticket/2968.html" title="View ticket">Anyone can access organization members page</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2969.html" title="View ticket">#2969</a></td>
+                    <td class="summary">
+                      <a href="ticket/2969.html" title="View ticket">Group members page 500s</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2970.html" title="View ticket">#2970</a></td>
+                    <td class="summary">
+                      <a href="ticket/2970.html" title="View ticket">Organization and group member links use id not name</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2971.html" title="View ticket">#2971</a></td>
+                    <td class="summary">
+                      <a href="ticket/2971.html" title="View ticket">"Are ytou sure you want to delete this member?" should say which member</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2972.html" title="View ticket">#2972</a></td>
+                    <td class="summary">
+                      <a href="ticket/2972.html" title="View ticket">Remove any imports of authz.py and delete file</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2973.html" title="View ticket">#2973</a></td>
+                    <td class="summary">
+                      <a href="ticket/2973.html" title="View ticket">Move new_authz.py into logic/auth/__init__.py</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2974.html" title="View ticket">#2974</a></td>
+                    <td class="summary">
+                      <a href="ticket/2974.html" title="View ticket">General of all auth functions</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2975.html" title="View ticket">#2975</a></td>
+                    <td class="summary">
+                      <a href="ticket/2975.html" title="View ticket">Tests for auth functions and new actions</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2976.html" title="View ticket">#2976</a></td>
+                    <td class="summary">
+                      <a href="ticket/2976.html" title="View ticket">Polish group and organization member pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2977.html" title="View ticket">#2977</a></td>
+                    <td class="summary">
+                      <a href="ticket/2977.html" title="View ticket">Fix user autocomplete on group and organization member pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2978.html" title="View ticket">#2978</a></td>
+                    <td class="summary">
+                      <a href="ticket/2978.html" title="View ticket">Tests for permissions for organizations and groups</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2979.html" title="View ticket">#2979</a></td>
+                    <td class="summary">
+                      <a href="ticket/2979.html" title="View ticket">Requesting membership to groups and organizations</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2981.html" title="View ticket">#2981</a></td>
+                    <td class="summary">
+                      <a href="ticket/2981.html" title="View ticket">Remove config from jinja templates</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2982.html" title="View ticket">#2982</a></td>
+                    <td class="summary">
+                      <a href="ticket/2982.html" title="View ticket">Move functionality from controllers into template helpers</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2983.html" title="View ticket">#2983</a></td>
+                    <td class="summary">
+                      <a href="ticket/2983.html" title="View ticket">Refactor lib/base.py to remove circular import issues</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2984.html" title="View ticket">#2984</a></td>
+                    <td class="summary">
+                      <a href="ticket/2984.html" title="View ticket">Auto-populate context with user, model, session, etc.</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2985.html" title="View ticket">#2985</a></td>
+                    <td class="summary">
+                      <a href="ticket/2985.html" title="View ticket">Make lib/helpers.py more template-specific</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2986.html" title="View ticket">#2986</a></td>
+                    <td class="summary">
+                      <a href="ticket/2986.html" title="View ticket">Make lib/base.py more like it was originally intended</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2987.html" title="View ticket">#2987</a></td>
+                    <td class="summary">
+                      <a href="ticket/2987.html" title="View ticket">Remove all direct calls to logic action and auth functions</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      refactor
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2988.html" title="View ticket">#2988</a></td>
+                    <td class="summary">
+                      <a href="ticket/2988.html" title="View ticket">UI functional tests for CKAN 2.0</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2989.html" title="View ticket">#2989</a></td>
+                    <td class="summary">
+                      <a href="ticket/2989.html" title="View ticket">"Add dataset to organization" should auto-select the organization</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2990.html" title="View ticket">#2990</a></td>
+                    <td class="summary">
+                      <a href="ticket/2990.html" title="View ticket">Fix descriptions of groups and organizations on /groups and /organizations pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2991.html" title="View ticket">#2991</a></td>
+                    <td class="summary">
+                      <a href="ticket/2991.html" title="View ticket">Add blocks to header.html template</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2992.html" title="View ticket">#2992</a></td>
+                    <td class="summary">
+                      <a href="ticket/2992.html" title="View ticket">Delete resource should send me back to edit dataset page</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2993.html" title="View ticket">#2993</a></td>
+                    <td class="summary">
+                      <a href="ticket/2993.html" title="View ticket">"logged_in" and "visitor" show in user list at /users</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2994.html" title="View ticket">#2994</a></td>
+                    <td class="summary">
+                      <a href="ticket/2994.html" title="View ticket">Add dataset and user popovers throughout the site</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2995.html" title="View ticket">#2995</a></td>
+                    <td class="summary">
+                      <a href="ticket/2995.html" title="View ticket">Popovers for resources, groups, organizations, tags...</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/2996.html" title="View ticket">#2996</a></td>
+                    <td class="summary">
+                      <a href="ticket/2996.html" title="View ticket">Fix behaviour of View Profile button in user popover when already on user's profile</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2997.html" title="View ticket">#2997</a></td>
+                    <td class="summary">
+                      <a href="ticket/2997.html" title="View ticket">Add activity streams to dataset pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2998.html" title="View ticket">#2998</a></td>
+                    <td class="summary">
+                      <a href="ticket/2998.html" title="View ticket">Add activity streams to group pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2999.html" title="View ticket">#2999</a></td>
+                    <td class="summary">
+                      <a href="ticket/2999.html" title="View ticket">Add activity streams to organization pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/3000.html" title="View ticket">#3000</a></td>
+                    <td class="summary">
+                      <a href="ticket/3000.html" title="View ticket">Add number of followers to dataset pages</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/3001.html" title="View ticket">#3001</a></td>
+                    <td class="summary">
+                      <a href="ticket/3001.html" title="View ticket">Multilingual plugin crashes CKAN on add dataset when some languages are default</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/3002.html" title="View ticket">#3002</a></td>
+                    <td class="summary">
+                      <a href="ticket/3002.html" title="View ticket">API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/3003.html" title="View ticket">#3003</a></td>
+                    <td class="summary">
+                      <a href="ticket/3003.html" title="View ticket">New pg databases should be created with UTF8 encoding rather than system default</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/3006.html" title="View ticket">#3006</a></td>
+                    <td class="summary">
+                      <a href="ticket/3006.html" title="View ticket">Update translations from Transifex</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.1.html">ckan-v1.8.1</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/3007.html" title="View ticket">#3007</a></td>
+                    <td class="summary">
+                      <a href="ticket/3007.html" title="View ticket">Adding a dataset creates multiple activities</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/3010.html" title="View ticket">#3010</a></td>
+                    <td class="summary">
+                      <a href="ticket/3010.html" title="View ticket">Pin images don't appear in data explorer</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/3014.html" title="View ticket">#3014</a></td>
+                    <td class="summary">
+                      <a href="ticket/3014.html" title="View ticket">Crash when deleting a non-empty vocabulary</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/3019.html" title="View ticket">#3019</a></td>
+                    <td class="summary">
+                      <a href="ticket/3019.html" title="View ticket">Cannot delete dataset extras</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan&#32;2.0.html">ckan 2.0</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/3020.html" title="View ticket">#3020</a></td>
+                    <td class="summary">
+                      <a href="ticket/3020.html" title="View ticket">Update CKAN coding standards</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/3030.html" title="View ticket">#3030</a></td>
+                    <td class="summary">
+                      <a href="ticket/3030.html" title="View ticket">clean up helper functions</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/277.html" title="View ticket">#277</a></td>
+                    <td class="summary">
+                      <a href="ticket/277.html" title="View ticket">Set some config options / settings in WUI (extension)</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1358.html" title="View ticket">#1358</a></td>
+                    <td class="summary">
+                      <a href="ticket/1358.html" title="View ticket">Generate configuration documentation automatically from the deployment_ini_tmpl file</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1403.html" title="View ticket">#1403</a></td>
+                    <td class="summary">
+                      <a href="ticket/1403.html" title="View ticket">Refactor groups index page</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1411.html" title="View ticket">#1411</a></td>
+                    <td class="summary">
+                      <a href="ticket/1411.html" title="View ticket">Force resource format to be lower case (also mimetype)</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/1507.html" title="View ticket">#1507</a></td>
+                    <td class="summary">
+                      <a href="ticket/1507.html" title="View ticket">Minor fixes to dataset add on Group edit form - 0.5d</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-backlog.html">ckan-backlog</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/1782.html" title="View ticket">#1782</a></td>
+                    <td class="summary">
+                      <a href="ticket/1782.html" title="View ticket">Improvements to datasets page UX (Feb 2012)</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-future.html">ckan-future</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/2412.html" title="View ticket">#2412</a></td>
+                    <td class="summary">
+                      <a href="ticket/2412.html" title="View ticket">More than one resource invalidatiing breaks dataset edit form</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      zephod
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-sprint-2012-06-25.html">ckan-sprint-2012-06-25</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2244.html" title="View ticket">#2244</a></td>
+                    <td class="summary">
+                      <a href="ticket/2244.html" title="View ticket">clean up auth</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-future.html">ckan-future</a>
+                    </td>
+              </tr>
+              <tr class="even prio6">
+                    <td class="id"><a href="ticket/2257.html" title="View ticket">#2257</a></td>
+                    <td class="summary">
+                      <a href="ticket/2257.html" title="View ticket">cleanup template vars</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.9.html">ckan-v1.9</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2282.html" title="View ticket">#2282</a></td>
+                    <td class="summary">
+                      <a href="ticket/2282.html" title="View ticket">log api calls for users</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-future.html">ckan-future</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2326.html" title="View ticket">#2326</a></td>
+                    <td class="summary">
+                      <a href="ticket/2326.html" title="View ticket">dataset permalinks</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-future.html">ckan-future</a>
+                    </td>
+              </tr>
+              <tr class="odd prio7">
+                    <td class="id"><a href="ticket/2362.html" title="View ticket">#2362</a></td>
+                    <td class="summary">
+                      <a href="ticket/2362.html" title="View ticket">Improve plugin documentaion, including examples.</a>
+                    </td>
+                    <td class="status">
+                      accepted
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting merge
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.9.html">ckan-v1.9</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/2363.html" title="View ticket">#2363</a></td>
+                    <td class="summary">
+                      <a href="ticket/2363.html" title="View ticket">Documentation of best caching practice.</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2411.html" title="View ticket">#2411</a></td>
+                    <td class="summary">
+                      <a href="ticket/2411.html" title="View ticket">.ini file is a mess</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-future.html">ckan-future</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2416.html" title="View ticket">#2416</a></td>
+                    <td class="summary">
+                      <a href="ticket/2416.html" title="View ticket">Normalise resource/data types</a>
+                    </td>
+                    <td class="status">
+                      accepted
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/demo&#32;phase&#32;5.html">demo phase 5</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/2433.html" title="View ticket">#2433</a></td>
+                    <td class="summary">
+                      <a href="ticket/2433.html" title="View ticket">API uses name not id for some version 3 calls</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2461.html" title="View ticket">#2461</a></td>
+                    <td class="summary">
+                      <a href="ticket/2461.html" title="View ticket">Create demo revisions page</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/demo&#32;phase&#32;4.html">demo phase 4</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2499.html" title="View ticket">#2499</a></td>
+                    <td class="summary">
+                      <a href="ticket/2499.html" title="View ticket">Documentation for the internal analytics</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.8.html">ckan-v1.8</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/2555.html" title="View ticket">#2555</a></td>
+                    <td class="summary">
+                      <a href="ticket/2555.html" title="View ticket">Demo site needs a breadcrumb helper</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/demo&#32;phase&#32;5.html">demo phase 5</a>
+                    </td>
+              </tr>
+              <tr class="odd prio6">
+                    <td class="id"><a href="ticket/2572.html" title="View ticket">#2572</a></td>
+                    <td class="summary">
+                      <a href="ticket/2572.html" title="View ticket">clean up stats plugin</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      toby
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      awaiting triage
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/ckan-v1.9.html">ckan-v1.9</a>
+                    </td>
+              </tr>
+      </tbody>
+  </table>
+  <div class="paging">
+    <span class="previous">
+      <a href="query%3Fstatus=!closed&amp;page=2&amp;desc=1&amp;order=owner.html" title="Previous Page">←</a>
+    </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;desc=1&amp;order=owner.html" title="Page 1">1</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=2&amp;desc=1&amp;order=owner.html" title="Page 2">2</a>
+      </span>
+      <span>
+        <span class="current">3</span>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=4&amp;desc=1&amp;order=owner.html" title="Page 4">4</a>
+      </span>
+      <span>
+        <a href="query%3Fstatus=!closed&amp;page=5&amp;desc=1&amp;order=owner.html" title="Page 5">5</a>
+      </span>
+    <span class="next">
+      <a href="query%3Fstatus=!closed&amp;page=4&amp;desc=1&amp;order=owner.html" title="Next Page">→</a>
+    </span>
+</div>
+</div>
+      <div class="buttons">
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="wiki/TracQuery.html">TracQuery</a>
+        for help on using queries.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="query%3Fstatus=!closed&amp;format=rss&amp;desc=1&amp;order=owner" class="rss">RSS Feed</a>
+        </li><li>
+          <a rel="nofollow" href="query%3Fstatus=!closed&amp;format=csv&amp;page=3&amp;desc=1&amp;order=owner" class="csv">Comma-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="query%3Fstatus=!closed&amp;format=tab&amp;page=3&amp;desc=1&amp;order=owner" class="tab">Tab-delimited Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12.3</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-sprint-2011-10-28&amp;group=resolution&amp;desc=1&amp;order=owner</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;component=ckan&amp;milestone=ckan-sprint-2011-10-28&amp;group=resolution&amp;desc=1&amp;order=owner</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/1230</link>
+        <guid isPermaLink="false">http://localhost/ticket/1230</guid>
+        <title>#1230: Make sure plugins tables work in tests.</title>
+        <pubDate>Tue, 19 Jul 2011 18:40:11 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Dgu tests failed as harvesting table are not created at the correct point.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1230#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1176</link>
+        <guid isPermaLink="false">http://localhost/ticket/1176</guid>
+        <title>#1176: unicode_body exception</title>
+        <pubDate>Mon, 06 Jun 2011 09:12:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We seem to occasionally get this exception on ckan.net.
+&lt;/p&gt;
+&lt;p&gt;
+User agents causing this include:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Alexa ia_archiver (3/6/11)
+&lt;/li&gt;&lt;li&gt;Maxthon browser (17/5/11)
+&lt;/li&gt;&lt;/ul&gt;&lt;pre class="wiki"&gt;Module ckan.controllers.error:32 in document
+&amp;lt;&amp;lt;              return original_response.body
+               # Otherwise, decorate original response with error template.
+               c.content = literal(original_response.unicode_body) or cgi.escape(request.GET.get('message', ''))
+               c.prefix=request.environ.get('SCRIPT_NAME', ''),
+               c.code=cgi.escape(request.GET.get('code', str(original_response.status_int))),
+&amp;gt;&amp;gt;  c.content = literal(original_response.unicode_body) or cgi.escape(request.GET.get('message', ''))
+AttributeError: 'NoneType' object has no attribute 'unicode_body'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1176#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/78</link>
+        <guid isPermaLink="false">http://localhost/ticket/78</guid>
+        <title>#78: Extend login cookie lifetime</title>
+        <pubDate>Fri, 17 Jul 2009 11:15:10 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+When you login you get given a cookie but it is very short (life of your browser session I think).
+&lt;/p&gt;
+&lt;p&gt;
+Work out how to extend to something reasonable (30 days or perhaps forever with logout unsetting cookie).
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;A quick investigation to see whether this is possible
+&lt;/li&gt;&lt;li&gt;If possible do it
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Cost: ?
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/78#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1195</link>
+        <guid isPermaLink="false">http://localhost/ticket/1195</guid>
+        <title>#1195: Storage extension to handle incorrect routes better</title>
+        <pubDate>Mon, 20 Jun 2011 13:32:49 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We've seen exceptions caused by people getting the file storage link wrong, adding a slash to the end.
+&lt;/p&gt;
+&lt;p&gt;
+e.g.
+&lt;a class="ext-link" href="http://ckan.net/storage/f/file/e696d857-e997-41c8-be08-408697168ca8/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/storage/f/file/e696d857-e997-41c8-be08-408697168ca8/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We should aim to handle all requests better than causing exception. 404 (or even 302 in this case) is better than 500.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1195#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1208</link>
+        <guid isPermaLink="false">http://localhost/ticket/1208</guid>
+        <title>#1208: Webstore: a datastore with web API</title>
+        <pubDate>Mon, 04 Jul 2011 18:34:20 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;SQLite based
+&lt;/li&gt;&lt;li&gt;Use Cyclone for async http server on top with auth
+&lt;/li&gt;&lt;li&gt;Designed to not be specific to CKAN or anything else
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Current code is here: &lt;a class="ext-link" href="https://github.com/okfn/webstore"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://github.com/okfn/webstore&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h2 id="APISpec"&gt;API Spec&lt;/h2&gt;
+&lt;h4 id="Read"&gt;Read&lt;/h4&gt;
+&lt;p&gt;
+Two basic ways to query::
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    GET: /{owner}/{db-name}/?sql=...
+    GET: /{owner}/{db-name}/?table=...&amp;amp;attr=value&amp;amp;attr=value&amp;amp;limit=...
+&lt;/pre&gt;&lt;p&gt;
+Returns::
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;  {
+      u'keys': [u'id', u'name'],
+      u'data': [
+          [1, u'jones'],
+          [u'aaa', u'jones']
+          ]
+  }
+&lt;/pre&gt;&lt;h4 id="Write"&gt;Write&lt;/h4&gt;
+&lt;p&gt;
+POST to::
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+/{owner/{database}/{table}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Payload is json data structured as follows::
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+{
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+unique_keys: [list of key attributes]
+data: {dict of values}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+}
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="AuthenticationandAuthorization"&gt;Authentication and Authorization&lt;/h3&gt;
+&lt;p&gt;
+Authentication: use basic auth header.
+&lt;/p&gt;
+&lt;p&gt;
+Authorization:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Default: all read, owner can write
+&lt;/li&gt;&lt;li&gt;Restricted: owner can read and write, everyone can do nothing
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Possible future: config file can specify a python method (TODO: method
+signature)
+&lt;/p&gt;
+&lt;h3 id="IntegrationwithOtherSystems"&gt;Integration with Other Systems&lt;/h3&gt;
+&lt;p&gt;
+TODO: Specify how to delegate authenatication to user database in some other system.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1208#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1239</link>
+        <guid isPermaLink="false">http://localhost/ticket/1239</guid>
+        <title>#1239: Remove and re-add tag on package not working</title>
+        <pubDate>Sat, 23 Jul 2011 17:10:20 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+See reports on list at:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2011-July/001103.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2011-July/001103.html&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a class="ext-link" href="http://lists.okfn.org/pipermail/ckan-dev/2011-July/001107.html"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://lists.okfn.org/pipermail/ckan-dev/2011-July/001107.html&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+Tracked this to issue in dictization/model_save whereby was ignoring case where Package Tag already there but in deleted state. Rather than describe at length see fix.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1239#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1247</link>
+        <guid isPermaLink="false">http://localhost/ticket/1247</guid>
+        <title>#1247: Put docs on ReadTheDocs</title>
+        <pubDate>Fri, 29 Jul 2011 12:19:08 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Put docs on &lt;a class="missing wiki"&gt;ReadTheDocs?&lt;/a&gt; instead of eu13.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1247#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1271</link>
+        <guid isPermaLink="false">http://localhost/ticket/1271</guid>
+        <title>#1271: CORS support</title>
+        <pubDate>Sat, 13 Aug 2011 13:23:59 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+CORS - &lt;a class="ext-link" href="http://www.w3.org/TR/cors/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.w3.org/TR/cors/&lt;/a&gt; - support.
+&lt;/p&gt;
+&lt;p&gt;
+This is what you do in Apache. Should do this in lib/base.py or similar.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "POST, PUT, GET, OPTIONS"
+    Header always set Access-Control-Allow-Headers "X-CKAN-API-KEY, Content-Type"
+    # Respond to all OPTIONS requests with 200 OK
+    # This could be done in the webapp
+    # This is need for pre-flighted requests (POSTs/PUTs)
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1271#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1246</link>
+        <guid isPermaLink="false">http://localhost/ticket/1246</guid>
+        <title>#1246: Search results on ckan.net are mistakenly all 'open'</title>
+        <pubDate>Thu, 28 Jul 2011 14:29:13 GMT</pubDate>
+        
+        <dc:creator>adrian.pohl@…</dc:creator>
+
+        <description>&lt;p&gt;
+All package search results on ckan.net are labelled as 'open' even when their license is closed or unknown: &lt;a class="ext-link" href="http://ckan.net/package"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1246#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1281</link>
+        <guid isPermaLink="false">http://localhost/ticket/1281</guid>
+        <title>#1281: Locale change flash message in wrong language</title>
+        <pubDate>Mon, 22 Aug 2011 14:00:56 GMT</pubDate>
+        
+        <dc:creator>pudo</dc:creator>
+
+        <description>&lt;p&gt;
+When you change the locale, it displays a flash message "Language has been set to: English" in the original language, not the one we have just changed to.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1281#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1256</link>
+        <guid isPermaLink="false">http://localhost/ticket/1256</guid>
+        <title>#1256: fix modification extension for moderation</title>
+        <pubDate>Tue, 02 Aug 2011 10:13:46 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+Solr is not working for moderation, pending changes are not being indexed.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1256#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1258</link>
+        <guid isPermaLink="false">http://localhost/ticket/1258</guid>
+        <title>#1258: Bring purge revision into ckan repo from vdm</title>
+        <pubDate>Tue, 02 Aug 2011 12:52:19 GMT</pubDate>
+        
+        <dc:creator>kindly</dc:creator>
+
+        <description>&lt;p&gt;
+In order to make purge revision work correctly with the moderated edits we need to modify purge revision in vdm.  This is best modified in ckan so we will override the vdm one in the reposotory.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1258#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/318</link>
+        <guid isPermaLink="false">http://localhost/ticket/318</guid>
+        <title>#318: Insufficient validation of resource URIs</title>
+        <pubDate>Wed, 19 May 2010 20:58:43 GMT</pubDate>
+        
+        <dc:creator>wwaites</dc:creator>
+
+        <description>&lt;p&gt;
+The CKAN instance on data.gov.uk serves invalid URIs out of its API.
+&lt;/p&gt;
+&lt;p&gt;
+For example the following can be found,
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://uk.sitestat.com/homeoffice/rds/s?rds.hosb0509tabsxls&amp;amp;ns_type=pdf&amp;amp;ns_url=[http://www.homeoffice.gov.uk/rds/pdfs09/hosb0509tabs.xls"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://uk.sitestat.com/homeoffice/rds/s?rds.hosb0509tabsxls&amp;amp;ns_type=pdf&amp;amp;ns_url=[http://www.homeoffice.gov.uk/rds/pdfs09/hosb0509tabs.xls&lt;/a&gt;]
+&lt;/p&gt;
+&lt;p&gt;
+In this URI, the : and / characters after the ? in the query part are invalid according to section 3.4 of RFC2396
+&lt;/p&gt;
+&lt;p&gt;
+Also URIs are not stripped of whitespace at the end.
+&lt;/p&gt;
+&lt;p&gt;
+This causes problems when other software with a more correct interpretation of what a valid URI is attempts to consume data from CKAN. In this instance the Talis triplestore complains about such URIs.
+&lt;/p&gt;
+&lt;p&gt;
+"Be liberal in what you accept and conservative in what you send" would seem apt.
+&lt;/p&gt;
+&lt;h2 id="Actions"&gt;Actions&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Validation of urls as part of form entry or data loading
+&lt;ul&gt;&lt;li&gt;Need to consider situation where this should happen out-of-band (i.e. we allow load even with invalid data and then flag bad dates in separate validation process). In general doubtful that we should do this here because url invalidity is such a big deal
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;This code should support analysis of existing data so we can go through existing database and find invalid urls
+&lt;ul&gt;&lt;li&gt;Also useful to have this so we can do out of band validation
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/318#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/816</link>
+        <guid isPermaLink="false">http://localhost/ticket/816</guid>
+        <title>#816: Autocomplete for the resource format field</title>
+        <pubDate>Wed, 17 Nov 2010 12:22:54 GMT</pubDate>
+        
+        <dc:creator>cygri</dc:creator>
+
+        <description>&lt;p&gt;
+The field for entering the format of a resource should have autocomplete, populated from all the values that have already been entered in this field for any resource.
+&lt;/p&gt;
+&lt;p&gt;
+This would help improve data quality and consistency.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/816#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/888</link>
+        <guid isPermaLink="false">http://localhost/ticket/888</guid>
+        <title>#888: Improvements to the dataproxy and the data API</title>
+        <pubDate>Wed, 29 Dec 2010 19:09:43 GMT</pubDate>
+        
+        <dc:creator>rgrp</dc:creator>
+
+        <description>&lt;p&gt;
+First version of dataproxy and data API working (&lt;a class="closed ticket" href="http://localhost/ticket/698" title="task: CKAN Data API v1 (closed: fixed)"&gt;ticket:698&lt;/a&gt;) but have identified a variety of important improvements. (Should split these into sub-tickets ...):
+&lt;/p&gt;
+&lt;p&gt;
+For dataproxy:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Testing for dataproxy
+&lt;ul&gt;&lt;li&gt;Can start by using known good remote urls (moving forward could switch to providing/mocking these locally)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Remove content-lenght for csv requirement: just read the first x rows (up to some configurable maximum)
+&lt;/li&gt;&lt;li&gt;Google docs style row/column selections
+&lt;/li&gt;&lt;li&gt;Use the swiss library - &lt;a class="ext-link" href="https://bitbucket.org/okfn/swiss"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/swiss&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Support google docs spreadsheets (format = service/gdocs/ccc or gdocs/ccc or gdocs/spreadsheet)
+&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Handle redirects for content-length?
+&lt;/li&gt;&lt;li&gt;Ignore resource type if not recognized and fall-back to trying to identify from extension (or mime-type?)
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+For dataapi:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Ensure we pass on resource format as part of redirect i.e. /api/data/{id} -&amp;gt; {dataproxy}?url={resource-url}&amp;amp;type={resource-type}
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/888#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1150</link>
+        <guid isPermaLink="false">http://localhost/ticket/1150</guid>
+        <title>#1150: Non-ASCII chars prevent data preview</title>
+        <pubDate>Sat, 21 May 2011 23:18:34 GMT</pubDate>
+        
+        <dc:creator>timmcnamara</dc:creator>
+
+        <description>&lt;p&gt;
+Characters outside of ASCII range are not supported within data previews.
+&lt;/p&gt;
+&lt;p&gt;
+Steps to reproduce:
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Visit &lt;a class="ext-link" href="http://ckan.net/package/kivele2010"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/kivele2010&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;Click on [preview] for any of the resources
+&lt;/li&gt;&lt;/ol&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1150#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1154</link>
+        <guid isPermaLink="false">http://localhost/ticket/1154</guid>
+        <title>#1154: Make ckan robust against solr failure</title>
+        <pubDate>Tue, 24 May 2011 16:27:52 GMT</pubDate>
+        
+        <dc:creator>nils.toedtmann</dc:creator>
+
+        <description>&lt;p&gt;
+According to pudo, a ckan with activated solr extension throws a 5xx when solr is unreachable. Instead, it should behave more like a ckan without ckanext-solr when this happens.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1154#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1183</link>
+        <guid isPermaLink="false">http://localhost/ticket/1183</guid>
+        <title>#1183: Downloads "Preview" button doesn't preview.</title>
+        <pubDate>Fri, 10 Jun 2011 10:27:49 GMT</pubDate>
+        
+        <dc:creator>nickstenning</dc:creator>
+
+        <description>&lt;p&gt;
+The "Preview" button is a nice idea, but it doesn't seem to actually "preview" anything if the file MIME type would ordinarily cause the browser to download the file. If so, the browser does indeed just download the file.
+&lt;/p&gt;
+&lt;p&gt;
+This is notable in the context of most hosted file services (including Google Storage) which will deliberately serve a MIME type of &lt;tt&gt;application/x-some-junk-here&lt;/tt&gt; in order to force a download.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1183#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1274</link>
+        <guid isPermaLink="false">http://localhost/ticket/1274</guid>
+        <title>#1274: Testing solr search</title>
+        <pubDate>Mon, 15 Aug 2011 13:00:02 GMT</pubDate>
+        
+        <dc:creator>johnglover</dc:creator>
+
+        <description>&lt;p&gt;
+Copy ckan core postgres package search tests to the ckanext-solr extension and update them so that they use the solr search backend.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1274#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1128</link>
+        <guid isPermaLink="false">http://localhost/ticket/1128</guid>
+        <title>#1128: Upload Scotland gov data</title>
+        <pubDate>Fri, 06 May 2011 20:04:53 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Upload to ckan.net:
+&lt;a class="ext-link" href="https://sites.google.com/site/scotlandsdata/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://sites.google.com/site/scotlandsdata/&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1128#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1172</link>
+        <guid isPermaLink="false">http://localhost/ticket/1172</guid>
+        <title>#1172: Remove all try: except: blocks that don't re-raise the original exception</title>
+        <pubDate>Wed, 01 Jun 2011 11:00:49 GMT</pubDate>
+        
+        <dc:creator>thejimmyg</dc:creator>
+
+        <description>&lt;p&gt;
+The current codebase has one or two try: except; blocks that don't catch specific exceptions. Under no circumstances should any broad try: except: blocks be allowed unless the exceptions they catch are immediately re-raised. Uncaught exceptions are wasting us quite a lot of time when trying to track down problems.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1172#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1218</link>
+        <guid isPermaLink="false">http://localhost/ticket/1218</guid>
+        <title>#1218: Colour the History tab icon</title>
+        <pubDate>Mon, 11 Jul 2011 09:16:08 GMT</pubDate>
+        
+        <dc:creator>minspamboks@…</dc:creator>
+
+        <description>&lt;p&gt;
+Change the color of the "History" tab icon to yellowish, like the rest of the icons in the other tabs ("View" and "Edit", "Authorization").
+&lt;/p&gt;
+&lt;h2 id="Reasoning"&gt;Reasoning&lt;/h2&gt;
+&lt;p&gt;
+When you view a data package, for instance
+&lt;a class="ext-link" href="http://ckan.net/package/thesaurus-w"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/thesaurus-w&lt;/a&gt;, you will see "View", "Edit",
+"History" tabs on the top. "History" tab has a black-and-white icon
+which makes it look like an inactive/disabled tab (since the text is
+also grayed out when the tab is not selected). This is not a major
+issue, but it is a little bit confusing for the users. This icon
+exists in v1.3.2 and also in v1.4.1a (that runs on ckan.net).
+&lt;/p&gt;
+&lt;p&gt;
+The simple solution would be to change the color of the "History" tab icon and give it the same yellowish color like the rest of the icons in the other tabs (e.g. "View" and "Edit").
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1218#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1221</link>
+        <guid isPermaLink="false">http://localhost/ticket/1221</guid>
+        <title>#1221: Password reset tidy up</title>
+        <pubDate>Tue, 12 Jul 2011 13:01:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;No tests.
+&lt;/li&gt;&lt;li&gt;500 error given when user is not found.
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1221#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1222</link>
+        <guid isPermaLink="false">http://localhost/ticket/1222</guid>
+        <title>#1222: Mailer has no tests</title>
+        <pubDate>Tue, 12 Jul 2011 13:58:56 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1222#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1225</link>
+        <guid isPermaLink="false">http://localhost/ticket/1225</guid>
+        <title>#1225: Tool for mass tag changes</title>
+        <pubDate>Thu, 14 Jul 2011 11:16:01 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Using ckanapi
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1225#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1228</link>
+        <guid isPermaLink="false">http://localhost/ticket/1228</guid>
+        <title>#1228: Display OpenID login errors</title>
+        <pubDate>Tue, 19 Jul 2011 14:42:42 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When there are errors when logging into OpenID, these don't get displayed. You just get the login screen again.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1228#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1234</link>
+        <guid isPermaLink="false">http://localhost/ticket/1234</guid>
+        <title>#1234: Setting locale error conditions handled badly</title>
+        <pubDate>Wed, 20 Jul 2011 16:37:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Needs tests for error conditions for bad locale and redirect parameters.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1234#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1254</link>
+        <guid isPermaLink="false">http://localhost/ticket/1254</guid>
+        <title>#1254: Feature sheet</title>
+        <pubDate>Mon, 01 Aug 2011 15:18:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Compose a feature list for CKAN. Use the existing Feature Matrix. Basic explanation of terms. For use by customers.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1254#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1265</link>
+        <guid isPermaLink="false">http://localhost/ticket/1265</guid>
+        <title>#1265: user/edit error conditions cause exceptions</title>
+        <pubDate>Fri, 05 Aug 2011 17:36:28 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+We get exceptions on these occasions:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;user/edit if not logged in
+&lt;/li&gt;&lt;li&gt;user/edit/bob if bob is not a known user
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+These are a problem only on 1.4.3b.
+&lt;/p&gt;
+&lt;p&gt;
+Introduced in &lt;a class="closed ticket" href="http://localhost/ticket/1229" title="enhancement: Refactor all database code out of the controllers and into the logic layer (closed: fixed)"&gt;#1229&lt;/a&gt; - merge of branch feature-1229-db-out-of-controllers
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1265#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1266</link>
+        <guid isPermaLink="false">http://localhost/ticket/1266</guid>
+        <title>#1266: Timestamps without microseconds causing exception</title>
+        <pubDate>Mon, 08 Aug 2011 09:13:51 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+I'm not sure why some timestamps are missing microseconds in the ckan.net data, but plenty seem to. This causes this exception when viewing the package rss feed:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://ckan.net/package/history/sfk_publishing?format=atom&amp;amp;days=7
+In Module ckan.lib.helpers:227 in date_str_to_datetime
+WebApp Error: &amp;lt;type 'exceptions.ValueError'&amp;gt;: time data '2008-04-13T20:40:20' does not match format '%Y-%m-%dT%H:%M:%S.%f'
+&lt;/pre&gt;&lt;p&gt;
+Only seen with ckan 1.4.3b
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1266#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1270</link>
+        <guid isPermaLink="false">http://localhost/ticket/1270</guid>
+        <title>#1270: Default site www.ckan.net is a redirect and loses POSTs</title>
+        <pubDate>Tue, 09 Aug 2011 17:44:07 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The default site was www.ckan.net, which had an Apache 301 redirect to ckan.net, but the problem was urllib was not rePOSTing stuff. This affected search parameters:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;In [1]: import ckanclient
+In [2]: c = ckanclient.CkanClient()
+In [3]: c2 = ckanclient.CkanClient('http://ckan.net/api')
+In [4]: c.package_search('', search_options={'groups':'openspending'})
+Out[4]:
+{u'count': 2102,
+ u'results': &amp;lt;generator object _result_generator at 0x10168b1e0&amp;gt;}
+In [5]: c2.package_search('', search_options={'groups':'openspending'})
+Out[5]: {u'count': 29, u'results': &amp;lt;generator object _result_generator at 0x10168b410&amp;gt;}
+&lt;/pre&gt;&lt;p&gt;
+Thanks to borior for finding this and raising it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1270#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1318</link>
+        <guid isPermaLink="false">http://localhost/ticket/1318</guid>
+        <title>#1318: 'Register user' doesn't log you in</title>
+        <pubDate>Wed, 07 Sep 2011 17:16:23 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+When you register a user, it doesn't seem to be logged in properly straight away. Top-right it invites you to "log in" and "register". Also the "create package" menu option doesn't appear. Going to /user/me sends you to login page. If you then login, then all these things are corrected.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1318#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1323</link>
+        <guid isPermaLink="false">http://localhost/ticket/1323</guid>
+        <title>#1323: GET /authorizationgroup causes Exception when logged in</title>
+        <pubDate>Thu, 08 Sep 2011 09:54:45 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+on thedatahub.org
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1323#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1329</link>
+        <guid isPermaLink="false">http://localhost/ticket/1329</guid>
+        <title>#1329: i18n poor in some templates - missing i18n tags</title>
+        <pubDate>Mon, 12 Sep 2011 10:44:48 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Just a tip for developers regarding translations:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;When writing templates, mark &amp;lt;p&amp;gt;, &amp;lt;div&amp;gt;, etc elements with the
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+i18:msg attribute, otherwise the messages don't get extracted
+properly.
+&lt;/p&gt;
+&lt;p&gt;
+Good: &lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/templates/home/about.html#cl-40"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/templates/home/about.html#cl-40&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;p i18n:msg=""&amp;gt;More about CKAN, and the background to its creation can
+   be found in &amp;lt;a
+     href="http://m.okfn.org/files/talks/opentech_20080705/"&amp;gt;these
+     slides&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/pre&gt;&lt;p&gt;
+gives this:
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/i18n/ca/LC_MESSAGES/ckan.po#cl-1238"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/i18n/ca/LC_MESSAGES/ckan.po#cl-1238&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Bad: &lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/templates/package/new_package_form.html#cl-211"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/templates/package/new_package_form.html#cl-211&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;p class="hints"&amp;gt;
+&amp;lt;strong&amp;gt;Important:&amp;lt;/strong&amp;gt; By submitting content, you agree to
+release your contributions
+ under the &amp;lt;a href="http://opendatacommons.org/licenses/odbl/1.0/"&amp;gt;Open
+Database License&amp;lt;/a&amp;gt;. Please &amp;lt;strong&amp;gt;refrain&amp;lt;/strong&amp;gt; from editing
+this page if you are &amp;lt;strong&amp;gt;not&amp;lt;/strong&amp;gt; happy to do this.
+&amp;lt;/p&amp;gt;
+&lt;/pre&gt;&lt;p&gt;
+gives this:
+&lt;a class="ext-link" href="https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/i18n/ca/LC_MESSAGES/ckan.po#cl-1384"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://bitbucket.org/okfn/ckan/src/1996b0439e81/ckan/i18n/ca/LC_MESSAGES/ckan.po#cl-1384&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The message is split in different parts that not necessarily match the
+grammar or syntax of the translated language.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1329#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1340</link>
+        <guid isPermaLink="false">http://localhost/ticket/1340</guid>
+        <title>#1340: Editing non-existent group causes Exception</title>
+        <pubDate>Wed, 14 Sep 2011 09:09:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://ckan.net/group/edit/history"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/group/edit/history&lt;/a&gt;
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;Module ckan.controllers.group:135 in edit
+&amp;lt;&amp;lt;          try:
+                   old_data = get_action('group_show')(context, data_dict)
+                   c.grouptitle = old_data.get('title')
+                   c.groupname = old_data.get('name')
+&amp;gt;&amp;gt;  old_data = get_action('group_show')(context, data_dict)
+Module ckan.logic.action.get:347 in group_show
+&amp;lt;&amp;lt;      if group is None:
+               raise NotFound
+           check_access('group_show',context, data_dict)
+&amp;gt;&amp;gt;  raise NotFound
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1340#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1346</link>
+        <guid isPermaLink="false">http://localhost/ticket/1346</guid>
+        <title>#1346: 'get_authorization_group_dict not found' exception</title>
+        <pubDate>Thu, 15 Sep 2011 10:19:34 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+This stems from a feature to allow you to prefill fields in the authorizationgroup creation form.
+&lt;/p&gt;
+&lt;p&gt;
+e.g. &lt;a class="ext-link" href="http://ckan.net/authorizationgroup/new?name=science"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/authorizationgroup/new?name=science&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+It's not tested, not supported in the new logic layer and therefore broken. I don't think anyone uses it - can remove it.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1346#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1347</link>
+        <guid isPermaLink="false">http://localhost/ticket/1347</guid>
+        <title>#1347: Exception caused by New Group form POST with bad formed parameter</title>
+        <pubDate>Thu, 15 Sep 2011 13:47:46 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Exception caused by bots POSTing 'new group' form, but with bad (old-style) parameters.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;&amp;lt;type 'exceptions.ValueError'&amp;gt;: invalid literal for int() with base 10: 'cache'
+...
+Module ckan.controllers.group:102 in new
+&amp;lt;&amp;lt;          if context['save'] and not data:
+                   return self._save_new(context)
+               data = data or {}
+&amp;gt;&amp;gt;  return self._save_new(context)
+Module ckan.controllers.group:152 in _save_new
+&amp;lt;&amp;lt;          try:
+                   data_dict = clean_dict(unflatten(
+                       tuplize_dict(parse_params(request.params))))
+                   context['message'] = data_dict.get('log_message', '')
+                   group = create.group_create(data_dict, context)
+&amp;gt;&amp;gt;  tuplize_dict(parse_params(request.params))))
+Module ckan.logic:57 in tuplize_dict
+&amp;lt;&amp;lt;          for num, key in enumerate(key_list):
+                   if num % 2 == 1:
+                       key_list[num] = int(key)
+               tuplized_dict[tuple(key_list)] = value
+           return tuplized_dict
+&amp;gt;&amp;gt;  key_list[num] = int(key)
+ValueError: invalid literal for int() with base 10: 'cache'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1347#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1421</link>
+        <guid isPermaLink="false">http://localhost/ticket/1421</guid>
+        <title>#1421: Tag cloud recipe broken</title>
+        <pubDate>Wed, 26 Oct 2011 14:16:15 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+home page doesn't have c.facets setup.
+&lt;/p&gt;
+&lt;p&gt;
+Only affects 1.5 branch - ok 1.4.3.1. Was broken in cset:05f60f2d26e8.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1421#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1427</link>
+        <guid isPermaLink="false">http://localhost/ticket/1427</guid>
+        <title>#1427: Tags validation needs to limit length to 100 characters</title>
+        <pubDate>Thu, 27 Oct 2011 09:44:58 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+The tag name is limited in length in the db table to 100 characters. If you try and create a longer one you get an exception. This should cause a &lt;a class="missing wiki"&gt;ValidationError?&lt;/a&gt; and tell the user this sensibly.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1427#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1192</link>
+        <guid isPermaLink="false">http://localhost/ticket/1192</guid>
+        <title>#1192: Convert CKAN Sphinx docs into admin/reference manual</title>
+        <pubDate>Fri, 17 Jun 2011 15:29:53 GMT</pubDate>
+        
+        <dc:creator>annapowellsmith</dc:creator>
+
+        <description>&lt;p&gt;
+As part of the general documentation overhaul (&lt;a class="closed ticket" href="http://localhost/ticket/1142" title="enhancement: [super] Major Overhaul and Extension of CKAN Documentation (closed: fixed)"&gt;ticket:1142&lt;/a&gt;) we (APS and RGRP) want to convert the current Sphinx docs into:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;An Admin Manual which is task-based and aims to cover everything a developer would need to know to set up and customize a CKAN install.
+&lt;/li&gt;&lt;li&gt;A Reference Manual which is the primary source of reference for CKAN software - this includes API docs.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;
+The current chapters of the Sphinx docs should be moved as follows:
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;index.rst - copy some stuff from README.txt, keep short
+&lt;/li&gt;&lt;li&gt;README.txt - split out installation - stop symlinking in, keep separate, write new intro in index.rst
+&lt;/li&gt;&lt;li&gt;[NEW] install.rst - new file on installation
+&lt;/li&gt;&lt;li&gt;[NEW] theming.rst - move over from wiki
+&lt;/li&gt;&lt;li&gt;api - will stay (gradually move tutorials/getting started to wiki.ckan.net user guide)
+&lt;/li&gt;&lt;li&gt;i18n.rst: internationlization. say we have x langauges. just set lang config option. if your lang not there yet see wiki page for how to prepare a translation file
+&lt;/li&gt;&lt;li&gt;design.rst - REMOVE (can copy some over if you can be bothered to &lt;a class="ext-link" href="http://wiki.ckan.net/Vision"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Vision&lt;/a&gt; (all philosophical stuff should go!))
+&lt;/li&gt;&lt;li&gt;loaders.rst: move to wiki.ckan.net/Using_Loaders
+&lt;/li&gt;&lt;li&gt;feeds.rst: move to User Manual (CKAN_Feeds or just Feeds)
+&lt;/li&gt;&lt;li&gt;importer.rst: remove (don't even copy)
+&lt;/li&gt;&lt;li&gt;forms.rst: remove (ping david read and ckan-dev asking for replacement documentation -- do we need this in core ckan -- do we want pure js ...?). Suggest we start with (stub out) &lt;a class="ext-link" href="http://wiki.ckan.net/Customizing_Forms"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Customizing_Forms&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;forms-integration.rst: remove
+&lt;/li&gt;&lt;li&gt;model.rst: leave but move to reference (only for core devs)
+&lt;/li&gt;&lt;li&gt;load-testing.rst -&amp;gt; move to &lt;a class="ext-link" href="http://wiki.ckan.net/Load_Testing"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://wiki.ckan.net/Load_Testing&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;distributed.rst -&amp;gt; remove
+&lt;/li&gt;&lt;li&gt;admin.html should consolidate with authorization.html (some of authorization.html is probably in ref section but howto in main manual) &amp;lt;-- high priority
+&lt;/li&gt;&lt;li&gt;deb.html -&amp;gt; go into reference (query james gardner on list about moving this to wiki?)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1192#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1253</link>
+        <guid isPermaLink="false">http://localhost/ticket/1253</guid>
+        <title>#1253: Authz refactor</title>
+        <pubDate>Mon, 01 Aug 2011 11:51:31 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+We agreed on a system that allows overriding the authz checks at a logic function level (e.g. package_create, user_show) and supports the old (current) authz system.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1253#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1333</link>
+        <guid isPermaLink="false">http://localhost/ticket/1333</guid>
+        <title>#1333: Move form converters to ckan core</title>
+        <pubDate>Tue, 13 Sep 2011 10:21:08 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Functions like convert_to_extras and convert_from_extras will be widely used from extensions and should be on ckan core.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1333#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1334</link>
+        <guid isPermaLink="false">http://localhost/ticket/1334</guid>
+        <title>#1334: "AttributeError: 'NoneType' object has no attribute 'name'" exception when logging in</title>
+        <pubDate>Tue, 13 Sep 2011 10:25:08 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+On same cases this exception is thrown when logging in:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;File '/home/adria/dev/envs/iati/src/ckan/ckan/controllers/user.py', line 252 in logged_in
+  user_dict = get_action('user_show')(context,data_dict)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/logic/action/get.py', line 414 in user_show
+  revision_dict = revision_show(context,{'id':revision.id})
+File '/home/adria/dev/envs/iati/src/ckan/ckan/logic/action/get.py', line 332 in revision_show
+  ref_package_by=ref_package_by)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/model/__init__.py', line 317 in revision_as_dict
+  for pkg in revision.packages]
+AttributeError: 'NoneType' object has no attribute 'name'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1334#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1337</link>
+        <guid isPermaLink="false">http://localhost/ticket/1337</guid>
+        <title>#1337: Group extras are JSON endoded in the REST API responses</title>
+        <pubDate>Tue, 13 Sep 2011 14:38:47 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Instead of this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;extras: {
+type: ""Primary source""
+license_id: ""localauth-withrights""
+publisher_frequency: ""2Pre\u00f1o \u20ac $ \u00e0dri\u00e0""
+}
+&lt;/pre&gt;&lt;p&gt;
+we should return this:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;extras: {
+type: "Primary source",
+license_id: "localauth-withrights",
+publisher_frequency: "2Preño € $ àdrià",
+}
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1337#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1338</link>
+        <guid isPermaLink="false">http://localhost/ticket/1338</guid>
+        <title>#1338: Exception when trying to use a custom form schema from an extension</title>
+        <pubDate>Tue, 13 Sep 2011 14:46:57 GMT</pubDate>
+        
+        <dc:creator>amercader</dc:creator>
+
+        <description>&lt;p&gt;
+Both with the package and group controllers, when overriding the default _db_to_form_schema method (which does nothing) from an extension, you get an exception because the context is not passed to the validators.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;File '/home/adria/dev/envs/iati/src/ckan/ckan/controllers/group.py', line 140 in edit
+  old_data, errors = validate(old_data, schema)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/lib/navl/dictization_functions.py', line 215 in validate
+  converted_data, errors = _validate(flattened, schema, context)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/lib/navl/dictization_functions.py', line 270 in _validate
+  convert(converter, key, converted_data, errors, context)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/lib/navl/dictization_functions.py', line 178 in convert
+  converter(key, converted_data, errors, context)
+File '/home/adria/dev/envs/iati/src/ckan/ckan/logic/validators.py', line 108 in group_name_validator
+  model = context['model']
+KeyError: 'model'
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1338#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1238</link>
+        <guid isPermaLink="false">http://localhost/ticket/1238</guid>
+        <title>#1238: Viewing a package @date misses non-PackageRevisions</title>
+        <pubDate>Fri, 22 Jul 2011 16:15:03 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+There's a problem with getting old versions of packages using @date. The query looks for the &lt;a class="missing wiki"&gt;PackageRevision?&lt;/a&gt; related to the date, but ignores &lt;a class="missing wiki"&gt;TagRevisions?&lt;/a&gt; etc.
+&lt;/p&gt;
+&lt;p&gt;
+So for example if you compare this table:
+&lt;a class="ext-link" href="http://ckan.net/package/history/osm"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/history/osm&lt;/a&gt;
+with this view:
+&lt;a class="ext-link" href="http://ckan.net/package/osm%402010-11-30%2000%3A21%3A49.627830"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://ckan.net/package/osm%402010-11-30%2000%3A21%3A49.627830&lt;/a&gt;
+you actually see the 2010-01-13 11:13 revision - the wrong revision.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1238#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1312</link>
+        <guid isPermaLink="false">http://localhost/ticket/1312</guid>
+        <title>#1312: Particular characters in JSON cause exception creating package on API</title>
+        <pubDate>Tue, 06 Sep 2011 14:21:03 GMT</pubDate>
+        
+        <dc:creator>florian.marienfeld@…</dc:creator>
+
+        <description>&lt;p&gt;
+From Florian:
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;I am having trouble with the characters "=&amp;amp;;".
+if they occur e.g. in the title of a package, I get a 400-Bad-Request
+when I try to register a package by POSTing to ckan/rest/api/package
+However, when I PUT the same package as an edit to
+ckan/rest/api/package/existing_package, it works and the title shows
+correctly on the front end and API.
+&lt;/pre&gt;&lt;h2 id="Reproduced"&gt;Reproduced&lt;/h2&gt;
+&lt;pre class="wiki"&gt;(pyenv-ckan)dread@dread-laptop:~/hgroot/ckan$ curl -i http://localhost:5000/api/rest/package -d '{"name": "test3", "title": "Test &amp;amp;"}' -H "Authorization:tester"
+HTTP/1.0 400 Bad Request
+Server: PasteWSGIServer/0.5 Python/2.6.5
+Date: Tue, 06 Sep 2011 14:09:31 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: application/json;charset=utf-8
+Content-Length: 87
+"Bad request - JSON Error: Unterminated string starting at: line 1 column 27 (char 27)"
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1312#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1426</link>
+        <guid isPermaLink="false">http://localhost/ticket/1426</guid>
+        <title>#1426: Validation errors cause 409 not 400 response</title>
+        <pubDate>Thu, 27 Oct 2011 09:43:39 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+Validation error is incorrect arguments, so should be a "400 Bad Request" response. "409 Conflict" is for when there is a conflict creating two resources with the same identifier. Yet we get 409 for all validation errors.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1426#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/1418</link>
+        <guid isPermaLink="false">http://localhost/ticket/1418</guid>
+        <title>#1418: If default language is not 'en' then you can't switch language to 'en'</title>
+        <pubDate>Tue, 25 Oct 2011 10:39:06 GMT</pubDate>
+        
+        <dc:creator>dread</dc:creator>
+
+        <description>&lt;p&gt;
+e.g. cz.ckan.net has lang=cz but when you click on Home page link "English" it flashes message "Language has been set to: English" but the rest of the page is still Czech.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/1418#changelog</comments>
+    </item>
+ </channel>
+</rss>

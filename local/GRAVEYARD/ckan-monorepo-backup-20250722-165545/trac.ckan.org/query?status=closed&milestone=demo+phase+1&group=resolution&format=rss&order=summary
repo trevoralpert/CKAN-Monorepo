@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>CKAN: Ticket Query</title>
+    <link>http://localhost/query?status=closed&amp;milestone=demo+phase+1&amp;group=resolution&amp;order=summary</link>
+    <description>The open source data portal software</description>
+    <language>en-US</language>
+    <image>
+      <title>CKAN</title>
+      <url>http://assets.okfn.org/p/ckan/img/ckan_logo_shortname.png</url>
+      <link>http://localhost/query?status=closed&amp;milestone=demo+phase+1&amp;group=resolution&amp;order=summary</link>
+    </image>
+    <generator>Trac 0.12.3</generator>
+    <item>
+        <link>http://localhost/ticket/2563</link>
+        <guid isPermaLink="false">http://localhost/ticket/2563</guid>
+        <title>#2563: Add font based icons to the demo theme</title>
+        <pubDate>Mon, 18 Jun 2012 16:10:31 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Allowing them to be displayed in many sizes, colours and resolutions.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://www.zurb.com/playground/foundation-icons"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://www.zurb.com/playground/foundation-icons&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2563#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2528</link>
+        <guid isPermaLink="false">http://localhost/ticket/2528</guid>
+        <title>#2528: Create demo edit dataset page</title>
+        <pubDate>Thu, 14 Jun 2012 15:16:22 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/edit/5b451cab-8671-4513-91c4-257784c1f484"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/edit/5b451cab-8671-4513-91c4-257784c1f484&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2528#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2440</link>
+        <guid isPermaLink="false">http://localhost/ticket/2440</guid>
+        <title>#2440: Create demo homepage</title>
+        <pubDate>Mon, 28 May 2012 12:00:05 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+Discussion:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61696765/comments"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;https://okfn.basecamphq.com/projects/9558659-demo-ckan-front-end/posts/61696765/comments&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2440#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2597</link>
+        <guid isPermaLink="false">http://localhost/ticket/2597</guid>
+        <title>#2597: Demo add dataset throws error if tags are empty</title>
+        <pubDate>Mon, 25 Jun 2012 16:39:59 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ol&gt;&lt;li&gt;Go to new dataset
+&lt;/li&gt;&lt;li&gt;Add a slug
+&lt;/li&gt;&lt;li&gt;Click next
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+Get error.
+&lt;/p&gt;
+&lt;pre class="wiki"&gt;URL: http://localhost:5000/dataset/new
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/weberror/evalexception.py', line 431 in respond
+  app_iter = self.application(environ, detect_start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/dec.py', line 147 in __call__
+  resp = self.call_func(req, *args, **self.kwargs)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/dec.py', line 208 in call_func
+  return self.func(req, *args, **kwargs)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/fanstatic/publisher.py', line 234 in __call__
+  return request.get_response(self.app)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/request.py', line 1053 in get_response
+  application, catch_exc_info=False)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/request.py', line 1022 in call_application
+  app_iter = application(self.environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/dec.py', line 147 in __call__
+  resp = self.call_func(req, *args, **self.kwargs)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/dec.py', line 208 in call_func
+  return self.func(req, *args, **kwargs)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/fanstatic/injector.py', line 52 in __call__
+  response = request.get_response(self.app)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/request.py', line 1053 in get_response
+  application, catch_exc_info=False)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/webob/request.py', line 1022 in call_application
+  app_iter = application(self.environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/beaker/middleware.py', line 73 in __call__
+  return self.app(environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/beaker/middleware.py', line 152 in __call__
+  return self.wrap_app(environ, session_start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/routes/middleware.py', line 130 in __call__
+  response = self.app(environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/wsgiapp.py', line 125 in __call__
+  response = self.dispatch(controller, environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/wsgiapp.py', line 324 in dispatch
+  return controller(environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/lib/base.py', line 258 in __call__
+  res = WSGIController.__call__(self, environ, start_response)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/controllers/core.py', line 221 in __call__
+  response = self._dispatch_call()
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/controllers/core.py', line 172 in _dispatch_call
+  response = self._inspect_call(func)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/controllers/core.py', line 107 in _inspect_call
+  result = self._perform_call(func, args)
+File '/Users/Aron/.virtualenvs/ckan/lib/python2.7/site-packages/pylons/controllers/core.py', line 60 in _perform_call
+  return func(**args)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/package.py', line 422 in new
+  return self._save_new(context)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/package.py', line 703 in _save_new
+  return self.new(data_dict, errors, error_summary)
+File '/Users/Aron/.virtualenvs/ckan/src/ckan/ckan/controllers/package.py', line 430 in new
+  data['tag_string'] = ', '.join(h.dict_list_reduce(c.pkg_dict['tags'], 'name'))
+TypeError: string indices must be integers, not str
+&lt;/pre&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2597#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2557</link>
+        <guid isPermaLink="false">http://localhost/ticket/2557</guid>
+        <title>#2557: Demo issues on the search dataset page</title>
+        <pubDate>Mon, 18 Jun 2012 16:00:22 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Crosses have disappeared
+&lt;/li&gt;&lt;li&gt;Formats should stretch across the page
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2557#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2558</link>
+        <guid isPermaLink="false">http://localhost/ticket/2558</guid>
+        <title>#2558: Demo site add dataset has missing functionality</title>
+        <pubDate>Mon, 18 Jun 2012 16:01:20 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Needs tags
+&lt;/li&gt;&lt;li&gt;Needs groups
+&lt;/li&gt;&lt;li&gt;Needs slug
+&lt;/li&gt;&lt;li&gt;Licenses links to something
+&lt;/li&gt;&lt;li&gt;Needs tooltips (Ira to write some tooltips)
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2558#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2561</link>
+        <guid isPermaLink="false">http://localhost/ticket/2561</guid>
+        <title>#2561: Demo theme edit dataset is missing functionality</title>
+        <pubDate>Mon, 18 Jun 2012 16:04:17 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;ul&gt;&lt;li&gt;Add tags
+&lt;/li&gt;&lt;li&gt;Add groups
+&lt;/li&gt;&lt;li&gt;&lt;a class="missing wiki"&gt;JavaScript?&lt;/a&gt; for custom fields
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2561#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2525</link>
+        <guid isPermaLink="false">http://localhost/ticket/2525</guid>
+        <title>#2525: Demo theme should auto-generate slugs on forms</title>
+        <pubDate>Thu, 14 Jun 2012 13:19:14 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2525#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2501</link>
+        <guid isPermaLink="false">http://localhost/ticket/2501</guid>
+        <title>#2501: Implement three step dataset creation in demo site</title>
+        <pubDate>Thu, 07 Jun 2012 16:00:29 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+New form should allow three steps.
+&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Add basic fields to create a dataset
+&lt;/li&gt;&lt;li&gt;Add a data resource to the dataset (this can be repeated multiple times using "Save and add another"
+&lt;/li&gt;&lt;li&gt;Add final metadata to the dataset.
+&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;
+It should be possible to jump backward through the steps by clicking the arrows at the top.
+Errors in fields should be validated for each step when the next button is clicked.
+&lt;/p&gt;
+&lt;p&gt;
+Implementation:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://s031.okserver.org:2375/dataset/new"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/dataset/new&lt;/a&gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2501#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2523</link>
+        <guid isPermaLink="false">http://localhost/ticket/2523</guid>
+        <title>#2523: New package metadata form needs creating</title>
+        <pubDate>Wed, 13 Jun 2012 16:32:56 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/dataset/new_metadata/dataset"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/dataset/new_metadata/dataset&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Controller : package
+Action : new_metadata
+&lt;/p&gt;
+&lt;p&gt;
+template package/snippets/package_metadata_form.html
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2523#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2565</link>
+        <guid isPermaLink="false">http://localhost/ticket/2565</guid>
+        <title>#2565: Social links to open in new tab/JS lightbox</title>
+        <pubDate>Mon, 18 Jun 2012 17:08:42 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+Share this (twitter/fb) links open in new tab (no JS) or nice lightbox of some description in demo
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2565#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2611</link>
+        <guid isPermaLink="false">http://localhost/ticket/2611</guid>
+        <title>#2611: Text / link changes</title>
+        <pubDate>Wed, 27 Jun 2012 15:25:40 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+In the footer:
+Change 'Powered by &lt;a class="missing wiki"&gt;CityData?&lt;/a&gt;' to Powered by &lt;a class="missing wiki"&gt;DataSuite?&lt;/a&gt; (with link to ckan.org/datasuite)
+&lt;/p&gt;
+&lt;p&gt;
+Links in left hand side of footer should change to a link to ckan.org, link to OKFN, link to ckan.org/datasuite/about and link to Pricing Page (on ckan.org .. will be /datasuite/solutions)
+&lt;/p&gt;
+&lt;p&gt;
+In create dataset form, prefilled tag examples should include one example with a space, e.g. "mental health"
+&lt;/p&gt;
+&lt;p&gt;
+Change 'Groups' to 'Publishers' everywhere
+&lt;/p&gt;
+&lt;p&gt;
+Homepage copy/images (Ira to supply?)
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2611#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2556</link>
+        <guid isPermaLink="false">http://localhost/ticket/2556</guid>
+        <title>#2556: Update module styles on the demo theme</title>
+        <pubDate>Mon, 18 Jun 2012 15:57:08 GMT</pubDate>
+        
+        <dc:creator>aron.carroll</dc:creator>
+
+        <description>&lt;p&gt;
+They've become inconsistent as the design has changed.
+&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Remove white stripe
+&lt;/li&gt;&lt;li&gt;Make text sizes consistent
+&lt;/li&gt;&lt;li&gt;Make white space around text boxes consistent
+&lt;/li&gt;&lt;/ul&gt;</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2556#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2564</link>
+        <guid isPermaLink="false">http://localhost/ticket/2564</guid>
+        <title>#2564: Updates to additional info fields on datasets</title>
+        <pubDate>Mon, 18 Jun 2012 16:55:34 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+E.g. &lt;a class="ext-link" href="http://s031.okserver.org:2375/en/dataset/adur_district_spending/resource/04127ad5-77e5-4a08-9f40-12d3c383e460"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://s031.okserver.org:2375/en/dataset/adur_district_spending/resource/04127ad5-77e5-4a08-9f40-12d3c383e460&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+When there are no maintainer/contact details or extra fields we should hide the additional info box completely. Otherwise hide the last updated and licence fields which are already displayed in sidebar.
+&lt;/p&gt;
+&lt;p&gt;
+Update sidebar to provide context - so 'CSV' -&amp;gt; 'CSV format' + 'unknown' -&amp;gt; 'Last updated: unknown'
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2564#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2566</link>
+        <guid isPermaLink="false">http://localhost/ticket/2566</guid>
+        <title>#2566: add back buttons to create dataset process</title>
+        <pubDate>Mon, 18 Jun 2012 17:09:26 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description></description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2566#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2587</link>
+        <guid isPermaLink="false">http://localhost/ticket/2587</guid>
+        <title>#2587: author/maintainer not shown if email missing</title>
+        <pubDate>Fri, 22 Jun 2012 12:50:50 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+is this the expected behaviour seems crap to me, should we just see the author but just no link
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2587#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2580</link>
+        <guid isPermaLink="false">http://localhost/ticket/2580</guid>
+        <title>#2580: create resource validation</title>
+        <pubDate>Thu, 21 Jun 2012 13:26:48 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+david I've got the add resource working but it is happy to add empty resources which implies that it isn't doing validation correctly.
+&lt;/p&gt;
+&lt;p&gt;
+I'm not sure what the validation rules are so hard to test this - I'm coming through as an api call
+&lt;/p&gt;
+&lt;p&gt;
+let me know if i can help
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2580#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2586</link>
+        <guid isPermaLink="false">http://localhost/ticket/2586</guid>
+        <title>#2586: edit dataset - tags broken</title>
+        <pubDate>Fri, 22 Jun 2012 10:40:30 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+tags is list not string
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2586#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2584</link>
+        <guid isPermaLink="false">http://localhost/ticket/2584</guid>
+        <title>#2584: edit profile needs new theme</title>
+        <pubDate>Fri, 22 Jun 2012 10:12:05 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/user/edit/"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/user/edit/&lt;/a&gt;&amp;lt;my user name&amp;gt;
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2584#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2571</link>
+        <guid isPermaLink="false">http://localhost/ticket/2571</guid>
+        <title>#2571: implement logic.action.create.resource_create()</title>
+        <pubDate>Tue, 19 Jun 2012 10:37:39 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+This function is incomplete
+&lt;/p&gt;
+&lt;p&gt;
+If you want I can do this but I need guidance over how to do this properly. ie would I go through lib.dictization.model_save.package_resource_list_save() which looks wrong to me as I'd need the package.  resource_dict_save() seems better but to be honest the total lack of docstrings etc makes me feel ill.
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2571#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2574</link>
+        <guid isPermaLink="false">http://localhost/ticket/2574</guid>
+        <title>#2574: look at package states</title>
+        <pubDate>Tue, 19 Jun 2012 14:22:51 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+we want to be able to add new datasets but not have them indexed or seem by people
+&lt;/p&gt;
+&lt;p&gt;
+is the vdm.state the place to do this
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2574#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2606</link>
+        <guid isPermaLink="false">http://localhost/ticket/2606</guid>
+        <title>#2606: make fanstatic use full path</title>
+        <pubDate>Wed, 27 Jun 2012 11:19:45 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+ckan/main not main
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2606#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2567</link>
+        <guid isPermaLink="false">http://localhost/ticket/2567</guid>
+        <title>#2567: remove resource type field from add data step</title>
+        <pubDate>Mon, 18 Jun 2012 17:10:47 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+No real need/use for this for demo/ODS yet
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2567#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2576</link>
+        <guid isPermaLink="false">http://localhost/ticket/2576</guid>
+        <title>#2576: resource side box in dataset resource view broken</title>
+        <pubDate>Wed, 20 Jun 2012 13:44:17 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+assuming you have datahub data
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a class="ext-link" href="http://localhost:5000/en/dataset/2008_facility_ghg_emissions_by_province_territory/resource/28650645-8878-4826-9405-f20b9dfa4c12"&gt;&lt;span class="icon"&gt;​&lt;/span&gt;http://localhost:5000/en/dataset/2008_facility_ghg_emissions_by_province_territory/resource/28650645-8878-4826-9405-f20b9dfa4c12&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+also the breadcrumb becomes overly long too
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2576#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2588</link>
+        <guid isPermaLink="false">http://localhost/ticket/2588</guid>
+        <title>#2588: search index for new package</title>
+        <pubDate>Fri, 22 Jun 2012 13:52:25 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+when package is added it does not seem to get indexed
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2588#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2532</link>
+        <guid isPermaLink="false">http://localhost/ticket/2532</guid>
+        <title>#2532: show activity steam for user no js</title>
+        <pubDate>Fri, 15 Jun 2012 09:55:58 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+We should allow the user activity stream to be accessible with no js by passing a param or something.  Need to agree how we hide/show basically agree what classes we use.
+&lt;/p&gt;
+&lt;p&gt;
+This should be a generalised solution that we can use in other places as needed.
+&lt;/p&gt;
+&lt;p&gt;
+I think this just needs discussion
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2532#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2598</link>
+        <guid isPermaLink="false">http://localhost/ticket/2598</guid>
+        <title>#2598: stages css broken in FF</title>
+        <pubDate>Tue, 26 Jun 2012 10:55:02 GMT</pubDate>
+        
+        <dc:creator>toby</dc:creator>
+
+        <description>&lt;p&gt;
+I see X where none should be
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2598#changelog</comments>
+    </item><item>
+        <link>http://localhost/ticket/2610</link>
+        <guid isPermaLink="false">http://localhost/ticket/2610</guid>
+        <title>#2610: Text / link changes</title>
+        <pubDate>Wed, 27 Jun 2012 15:25:38 GMT</pubDate>
+        
+        <dc:creator>shevski</dc:creator>
+
+        <description>&lt;p&gt;
+In the footer:
+Change 'Powered by &lt;a class="missing wiki"&gt;CityData?&lt;/a&gt;' to Powered by &lt;a class="missing wiki"&gt;DataSuite?&lt;/a&gt; (with link to ckan.org/datasuite)
+&lt;/p&gt;
+&lt;p&gt;
+Links in left hand side of footer should change to a link to ckan.org, link to OKFN, link to ckan.org/datasuite/about and link to Pricing Page (on ckan.org .. will be /datasuite/solutions)
+&lt;/p&gt;
+&lt;p&gt;
+In create dataset form, prefilled tag examples should include one example with a space, e.g. "mental health"
+&lt;/p&gt;
+</description>
+        <category>Results</category>
+        <comments>http://localhost/ticket/2610#changelog</comments>
+    </item>
+ </channel>
+</rss>

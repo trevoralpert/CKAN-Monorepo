@@ -1,0 +1,71 @@
+id	summary	status	owner	type	milestone	component
+1062	Data preview encoding error	assigned	johnglover	defect	ckan-backlog	ckan
+1288	Package edit/creation can't include 'relationships' field	new		defect	ckan-backlog	ckan
+1328	Unicode & paster commands	assigned		defect		ckan
+1336	License fudge	new	johnglover	defect	ckan-backlog	ckan
+1382	Deleted resources are present for harvested package	new	thejimmyg	defect	ckan-backlog	uklii
+1509	Mis-dated old revisions of datasets	assigned		defect		ckan
+2294	Unauthorized action on Data API gets 302 rather than 401 or similar	assigned	kindly	defect	ckan-v1.9	ckan
+2395	paster db clean/init don't work when spatial extension enabled	new		defect	ckan-backlog	ckan
+2433	API uses name not id for some version 3 calls	new	toby	defect	ckan-v1.8	ckan
+2674	Data preview not loading on s031	assigned	kindly	defect	demo phase 5	ckan
+2719	Feeds controller does not catch NotAuthorized exception	new		defect		ckan
+2906	Wrong flags in language dropdown	new		defect	demo phase 5	ckan
+2959	Changing a Group's name through the action api disassociates it from its datasets in the index	new	icmurray	defect	ckan 2.0	ckan
+3002	API v1/2 'legacy' search parameters must be escaped before they are put into a Solr query string	new		defect	ckan-v1.8	ckan
+84	Revert support on versioned objects	assigned	kindly	enhancement	ckan-future	vdm
+143	Most active users listed on homepage	assigned	thejimmyg	enhancement	ckan-backlog	ckan
+763	Read-only mode - Setup	assigned		enhancement	ckan-future	ckan
+924	Search box has no search button	new		enhancement	ckan-backlog	ckan
+948	Highlight (to a sysadmin) which packages are deleted	assigned		enhancement	ckan-future	ckan
+1171	Citation instructions on dataset and resource view pages	assigned	mark.wainwright	enhancement	ckan 2.0	ckan
+1259	"""Add a row"" for Extras on Package form"	new	johnglover	enhancement	ckan-backlog	ckan
+1285	Errors cause emails	assigned		enhancement	ckan-future	ckan
+1314	ckanclient search - generator improvements	assigned		enhancement	ckan-backlog	ckan
+1326	Write a set of auth plugin functions to integrate with Druapl	new		enhancement	ckan-backlog	ckan
+1393	Don't skip search tests	assigned	johnglover	enhancement	ckan-backlog	ckan
+1424	Openness notice should be clearer	new		enhancement	ckan-backlog	ckan
+1581	Blog post about Google Analytics extension for CKAN	new	mark.wainwright@okfn.org	enhancement	ckan-future	ckan
+2203	Data Viewer support for PDF	assigned	kindly	enhancement	ckan-v1.9	ckan
+2243	Fix ckanext-example	reopened	seanh	enhancement	ckan-v1.9	ckan
+2247	Resource preview glitch in some browsers	new		enhancement	ckan-backlog	ckan
+2298	Add sort-by controls to the search results page	new	icmurray	enhancement	ckan-v1.9	ckan
+2301	Replace old-style string formatting with format() method (at least in strings marked for translation)	new	seanh	enhancement	ckan-future	ckan
+2310	Refactor the search-query construction in feeds.py	new	icmurray	enhancement	ckan-backlog	ckan
+2326	dataset permalinks	new	toby	enhancement	ckan-future	ckan
+2336	Move Jenkins' install script into ckan core so it can be versioned	accepted	seanh	enhancement	ckanbuild	ckan
+2341	Fix Jenkins issue when testing branches that contain model changes	accepted	seanh	enhancement	ckan-v1.9	ckan
+2342	Fix Jenkins issue when testing branches with different solr schema versions	accepted	seanh	enhancement	ckan-v1.9	ckan
+2348	Java client library for CKAN	assigned		enhancement	ckan-future	ckan
+2350	Hooks  in package controller for validating form data	new	icmurray	enhancement	ckan-v1.9	ckan
+2416	Normalise resource/data types	accepted	toby	enhancement	demo phase 5	ckan
+2446	Create demo dataset history/comparison page	assigned	johnmartin	enhancement	demo phase 4	ckan
+2451	Create demo user list page	assigned	johnmartin	enhancement	demo phase 5	ckan
+2457	Create demo tags list page	assigned	johnmartin	enhancement	demo phase 4	ckan
+2461	Create demo revisions page	assigned	toby	enhancement	demo phase 4	ckan
+2493	Demo site 404 needs some love	accepted	aron.carroll	enhancement	demo phase 5	ckan
+2530	DataHub purge fails on some revisions	new	kindly	enhancement	ckan-v1.9	ckan
+2555	Demo site needs a breadcrumb helper	new	toby	enhancement	demo phase 5	ckan
+2644	user dashboard for demo theme	assigned	shevski	enhancement	demo phase 5	ckan
+2673	simplify set of options for resources	new		enhancement		ckan
+2679	Change default behaviour of TemplateController.view to 404.	new	icmurray	enhancement	ckan-v1.9	ckan
+2698	markdown preview	assigned	toby	enhancement	demo phase 4	ckan
+2775	Add bin/less to paster serve command	new	toby	enhancement	demo phase 4	ckan
+2785	Allow resources to be re-ordered	assigned	johnmartin	enhancement	demo phase 5	ckan
+2822	Resource additional info titles format/i18n	new	toby	enhancement	demo phase 4	ckan
+2823	resource additional info title order	new	toby	enhancement	demo phase 5	ckan
+2831	Create a limited subset of markdown that's supported	new		enhancement	ckan 2.0	ckan
+2833	Load module templates before calling .initialize()	new		enhancement	demo phase 5	ckan
+2834	Defer all publish calls until all modules have been initialised	new		enhancement	demo phase 4	ckan
+2835	Client module needs a template loading method	new		enhancement	demo phase 5	ckan
+2850	Add JSON support for IE7	new		enhancement	demo phase 4	ckan
+2901	Language Dropdown bug in footer with IE7	new		enhancement	demo phase 5	ckan
+2947	Redirect to the resource page from /resource/{res-id}	new		enhancement		ckan
+2951	Paster command for building css from less	new		enhancement	ckan 2.0	ckan
+2952	incorporate javascriopt translations into translations workflow	new	seanh	enhancement	ckan 2.0	ckan
+2996	Fix behaviour of View Profile button in user popover when already on user's profile	new		enhancement	ckan 2.0	ckan
+3026	Support icons on  nav_named_link	new	amercader	enhancement		ckan
+2277	Use the new atom feeds in IATI	new	icmurray	refactor	ckan-backlog	ckan
+2603	Remove deprecated 'fields' parameter from resource_search	new	icmurray	refactor	ckan-v1.9	ckan
+2621	Remove the deprecated 'fields' parameter from tag_search and tag_autocomplete	new	icmurray	refactor	ckan-v1.9	ckan
+1544	delete old git branches	new		task	ckan-backlog	ckan
