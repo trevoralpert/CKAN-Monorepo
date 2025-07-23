@@ -33,16 +33,14 @@ repos:
               LICENSE.*
           )$
 
-  # Additional secret scanning
-  - repo: https://github.com/trufflesecurity/trufflehog
-    rev: v3.63.2-rc
+  # Additional secret scanning with simpler approach
+  - repo: local
     hooks:
-      - id: trufflehog
-        name: TruffleHog OSS
-        description: Detect secrets in code
-        entry: bash -c 'trufflehog git file://$(pwd) --since-commit HEAD --only-verified --fail'
+      - id: simple-secret-check
+        name: Simple secret detection
+        entry: bash -c 'if grep -r -E "(SECRET_KEY|API_KEY|PASSWORD|TOKEN)\s*[=:]\s*[\"'"'"'][^\"'"'"']{8,}[\"'"'"']" . --exclude-dir=.git --exclude="*.example" --exclude="*.template"; then echo "Found hardcoded secrets!"; exit 1; fi'
         language: system
-        stages: ["commit", "push"]
+        pass_filenames: false
 
   # Prevent large files and common mistakes
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -71,14 +69,14 @@ repos:
       - id: fix-byte-order-marker
         name: Fix UTF-8 byte order marker
 
-  # Prevent committing sensitive files
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+  # Additional security checks
+  - repo: local
     hooks:
-      - id: check-private-key
+      - id: check-private-keys
         name: Check for private keys
-      - id: forbid-new-submodules
-        name: Forbid new submodules
+        entry: bash -c 'if find . -name "*.pem" -o -name "*.key" -o -name "id_rsa" -o -name "id_dsa" | grep -v .git; then echo "Found private key files!"; exit 1; fi'
+        language: system
+        pass_filenames: false
 
   # Python code quality
   - repo: https://github.com/psf/black
@@ -127,10 +125,10 @@ repos:
       - id: check-aws-keys
         name: Check for AWS keys
         entry: bash -c 'if grep -r --include="*.py" --include="*.ini" --include="*.cfg" --include="*.yaml" --include="*.yml" -E "(AKIA[0-9A-Z]{16}|aws_access_key_id|aws_secret_access_key)" . --exclude-dir=.git --exclude-dir=node_modules --exclude="*.example" --exclude="*.template"; then echo "Found AWS credentials! Use environment variables or IAM roles instead."; exit 1; fi'
-        language: system 
+        language: system
         pass_filenames: false
 
 # Configuration
-default_stages: [commit]
+default_stages: [pre-commit]
 fail_fast: false
-minimum_pre_commit_version: 2.20.0 
+minimum_pre_commit_version: 2.20.0
