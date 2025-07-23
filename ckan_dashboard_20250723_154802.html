@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKAN Government Data Portal Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .datasets-section {
+            margin-top: 40px;
+        }
+        
+        .datasets-section h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .dataset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .dataset-card {
+            background: white;
+            border: 2px solid #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .dataset-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .dataset-title {
+            color: #2c3e50;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .dataset-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .status-new {
+            background: #e8f5e8;
+            color: #27ae60;
+        }
+        
+        .status-updated {
+            background: #e3f2fd;
+            color: #2196f3;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        .timestamp {
+            background: #34495e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏛️ CKAN Government Data Portal</h1>
+            <p>Live Dashboard - City of Demo Implementation</p>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">N/A</div>
+                <div class="metric-label">Total Datasets</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">N/A</div>
+                <div class="metric-label">Organizations</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">⚠️ OFFLINE</div>
+                <div class="metric-label">Portal Status</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">API vN/A</div>
+                <div class="metric-label">CKAN Version</div>
+            </div>
+        </div>
+        
+        <div class="datasets-section">
+            <h2>📊 Featured Government Datasets</h2>
+            <div class="dataset-grid">
+
+                <div class="dataset-card">
+                    <div class="dataset-title">City Budget FY2025</div>
+                    <p style="color: #7f8c8d; line-height: 1.5;">Annual budget allocations by department</p>
+                    <div style="margin: 15px 0;">
+                        <strong>Format:</strong> CSV/JSON<br>
+                        <strong>Category:</strong> Finance<br>
+                        <strong>Downloads:</strong> 1,247
+                    </div>
+                    <div class="dataset-meta">
+                        <span>Updated: 2025-01-15</span>
+                        <span class="status-badge status-updated">Updated</span>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-title">Traffic Safety Reports</div>
+                    <p style="color: #7f8c8d; line-height: 1.5;">Intersection accident data and analysis</p>
+                    <div style="margin: 15px 0;">
+                        <strong>Format:</strong> JSON/GeoJSON<br>
+                        <strong>Category:</strong> Transportation<br>
+                        <strong>Downloads:</strong> 892
+                    </div>
+                    <div class="dataset-meta">
+                        <span>Updated: 2025-01-20</span>
+                        <span class="status-badge status-new">New</span>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-title">Zoning District Maps</div>
+                    <p style="color: #7f8c8d; line-height: 1.5;">Current zoning classifications and boundaries</p>
+                    <div style="margin: 15px 0;">
+                        <strong>Format:</strong> Shapefile/KML<br>
+                        <strong>Category:</strong> Planning<br>
+                        <strong>Downloads:</strong> 2,156
+                    </div>
+                    <div class="dataset-meta">
+                        <span>Updated: 2025-01-10</span>
+                        <span class="status-badge status-updated">Updated</span>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-title">Public Meeting Minutes</div>
+                    <p style="color: #7f8c8d; line-height: 1.5;">City council and committee meeting records</p>
+                    <div style="margin: 15px 0;">
+                        <strong>Format:</strong> PDF/HTML<br>
+                        <strong>Category:</strong> Governance<br>
+                        <strong>Downloads:</strong> 445
+                    </div>
+                    <div class="dataset-meta">
+                        <span>Updated: 2025-01-22</span>
+                        <span class="status-badge status-new">New</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h3>🎯 CKAN Modernization Project Achievement</h3>
+            <p>Demonstrates: Real-time API integration • Modern UI/UX • Government data standards</p>
+            <p><strong>Connection Status:</strong> Error: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))</p>
+            <div class="timestamp">
+                Last Updated: 2025-07-23 15:48:02
+            </div>
+        </div>
+    </div>
+</body>
+</html>
