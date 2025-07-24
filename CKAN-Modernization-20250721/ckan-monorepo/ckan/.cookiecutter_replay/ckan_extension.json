@@ -1,0 +1,31 @@
+{
+  "cookiecutter": {
+    "project": "ckanext-analytics",
+    "keywords": "CKAN analytics",
+    "description": "Usage analytics pipeline for CKAN",
+    "author": "CKAN Team",
+    "author_email": "ckan-team@example.com",
+    "github_user_name": "ckan-team",
+    "project_shortname": "analytics",
+    "plugin_class_name": "AnalyticsPlugin",
+    "include_examples": "1",
+    "ckan_version": "2.12",
+    "_source": "cli",
+    "_template": "/usr/src/contrib/cookiecutter/ckan_extension",
+    "_output_dir": "/usr",
+    "_repo_dir": "/usr/src/contrib/cookiecutter/ckan_extension",
+    "_checkout": null
+  },
+  "_cookiecutter": {
+    "project": "ckanext-analytics",
+    "keywords": "CKAN analytics",
+    "description": "Usage analytics pipeline for CKAN",
+    "author": "CKAN Team",
+    "author_email": "ckan-team@example.com",
+    "github_user_name": "ckan-team",
+    "project_shortname": "analytics",
+    "plugin_class_name": "AnalyticsPlugin",
+    "include_examples": 1,
+    "ckan_version": "2.12"
+  }
+}

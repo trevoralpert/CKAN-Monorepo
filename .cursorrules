@@ -1,0 +1,76 @@
+# CKAN Security & Development Rules
+# =================================
+
+## 🔐 SECURITY - CRITICAL RULES
+
+### Never generate or commit secret keys
+- NEVER generate actual secret keys, API keys, passwords, or tokens in code
+- ALWAYS use placeholder values like "REPLACE_WITH_ACTUAL_SECRET"
+- ALWAYS require .env files for sensitive configuration
+- ALWAYS prompt user to generate their own secrets using provided scripts
+
+### Environment Variables for Secrets
+- Database passwords: Use ${POSTGRES_PASSWORD} from .env
+- Secret keys: Use ${CKAN_SECRET_KEY} from .env
+- API keys: Use ${API_KEY_NAME} from .env
+- Never hardcode: "password", "secret-key", "token", etc.
+
+### Files to Never Modify With Secrets
+- Docker compose files: Use environment variable references only
+- Configuration files: Use template placeholders
+- Any file tracked by git: No real secrets ever
+
+## 🐳 DOCKER DEVELOPMENT RULES
+
+### Current Setup (DO NOT CHANGE without user consent)
+- Base image: python:3.10-slim-bookworm (development style)
+- Source mounting: ../:/usr/src (preserves full customization)
+- ARM64 compatibility: Use -slim images where possible
+
+### Extension Development
+- Mount source code, don't bake into images
+- Use pip install -e . for development installations
+- Preserve ability to modify CKAN core and extensions
+
+## 📁 FILE MANAGEMENT
+
+### Always check .gitignore includes:
+```
+.env
+.env.*
+*.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+```
+
+### For new configuration files:
+- Create .template versions for git
+- Add actual files to .gitignore
+- Document required environment variables
+
+## 🚫 WHAT NOT TO DO
+
+- Don't suggest using prebuilt CKAN Docker images (limits customization)
+- Don't hardcode secrets in any tracked files
+- Don't modify the development Docker setup without explicit user request
+- Don't remove source code mounting capabilities
+- Don't suggest "quick fixes" that compromise security
+
+## ✅ PREFERRED APPROACHES
+
+1. **For secrets**: Generate via scripts, store in .env, reference via ${VAR}
+2. **For Docker**: Keep development-friendly with source mounting
+3. **For extensions**: Modify source directly, restart containers as needed
+4. **For configuration**: Use templates + environment variables
+
+## 🔧 WHEN USER ASKS FOR "STARTING OVER"
+
+Before suggesting major changes:
+1. Analyze what's actually broken vs. what works
+2. Propose incremental fixes to current setup first
+3. Only suggest rebuilding if current approach is fundamentally flawed
+4. Preserve customization capabilities in any new setup
+
+Remember: The user prefers fixing the actual Docker setup over UI mockups.

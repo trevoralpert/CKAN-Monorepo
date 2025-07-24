@@ -1,6 +1,6 @@
 # CKAN Modernization: 6 Key Features Overview
 
-**Target Audience:** Small City IT Teams (1-3 people) managing open data portals  
+**Target Audience:** Small City IT Teams (1-3 people) managing open data portals
 **Goal:** Enhance CKAN to be more user-friendly, performant, and measurable
 
 ---
@@ -154,4 +154,4 @@ When all 6 features work together:
 5. **Mobile UX** works wherever they are
 6. **Async performance** handles the load
 
-**Result**: A modern, measurable, maintainable open data portal that small city IT teams can actually manage. 
+**Result**: A modern, measurable, maintainable open data portal that small city IT teams can actually manage.
