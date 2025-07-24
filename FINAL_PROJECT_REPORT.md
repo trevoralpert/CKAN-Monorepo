@@ -151,12 +151,12 @@ CKAN's sophisticated extension system includes:
 - Focus on genuine value creation
 
 ### **Enhancement Roadmap:**
-1. **Interactive Dataset Creation** - React/Vue.js wizards
-2. **Rich Data Visualizations** - Chart.js/D3.js dashboards
-3. **Content Management** - Government page system
-4. **Advanced Search** - Semantic search capabilities
-5. **Performance Optimization** - Async/await patterns
-6. **Developer Experience** - Complete type system
+1. **Usage Analytics Pipeline** - Track what citizens actually use (Weeks 1-2)
+2. **Metadata Quality & Schema Enforcement** - Clean, findable data (Weeks 3-4)
+3. **Advanced Search & Discovery** - Find data quickly (Weeks 5-6)
+4. **Mobile-First UX & React Widgets** - Works on any device (Weeks 7-9)
+5. **Interactive Data Visualizations** - Understand data instantly (Weeks 10-11)
+6. **Async/Await for Heavy I/O** - Handle traffic spikes (Weeks 12-13)
 
 ---
 
