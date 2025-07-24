@@ -32,7 +32,7 @@ services:
     networks:
       - default
     environment:
-      HOME: /usr/src
+      HOME: /app
       ENV_SECRET_KEY: ${CKAN_SECRET_KEY:-test-secret-key-for-development-only}
       CKAN_DATASTORE_POSTGRES_DB: datastore_test
       CKAN_DATASTORE_POSTGRES_READ_USER: datastore_read
@@ -46,9 +46,9 @@ services:
       PYTEST_COMMON_OPTIONS: -v --ckan-ini=test-core-ci.ini --cov=ckan --cov=ckanext --junitxml=~/junit/junit.xml
       # report usage of deprecated features
       SQLALCHEMY_WARN_20: 1
-    working_dir: "/usr/src"
+    working_dir: "/app"
     volumes:
-      - "../:/usr/src"
+      - "../:/app"
     command:
       ['tail', '-f', '/dev/null']  # Keep container running
     ports:
