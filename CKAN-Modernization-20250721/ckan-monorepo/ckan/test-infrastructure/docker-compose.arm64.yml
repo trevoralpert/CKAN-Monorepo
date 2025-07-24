@@ -10,7 +10,7 @@ services:
     image: "postgres:12"
     environment:
       POSTGRES_USER: ckan
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-your-postgres-password}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ckan}
 
   ckan-redis:
     networks:
@@ -33,16 +33,16 @@ services:
       - default
     environment:
       HOME: /usr/src
-      ENV_SECRET_KEY: ${ENV_SECRET_KEY:-your-secret-key-here}
+      ENV_SECRET_KEY: ${ENV_SECRET_KEY:-REPLACE_WITH_ACTUAL_SECRET}
       CKAN_DATASTORE_POSTGRES_DB: ${CKAN_DATASTORE_POSTGRES_DB:-datastore_test}
       CKAN_DATASTORE_POSTGRES_READ_USER: ${CKAN_DATASTORE_POSTGRES_READ_USER:-datastore_read}
-              CKAN_DATASTORE_POSTGRES_READ_PWD: ${CKAN_DATASTORE_POSTGRES_READ_PWD:-your-read-password}
-        CKAN_DATASTORE_POSTGRES_WRITE_USER: ${CKAN_DATASTORE_POSTGRES_WRITE_USER:-datastore_write}
-        CKAN_DATASTORE_POSTGRES_WRITE_PWD: ${CKAN_DATASTORE_POSTGRES_WRITE_PWD:-your-write-password}
-        CKAN_POSTGRES_DB: ${CKAN_POSTGRES_DB:-ckan_test}
-        CKAN_POSTGRES_USER: ${CKAN_POSTGRES_USER:-ckan_default}
-        CKAN_POSTGRES_PWD: ${CKAN_POSTGRES_PWD:-your-postgres-password}
-        PGPASSWORD: ${POSTGRES_PASSWORD:-your-postgres-password}
+      CKAN_DATASTORE_POSTGRES_READ_PWD: ${CKAN_DATASTORE_POSTGRES_READ_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      CKAN_DATASTORE_POSTGRES_WRITE_USER: ${CKAN_DATASTORE_POSTGRES_WRITE_USER:-datastore_write}
+      CKAN_DATASTORE_POSTGRES_WRITE_PWD: ${CKAN_DATASTORE_POSTGRES_WRITE_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      CKAN_POSTGRES_DB: ${CKAN_POSTGRES_DB:-ckan_test}
+      CKAN_POSTGRES_USER: ${CKAN_POSTGRES_USER:-ckan_default}
+      CKAN_POSTGRES_PWD: ${CKAN_POSTGRES_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-REPLACE_WITH_ACTUAL_SECRET}
       PYTEST_COMMON_OPTIONS: -v --ckan-ini=test-core-ci.ini --cov=ckan --cov=ckanext --junitxml=~/junit/junit.xml
       # report usage of deprecated features
       SQLALCHEMY_WARN_20: 1
