@@ -227,17 +227,20 @@ docker compose exec ckan ckan cache clear
 3. **Review existing extensions**: Learn from working examples
 4. **Ask specific questions**: Include error messages and context
 
-### Code Examples Repository
-Each phase includes working code examples in:
+### Working Implementation Reference
+Phase 1 (Analytics) working code can be found in the Docker container:
 ```
-features/examples/
-├── phase1-analytics/
-├── phase2-metadata/
-├── phase3-search/
-├── phase4-react/
-├── phase5-visualization/
-└── phase6-async/
+/usr/ckanext-analytics/ckanext/analytics/
+├── models.py           # Database schema with privacy features
+├── logic/action.py     # Event capture wrappers  
+├── views.py           # Web dashboard with caching
+├── cache.py           # Redis caching system
+├── cli.py             # CLI commands and health checks
+├── tests/             # Comprehensive test suite
+└── templates/         # Responsive dashboard UI
 ```
+
+**Future phases will add their implementations to the main codebase as working features, not separate examples.**
 
 ---
 
