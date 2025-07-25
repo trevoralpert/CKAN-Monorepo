@@ -1,6 +1,8 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 import logging
+import time
+from flask import request, g
 
 import ckanext.analytics.cli as cli
 import ckanext.analytics.views as views
@@ -11,21 +13,16 @@ log = logging.getLogger(__name__)
 
 class AnalyticsPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
-    plugins.implements(plugins.IActions)
     plugins.implements(plugins.IClick)
     plugins.implements(plugins.IResourceController)
+    plugins.implements(plugins.IPackageController, inherit=True)
     plugins.implements(plugins.IBlueprint)
-    
 
     # IConfigurer
     def update_config(self, config_):
         toolkit.add_template_directory(config_, "templates")
         toolkit.add_public_directory(config_, "public")
         toolkit.add_resource("assets", "analytics")
-
-    # IActions - Override core actions to add analytics
-    def get_actions(self):
-        return action.get_actions()
 
     # IClick - Add CLI commands
     def get_commands(self):
@@ -35,13 +32,147 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
     def get_blueprint(self):
         return views.get_blueprints()
 
+    # IPackageController - Track dataset views (SAFE - NO RECURSION)
+    def after_show(self, context, pkg_dict):
+        """Called after package_show completes successfully"""
+        start_time = time.time()
+        try:
+            # Skip if this is an internal CKAN call or marked to skip logging
+            if context.get("__no_log__"):
+                return
+
+            # Enhanced Flask context detection for safety
+            try:
+                # Check if we're in a proper Flask request context
+                if not request:
+                    log.debug("No Flask request context - skipping analytics")
+                    return
+
+                # Check if g object is available
+                if not hasattr(g, "user"):
+                    log.debug("No Flask g object - skipping analytics")
+                    return
+
+            except RuntimeError as e:
+                # Outside application context
+                log.debug(f"Outside Flask context - skipping analytics: {e}")
+                return
+
+            # Respect Do Not Track header
+            if request.headers.get("DNT") == "1":
+                log.debug("Skipping analytics due to DNT header")
+                return
+
+            # Additional safety: Check for valid dataset ID
+            dataset_id = pkg_dict.get("id")
+            if not dataset_id:
+                log.debug("No dataset ID - skipping analytics")
+                return
+
+            # Log the dataset view event
+            user_id = g.userobj.id if g.userobj else None
+
+            action._log_event(
+                event_type="dataset_view",
+                dataset_id=pkg_dict.get("id"),
+                user_id=user_id,
+                event_data={
+                    "dataset_name": pkg_dict.get("name"),
+                    "dataset_title": pkg_dict.get("title"),
+                    "organization": pkg_dict.get("organization", {}).get("name")
+                    if pkg_dict.get("organization")
+                    else None,
+                },
+            )
+
+            # Performance monitoring
+            elapsed = time.time() - start_time
+            if elapsed > 0.05:  # 50ms warning threshold
+                log.warning(
+                    f"Analytics after_show took {elapsed:.3f}s - performance issue!"
+                )
+
+        except Exception as e:
+            log.error(f"Analytics error in after_show: {e}")
+            # Never let analytics break core functionality
+            pass
+
+    def after_search(self, search_results, search_params):
+        """Called after package_search completes successfully"""
+        start_time = time.time()
+        try:
+            # Skip if this is an internal CKAN call or marked to skip logging
+            # (search_params is dict, need to check context separately if available)
+
+            # Enhanced Flask context detection for safety
+            try:
+                # Check if we're in a proper Flask request context
+                if not request:
+                    log.debug("No Flask request context - skipping search analytics")
+                    return
+
+                # Check if g object is available
+                if not hasattr(g, "user"):
+                    log.debug("No Flask g object - skipping search analytics")
+                    return
+
+            except RuntimeError as e:
+                # Outside application context
+                log.debug(f"Outside Flask context - skipping search analytics: {e}")
+                return
+
+            # Respect Do Not Track header
+            if request.headers.get("DNT") == "1":
+                log.debug("Skipping analytics due to DNT header")
+                return
+
+            # Extract and validate search query
+            query = search_params.get("q", "").strip()
+            if not query:  # Only log meaningful searches
+                log.debug("Empty search query - skipping analytics")
+                return
+
+            # Additional safety: validate search results structure
+            if not isinstance(search_results, dict):
+                log.debug("Invalid search results structure - skipping analytics")
+                return
+
+            # Log meaningful search events
+            user_id = g.userobj.id if g.userobj else None
+
+            action._log_event(
+                event_type="search_query",
+                user_id=user_id,
+                event_data={
+                    "query": query,
+                    "sort": search_params.get("sort"),
+                    "facet_fields": search_params.get("facet.field", []),
+                    "results_count": search_results.get("count", 0),
+                    "filters": {
+                        k: v for k, v in search_params.items() if k.startswith("fq")
+                    },
+                },
+            )
+
+            # Performance monitoring
+            elapsed = time.time() - start_time
+            if elapsed > 0.05:  # 50ms warning threshold
+                log.warning(
+                    f"Analytics after_search took {elapsed:.3f}s - performance issue!"
+                )
+
+        except Exception as e:
+            log.error(f"Analytics error in after_search: {e}")
+            # Never let analytics break core functionality
+            pass
+
     # IResourceController - Track resource downloads
     def before_download(self, context, resource, filename):
         """Called before a resource is downloaded"""
         try:
-            action.resource_download_with_analytics(context, {'id': resource['id']})
+            action.resource_download_with_analytics(context, {"id": resource["id"]})
         except Exception as e:
             log.error(f"Error logging resource download analytics: {e}")
-        
+
         # Don't modify the download process
         return
