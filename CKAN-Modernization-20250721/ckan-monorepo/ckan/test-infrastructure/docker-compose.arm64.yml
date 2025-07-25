@@ -49,6 +49,7 @@ services:
     working_dir: "/usr/src"
     volumes:
       - "../:/usr/src"
+      - "../extensions:/usr/src/extensions"
     command:
       ['tail', '-f', '/dev/null']  # Keep container running
     ports:

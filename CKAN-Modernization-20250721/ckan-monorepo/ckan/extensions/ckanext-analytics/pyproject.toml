@@ -1,0 +1,45 @@
+[project]
+name = "ckanext-analytics"
+version = "0.0.1"
+description = "Usage analytics pipeline for CKAN"
+readme = "README.md"
+authors = [
+    {name = "CKAN Team", email = "ckan-team@example.com"}
+]
+license = {text = "AGPL"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+keywords = [ "CKAN", "analytics", ]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ckan-team/ckanext-analytics"
+
+[project.entry-points."ckan.plugins"]
+analytics = "ckanext.analytics.plugin:AnalyticsPlugin"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+        "ignore::sqlalchemy.exc.SADeprecationWarning",
+        "ignore::sqlalchemy.exc.SAWarning",
+        "ignore::DeprecationWarning",
+]
+addopts = "--ckan-ini test.ini"
+
+[tool.ruff]
+line-length = 127
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+

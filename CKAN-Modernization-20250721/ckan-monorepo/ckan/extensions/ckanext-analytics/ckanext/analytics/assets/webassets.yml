@@ -1,0 +1,14 @@
+# analytics-js:
+#   filter: rjsmin
+#   output: ckanext-analytics/%(version)s-analytics.js
+#   contents:
+#     - js/analytics.js
+#   extra:
+#     preload:
+#       - base/main
+
+# analytics-css:
+#   filter: cssrewrite
+#   output: ckanext-analytics/%(version)s-analytics.css
+#   contents:
+#     - css/analytics.css
