@@ -1,0 +1,294 @@
+dataset_type: city-dataset
+about: City Government Dataset Schema for Small Municipal Data Portals
+about_url: https://github.com/ckan/ckanext-scheming
+
+dataset_fields:
+
+# Core identification fields
+- field_name: title
+  label: Dataset Title
+  preset: title
+  form_placeholder: "e.g. Weekly Fire Department Response Times"
+  required: true
+  help_text: "Provide a clear, descriptive title that citizens can easily understand"
+
+- field_name: name
+  label: URL Slug
+  preset: dataset_slug
+  form_placeholder: "e.g. fire-response-times-weekly"
+  required: true
+
+- field_name: notes
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: "Describe what this dataset contains, how it's collected, and how citizens can use it"
+  required: true
+  help_text: "Provide at least 2-3 sentences explaining the dataset's purpose and contents"
+
+# City-specific organizational fields
+- field_name: department
+  label: City Department
+  preset: select
+  required: true
+  choices:
+    - value: "fire"
+      label: "Fire Department"
+    - value: "police"
+      label: "Police Department"
+    - value: "public-works"
+      label: "Public Works"
+    - value: "finance"
+      label: "Finance Department"
+    - value: "parks-recreation"
+      label: "Parks & Recreation"
+    - value: "planning-zoning"
+      label: "Planning & Zoning"
+    - value: "water-utilities"
+      label: "Water & Utilities"
+    - value: "health"
+      label: "Health Department"
+    - value: "transportation"
+      label: "Transportation"
+    - value: "mayor-admin"
+      label: "Mayor's Office/Administration"
+    - value: "other"
+      label: "Other Department"
+  help_text: "Select the primary department responsible for this data"
+
+- field_name: department_contact
+  label: Department Contact Person
+  form_placeholder: "Jane Smith, Fire Chief"
+  required: true
+  help_text: "Name and title of person citizens can contact about this data"
+
+- field_name: contact_email
+  label: Contact Email
+  form_placeholder: "data.contact@cityname.gov"
+  required: true
+  validators: ignore_missing email_validator
+  help_text: "Email address for data questions and issues"
+
+# Data quality and freshness fields
+- field_name: update_frequency
+  label: Update Frequency
+  preset: select
+  required: true
+  choices:
+    - value: "real-time"
+      label: "Real-time (continuous updates)"
+    - value: "daily"
+      label: "Daily"
+    - value: "weekly"
+      label: "Weekly"
+    - value: "monthly" 
+      label: "Monthly"
+    - value: "quarterly"
+      label: "Quarterly"
+    - value: "annually"
+      label: "Annually"
+    - value: "as-needed"
+      label: "As needed/irregular"
+    - value: "one-time"
+      label: "One-time/historical"
+  help_text: "How often is this dataset updated with new information?"
+
+- field_name: last_updated
+  label: Last Updated Date
+  preset: date
+  required: true
+  help_text: "When was this dataset last updated with new data?"
+
+- field_name: next_update
+  label: Next Scheduled Update
+  preset: date
+  help_text: "When do you expect to next update this dataset? (optional)"
+
+- field_name: data_quality_score
+  label: Data Quality Assessment
+  preset: select
+  choices:
+    - value: "high"
+      label: "High - Complete, verified, up-to-date"
+    - value: "medium"
+      label: "Medium - Mostly complete, some gaps"
+    - value: "low"
+      label: "Low - Incomplete or needs verification"
+    - value: "unknown"
+      label: "Unknown - Quality not assessed"
+  default: "unknown"
+  help_text: "Self-assessment of data completeness and accuracy"
+
+# Geographic and coverage fields
+- field_name: geographic_coverage
+  label: Geographic Coverage
+  preset: select
+  required: true
+  choices:
+    - value: "citywide"
+      label: "City-wide"
+    - value: "ward-district"
+      label: "Specific ward/district"
+    - value: "neighborhood"
+      label: "Specific neighborhood"
+    - value: "address-specific"
+      label: "Specific addresses/locations"
+    - value: "regional"
+      label: "Regional (multi-city)"
+    - value: "other"
+      label: "Other geographic scope"
+  help_text: "What geographic area does this dataset cover?"
+
+- field_name: time_period_start
+  label: Time Period Start
+  preset: date
+  help_text: "Earliest date covered by this dataset (if applicable)"
+
+- field_name: time_period_end
+  label: Time Period End  
+  preset: date
+  help_text: "Latest date covered by this dataset (if applicable)"
+
+# Legal and compliance fields
+- field_name: public_access_level
+  label: Public Access Level
+  preset: select
+  required: true
+  default: "public"
+  choices:
+    - value: "public"
+      label: "Public - Available to all citizens"
+    - value: "restricted"
+      label: "Restricted - Limited access"
+    - value: "confidential"
+      label: "Confidential - Not for public release"
+  help_text: "What level of public access does this data have?"
+
+- field_name: privacy_considerations
+  label: Privacy/Sensitivity Notes
+  form_snippet: markdown.html
+  form_placeholder: "e.g. Personal information removed, addresses aggregated to block level"
+  help_text: "Describe any privacy protections or data sensitivity considerations"
+
+- field_name: compliance_requirements
+  label: Legal/Compliance Requirements
+  form_snippet: markdown.html
+  form_placeholder: "e.g. Must comply with FOIA requirements, retained per city records policy"
+  help_text: "Any legal or regulatory requirements that apply to this dataset"
+
+# Standard CKAN fields (enhanced)
+- field_name: tag_string
+  label: Tags
+  preset: tag_string_autocomplete
+  form_placeholder: "e.g. public-safety, response-times, emergency-services"
+  help_text: "Add tags to help citizens find this data. Use specific, relevant terms."
+
+- field_name: license_id
+  label: License
+  form_snippet: license.html
+  required: true
+  default: "cc-by"
+  help_text: "Choose an appropriate license for public data sharing"
+
+- field_name: owner_org
+  label: Organization
+  preset: dataset_organization
+  required: true
+
+- field_name: url
+  label: Source/Reference URL
+  form_placeholder: "https://city.gov/department/data-methodology"
+  display_property: foaf:homepage
+  display_snippet: link.html
+  help_text: "Link to methodology, source system, or additional information"
+
+# Enhanced contact fields
+- field_name: author
+  label: Data Creator/Analyst
+  form_placeholder: "Data Analysis Team"
+  display_property: dc:creator
+  help_text: "Person or team who created/compiled this dataset"
+
+- field_name: author_email
+  label: Creator Email
+  form_placeholder: "analyst@cityname.gov"
+  display_property: dc:creator
+  display_snippet: email.html
+  display_email_name_field: author
+  validators: ignore_missing email_validator
+
+- field_name: maintainer
+  label: Data Maintainer
+  form_placeholder: "IT Department"
+  display_property: dc:contributor
+  help_text: "Person or department responsible for keeping this data current"
+
+- field_name: maintainer_email
+  label: Maintainer Email
+  form_placeholder: "it-support@cityname.gov"
+  display_property: dc:contributor
+  display_snippet: email.html
+  display_email_name_field: maintainer
+  validators: ignore_missing email_validator
+
+# Additional city-specific fields
+- field_name: collection_method
+  label: Data Collection Method
+  preset: select
+  choices:
+    - value: "automated"
+      label: "Automated system/sensors"
+    - value: "manual-entry"
+      label: "Manual data entry"
+    - value: "survey"
+      label: "Survey/questionnaire"
+    - value: "third-party"
+      label: "Third-party vendor"
+    - value: "citizen-reported"
+      label: "Citizen reporting"
+    - value: "other"
+      label: "Other method"
+  help_text: "How is this data collected or generated?"
+
+- field_name: business_value
+  label: Public Value/Use Cases
+  form_snippet: markdown.html
+  form_placeholder: "e.g. Citizens can use this to understand emergency response in their neighborhood"
+  help_text: "Explain why this data is valuable to citizens and how they might use it"
+
+resource_fields:
+
+- field_name: url
+  label: File/URL
+  preset: resource_url_upload
+  required: true
+
+- field_name: name
+  label: Resource Name
+  form_placeholder: "e.g. Fire Response Times - January 2025"
+  required: true
+  help_text: "Descriptive name for this specific file or resource"
+
+- field_name: description
+  label: Resource Description
+  form_snippet: markdown.html
+  form_placeholder: "Details about this specific file, including any important notes"
+  help_text: "Describe the contents and any special considerations for this file"
+
+- field_name: format
+  label: File Format
+  preset: resource_format_autocomplete
+  required: true
+
+- field_name: size
+  label: File Size
+  help_text: "File size (usually auto-detected)"
+
+- field_name: created
+  label: File Created Date
+  preset: date
+  help_text: "When was this specific file created?"
+
+- field_name: last_modified
+  label: File Last Modified
+  preset: date
+  help_text: "When was this file last updated?" 

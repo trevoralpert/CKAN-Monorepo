@@ -199,5 +199,266 @@ def benchmark_command(events):
     
     click.echo('✅ Benchmark complete!')
 
+@analytics.command('audit-metadata')
+@click.option('--save-report', default='metadata_audit_report.json', 
+              help='Filename for detailed audit report')
+def audit_metadata_command(save_report):
+    """Audit metadata quality of all datasets and generate improvement recommendations."""
+    click.echo("🔍 Starting Metadata Quality Audit...")
+    
+    try:
+        from ckanext.analytics.metadata_audit import MetadataAuditor
+        
+        auditor = MetadataAuditor()
+        results = auditor.audit_all_datasets()
+        
+        # Print summary to console
+        auditor.print_summary_report()
+        
+        # Save detailed report
+        if save_report:
+            auditor.save_detailed_report(save_report)
+        
+        # Return status based on results
+        total_datasets = results['summary'].get('total_datasets', 0)
+        if total_datasets == 0:
+            click.echo("❌ No datasets found to audit")
+            return 1
+        
+        avg_score = results['summary'].get('average_quality_score', 0)
+        if avg_score < 60:
+            click.echo(f"⚠️  Warning: Average quality score ({avg_score}/100) is below recommended threshold")
+        
+        click.echo("✅ Metadata audit completed successfully!")
+        return 0
+        
+    except Exception as e:
+        click.echo(f"❌ Error during metadata audit: {e}")
+        return 1
+
+@analytics.command('ai-suggest')
+@click.option('--dataset-id', help='Specific dataset ID to get suggestions for')
+@click.option('--limit', default=5, help='Maximum number of datasets to process (when no dataset-id specified)')
+@click.option('--provider', default='mock', help='AI provider to use (mock, openai)')
+@click.option('--show-stats', is_flag=True, help='Show AI suggestion statistics')
+def ai_suggest_command(dataset_id, limit, provider, show_stats):
+    """Generate AI-powered metadata suggestions for datasets."""
+    
+    if show_stats:
+        try:
+            from ckanext.analytics.ai_suggestions import get_ai_service
+            ai_service = get_ai_service()
+            stats = ai_service.get_suggestion_stats()
+            
+            click.echo("🤖 AI Suggestion Statistics")
+            click.echo("=" * 30)
+            click.echo(f"Total suggestions made: {stats['suggestions_made']}")
+            click.echo(f"Total suggestions accepted: {stats['suggestions_accepted']}")
+            click.echo(f"Overall acceptance rate: {stats['overall_acceptance_rate']:.1f}%")
+            
+            click.echo("\nBy suggestion type:")
+            for suggestion_type, type_stats in stats['by_type'].items():
+                acceptance_rate = type_stats['acceptance_rate']
+                click.echo(f"  {suggestion_type}: {type_stats['made']} made, {type_stats['accepted']} accepted ({acceptance_rate:.1f}%)")
+            
+            return 0
+            
+        except Exception as e:
+            click.echo(f"❌ Error getting AI statistics: {e}")
+            return 1
+    
+    click.echo(f"🤖 Generating AI metadata suggestions using {provider} provider...")
+    
+    try:
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        
+        if dataset_id:
+            # Get suggestions for specific dataset
+            try:
+                import ckan.plugins.toolkit as toolkit
+                context = {'ignore_auth': True}
+                dataset = toolkit.get_action('package_show')(context, {'id': dataset_id})
+                
+                click.echo(f"\n📊 Dataset: {dataset.get('title', 'Untitled')}")
+                click.echo("-" * 50)
+                
+                suggestions = ai_service.get_comprehensive_suggestions(dataset)
+                
+                if suggestions.get('suggestions'):
+                    _display_suggestions(suggestions['suggestions'])
+                else:
+                    click.echo("✅ No improvements needed - dataset metadata looks good!")
+                
+                # Show quality assessment
+                quality = suggestions.get('quality_assessment', {})
+                if quality:
+                    click.echo(f"\n📈 Quality Score: {quality.get('score', 'N/A')}/100")
+                    
+                    issues = quality.get('issues', [])
+                    if issues:
+                        click.echo("⚠️  Issues found:")
+                        for issue in issues:
+                            click.echo(f"   • {issue}")
+                    
+                    improvements = quality.get('improvements', [])
+                    if improvements:
+                        click.echo("💡 Suggested improvements:")
+                        for improvement in improvements:
+                            click.echo(f"   • {improvement}")
+                
+                return 0
+                
+            except Exception as e:
+                click.echo(f"❌ Error processing dataset {dataset_id}: {e}")
+                return 1
+        else:
+            # Batch processing
+            suggestions_batch = ai_service.batch_suggest_for_datasets(limit=limit)
+            
+            if not suggestions_batch:
+                click.echo("❌ No datasets found or no suggestions generated")
+                return 1
+            
+            click.echo(f"✅ Generated suggestions for {len(suggestions_batch)} datasets")
+            
+            for i, suggestion_set in enumerate(suggestions_batch, 1):
+                dataset_id = suggestion_set.get('dataset_id', 'Unknown')
+                suggestions = suggestion_set.get('suggestions', {})
+                
+                click.echo(f"\n📊 Dataset {i}/{len(suggestions_batch)}: {dataset_id}")
+                click.echo("-" * 50)
+                
+                if suggestions:
+                    _display_suggestions(suggestions)
+                else:
+                    click.echo("✅ No improvements needed")
+            
+            return 0
+            
+    except Exception as e:
+        click.echo(f"❌ Error generating AI suggestions: {e}")
+        return 1
+
+def _display_suggestions(suggestions):
+    """Helper function to display suggestions in a formatted way"""
+    
+    if 'tags' in suggestions:
+        tag_data = suggestions['tags']
+        current = tag_data.get('current', [])
+        suggested = tag_data.get('suggested', [])
+        confidence = tag_data.get('confidence', 0)
+        
+        click.echo(f"🏷️  Tags (confidence: {confidence:.0%}):")
+        click.echo(f"   Current: {', '.join(current) if current else 'None'}")
+        click.echo(f"   Suggested: {', '.join(suggested)}")
+    
+    if 'department' in suggestions:
+        dept_data = suggestions['department']
+        current = dept_data.get('current', 'None')
+        suggested = dept_data.get('suggested')
+        confidence = dept_data.get('confidence', 0)
+        
+        click.echo(f"🏢 Department (confidence: {confidence:.0%}):")
+        click.echo(f"   Current: {current}")
+        click.echo(f"   Suggested: {suggested}")
+    
+    if 'title' in suggestions:
+        title_data = suggestions['title']
+        current = title_data.get('current', '')[:50] + '...' if len(title_data.get('current', '')) > 50 else title_data.get('current', '')
+        suggested = title_data.get('suggested', '')[:50] + '...' if len(title_data.get('suggested', '')) > 50 else title_data.get('suggested', '')
+        confidence = title_data.get('confidence', 0)
+        
+        click.echo(f"📝 Title (confidence: {confidence:.0%}):")
+        click.echo(f"   Current: {current}")
+        click.echo(f"   Suggested: {suggested}")
+    
+    if 'description' in suggestions:
+        desc_data = suggestions['description']
+        current_len = len(desc_data.get('current', ''))
+        suggested_len = len(desc_data.get('suggested', ''))
+        confidence = desc_data.get('confidence', 0)
+        
+        click.echo(f"📄 Description (confidence: {confidence:.0%}):")
+        click.echo(f"   Current length: {current_len} characters")
+        click.echo(f"   Suggested length: {suggested_len} characters")
+        if suggested_len > current_len:
+            click.echo(f"   📈 Improvement: +{suggested_len - current_len} characters")
+
+@analytics.command('ai-apply')
+@click.argument('dataset_id')
+@click.option('--suggestion-type', 
+              type=click.Choice(['tags', 'department', 'title', 'description', 'all']),
+              help='Type of suggestion to apply')
+@click.option('--yes', is_flag=True, help='Confirm application without prompting')
+def ai_apply_command(dataset_id, suggestion_type, yes):
+    """Apply AI suggestions to a dataset."""
+    
+    try:
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        import ckan.plugins.toolkit as toolkit
+        
+        ai_service = get_ai_service()
+        context = {'ignore_auth': True}
+        
+        # Get dataset and suggestions
+        dataset = toolkit.get_action('package_show')(context, {'id': dataset_id})
+        suggestions = ai_service.get_comprehensive_suggestions(dataset)
+        
+        available_suggestions = suggestions.get('suggestions', {})
+        if not available_suggestions:
+            click.echo("❌ No suggestions available for this dataset")
+            return 1
+        
+        click.echo(f"📊 Dataset: {dataset.get('title', 'Untitled')}")
+        click.echo(f"Available suggestions: {', '.join(available_suggestions.keys())}")
+        
+        if suggestion_type == 'all':
+            types_to_apply = list(available_suggestions.keys())
+        elif suggestion_type:
+            if suggestion_type not in available_suggestions:
+                click.echo(f"❌ No {suggestion_type} suggestion available")
+                return 1
+            types_to_apply = [suggestion_type]
+        else:
+            click.echo("❌ Please specify --suggestion-type")
+            return 1
+        
+        # Confirm application
+        if not yes:
+            click.echo(f"\nAbout to apply {len(types_to_apply)} suggestion(s): {', '.join(types_to_apply)}")
+            if not click.confirm("Continue?"):
+                click.echo("Cancelled")
+                return 0
+        
+        # Apply suggestions
+        applied_count = 0
+        for suggestion_type in types_to_apply:
+            try:
+                suggestion_data = available_suggestions[suggestion_type]
+                
+                # Use the API to apply the suggestion
+                result = toolkit.get_action('accept_ai_suggestion')(context, {
+                    'dataset_id': dataset_id,
+                    'suggestion_type': suggestion_type,
+                    'suggestion_data': suggestion_data,
+                    'apply_suggestion': True
+                })
+                
+                click.echo(f"✅ Applied {suggestion_type} suggestion")
+                applied_count += 1
+                
+            except Exception as e:
+                click.echo(f"❌ Error applying {suggestion_type}: {e}")
+        
+        if applied_count > 0:
+            click.echo(f"\n🎉 Successfully applied {applied_count} suggestions to dataset!")
+        
+        return 0
+        
+    except Exception as e:
+        click.echo(f"❌ Error applying AI suggestions: {e}")
+        return 1
+
 def get_commands():
     return [analytics]

@@ -7,6 +7,7 @@ from flask import request, g
 import ckanext.analytics.cli as cli
 import ckanext.analytics.views as views
 from ckanext.analytics.logic import action
+from ckanext.analytics import validators
 
 log = logging.getLogger(__name__)
 
@@ -17,6 +18,8 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IResourceController)
     plugins.implements(plugins.IPackageController, inherit=True)
     plugins.implements(plugins.IBlueprint)
+    plugins.implements(plugins.IValidators)
+    plugins.implements(plugins.IActions)
 
     # IConfigurer
     def update_config(self, config_):
@@ -27,6 +30,28 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
     # IClick - Add CLI commands
     def get_commands(self):
         return cli.get_commands()
+
+    # IValidators - Register custom validators
+    def get_validators(self):
+        return {
+            'email_validator': validators.email_validator,
+            'department_validator': validators.department_validator,
+            'update_frequency_validator': validators.update_frequency_validator,
+            'data_quality_validator': validators.data_quality_validator,
+            'geographic_coverage_validator': validators.geographic_coverage_validator,
+            'public_access_validator': validators.public_access_validator,
+            'collection_method_validator': validators.collection_method_validator,
+        }
+
+    # IActions - Register AI suggestion API endpoints
+    def get_actions(self):
+        return {
+            'get_dataset_ai_suggestions': action.get_dataset_ai_suggestions,
+            'get_batch_ai_suggestions': action.get_batch_ai_suggestions,
+            'accept_ai_suggestion': action.accept_ai_suggestion,
+            'get_ai_suggestion_stats': action.get_ai_suggestion_stats,
+            'reset_ai_suggestion_stats': action.reset_ai_suggestion_stats,
+        }
 
     # IBlueprint - Add web dashboard
     def get_blueprint(self):

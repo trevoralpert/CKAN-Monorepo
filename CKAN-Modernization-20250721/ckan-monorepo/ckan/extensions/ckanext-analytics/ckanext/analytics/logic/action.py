@@ -196,3 +196,197 @@ current_module = sys.modules[__name__]
 # Replace _log_event with cache-aware version
 original_log_event = current_module._log_event
 current_module._log_event = _log_event_with_cache_invalidation
+
+
+# =============================================================================
+# AI-ASSISTED METADATA SUGGESTION ENDPOINTS
+# =============================================================================
+
+@toolkit.side_effect_free
+def get_dataset_ai_suggestions(context, data_dict):
+    """
+    Get AI-powered metadata suggestions for a dataset.
+    
+    :param dataset_id: ID of the dataset to get suggestions for
+    :type dataset_id: string
+    
+    :returns: Dictionary containing suggestions for tags, department, title, description
+    :rtype: dict
+    """
+    toolkit.check_access('package_show', context, data_dict)
+    
+    dataset_id = toolkit.get_or_bust(data_dict, 'dataset_id')
+    
+    try:
+        # Get the dataset
+        dataset = toolkit.get_action('package_show')(context, {'id': dataset_id})
+        
+        # Get AI suggestions
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        suggestions = ai_service.get_comprehensive_suggestions(dataset)
+        
+        return suggestions
+        
+    except toolkit.ObjectNotFound:
+        raise toolkit.ObjectNotFound(f'Dataset not found: {dataset_id}')
+    except Exception as e:
+        log.error(f"Error getting AI suggestions for {dataset_id}: {e}")
+        raise toolkit.ValidationError(f'Error generating suggestions: {str(e)}')
+
+
+@toolkit.side_effect_free  
+def get_batch_ai_suggestions(context, data_dict):
+    """
+    Get AI suggestions for multiple datasets.
+    
+    :param dataset_ids: List of dataset IDs (optional, defaults to recent datasets)
+    :type dataset_ids: list
+    :param limit: Maximum number of datasets to process (default: 10)
+    :type limit: int
+    
+    :returns: List of suggestion dictionaries
+    :rtype: list
+    """
+    toolkit.check_access('package_search', context, {})
+    
+    dataset_ids = data_dict.get('dataset_ids')
+    limit = data_dict.get('limit', 10)
+    
+    try:
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        suggestions_batch = ai_service.batch_suggest_for_datasets(dataset_ids, limit)
+        
+        return {
+            'suggestions': suggestions_batch,
+            'count': len(suggestions_batch)
+        }
+        
+    except Exception as e:
+        log.error(f"Error getting batch AI suggestions: {e}")
+        raise toolkit.ValidationError(f'Error generating batch suggestions: {str(e)}')
+
+
+def accept_ai_suggestion(context, data_dict):
+    """
+    Record that an AI suggestion was accepted and optionally apply it.
+    
+    :param dataset_id: ID of the dataset
+    :type dataset_id: string
+    :param suggestion_type: Type of suggestion (tags, department, title, description)
+    :type suggestion_type: string
+    :param suggestion_data: The suggestion data that was accepted
+    :type suggestion_data: dict
+    :param apply_suggestion: Whether to apply the suggestion to the dataset (default: False)
+    :type apply_suggestion: bool
+    
+    :returns: Success message and optionally updated dataset
+    :rtype: dict
+    """
+    toolkit.check_access('package_patch', context, data_dict)
+    
+    dataset_id = toolkit.get_or_bust(data_dict, 'dataset_id')
+    suggestion_type = toolkit.get_or_bust(data_dict, 'suggestion_type')
+    suggestion_data = toolkit.get_or_bust(data_dict, 'suggestion_data')
+    apply_suggestion = data_dict.get('apply_suggestion', False)
+    
+    try:
+        # Record the acceptance
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        ai_service.accept_suggestion(dataset_id, suggestion_type, suggestion_data)
+        
+        result = {
+            'success': True,
+            'message': f'AI suggestion accepted: {suggestion_type}',
+            'dataset_id': dataset_id
+        }
+        
+        # Optionally apply the suggestion
+        if apply_suggestion:
+            dataset = toolkit.get_action('package_show')(context, {'id': dataset_id})
+            update_data = {'id': dataset_id}
+            
+            if suggestion_type == 'tags':
+                # Add suggested tags to existing ones
+                current_tags = [t['name'] for t in dataset.get('tags', [])]
+                suggested_tags = suggestion_data.get('suggested', [])
+                new_tags = list(set(current_tags + suggested_tags))
+                update_data['tags'] = [{'name': tag} for tag in new_tags]
+                
+            elif suggestion_type == 'department':
+                update_data['department'] = suggestion_data.get('suggested')
+                
+            elif suggestion_type == 'title':
+                update_data['title'] = suggestion_data.get('suggested')
+                
+            elif suggestion_type == 'description':
+                update_data['notes'] = suggestion_data.get('suggested')
+            
+            # Update the dataset
+            updated_dataset = toolkit.get_action('package_patch')(context, update_data)
+            result['updated_dataset'] = updated_dataset
+            result['message'] += ' and applied to dataset'
+        
+        return result
+        
+    except toolkit.ObjectNotFound:
+        raise toolkit.ObjectNotFound(f'Dataset not found: {dataset_id}')
+    except Exception as e:
+        log.error(f"Error accepting AI suggestion: {e}")
+        raise toolkit.ValidationError(f'Error accepting suggestion: {str(e)}')
+
+
+@toolkit.side_effect_free
+def get_ai_suggestion_stats(context, data_dict):
+    """
+    Get statistics about AI suggestion usage and acceptance rates.
+    
+    :returns: Statistics dictionary with usage and acceptance data
+    :rtype: dict
+    """
+    toolkit.check_access('sysadmin', context, {})
+    
+    try:
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        stats = ai_service.get_suggestion_stats()
+        
+        return stats
+        
+    except Exception as e:
+        log.error(f"Error getting AI suggestion stats: {e}")
+        raise toolkit.ValidationError(f'Error getting suggestion stats: {str(e)}')
+
+
+def reset_ai_suggestion_stats(context, data_dict):
+    """
+    Reset AI suggestion statistics (admin only).
+    
+    :returns: Success message
+    :rtype: dict
+    """
+    toolkit.check_access('sysadmin', context, {})
+    
+    try:
+        from ckanext.analytics.ai_suggestions import get_ai_service
+        ai_service = get_ai_service()
+        
+        # Reset stats
+        ai_service.suggestion_stats = {
+            'suggestions_made': 0,
+            'suggestions_accepted': 0,
+            'by_type': {
+                'tags': {'made': 0, 'accepted': 0},
+                'department': {'made': 0, 'accepted': 0},
+                'title': {'made': 0, 'accepted': 0},
+                'description': {'made': 0, 'accepted': 0}
+            }
+        }
+        
+        return {'success': True, 'message': 'AI suggestion statistics reset'}
+        
+    except Exception as e:
+        log.error(f"Error resetting AI suggestion stats: {e}")
+        raise toolkit.ValidationError(f'Error resetting suggestion stats: {str(e)}')
