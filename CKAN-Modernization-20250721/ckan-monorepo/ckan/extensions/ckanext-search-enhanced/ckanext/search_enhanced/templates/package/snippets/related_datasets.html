@@ -1,0 +1,303 @@
+{% comment %}
+Related Datasets Template for Phase 3 Search Enhancements
+
+Displays datasets related to the current one based on:
+- Same department
+- Similar tags  
+- Analytics co-viewing patterns
+- Same organization
+{% endcomment %}
+
+{% if pkg.related_datasets %}
+<section class="related-datasets-section">
+  <div class="module module-narrow module-shallow">
+    <h2 class="module-heading">
+      <i class="fa fa-link"></i>
+      {{ _('Related Datasets') }}
+      <small class="related-count">({{ pkg.related_datasets|length }})</small>
+    </h2>
+    
+    <div class="module-content">
+      {% for dataset in pkg.related_datasets %}
+        <div class="related-dataset-item" data-similarity="{{ dataset.similarity_score }}">
+          <div class="related-dataset-header">
+            <h4 class="related-dataset-title">
+              <a href="{{ h.url_for('dataset.read', id=dataset.name) }}" 
+                 title="{{ dataset.title }}">
+                {{ h.truncate(dataset.title, 60) }}
+              </a>
+            </h4>
+            
+            <div class="related-dataset-meta">
+              {% if dataset.organization %}
+                <span class="related-org">
+                  <i class="fa fa-users"></i>
+                  {{ dataset.organization.title }}
+                </span>
+              {% endif %}
+              
+              {% if dataset.similarity_score %}
+                <span class="similarity-badge" 
+                      title="{{ _('Similarity score: {score}').format(score=dataset.similarity_score|round(2)) }}">
+                  {% if dataset.similarity_score >= 0.7 %}
+                    <i class="fa fa-star text-success"></i>
+                    {{ _('Highly Related') }}
+                  {% elif dataset.similarity_score >= 0.4 %}
+                    <i class="fa fa-star-half-o text-warning"></i>
+                    {{ _('Related') }}
+                  {% else %}
+                    <i class="fa fa-star-o text-muted"></i>
+                    {{ _('Somewhat Related') }}
+                  {% endif %}
+                </span>
+              {% endif %}
+              
+              {% if dataset.analytics_views_30d %}
+                <span class="popularity-indicator" 
+                      title="{{ _('Views in last 30 days: {count}').format(count=dataset.analytics_views_30d) }}">
+                  {% if dataset.analytics_popularity == 'high' %}
+                    <i class="fa fa-fire text-danger"></i>
+                    {{ _('Popular') }}
+                  {% elif dataset.analytics_popularity == 'medium' %}
+                    <i class="fa fa-eye text-info"></i>
+                    {{ _('Active') }}
+                  {% endif %}
+                </span>
+              {% endif %}
+            </div>
+          </div>
+          
+          {% if dataset.notes %}
+            <p class="related-dataset-description">
+              {{ h.markdown_extract(dataset.notes, 120) }}
+            </p>
+          {% endif %}
+          
+          <div class="related-dataset-tags">
+            {% for tag in dataset.tags[:3] %}
+              <span class="label label-default">{{ tag.display_name }}</span>
+            {% endfor %}
+            {% if dataset.tags|length > 3 %}
+              <span class="more-tags">+{{ dataset.tags|length - 3 }} {{ _('more') }}</span>
+            {% endif %}
+          </div>
+          
+          <div class="related-dataset-actions">
+            <a href="{{ h.url_for('dataset.read', id=dataset.name) }}" 
+               class="btn btn-primary btn-xs">
+              <i class="fa fa-eye"></i>
+              {{ _('View Dataset') }}
+            </a>
+            
+            {% if dataset.resources %}
+              <span class="resource-count">
+                <i class="fa fa-files-o"></i>
+                {{ dataset.resources|length }}
+                {% if dataset.resources|length == 1 %}
+                  {{ _('resource') }}
+                {% else %}
+                  {{ _('resources') }}
+                {% endif %}
+              </span>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+      
+      {# Link to full search with same department/tags #}
+      {% if pkg.extras %}
+        {% for extra in pkg.extras %}
+          {% if extra.key == 'department' and extra.value %}
+            <div class="related-search-link">
+              <a href="{{ h.url_for('dataset.search', extras_department=extra.value) }}" 
+                 class="btn btn-default btn-sm">
+                <i class="fa fa-search"></i>
+                {{ _('See all datasets from {dept}').format(dept=extra.value|title) }}
+              </a>
+            </div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{# Related Datasets CSS #}
+<style>
+  .related-datasets-section {
+    margin-top: 20px;
+  }
+  
+  .related-dataset-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  
+  .related-dataset-item:last-child {
+    border-bottom: none;
+  }
+  
+  .related-dataset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .related-dataset-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .related-dataset-title a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .related-dataset-title a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+  .related-dataset-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    color: #666;
+    align-items: center;
+  }
+  
+  .related-org, .similarity-badge, .popularity-indicator {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .similarity-badge {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .popularity-indicator {
+    background: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .related-dataset-description {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .related-dataset-tags {
+    margin: 8px 0;
+  }
+  
+  .related-dataset-tags .label {
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-size: 11px;
+  }
+  
+  .more-tags {
+    font-size: 11px;
+    color: #999;
+    font-style: italic;
+  }
+  
+  .related-dataset-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .resource-count {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .related-search-link {
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .related-count {
+    color: #999;
+    font-weight: normal;
+  }
+  
+  /* High similarity highlighting */
+  .related-dataset-item[data-similarity*="0.7"], 
+  .related-dataset-item[data-similarity*="0.8"],
+  .related-dataset-item[data-similarity*="0.9"] {
+    border-left: 3px solid #28a745;
+    background: #f8fff9;
+  }
+  
+  /* Medium similarity highlighting */
+  .related-dataset-item[data-similarity*="0.4"],
+  .related-dataset-item[data-similarity*="0.5"],
+  .related-dataset-item[data-similarity*="0.6"] {
+    border-left: 3px solid #ffc107;
+    background: #fffef8;
+  }
+  
+  @media (max-width: 768px) {
+    .related-dataset-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .related-dataset-meta {
+      margin-top: 8px;
+    }
+    
+    .related-dataset-actions {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+</style>
+
+{# Analytics tracking for related dataset clicks #}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track related dataset clicks for analytics
+    document.querySelectorAll('.related-dataset-item a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        const datasetItem = e.target.closest('.related-dataset-item');
+        const similarity = datasetItem ? datasetItem.dataset.similarity : null;
+        
+        // Send analytics event (if analytics extension is available)
+        if (window.analytics && window.analytics.track) {
+          window.analytics.track('related_dataset_click', {
+            source_dataset: '{{ pkg.name }}',
+            target_dataset: link.href.split('/').pop(),
+            similarity_score: similarity
+          });
+        }
+      });
+    });
+  });
+</script>
+
+{% endif %} 
