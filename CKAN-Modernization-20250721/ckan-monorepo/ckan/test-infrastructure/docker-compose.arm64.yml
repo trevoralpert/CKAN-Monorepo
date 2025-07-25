@@ -9,8 +9,9 @@ services:
       - default
     image: "postgres:12"
     environment:
-      POSTGRES_USER: ckan
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ckan}
+      POSTGRES_USER: ${POSTGRES_USER:-ckan_default}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-REPLACE_WITH_ACTUAL_PASSWORD}  # pragma: allowlist secret
+      POSTGRES_DB: ${POSTGRES_DB:-ckan_test}
 
   ckan-redis:
     networks:
@@ -20,12 +21,9 @@ services:
   ckan-solr:
     networks:
       - default
-    image: "solr:8-slim"  # Temporarily back to solr:8-slim for testing
+    image: "ckan/ckan-solr:2.10-solr8"  # Use CKAN's official Solr image with proper schema
     ports:
       - "8983:8983"
-    command:
-      - solr-precreate
-      - ckan
 
   ckan:
     image: "python:3.10-slim-bookworm"  # Use slim version

@@ -4,6 +4,8 @@ import logging
 from ckan.model import meta
 import ckan.plugins.toolkit as toolkit
 from ckanext.analytics.models import AnalyticsEvent
+# Import the original CKAN actions to avoid recursion
+from ckan.logic.action.get import package_search as original_package_search, package_show as original_package_show
 
 log = logging.getLogger(__name__)
 
@@ -71,8 +73,8 @@ def _log_event(event_type, dataset_id=None, resource_id=None, event_data=None, u
 @toolkit.side_effect_free
 def package_show_with_analytics(context, data_dict):
     """Wrapper for package_show that logs view events"""
-    # Call original action
-    result = toolkit.get_action('package_show')(context, data_dict)
+    # Call original action directly to avoid recursion
+    result = original_package_show(context, data_dict)
     
     # Log analytics event
     user_id = context.get('user')
@@ -95,8 +97,8 @@ def package_show_with_analytics(context, data_dict):
 @toolkit.side_effect_free  
 def package_search_with_analytics(context, data_dict):
     """Wrapper for package_search that logs search events"""
-    # Call original action
-    result = toolkit.get_action('package_search')(context, data_dict)
+    # Call original action directly to avoid recursion
+    result = original_package_search(context, data_dict)
     
     # Log analytics event
     user_id = context.get('user')
@@ -145,9 +147,10 @@ def resource_download_with_analytics(context, data_dict):
 
 def get_actions():
     """Return analytics-enhanced actions"""
+    # Temporarily disable action overrides to fix recursion - will implement differently
     return {
-        'package_show': package_show_with_analytics,
-        'package_search': package_search_with_analytics,
+        # 'package_show': package_show_with_analytics,
+        # 'package_search': package_search_with_analytics,
         # Note: resource downloads are handled differently via hooks
     }
 
