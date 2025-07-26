@@ -12,7 +12,7 @@ Provides improved faceting UI with:
 
 {% block facet_list %}
   <div class="search-facets-enhanced">
-    
+
     {# City Department Facet - High Priority #}
     {% if facets.extras_department %}
       <section class="facet-section" data-module="facet-toggle">
@@ -24,9 +24,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=_('Department'), 
-             name='extras_department', 
+          {% snippet 'snippets/facet_list.html',
+             title=_('Department'),
+             name='extras_department',
              extras=extras %}
         </div>
       </section>
@@ -43,9 +43,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=facets.organization, 
-             name='organization', 
+          {% snippet 'snippets/facet_list.html',
+             title=facets.organization,
+             name='organization',
              extras=extras %}
         </div>
       </section>
@@ -62,9 +62,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=_('Update Frequency'), 
-             name='extras_update_frequency', 
+          {% snippet 'snippets/facet_list.html',
+             title=_('Update Frequency'),
+             name='extras_update_frequency',
              extras=extras %}
         </div>
       </section>
@@ -81,9 +81,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=_('Geographic Coverage'), 
-             name='extras_geographic_coverage', 
+          {% snippet 'snippets/facet_list.html',
+             title=_('Geographic Coverage'),
+             name='extras_geographic_coverage',
              extras=extras %}
         </div>
       </section>
@@ -100,9 +100,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=facets.tags, 
-             name='tags', 
+          {% snippet 'snippets/facet_list.html',
+             title=facets.tags,
+             name='tags',
              extras=extras %}
         </div>
       </section>
@@ -119,9 +119,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=facets.res_format, 
-             name='res_format', 
+          {% snippet 'snippets/facet_list.html',
+             title=facets.res_format,
+             name='res_format',
              extras=extras %}
         </div>
       </section>
@@ -138,9 +138,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=_('Data Quality'), 
-             name='extras_data_quality_assessment', 
+          {% snippet 'snippets/facet_list.html',
+             title=_('Data Quality'),
+             name='extras_data_quality_assessment',
              extras=extras %}
         </div>
       </section>
@@ -157,9 +157,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=_('Access Level'), 
-             name='extras_public_access_level', 
+          {% snippet 'snippets/facet_list.html',
+             title=_('Access Level'),
+             name='extras_public_access_level',
              extras=extras %}
         </div>
       </section>
@@ -176,9 +176,9 @@ Provides improved faceting UI with:
           </span>
         </h3>
         <div class="facet-content">
-          {% snippet 'snippets/facet_list.html', 
-             title=facets.license_id, 
-             name='license_id', 
+          {% snippet 'snippets/facet_list.html',
+             title=facets.license_id,
+             name='license_id',
              extras=extras %}
         </div>
       </section>
@@ -187,14 +187,14 @@ Provides improved faceting UI with:
     {# Clear All Filters Button #}
     {% if extras %}
       <div class="facet-clear-all">
-        <a href="{{ h.url_for(request.endpoint, **dict(request.view_args)) }}" 
+        <a href="{{ h.url_for(request.endpoint, **dict(request.view_args)) }}"
            class="btn btn-default btn-sm">
           <i class="fa fa-times"></i>
           {{ _('Clear all filters') }}
         </a>
       </div>
     {% endif %}
-    
+
   </div>
 
   {# Enhanced Facets CSS #}
@@ -202,14 +202,14 @@ Provides improved faceting UI with:
     .search-facets-enhanced {
       margin-bottom: 20px;
     }
-    
+
     .facet-section {
       margin-bottom: 15px;
       border: 1px solid #e0e0e0;
       border-radius: 4px;
       background: #fff;
     }
-    
+
     .facet-title {
       margin: 0;
       padding: 10px 15px;
@@ -222,32 +222,32 @@ Provides improved faceting UI with:
       align-items: center;
       justify-content: space-between;
     }
-    
+
     .facet-title i.fa:first-child {
       margin-right: 8px;
       color: #666;
     }
-    
+
     .facet-toggle-icon {
       transition: transform 0.2s ease;
     }
-    
+
     .facet-section.collapsed .facet-toggle-icon {
       transform: rotate(-90deg);
     }
-    
+
     .facet-section.collapsed .facet-content {
       display: none;
     }
-    
+
     .facet-content {
       padding: 10px 15px;
     }
-    
+
     .facet-content .nav-facet li {
       margin-bottom: 5px;
     }
-    
+
     .facet-content .nav-facet li a {
       padding: 5px 0;
       display: flex;
@@ -256,14 +256,14 @@ Provides improved faceting UI with:
       color: #333;
       text-decoration: none;
     }
-    
+
     .facet-content .nav-facet li a:hover {
       color: #0066cc;
       background: #f5f5f5;
       padding-left: 8px;
       border-radius: 3px;
     }
-    
+
     .facet-content .nav-facet li a .facet-count {
       background: #e9ecef;
       color: #666;
@@ -272,30 +272,30 @@ Provides improved faceting UI with:
       font-size: 11px;
       font-weight: 500;
     }
-    
+
     .facet-clear-all {
       margin-top: 15px;
       text-align: center;
     }
-    
+
     .facet-clear-all .btn {
       width: 100%;
     }
-    
+
     @media (max-width: 768px) {
       .search-facets-enhanced {
         margin-bottom: 15px;
       }
-      
+
       .facet-section {
         margin-bottom: 10px;
       }
-      
+
       .facet-title {
         padding: 8px 12px;
         font-size: 13px;
       }
-      
+
       .facet-content {
         padding: 8px 12px;
       }
@@ -309,15 +309,15 @@ Provides improved faceting UI with:
       document.querySelectorAll('.facet-section[data-module="facet-toggle"]').forEach(function(section) {
         const title = section.querySelector('.facet-title');
         const content = section.querySelector('.facet-content');
-        
+
         // Check if facet has active filters
         const hasActiveFilters = content.querySelector('.nav-facet .active');
-        
+
         // Keep sections with active filters expanded, collapse others
         if (!hasActiveFilters) {
           section.classList.add('collapsed');
         }
-        
+
         title.addEventListener('click', function() {
           section.classList.toggle('collapsed');
         });
@@ -325,4 +325,4 @@ Provides improved faceting UI with:
     });
   </script>
 
-{% endblock %} 
+{% endblock %}

@@ -43,7 +43,7 @@ This extension provides enhanced search functionality that leverages Phase 2 met
    ```ini
    # Add to ckan.plugins
    ckan.plugins = ... search_enhanced analytics
-   
+
    # Optional: Configure facet limits
    search.facets.limit = 100
    search.facets.default = 15
@@ -53,7 +53,7 @@ This extension provides enhanced search functionality that leverages Phase 2 met
    ```bash
    # Generate schema snippet
    ckan search-enhanced generate-schema >> /path/to/solr/schema.xml
-   
+
    # Restart Solr and reindex
    ckan search-index rebuild
    ```
@@ -114,7 +114,7 @@ GET /api/search/suggestions?q=fire
   "autocomplete": [
     {
       "id": "fire-dept-stats",
-      "name": "fire-dept-stats", 
+      "name": "fire-dept-stats",
       "title": "Fire Department Statistics",
       "url": "/dataset/fire-dept-stats"
     }
@@ -316,4 +316,4 @@ This project is licensed under the AGPL License - see the LICENSE file for detai
 - [CKAN Documentation](https://docs.ckan.org/)
 - [Phase 1 Analytics Extension](../ckanext-analytics/)
 - [Phase 2 Schema Documentation](../city_dataset_schema.yaml)
-- [Issue Tracker](https://github.com/ckan/ckanext-search-enhanced/issues) 
+- [Issue Tracker](https://github.com/ckan/ckanext-search-enhanced/issues)
