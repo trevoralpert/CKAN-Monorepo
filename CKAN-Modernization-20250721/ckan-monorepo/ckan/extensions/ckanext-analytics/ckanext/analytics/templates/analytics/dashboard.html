@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
 
-{% block title %}Analytics Dashboard{% endblock %}
+{% block subtitle %}Analytics Dashboard{% endblock %}
 
 {% block styles %}
   {{ super() }}
@@ -161,7 +161,7 @@
   </style>
 {% endblock %}
 
-{% block content %}
+{% block primary_content_inner %}
 <div class="analytics-dashboard">
   <div class="analytics-header">
     <div>
