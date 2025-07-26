@@ -33,9 +33,10 @@ def _check_admin_access():
     #     return False
 
 
-@analytics_dashboard.route('/dashboard/analytics')
+# DISABLED: Route moved to main dashboard blueprint in ckan/views/dashboard.py
+# @analytics_dashboard.route('/dashboard/analytics')
 def dashboard():
-    """Main analytics dashboard with Redis caching"""
+    """Main analytics dashboard with Redis caching - LEGACY FUNCTION (NOT USED)"""
     if not _check_admin_access():
         toolkit.abort(403, 'Admin access required')
     

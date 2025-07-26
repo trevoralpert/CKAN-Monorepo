@@ -1,0 +1,58 @@
+networks:
+  default:
+volumes:
+  postgres-db-volume:
+
+services:
+  ckan-postgres:
+    networks:
+      - default
+    image: "postgres:12"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ckan_default}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-REPLACE_WITH_ACTUAL_PASSWORD}  # pragma: allowlist secret
+      POSTGRES_DB: ${POSTGRES_DB:-ckan_test}
+
+  ckan-redis:
+    networks:
+      - default
+    image: "redis:7-alpine"  # Alpine version supports ARM64
+
+  ckan-solr:
+    networks:
+      - default
+    image: "ckan/ckan-solr:2.10-solr8"  # Use CKAN's official Solr image with proper schema
+    ports:
+      - "8983:8983"
+
+  ckan:
+    image: "python:3.10-slim-bookworm"  # Use slim version
+    networks:
+      - default
+    environment:
+      HOME: /usr/src
+      ENV_SECRET_KEY: ${ENV_SECRET_KEY:-REPLACE_WITH_ACTUAL_SECRET}
+      CKAN_DATASTORE_POSTGRES_DB: ${CKAN_DATASTORE_POSTGRES_DB:-datastore_test}
+      CKAN_DATASTORE_POSTGRES_READ_USER: ${CKAN_DATASTORE_POSTGRES_READ_USER:-datastore_read}
+      CKAN_DATASTORE_POSTGRES_READ_PWD: ${CKAN_DATASTORE_POSTGRES_READ_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      CKAN_DATASTORE_POSTGRES_WRITE_USER: ${CKAN_DATASTORE_POSTGRES_WRITE_USER:-datastore_write}
+      CKAN_DATASTORE_POSTGRES_WRITE_PWD: ${CKAN_DATASTORE_POSTGRES_WRITE_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      CKAN_POSTGRES_DB: ${CKAN_POSTGRES_DB:-ckan_test}
+      CKAN_POSTGRES_USER: ${CKAN_POSTGRES_USER:-ckan_default}
+      CKAN_POSTGRES_PWD: ${CKAN_POSTGRES_PWD:-REPLACE_WITH_ACTUAL_SECRET}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-REPLACE_WITH_ACTUAL_SECRET}
+      PYTEST_COMMON_OPTIONS: -v --ckan-ini=test-core-ci.ini --cov=ckan --cov=ckanext --junitxml=~/junit/junit.xml
+      # report usage of deprecated features
+      SQLALCHEMY_WARN_20: 1
+    working_dir: "/usr/src"
+    volumes:
+      - "../:/usr/src"
+      - "../extensions:/usr/src/extensions"
+    command:
+      ['tail', '-f', '/dev/null']  # Keep container running
+    ports:
+      - "5001:5000"  # Use port 5001 to avoid macOS conflicts
+    depends_on:
+      - ckan-postgres
+      - ckan-redis
+      - ckan-solr
