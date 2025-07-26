@@ -191,7 +191,85 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
             # Never let analytics break core functionality
             pass
 
-    # IResourceController - Track resource downloads
+    # IResourceController - Track resource activities
+    def before_resource_create(self, context, resource):
+        """Called before a resource is created"""
+        # No specific analytics needed for resource creation - just ensure compatibility
+        pass
+
+    def after_resource_create(self, context, resource):
+        """Called after a resource is created"""
+        try:
+            # Log resource creation event
+            user_id = context.get('user')
+            dataset_id = resource.get('package_id')
+            
+            action._log_event(
+                event_type="resource_create",
+                dataset_id=dataset_id,
+                resource_id=resource.get('id'),
+                user_id=user_id,
+                event_data={
+                    "resource_name": resource.get('name'),
+                    "resource_format": resource.get('format'),
+                    "resource_size": resource.get('size'),
+                    "resource_url": resource.get('url')
+                }
+            )
+        except Exception as e:
+            log.error(f"Error logging resource creation analytics: {e}")
+
+    def before_resource_update(self, context, current, resource):
+        """Called before a resource is updated"""
+        # No specific analytics needed for resource update preparation
+        pass
+
+    def after_resource_update(self, context, resource):
+        """Called after a resource is updated"""
+        try:
+            # Log resource update event
+            user_id = context.get('user')
+            dataset_id = resource.get('package_id')
+            
+            action._log_event(
+                event_type="resource_update",
+                dataset_id=dataset_id,
+                resource_id=resource.get('id'),
+                user_id=user_id,
+                event_data={
+                    "resource_name": resource.get('name'),
+                    "resource_format": resource.get('format'),
+                    "resource_size": resource.get('size')
+                }
+            )
+        except Exception as e:
+            log.error(f"Error logging resource update analytics: {e}")
+
+    def before_resource_delete(self, context, resource, resources):
+        """Called before a resource is deleted"""
+        # No specific analytics needed for resource delete preparation
+        pass
+
+    def after_resource_delete(self, context, resources):
+        """Called after resources are deleted"""
+        try:
+            # Log resource deletion event for each deleted resource
+            user_id = context.get('user')
+            
+            for resource in resources:
+                action._log_event(
+                    event_type="resource_delete",
+                    dataset_id=resource.get('package_id'),
+                    resource_id=resource.get('id'),
+                    user_id=user_id,
+                    event_data={
+                        "resource_name": resource.get('name'),
+                        "resource_format": resource.get('format')
+                    }
+                )
+        except Exception as e:
+            log.error(f"Error logging resource deletion analytics: {e}")
+
     def before_download(self, context, resource, filename):
         """Called before a resource is downloaded"""
         try:
