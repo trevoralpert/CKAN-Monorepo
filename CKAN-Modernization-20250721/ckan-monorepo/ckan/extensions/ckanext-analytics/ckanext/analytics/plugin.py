@@ -20,12 +20,79 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IBlueprint)
     plugins.implements(plugins.IValidators)
     plugins.implements(plugins.IActions)
+    
+    # Config sync flag to run only once
+    _config_synced = False
 
     # IConfigurer
     def update_config(self, config_):
+        # CKAN 2.12.0a0 Config Sync Fix - ensures global config is properly initialized
+        try:
+            from ckan.cli import load_config
+            from ckan.common import config as global_config
+            import os
+            
+            # Get config file path
+            config_file = os.environ.get('CKAN_CONFIG', 'demo.ini')
+            if not os.path.isabs(config_file):
+                # Make relative paths relative to current working directory
+                config_file = os.path.join(os.getcwd(), config_file)
+            
+            if os.path.exists(config_file):
+                # Load fresh config and sync with global config
+                fresh_config = load_config(config_file)
+                global_config.clear()
+                global_config.update(fresh_config)
+                log.info("Analytics Plugin: Successfully synced configuration from %s", config_file)
+            else:
+                log.warning("Analytics Plugin: Config file not found at %s", config_file)
+                
+        except Exception as e:
+            log.error("Analytics Plugin: Config sync failed: %s", e)
+            # Don't fail plugin loading if config sync fails
+            pass
+        
         toolkit.add_template_directory(config_, "templates")
         toolkit.add_public_directory(config_, "public")
         toolkit.add_resource("assets", "analytics")
+
+    def _ensure_config_sync(self):
+        """Ensure global config is synced - can be called from multiple places"""
+        if AnalyticsPlugin._config_synced:
+            return True
+            
+        try:
+            from ckan.cli import load_config
+            from ckan.common import config as global_config
+            import os
+            
+            # Only sync if config is empty/None (avoid repeated syncing)
+            if global_config.get('ckan.plugins') is None:
+                config_file = os.environ.get('CKAN_CONFIG', 'demo.ini')
+                if not os.path.isabs(config_file):
+                    config_file = os.path.join(os.getcwd(), config_file)
+                
+                if os.path.exists(config_file):
+                    fresh_config = load_config(config_file)
+                    global_config.clear()
+                    global_config.update(fresh_config)
+                    AnalyticsPlugin._config_synced = True
+                    log.info("Analytics Plugin: Config sync completed from %s", config_file)
+                    
+                    # Force plugin reload after config sync
+                    try:
+                        import ckan.plugins as plugins
+                        plugins.load_all(force_update=True)
+                        log.info("Analytics Plugin: Plugin reload completed after config sync")
+                    except Exception as reload_e:
+                        log.warning("Analytics Plugin: Plugin reload failed: %s", reload_e)
+                    
+                    return True
+                    
+        except Exception as e:
+            log.error("Analytics Plugin: Config sync failed: %s", e)
+            
+        return False
 
     # IClick - Add CLI commands
     def get_commands(self):
@@ -45,6 +112,9 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
 
     # IActions - Register AI suggestion API endpoints
     def get_actions(self):
+        # SECONDARY CONFIG SYNC - run config sync here as backup
+        self._ensure_config_sync()
+        
         return {
             'get_dataset_ai_suggestions': action.get_dataset_ai_suggestions,
             'get_batch_ai_suggestions': action.get_batch_ai_suggestions,
@@ -55,6 +125,8 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
 
     # IBlueprint - Add web dashboard
     def get_blueprint(self):
+        # TERTIARY CONFIG SYNC - ensure config sync through web interface
+        self._ensure_config_sync()
         return views.get_blueprints()
 
     # IPackageController - Track dataset views (SAFE - NO RECURSION)

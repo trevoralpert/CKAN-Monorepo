@@ -38,6 +38,27 @@ def load_environment(conf: Union[Config, CKANConfig]):
     Configure the Pylons environment via the ``pylons.config`` object. This
     code should only need to be run once.
     """
+    # CKAN 2.12.0a0 Config Sync Fix - ensure config is properly loaded before plugin loading
+    try:
+        from ckan.cli import load_config
+        from ckan.common import config as global_config
+        
+        # Check if global config needs syncing
+        if global_config.get('ckan.plugins') is None and conf.get('__file__'):
+            config_file = conf['__file__']
+            if os.path.exists(config_file):
+                # Load fresh config and sync with global config
+                fresh_config = load_config(config_file)
+                global_config.clear()
+                global_config.update(fresh_config)
+                log.info("CKAN Environment: Config sync completed from %s", config_file)
+                
+                # Also update the passed conf object
+                conf.clear()
+                conf.update(fresh_config)
+    except Exception as e:
+        log.error("CKAN Environment: Config sync failed: %s", e)
+    
     os.environ['CKAN_CONFIG'] = cast(str, conf['__file__'])
 
     valid_base_public_folder_names = ['public', 'public-midnight-blue']
