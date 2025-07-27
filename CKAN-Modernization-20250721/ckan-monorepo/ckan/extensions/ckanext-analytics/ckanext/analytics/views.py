@@ -33,8 +33,8 @@ def _check_admin_access():
     #     return False
 
 
-# DISABLED: Route moved to main dashboard blueprint in ckan/views/dashboard.py
-# @analytics_dashboard.route('/dashboard/analytics')
+# Re-enabled for demo purposes
+@analytics_dashboard.route('/dashboard/analytics')
 def dashboard():
     """Main analytics dashboard with Redis caching - LEGACY FUNCTION (NOT USED)"""
     if not _check_admin_access():

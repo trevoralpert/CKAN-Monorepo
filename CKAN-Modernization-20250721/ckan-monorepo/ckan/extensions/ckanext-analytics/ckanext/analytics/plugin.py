@@ -26,35 +26,13 @@ class AnalyticsPlugin(plugins.SingletonPlugin):
 
     # IConfigurer
     def update_config(self, config_):
-        # CKAN 2.12.0a0 Config Sync Fix - ensures global config is properly initialized
-        try:
-            from ckan.cli import load_config
-            from ckan.common import config as global_config
-            import os
-            
-            # Get config file path
-            config_file = os.environ.get('CKAN_CONFIG', 'demo.ini')
-            if not os.path.isabs(config_file):
-                # Make relative paths relative to current working directory
-                config_file = os.path.join(os.getcwd(), config_file)
-            
-            if os.path.exists(config_file):
-                # Load fresh config and sync with global config
-                fresh_config = load_config(config_file)
-                global_config.clear()
-                global_config.update(fresh_config)
-                log.info("Analytics Plugin: Successfully synced configuration from %s", config_file)
-            else:
-                log.warning("Analytics Plugin: Config file not found at %s", config_file)
-                
-        except Exception as e:
-            log.error("Analytics Plugin: Config sync failed: %s", e)
-            # Don't fail plugin loading if config sync fails
-            pass
-        
+        # Disable aggressive global_config.clear() to avoid wiping other plugins' settings.
+        # We only need to register templates/assets here.
         toolkit.add_template_directory(config_, "templates")
         toolkit.add_public_directory(config_, "public")
         toolkit.add_resource("assets", "analytics")
+        # Skip the previous full-config re-load that caused conflicts.
+        return
 
     def _ensure_config_sync(self):
         """Ensure global config is synced - can be called from multiple places"""

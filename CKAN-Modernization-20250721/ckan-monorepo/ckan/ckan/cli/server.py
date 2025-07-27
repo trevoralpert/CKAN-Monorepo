@@ -78,7 +78,10 @@ def run(ctx: click.Context, host: str, port: str, disable_reloader: bool,
 
     # Reloading
     use_reloader = not disable_reloader
-    config_extra_files = config["ckan.devserver.watch_patterns"]
+    config_extra_files = config.get("ckan.devserver.watch_patterns", [])
+    if isinstance(config_extra_files, str):
+        # Split by comma or whitespace if provided as string
+        config_extra_files = [p.strip() for p in config_extra_files.split(',') if p.strip()]
     extra_files = itertools.chain(
         [config[u"__file__"]],
         *[
@@ -91,6 +94,12 @@ def run(ctx: click.Context, host: str, port: str, disable_reloader: bool,
     # Threads and processes
     threaded = threaded or config.get(u"ckan.devserver.threaded")
     processes = processes or config.get(u"ckan.devserver.multiprocess")
+    # Cast processes to int if provided as string
+    if isinstance(processes, str):
+        try:
+            processes = int(processes)
+        except ValueError:
+            processes = 0
     if threaded and processes > 1:
         error_shout(u"Cannot have a multithreaded and multi process server")
         raise click.Abort()
